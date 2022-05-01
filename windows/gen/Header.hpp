@@ -7,16 +7,16 @@ struct AnimatedSpriteDelegate;
 struct PlayerObject;
 struct CCBlockLayer;
 struct FLAlertLayer;
-struct FLAlertLayerProtocol;
-struct TextInputDelegate;
-struct GJDropDownLayerDelegate;
-struct CustomSongLayer;
 struct SetupInstantCountPopup;
 struct CreatorLayer;
 struct MoreVideoOptionsLayer;
 struct DrawGridLayer;
 struct EditorOptionsLayer;
 struct LabelGameObject;
+struct FLAlertLayerProtocol;
+struct TextInputDelegate;
+struct GJDropDownLayerDelegate;
+struct CustomSongLayer;
 struct LevelSearchLayer;
 struct LoadingCircle;
 struct SetupInteractObjectPopup;
@@ -104,13 +104,14 @@ struct CreateMenuItem;
 struct GameRateDelegate;
 struct DialogLayer;
 struct CurrencyRewardLayer;
+struct DialogDelegate;
+struct CurrencyRewardDelegate;
 struct CustomListView;
 struct MusicDownloadDelegate;
 struct CustomSongWidget;
 struct HSVWidgetPopupDelegate;
 struct CustomizeObjectLayer;
 struct DailyLevelPage;
-struct DialogDelegate;
 struct DialogObject;
 struct EditButtonBar;
 struct EditLevelLayer;
@@ -383,11 +384,7 @@ struct GameObject : CCSpritePlus {
      void colorForMode(int p0, bool p1) {
         static_assert(T, "Implement GameObject::colorForMode");
     }
-
-    template <bool T=false>
-     void commonSetup() {
-        static_assert(T, "Implement GameObject::commonSetup");
-    }
+	GEODE_CODEGEN_DLL void commonSetup();
 
     template <bool T=false>
      void copyGroups(GameObject* p0) {
@@ -645,12 +642,11 @@ struct GameObject : CCSpritePlus {
 	bool m_editor;
 	bool m_groupDisabled;
 	bool m_colourOnTop;
-	GJSpriteColor* m_mainColourMode;
-	GJSpriteColor* m_secondaryColourMode;
-	bool m_col1;
-	bool m_col2;
+	float m_unknown27c;
+	float m_unknown280;
+	float m_unknown284;
 	cocos2d::CCPoint m_startPosOffset;
-	float m_unkRotationField;
+	float m_rotateOffset;
 	bool m_tintTrigger;
 	bool m_isFlippedX;
 	bool m_isFlippedY;
@@ -666,7 +662,7 @@ struct GameObject : CCSpritePlus {
 	bool m_runActionWithTag;
 	bool m_objectPoweredOn;
 	cocos2d::CCSize m_objectSize;
-	bool m_trigger;
+	bool m_modifier;
 	bool m_active;
 	bool m_animationFinished;
 	cocos2d::CCParticleSystemQuad* m_particleSystem;
@@ -684,7 +680,11 @@ struct GameObject : CCSpritePlus {
 	bool m_isOrientedRectDirty;
 	bool m_hasBeenActivated;
 	bool m_hasBeenActivatedP2;
-	GEODE_PAD(0x10);
+	bool m_hasDetailColor;
+	bool m_isPulseStick;
+	int m_linkedGroup;
+	bool m_isSaw;
+	int m_customRotateSpeed;
 	bool m_sawIsDisabled;
 	GEODE_PAD(0x4);
 	cocos2d::CCSprite* m_detailSprite;
@@ -699,12 +699,18 @@ struct GameObject : CCSpritePlus {
 	bool m_spawnTriggered;
 	cocos2d::CCPoint m_startPosition;
 	gd::string m_textureName;
-	bool m_unk32C;
-	bool m_unk32D;
-	GEODE_PAD(0xc);
-	float m_unk33C;
-	float m_unk340;
-	GEODE_PAD(0x10);
+	bool m_useAudioScale;
+	bool m_sleeping;
+	float m_rotation;
+	cocos2d::CCSize m_obStartScale;
+	bool m_startFlipX;
+	bool m_startFlipY;
+	bool m_shouldHide;
+	float m_spawnXPosition;
+	bool m_invisible;
+	float m_enterAngle;
+	int m_activeEnterEffect;
+	int m_parentMode;
 	bool m_isGlowDisabled;
 	int m_targetColorID;
 	float m_scale;
@@ -716,15 +722,29 @@ struct GameObject : CCSpritePlus {
 	bool m_isDontEnter;
 	bool m_isDontFade;
 	int m_defaultZOrder;
-	GEODE_PAD(0x17);
-	bool m_unk38C;
-	bool m_unk38D;
-	bool m_unk38E;
-	float m_unk390;
-	GEODE_PAD(0x14);
+	bool m_useSecondSheet;
+	bool m_unknown3d9;
+	bool m_isPortal;
+	bool m_lockColourAsChild;
+	bool m_customAudioScale;
+	int m_minAudioScale;
+	int m_maxAudioScale;
+	bool m_unkParticleSystem2;
+	int m_secretCoinID;
+	int m_unkUnusedSaveStringKey53;
+	bool m_invisibleMode;
+	bool m_glowUserBackgroundColour;
+	bool m_useSpecialLight;
+	bool m_orbOrPad;
+	float m_glowOpacityMod;
+	bool m_upSlope;
+	int m_slopeType;
+	float m_slopeAngle;
+	bool m_hazardousSlope;
+	float m_unkWin18C;
 	GJSpriteColor* m_baseColor;
 	GJSpriteColor* m_detailColor;
-	GEODE_PAD(0x4);
+	int m_unknown420;
 	ZLayer m_defaultZLayer;
 	ZLayer m_zLayer;
 	int m_gameZOrder;
@@ -1387,7 +1407,7 @@ struct PlayerObject : GameObject, AnimatedSpriteDelegate {
     }
 	GEODE_CODEGEN_DLL void runRotateAction();
 	GEODE_CODEGEN_DLL void runBallRotation();
-	GEODE_PAD(0x18);
+	GEODE_PAD(0x14);
 	bool m_unk480;
 	cocos2d::CCNode* m_unk484;
 	cocos2d::CCDictionary* m_collisionLog;
@@ -1417,7 +1437,7 @@ struct PlayerObject : GameObject, AnimatedSpriteDelegate {
 	double m_xAccel;
 	double m_jumpAccel;
 	double m_gravity;
-	GEODE_PAD(0x10);
+	GEODE_PAD(0x08);
 	bool m_unk538;
 	bool m_unk539;
 	bool m_unk53A;
@@ -1447,14 +1467,11 @@ struct PlayerObject : GameObject, AnimatedSpriteDelegate {
 	GEODE_PAD(0x4);
 	cocos2d::CCParticleSystemQuad* m_unk5D4;
 	cocos2d::CCParticleSystemQuad* m_unk5D8;
-	GEODE_PAD(0x8);
-	int m_streakID;
-	float m_wellIdk;
-	GEODE_PAD(0x10);
+	GEODE_PAD(0x20);
 	bool m_unk5FC;
 	bool m_unk5FD;
 	bool m_unk5FE;
-	GEODE_PAD(0x10);
+	GEODE_PAD(0x11);
 	bool m_unk610;
 	bool m_isHolding;
 	bool m_hasJustHeld;
@@ -1654,44 +1671,6 @@ struct FLAlertLayer : cocos2d::CCLayerColor {
 	bool m_noAction;
 };
 
-struct FLAlertLayerProtocol {
-	GEODE_CODEGEN_DLL virtual void FLAlert_Clicked(FLAlertLayer* p0, bool p1);
-};
-
-struct TextInputDelegate {
-	GEODE_CODEGEN_DLL virtual void textChanged(CCTextInputNode* p0);
-	GEODE_CODEGEN_DLL virtual void textInputOpened(CCTextInputNode* p0);
-	GEODE_CODEGEN_DLL virtual void textInputClosed(CCTextInputNode* p0);
-	GEODE_CODEGEN_DLL virtual void textInputShouldOffset(CCTextInputNode* p0, float p1);
-	GEODE_CODEGEN_DLL virtual void textInputReturn(CCTextInputNode* p0);
-	GEODE_CODEGEN_DLL virtual bool allowTextInput(CCTextInputNode* p0);
-};
-
-struct GJDropDownLayerDelegate {
-};
-
-struct CustomSongLayer : FLAlertLayer, FLAlertLayerProtocol, TextInputDelegate, GJDropDownLayerDelegate {
-
-    template <bool T=false>
-     bool init(LevelSettingsObject* p0) {
-        static_assert(T, "Implement CustomSongLayer::init");
-    }
-
-    template <bool T=false>
-     void onArtists(cocos2d::CCObject* p0) {
-        static_assert(T, "Implement CustomSongLayer::onArtists");
-    }
-
-    template <bool T=false>
-     void onSongBrowser(cocos2d::CCObject* p0) {
-        static_assert(T, "Implement CustomSongLayer::onSongBrowser");
-    }
-	LevelSettingsObject* m_levelSettings;
-	CCTextInputNode* m_songIDInput;
-	CustomSongWidget* m_songWidget;
-	LevelSettingsLayer* m_levelSettingsLayer;
-};
-
 struct SetupInstantCountPopup : FLAlertLayer {
 
     template <bool T=false>
@@ -1740,11 +1719,16 @@ struct MoreVideoOptionsLayer : FLAlertLayer {
      bool init() {
         static_assert(T, "Implement MoreVideoOptionsLayer::init");
     }
+
+    template <bool T=false>
+     void onClose(cocos2d::CCObject* p0) {
+        static_assert(T, "Implement MoreVideoOptionsLayer::onClose");
+    }
 };
 
 struct DrawGridLayer : cocos2d::CCLayer {
 	 using CCPointArray400 = struct cocos2d::CCPoint(*)[400];
-	 using CCPointArray200 = struct cocos2d::CCPoint(*)[400];
+	 using CCPointArray200 = struct cocos2d::CCPoint(*)[200];
 	GEODE_CODEGEN_DLL void draw();
 	CCPointArray400 m_commonLines;
 	CCPointArray200 m_yellowGuidelines;
@@ -1795,6 +1779,44 @@ struct LabelGameObject : GameObject {
      void setObjectColor(cocos2d::_ccColor3B const& p0) {
         static_assert(T, "Implement LabelGameObject::setObjectColor");
     }
+};
+
+struct FLAlertLayerProtocol {
+	GEODE_CODEGEN_DLL virtual void FLAlert_Clicked(FLAlertLayer* p0, bool p1);
+};
+
+struct TextInputDelegate {
+	GEODE_CODEGEN_DLL virtual void textChanged(CCTextInputNode* p0);
+	GEODE_CODEGEN_DLL virtual void textInputOpened(CCTextInputNode* p0);
+	GEODE_CODEGEN_DLL virtual void textInputClosed(CCTextInputNode* p0);
+	GEODE_CODEGEN_DLL virtual void textInputShouldOffset(CCTextInputNode* p0, float p1);
+	GEODE_CODEGEN_DLL virtual void textInputReturn(CCTextInputNode* p0);
+	GEODE_CODEGEN_DLL virtual bool allowTextInput(CCTextInputNode* p0);
+};
+
+struct GJDropDownLayerDelegate {
+};
+
+struct CustomSongLayer : FLAlertLayer, FLAlertLayerProtocol, TextInputDelegate, GJDropDownLayerDelegate {
+
+    template <bool T=false>
+     bool init(LevelSettingsObject* p0) {
+        static_assert(T, "Implement CustomSongLayer::init");
+    }
+
+    template <bool T=false>
+     void onArtists(cocos2d::CCObject* p0) {
+        static_assert(T, "Implement CustomSongLayer::onArtists");
+    }
+
+    template <bool T=false>
+     void onSongBrowser(cocos2d::CCObject* p0) {
+        static_assert(T, "Implement CustomSongLayer::onSongBrowser");
+    }
+	LevelSettingsObject* m_levelSettings;
+	CCTextInputNode* m_songIDInput;
+	CustomSongWidget* m_songWidget;
+	LevelSettingsLayer* m_levelSettingsLayer;
 };
 
 struct LevelSearchLayer {
@@ -1848,7 +1870,7 @@ struct CCMenuItemSpriteExtra : cocos2d::CCMenuItemSprite {
 	GEODE_CODEGEN_DLL CCMenuItemSpriteExtra();
 	GEODE_CODEGEN_DLL ~CCMenuItemSpriteExtra();
 	GEODE_CODEGEN_DLL bool init(cocos2d::CCNode* p0, cocos2d::CCNode* p1, cocos2d::CCObject* p2, cocos2d::SEL_MenuHandler p3);
-	GEODE_CODEGEN_DLL bool init(cocos2d::CCNode spr);
+	GEODE_CODEGEN_DLL bool init(cocos2d::CCNode* spr);
 	GEODE_CODEGEN_DLL void activate();
 	GEODE_CODEGEN_DLL void selected();
 	GEODE_CODEGEN_DLL void unselected();
@@ -1908,10 +1930,6 @@ struct ColorChannelSprite : cocos2d::CCSprite {
 
 struct CCScrollLayerExt : cocos2d::CCLayer {
 	 CCScrollLayerExt() {}
-	
-	/*
-	 * IDK
-	 */
 	GEODE_CODEGEN_DLL static CCScrollLayerExt* create(cocos2d::CCRect rect, bool vertical);
 	GEODE_CODEGEN_DLL float getMinY();
 	GEODE_CODEGEN_DLL float getMaxY();
@@ -2015,6 +2033,8 @@ struct CommentUploadDelegate {
 struct InfoLayer : FLAlertLayer, LevelCommentDelegate, CommentUploadDelegate, FLAlertLayerProtocol {
 	GEODE_CODEGEN_DLL bool init(GJGameLevel* level, GJUserScore* score);
 	GEODE_CODEGEN_DLL void setupCommentsBrowser(cocos2d::CCArray* comments);
+	GEODE_CODEGEN_DLL void onMore(cocos2d::CCObject* pSender);
+	GEODE_CODEGEN_DLL void onLevelInfo(cocos2d::CCObject* pSender);
 	GEODE_PAD(0x2c);
 	GJCommentListLayer* m_list;
 };
@@ -2117,6 +2137,8 @@ struct NumberInputDelegate {
 };
 
 struct PlatformDownloadDelegate {
+	GEODE_CODEGEN_DLL virtual void downloadFinished(char const* p0);
+	GEODE_CODEGEN_DLL virtual void downloadFailed(char const* p0);
 };
 
 struct MusicDownloadManager : cocos2d::CCNode, PlatformDownloadDelegate {
@@ -2129,10 +2151,10 @@ struct MusicDownloadManager : cocos2d::CCNode, PlatformDownloadDelegate {
 	GEODE_CODEGEN_DLL gd::string pathForSong(int id);
 	GEODE_CODEGEN_DLL cocos2d::CCArray* getDownloadedSongs();
 	GEODE_CODEGEN_DLL void songStateChanged();
-	GEODE_PAD(0x4);
 	cocos2d::CCDictionary* m_unknownDict;
 	cocos2d::CCArray* m_handlers;
 	cocos2d::CCDictionary* m_songsDict;
+	int m_unknown;
 };
 
 struct GJUserScore : cocos2d::CCNode {
@@ -2216,7 +2238,7 @@ struct SetupCountTriggerPopup : FLAlertLayer {
 };
 
 struct CCCircleWaveDelegate {
-	GEODE_CODEGEN_DLL void circleWaveWillBeRemoved(CCCircleWave* wave);
+	GEODE_CODEGEN_DLL virtual void circleWaveWillBeRemoved(CCCircleWave* wave);
 };
 
 struct PauseLayer : CCBlockLayer {
@@ -2235,11 +2257,11 @@ struct PauseLayer : CCBlockLayer {
  private:
     GEODE_CODEGEN_DLL void _createToggleButton(cocos2d::SEL_MenuHandler p0, bool p1, cocos2d::CCMenu* p2, gd::string p3, cocos2d::CCPoint p4);
  public:
-    inline void createToggleButton(cocos2d::SEL_MenuHandler callback, bool on, cocos2d::CCMenu* menu, struct gd::string caption, struct cocos2d::CCPoint pos) {
+    inline void createToggleButton(cocos2d::SEL_MenuHandler callback, bool on, cocos2d::CCMenu* menu, gd::string caption, cocos2d::CCPoint pos) {
         return _createToggleButton(callback, on, menu, caption, pos);
     }
     #else
-    GEODE_CODEGEN_DLL void createToggleButton(cocos2d::SEL_MenuHandler callback, bool on, cocos2d::CCMenu* menu, struct gd::string caption, struct cocos2d::CCPoint pos);
+    GEODE_CODEGEN_DLL void createToggleButton(cocos2d::SEL_MenuHandler callback, bool on, cocos2d::CCMenu* menu, gd::string caption, cocos2d::CCPoint pos);
     #endif
 	bool m_unknown;
 	bool m_unknown2;
@@ -2279,15 +2301,10 @@ struct GameSoundManager : cocos2d::CCNode {
     #endif
 
     template <bool T=false>
-     void sharedManager() {
-        static_assert(T, "Implement GameSoundManager::sharedManager");
-    }
-
-    template <bool T=false>
      void stopBackgroundMusic() {
         static_assert(T, "Implement GameSoundManager::stopBackgroundMusic");
     }
-	GEODE_CODEGEN_DLL static GameSoundManager* sharedState();
+	GEODE_CODEGEN_DLL static GameSoundManager* sharedManager();
 	cocos2d::CCDictionary* m_dictionary1;
 	cocos2d::CCDictionary* m_dictionary2;
 	GEODE_PAD(0xc);
@@ -2646,7 +2663,7 @@ struct AchievementManager : cocos2d::CCNode {
      void getAllAchievements() {
         static_assert(T, "Implement AchievementManager::getAllAchievements");
     }
-	GEODE_CODEGEN_DLL AchievementManager* sharedState();
+	GEODE_CODEGEN_DLL static AchievementManager* sharedState();
 	GEODE_PAD(0x10);
 	cocos2d::CCDictionary* m_achievements;
 	GEODE_PAD(0x4);
@@ -2654,7 +2671,7 @@ struct AchievementManager : cocos2d::CCNode {
 
 struct AchievementNotifier : cocos2d::CCNode {
 	GEODE_CODEGEN_DLL void notifyAchievement(const char* title, const char* desc, const char* icon, bool quest);
-	GEODE_CODEGEN_DLL AchievementNotifier* sharedState();
+	GEODE_CODEGEN_DLL static AchievementNotifier* sharedState();
 
     template <bool T=false>
      void willSwitchToScene(cocos2d::CCScene* p0) {
@@ -2790,11 +2807,19 @@ struct MenuLayer : cocos2d::CCLayer, FLAlertLayerProtocol {
     }
 	GEODE_CODEGEN_DLL void onMoreGames(cocos2d::CCObject* p0);
 	GEODE_CODEGEN_DLL void onGarage(cocos2d::CCObject* p0);
-
-    template <bool T=false>
-     void onQuit(cocos2d::CCObject* p0) {
-        static_assert(T, "Implement MenuLayer::onQuit");
-    }
+	GEODE_CODEGEN_DLL void onQuit(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onMyProfile(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onPlay(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onCreator(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onRobTop(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onNewgrounds(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onDaily(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onOptions(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onAchievements(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onStats(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onFacebook(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onTwitter(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onYouTube(cocos2d::CCObject* p0);
 	GEODE_CODEGEN_DLL static cocos2d::CCScene* scene(bool p0);
 	GEODE_CODEGEN_DLL MenuLayer* node();
 };
@@ -2955,7 +2980,7 @@ struct CCCircleWave : cocos2d::CCNode {
      bool init(float p0, float p1, float p2, bool p3, bool p4) {
         static_assert(T, "Implement CCCircleWave::init");
     }
-	GEODE_CODEGEN_DLL void followObject(cocos2d::CCNode p0, bool p1);
+	GEODE_CODEGEN_DLL void followObject(cocos2d::CCNode* p0, bool p1);
 	GEODE_CODEGEN_DLL void updatePosition(float p0);
 	GEODE_CODEGEN_DLL void setPosition(cocos2d::CCPoint const& pos);
 	GEODE_CODEGEN_DLL void removeMeAndCleanup();
@@ -2974,6 +2999,7 @@ struct CCCircleWave : cocos2d::CCNode {
 
 struct CCContentLayer : cocos2d::CCLayerColor {
 	GEODE_CODEGEN_DLL static CCContentLayer* create(cocos2d::ccColor4B const& color, float width, float height);
+	GEODE_CODEGEN_DLL virtual void setPosition(cocos2d::CCPoint const& pos);
 };
 
 struct CCLightFlash {
@@ -3014,11 +3040,11 @@ struct TextArea : cocos2d::CCSprite {
  private:
     GEODE_CODEGEN_DLL bool _init(char const* p0, float p1, float p2, float p3, bool p4, gd::string p5, cocos2d::CCPoint p6);
  public:
-    inline bool init(struct gd::string str, char const* font, float width, float height, struct cocos2d::CCPoint anchor, float scale, bool disableColor) {
+    inline bool init(gd::string str, char const* font, float width, float height, cocos2d::CCPoint anchor, float scale, bool disableColor) {
         return _init(font, width, height, scale, disableColor, str, anchor);
     }
     #else
-    GEODE_CODEGEN_DLL bool init(struct gd::string str, char const* font, float width, float height, struct cocos2d::CCPoint anchor, float scale, bool disableColor);
+    GEODE_CODEGEN_DLL bool init(gd::string str, char const* font, float width, float height, cocos2d::CCPoint anchor, float scale, bool disableColor);
     #endif
 	GEODE_CODEGEN_DLL static TextArea* create(gd::string const& str, char const* font, float width, float height, cocos2d::CCPoint const& anchor, float scale, bool disableColor);
 	GEODE_CODEGEN_DLL void colorAllCharactersTo(cocos2d::ccColor3B color);
@@ -3029,7 +3055,6 @@ struct TextArea : cocos2d::CCSprite {
 	int m_unknown;
 	gd::string m_fontFile;
 	float m_height;
-	GEODE_UNIMPLEMENTED_PAD
 };
 
 struct InheritanceNode : cocos2d::CCObject {
@@ -3051,7 +3076,7 @@ struct CCMoveCNode : cocos2d::CCNode {
 struct GameToolbox {
 
     template <bool T=false>
-     static CCMenuItemToggler* createToggleButton(struct gd::string text, cocos2d::SEL_MenuHandler onToggled, bool isToggled, cocos2d::CCMenu* toggleMenu, struct cocos2d::CCPoint position, cocos2d::CCNode* callbackTarget, cocos2d::CCNode* labelParent, cocos2d::CCArray* toggleArray) {
+     static CCMenuItemToggler* createToggleButton(gd::string text, cocos2d::SEL_MenuHandler onToggled, bool isToggled, cocos2d::CCMenu* toggleMenu, cocos2d::CCPoint position, cocos2d::CCNode* callbackTarget, cocos2d::CCNode* labelParent, cocos2d::CCArray* toggleArray) {
         static_assert(T, "Implement GameToolbox::createToggleButton");
     }
 
@@ -3059,11 +3084,11 @@ struct GameToolbox {
  private:
     GEODE_CODEGEN_DLL static CCMenuItemToggler* _createToggleButton(cocos2d::SEL_MenuHandler p0, bool p1, cocos2d::CCMenu* p2, cocos2d::CCNode* p3, cocos2d::CCNode* p4, float p5, float p6, float p7, const char* p8, bool p9, int p10, cocos2d::CCArray* p11, gd::string p12, cocos2d::CCPoint p13, cocos2d::CCPoint p14);
  public:
-    inline static CCMenuItemToggler* createToggleButton(struct gd::string text, cocos2d::SEL_MenuHandler onToggled, bool isToggled, cocos2d::CCMenu* toggleMenu, struct cocos2d::CCPoint position, cocos2d::CCNode* callbackTarget, cocos2d::CCNode* labelParent, float checkboxScale, float labelSize, float maxWidth, struct cocos2d::CCPoint labelOffset, const char* unknown, bool anchorHorizontally, int toggleTag, cocos2d::CCArray* toggleArray) {
+    inline static CCMenuItemToggler* createToggleButton(gd::string text, cocos2d::SEL_MenuHandler onToggled, bool isToggled, cocos2d::CCMenu* toggleMenu, cocos2d::CCPoint position, cocos2d::CCNode* callbackTarget, cocos2d::CCNode* labelParent, float checkboxScale, float labelSize, float maxWidth, cocos2d::CCPoint labelOffset, const char* unknown, bool anchorHorizontally, int toggleTag, cocos2d::CCArray* toggleArray) {
         return _createToggleButton(onToggled, isToggled, toggleMenu, callbackTarget, labelParent, checkboxScale, labelSize, maxWidth, unknown, anchorHorizontally, toggleTag, toggleArray, text, position, labelOffset);
     }
     #else
-    GEODE_CODEGEN_DLL static CCMenuItemToggler* createToggleButton(struct gd::string text, cocos2d::SEL_MenuHandler onToggled, bool isToggled, cocos2d::CCMenu* toggleMenu, struct cocos2d::CCPoint position, cocos2d::CCNode* callbackTarget, cocos2d::CCNode* labelParent, float checkboxScale, float labelSize, float maxWidth, struct cocos2d::CCPoint labelOffset, const char* unknown, bool anchorHorizontally, int toggleTag, cocos2d::CCArray* toggleArray);
+    GEODE_CODEGEN_DLL static CCMenuItemToggler* createToggleButton(gd::string text, cocos2d::SEL_MenuHandler onToggled, bool isToggled, cocos2d::CCMenu* toggleMenu, cocos2d::CCPoint position, cocos2d::CCNode* callbackTarget, cocos2d::CCNode* labelParent, float checkboxScale, float labelSize, float maxWidth, cocos2d::CCPoint labelOffset, const char* unknown, bool anchorHorizontally, int toggleTag, cocos2d::CCArray* toggleArray);
     #endif
 	GEODE_CODEGEN_DLL static void transformColor(cocos2d::ccColor3B* src, cocos2d::ccColor3B* dest, cocos2d::ccHSVValue hsv);
 
@@ -3071,11 +3096,11 @@ struct GameToolbox {
  private:
     GEODE_CODEGEN_DLL static void _alignItemsHorisontally(cocos2d::CCArray* p0, bool p1, float p2, cocos2d::CCPoint p3);
  public:
-    inline static void alignItemsHorisontally(cocos2d::CCArray* array, bool idk, struct cocos2d::CCPoint start, float pad) {
+    inline static void alignItemsHorisontally(cocos2d::CCArray* array, bool idk, cocos2d::CCPoint start, float pad) {
         return _alignItemsHorisontally(array, idk, pad, start);
     }
     #else
-    GEODE_CODEGEN_DLL static void alignItemsHorisontally(cocos2d::CCArray* array, bool idk, struct cocos2d::CCPoint start, float pad);
+    GEODE_CODEGEN_DLL static void alignItemsHorisontally(cocos2d::CCArray* array, bool idk, cocos2d::CCPoint start, float pad);
     #endif
 };
 
@@ -3092,11 +3117,11 @@ struct SongInfoLayer : FLAlertLayer {
  private:
     GEODE_CODEGEN_DLL static SongInfoLayer* _create(gd::string p0, gd::string p1, gd::string p2, gd::string p3, gd::string p4, gd::string p5);
  public:
-    inline static SongInfoLayer* create(struct gd::string songName, struct gd::string artistName, struct gd::string downloadLink, struct gd::string artistNG, struct gd::string artistYT, struct gd::string artistFB) {
+    inline static SongInfoLayer* create(gd::string songName, gd::string artistName, gd::string downloadLink, gd::string artistNG, gd::string artistYT, gd::string artistFB) {
         return _create(songName, artistName, downloadLink, artistNG, artistYT, artistFB);
     }
     #else
-    GEODE_CODEGEN_DLL static SongInfoLayer* create(struct gd::string songName, struct gd::string artistName, struct gd::string downloadLink, struct gd::string artistNG, struct gd::string artistYT, struct gd::string artistFB);
+    GEODE_CODEGEN_DLL static SongInfoLayer* create(gd::string songName, gd::string artistName, gd::string downloadLink, gd::string artistNG, gd::string artistYT, gd::string artistFB);
     #endif
 	gd::string m_downloadLink;
 	gd::string m_artistNewgrounds;
@@ -3153,11 +3178,11 @@ struct CCTextInputNode : cocos2d::CCLayer, cocos2d::CCIMEDelegate, cocos2d::CCTe
  private:
     GEODE_CODEGEN_DLL void _setAllowedChars(gd::string p0);
  public:
-    inline void setAllowedChars(struct gd::string filter) {
+    inline void setAllowedChars(gd::string filter) {
         return _setAllowedChars(filter);
     }
     #else
-    GEODE_CODEGEN_DLL void setAllowedChars(struct gd::string filter);
+    GEODE_CODEGEN_DLL void setAllowedChars(gd::string filter);
     #endif
 	GEODE_CODEGEN_DLL void forceOffset();
 	GEODE_CODEGEN_DLL void setString(gd::string text);
@@ -3525,6 +3550,14 @@ struct CurrencyRewardLayer {
     }
 };
 
+struct DialogDelegate {
+	GEODE_CODEGEN_DLL virtual void dialogClosed(DialogLayer* p0);
+};
+
+struct CurrencyRewardDelegate {
+	GEODE_CODEGEN_DLL virtual void currencyWillExit(CurrencyRewardLayer* p0);
+};
+
 struct CustomListView : BoomListView {
 	 static CustomListView* create(cocos2d::CCArray* entries, BoomListType type, float width, float height) {
 		return CustomListView::create(entries, width, height, 0, type);
@@ -3592,31 +3625,28 @@ struct DailyLevelPage {
 	GEODE_CODEGEN_DLL static DailyLevelPage* create(bool weekly);
 };
 
-struct DialogDelegate {
-};
-
 struct DialogObject : cocos2d::CCObject {
 
     #ifdef GEODE_IS_WINDOWS
  private:
     GEODE_CODEGEN_DLL static DialogObject* _create(int p0, float p1, bool p2, cocos2d::ccColor3B p3, gd::string p4, gd::string p5);
  public:
-    inline static DialogObject* create(struct gd::string title, struct gd::string text, int portrait, float text_scale, bool is_unskippable, cocos2d::ccColor3B text_color) {
+    inline static DialogObject* create(gd::string title, gd::string text, int portrait, float text_scale, bool is_unskippable, cocos2d::ccColor3B text_color) {
         return _create(portrait, text_scale, is_unskippable, text_color, title, text);
     }
     #else
-    GEODE_CODEGEN_DLL static DialogObject* create(struct gd::string title, struct gd::string text, int portrait, float text_scale, bool is_unskippable, cocos2d::ccColor3B text_color);
+    GEODE_CODEGEN_DLL static DialogObject* create(gd::string title, gd::string text, int portrait, float text_scale, bool is_unskippable, cocos2d::ccColor3B text_color);
     #endif
 
     #ifdef GEODE_IS_WINDOWS
  private:
     GEODE_CODEGEN_DLL bool _init(DialogObject* p0, int p1, float p2, bool p3, cocos2d::ccColor3B p4, gd::string p5, gd::string p6);
  public:
-    inline bool init(DialogObject* p0, struct gd::string title, struct gd::string text, int portrait, float text_scale, bool is_unskippable, cocos2d::ccColor3B text_color) {
+    inline bool init(DialogObject* p0, gd::string title, gd::string text, int portrait, float text_scale, bool is_unskippable, cocos2d::ccColor3B text_color) {
         return _init(p0, portrait, text_scale, is_unskippable, text_color, title, text);
     }
     #else
-    GEODE_CODEGEN_DLL bool init(DialogObject* p0, struct gd::string title, struct gd::string text, int portrait, float text_scale, bool is_unskippable, cocos2d::ccColor3B text_color);
+    GEODE_CODEGEN_DLL bool init(DialogObject* p0, gd::string title, gd::string text, int portrait, float text_scale, bool is_unskippable, cocos2d::ccColor3B text_color);
     #endif
 	gd::string m_text;
 	gd::string m_title;
@@ -3812,11 +3842,11 @@ struct EditorUI : cocos2d::CCLayer, FLAlertLayerProtocol, ColorSelectDelegate, G
  private:
     GEODE_CODEGEN_DLL void _rotateObjects(cocos2d::CCArray* p0, float p1, cocos2d::CCPoint p2);
  public:
-    inline void rotateObjects(cocos2d::CCArray* objects, float angle, struct cocos2d::CCPoint center) {
+    inline void rotateObjects(cocos2d::CCArray* objects, float angle, cocos2d::CCPoint center) {
         return _rotateObjects(objects, angle, center);
     }
     #else
-    GEODE_CODEGEN_DLL void rotateObjects(cocos2d::CCArray* objects, float angle, struct cocos2d::CCPoint center);
+    GEODE_CODEGEN_DLL void rotateObjects(cocos2d::CCArray* objects, float angle, cocos2d::CCPoint center);
     #endif
 	GEODE_CODEGEN_DLL void updateGridNodeSize();
 	GEODE_CODEGEN_DLL void updateSpecialUIElements();
@@ -4080,11 +4110,11 @@ struct FMODAudioEngine : cocos2d::CCNode {
  private:
     GEODE_CODEGEN_DLL void _preloadEffect(gd::string p0);
  public:
-    inline void preloadEffect(struct gd::string filename) {
+    inline void preloadEffect(gd::string filename) {
         return _preloadEffect(filename);
     }
     #else
-    GEODE_CODEGEN_DLL void preloadEffect(struct gd::string filename);
+    GEODE_CODEGEN_DLL void preloadEffect(gd::string filename);
     #endif
 	GEODE_CODEGEN_DLL bool isBackgroundMusicPlaying();
 
@@ -4092,22 +4122,22 @@ struct FMODAudioEngine : cocos2d::CCNode {
  private:
     GEODE_CODEGEN_DLL bool _isBackgroundMusicPlaying(gd::string p0);
  public:
-    inline bool isBackgroundMusicPlaying(struct gd::string path) {
+    inline bool isBackgroundMusicPlaying(gd::string path) {
         return _isBackgroundMusicPlaying(path);
     }
     #else
-    GEODE_CODEGEN_DLL bool isBackgroundMusicPlaying(struct gd::string path);
+    GEODE_CODEGEN_DLL bool isBackgroundMusicPlaying(gd::string path);
     #endif
 
     #ifdef GEODE_IS_WINDOWS
  private:
     GEODE_CODEGEN_DLL void _playBackgroundMusic(bool p0, bool p1, gd::string p2);
  public:
-    inline void playBackgroundMusic(struct gd::string path, bool fade, bool paused) {
+    inline void playBackgroundMusic(gd::string path, bool fade, bool paused) {
         return _playBackgroundMusic(fade, paused, path);
     }
     #else
-    GEODE_CODEGEN_DLL void playBackgroundMusic(struct gd::string path, bool fade, bool paused);
+    GEODE_CODEGEN_DLL void playBackgroundMusic(gd::string path, bool fade, bool paused);
     #endif
 	cocos2d::CCDictionary* m_dictionary;
 	std::string m_filePath;
@@ -4154,11 +4184,14 @@ struct GJAccountManager : cocos2d::CCNode {
 };
 
 struct TriggerEffectDelegate {
+	GEODE_CODEGEN_DLL virtual void toggleGroupTriggered(int p0, bool p1);
+	GEODE_CODEGEN_DLL virtual void spawnGroup(int p0);
 };
 
 struct GJBaseGameLayer : cocos2d::CCLayer, TriggerEffectDelegate {
 	GEODE_CODEGEN_DLL cocos2d::CCLayer* getObjectLayer();
 	GEODE_CODEGEN_DLL cocos2d::CCArray* getAllObjects();
+	GEODE_CODEGEN_DLL static GJBaseGameLayer* get();
 
     template <bool T=false>
      void objectsCollided(int p0, int p1) {
@@ -5003,11 +5036,7 @@ struct GJEffectManager : cocos2d::CCNode {
      void updateOpacityAction(OpacityEffectAction* p0) {
         static_assert(T, "Implement GJEffectManager::updateOpacityAction");
     }
-
-    template <bool T=false>
-     void updateOpacityEffects(float p0) {
-        static_assert(T, "Implement GJEffectManager::updateOpacityEffects");
-    }
+	GEODE_CODEGEN_DLL void updateOpacityEffects(float p0);
 
     template <bool T=false>
      void updatePulseEffects(float p0) {
@@ -5028,7 +5057,7 @@ struct GJEffectManager : cocos2d::CCNode {
      void wouldCreateLoop(InheritanceNode* p0, int p1) {
         static_assert(T, "Implement GJEffectManager::wouldCreateLoop");
     }
-	GJBaseGameLayer* m_gameLayer;
+	TriggerEffectDelegate* m_effectDelegate;
 	cocos2d::CCDictionary* m_colorActions;
 	cocos2d::CCDictionary* m_colorSprites;
 	cocos2d::CCDictionary* m_pulseActionsForGroup;
@@ -5269,16 +5298,8 @@ struct GJGarageLayer : cocos2d::CCLayer, TextInputDelegate, FLAlertLayerProtocol
 		m_tabToggleDeathEffect = nullptr;
 		m_updateSelector = false;
 	}
-
-    template <bool T=false>
-     void onPlayerColor1(cocos2d::CCObject* p0) {
-        static_assert(T, "Implement GJGarageLayer::onPlayerColor1");
-    }
-
-    template <bool T=false>
-     void onPlayerColor2(cocos2d::CCObject* p0) {
-        static_assert(T, "Implement GJGarageLayer::onPlayerColor2");
-    }
+	GEODE_CODEGEN_DLL void onPlayerColor1(cocos2d::CCObject* p0);
+	GEODE_CODEGEN_DLL void onPlayerColor2(cocos2d::CCObject* p0);
 	GEODE_CODEGEN_DLL static GJGarageLayer* create();
 	GEODE_CODEGEN_DLL virtual bool init();
 	GEODE_CODEGEN_DLL void onSelectTab(cocos2d::CCObject* pSender);
@@ -5494,6 +5515,7 @@ struct GameManager : GManager {
 	GEODE_CODEGEN_DLL LevelEditorLayer* getEditorLayer();
 	GEODE_CODEGEN_DLL bool getGameVariableDefault(const char* key, bool defaultValue);
 	GEODE_CODEGEN_DLL int getIntGameVariableDefault(const char* key, int defaultValue);
+	GEODE_CODEGEN_DLL static GameManager* get();
 
     template <bool T=false>
      void accountStatusChanged() {
@@ -5587,11 +5609,9 @@ struct GameManager : GManager {
 	bool m_toFullscreen;
 	bool m_reloading;
 	bool m_unknown0;
-	GEODE_PAD(0x4);
 	cocos2d::CCDictionary* m_valueKeeper;
 	cocos2d::CCDictionary* m_unlockValueKeeper;
 	cocos2d::CCDictionary* m_customObjectDict;
-	GEODE_PAD(0x4);
 	double m_unknownDouble;
 	GEODE_PAD(0x10);
 	double m_unknown2Double;
@@ -5740,7 +5760,7 @@ struct GameStatsManager : cocos2d::CCNode {
      void incrementStat(char const* p0, int p1) {
         static_assert(T, "Implement GameStatsManager::incrementStat");
     }
-	GEODE_CODEGEN_DLL GameStatsManager* sharedState();
+	GEODE_CODEGEN_DLL static GameStatsManager* sharedState();
 
     template <bool T=false>
      void storePendingUserCoin(char const* p0) {
@@ -5812,6 +5832,31 @@ struct HardStreak : cocos2d::CCDrawNode {
     }
 
     template <bool T=false>
+     void clearBehindXPos(float p0) {
+        static_assert(T, "Implement HardStreak::clearBehindXPos");
+    }
+
+    template <bool T=false>
+     static HardStreak* create() {
+        static_assert(T, "Implement HardStreak::create");
+    }
+
+    template <bool T=false>
+     void firstSetup() {
+        static_assert(T, "Implement HardStreak::firstSetup");
+    }
+
+    template <bool T=false>
+     double normalizeAngle(double p0) {
+        static_assert(T, "Implement HardStreak::normalizeAngle");
+    }
+
+    template <bool T=false>
+     cocos2d::CCPoint quadCornerOffset(cocos2d::CCPoint p0, cocos2d::CCPoint p1, float p2) {
+        static_assert(T, "Implement HardStreak::quadCornerOffset");
+    }
+
+    template <bool T=false>
      void reset() {
         static_assert(T, "Implement HardStreak::reset");
     }
@@ -5824,6 +5869,11 @@ struct HardStreak : cocos2d::CCDrawNode {
     template <bool T=false>
      void stopStroke() {
         static_assert(T, "Implement HardStreak::stopStroke");
+    }
+
+    template <bool T=false>
+     void updateStroke(float p0) {
+        static_assert(T, "Implement HardStreak::updateStroke");
     }
 	cocos2d::CCArray* m_pointsArr;
 	cocos2d::CCPoint m_currentPoint;
@@ -6256,6 +6306,8 @@ struct LevelUpdateDelegate {
 struct LevelInfoLayer : cocos2d::CCLayer, LevelDownloadDelegate, LevelUpdateDelegate, RateLevelDelegate, LikeItemDelegate, FLAlertLayerProtocol, LevelDeleteDelegate, NumberInputDelegate, SetIDPopupDelegate {
 	GEODE_CODEGEN_DLL static LevelInfoLayer* create(GJGameLevel* level);
 	GEODE_CODEGEN_DLL void onGarage(cocos2d::CCObject* pSender);
+	GEODE_CODEGEN_DLL void onViewProfile(cocos2d::CCObject* pSender);
+	GEODE_CODEGEN_DLL void onLevelInfo(cocos2d::CCObject* pSender);
 	GEODE_PAD(0x4);
 	cocos2d::CCMenu* m_playBtnMenu;
 	GJGameLevel* m_level;
@@ -6311,9 +6363,20 @@ struct LevelSettingsObject : cocos2d::CCNode {
      void setupColorsFromLegacyMode(cocos2d::CCDictionary* p0) {
         static_assert(T, "Implement LevelSettingsObject::setupColorsFromLegacyMode");
     }
-	GEODE_PAD(0x9);
-	GEODE_PAD(0x10);
-	GEODE_PAD(0x8);
+	GJEffectManager* m_effectManager;
+	int m_startMode;
+	int m_startSpeed;
+	bool m_startMini;
+	bool m_startDual;
+	bool m_twoPlayerMode;
+	float m_songOffset;
+	bool m_fadeIn;
+	bool m_fadeOut;
+	int m_backgroundIndex;
+	int m_groundIndex;
+	int m_fontIndex;
+	GEODE_PAD(0x4);
+	GJGameLevel* m_level;
 	gd::string m_unknownStr;
 };
 
@@ -6370,6 +6433,21 @@ struct SetupSpawnPopup : FLAlertLayer {
      void updateTargetID() {
         static_assert(T, "Implement SetupSpawnPopup::updateTargetID");
     }
+	EffectGameObject* m_selectedObject;
+	cocos2d::CCArray* m_selectedArray;
+	CCTextInputNode* m_delayTextNode;
+	Slider* m_delaySlider;
+	float m_delay;
+	bool m_touchTriggered;
+	bool m_spawnTriggered;
+	CCMenuItemToggler* m_touchTriggeredToggle;
+	CCMenuItemToggler* m_spawnTriggeredToggle;
+	CCTextInputNode* m_targetIDTextNode;
+	int m_targetIDValue;
+	bool m_textUpdateLock;
+	cocos2d::CCArray* m_multiTriggerToggle;
+	bool m_multiTrigger;
+	bool m_editorDisable;
 };
 
 struct LocalLevelManager : cocos2d::CCNode {
@@ -6428,6 +6506,7 @@ struct MenuGameLayer {
 struct MoreOptionsLayer {
 	GEODE_CODEGEN_DLL static MoreOptionsLayer* create();
 	GEODE_CODEGEN_DLL void addToggle(const char* name, const char* key, const char* info);
+	GEODE_CODEGEN_DLL void onKeybindings(cocos2d::CCObject* pSender);
 };
 
 struct ObjectToolbox : cocos2d::CCNode {
@@ -6485,18 +6564,14 @@ struct OptionsLayer : GJDropDownLayer, FLAlertLayerProtocol {
 	GEODE_CODEGEN_DLL static OptionsLayer* create();
 };
 
-struct PlayLayer : GJBaseGameLayer, CCCircleWaveDelegate {
+struct PlayLayer : GJBaseGameLayer, CCCircleWaveDelegate, DialogDelegate {
 	GEODE_CODEGEN_DLL static PlayLayer* get();
 
     template <bool T=false>
      void addCircle(CCCircleWave* p0) {
         static_assert(T, "Implement PlayLayer::addCircle");
     }
-
-    template <bool T=false>
-     void addObject(GameObject* p0) {
-        static_assert(T, "Implement PlayLayer::addObject");
-    }
+	GEODE_CODEGEN_DLL void addObject(GameObject* p0);
 
     template <bool T=false>
      void addToGroupOld(GameObject* p0) {
@@ -7155,26 +7230,28 @@ struct PlayLayer : GJBaseGameLayer, CCCircleWaveDelegate {
         static_assert(T, "Implement PlayLayer::xPosForTime");
     }
 	GEODE_CODEGEN_DLL ~PlayLayer();
-	GEODE_PAD(0x4);
-	bool unk2DC;
+	float unused4c8;
+	bool unused4cc;
 	bool m_hasCheated;
-	int unk2E0;
-	int unk2E4;
-	int unk2E8;
-	bool unk2EC;
-	bool unk2ED;
-	float unk2F0;
-	GEODE_PAD(0x4);
-	cocos2d::CCDrawNode* unk2F8;
-	float unk2FC;
-	float unk300;
-	float unk304;
-	float unk308;
-	float unk30C;
-	bool unk310;
-	bool unk311;
-	bool unk312;
-	GEODE_PAD(0x19);
+	int m_dontSaveRand;
+	int m_dontSaveSeed;
+	int unknown4d8;
+	bool unknown4dc;
+	bool m_shouldSmoothCamera;
+	float unused_4e0;
+	cocos2d::CCObject* unknown4e8;
+	float m_camera4f0;
+	int unused4f4;
+	float m_somegroup4f8;
+	float m_groundRestriction;
+	float m_ceilRestriction;
+	bool unknown504;
+	bool unknown505;
+	float unknown508;
+	float unknown50c;
+	float unknown510;
+	float unknown514;
+	float unknown518;
 	StartPosObject* m_startPos;
 	CheckpointObject* unk330;
 	EndPortalObject* m_endPortal;
@@ -7203,24 +7280,22 @@ struct PlayLayer : GJBaseGameLayer, CCCircleWaveDelegate {
 	cocos2d::CCArray* m_circleWaves;
 	cocos2d::CCArray* unk37C;
 	AudioEffectsLayer* m_audioEffectsLayer;
-	GEODE_PAD(0x8);
+	float unknown5c0;
+	float unknown5c4;
 	GJGroundLayer* m_bottomGround;
 	GJGroundLayer* m_topGround;
 	GEODE_PAD(0x8);
 	bool m_isDead;
-	bool unk39D;
-	bool unk39E;
-	bool unk39F;
-	bool unk3A0;
-	int unk3A4;
-	float unk3A8;
-	bool unk3AC;
-	bool unk3AD;
-	bool unk3AE;
-	bool unk3AF;
-	GEODE_PAD(0x4);
+	bool m_startCameraAtCorner;
+	bool m_cameraYLocked;
+	bool m_cameraXLocked;
+	bool unknown5e4;
+	int m_ballFrameSeed;
+	float unknown5ec;
+	float unknown5f0;
+	float unknown5f4;
 	float m_levelLength;
-	float unk3B8;
+	float m_realLevelLength;
 	cocos2d::CCLabelBMFont* m_attemptLabel;
 	cocos2d::CCLabelBMFont* m_percentLabel;
 	bool m_isCameraShaking;
@@ -7239,11 +7314,10 @@ struct PlayLayer : GJBaseGameLayer, CCCircleWaveDelegate {
 	cocos2d::CCNode* unk400;
 	cocos2d::CCSprite* m_sliderGrooveSprite;
 	cocos2d::CCSprite* m_sliderBarSprite;
-	float m_sliderWidth;
-	float unk410;
-	GEODE_PAD(0x4);
-	int unk418;
-	GEODE_PAD(0x8);
+	cocos2d::CCSize m_sliderSize;
+	void* unknown680;
+	int m_activeGravityEffects;
+	int m_gravityEffectStatus;
 	cocos2d::CCArray* m_gravitySprites;
 	bool unk428;
 	bool m_shouldRecordActions;
@@ -7252,16 +7326,18 @@ struct PlayLayer : GJBaseGameLayer, CCCircleWaveDelegate {
 	bool unk42C;
 	bool m_isPlayer2Frozen;
 	gd::string m_previousRecords;
-	GEODE_PAD(0x8);
+	void* unknown6a8;
 	double m_time;
-	GEODE_PAD(0x8);
+	int unknown6b8;
+	int unknown6bc;
 	bool unk460;
 	bool unk461;
 	cocos2d::CCDictionary* unk464;
 	gd::map<short, bool> unk468;
-	bool m_isPlaybackMode;
-	GameObject* unk474;
-	GEODE_PAD(0x4);
+	bool m_collisionDisabled;
+	bool unknown701;
+	GameObject* m_latestVehicle;
+	GameObject* m_dualObject;
 	bool m_isFlipped;
 	float m_mirrorTransition;
 	UILayer* m_UILayer;
@@ -7317,11 +7393,11 @@ struct PointNode : cocos2d::CCObject {
  private:
     GEODE_CODEGEN_DLL static PointNode* _create(cocos2d::CCPoint p0);
  public:
-    inline static PointNode* create(struct cocos2d::CCPoint point) {
+    inline static PointNode* create(cocos2d::CCPoint point) {
         return _create(point);
     }
     #else
-    GEODE_CODEGEN_DLL static PointNode* create(struct cocos2d::CCPoint point);
+    GEODE_CODEGEN_DLL static PointNode* create(cocos2d::CCPoint point);
     #endif
 	cocos2d::CCPoint m_point;
 };
@@ -7609,10 +7685,10 @@ struct SimplePlayer : cocos2d::CCSprite {
 struct Slider : cocos2d::CCLayer {
 	GEODE_CODEGEN_DLL void setValue(float val);
 	GEODE_CODEGEN_DLL void setBarVisibility(bool v);
-	GEODE_CODEGEN_DLL static Slider* create(cocos2d::CCNode target, cocos2d::SEL_MenuHandler click, float scale);
+	GEODE_CODEGEN_DLL static Slider* create(cocos2d::CCNode* target, cocos2d::SEL_MenuHandler click, float scale);
 	GEODE_CODEGEN_DLL float getValue();
 	GEODE_CODEGEN_DLL void updateBar();
-	GEODE_CODEGEN_DLL static Slider* create(cocos2d::CCNode target, cocos2d::SEL_MenuHandler click, const char* grooveSpr, const char* thumbSpr, const char* thumbSprSel, float scale);
+	GEODE_CODEGEN_DLL static Slider* create(cocos2d::CCNode* target, cocos2d::SEL_MenuHandler click, const char* unused, const char* grooveSpr, const char* thumbSpr, const char* thumbSprSel, float scale);
 	SliderTouchLogic* m_touchLogic;
 	cocos2d::CCSprite* m_sliderBar;
 	cocos2d::CCSprite* m_groove;
@@ -7622,6 +7698,7 @@ struct Slider : cocos2d::CCLayer {
 
 struct SliderThumb : cocos2d::CCMenuItemImage {
 	GEODE_CODEGEN_DLL void setValue(float val);
+	GEODE_CODEGEN_DLL float getValue();
 	float m_length;
 	bool m_vertical;
 };

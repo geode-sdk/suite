@@ -5775,671 +5775,6 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
-struct onArtists {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onArtists<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onArtists))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::onArtists(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onArtists<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onArtists))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::onArtists(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct onSongBrowser {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onSongBrowser<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onSongBrowser))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::onSongBrowser(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onSongBrowser<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onSongBrowser))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::onSongBrowser(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct createWithTexture {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct createWithTexture<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::createWithTexture))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::createWithTexture(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct createWithTexture<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::createWithTexture))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::createWithTexture(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct clear {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct clear<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clear))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::clear(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct clear<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clear))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::clear(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct drawPolygon {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct drawPolygon<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawPolygon))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::drawPolygon(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct drawPolygon<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawPolygon))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::drawPolygon(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct drawSegment {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct drawSegment<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawSegment))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::drawSegment(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct drawSegment<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawSegment))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::drawSegment(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct getBlendFunc {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct getBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getBlendFunc))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::getBlendFunc(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct getBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getBlendFunc))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::getBlendFunc(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct setBlendFunc {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setBlendFunc))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::setBlendFunc(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setBlendFunc))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::setBlendFunc(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct getAlphaThreshold {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct getAlphaThreshold<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getAlphaThreshold))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::getAlphaThreshold(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct getAlphaThreshold<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getAlphaThreshold))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::getAlphaThreshold(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct getStencil {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct getStencil<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getStencil))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::getStencil(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct getStencil<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getStencil))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::getStencil(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct isInverted {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct isInverted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isInverted))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::isInverted(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct isInverted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isInverted))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::isInverted(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct onEnter {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onEnter<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnter))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::onEnter(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onEnter<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnter))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::onEnter(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct onEnterTransitionDidFinish {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onEnterTransitionDidFinish<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnterTransitionDidFinish))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::onEnterTransitionDidFinish(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onEnterTransitionDidFinish<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnterTransitionDidFinish))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::onEnterTransitionDidFinish(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct onExit {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onExit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExit))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::onExit(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onExit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExit))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::onExit(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct onExitTransitionDidStart {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onExitTransitionDidStart<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExitTransitionDidStart))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::onExitTransitionDidStart(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onExitTransitionDidStart<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExitTransitionDidStart))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::onExitTransitionDidStart(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct setAlphaThreshold {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setAlphaThreshold<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setAlphaThreshold))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::setAlphaThreshold(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setAlphaThreshold<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setAlphaThreshold))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::setAlphaThreshold(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct setInverted {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setInverted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setInverted))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::setInverted(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setInverted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setInverted))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::setInverted(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct setStencil {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setStencil<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setStencil))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::setStencil(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setStencil<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setStencil))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::setStencil(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct visit {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct visit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::visit))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::visit(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct visit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::visit))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::visit(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
 struct onTargetIDArrow {
 private:
 	static void wrapper(...) {}
@@ -6957,6 +6292,41 @@ struct onSavedLevels<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::onSavedLevels(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onClose {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onClose<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onClose))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onClose(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onClose<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onClose))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onClose(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -7867,6 +7237,1161 @@ struct setObjectColor<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::setObjectColor(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onArtists {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onArtists<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onArtists))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onArtists(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onArtists<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onArtists))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onArtists(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onSongBrowser {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onSongBrowser<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onSongBrowser))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onSongBrowser(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onSongBrowser<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onSongBrowser))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onSongBrowser(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct createWithTexture {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct createWithTexture<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::createWithTexture))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::createWithTexture(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct createWithTexture<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::createWithTexture))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::createWithTexture(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct sendActionsForControlEvents {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct sendActionsForControlEvents<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sendActionsForControlEvents))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::sendActionsForControlEvents(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct sendActionsForControlEvents<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sendActionsForControlEvents))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::sendActionsForControlEvents(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct setOpacityModifyRGB {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setOpacityModifyRGB<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setOpacityModifyRGB))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::setOpacityModifyRGB(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setOpacityModifyRGB<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setOpacityModifyRGB))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::setOpacityModifyRGB(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onExit {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onExit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExit))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onExit(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onExit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExit))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onExit(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct isTouchInside {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isTouchInside<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isTouchInside))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::isTouchInside(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isTouchInside<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isTouchInside))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::isTouchInside(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct setEnabled {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setEnabled<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setEnabled))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::setEnabled(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setEnabled<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setEnabled))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::setEnabled(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onEnter {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onEnter<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnter))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onEnter(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onEnter<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnter))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onEnter(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct isEnabled {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isEnabled<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isEnabled))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::isEnabled(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isEnabled<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isEnabled))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::isEnabled(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct setSelected {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setSelected<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setSelected))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::setSelected(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setSelected<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setSelected))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::setSelected(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct isOpacityModifyRGB {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isOpacityModifyRGB<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isOpacityModifyRGB))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::isOpacityModifyRGB(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isOpacityModifyRGB<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isOpacityModifyRGB))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::isOpacityModifyRGB(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct setHighlighted {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setHighlighted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setHighlighted))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::setHighlighted(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setHighlighted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setHighlighted))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::setHighlighted(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct needsLayout {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct needsLayout<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::needsLayout))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::needsLayout(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct needsLayout<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::needsLayout))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::needsLayout(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct getTouchLocation {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct getTouchLocation<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getTouchLocation))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::getTouchLocation(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct getTouchLocation<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getTouchLocation))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::getTouchLocation(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct isHighlighted {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isHighlighted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isHighlighted))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::isHighlighted(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isHighlighted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isHighlighted))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::isHighlighted(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct addTargetWithActionForControlEvents {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct addTargetWithActionForControlEvents<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::addTargetWithActionForControlEvents))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::addTargetWithActionForControlEvents(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct addTargetWithActionForControlEvents<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::addTargetWithActionForControlEvents))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::addTargetWithActionForControlEvents(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct removeTargetWithActionForControlEvents {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct removeTargetWithActionForControlEvents<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::removeTargetWithActionForControlEvents))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::removeTargetWithActionForControlEvents(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct removeTargetWithActionForControlEvents<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::removeTargetWithActionForControlEvents))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::removeTargetWithActionForControlEvents(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct isSelected {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isSelected<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isSelected))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::isSelected(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isSelected<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isSelected))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::isSelected(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct clear {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct clear<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clear))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::clear(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct clear<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clear))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::clear(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct drawPolygon {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct drawPolygon<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawPolygon))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::drawPolygon(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct drawPolygon<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawPolygon))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::drawPolygon(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct drawSegment {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct drawSegment<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawSegment))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::drawSegment(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct drawSegment<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawSegment))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::drawSegment(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct getBlendFunc {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct getBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getBlendFunc))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::getBlendFunc(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct getBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getBlendFunc))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::getBlendFunc(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct setBlendFunc {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setBlendFunc))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::setBlendFunc(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setBlendFunc))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::setBlendFunc(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct getAlphaThreshold {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct getAlphaThreshold<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getAlphaThreshold))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::getAlphaThreshold(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct getAlphaThreshold<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getAlphaThreshold))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::getAlphaThreshold(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct getStencil {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct getStencil<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getStencil))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::getStencil(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct getStencil<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getStencil))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::getStencil(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct isInverted {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isInverted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isInverted))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::isInverted(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct isInverted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isInverted))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::isInverted(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onEnterTransitionDidFinish {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onEnterTransitionDidFinish<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnterTransitionDidFinish))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onEnterTransitionDidFinish(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onEnterTransitionDidFinish<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnterTransitionDidFinish))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onEnterTransitionDidFinish(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onExitTransitionDidStart {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onExitTransitionDidStart<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExitTransitionDidStart))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onExitTransitionDidStart(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onExitTransitionDidStart<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExitTransitionDidStart))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onExitTransitionDidStart(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct setAlphaThreshold {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setAlphaThreshold<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setAlphaThreshold))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::setAlphaThreshold(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setAlphaThreshold<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setAlphaThreshold))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::setAlphaThreshold(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct setInverted {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setInverted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setInverted))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::setInverted(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setInverted<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setInverted))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::setInverted(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct setStencil {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setStencil<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setStencil))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::setStencil(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct setStencil<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setStencil))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::setStencil(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct visit {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct visit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::visit))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::visit(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct visit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::visit))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::visit(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -9660,41 +10185,6 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
-struct setEnabled {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setEnabled<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setEnabled))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::setEnabled(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setEnabled<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setEnabled))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::setEnabled(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
 struct getDisabledColor {
 private:
 	static void wrapper(...) {}
@@ -10387,6 +10877,76 @@ struct setupCommentsBrowser<Conv, Derived, Base, Ret(Parameters...), std::enable
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::setupCommentsBrowser(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onMore {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onMore<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMore))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onMore(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onMore<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMore))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onMore(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onLevelInfo {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onLevelInfo<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onLevelInfo))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onLevelInfo(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onLevelInfo<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onLevelInfo))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onLevelInfo(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -12495,76 +13055,6 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
-struct isEnabled {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct isEnabled<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isEnabled))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::isEnabled(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct isEnabled<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isEnabled))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::isEnabled(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct isSelected {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct isSelected<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isSelected))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::isSelected(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct isSelected<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isSelected))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::isSelected(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
 struct rect {
 private:
 	static void wrapper(...) {}
@@ -13265,6 +13755,41 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
+struct initWithNormalSprite {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct initWithNormalSprite<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::initWithNormalSprite))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::initWithNormalSprite(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct initWithNormalSprite<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::initWithNormalSprite))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::initWithNormalSprite(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
 struct reset {
 private:
 	static void wrapper(...) {}
@@ -13362,6 +13887,41 @@ struct stopStroke<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::stopStroke(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct initWithFade {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct initWithFade<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::initWithFade))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::initWithFade(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct initWithFade<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::initWithFade))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::initWithFade(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -16695,76 +17255,6 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
-struct setOpacityModifyRGB {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setOpacityModifyRGB<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setOpacityModifyRGB))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::setOpacityModifyRGB(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct setOpacityModifyRGB<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setOpacityModifyRGB))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::setOpacityModifyRGB(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct isOpacityModifyRGB {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct isOpacityModifyRGB<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isOpacityModifyRGB))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::isOpacityModifyRGB(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct isOpacityModifyRGB<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isOpacityModifyRGB))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::isOpacityModifyRGB(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
 struct initWithTexture {
 private:
 	static void wrapper(...) {}
@@ -18725,6 +19215,41 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
+struct gettimeofdayCocos2d {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct gettimeofdayCocos2d<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::gettimeofdayCocos2d))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::gettimeofdayCocos2d(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct gettimeofdayCocos2d<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::gettimeofdayCocos2d))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::gettimeofdayCocos2d(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
 struct onEdit {
 private:
 	static void wrapper(...) {}
@@ -18970,41 +19495,6 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
-struct sharedManager {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct sharedManager<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sharedManager))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::sharedManager(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct sharedManager<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sharedManager))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::sharedManager(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
 struct stopBackgroundMusic {
 private:
 	static void wrapper(...) {}
@@ -19032,6 +19522,41 @@ struct stopBackgroundMusic<Conv, Derived, Base, Ret(Parameters...), std::enable_
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::stopBackgroundMusic(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct sharedManager {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct sharedManager<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sharedManager))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::sharedManager(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct sharedManager<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sharedManager))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::sharedManager(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -20160,6 +20685,76 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
+struct ccGLBlendFunc {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct ccGLBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::ccGLBlendFunc))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::ccGLBlendFunc(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct ccGLBlendFunc<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::ccGLBlendFunc))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::ccGLBlendFunc(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct ccDrawSolidRect {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct ccDrawSolidRect<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::ccDrawSolidRect))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::ccDrawSolidRect(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct ccDrawSolidRect<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::ccDrawSolidRect))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::ccDrawSolidRect(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
 struct doUnlink {
 private:
 	static void wrapper(...) {}
@@ -20642,41 +21237,6 @@ struct onLogin<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::onLogin(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct onMore {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onMore<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMore))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::onMore(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onMore<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMore))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::onMore(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -21832,6 +22392,391 @@ struct onQuit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::onQuit(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onMyProfile {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onMyProfile<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMyProfile))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onMyProfile(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onMyProfile<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMyProfile))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onMyProfile(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onPlay {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onPlay<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onPlay))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onPlay(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onPlay<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onPlay))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onPlay(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onCreator {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onCreator<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onCreator))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onCreator(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onCreator<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onCreator))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onCreator(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onRobTop {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onRobTop<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onRobTop))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onRobTop(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onRobTop<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onRobTop))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onRobTop(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onDaily {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onDaily<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onDaily))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onDaily(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onDaily<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onDaily))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onDaily(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onOptions {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onOptions<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onOptions))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onOptions(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onOptions<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onOptions))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onOptions(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onAchievements {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onAchievements<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onAchievements))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onAchievements(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onAchievements<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onAchievements))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onAchievements(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onStats {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onStats<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onStats))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onStats(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onStats<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onStats))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onStats(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onFacebook {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onFacebook<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onFacebook))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onFacebook(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onFacebook<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onFacebook))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onFacebook(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onTwitter {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onTwitter<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onTwitter))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onTwitter(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onTwitter<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onTwitter))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onTwitter(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onYouTube {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onYouTube<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onYouTube))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onYouTube(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onYouTube<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onYouTube))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onYouTube(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -24352,6 +25297,76 @@ struct fadeInTextFinished<Conv, Derived, Base, Ret(Parameters...), std::enable_i
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::fadeInTextFinished(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct dialogClosed {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct dialogClosed<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::dialogClosed))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::dialogClosed(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct dialogClosed<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::dialogClosed))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::dialogClosed(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct currencyWillExit {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct currencyWillExit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::currencyWillExit))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::currencyWillExit(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct currencyWillExit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::currencyWillExit))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::currencyWillExit(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -39970,7 +40985,7 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
-struct onClose {
+struct clearBehindXPos {
 private:
 	static void wrapper(...) {}
 public:
@@ -39978,12 +40993,12 @@ public:
 };
 
 template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onClose<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onClose))>
+struct clearBehindXPos<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clearBehindXPos))>
 >> {
 private:
 	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::onClose(ps...);
+		return self->Derived::clearBehindXPos(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Derived*, Parameters...>;
@@ -39991,12 +41006,152 @@ public:
 };
 
 template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct onClose<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onClose))>
+struct clearBehindXPos<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clearBehindXPos))>
 >> {
 private:
 	static Ret wrapper(Parameters... ps) {
-		return Derived::onClose(ps...);
+		return Derived::clearBehindXPos(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct firstSetup {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct firstSetup<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::firstSetup))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::firstSetup(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct firstSetup<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::firstSetup))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::firstSetup(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct normalizeAngle {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct normalizeAngle<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::normalizeAngle))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::normalizeAngle(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct normalizeAngle<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::normalizeAngle))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::normalizeAngle(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct quadCornerOffset {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct quadCornerOffset<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::quadCornerOffset))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::quadCornerOffset(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct quadCornerOffset<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::quadCornerOffset))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::quadCornerOffset(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct updateStroke {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct updateStroke<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::updateStroke))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::updateStroke(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct updateStroke<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::updateStroke))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::updateStroke(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -40102,6 +41257,76 @@ struct goToPage<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::goToPage(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct downloadFinished {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct downloadFinished<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::downloadFinished))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::downloadFinished(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct downloadFinished<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::downloadFinished))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::downloadFinished(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct downloadFailed {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct downloadFailed<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::downloadFailed))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::downloadFailed(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct downloadFailed<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::downloadFailed))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::downloadFailed(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -41930,6 +43155,41 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
+struct onViewProfile {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onViewProfile<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onViewProfile))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onViewProfile(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onViewProfile<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onViewProfile))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onViewProfile(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
 struct objectFromDict {
 private:
 	static void wrapper(...) {}
@@ -42307,6 +43567,41 @@ struct addToggle<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::addToggle(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+
+template <template <class, class...> class, class, class, class, class = void>
+struct onKeybindings {
+private:
+	static void wrapper(...) {}
+public:
+	constexpr static inline auto value = &wrapper;
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onKeybindings<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onKeybindings))>
+>> {
+private:
+	static Ret wrapper(Derived* self, Parameters... ps) {
+		return self->Derived::onKeybindings(ps...);
+	}
+public:
+	using MyConv = Conv<Ret, Derived*, Parameters...>;
+	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
+};
+
+template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
+struct onKeybindings<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
+	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onKeybindings))>
+>> {
+private:
+	static Ret wrapper(Parameters... ps) {
+		return Derived::onKeybindings(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;
@@ -43085,41 +44380,6 @@ public:
 
 
 template <template <class, class...> class, class, class, class, class = void>
-struct currencyWillExit {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct currencyWillExit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::currencyWillExit))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::currencyWillExit(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct currencyWillExit<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::currencyWillExit))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::currencyWillExit(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
 struct delayedResetLevel {
 private:
 	static void wrapper(...) {}
@@ -43182,41 +44442,6 @@ struct destroyPlayer<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
 private:
 	static Ret wrapper(Parameters... ps) {
 		return Derived::destroyPlayer(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-
-template <template <class, class...> class, class, class, class, class = void>
-struct dialogClosed {
-private:
-	static void wrapper(...) {}
-public:
-	constexpr static inline auto value = &wrapper;
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct dialogClosed<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	std::is_member_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::dialogClosed))>
->> {
-private:
-	static Ret wrapper(Derived* self, Parameters... ps) {
-		return self->Derived::dialogClosed(ps...);
-	}
-public:
-	using MyConv = Conv<Ret, Derived*, Parameters...>;
-	constexpr static inline auto value = MyConv::template get_wrapper<&wrapper>();
-};
-
-template <template <class, class...> class Conv, class Derived, class Base, class Ret, class ...Parameters>
-struct dialogClosed<Conv, Derived, Base, Ret(Parameters...), std::enable_if_t<
-	is_function_pointer_v<decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::dialogClosed))>
->> {
-private:
-	static Ret wrapper(Parameters... ps) {
-		return Derived::dialogClosed(ps...);
 	}
 public:
 	using MyConv = Conv<Ret, Parameters...>;

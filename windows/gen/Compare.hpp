@@ -3300,386 +3300,6 @@ public:
 
 
 template <class, class, class, class = void>
-struct onArtists {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct onArtists<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onArtists)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onArtists))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onArtists));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onArtists));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::onArtists>::value != 
-		function_uuid<(base_type)&Base::onArtists>::value;
-};
-
-
-template <class, class, class, class = void>
-struct onSongBrowser {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct onSongBrowser<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onSongBrowser)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onSongBrowser))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onSongBrowser));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onSongBrowser));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::onSongBrowser>::value != 
-		function_uuid<(base_type)&Base::onSongBrowser>::value;
-};
-
-
-template <class, class, class, class = void>
-struct createWithTexture {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct createWithTexture<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::createWithTexture)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::createWithTexture))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::createWithTexture));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::createWithTexture));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::createWithTexture>::value != 
-		function_uuid<(base_type)&Base::createWithTexture>::value;
-};
-
-
-template <class, class, class, class = void>
-struct clear {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct clear<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::clear)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clear))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::clear));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clear));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::clear>::value != 
-		function_uuid<(base_type)&Base::clear>::value;
-};
-
-
-template <class, class, class, class = void>
-struct drawPolygon {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct drawPolygon<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::drawPolygon)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawPolygon))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::drawPolygon));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawPolygon));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::drawPolygon>::value != 
-		function_uuid<(base_type)&Base::drawPolygon>::value;
-};
-
-
-template <class, class, class, class = void>
-struct drawSegment {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct drawSegment<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::drawSegment)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawSegment))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::drawSegment));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawSegment));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::drawSegment>::value != 
-		function_uuid<(base_type)&Base::drawSegment>::value;
-};
-
-
-template <class, class, class, class = void>
-struct getBlendFunc {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct getBlendFunc<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getBlendFunc)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getBlendFunc))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getBlendFunc));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getBlendFunc));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::getBlendFunc>::value != 
-		function_uuid<(base_type)&Base::getBlendFunc>::value;
-};
-
-
-template <class, class, class, class = void>
-struct setBlendFunc {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct setBlendFunc<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setBlendFunc)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setBlendFunc))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setBlendFunc));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setBlendFunc));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::setBlendFunc>::value != 
-		function_uuid<(base_type)&Base::setBlendFunc>::value;
-};
-
-
-template <class, class, class, class = void>
-struct getAlphaThreshold {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct getAlphaThreshold<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getAlphaThreshold)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getAlphaThreshold))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getAlphaThreshold));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getAlphaThreshold));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::getAlphaThreshold>::value != 
-		function_uuid<(base_type)&Base::getAlphaThreshold>::value;
-};
-
-
-template <class, class, class, class = void>
-struct getStencil {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct getStencil<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getStencil)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getStencil))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getStencil));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getStencil));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::getStencil>::value != 
-		function_uuid<(base_type)&Base::getStencil>::value;
-};
-
-
-template <class, class, class, class = void>
-struct isInverted {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct isInverted<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isInverted)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isInverted))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isInverted));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isInverted));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::isInverted>::value != 
-		function_uuid<(base_type)&Base::isInverted>::value;
-};
-
-
-template <class, class, class, class = void>
-struct onEnter {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct onEnter<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onEnter)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnter))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onEnter));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnter));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::onEnter>::value != 
-		function_uuid<(base_type)&Base::onEnter>::value;
-};
-
-
-template <class, class, class, class = void>
-struct onEnterTransitionDidFinish {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct onEnterTransitionDidFinish<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onEnterTransitionDidFinish)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnterTransitionDidFinish))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onEnterTransitionDidFinish));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnterTransitionDidFinish));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::onEnterTransitionDidFinish>::value != 
-		function_uuid<(base_type)&Base::onEnterTransitionDidFinish>::value;
-};
-
-
-template <class, class, class, class = void>
-struct onExit {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct onExit<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onExit)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExit))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onExit));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExit));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::onExit>::value != 
-		function_uuid<(base_type)&Base::onExit>::value;
-};
-
-
-template <class, class, class, class = void>
-struct onExitTransitionDidStart {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct onExitTransitionDidStart<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onExitTransitionDidStart)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExitTransitionDidStart))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onExitTransitionDidStart));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExitTransitionDidStart));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::onExitTransitionDidStart>::value != 
-		function_uuid<(base_type)&Base::onExitTransitionDidStart>::value;
-};
-
-
-template <class, class, class, class = void>
-struct setAlphaThreshold {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct setAlphaThreshold<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setAlphaThreshold)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setAlphaThreshold))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setAlphaThreshold));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setAlphaThreshold));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::setAlphaThreshold>::value != 
-		function_uuid<(base_type)&Base::setAlphaThreshold>::value;
-};
-
-
-template <class, class, class, class = void>
-struct setInverted {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct setInverted<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setInverted)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setInverted))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setInverted));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setInverted));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::setInverted>::value != 
-		function_uuid<(base_type)&Base::setInverted>::value;
-};
-
-
-template <class, class, class, class = void>
-struct setStencil {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct setStencil<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setStencil)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setStencil))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setStencil));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setStencil));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::setStencil>::value != 
-		function_uuid<(base_type)&Base::setStencil>::value;
-};
-
-
-template <class, class, class, class = void>
-struct visit {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct visit<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::visit)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::visit))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::visit));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::visit));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::visit>::value != 
-		function_uuid<(base_type)&Base::visit>::value;
-};
-
-
-template <class, class, class, class = void>
 struct onTargetIDArrow {
 	constexpr static inline bool value = false;
 };
@@ -3976,6 +3596,26 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::onSavedLevels>::value != 
 		function_uuid<(base_type)&Base::onSavedLevels>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onClose {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onClose<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onClose)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onClose))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onClose));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onClose));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onClose>::value != 
+		function_uuid<(base_type)&Base::onClose>::value;
 };
 
 
@@ -4496,6 +4136,666 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::setObjectColor>::value != 
 		function_uuid<(base_type)&Base::setObjectColor>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onArtists {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onArtists<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onArtists)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onArtists))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onArtists));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onArtists));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onArtists>::value != 
+		function_uuid<(base_type)&Base::onArtists>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onSongBrowser {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onSongBrowser<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onSongBrowser)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onSongBrowser))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onSongBrowser));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onSongBrowser));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onSongBrowser>::value != 
+		function_uuid<(base_type)&Base::onSongBrowser>::value;
+};
+
+
+template <class, class, class, class = void>
+struct createWithTexture {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct createWithTexture<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::createWithTexture)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::createWithTexture))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::createWithTexture));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::createWithTexture));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::createWithTexture>::value != 
+		function_uuid<(base_type)&Base::createWithTexture>::value;
+};
+
+
+template <class, class, class, class = void>
+struct sendActionsForControlEvents {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct sendActionsForControlEvents<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::sendActionsForControlEvents)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sendActionsForControlEvents))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::sendActionsForControlEvents));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sendActionsForControlEvents));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::sendActionsForControlEvents>::value != 
+		function_uuid<(base_type)&Base::sendActionsForControlEvents>::value;
+};
+
+
+template <class, class, class, class = void>
+struct setOpacityModifyRGB {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct setOpacityModifyRGB<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setOpacityModifyRGB)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setOpacityModifyRGB))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setOpacityModifyRGB));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setOpacityModifyRGB));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::setOpacityModifyRGB>::value != 
+		function_uuid<(base_type)&Base::setOpacityModifyRGB>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onExit {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onExit<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onExit)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExit))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onExit));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExit));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onExit>::value != 
+		function_uuid<(base_type)&Base::onExit>::value;
+};
+
+
+template <class, class, class, class = void>
+struct isTouchInside {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct isTouchInside<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isTouchInside)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isTouchInside))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isTouchInside));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isTouchInside));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::isTouchInside>::value != 
+		function_uuid<(base_type)&Base::isTouchInside>::value;
+};
+
+
+template <class, class, class, class = void>
+struct setEnabled {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct setEnabled<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setEnabled)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setEnabled))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setEnabled));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setEnabled));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::setEnabled>::value != 
+		function_uuid<(base_type)&Base::setEnabled>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onEnter {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onEnter<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onEnter)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnter))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onEnter));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnter));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onEnter>::value != 
+		function_uuid<(base_type)&Base::onEnter>::value;
+};
+
+
+template <class, class, class, class = void>
+struct isEnabled {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct isEnabled<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isEnabled)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isEnabled))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isEnabled));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isEnabled));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::isEnabled>::value != 
+		function_uuid<(base_type)&Base::isEnabled>::value;
+};
+
+
+template <class, class, class, class = void>
+struct setSelected {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct setSelected<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setSelected)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setSelected))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setSelected));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setSelected));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::setSelected>::value != 
+		function_uuid<(base_type)&Base::setSelected>::value;
+};
+
+
+template <class, class, class, class = void>
+struct isOpacityModifyRGB {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct isOpacityModifyRGB<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isOpacityModifyRGB)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isOpacityModifyRGB))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isOpacityModifyRGB));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isOpacityModifyRGB));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::isOpacityModifyRGB>::value != 
+		function_uuid<(base_type)&Base::isOpacityModifyRGB>::value;
+};
+
+
+template <class, class, class, class = void>
+struct setHighlighted {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct setHighlighted<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setHighlighted)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setHighlighted))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setHighlighted));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setHighlighted));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::setHighlighted>::value != 
+		function_uuid<(base_type)&Base::setHighlighted>::value;
+};
+
+
+template <class, class, class, class = void>
+struct needsLayout {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct needsLayout<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::needsLayout)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::needsLayout))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::needsLayout));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::needsLayout));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::needsLayout>::value != 
+		function_uuid<(base_type)&Base::needsLayout>::value;
+};
+
+
+template <class, class, class, class = void>
+struct getTouchLocation {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct getTouchLocation<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getTouchLocation)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getTouchLocation))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getTouchLocation));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getTouchLocation));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::getTouchLocation>::value != 
+		function_uuid<(base_type)&Base::getTouchLocation>::value;
+};
+
+
+template <class, class, class, class = void>
+struct isHighlighted {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct isHighlighted<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isHighlighted)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isHighlighted))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isHighlighted));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isHighlighted));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::isHighlighted>::value != 
+		function_uuid<(base_type)&Base::isHighlighted>::value;
+};
+
+
+template <class, class, class, class = void>
+struct addTargetWithActionForControlEvents {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct addTargetWithActionForControlEvents<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::addTargetWithActionForControlEvents)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::addTargetWithActionForControlEvents))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::addTargetWithActionForControlEvents));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::addTargetWithActionForControlEvents));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::addTargetWithActionForControlEvents>::value != 
+		function_uuid<(base_type)&Base::addTargetWithActionForControlEvents>::value;
+};
+
+
+template <class, class, class, class = void>
+struct removeTargetWithActionForControlEvents {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct removeTargetWithActionForControlEvents<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::removeTargetWithActionForControlEvents)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::removeTargetWithActionForControlEvents))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::removeTargetWithActionForControlEvents));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::removeTargetWithActionForControlEvents));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::removeTargetWithActionForControlEvents>::value != 
+		function_uuid<(base_type)&Base::removeTargetWithActionForControlEvents>::value;
+};
+
+
+template <class, class, class, class = void>
+struct isSelected {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct isSelected<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isSelected)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isSelected))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isSelected));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isSelected));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::isSelected>::value != 
+		function_uuid<(base_type)&Base::isSelected>::value;
+};
+
+
+template <class, class, class, class = void>
+struct clear {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct clear<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::clear)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clear))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::clear));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clear));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::clear>::value != 
+		function_uuid<(base_type)&Base::clear>::value;
+};
+
+
+template <class, class, class, class = void>
+struct drawPolygon {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct drawPolygon<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::drawPolygon)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawPolygon))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::drawPolygon));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawPolygon));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::drawPolygon>::value != 
+		function_uuid<(base_type)&Base::drawPolygon>::value;
+};
+
+
+template <class, class, class, class = void>
+struct drawSegment {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct drawSegment<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::drawSegment)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawSegment))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::drawSegment));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::drawSegment));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::drawSegment>::value != 
+		function_uuid<(base_type)&Base::drawSegment>::value;
+};
+
+
+template <class, class, class, class = void>
+struct getBlendFunc {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct getBlendFunc<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getBlendFunc)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getBlendFunc))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getBlendFunc));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getBlendFunc));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::getBlendFunc>::value != 
+		function_uuid<(base_type)&Base::getBlendFunc>::value;
+};
+
+
+template <class, class, class, class = void>
+struct setBlendFunc {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct setBlendFunc<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setBlendFunc)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setBlendFunc))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setBlendFunc));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setBlendFunc));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::setBlendFunc>::value != 
+		function_uuid<(base_type)&Base::setBlendFunc>::value;
+};
+
+
+template <class, class, class, class = void>
+struct getAlphaThreshold {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct getAlphaThreshold<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getAlphaThreshold)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getAlphaThreshold))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getAlphaThreshold));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getAlphaThreshold));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::getAlphaThreshold>::value != 
+		function_uuid<(base_type)&Base::getAlphaThreshold>::value;
+};
+
+
+template <class, class, class, class = void>
+struct getStencil {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct getStencil<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getStencil)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getStencil))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::getStencil));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::getStencil));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::getStencil>::value != 
+		function_uuid<(base_type)&Base::getStencil>::value;
+};
+
+
+template <class, class, class, class = void>
+struct isInverted {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct isInverted<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isInverted)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isInverted))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isInverted));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isInverted));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::isInverted>::value != 
+		function_uuid<(base_type)&Base::isInverted>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onEnterTransitionDidFinish {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onEnterTransitionDidFinish<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onEnterTransitionDidFinish)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnterTransitionDidFinish))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onEnterTransitionDidFinish));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onEnterTransitionDidFinish));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onEnterTransitionDidFinish>::value != 
+		function_uuid<(base_type)&Base::onEnterTransitionDidFinish>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onExitTransitionDidStart {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onExitTransitionDidStart<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onExitTransitionDidStart)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExitTransitionDidStart))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onExitTransitionDidStart));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onExitTransitionDidStart));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onExitTransitionDidStart>::value != 
+		function_uuid<(base_type)&Base::onExitTransitionDidStart>::value;
+};
+
+
+template <class, class, class, class = void>
+struct setAlphaThreshold {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct setAlphaThreshold<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setAlphaThreshold)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setAlphaThreshold))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setAlphaThreshold));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setAlphaThreshold));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::setAlphaThreshold>::value != 
+		function_uuid<(base_type)&Base::setAlphaThreshold>::value;
+};
+
+
+template <class, class, class, class = void>
+struct setInverted {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct setInverted<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setInverted)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setInverted))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setInverted));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setInverted));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::setInverted>::value != 
+		function_uuid<(base_type)&Base::setInverted>::value;
+};
+
+
+template <class, class, class, class = void>
+struct setStencil {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct setStencil<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setStencil)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setStencil))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setStencil));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setStencil));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::setStencil>::value != 
+		function_uuid<(base_type)&Base::setStencil>::value;
+};
+
+
+template <class, class, class, class = void>
+struct visit {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct visit<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::visit)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::visit))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::visit));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::visit));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::visit>::value != 
+		function_uuid<(base_type)&Base::visit>::value;
 };
 
 
@@ -5520,26 +5820,6 @@ public:
 
 
 template <class, class, class, class = void>
-struct setEnabled {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct setEnabled<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setEnabled)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setEnabled))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setEnabled));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setEnabled));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::setEnabled>::value != 
-		function_uuid<(base_type)&Base::setEnabled>::value;
-};
-
-
-template <class, class, class, class = void>
 struct getDisabledColor {
 	constexpr static inline bool value = false;
 };
@@ -5936,6 +6216,46 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::setupCommentsBrowser>::value != 
 		function_uuid<(base_type)&Base::setupCommentsBrowser>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onMore {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onMore<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onMore)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMore))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onMore));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMore));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onMore>::value != 
+		function_uuid<(base_type)&Base::onMore>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onLevelInfo {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onLevelInfo<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onLevelInfo)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onLevelInfo))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onLevelInfo));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onLevelInfo));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onLevelInfo>::value != 
+		function_uuid<(base_type)&Base::onLevelInfo>::value;
 };
 
 
@@ -7140,46 +7460,6 @@ public:
 
 
 template <class, class, class, class = void>
-struct isEnabled {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct isEnabled<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isEnabled)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isEnabled))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isEnabled));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isEnabled));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::isEnabled>::value != 
-		function_uuid<(base_type)&Base::isEnabled>::value;
-};
-
-
-template <class, class, class, class = void>
-struct isSelected {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct isSelected<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isSelected)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isSelected))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isSelected));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isSelected));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::isSelected>::value != 
-		function_uuid<(base_type)&Base::isSelected>::value;
-};
-
-
-template <class, class, class, class = void>
 struct rect {
 	constexpr static inline bool value = false;
 };
@@ -7580,6 +7860,26 @@ public:
 
 
 template <class, class, class, class = void>
+struct initWithNormalSprite {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct initWithNormalSprite<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::initWithNormalSprite)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::initWithNormalSprite))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::initWithNormalSprite));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::initWithNormalSprite));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::initWithNormalSprite>::value != 
+		function_uuid<(base_type)&Base::initWithNormalSprite>::value;
+};
+
+
+template <class, class, class, class = void>
 struct reset {
 	constexpr static inline bool value = false;
 };
@@ -7636,6 +7936,26 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::stopStroke>::value != 
 		function_uuid<(base_type)&Base::stopStroke>::value;
+};
+
+
+template <class, class, class, class = void>
+struct initWithFade {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct initWithFade<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::initWithFade)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::initWithFade))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::initWithFade));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::initWithFade));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::initWithFade>::value != 
+		function_uuid<(base_type)&Base::initWithFade>::value;
 };
 
 
@@ -9540,46 +9860,6 @@ public:
 
 
 template <class, class, class, class = void>
-struct setOpacityModifyRGB {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct setOpacityModifyRGB<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setOpacityModifyRGB)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setOpacityModifyRGB))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::setOpacityModifyRGB));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::setOpacityModifyRGB));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::setOpacityModifyRGB>::value != 
-		function_uuid<(base_type)&Base::setOpacityModifyRGB>::value;
-};
-
-
-template <class, class, class, class = void>
-struct isOpacityModifyRGB {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct isOpacityModifyRGB<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isOpacityModifyRGB)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isOpacityModifyRGB))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::isOpacityModifyRGB));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::isOpacityModifyRGB));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::isOpacityModifyRGB>::value != 
-		function_uuid<(base_type)&Base::isOpacityModifyRGB>::value;
-};
-
-
-template <class, class, class, class = void>
 struct initWithTexture {
 	constexpr static inline bool value = false;
 };
@@ -10700,6 +10980,26 @@ public:
 
 
 template <class, class, class, class = void>
+struct gettimeofdayCocos2d {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct gettimeofdayCocos2d<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::gettimeofdayCocos2d)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::gettimeofdayCocos2d))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::gettimeofdayCocos2d));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::gettimeofdayCocos2d));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::gettimeofdayCocos2d>::value != 
+		function_uuid<(base_type)&Base::gettimeofdayCocos2d>::value;
+};
+
+
+template <class, class, class, class = void>
 struct onEdit {
 	constexpr static inline bool value = false;
 };
@@ -10840,26 +11140,6 @@ public:
 
 
 template <class, class, class, class = void>
-struct sharedManager {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct sharedManager<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::sharedManager)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sharedManager))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::sharedManager));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sharedManager));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::sharedManager>::value != 
-		function_uuid<(base_type)&Base::sharedManager>::value;
-};
-
-
-template <class, class, class, class = void>
 struct stopBackgroundMusic {
 	constexpr static inline bool value = false;
 };
@@ -10876,6 +11156,26 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::stopBackgroundMusic>::value != 
 		function_uuid<(base_type)&Base::stopBackgroundMusic>::value;
+};
+
+
+template <class, class, class, class = void>
+struct sharedManager {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct sharedManager<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::sharedManager)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sharedManager))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::sharedManager));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::sharedManager));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::sharedManager>::value != 
+		function_uuid<(base_type)&Base::sharedManager>::value;
 };
 
 
@@ -11520,6 +11820,46 @@ public:
 
 
 template <class, class, class, class = void>
+struct ccGLBlendFunc {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct ccGLBlendFunc<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::ccGLBlendFunc)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::ccGLBlendFunc))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::ccGLBlendFunc));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::ccGLBlendFunc));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::ccGLBlendFunc>::value != 
+		function_uuid<(base_type)&Base::ccGLBlendFunc>::value;
+};
+
+
+template <class, class, class, class = void>
+struct ccDrawSolidRect {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct ccDrawSolidRect<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::ccDrawSolidRect)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::ccDrawSolidRect))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::ccDrawSolidRect));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::ccDrawSolidRect));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::ccDrawSolidRect>::value != 
+		function_uuid<(base_type)&Base::ccDrawSolidRect>::value;
+};
+
+
+template <class, class, class, class = void>
 struct doUnlink {
 	constexpr static inline bool value = false;
 };
@@ -11796,26 +12136,6 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::onLogin>::value != 
 		function_uuid<(base_type)&Base::onLogin>::value;
-};
-
-
-template <class, class, class, class = void>
-struct onMore {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct onMore<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onMore)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMore))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onMore));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMore));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::onMore>::value != 
-		function_uuid<(base_type)&Base::onMore>::value;
 };
 
 
@@ -12476,6 +12796,226 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::onQuit>::value != 
 		function_uuid<(base_type)&Base::onQuit>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onMyProfile {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onMyProfile<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onMyProfile)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMyProfile))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onMyProfile));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onMyProfile));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onMyProfile>::value != 
+		function_uuid<(base_type)&Base::onMyProfile>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onPlay {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onPlay<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onPlay)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onPlay))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onPlay));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onPlay));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onPlay>::value != 
+		function_uuid<(base_type)&Base::onPlay>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onCreator {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onCreator<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onCreator)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onCreator))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onCreator));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onCreator));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onCreator>::value != 
+		function_uuid<(base_type)&Base::onCreator>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onRobTop {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onRobTop<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onRobTop)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onRobTop))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onRobTop));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onRobTop));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onRobTop>::value != 
+		function_uuid<(base_type)&Base::onRobTop>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onDaily {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onDaily<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onDaily)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onDaily))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onDaily));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onDaily));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onDaily>::value != 
+		function_uuid<(base_type)&Base::onDaily>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onOptions {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onOptions<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onOptions)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onOptions))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onOptions));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onOptions));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onOptions>::value != 
+		function_uuid<(base_type)&Base::onOptions>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onAchievements {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onAchievements<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onAchievements)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onAchievements))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onAchievements));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onAchievements));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onAchievements>::value != 
+		function_uuid<(base_type)&Base::onAchievements>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onStats {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onStats<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onStats)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onStats))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onStats));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onStats));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onStats>::value != 
+		function_uuid<(base_type)&Base::onStats>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onFacebook {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onFacebook<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onFacebook)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onFacebook))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onFacebook));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onFacebook));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onFacebook>::value != 
+		function_uuid<(base_type)&Base::onFacebook>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onTwitter {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onTwitter<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onTwitter)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onTwitter))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onTwitter));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onTwitter));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onTwitter>::value != 
+		function_uuid<(base_type)&Base::onTwitter>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onYouTube {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onYouTube<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onYouTube)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onYouTube))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onYouTube));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onYouTube));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onYouTube>::value != 
+		function_uuid<(base_type)&Base::onYouTube>::value;
 };
 
 
@@ -13916,6 +14456,46 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::fadeInTextFinished>::value != 
 		function_uuid<(base_type)&Base::fadeInTextFinished>::value;
+};
+
+
+template <class, class, class, class = void>
+struct dialogClosed {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct dialogClosed<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::dialogClosed)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::dialogClosed))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::dialogClosed));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::dialogClosed));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::dialogClosed>::value != 
+		function_uuid<(base_type)&Base::dialogClosed>::value;
+};
+
+
+template <class, class, class, class = void>
+struct currencyWillExit {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct currencyWillExit<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::currencyWillExit)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::currencyWillExit))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::currencyWillExit));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::currencyWillExit));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::currencyWillExit>::value != 
+		function_uuid<(base_type)&Base::currencyWillExit>::value;
 };
 
 
@@ -22840,22 +23420,102 @@ public:
 
 
 template <class, class, class, class = void>
-struct onClose {
+struct clearBehindXPos {
 	constexpr static inline bool value = false;
 };
 
 template <class Derived, class Base, class Ret, class ...Parameters>
-struct onClose<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onClose)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onClose))
+struct clearBehindXPos<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::clearBehindXPos)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clearBehindXPos))
 >> {
 private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onClose));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onClose));   
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::clearBehindXPos));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::clearBehindXPos));   
 public:
 	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::onClose>::value != 
-		function_uuid<(base_type)&Base::onClose>::value;
+		function_uuid<(derived_type)&Derived::clearBehindXPos>::value != 
+		function_uuid<(base_type)&Base::clearBehindXPos>::value;
+};
+
+
+template <class, class, class, class = void>
+struct firstSetup {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct firstSetup<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::firstSetup)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::firstSetup))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::firstSetup));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::firstSetup));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::firstSetup>::value != 
+		function_uuid<(base_type)&Base::firstSetup>::value;
+};
+
+
+template <class, class, class, class = void>
+struct normalizeAngle {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct normalizeAngle<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::normalizeAngle)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::normalizeAngle))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::normalizeAngle));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::normalizeAngle));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::normalizeAngle>::value != 
+		function_uuid<(base_type)&Base::normalizeAngle>::value;
+};
+
+
+template <class, class, class, class = void>
+struct quadCornerOffset {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct quadCornerOffset<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::quadCornerOffset)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::quadCornerOffset))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::quadCornerOffset));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::quadCornerOffset));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::quadCornerOffset>::value != 
+		function_uuid<(base_type)&Base::quadCornerOffset>::value;
+};
+
+
+template <class, class, class, class = void>
+struct updateStroke {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct updateStroke<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::updateStroke)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::updateStroke))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::updateStroke));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::updateStroke));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::updateStroke>::value != 
+		function_uuid<(base_type)&Base::updateStroke>::value;
 };
 
 
@@ -22916,6 +23576,46 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::goToPage>::value != 
 		function_uuid<(base_type)&Base::goToPage>::value;
+};
+
+
+template <class, class, class, class = void>
+struct downloadFinished {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct downloadFinished<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::downloadFinished)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::downloadFinished))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::downloadFinished));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::downloadFinished));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::downloadFinished>::value != 
+		function_uuid<(base_type)&Base::downloadFinished>::value;
+};
+
+
+template <class, class, class, class = void>
+struct downloadFailed {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct downloadFailed<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::downloadFailed)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::downloadFailed))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::downloadFailed));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::downloadFailed));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::downloadFailed>::value != 
+		function_uuid<(base_type)&Base::downloadFailed>::value;
 };
 
 
@@ -23960,6 +24660,26 @@ public:
 
 
 template <class, class, class, class = void>
+struct onViewProfile {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onViewProfile<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onViewProfile)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onViewProfile))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onViewProfile));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onViewProfile));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onViewProfile>::value != 
+		function_uuid<(base_type)&Base::onViewProfile>::value;
+};
+
+
+template <class, class, class, class = void>
 struct objectFromDict {
 	constexpr static inline bool value = false;
 };
@@ -24176,6 +24896,26 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::addToggle>::value != 
 		function_uuid<(base_type)&Base::addToggle>::value;
+};
+
+
+template <class, class, class, class = void>
+struct onKeybindings {
+	constexpr static inline bool value = false;
+};
+
+template <class Derived, class Base, class Ret, class ...Parameters>
+struct onKeybindings<Derived, Base, Ret(Parameters...), std::void_t<
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onKeybindings)),
+	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onKeybindings))
+>> {
+private:
+	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::onKeybindings));         
+	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::onKeybindings));   
+public:
+	constexpr static inline bool value = 
+		function_uuid<(derived_type)&Derived::onKeybindings>::value != 
+		function_uuid<(base_type)&Base::onKeybindings>::value;
 };
 
 
@@ -24620,26 +25360,6 @@ public:
 
 
 template <class, class, class, class = void>
-struct currencyWillExit {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct currencyWillExit<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::currencyWillExit)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::currencyWillExit))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::currencyWillExit));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::currencyWillExit));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::currencyWillExit>::value != 
-		function_uuid<(base_type)&Base::currencyWillExit>::value;
-};
-
-
-template <class, class, class, class = void>
 struct delayedResetLevel {
 	constexpr static inline bool value = false;
 };
@@ -24676,26 +25396,6 @@ public:
 	constexpr static inline bool value = 
 		function_uuid<(derived_type)&Derived::destroyPlayer>::value != 
 		function_uuid<(base_type)&Base::destroyPlayer>::value;
-};
-
-
-template <class, class, class, class = void>
-struct dialogClosed {
-	constexpr static inline bool value = false;
-};
-
-template <class Derived, class Base, class Ret, class ...Parameters>
-struct dialogClosed<Derived, Base, Ret(Parameters...), std::void_t<
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::dialogClosed)),
-	decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::dialogClosed))
->> {
-private:
-	using base_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Base::dialogClosed));         
-	using derived_type = decltype(substitute<Ret, Base, Derived, Parameters...>(&Derived::dialogClosed));   
-public:
-	constexpr static inline bool value = 
-		function_uuid<(derived_type)&Derived::dialogClosed>::value != 
-		function_uuid<(base_type)&Base::dialogClosed>::value;
 };
 
 

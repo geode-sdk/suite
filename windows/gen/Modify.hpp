@@ -7,27 +7,25 @@ struct Modify<Derived, cocos2d::CCPoolManager> : ModifyBase<Modify<Derived, coco
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::pop<Derived, Base, types::pure402>::value) {
+		if constexpr (compare::pop<Derived, Base, types::pure407>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCPoolManager::pop", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pop<DefaultConv, Derived, Base, types::pure407>::value, Thiscall>(
 				"cocos2d::CCPoolManager::pop", 
-				(void*)addresses::address402(), 
-				(void*)wrap::pop<Thiscall, Derived, Base, types::pure402>::value
+				(void*)addresses::address407()
 			);
 		}
 
-		if constexpr (compare::sharedPoolManager<Derived, Base, types::pure403>::value) {
+		if constexpr (compare::sharedPoolManager<Derived, Base, types::pure408>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCPoolManager::sharedPoolManager", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedPoolManager<DefaultConv, Derived, Base, types::pure408>::value, Cdecl>(
 				"cocos2d::CCPoolManager::sharedPoolManager", 
-				(void*)addresses::address403(), 
-				(void*)wrap::sharedPoolManager<Cdecl, Derived, Base, types::pure403>::value
+				(void*)addresses::address408()
 			);
 		}
 
@@ -42,363 +40,333 @@ struct Modify<Derived, PlayerObject> : ModifyBase<Modify<Derived, PlayerObject>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::setVisible<Derived, Base, types::pure1829>::value) {
+		if constexpr (compare::setVisible<Derived, Base, types::pure1889>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::setVisible", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setVisible<DefaultConv, Derived, Base, types::pure1889>::value, Thiscall>(
 				"PlayerObject::setVisible", 
-				(void*)addresses::address1829(), 
-				(void*)wrap::setVisible<Thiscall, Derived, Base, types::pure1829>::value
+				(void*)addresses::address1889()
 			);
 		}
 
-		if constexpr (compare::setFlipX<Derived, Base, types::pure1833>::value) {
+		if constexpr (compare::setFlipX<Derived, Base, types::pure1893>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::setFlipX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setFlipX<DefaultConv, Derived, Base, types::pure1893>::value, Thiscall>(
 				"PlayerObject::setFlipX", 
-				(void*)addresses::address1833(), 
-				(void*)wrap::setFlipX<Thiscall, Derived, Base, types::pure1833>::value
+				(void*)addresses::address1893()
 			);
 		}
 
-		if constexpr (compare::setFlipY<Derived, Base, types::pure1834>::value) {
+		if constexpr (compare::setFlipY<Derived, Base, types::pure1894>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::setFlipY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setFlipY<DefaultConv, Derived, Base, types::pure1894>::value, Thiscall>(
 				"PlayerObject::setFlipY", 
-				(void*)addresses::address1834(), 
-				(void*)wrap::setFlipY<Thiscall, Derived, Base, types::pure1834>::value
+				(void*)addresses::address1894()
 			);
 		}
 
-		if constexpr (compare::resetObject<Derived, Base, types::pure1835>::value) {
+		if constexpr (compare::resetObject<Derived, Base, types::pure1895>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::resetObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::resetObject<DefaultConv, Derived, Base, types::pure1895>::value, Thiscall>(
 				"PlayerObject::resetObject", 
-				(void*)addresses::address1835(), 
-				(void*)wrap::resetObject<Thiscall, Derived, Base, types::pure1835>::value
+				(void*)addresses::address1895()
 			);
 		}
 
-		if constexpr (compare::getRealPosition<Derived, Base, types::pure1836>::value) {
+		if constexpr (compare::getRealPosition<Derived, Base, types::pure1896>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::getRealPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getRealPosition<DefaultConv, Derived, Base, types::pure1896>::value, Thiscall>(
 				"PlayerObject::getRealPosition", 
-				(void*)addresses::address1836(), 
-				(void*)wrap::getRealPosition<Thiscall, Derived, Base, types::pure1836>::value
+				(void*)addresses::address1896()
 			);
 		}
 
-		if constexpr (compare::getOrientedBox<Derived, Base, types::pure1837>::value) {
+		if constexpr (compare::getOrientedBox<Derived, Base, types::pure1897>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::getOrientedBox", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getOrientedBox<DefaultConv, Derived, Base, types::pure1897>::value, Thiscall>(
 				"PlayerObject::getOrientedBox", 
-				(void*)addresses::address1837(), 
-				(void*)wrap::getOrientedBox<Thiscall, Derived, Base, types::pure1837>::value
+				(void*)addresses::address1897()
 			);
 		}
 
-		if constexpr (compare::activateStreak<Derived, Base, types::pure1839>::value) {
+		if constexpr (compare::activateStreak<Derived, Base, types::pure1899>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::activateStreak", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activateStreak<DefaultConv, Derived, Base, types::pure1899>::value, Thiscall>(
 				"PlayerObject::activateStreak", 
-				(void*)addresses::address1839(), 
-				(void*)wrap::activateStreak<Thiscall, Derived, Base, types::pure1839>::value
+				(void*)addresses::address1899()
 			);
 		}
 
-		if constexpr (compare::fadeOutStreak2<Derived, Base, types::pure1854>::value) {
+		if constexpr (compare::fadeOutStreak2<Derived, Base, types::pure1914>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::fadeOutStreak2", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::fadeOutStreak2<DefaultConv, Derived, Base, types::pure1914>::value, Membercall>(
 				"PlayerObject::fadeOutStreak2", 
-				(void*)addresses::address1854(), 
-				(void*)wrap::fadeOutStreak2<Membercall, Derived, Base, types::pure1854>::value
+				(void*)addresses::address1914()
 			);
 		}
 
-		if constexpr (compare::flipGravity<Derived, Base, types::pure1856>::value) {
+		if constexpr (compare::flipGravity<Derived, Base, types::pure1916>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::flipGravity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::flipGravity<DefaultConv, Derived, Base, types::pure1916>::value, Membercall>(
 				"PlayerObject::flipGravity", 
-				(void*)addresses::address1856(), 
-				(void*)wrap::flipGravity<Membercall, Derived, Base, types::pure1856>::value
+				(void*)addresses::address1916()
 			);
 		}
 
-		if constexpr (compare::incrementJumps<Derived, Base, types::pure1866>::value) {
+		if constexpr (compare::incrementJumps<Derived, Base, types::pure1926>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::incrementJumps", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::incrementJumps<DefaultConv, Derived, Base, types::pure1926>::value, Thiscall>(
 				"PlayerObject::incrementJumps", 
-				(void*)addresses::address1866(), 
-				(void*)wrap::incrementJumps<Thiscall, Derived, Base, types::pure1866>::value
+				(void*)addresses::address1926()
 			);
 		}
 
-		if constexpr (compare::playBurstEffect<Derived, Base, types::pure1881>::value) {
+		if constexpr (compare::playBurstEffect<Derived, Base, types::pure1941>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::playBurstEffect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::playBurstEffect<DefaultConv, Derived, Base, types::pure1941>::value, Thiscall>(
 				"PlayerObject::playBurstEffect", 
-				(void*)addresses::address1881(), 
-				(void*)wrap::playBurstEffect<Thiscall, Derived, Base, types::pure1881>::value
+				(void*)addresses::address1941()
 			);
 		}
 
-		if constexpr (compare::playDeathEffect<Derived, Base, types::pure1882>::value) {
+		if constexpr (compare::playDeathEffect<Derived, Base, types::pure1942>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::playDeathEffect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::playDeathEffect<DefaultConv, Derived, Base, types::pure1942>::value, Thiscall>(
 				"PlayerObject::playDeathEffect", 
-				(void*)addresses::address1882(), 
-				(void*)wrap::playDeathEffect<Thiscall, Derived, Base, types::pure1882>::value
+				(void*)addresses::address1942()
 			);
 		}
 
-		if constexpr (compare::playerDestroyed<Derived, Base, types::pure1884>::value) {
+		if constexpr (compare::playerDestroyed<Derived, Base, types::pure1944>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::playerDestroyed", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::playerDestroyed<DefaultConv, Derived, Base, types::pure1944>::value, Membercall>(
 				"PlayerObject::playerDestroyed", 
-				(void*)addresses::address1884(), 
-				(void*)wrap::playerDestroyed<Membercall, Derived, Base, types::pure1884>::value
+				(void*)addresses::address1944()
 			);
 		}
 
-		if constexpr (compare::playerIsFalling<Derived, Base, types::pure1885>::value) {
+		if constexpr (compare::playerIsFalling<Derived, Base, types::pure1945>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::playerIsFalling", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::playerIsFalling<DefaultConv, Derived, Base, types::pure1945>::value, Thiscall>(
 				"PlayerObject::playerIsFalling", 
-				(void*)addresses::address1885(), 
-				(void*)wrap::playerIsFalling<Thiscall, Derived, Base, types::pure1885>::value
+				(void*)addresses::address1945()
 			);
 		}
 
-		if constexpr (compare::pushButton<Derived, Base, types::pure1892>::value) {
+		if constexpr (compare::pushButton<Derived, Base, types::pure1952>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::pushButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pushButton<DefaultConv, Derived, Base, types::pure1952>::value, Membercall>(
 				"PlayerObject::pushButton", 
-				(void*)addresses::address1892(), 
-				(void*)wrap::pushButton<Membercall, Derived, Base, types::pure1892>::value
+				(void*)addresses::address1952()
 			);
 		}
 
-		if constexpr (compare::releaseButton<Derived, Base, types::pure1895>::value) {
+		if constexpr (compare::releaseButton<Derived, Base, types::pure1955>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::releaseButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::releaseButton<DefaultConv, Derived, Base, types::pure1955>::value, Membercall>(
 				"PlayerObject::releaseButton", 
-				(void*)addresses::address1895(), 
-				(void*)wrap::releaseButton<Membercall, Derived, Base, types::pure1895>::value
+				(void*)addresses::address1955()
 			);
 		}
 
-		if constexpr (compare::ringJump<Derived, Base, types::pure1903>::value) {
+		if constexpr (compare::ringJump<Derived, Base, types::pure1963>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::ringJump", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ringJump<DefaultConv, Derived, Base, types::pure1963>::value, Membercall>(
 				"PlayerObject::ringJump", 
-				(void*)addresses::address1903(), 
-				(void*)wrap::ringJump<Membercall, Derived, Base, types::pure1903>::value
+				(void*)addresses::address1963()
 			);
 		}
 
-		if constexpr (compare::runNormalRotation<Derived, Base, types::pure1906>::value) {
+		if constexpr (compare::runNormalRotation<Derived, Base, types::pure1966>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::runNormalRotation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::runNormalRotation<DefaultConv, Derived, Base, types::pure1966>::value, Thiscall>(
 				"PlayerObject::runNormalRotation", 
-				(void*)addresses::address1906(), 
-				(void*)wrap::runNormalRotation<Thiscall, Derived, Base, types::pure1906>::value
+				(void*)addresses::address1966()
 			);
 		}
 
-		if constexpr (compare::spiderTestJump<Derived, Base, types::pure1920>::value) {
+		if constexpr (compare::spiderTestJump<Derived, Base, types::pure1980>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::spiderTestJump", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::spiderTestJump<DefaultConv, Derived, Base, types::pure1980>::value, Membercall>(
 				"PlayerObject::spiderTestJump", 
-				(void*)addresses::address1920(), 
-				(void*)wrap::spiderTestJump<Membercall, Derived, Base, types::pure1920>::value
+				(void*)addresses::address1980()
 			);
 		}
 
-		if constexpr (compare::toggleBirdMode<Derived, Base, types::pure1928>::value) {
+		if constexpr (compare::toggleBirdMode<Derived, Base, types::pure1988>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::toggleBirdMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleBirdMode<DefaultConv, Derived, Base, types::pure1988>::value, Membercall>(
 				"PlayerObject::toggleBirdMode", 
-				(void*)addresses::address1928(), 
-				(void*)wrap::toggleBirdMode<Membercall, Derived, Base, types::pure1928>::value
+				(void*)addresses::address1988()
 			);
 		}
 
-		if constexpr (compare::toggleDartMode<Derived, Base, types::pure1929>::value) {
+		if constexpr (compare::toggleDartMode<Derived, Base, types::pure1989>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::toggleDartMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleDartMode<DefaultConv, Derived, Base, types::pure1989>::value, Membercall>(
 				"PlayerObject::toggleDartMode", 
-				(void*)addresses::address1929(), 
-				(void*)wrap::toggleDartMode<Membercall, Derived, Base, types::pure1929>::value
+				(void*)addresses::address1989()
 			);
 		}
 
-		if constexpr (compare::toggleFlyMode<Derived, Base, types::pure1930>::value) {
+		if constexpr (compare::toggleFlyMode<Derived, Base, types::pure1990>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::toggleFlyMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleFlyMode<DefaultConv, Derived, Base, types::pure1990>::value, Membercall>(
 				"PlayerObject::toggleFlyMode", 
-				(void*)addresses::address1930(), 
-				(void*)wrap::toggleFlyMode<Membercall, Derived, Base, types::pure1930>::value
+				(void*)addresses::address1990()
 			);
 		}
 
-		if constexpr (compare::toggleGhostEffect<Derived, Base, types::pure1931>::value) {
+		if constexpr (compare::toggleGhostEffect<Derived, Base, types::pure1991>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::toggleGhostEffect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleGhostEffect<DefaultConv, Derived, Base, types::pure1991>::value, Membercall>(
 				"PlayerObject::toggleGhostEffect", 
-				(void*)addresses::address1931(), 
-				(void*)wrap::toggleGhostEffect<Membercall, Derived, Base, types::pure1931>::value
+				(void*)addresses::address1991()
 			);
 		}
 
-		if constexpr (compare::togglePlayerScale<Derived, Base, types::pure1932>::value) {
+		if constexpr (compare::togglePlayerScale<Derived, Base, types::pure1992>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::togglePlayerScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::togglePlayerScale<DefaultConv, Derived, Base, types::pure1992>::value, Membercall>(
 				"PlayerObject::togglePlayerScale", 
-				(void*)addresses::address1932(), 
-				(void*)wrap::togglePlayerScale<Membercall, Derived, Base, types::pure1932>::value
+				(void*)addresses::address1992()
 			);
 		}
 
-		if constexpr (compare::toggleRobotMode<Derived, Base, types::pure1933>::value) {
+		if constexpr (compare::toggleRobotMode<Derived, Base, types::pure1993>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::toggleRobotMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleRobotMode<DefaultConv, Derived, Base, types::pure1993>::value, Membercall>(
 				"PlayerObject::toggleRobotMode", 
-				(void*)addresses::address1933(), 
-				(void*)wrap::toggleRobotMode<Membercall, Derived, Base, types::pure1933>::value
+				(void*)addresses::address1993()
 			);
 		}
 
-		if constexpr (compare::toggleRollMode<Derived, Base, types::pure1934>::value) {
+		if constexpr (compare::toggleRollMode<Derived, Base, types::pure1994>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::toggleRollMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleRollMode<DefaultConv, Derived, Base, types::pure1994>::value, Membercall>(
 				"PlayerObject::toggleRollMode", 
-				(void*)addresses::address1934(), 
-				(void*)wrap::toggleRollMode<Membercall, Derived, Base, types::pure1934>::value
+				(void*)addresses::address1994()
 			);
 		}
 
-		if constexpr (compare::toggleSpiderMode<Derived, Base, types::pure1935>::value) {
+		if constexpr (compare::toggleSpiderMode<Derived, Base, types::pure1995>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::toggleSpiderMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleSpiderMode<DefaultConv, Derived, Base, types::pure1995>::value, Membercall>(
 				"PlayerObject::toggleSpiderMode", 
-				(void*)addresses::address1935(), 
-				(void*)wrap::toggleSpiderMode<Membercall, Derived, Base, types::pure1935>::value
+				(void*)addresses::address1995()
 			);
 		}
 
-		if constexpr (compare::updateTimeMod<Derived, Base, types::pure1968>::value) {
+		if constexpr (compare::updateTimeMod<Derived, Base, types::pure2028>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::updateTimeMod", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateTimeMod<DefaultConv, Derived, Base, types::pure2028>::value, Membercall>(
 				"PlayerObject::updateTimeMod", 
-				(void*)addresses::address1968(), 
-				(void*)wrap::updateTimeMod<Membercall, Derived, Base, types::pure1968>::value
+				(void*)addresses::address2028()
 			);
 		}
 
-		if constexpr (compare::runRotateAction<Derived, Base, types::pure1972>::value) {
+		if constexpr (compare::runRotateAction<Derived, Base, types::pure2032>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::runRotateAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::runRotateAction<DefaultConv, Derived, Base, types::pure2032>::value, Thiscall>(
 				"PlayerObject::runRotateAction", 
-				(void*)addresses::address1972(), 
-				(void*)wrap::runRotateAction<Thiscall, Derived, Base, types::pure1972>::value
+				(void*)addresses::address2032()
 			);
 		}
 
-		if constexpr (compare::runBallRotation<Derived, Base, types::pure1973>::value) {
+		if constexpr (compare::runBallRotation<Derived, Base, types::pure2033>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayerObject::runBallRotation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::runBallRotation<DefaultConv, Derived, Base, types::pure2033>::value, Thiscall>(
 				"PlayerObject::runBallRotation", 
-				(void*)addresses::address1973(), 
-				(void*)wrap::runBallRotation<Thiscall, Derived, Base, types::pure1973>::value
+				(void*)addresses::address2033()
 			);
 		}
 
@@ -418,10 +386,9 @@ struct Modify<Derived, cocos2d::CCActionTween> : ModifyBase<Modify<Derived, coco
 				"Adding hook at function cocos2d::CCActionTween::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1>::value, Cdecl>(
 				"cocos2d::CCActionTween::create", 
-				(void*)addresses::address1(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1>::value
+				(void*)addresses::address1()
 			);
 		}
 
@@ -436,63 +403,58 @@ struct Modify<Derived, cocos2d::CCEGLView> : ModifyBase<Modify<Derived, cocos2d:
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::onGLFWMouseCallBack<Derived, Base, types::pure98>::value) {
+		if constexpr (compare::onGLFWMouseCallBack<Derived, Base, types::pure99>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEGLView::onGLFWMouseCallBack", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onGLFWMouseCallBack<DefaultConv, Derived, Base, types::pure99>::value, Thiscall>(
 				"cocos2d::CCEGLView::onGLFWMouseCallBack", 
-				(void*)addresses::address98(), 
-				(void*)wrap::onGLFWMouseCallBack<Membercall, Derived, Base, types::pure98>::value
+				(void*)addresses::address99()
 			);
 		}
 
-		if constexpr (compare::swapBuffers<Derived, Base, types::pure99>::value) {
+		if constexpr (compare::swapBuffers<Derived, Base, types::pure100>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEGLView::swapBuffers", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::swapBuffers<DefaultConv, Derived, Base, types::pure100>::value, Thiscall>(
 				"cocos2d::CCEGLView::swapBuffers", 
-				(void*)addresses::address99(), 
-				(void*)wrap::swapBuffers<Thiscall, Derived, Base, types::pure99>::value
+				(void*)addresses::address100()
 			);
 		}
 
-		if constexpr (compare::updateWindow<Derived, Base, types::pure100>::value) {
+		if constexpr (compare::updateWindow<Derived, Base, types::pure101>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEGLView::updateWindow", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateWindow<DefaultConv, Derived, Base, types::pure101>::value, Thiscall>(
 				"cocos2d::CCEGLView::updateWindow", 
-				(void*)addresses::address100(), 
-				(void*)wrap::updateWindow<Membercall, Derived, Base, types::pure100>::value
+				(void*)addresses::address101()
 			);
 		}
 
-		if constexpr (compare::toggleFullScreen<Derived, Base, types::pure101>::value) {
+		if constexpr (compare::toggleFullScreen<Derived, Base, types::pure102>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEGLView::toggleFullScreen", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleFullScreen<DefaultConv, Derived, Base, types::pure102>::value, Thiscall>(
 				"cocos2d::CCEGLView::toggleFullScreen", 
-				(void*)addresses::address101(), 
-				(void*)wrap::toggleFullScreen<Membercall, Derived, Base, types::pure101>::value
+				(void*)addresses::address102()
 			);
 		}
 
-		if constexpr (compare::pollEvents<Derived, Base, types::pure102>::value) {
+		if constexpr (compare::pollEvents<Derived, Base, types::pure103>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEGLView::pollEvents", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pollEvents<DefaultConv, Derived, Base, types::pure103>::value, Thiscall>(
 				"cocos2d::CCEGLView::pollEvents", 
-				(void*)addresses::address102(), 
-				(void*)wrap::pollEvents<Thiscall, Derived, Base, types::pure102>::value
+				(void*)addresses::address103()
 			);
 		}
 
@@ -507,15 +469,14 @@ struct Modify<Derived, cocos2d::CCFileUtils> : ModifyBase<Modify<Derived, cocos2
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedFileUtils<Derived, Base, types::pure105>::value) {
+		if constexpr (compare::sharedFileUtils<Derived, Base, types::pure106>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCFileUtils::sharedFileUtils", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedFileUtils<DefaultConv, Derived, Base, types::pure106>::value, Cdecl>(
 				"cocos2d::CCFileUtils::sharedFileUtils", 
-				(void*)addresses::address105(), 
-				(void*)wrap::sharedFileUtils<Cdecl, Derived, Base, types::pure105>::value
+				(void*)addresses::address106()
 			);
 		}
 
@@ -546,330 +507,9 @@ struct Modify<Derived, cocos2d::CCAnimate> : ModifyBase<Modify<Derived, cocos2d:
 				"Adding hook at function cocos2d::CCAnimate::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2>::value, Cdecl>(
 				"cocos2d::CCAnimate::create", 
-				(void*)addresses::address2(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure2>::value
-			);
-		}
-
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, CustomSongLayer> : ModifyBase<Modify<Derived, CustomSongLayer>> {
-	using ModifyBase<Modify<Derived, CustomSongLayer>>::ModifyBase;
-	using Base = CustomSongLayer;
-	static void apply() {
-		using namespace geode::core::meta;
-		using namespace geode::core::meta::x86;
-
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, cocos2d::CCSpriteFrame> : ModifyBase<Modify<Derived, cocos2d::CCSpriteFrame>> {
-	using ModifyBase<Modify<Derived, cocos2d::CCSpriteFrame>>::ModifyBase;
-	using Base = cocos2d::CCSpriteFrame;
-	static void apply() {
-		using namespace geode::core::meta;
-		using namespace geode::core::meta::x86;
-
-		if constexpr (compare::createWithTexture<Derived, Base, types::pure488>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCSpriteFrame::createWithTexture", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCSpriteFrame::createWithTexture", 
-				(void*)addresses::address488(), 
-				(void*)wrap::createWithTexture<Optcall, Derived, Base, types::pure488>::value
-			);
-		}
-
-		if constexpr (compare::createWithTexture<Derived, Base, types::pure489>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCSpriteFrame::createWithTexture", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCSpriteFrame::createWithTexture", 
-				(void*)addresses::address489(), 
-				(void*)wrap::createWithTexture<Optcall, Derived, Base, types::pure489>::value
-			);
-		}
-
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, cocos2d::CCDrawNode> : ModifyBase<Modify<Derived, cocos2d::CCDrawNode>> {
-	using ModifyBase<Modify<Derived, cocos2d::CCDrawNode>>::ModifyBase;
-	using Base = cocos2d::CCDrawNode;
-	static void apply() {
-		using namespace geode::core::meta;
-		using namespace geode::core::meta::x86;
-
-		if constexpr (compare::clear<Derived, Base, types::pure85>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDrawNode::clear", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDrawNode::clear", 
-				(void*)addresses::address85(), 
-				(void*)wrap::clear<Thiscall, Derived, Base, types::pure85>::value
-			);
-		}
-
-		if constexpr (compare::create<Derived, Base, types::pure86>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDrawNode::create", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDrawNode::create", 
-				(void*)addresses::address86(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure86>::value
-			);
-		}
-
-		if constexpr (compare::drawPolygon<Derived, Base, types::pure87>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDrawNode::drawPolygon", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDrawNode::drawPolygon", 
-				(void*)addresses::address87(), 
-				(void*)wrap::drawPolygon<Membercall, Derived, Base, types::pure87>::value
-			);
-		}
-
-		if constexpr (compare::drawSegment<Derived, Base, types::pure88>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDrawNode::drawSegment", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDrawNode::drawSegment", 
-				(void*)addresses::address88(), 
-				(void*)wrap::drawSegment<Membercall, Derived, Base, types::pure88>::value
-			);
-		}
-
-		if constexpr (compare::getBlendFunc<Derived, Base, types::pure89>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDrawNode::getBlendFunc", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDrawNode::getBlendFunc", 
-				(void*)addresses::address89(), 
-				(void*)wrap::getBlendFunc<Thiscall, Derived, Base, types::pure89>::value
-			);
-		}
-
-		if constexpr (compare::init<Derived, Base, types::pure90>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDrawNode::init", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDrawNode::init", 
-				(void*)addresses::address90(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure90>::value
-			);
-		}
-
-		if constexpr (compare::setBlendFunc<Derived, Base, types::pure91>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDrawNode::setBlendFunc", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDrawNode::setBlendFunc", 
-				(void*)addresses::address91(), 
-				(void*)wrap::setBlendFunc<Membercall, Derived, Base, types::pure91>::value
-			);
-		}
-
-		if constexpr (compare::draw<Derived, Base, types::pure92>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDrawNode::draw", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDrawNode::draw", 
-				(void*)addresses::address92(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure92>::value
-			);
-		}
-
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, cocos2d::CCClippingNode> : ModifyBase<Modify<Derived, cocos2d::CCClippingNode>> {
-	using ModifyBase<Modify<Derived, cocos2d::CCClippingNode>>::ModifyBase;
-	using Base = cocos2d::CCClippingNode;
-	static void apply() {
-		using namespace geode::core::meta;
-		using namespace geode::core::meta::x86;
-
-		if constexpr (compare::create<Derived, Base, types::pure28>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::create", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::create", 
-				(void*)addresses::address28(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure28>::value
-			);
-		}
-
-		if constexpr (compare::create<Derived, Base, types::pure29>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::create", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::create", 
-				(void*)addresses::address29(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure29>::value
-			);
-		}
-
-		if constexpr (compare::getAlphaThreshold<Derived, Base, types::pure30>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::getAlphaThreshold", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::getAlphaThreshold", 
-				(void*)addresses::address30(), 
-				(void*)wrap::getAlphaThreshold<Thiscall, Derived, Base, types::pure30>::value
-			);
-		}
-
-		if constexpr (compare::getStencil<Derived, Base, types::pure31>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::getStencil", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::getStencil", 
-				(void*)addresses::address31(), 
-				(void*)wrap::getStencil<Thiscall, Derived, Base, types::pure31>::value
-			);
-		}
-
-		if constexpr (compare::isInverted<Derived, Base, types::pure32>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::isInverted", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::isInverted", 
-				(void*)addresses::address32(), 
-				(void*)wrap::isInverted<Thiscall, Derived, Base, types::pure32>::value
-			);
-		}
-
-		if constexpr (compare::onEnter<Derived, Base, types::pure33>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::onEnter", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::onEnter", 
-				(void*)addresses::address33(), 
-				(void*)wrap::onEnter<Thiscall, Derived, Base, types::pure33>::value
-			);
-		}
-
-		if constexpr (compare::onEnterTransitionDidFinish<Derived, Base, types::pure34>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::onEnterTransitionDidFinish", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::onEnterTransitionDidFinish", 
-				(void*)addresses::address34(), 
-				(void*)wrap::onEnterTransitionDidFinish<Thiscall, Derived, Base, types::pure34>::value
-			);
-		}
-
-		if constexpr (compare::onExit<Derived, Base, types::pure35>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::onExit", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::onExit", 
-				(void*)addresses::address35(), 
-				(void*)wrap::onExit<Thiscall, Derived, Base, types::pure35>::value
-			);
-		}
-
-		if constexpr (compare::onExitTransitionDidStart<Derived, Base, types::pure36>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::onExitTransitionDidStart", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::onExitTransitionDidStart", 
-				(void*)addresses::address36(), 
-				(void*)wrap::onExitTransitionDidStart<Thiscall, Derived, Base, types::pure36>::value
-			);
-		}
-
-		if constexpr (compare::setAlphaThreshold<Derived, Base, types::pure37>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::setAlphaThreshold", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::setAlphaThreshold", 
-				(void*)addresses::address37(), 
-				(void*)wrap::setAlphaThreshold<Membercall, Derived, Base, types::pure37>::value
-			);
-		}
-
-		if constexpr (compare::setInverted<Derived, Base, types::pure38>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::setInverted", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::setInverted", 
-				(void*)addresses::address38(), 
-				(void*)wrap::setInverted<Membercall, Derived, Base, types::pure38>::value
-			);
-		}
-
-		if constexpr (compare::setStencil<Derived, Base, types::pure39>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::setStencil", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::setStencil", 
-				(void*)addresses::address39(), 
-				(void*)wrap::setStencil<Membercall, Derived, Base, types::pure39>::value
-			);
-		}
-
-		if constexpr (compare::visit<Derived, Base, types::pure40>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCClippingNode::visit", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCClippingNode::visit", 
-				(void*)addresses::address40(), 
-				(void*)wrap::visit<Thiscall, Derived, Base, types::pure40>::value
+				(void*)addresses::address2()
 			);
 		}
 
@@ -895,159 +535,146 @@ struct Modify<Derived, cocos2d::CCNodeRGBA> : ModifyBase<Modify<Derived, cocos2d
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure374>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure379>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure379>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::init", 
-				(void*)addresses::address374(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure374>::value
+				(void*)addresses::address379()
 			);
 		}
 
-		if constexpr (compare::getOpacity<Derived, Base, types::pure375>::value) {
+		if constexpr (compare::getOpacity<Derived, Base, types::pure380>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::getOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getOpacity<DefaultConv, Derived, Base, types::pure380>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::getOpacity", 
-				(void*)addresses::address375(), 
-				(void*)wrap::getOpacity<Thiscall, Derived, Base, types::pure375>::value
+				(void*)addresses::address380()
 			);
 		}
 
-		if constexpr (compare::getDisplayedOpacity<Derived, Base, types::pure376>::value) {
+		if constexpr (compare::getDisplayedOpacity<Derived, Base, types::pure381>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::getDisplayedOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDisplayedOpacity<DefaultConv, Derived, Base, types::pure381>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::getDisplayedOpacity", 
-				(void*)addresses::address376(), 
-				(void*)wrap::getDisplayedOpacity<Thiscall, Derived, Base, types::pure376>::value
+				(void*)addresses::address381()
 			);
 		}
 
-		if constexpr (compare::setOpacity<Derived, Base, types::pure377>::value) {
+		if constexpr (compare::setOpacity<Derived, Base, types::pure382>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::setOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacity<DefaultConv, Derived, Base, types::pure382>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::setOpacity", 
-				(void*)addresses::address377(), 
-				(void*)wrap::setOpacity<Thiscall, Derived, Base, types::pure377>::value
+				(void*)addresses::address382()
 			);
 		}
 
-		if constexpr (compare::updateDisplayedOpacity<Derived, Base, types::pure378>::value) {
+		if constexpr (compare::updateDisplayedOpacity<Derived, Base, types::pure383>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::updateDisplayedOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDisplayedOpacity<DefaultConv, Derived, Base, types::pure383>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::updateDisplayedOpacity", 
-				(void*)addresses::address378(), 
-				(void*)wrap::updateDisplayedOpacity<Thiscall, Derived, Base, types::pure378>::value
+				(void*)addresses::address383()
 			);
 		}
 
-		if constexpr (compare::isCascadeOpacityEnabled<Derived, Base, types::pure379>::value) {
+		if constexpr (compare::isCascadeOpacityEnabled<Derived, Base, types::pure384>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::isCascadeOpacityEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isCascadeOpacityEnabled<DefaultConv, Derived, Base, types::pure384>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::isCascadeOpacityEnabled", 
-				(void*)addresses::address379(), 
-				(void*)wrap::isCascadeOpacityEnabled<Thiscall, Derived, Base, types::pure379>::value
+				(void*)addresses::address384()
 			);
 		}
 
-		if constexpr (compare::setCascadeOpacityEnabled<Derived, Base, types::pure380>::value) {
+		if constexpr (compare::setCascadeOpacityEnabled<Derived, Base, types::pure385>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::setCascadeOpacityEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setCascadeOpacityEnabled<DefaultConv, Derived, Base, types::pure385>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::setCascadeOpacityEnabled", 
-				(void*)addresses::address380(), 
-				(void*)wrap::setCascadeOpacityEnabled<Thiscall, Derived, Base, types::pure380>::value
+				(void*)addresses::address385()
 			);
 		}
 
-		if constexpr (compare::getColor<Derived, Base, types::pure381>::value) {
+		if constexpr (compare::getColor<Derived, Base, types::pure386>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::getColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getColor<DefaultConv, Derived, Base, types::pure386>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::getColor", 
-				(void*)addresses::address381(), 
-				(void*)wrap::getColor<Thiscall, Derived, Base, types::pure381>::value
+				(void*)addresses::address386()
 			);
 		}
 
-		if constexpr (compare::getDisplayedColor<Derived, Base, types::pure382>::value) {
+		if constexpr (compare::getDisplayedColor<Derived, Base, types::pure387>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::getDisplayedColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDisplayedColor<DefaultConv, Derived, Base, types::pure387>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::getDisplayedColor", 
-				(void*)addresses::address382(), 
-				(void*)wrap::getDisplayedColor<Thiscall, Derived, Base, types::pure382>::value
+				(void*)addresses::address387()
 			);
 		}
 
-		if constexpr (compare::setColor<Derived, Base, types::pure383>::value) {
+		if constexpr (compare::setColor<Derived, Base, types::pure388>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::setColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setColor<DefaultConv, Derived, Base, types::pure388>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::setColor", 
-				(void*)addresses::address383(), 
-				(void*)wrap::setColor<Thiscall, Derived, Base, types::pure383>::value
+				(void*)addresses::address388()
 			);
 		}
 
-		if constexpr (compare::updateDisplayedColor<Derived, Base, types::pure384>::value) {
+		if constexpr (compare::updateDisplayedColor<Derived, Base, types::pure389>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::updateDisplayedColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDisplayedColor<DefaultConv, Derived, Base, types::pure389>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::updateDisplayedColor", 
-				(void*)addresses::address384(), 
-				(void*)wrap::updateDisplayedColor<Thiscall, Derived, Base, types::pure384>::value
+				(void*)addresses::address389()
 			);
 		}
 
-		if constexpr (compare::isCascadeColorEnabled<Derived, Base, types::pure385>::value) {
+		if constexpr (compare::isCascadeColorEnabled<Derived, Base, types::pure390>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::isCascadeColorEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isCascadeColorEnabled<DefaultConv, Derived, Base, types::pure390>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::isCascadeColorEnabled", 
-				(void*)addresses::address385(), 
-				(void*)wrap::isCascadeColorEnabled<Thiscall, Derived, Base, types::pure385>::value
+				(void*)addresses::address390()
 			);
 		}
 
-		if constexpr (compare::setCascadeColorEnabled<Derived, Base, types::pure386>::value) {
+		if constexpr (compare::setCascadeColorEnabled<Derived, Base, types::pure391>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNodeRGBA::setCascadeColorEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setCascadeColorEnabled<DefaultConv, Derived, Base, types::pure391>::value, Thiscall>(
 				"cocos2d::CCNodeRGBA::setCascadeColorEnabled", 
-				(void*)addresses::address386(), 
-				(void*)wrap::setCascadeColorEnabled<Thiscall, Derived, Base, types::pure386>::value
+				(void*)addresses::address391()
 			);
 		}
 
@@ -1062,15 +689,14 @@ struct Modify<Derived, cocos2d::CCCallFunc> : ModifyBase<Modify<Derived, cocos2d
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure27>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure28>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCCallFunc::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure28>::value, Cdecl>(
 				"cocos2d::CCCallFunc::create", 
-				(void*)addresses::address27(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure27>::value
+				(void*)addresses::address28()
 			);
 		}
 
@@ -1085,15 +711,14 @@ struct Modify<Derived, CreatorLayer> : ModifyBase<Modify<Derived, CreatorLayer>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure830>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure861>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CreatorLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure861>::value, Cdecl>(
 				"CreatorLayer::create", 
-				(void*)addresses::address830(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure830>::value
+				(void*)addresses::address861()
 			);
 		}
 
@@ -1108,15 +733,14 @@ struct Modify<Derived, cocos2d::CCRotateBy> : ModifyBase<Modify<Derived, cocos2d
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure409>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure414>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCRotateBy::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure414>::value, Cdecl>(
 				"cocos2d::CCRotateBy::create", 
-				(void*)addresses::address409(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure409>::value
+				(void*)addresses::address414()
 			);
 		}
 
@@ -1147,10 +771,9 @@ struct Modify<Derived, cocos2d::CCApplication> : ModifyBase<Modify<Derived, coco
 				"Adding hook at function cocos2d::CCApplication::getCurrentLanguage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getCurrentLanguage<DefaultConv, Derived, Base, types::pure4>::value, Thiscall>(
 				"cocos2d::CCApplication::getCurrentLanguage", 
-				(void*)addresses::address4(), 
-				(void*)wrap::getCurrentLanguage<Thiscall, Derived, Base, types::pure4>::value
+				(void*)addresses::address4()
 			);
 		}
 
@@ -1159,10 +782,9 @@ struct Modify<Derived, cocos2d::CCApplication> : ModifyBase<Modify<Derived, coco
 				"Adding hook at function cocos2d::CCApplication::getTargetPlatform", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getTargetPlatform<DefaultConv, Derived, Base, types::pure5>::value, Thiscall>(
 				"cocos2d::CCApplication::getTargetPlatform", 
-				(void*)addresses::address5(), 
-				(void*)wrap::getTargetPlatform<Thiscall, Derived, Base, types::pure5>::value
+				(void*)addresses::address5()
 			);
 		}
 
@@ -1171,10 +793,9 @@ struct Modify<Derived, cocos2d::CCApplication> : ModifyBase<Modify<Derived, coco
 				"Adding hook at function cocos2d::CCApplication::openURL", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::openURL<DefaultConv, Derived, Base, types::pure6>::value, Thiscall>(
 				"cocos2d::CCApplication::openURL", 
-				(void*)addresses::address6(), 
-				(void*)wrap::openURL<Thiscall, Derived, Base, types::pure6>::value
+				(void*)addresses::address6()
 			);
 		}
 
@@ -1183,10 +804,9 @@ struct Modify<Derived, cocos2d::CCApplication> : ModifyBase<Modify<Derived, coco
 				"Adding hook at function cocos2d::CCApplication::setAnimationInterval", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAnimationInterval<DefaultConv, Derived, Base, types::pure7>::value, Thiscall>(
 				"cocos2d::CCApplication::setAnimationInterval", 
-				(void*)addresses::address7(), 
-				(void*)wrap::setAnimationInterval<Thiscall, Derived, Base, types::pure7>::value
+				(void*)addresses::address7()
 			);
 		}
 
@@ -1201,15 +821,14 @@ struct Modify<Derived, cocos2d::CCRepeatForever> : ModifyBase<Modify<Derived, co
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure408>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure413>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCRepeatForever::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure413>::value, Cdecl>(
 				"cocos2d::CCRepeatForever::create", 
-				(void*)addresses::address408(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure408>::value
+				(void*)addresses::address413()
 			);
 		}
 
@@ -1224,15 +843,14 @@ struct Modify<Derived, DrawGridLayer> : ModifyBase<Modify<Derived, DrawGridLayer
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::draw<Derived, Base, types::pure866>::value) {
+		if constexpr (compare::draw<Derived, Base, types::pure899>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function DrawGridLayer::draw", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure899>::value, Thiscall>(
 				"DrawGridLayer::draw", 
-				(void*)addresses::address866(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure866>::value
+				(void*)addresses::address899()
 			);
 		}
 
@@ -1252,10 +870,9 @@ struct Modify<Derived, cocos2d::CCAnimation> : ModifyBase<Modify<Derived, cocos2
 				"Adding hook at function cocos2d::CCAnimation::createWithSpriteFrames", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithSpriteFrames<DefaultConv, Derived, Base, types::pure3>::value, Cdecl>(
 				"cocos2d::CCAnimation::createWithSpriteFrames", 
-				(void*)addresses::address3(), 
-				(void*)wrap::createWithSpriteFrames<Optcall, Derived, Base, types::pure3>::value
+				(void*)addresses::address3()
 			);
 		}
 
@@ -1286,10 +903,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::addObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addObject<DefaultConv, Derived, Base, types::pure9>::value, Thiscall>(
 				"cocos2d::CCArray::addObject", 
-				(void*)addresses::address9(), 
-				(void*)wrap::addObject<Membercall, Derived, Base, types::pure9>::value
+				(void*)addresses::address9()
 			);
 		}
 
@@ -1298,10 +914,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::addObjectNew", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addObjectNew<DefaultConv, Derived, Base, types::pure10>::value, Thiscall>(
 				"cocos2d::CCArray::addObjectNew", 
-				(void*)addresses::address10(), 
-				(void*)wrap::addObjectNew<Membercall, Derived, Base, types::pure10>::value
+				(void*)addresses::address10()
 			);
 		}
 
@@ -1310,10 +925,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::addObjectsFromArray", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addObjectsFromArray<DefaultConv, Derived, Base, types::pure11>::value, Thiscall>(
 				"cocos2d::CCArray::addObjectsFromArray", 
-				(void*)addresses::address11(), 
-				(void*)wrap::addObjectsFromArray<Membercall, Derived, Base, types::pure11>::value
+				(void*)addresses::address11()
 			);
 		}
 
@@ -1322,10 +936,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::containsObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::containsObject<DefaultConv, Derived, Base, types::pure12>::value, Thiscall>(
 				"cocos2d::CCArray::containsObject", 
-				(void*)addresses::address12(), 
-				(void*)wrap::containsObject<Membercall, Derived, Base, types::pure12>::value
+				(void*)addresses::address12()
 			);
 		}
 
@@ -1334,10 +947,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::count", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::count<DefaultConv, Derived, Base, types::pure13>::value, Thiscall>(
 				"cocos2d::CCArray::count", 
-				(void*)addresses::address13(), 
-				(void*)wrap::count<Thiscall, Derived, Base, types::pure13>::value
+				(void*)addresses::address13()
 			);
 		}
 
@@ -1346,10 +958,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure14>::value, Cdecl>(
 				"cocos2d::CCArray::create", 
-				(void*)addresses::address14(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure14>::value
+				(void*)addresses::address14()
 			);
 		}
 
@@ -1358,10 +969,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::createWithObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithObject<DefaultConv, Derived, Base, types::pure15>::value, Cdecl>(
 				"cocos2d::CCArray::createWithObject", 
-				(void*)addresses::address15(), 
-				(void*)wrap::createWithObject<Optcall, Derived, Base, types::pure15>::value
+				(void*)addresses::address15()
 			);
 		}
 
@@ -1370,10 +980,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::fastRemoveObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::fastRemoveObject<DefaultConv, Derived, Base, types::pure16>::value, Thiscall>(
 				"cocos2d::CCArray::fastRemoveObject", 
-				(void*)addresses::address16(), 
-				(void*)wrap::fastRemoveObject<Membercall, Derived, Base, types::pure16>::value
+				(void*)addresses::address16()
 			);
 		}
 
@@ -1382,10 +991,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::fastRemoveObjectAtIndex", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::fastRemoveObjectAtIndex<DefaultConv, Derived, Base, types::pure17>::value, Thiscall>(
 				"cocos2d::CCArray::fastRemoveObjectAtIndex", 
-				(void*)addresses::address17(), 
-				(void*)wrap::fastRemoveObjectAtIndex<Membercall, Derived, Base, types::pure17>::value
+				(void*)addresses::address17()
 			);
 		}
 
@@ -1394,10 +1002,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::fastRemoveObjectAtIndexNew", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::fastRemoveObjectAtIndexNew<DefaultConv, Derived, Base, types::pure18>::value, Thiscall>(
 				"cocos2d::CCArray::fastRemoveObjectAtIndexNew", 
-				(void*)addresses::address18(), 
-				(void*)wrap::fastRemoveObjectAtIndexNew<Membercall, Derived, Base, types::pure18>::value
+				(void*)addresses::address18()
 			);
 		}
 
@@ -1406,10 +1013,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::lastObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::lastObject<DefaultConv, Derived, Base, types::pure19>::value, Thiscall>(
 				"cocos2d::CCArray::lastObject", 
-				(void*)addresses::address19(), 
-				(void*)wrap::lastObject<Thiscall, Derived, Base, types::pure19>::value
+				(void*)addresses::address19()
 			);
 		}
 
@@ -1418,10 +1024,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::objectAtIndex", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::objectAtIndex<DefaultConv, Derived, Base, types::pure20>::value, Thiscall>(
 				"cocos2d::CCArray::objectAtIndex", 
-				(void*)addresses::address20(), 
-				(void*)wrap::objectAtIndex<Membercall, Derived, Base, types::pure20>::value
+				(void*)addresses::address20()
 			);
 		}
 
@@ -1430,10 +1035,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::removeAllObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeAllObjects<DefaultConv, Derived, Base, types::pure21>::value, Thiscall>(
 				"cocos2d::CCArray::removeAllObjects", 
-				(void*)addresses::address21(), 
-				(void*)wrap::removeAllObjects<Thiscall, Derived, Base, types::pure21>::value
+				(void*)addresses::address21()
 			);
 		}
 
@@ -1442,10 +1046,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::removeLastObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeLastObject<DefaultConv, Derived, Base, types::pure22>::value, Thiscall>(
 				"cocos2d::CCArray::removeLastObject", 
-				(void*)addresses::address22(), 
-				(void*)wrap::removeLastObject<Membercall, Derived, Base, types::pure22>::value
+				(void*)addresses::address22()
 			);
 		}
 
@@ -1454,10 +1057,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::removeObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeObject<DefaultConv, Derived, Base, types::pure23>::value, Thiscall>(
 				"cocos2d::CCArray::removeObject", 
-				(void*)addresses::address23(), 
-				(void*)wrap::removeObject<Membercall, Derived, Base, types::pure23>::value
+				(void*)addresses::address23()
 			);
 		}
 
@@ -1466,10 +1068,9 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::removeObjectAtIndex", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeObjectAtIndex<DefaultConv, Derived, Base, types::pure24>::value, Thiscall>(
 				"cocos2d::CCArray::removeObjectAtIndex", 
-				(void*)addresses::address24(), 
-				(void*)wrap::removeObjectAtIndex<Membercall, Derived, Base, types::pure24>::value
+				(void*)addresses::address24()
 			);
 		}
 
@@ -1478,10 +1079,31 @@ struct Modify<Derived, cocos2d::CCArray> : ModifyBase<Modify<Derived, cocos2d::C
 				"Adding hook at function cocos2d::CCArray::stringAtIndex", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::stringAtIndex<DefaultConv, Derived, Base, types::pure25>::value, Thiscall>(
 				"cocos2d::CCArray::stringAtIndex", 
-				(void*)addresses::address25(), 
-				(void*)wrap::stringAtIndex<Membercall, Derived, Base, types::pure25>::value
+				(void*)addresses::address25()
+			);
+		}
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, cocos2d::CCBMFontConfiguration> : ModifyBase<Modify<Derived, cocos2d::CCBMFontConfiguration>> {
+	using ModifyBase<Modify<Derived, cocos2d::CCBMFontConfiguration>>::ModifyBase;
+	using Base = cocos2d::CCBMFontConfiguration;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+		if constexpr (compare::create<Derived, Base, types::pure27>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCBMFontConfiguration::create", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure27>::value, Cdecl>(
+				"cocos2d::CCBMFontConfiguration::create", 
+				(void*)addresses::address27()
 			);
 		}
 
@@ -1496,63 +1118,58 @@ struct Modify<Derived, cocos2d::CCLabelBMFont> : ModifyBase<Modify<Derived, coco
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure124>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure125>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLabelBMFont::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure125>::value, Cdecl>(
 				"cocos2d::CCLabelBMFont::create", 
-				(void*)addresses::address124(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure124>::value
+				(void*)addresses::address125()
 			);
 		}
 
-		if constexpr (compare::limitLabelWidth<Derived, Base, types::pure125>::value) {
+		if constexpr (compare::limitLabelWidth<Derived, Base, types::pure126>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLabelBMFont::limitLabelWidth", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::limitLabelWidth<DefaultConv, Derived, Base, types::pure126>::value, Thiscall>(
 				"cocos2d::CCLabelBMFont::limitLabelWidth", 
-				(void*)addresses::address125(), 
-				(void*)wrap::limitLabelWidth<Membercall, Derived, Base, types::pure125>::value
+				(void*)addresses::address126()
 			);
 		}
 
-		if constexpr (compare::setScale<Derived, Base, types::pure126>::value) {
+		if constexpr (compare::setScale<Derived, Base, types::pure127>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLabelBMFont::setScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScale<DefaultConv, Derived, Base, types::pure127>::value, Thiscall>(
 				"cocos2d::CCLabelBMFont::setScale", 
-				(void*)addresses::address126(), 
-				(void*)wrap::setScale<Membercall, Derived, Base, types::pure126>::value
+				(void*)addresses::address127()
 			);
 		}
 
-		if constexpr (compare::setString<Derived, Base, types::pure127>::value) {
+		if constexpr (compare::setString<Derived, Base, types::pure128>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLabelBMFont::setString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setString<DefaultConv, Derived, Base, types::pure128>::value, Thiscall>(
 				"cocos2d::CCLabelBMFont::setString", 
-				(void*)addresses::address127(), 
-				(void*)wrap::setString<Membercall, Derived, Base, types::pure127>::value
+				(void*)addresses::address128()
 			);
 		}
 
-		if constexpr (compare::setAnchorPoint<Derived, Base, types::pure128>::value) {
+		if constexpr (compare::setAnchorPoint<Derived, Base, types::pure129>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLabelBMFont::setAnchorPoint", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAnchorPoint<DefaultConv, Derived, Base, types::pure129>::value, Thiscall>(
 				"cocos2d::CCLabelBMFont::setAnchorPoint", 
-				(void*)addresses::address128(), 
-				(void*)wrap::setAnchorPoint<Membercall, Derived, Base, types::pure128>::value
+				(void*)addresses::address129()
 			);
 		}
 
@@ -1583,10 +1200,515 @@ struct Modify<Derived, cocos2d::CCBezierTo> : ModifyBase<Modify<Derived, cocos2d
 				"Adding hook at function cocos2d::CCBezierTo::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure26>::value, Cdecl>(
 				"cocos2d::CCBezierTo::create", 
-				(void*)addresses::address26(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure26>::value
+				(void*)addresses::address26()
+			);
+		}
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, CustomSongLayer> : ModifyBase<Modify<Derived, CustomSongLayer>> {
+	using ModifyBase<Modify<Derived, CustomSongLayer>>::ModifyBase;
+	using Base = CustomSongLayer;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, cocos2d::CCSpriteFrame> : ModifyBase<Modify<Derived, cocos2d::CCSpriteFrame>> {
+	using ModifyBase<Modify<Derived, cocos2d::CCSpriteFrame>>::ModifyBase;
+	using Base = cocos2d::CCSpriteFrame;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+		if constexpr (compare::createWithTexture<Derived, Base, types::pure494>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCSpriteFrame::createWithTexture", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::createWithTexture<DefaultConv, Derived, Base, types::pure494>::value, Cdecl>(
+				"cocos2d::CCSpriteFrame::createWithTexture", 
+				(void*)addresses::address494()
+			);
+		}
+
+		if constexpr (compare::createWithTexture<Derived, Base, types::pure495>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCSpriteFrame::createWithTexture", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::createWithTexture<DefaultConv, Derived, Base, types::pure495>::value, Cdecl>(
+				"cocos2d::CCSpriteFrame::createWithTexture", 
+				(void*)addresses::address495()
+			);
+		}
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, cocos2d::extension::CCControl> : ModifyBase<Modify<Derived, cocos2d::extension::CCControl>> {
+	using ModifyBase<Modify<Derived, cocos2d::extension::CCControl>>::ModifyBase;
+	using Base = cocos2d::extension::CCControl;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+		if constexpr (compare::init<Derived, Base, types::pure546>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::init", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure546>::value, Thiscall>(
+				"cocos2d::extension::CCControl::init", 
+				(void*)addresses::address546()
+			);
+		}
+
+		if constexpr (compare::sendActionsForControlEvents<Derived, Base, types::pure548>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::sendActionsForControlEvents", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::sendActionsForControlEvents<DefaultConv, Derived, Base, types::pure548>::value, Thiscall>(
+				"cocos2d::extension::CCControl::sendActionsForControlEvents", 
+				(void*)addresses::address548()
+			);
+		}
+
+		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure549>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::registerWithTouchDispatcher", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::registerWithTouchDispatcher<DefaultConv, Derived, Base, types::pure549>::value, Thiscall>(
+				"cocos2d::extension::CCControl::registerWithTouchDispatcher", 
+				(void*)addresses::address549()
+			);
+		}
+
+		if constexpr (compare::setOpacityModifyRGB<Derived, Base, types::pure550>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::setOpacityModifyRGB", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setOpacityModifyRGB<DefaultConv, Derived, Base, types::pure550>::value, Thiscall>(
+				"cocos2d::extension::CCControl::setOpacityModifyRGB", 
+				(void*)addresses::address550()
+			);
+		}
+
+		if constexpr (compare::onExit<Derived, Base, types::pure551>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::onExit", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onExit<DefaultConv, Derived, Base, types::pure551>::value, Thiscall>(
+				"cocos2d::extension::CCControl::onExit", 
+				(void*)addresses::address551()
+			);
+		}
+
+		if constexpr (compare::isTouchInside<Derived, Base, types::pure552>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::isTouchInside", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::isTouchInside<DefaultConv, Derived, Base, types::pure552>::value, Thiscall>(
+				"cocos2d::extension::CCControl::isTouchInside", 
+				(void*)addresses::address552()
+			);
+		}
+
+		if constexpr (compare::setEnabled<Derived, Base, types::pure553>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::setEnabled", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setEnabled<DefaultConv, Derived, Base, types::pure553>::value, Thiscall>(
+				"cocos2d::extension::CCControl::setEnabled", 
+				(void*)addresses::address553()
+			);
+		}
+
+		if constexpr (compare::onEnter<Derived, Base, types::pure554>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::onEnter", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onEnter<DefaultConv, Derived, Base, types::pure554>::value, Thiscall>(
+				"cocos2d::extension::CCControl::onEnter", 
+				(void*)addresses::address554()
+			);
+		}
+
+		if constexpr (compare::isEnabled<Derived, Base, types::pure555>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::isEnabled", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::isEnabled<DefaultConv, Derived, Base, types::pure555>::value, Thiscall>(
+				"cocos2d::extension::CCControl::isEnabled", 
+				(void*)addresses::address555()
+			);
+		}
+
+		if constexpr (compare::setSelected<Derived, Base, types::pure556>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::setSelected", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setSelected<DefaultConv, Derived, Base, types::pure556>::value, Thiscall>(
+				"cocos2d::extension::CCControl::setSelected", 
+				(void*)addresses::address556()
+			);
+		}
+
+		if constexpr (compare::isOpacityModifyRGB<Derived, Base, types::pure557>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::isOpacityModifyRGB", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::isOpacityModifyRGB<DefaultConv, Derived, Base, types::pure557>::value, Thiscall>(
+				"cocos2d::extension::CCControl::isOpacityModifyRGB", 
+				(void*)addresses::address557()
+			);
+		}
+
+		if constexpr (compare::setHighlighted<Derived, Base, types::pure558>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::setHighlighted", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setHighlighted<DefaultConv, Derived, Base, types::pure558>::value, Thiscall>(
+				"cocos2d::extension::CCControl::setHighlighted", 
+				(void*)addresses::address558()
+			);
+		}
+
+		if constexpr (compare::needsLayout<Derived, Base, types::pure559>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::needsLayout", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::needsLayout<DefaultConv, Derived, Base, types::pure559>::value, Thiscall>(
+				"cocos2d::extension::CCControl::needsLayout", 
+				(void*)addresses::address559()
+			);
+		}
+
+		if constexpr (compare::getTouchLocation<Derived, Base, types::pure560>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::getTouchLocation", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::getTouchLocation<DefaultConv, Derived, Base, types::pure560>::value, Thiscall>(
+				"cocos2d::extension::CCControl::getTouchLocation", 
+				(void*)addresses::address560()
+			);
+		}
+
+		if constexpr (compare::isHighlighted<Derived, Base, types::pure561>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::isHighlighted", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::isHighlighted<DefaultConv, Derived, Base, types::pure561>::value, Thiscall>(
+				"cocos2d::extension::CCControl::isHighlighted", 
+				(void*)addresses::address561()
+			);
+		}
+
+		if constexpr (compare::addTargetWithActionForControlEvents<Derived, Base, types::pure562>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::addTargetWithActionForControlEvents", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::addTargetWithActionForControlEvents<DefaultConv, Derived, Base, types::pure562>::value, Thiscall>(
+				"cocos2d::extension::CCControl::addTargetWithActionForControlEvents", 
+				(void*)addresses::address562()
+			);
+		}
+
+		if constexpr (compare::removeTargetWithActionForControlEvents<Derived, Base, types::pure563>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::removeTargetWithActionForControlEvents", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::removeTargetWithActionForControlEvents<DefaultConv, Derived, Base, types::pure563>::value, Thiscall>(
+				"cocos2d::extension::CCControl::removeTargetWithActionForControlEvents", 
+				(void*)addresses::address563()
+			);
+		}
+
+		if constexpr (compare::isSelected<Derived, Base, types::pure564>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControl::isSelected", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::isSelected<DefaultConv, Derived, Base, types::pure564>::value, Thiscall>(
+				"cocos2d::extension::CCControl::isSelected", 
+				(void*)addresses::address564()
+			);
+		}
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, cocos2d::CCDrawNode> : ModifyBase<Modify<Derived, cocos2d::CCDrawNode>> {
+	using ModifyBase<Modify<Derived, cocos2d::CCDrawNode>>::ModifyBase;
+	using Base = cocos2d::CCDrawNode;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+		if constexpr (compare::clear<Derived, Base, types::pure86>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDrawNode::clear", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::clear<DefaultConv, Derived, Base, types::pure86>::value, Thiscall>(
+				"cocos2d::CCDrawNode::clear", 
+				(void*)addresses::address86()
+			);
+		}
+
+		if constexpr (compare::create<Derived, Base, types::pure87>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDrawNode::create", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure87>::value, Cdecl>(
+				"cocos2d::CCDrawNode::create", 
+				(void*)addresses::address87()
+			);
+		}
+
+		if constexpr (compare::drawPolygon<Derived, Base, types::pure88>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDrawNode::drawPolygon", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::drawPolygon<DefaultConv, Derived, Base, types::pure88>::value, Thiscall>(
+				"cocos2d::CCDrawNode::drawPolygon", 
+				(void*)addresses::address88()
+			);
+		}
+
+		if constexpr (compare::drawSegment<Derived, Base, types::pure89>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDrawNode::drawSegment", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::drawSegment<DefaultConv, Derived, Base, types::pure89>::value, Thiscall>(
+				"cocos2d::CCDrawNode::drawSegment", 
+				(void*)addresses::address89()
+			);
+		}
+
+		if constexpr (compare::getBlendFunc<Derived, Base, types::pure90>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDrawNode::getBlendFunc", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::getBlendFunc<DefaultConv, Derived, Base, types::pure90>::value, Thiscall>(
+				"cocos2d::CCDrawNode::getBlendFunc", 
+				(void*)addresses::address90()
+			);
+		}
+
+		if constexpr (compare::init<Derived, Base, types::pure91>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDrawNode::init", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure91>::value, Thiscall>(
+				"cocos2d::CCDrawNode::init", 
+				(void*)addresses::address91()
+			);
+		}
+
+		if constexpr (compare::setBlendFunc<Derived, Base, types::pure92>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDrawNode::setBlendFunc", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setBlendFunc<DefaultConv, Derived, Base, types::pure92>::value, Thiscall>(
+				"cocos2d::CCDrawNode::setBlendFunc", 
+				(void*)addresses::address92()
+			);
+		}
+
+		if constexpr (compare::draw<Derived, Base, types::pure93>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDrawNode::draw", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure93>::value, Thiscall>(
+				"cocos2d::CCDrawNode::draw", 
+				(void*)addresses::address93()
+			);
+		}
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, cocos2d::CCClippingNode> : ModifyBase<Modify<Derived, cocos2d::CCClippingNode>> {
+	using ModifyBase<Modify<Derived, cocos2d::CCClippingNode>>::ModifyBase;
+	using Base = cocos2d::CCClippingNode;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+		if constexpr (compare::create<Derived, Base, types::pure29>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::create", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure29>::value, Cdecl>(
+				"cocos2d::CCClippingNode::create", 
+				(void*)addresses::address29()
+			);
+		}
+
+		if constexpr (compare::create<Derived, Base, types::pure30>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::create", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure30>::value, Cdecl>(
+				"cocos2d::CCClippingNode::create", 
+				(void*)addresses::address30()
+			);
+		}
+
+		if constexpr (compare::getAlphaThreshold<Derived, Base, types::pure31>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::getAlphaThreshold", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::getAlphaThreshold<DefaultConv, Derived, Base, types::pure31>::value, Thiscall>(
+				"cocos2d::CCClippingNode::getAlphaThreshold", 
+				(void*)addresses::address31()
+			);
+		}
+
+		if constexpr (compare::getStencil<Derived, Base, types::pure32>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::getStencil", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::getStencil<DefaultConv, Derived, Base, types::pure32>::value, Thiscall>(
+				"cocos2d::CCClippingNode::getStencil", 
+				(void*)addresses::address32()
+			);
+		}
+
+		if constexpr (compare::isInverted<Derived, Base, types::pure33>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::isInverted", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::isInverted<DefaultConv, Derived, Base, types::pure33>::value, Thiscall>(
+				"cocos2d::CCClippingNode::isInverted", 
+				(void*)addresses::address33()
+			);
+		}
+
+		if constexpr (compare::onEnter<Derived, Base, types::pure34>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::onEnter", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onEnter<DefaultConv, Derived, Base, types::pure34>::value, Thiscall>(
+				"cocos2d::CCClippingNode::onEnter", 
+				(void*)addresses::address34()
+			);
+		}
+
+		if constexpr (compare::onEnterTransitionDidFinish<Derived, Base, types::pure35>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::onEnterTransitionDidFinish", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onEnterTransitionDidFinish<DefaultConv, Derived, Base, types::pure35>::value, Thiscall>(
+				"cocos2d::CCClippingNode::onEnterTransitionDidFinish", 
+				(void*)addresses::address35()
+			);
+		}
+
+		if constexpr (compare::onExit<Derived, Base, types::pure36>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::onExit", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onExit<DefaultConv, Derived, Base, types::pure36>::value, Thiscall>(
+				"cocos2d::CCClippingNode::onExit", 
+				(void*)addresses::address36()
+			);
+		}
+
+		if constexpr (compare::onExitTransitionDidStart<Derived, Base, types::pure37>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::onExitTransitionDidStart", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onExitTransitionDidStart<DefaultConv, Derived, Base, types::pure37>::value, Thiscall>(
+				"cocos2d::CCClippingNode::onExitTransitionDidStart", 
+				(void*)addresses::address37()
+			);
+		}
+
+		if constexpr (compare::setAlphaThreshold<Derived, Base, types::pure38>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::setAlphaThreshold", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setAlphaThreshold<DefaultConv, Derived, Base, types::pure38>::value, Thiscall>(
+				"cocos2d::CCClippingNode::setAlphaThreshold", 
+				(void*)addresses::address38()
+			);
+		}
+
+		if constexpr (compare::setInverted<Derived, Base, types::pure39>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::setInverted", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setInverted<DefaultConv, Derived, Base, types::pure39>::value, Thiscall>(
+				"cocos2d::CCClippingNode::setInverted", 
+				(void*)addresses::address39()
+			);
+		}
+
+		if constexpr (compare::setStencil<Derived, Base, types::pure40>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::setStencil", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setStencil<DefaultConv, Derived, Base, types::pure40>::value, Thiscall>(
+				"cocos2d::CCClippingNode::setStencil", 
+				(void*)addresses::address40()
+			);
+		}
+
+		if constexpr (compare::visit<Derived, Base, types::pure41>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCClippingNode::visit", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::visit<DefaultConv, Derived, Base, types::pure41>::value, Thiscall>(
+				"cocos2d::CCClippingNode::visit", 
+				(void*)addresses::address41()
 			);
 		}
 
@@ -1601,27 +1723,25 @@ struct Modify<Derived, cocos2d::CCIMEDelegate> : ModifyBase<Modify<Derived, coco
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::attachWithIME<Derived, Base, types::pure107>::value) {
+		if constexpr (compare::attachWithIME<Derived, Base, types::pure108>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCIMEDelegate::attachWithIME", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::attachWithIME<DefaultConv, Derived, Base, types::pure108>::value, Thiscall>(
 				"cocos2d::CCIMEDelegate::attachWithIME", 
-				(void*)addresses::address107(), 
-				(void*)wrap::attachWithIME<Thiscall, Derived, Base, types::pure107>::value
+				(void*)addresses::address108()
 			);
 		}
 
-		if constexpr (compare::detachWithIME<Derived, Base, types::pure108>::value) {
+		if constexpr (compare::detachWithIME<Derived, Base, types::pure109>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCIMEDelegate::detachWithIME", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::detachWithIME<DefaultConv, Derived, Base, types::pure109>::value, Thiscall>(
 				"cocos2d::CCIMEDelegate::detachWithIME", 
-				(void*)addresses::address108(), 
-				(void*)wrap::detachWithIME<Thiscall, Derived, Base, types::pure108>::value
+				(void*)addresses::address109()
 			);
 		}
 
@@ -1636,15 +1756,14 @@ struct Modify<Derived, cocos2d::CCDelayTime> : ModifyBase<Modify<Derived, cocos2
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure41>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure42>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDelayTime::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure42>::value, Cdecl>(
 				"cocos2d::CCDelayTime::create", 
-				(void*)addresses::address41(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure41>::value
+				(void*)addresses::address42()
 			);
 		}
 
@@ -1659,51 +1778,36 @@ struct Modify<Derived, cocos2d::CCDictionary> : ModifyBase<Modify<Derived, cocos
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::allKeys<Derived, Base, types::pure42>::value) {
+		if constexpr (compare::allKeys<Derived, Base, types::pure43>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDictionary::allKeys", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::allKeys<DefaultConv, Derived, Base, types::pure43>::value, Thiscall>(
 				"cocos2d::CCDictionary::allKeys", 
-				(void*)addresses::address42(), 
-				(void*)wrap::allKeys<Thiscall, Derived, Base, types::pure42>::value
+				(void*)addresses::address43()
 			);
 		}
 
-		if constexpr (compare::count<Derived, Base, types::pure43>::value) {
+		if constexpr (compare::count<Derived, Base, types::pure44>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDictionary::count", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::count<DefaultConv, Derived, Base, types::pure44>::value, Thiscall>(
 				"cocos2d::CCDictionary::count", 
-				(void*)addresses::address43(), 
-				(void*)wrap::count<Thiscall, Derived, Base, types::pure43>::value
+				(void*)addresses::address44()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure44>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure45>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDictionary::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure45>::value, Cdecl>(
 				"cocos2d::CCDictionary::create", 
-				(void*)addresses::address44(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure44>::value
-			);
-		}
-
-		if constexpr (compare::objectForKey<Derived, Base, types::pure45>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDictionary::objectForKey", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDictionary::objectForKey", 
-				(void*)addresses::address45(), 
-				(void*)wrap::objectForKey<Membercall, Derived, Base, types::pure45>::value
+				(void*)addresses::address45()
 			);
 		}
 
@@ -1712,46 +1816,42 @@ struct Modify<Derived, cocos2d::CCDictionary> : ModifyBase<Modify<Derived, cocos
 				"Adding hook at function cocos2d::CCDictionary::objectForKey", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::objectForKey<DefaultConv, Derived, Base, types::pure46>::value, Thiscall>(
 				"cocos2d::CCDictionary::objectForKey", 
-				(void*)addresses::address46(), 
-				(void*)wrap::objectForKey<Membercall, Derived, Base, types::pure46>::value
+				(void*)addresses::address46()
 			);
 		}
 
-		if constexpr (compare::removeAllObjects<Derived, Base, types::pure47>::value) {
+		if constexpr (compare::objectForKey<Derived, Base, types::pure47>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDictionary::objectForKey", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::objectForKey<DefaultConv, Derived, Base, types::pure47>::value, Thiscall>(
+				"cocos2d::CCDictionary::objectForKey", 
+				(void*)addresses::address47()
+			);
+		}
+
+		if constexpr (compare::removeAllObjects<Derived, Base, types::pure48>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDictionary::removeAllObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeAllObjects<DefaultConv, Derived, Base, types::pure48>::value, Thiscall>(
 				"cocos2d::CCDictionary::removeAllObjects", 
-				(void*)addresses::address47(), 
-				(void*)wrap::removeAllObjects<Thiscall, Derived, Base, types::pure47>::value
+				(void*)addresses::address48()
 			);
 		}
 
-		if constexpr (compare::removeObjectForKey<Derived, Base, types::pure48>::value) {
+		if constexpr (compare::removeObjectForKey<Derived, Base, types::pure49>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDictionary::removeObjectForKey", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeObjectForKey<DefaultConv, Derived, Base, types::pure49>::value, Thiscall>(
 				"cocos2d::CCDictionary::removeObjectForKey", 
-				(void*)addresses::address48(), 
-				(void*)wrap::removeObjectForKey<Membercall, Derived, Base, types::pure48>::value
-			);
-		}
-
-		if constexpr (compare::setObject<Derived, Base, types::pure49>::value) {
-			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDictionary::setObject", 
-				Severity::Debug
-			);
-			Interface::get()->addHook(
-				"cocos2d::CCDictionary::setObject", 
-				(void*)addresses::address49(), 
-				(void*)wrap::setObject<Membercall, Derived, Base, types::pure49>::value
+				(void*)addresses::address49()
 			);
 		}
 
@@ -1760,22 +1860,20 @@ struct Modify<Derived, cocos2d::CCDictionary> : ModifyBase<Modify<Derived, cocos
 				"Adding hook at function cocos2d::CCDictionary::setObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setObject<DefaultConv, Derived, Base, types::pure50>::value, Thiscall>(
 				"cocos2d::CCDictionary::setObject", 
-				(void*)addresses::address50(), 
-				(void*)wrap::setObject<Membercall, Derived, Base, types::pure50>::value
+				(void*)addresses::address50()
 			);
 		}
 
-		if constexpr (compare::valueForKey<Derived, Base, types::pure51>::value) {
+		if constexpr (compare::setObject<Derived, Base, types::pure51>::value) {
 			Interface::get()->logInfo(
-				"Adding hook at function cocos2d::CCDictionary::valueForKey", 
+				"Adding hook at function cocos2d::CCDictionary::setObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
-				"cocos2d::CCDictionary::valueForKey", 
-				(void*)addresses::address51(), 
-				(void*)wrap::valueForKey<Membercall, Derived, Base, types::pure51>::value
+			Interface::get()->addHook<wrap::setObject<DefaultConv, Derived, Base, types::pure51>::value, Thiscall>(
+				"cocos2d::CCDictionary::setObject", 
+				(void*)addresses::address51()
 			);
 		}
 
@@ -1784,10 +1882,20 @@ struct Modify<Derived, cocos2d::CCDictionary> : ModifyBase<Modify<Derived, cocos
 				"Adding hook at function cocos2d::CCDictionary::valueForKey", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::valueForKey<DefaultConv, Derived, Base, types::pure52>::value, Thiscall>(
 				"cocos2d::CCDictionary::valueForKey", 
-				(void*)addresses::address52(), 
-				(void*)wrap::valueForKey<Membercall, Derived, Base, types::pure52>::value
+				(void*)addresses::address52()
+			);
+		}
+
+		if constexpr (compare::valueForKey<Derived, Base, types::pure53>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCDictionary::valueForKey", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::valueForKey<DefaultConv, Derived, Base, types::pure53>::value, Thiscall>(
+				"cocos2d::CCDictionary::valueForKey", 
+				(void*)addresses::address53()
 			);
 		}
 
@@ -1802,15 +1910,14 @@ struct Modify<Derived, LevelSearchLayer> : ModifyBase<Modify<Derived, LevelSearc
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1597>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1641>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelSearchLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1641>::value, Cdecl>(
 				"LevelSearchLayer::create", 
-				(void*)addresses::address1597(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure1597>::value
+				(void*)addresses::address1641()
 			);
 		}
 
@@ -1825,27 +1932,25 @@ struct Modify<Derived, cocos2d::CCStandardTouchHandler> : ModifyBase<Modify<Deri
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure493>::value) {
+		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure499>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCStandardTouchHandler::handlerWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::handlerWithDelegate<DefaultConv, Derived, Base, types::pure499>::value, Cdecl>(
 				"cocos2d::CCStandardTouchHandler::handlerWithDelegate", 
-				(void*)addresses::address493(), 
-				(void*)wrap::handlerWithDelegate<Optcall, Derived, Base, types::pure493>::value
+				(void*)addresses::address499()
 			);
 		}
 
-		if constexpr (compare::initWithDelegate<Derived, Base, types::pure494>::value) {
+		if constexpr (compare::initWithDelegate<Derived, Base, types::pure500>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCStandardTouchHandler::initWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithDelegate<DefaultConv, Derived, Base, types::pure500>::value, Thiscall>(
 				"cocos2d::CCStandardTouchHandler::initWithDelegate", 
-				(void*)addresses::address494(), 
-				(void*)wrap::initWithDelegate<Thiscall, Derived, Base, types::pure494>::value
+				(void*)addresses::address500()
 			);
 		}
 
@@ -1860,27 +1965,47 @@ struct Modify<Derived, cocos2d::CCLabelTTF> : ModifyBase<Modify<Derived, cocos2d
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::updateTexture<Derived, Base, types::pure129>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure130>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCLabelTTF::create", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure130>::value, Cdecl>(
+				"cocos2d::CCLabelTTF::create", 
+				(void*)addresses::address130()
+			);
+		}
+
+		if constexpr (compare::create<Derived, Base, types::pure131>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCLabelTTF::create", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure131>::value, Cdecl>(
+				"cocos2d::CCLabelTTF::create", 
+				(void*)addresses::address131()
+			);
+		}
+
+		if constexpr (compare::updateTexture<Derived, Base, types::pure132>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLabelTTF::updateTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateTexture<DefaultConv, Derived, Base, types::pure132>::value, Thiscall>(
 				"cocos2d::CCLabelTTF::updateTexture", 
-				(void*)addresses::address129(), 
-				(void*)wrap::updateTexture<Thiscall, Derived, Base, types::pure129>::value
+				(void*)addresses::address132()
 			);
 		}
 
-		if constexpr (compare::setString<Derived, Base, types::pure130>::value) {
+		if constexpr (compare::setString<Derived, Base, types::pure133>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLabelTTF::setString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setString<DefaultConv, Derived, Base, types::pure133>::value, Thiscall>(
 				"cocos2d::CCLabelTTF::setString", 
-				(void*)addresses::address130(), 
-				(void*)wrap::setString<Thiscall, Derived, Base, types::pure130>::value
+				(void*)addresses::address133()
 			);
 		}
 
@@ -1895,39 +2020,36 @@ struct Modify<Derived, cocos2d::CCSpriteFrameCache> : ModifyBase<Modify<Derived,
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::addSpriteFramesWithFile<Derived, Base, types::pure490>::value) {
+		if constexpr (compare::addSpriteFramesWithFile<Derived, Base, types::pure496>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSpriteFrameCache::addSpriteFramesWithFile", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addSpriteFramesWithFile<DefaultConv, Derived, Base, types::pure496>::value, Thiscall>(
 				"cocos2d::CCSpriteFrameCache::addSpriteFramesWithFile", 
-				(void*)addresses::address490(), 
-				(void*)wrap::addSpriteFramesWithFile<Membercall, Derived, Base, types::pure490>::value
+				(void*)addresses::address496()
 			);
 		}
 
-		if constexpr (compare::sharedSpriteFrameCache<Derived, Base, types::pure491>::value) {
+		if constexpr (compare::sharedSpriteFrameCache<Derived, Base, types::pure497>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSpriteFrameCache::sharedSpriteFrameCache", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedSpriteFrameCache<DefaultConv, Derived, Base, types::pure497>::value, Cdecl>(
 				"cocos2d::CCSpriteFrameCache::sharedSpriteFrameCache", 
-				(void*)addresses::address491(), 
-				(void*)wrap::sharedSpriteFrameCache<Cdecl, Derived, Base, types::pure491>::value
+				(void*)addresses::address497()
 			);
 		}
 
-		if constexpr (compare::spriteFrameByName<Derived, Base, types::pure492>::value) {
+		if constexpr (compare::spriteFrameByName<Derived, Base, types::pure498>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSpriteFrameCache::spriteFrameByName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::spriteFrameByName<DefaultConv, Derived, Base, types::pure498>::value, Thiscall>(
 				"cocos2d::CCSpriteFrameCache::spriteFrameByName", 
-				(void*)addresses::address492(), 
-				(void*)wrap::spriteFrameByName<Membercall, Derived, Base, types::pure492>::value
+				(void*)addresses::address498()
 			);
 		}
 
@@ -1942,375 +2064,344 @@ struct Modify<Derived, cocos2d::CCDirector> : ModifyBase<Modify<Derived, cocos2d
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure54>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure55>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure55>::value, Thiscall>(
 				"cocos2d::CCDirector::init", 
-				(void*)addresses::address54(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure54>::value
+				(void*)addresses::address55()
 			);
 		}
 
-		if constexpr (compare::getScheduler<Derived, Base, types::pure55>::value) {
+		if constexpr (compare::getScheduler<Derived, Base, types::pure56>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getScheduler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getScheduler<DefaultConv, Derived, Base, types::pure56>::value, Thiscall>(
 				"cocos2d::CCDirector::getScheduler", 
-				(void*)addresses::address55(), 
-				(void*)wrap::getScheduler<Thiscall, Derived, Base, types::pure55>::value
+				(void*)addresses::address56()
 			);
 		}
 
-		if constexpr (compare::setScheduler<Derived, Base, types::pure56>::value) {
+		if constexpr (compare::setScheduler<Derived, Base, types::pure57>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setScheduler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScheduler<DefaultConv, Derived, Base, types::pure57>::value, Thiscall>(
 				"cocos2d::CCDirector::setScheduler", 
-				(void*)addresses::address56(), 
-				(void*)wrap::setScheduler<Thiscall, Derived, Base, types::pure56>::value
+				(void*)addresses::address57()
 			);
 		}
 
-		if constexpr (compare::getActionManager<Derived, Base, types::pure57>::value) {
+		if constexpr (compare::getActionManager<Derived, Base, types::pure58>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getActionManager", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getActionManager<DefaultConv, Derived, Base, types::pure58>::value, Thiscall>(
 				"cocos2d::CCDirector::getActionManager", 
-				(void*)addresses::address57(), 
-				(void*)wrap::getActionManager<Thiscall, Derived, Base, types::pure57>::value
+				(void*)addresses::address58()
 			);
 		}
 
-		if constexpr (compare::setActionManager<Derived, Base, types::pure58>::value) {
+		if constexpr (compare::setActionManager<Derived, Base, types::pure59>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setActionManager", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setActionManager<DefaultConv, Derived, Base, types::pure59>::value, Thiscall>(
 				"cocos2d::CCDirector::setActionManager", 
-				(void*)addresses::address58(), 
-				(void*)wrap::setActionManager<Thiscall, Derived, Base, types::pure58>::value
+				(void*)addresses::address59()
 			);
 		}
 
-		if constexpr (compare::getTouchDispatcher<Derived, Base, types::pure59>::value) {
+		if constexpr (compare::getTouchDispatcher<Derived, Base, types::pure60>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getTouchDispatcher<DefaultConv, Derived, Base, types::pure60>::value, Thiscall>(
 				"cocos2d::CCDirector::getTouchDispatcher", 
-				(void*)addresses::address59(), 
-				(void*)wrap::getTouchDispatcher<Thiscall, Derived, Base, types::pure59>::value
+				(void*)addresses::address60()
 			);
 		}
 
-		if constexpr (compare::setTouchDispatcher<Derived, Base, types::pure60>::value) {
+		if constexpr (compare::setTouchDispatcher<Derived, Base, types::pure61>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTouchDispatcher<DefaultConv, Derived, Base, types::pure61>::value, Thiscall>(
 				"cocos2d::CCDirector::setTouchDispatcher", 
-				(void*)addresses::address60(), 
-				(void*)wrap::setTouchDispatcher<Thiscall, Derived, Base, types::pure60>::value
+				(void*)addresses::address61()
 			);
 		}
 
-		if constexpr (compare::getKeypadDispatcher<Derived, Base, types::pure61>::value) {
+		if constexpr (compare::getKeypadDispatcher<Derived, Base, types::pure62>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getKeypadDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getKeypadDispatcher<DefaultConv, Derived, Base, types::pure62>::value, Thiscall>(
 				"cocos2d::CCDirector::getKeypadDispatcher", 
-				(void*)addresses::address61(), 
-				(void*)wrap::getKeypadDispatcher<Thiscall, Derived, Base, types::pure61>::value
+				(void*)addresses::address62()
 			);
 		}
 
-		if constexpr (compare::setKeypadDispatcher<Derived, Base, types::pure62>::value) {
+		if constexpr (compare::setKeypadDispatcher<Derived, Base, types::pure63>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setKeypadDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setKeypadDispatcher<DefaultConv, Derived, Base, types::pure63>::value, Thiscall>(
 				"cocos2d::CCDirector::setKeypadDispatcher", 
-				(void*)addresses::address62(), 
-				(void*)wrap::setKeypadDispatcher<Thiscall, Derived, Base, types::pure62>::value
+				(void*)addresses::address63()
 			);
 		}
 
-		if constexpr (compare::getKeyboardDispatcher<Derived, Base, types::pure63>::value) {
+		if constexpr (compare::getKeyboardDispatcher<Derived, Base, types::pure64>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getKeyboardDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getKeyboardDispatcher<DefaultConv, Derived, Base, types::pure64>::value, Thiscall>(
 				"cocos2d::CCDirector::getKeyboardDispatcher", 
-				(void*)addresses::address63(), 
-				(void*)wrap::getKeyboardDispatcher<Thiscall, Derived, Base, types::pure63>::value
+				(void*)addresses::address64()
 			);
 		}
 
-		if constexpr (compare::setKeyboardDispatcher<Derived, Base, types::pure64>::value) {
+		if constexpr (compare::setKeyboardDispatcher<Derived, Base, types::pure65>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setKeyboardDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setKeyboardDispatcher<DefaultConv, Derived, Base, types::pure65>::value, Thiscall>(
 				"cocos2d::CCDirector::setKeyboardDispatcher", 
-				(void*)addresses::address64(), 
-				(void*)wrap::setKeyboardDispatcher<Thiscall, Derived, Base, types::pure64>::value
+				(void*)addresses::address65()
 			);
 		}
 
-		if constexpr (compare::getMouseDispatcher<Derived, Base, types::pure65>::value) {
+		if constexpr (compare::getMouseDispatcher<Derived, Base, types::pure66>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getMouseDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getMouseDispatcher<DefaultConv, Derived, Base, types::pure66>::value, Thiscall>(
 				"cocos2d::CCDirector::getMouseDispatcher", 
-				(void*)addresses::address65(), 
-				(void*)wrap::getMouseDispatcher<Thiscall, Derived, Base, types::pure65>::value
+				(void*)addresses::address66()
 			);
 		}
 
-		if constexpr (compare::setMouseDispatcher<Derived, Base, types::pure66>::value) {
+		if constexpr (compare::setMouseDispatcher<Derived, Base, types::pure67>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setMouseDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setMouseDispatcher<DefaultConv, Derived, Base, types::pure67>::value, Thiscall>(
 				"cocos2d::CCDirector::setMouseDispatcher", 
-				(void*)addresses::address66(), 
-				(void*)wrap::setMouseDispatcher<Thiscall, Derived, Base, types::pure66>::value
+				(void*)addresses::address67()
 			);
 		}
 
-		if constexpr (compare::getAccelerometer<Derived, Base, types::pure67>::value) {
+		if constexpr (compare::getAccelerometer<Derived, Base, types::pure68>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getAccelerometer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getAccelerometer<DefaultConv, Derived, Base, types::pure68>::value, Thiscall>(
 				"cocos2d::CCDirector::getAccelerometer", 
-				(void*)addresses::address67(), 
-				(void*)wrap::getAccelerometer<Thiscall, Derived, Base, types::pure67>::value
+				(void*)addresses::address68()
 			);
 		}
 
-		if constexpr (compare::setAccelerometer<Derived, Base, types::pure68>::value) {
+		if constexpr (compare::setAccelerometer<Derived, Base, types::pure69>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setAccelerometer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAccelerometer<DefaultConv, Derived, Base, types::pure69>::value, Thiscall>(
 				"cocos2d::CCDirector::setAccelerometer", 
-				(void*)addresses::address68(), 
-				(void*)wrap::setAccelerometer<Thiscall, Derived, Base, types::pure68>::value
+				(void*)addresses::address69()
 			);
 		}
 
-		if constexpr (compare::getDeltaTime<Derived, Base, types::pure69>::value) {
+		if constexpr (compare::getDeltaTime<Derived, Base, types::pure70>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getDeltaTime", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDeltaTime<DefaultConv, Derived, Base, types::pure70>::value, Thiscall>(
 				"cocos2d::CCDirector::getDeltaTime", 
-				(void*)addresses::address69(), 
-				(void*)wrap::getDeltaTime<Thiscall, Derived, Base, types::pure69>::value
+				(void*)addresses::address70()
 			);
 		}
 
-		if constexpr (compare::getSceneDelegate<Derived, Base, types::pure70>::value) {
+		if constexpr (compare::getSceneDelegate<Derived, Base, types::pure71>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getSceneDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getSceneDelegate<DefaultConv, Derived, Base, types::pure71>::value, Thiscall>(
 				"cocos2d::CCDirector::getSceneDelegate", 
-				(void*)addresses::address70(), 
-				(void*)wrap::getSceneDelegate<Thiscall, Derived, Base, types::pure70>::value
+				(void*)addresses::address71()
 			);
 		}
 
-		if constexpr (compare::setSceneDelegate<Derived, Base, types::pure71>::value) {
+		if constexpr (compare::setSceneDelegate<Derived, Base, types::pure72>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setSceneDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSceneDelegate<DefaultConv, Derived, Base, types::pure72>::value, Thiscall>(
 				"cocos2d::CCDirector::setSceneDelegate", 
-				(void*)addresses::address71(), 
-				(void*)wrap::setSceneDelegate<Thiscall, Derived, Base, types::pure71>::value
+				(void*)addresses::address72()
 			);
 		}
 
-		if constexpr (compare::getWinSize<Derived, Base, types::pure72>::value) {
+		if constexpr (compare::getWinSize<Derived, Base, types::pure73>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::getWinSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getWinSize<DefaultConv, Derived, Base, types::pure73>::value, Thiscall>(
 				"cocos2d::CCDirector::getWinSize", 
-				(void*)addresses::address72(), 
-				(void*)wrap::getWinSize<Thiscall, Derived, Base, types::pure72>::value
+				(void*)addresses::address73()
 			);
 		}
 
-		if constexpr (compare::pushScene<Derived, Base, types::pure73>::value) {
+		if constexpr (compare::pushScene<Derived, Base, types::pure74>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::pushScene", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pushScene<DefaultConv, Derived, Base, types::pure74>::value, Thiscall>(
 				"cocos2d::CCDirector::pushScene", 
-				(void*)addresses::address73(), 
-				(void*)wrap::pushScene<Membercall, Derived, Base, types::pure73>::value
+				(void*)addresses::address74()
 			);
 		}
 
-		if constexpr (compare::replaceScene<Derived, Base, types::pure74>::value) {
+		if constexpr (compare::replaceScene<Derived, Base, types::pure75>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::replaceScene", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::replaceScene<DefaultConv, Derived, Base, types::pure75>::value, Thiscall>(
 				"cocos2d::CCDirector::replaceScene", 
-				(void*)addresses::address74(), 
-				(void*)wrap::replaceScene<Membercall, Derived, Base, types::pure74>::value
+				(void*)addresses::address75()
 			);
 		}
 
-		if constexpr (compare::resetSmoothFixCounter<Derived, Base, types::pure75>::value) {
+		if constexpr (compare::resetSmoothFixCounter<Derived, Base, types::pure76>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::resetSmoothFixCounter", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::resetSmoothFixCounter<DefaultConv, Derived, Base, types::pure76>::value, Thiscall>(
 				"cocos2d::CCDirector::resetSmoothFixCounter", 
-				(void*)addresses::address75(), 
-				(void*)wrap::resetSmoothFixCounter<Thiscall, Derived, Base, types::pure75>::value
+				(void*)addresses::address76()
 			);
 		}
 
-		if constexpr (compare::sharedDirector<Derived, Base, types::pure76>::value) {
+		if constexpr (compare::sharedDirector<Derived, Base, types::pure77>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::sharedDirector", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedDirector<DefaultConv, Derived, Base, types::pure77>::value, Cdecl>(
 				"cocos2d::CCDirector::sharedDirector", 
-				(void*)addresses::address76(), 
-				(void*)wrap::sharedDirector<Cdecl, Derived, Base, types::pure76>::value
+				(void*)addresses::address77()
 			);
 		}
 
-		if constexpr (compare::calculateDeltaTime<Derived, Base, types::pure77>::value) {
+		if constexpr (compare::calculateDeltaTime<Derived, Base, types::pure78>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::calculateDeltaTime", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::calculateDeltaTime<DefaultConv, Derived, Base, types::pure78>::value, Thiscall>(
 				"cocos2d::CCDirector::calculateDeltaTime", 
-				(void*)addresses::address77(), 
-				(void*)wrap::calculateDeltaTime<Thiscall, Derived, Base, types::pure77>::value
+				(void*)addresses::address78()
 			);
 		}
 
-		if constexpr (compare::calculateMPF<Derived, Base, types::pure78>::value) {
+		if constexpr (compare::calculateMPF<Derived, Base, types::pure79>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::calculateMPF", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::calculateMPF<DefaultConv, Derived, Base, types::pure79>::value, Thiscall>(
 				"cocos2d::CCDirector::calculateMPF", 
-				(void*)addresses::address78(), 
-				(void*)wrap::calculateMPF<Thiscall, Derived, Base, types::pure78>::value
+				(void*)addresses::address79()
 			);
 		}
 
-		if constexpr (compare::convertToGL<Derived, Base, types::pure79>::value) {
+		if constexpr (compare::convertToGL<Derived, Base, types::pure80>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::convertToGL", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::convertToGL<DefaultConv, Derived, Base, types::pure80>::value, Thiscall>(
 				"cocos2d::CCDirector::convertToGL", 
-				(void*)addresses::address79(), 
-				(void*)wrap::convertToGL<Membercall, Derived, Base, types::pure79>::value
+				(void*)addresses::address80()
 			);
 		}
 
-		if constexpr (compare::drawScene<Derived, Base, types::pure80>::value) {
+		if constexpr (compare::drawScene<Derived, Base, types::pure81>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::drawScene", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::drawScene<DefaultConv, Derived, Base, types::pure81>::value, Thiscall>(
 				"cocos2d::CCDirector::drawScene", 
-				(void*)addresses::address80(), 
-				(void*)wrap::drawScene<Thiscall, Derived, Base, types::pure80>::value
+				(void*)addresses::address81()
 			);
 		}
 
-		if constexpr (compare::setNextScene<Derived, Base, types::pure81>::value) {
+		if constexpr (compare::setNextScene<Derived, Base, types::pure82>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::setNextScene", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setNextScene<DefaultConv, Derived, Base, types::pure82>::value, Thiscall>(
 				"cocos2d::CCDirector::setNextScene", 
-				(void*)addresses::address81(), 
-				(void*)wrap::setNextScene<Thiscall, Derived, Base, types::pure81>::value
+				(void*)addresses::address82()
 			);
 		}
 
-		if constexpr (compare::showStats<Derived, Base, types::pure82>::value) {
+		if constexpr (compare::showStats<Derived, Base, types::pure83>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::showStats", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::showStats<DefaultConv, Derived, Base, types::pure83>::value, Thiscall>(
 				"cocos2d::CCDirector::showStats", 
-				(void*)addresses::address82(), 
-				(void*)wrap::showStats<Thiscall, Derived, Base, types::pure82>::value
+				(void*)addresses::address83()
 			);
 		}
 
-		if constexpr (compare::updateContentScale<Derived, Base, types::pure83>::value) {
+		if constexpr (compare::updateContentScale<Derived, Base, types::pure84>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::updateContentScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateContentScale<DefaultConv, Derived, Base, types::pure84>::value, Thiscall>(
 				"cocos2d::CCDirector::updateContentScale", 
-				(void*)addresses::address83(), 
-				(void*)wrap::updateContentScale<Membercall, Derived, Base, types::pure83>::value
+				(void*)addresses::address84()
 			);
 		}
 
-		if constexpr (compare::popSceneWithTransition<Derived, Base, types::pure84>::value) {
+		if constexpr (compare::popSceneWithTransition<Derived, Base, types::pure85>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCDirector::popSceneWithTransition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::popSceneWithTransition<DefaultConv, Derived, Base, types::pure85>::value, Thiscall>(
 				"cocos2d::CCDirector::popSceneWithTransition", 
-				(void*)addresses::address84(), 
-				(void*)wrap::popSceneWithTransition<Membercall, Derived, Base, types::pure84>::value
+				(void*)addresses::address85()
 			);
 		}
 
@@ -2325,15 +2416,14 @@ struct Modify<Derived, cocos2d::CCFadeTo> : ModifyBase<Modify<Derived, cocos2d::
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure104>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure105>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCFadeTo::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure105>::value, Cdecl>(
 				"cocos2d::CCFadeTo::create", 
-				(void*)addresses::address104(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure104>::value
+				(void*)addresses::address105()
 			);
 		}
 
@@ -2348,15 +2438,14 @@ struct Modify<Derived, cocos2d::CCEaseElasticOut> : ModifyBase<Modify<Derived, c
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure94>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure95>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEaseElasticOut::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure95>::value, Cdecl>(
 				"cocos2d::CCEaseElasticOut::create", 
-				(void*)addresses::address94(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure94>::value
+				(void*)addresses::address95()
 			);
 		}
 
@@ -2371,27 +2460,25 @@ struct Modify<Derived, cocos2d::CCMouseHandler> : ModifyBase<Modify<Derived, coc
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure252>::value) {
+		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure257>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMouseHandler::handlerWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::handlerWithDelegate<DefaultConv, Derived, Base, types::pure257>::value, Cdecl>(
 				"cocos2d::CCMouseHandler::handlerWithDelegate", 
-				(void*)addresses::address252(), 
-				(void*)wrap::handlerWithDelegate<Optcall, Derived, Base, types::pure252>::value
+				(void*)addresses::address257()
 			);
 		}
 
-		if constexpr (compare::initWithDelegate<Derived, Base, types::pure253>::value) {
+		if constexpr (compare::initWithDelegate<Derived, Base, types::pure258>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMouseHandler::initWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithDelegate<DefaultConv, Derived, Base, types::pure258>::value, Thiscall>(
 				"cocos2d::CCMouseHandler::initWithDelegate", 
-				(void*)addresses::address253(), 
-				(void*)wrap::initWithDelegate<Thiscall, Derived, Base, types::pure253>::value
+				(void*)addresses::address258()
 			);
 		}
 
@@ -2406,39 +2493,36 @@ struct Modify<Derived, LoadingCircle> : ModifyBase<Modify<Derived, LoadingCircle
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1608>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1652>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LoadingCircle::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1652>::value, Cdecl>(
 				"LoadingCircle::create", 
-				(void*)addresses::address1608(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure1608>::value
+				(void*)addresses::address1652()
 			);
 		}
 
-		if constexpr (compare::show<Derived, Base, types::pure1609>::value) {
+		if constexpr (compare::show<Derived, Base, types::pure1653>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LoadingCircle::show", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::show<DefaultConv, Derived, Base, types::pure1653>::value, Thiscall>(
 				"LoadingCircle::show", 
-				(void*)addresses::address1609(), 
-				(void*)wrap::show<Thiscall, Derived, Base, types::pure1609>::value
+				(void*)addresses::address1653()
 			);
 		}
 
-		if constexpr (compare::fadeAndRemove<Derived, Base, types::pure1610>::value) {
+		if constexpr (compare::fadeAndRemove<Derived, Base, types::pure1654>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LoadingCircle::fadeAndRemove", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::fadeAndRemove<DefaultConv, Derived, Base, types::pure1654>::value, Thiscall>(
 				"LoadingCircle::fadeAndRemove", 
-				(void*)addresses::address1610(), 
-				(void*)wrap::fadeAndRemove<Thiscall, Derived, Base, types::pure1610>::value
+				(void*)addresses::address1654()
 			);
 		}
 
@@ -2453,15 +2537,14 @@ struct Modify<Derived, cocos2d::CCImage> : ModifyBase<Modify<Derived, cocos2d::C
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::initWithImageData<Derived, Base, types::pure114>::value) {
+		if constexpr (compare::initWithImageData<Derived, Base, types::pure115>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCImage::initWithImageData", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithImageData<DefaultConv, Derived, Base, types::pure115>::value, Thiscall>(
 				"cocos2d::CCImage::initWithImageData", 
-				(void*)addresses::address114(), 
-				(void*)wrap::initWithImageData<Membercall, Derived, Base, types::pure114>::value
+				(void*)addresses::address115()
 			);
 		}
 
@@ -2487,15 +2570,14 @@ struct Modify<Derived, cocos2d::CCEaseIn> : ModifyBase<Modify<Derived, cocos2d::
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure95>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure96>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEaseIn::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure96>::value, Cdecl>(
 				"cocos2d::CCEaseIn::create", 
-				(void*)addresses::address95(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure95>::value
+				(void*)addresses::address96()
 			);
 		}
 
@@ -2510,15 +2592,14 @@ struct Modify<Derived, cocos2d::CCEaseInOut> : ModifyBase<Modify<Derived, cocos2
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure96>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure97>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEaseInOut::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure97>::value, Cdecl>(
 				"cocos2d::CCEaseInOut::create", 
-				(void*)addresses::address96(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure96>::value
+				(void*)addresses::address97()
 			);
 		}
 
@@ -2533,15 +2614,14 @@ struct Modify<Derived, cocos2d::CCEaseOut> : ModifyBase<Modify<Derived, cocos2d:
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure97>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure98>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCEaseOut::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure98>::value, Cdecl>(
 				"cocos2d::CCEaseOut::create", 
-				(void*)addresses::address97(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure97>::value
+				(void*)addresses::address98()
 			);
 		}
 
@@ -2556,99 +2636,91 @@ struct Modify<Derived, cocos2d::CCMenuItemLabel> : ModifyBase<Modify<Derived, co
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::activate<Derived, Base, types::pure228>::value) {
+		if constexpr (compare::activate<Derived, Base, types::pure231>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemLabel::activate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activate<DefaultConv, Derived, Base, types::pure231>::value, Thiscall>(
 				"cocos2d::CCMenuItemLabel::activate", 
-				(void*)addresses::address228(), 
-				(void*)wrap::activate<Thiscall, Derived, Base, types::pure228>::value
+				(void*)addresses::address231()
 			);
 		}
 
-		if constexpr (compare::selected<Derived, Base, types::pure229>::value) {
+		if constexpr (compare::selected<Derived, Base, types::pure232>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemLabel::selected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selected<DefaultConv, Derived, Base, types::pure232>::value, Thiscall>(
 				"cocos2d::CCMenuItemLabel::selected", 
-				(void*)addresses::address229(), 
-				(void*)wrap::selected<Thiscall, Derived, Base, types::pure229>::value
+				(void*)addresses::address232()
 			);
 		}
 
-		if constexpr (compare::unselected<Derived, Base, types::pure230>::value) {
+		if constexpr (compare::unselected<Derived, Base, types::pure233>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemLabel::unselected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unselected<DefaultConv, Derived, Base, types::pure233>::value, Thiscall>(
 				"cocos2d::CCMenuItemLabel::unselected", 
-				(void*)addresses::address230(), 
-				(void*)wrap::unselected<Thiscall, Derived, Base, types::pure230>::value
+				(void*)addresses::address233()
 			);
 		}
 
-		if constexpr (compare::setEnabled<Derived, Base, types::pure231>::value) {
+		if constexpr (compare::setEnabled<Derived, Base, types::pure234>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemLabel::setEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setEnabled<DefaultConv, Derived, Base, types::pure234>::value, Thiscall>(
 				"cocos2d::CCMenuItemLabel::setEnabled", 
-				(void*)addresses::address231(), 
-				(void*)wrap::setEnabled<Thiscall, Derived, Base, types::pure231>::value
+				(void*)addresses::address234()
 			);
 		}
 
-		if constexpr (compare::getDisabledColor<Derived, Base, types::pure232>::value) {
+		if constexpr (compare::getDisabledColor<Derived, Base, types::pure235>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemLabel::getDisabledColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDisabledColor<DefaultConv, Derived, Base, types::pure235>::value, Thiscall>(
 				"cocos2d::CCMenuItemLabel::getDisabledColor", 
-				(void*)addresses::address232(), 
-				(void*)wrap::getDisabledColor<Thiscall, Derived, Base, types::pure232>::value
+				(void*)addresses::address235()
 			);
 		}
 
-		if constexpr (compare::setDisabledColor<Derived, Base, types::pure233>::value) {
+		if constexpr (compare::setDisabledColor<Derived, Base, types::pure236>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemLabel::setDisabledColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setDisabledColor<DefaultConv, Derived, Base, types::pure236>::value, Thiscall>(
 				"cocos2d::CCMenuItemLabel::setDisabledColor", 
-				(void*)addresses::address233(), 
-				(void*)wrap::setDisabledColor<Thiscall, Derived, Base, types::pure233>::value
+				(void*)addresses::address236()
 			);
 		}
 
-		if constexpr (compare::getLabel<Derived, Base, types::pure234>::value) {
+		if constexpr (compare::getLabel<Derived, Base, types::pure237>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemLabel::getLabel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getLabel<DefaultConv, Derived, Base, types::pure237>::value, Thiscall>(
 				"cocos2d::CCMenuItemLabel::getLabel", 
-				(void*)addresses::address234(), 
-				(void*)wrap::getLabel<Thiscall, Derived, Base, types::pure234>::value
+				(void*)addresses::address237()
 			);
 		}
 
-		if constexpr (compare::setLabel<Derived, Base, types::pure235>::value) {
+		if constexpr (compare::setLabel<Derived, Base, types::pure238>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemLabel::setLabel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setLabel<DefaultConv, Derived, Base, types::pure238>::value, Thiscall>(
 				"cocos2d::CCMenuItemLabel::setLabel", 
-				(void*)addresses::address235(), 
-				(void*)wrap::setLabel<Thiscall, Derived, Base, types::pure235>::value
+				(void*)addresses::address238()
 			);
 		}
 
@@ -2663,111 +2735,102 @@ struct Modify<Derived, CCMenuItemSpriteExtra> : ModifyBase<Modify<Derived, CCMen
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure720>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure752>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure752>::value, Optcall>(
 				"CCMenuItemSpriteExtra::create", 
-				(void*)addresses::address720(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure720>::value
+				(void*)addresses::address752()
 			);
 		}
 
-		if constexpr (compare::setSizeMult<Derived, Base, types::pure721>::value) {
+		if constexpr (compare::setSizeMult<Derived, Base, types::pure753>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::setSizeMult", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSizeMult<DefaultConv, Derived, Base, types::pure753>::value, Membercall>(
 				"CCMenuItemSpriteExtra::setSizeMult", 
-				(void*)addresses::address721(), 
-				(void*)wrap::setSizeMult<Membercall, Derived, Base, types::pure721>::value
+				(void*)addresses::address753()
 			);
 		}
 
-		if constexpr (compare::constructor<Derived, Base, types::pure722>::value) {
+		if constexpr (compare::constructor<Derived, Base, types::pure754>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::constructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constructor<DefaultConv, Derived, Base, types::pure754>::value, Thiscall>(
 				"CCMenuItemSpriteExtra::constructor", 
-				(void*)addresses::address722(), 
-				(void*)wrap::constructor<Thiscall, Derived, Base, types::pure722>::value
+				(void*)addresses::address754()
 			);
 		}
 
-		if constexpr (compare::destructor<Derived, Base, types::pure723>::value) {
+		if constexpr (compare::destructor<Derived, Base, types::pure755>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::destructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::destructor<DefaultConv, Derived, Base, types::pure755>::value, Thiscall>(
 				"CCMenuItemSpriteExtra::destructor", 
-				(void*)addresses::address723(), 
-				(void*)wrap::destructor<Thiscall, Derived, Base, types::pure723>::value
+				(void*)addresses::address755()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure724>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure756>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure756>::value, Membercall>(
 				"CCMenuItemSpriteExtra::init", 
-				(void*)addresses::address724(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure724>::value
+				(void*)addresses::address756()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure725>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure757>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure757>::value, Membercall>(
 				"CCMenuItemSpriteExtra::init", 
-				(void*)addresses::address725(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure725>::value
+				(void*)addresses::address757()
 			);
 		}
 
-		if constexpr (compare::activate<Derived, Base, types::pure726>::value) {
+		if constexpr (compare::activate<Derived, Base, types::pure758>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::activate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activate<DefaultConv, Derived, Base, types::pure758>::value, Thiscall>(
 				"CCMenuItemSpriteExtra::activate", 
-				(void*)addresses::address726(), 
-				(void*)wrap::activate<Thiscall, Derived, Base, types::pure726>::value
+				(void*)addresses::address758()
 			);
 		}
 
-		if constexpr (compare::selected<Derived, Base, types::pure727>::value) {
+		if constexpr (compare::selected<Derived, Base, types::pure759>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::selected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selected<DefaultConv, Derived, Base, types::pure759>::value, Thiscall>(
 				"CCMenuItemSpriteExtra::selected", 
-				(void*)addresses::address727(), 
-				(void*)wrap::selected<Thiscall, Derived, Base, types::pure727>::value
+				(void*)addresses::address759()
 			);
 		}
 
-		if constexpr (compare::unselected<Derived, Base, types::pure728>::value) {
+		if constexpr (compare::unselected<Derived, Base, types::pure760>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemSpriteExtra::unselected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unselected<DefaultConv, Derived, Base, types::pure760>::value, Thiscall>(
 				"CCMenuItemSpriteExtra::unselected", 
-				(void*)addresses::address728(), 
-				(void*)wrap::unselected<Thiscall, Derived, Base, types::pure728>::value
+				(void*)addresses::address760()
 			);
 		}
 
@@ -2782,15 +2845,14 @@ struct Modify<Derived, cocos2d::CCFadeOut> : ModifyBase<Modify<Derived, cocos2d:
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure103>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure104>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCFadeOut::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure104>::value, Cdecl>(
 				"cocos2d::CCFadeOut::create", 
-				(void*)addresses::address103(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure103>::value
+				(void*)addresses::address104()
 			);
 		}
 
@@ -2816,15 +2878,14 @@ struct Modify<Derived, cocos2d::CCHide> : ModifyBase<Modify<Derived, cocos2d::CC
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure106>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure107>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCHide::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure107>::value, Cdecl>(
 				"cocos2d::CCHide::create", 
-				(void*)addresses::address106(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure106>::value
+				(void*)addresses::address107()
 			);
 		}
 
@@ -2839,63 +2900,58 @@ struct Modify<Derived, ColorChannelSprite> : ModifyBase<Modify<Derived, ColorCha
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::updateBlending<Derived, Base, types::pure818>::value) {
+		if constexpr (compare::updateBlending<Derived, Base, types::pure849>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ColorChannelSprite::updateBlending", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateBlending<DefaultConv, Derived, Base, types::pure849>::value, Membercall>(
 				"ColorChannelSprite::updateBlending", 
-				(void*)addresses::address818(), 
-				(void*)wrap::updateBlending<Membercall, Derived, Base, types::pure818>::value
+				(void*)addresses::address849()
 			);
 		}
 
-		if constexpr (compare::updateCopyLabel<Derived, Base, types::pure819>::value) {
+		if constexpr (compare::updateCopyLabel<Derived, Base, types::pure850>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ColorChannelSprite::updateCopyLabel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateCopyLabel<DefaultConv, Derived, Base, types::pure850>::value, Membercall>(
 				"ColorChannelSprite::updateCopyLabel", 
-				(void*)addresses::address819(), 
-				(void*)wrap::updateCopyLabel<Membercall, Derived, Base, types::pure819>::value
+				(void*)addresses::address850()
 			);
 		}
 
-		if constexpr (compare::updateOpacity<Derived, Base, types::pure820>::value) {
+		if constexpr (compare::updateOpacity<Derived, Base, types::pure851>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ColorChannelSprite::updateOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateOpacity<DefaultConv, Derived, Base, types::pure851>::value, Membercall>(
 				"ColorChannelSprite::updateOpacity", 
-				(void*)addresses::address820(), 
-				(void*)wrap::updateOpacity<Membercall, Derived, Base, types::pure820>::value
+				(void*)addresses::address851()
 			);
 		}
 
-		if constexpr (compare::updateValues<Derived, Base, types::pure821>::value) {
+		if constexpr (compare::updateValues<Derived, Base, types::pure852>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ColorChannelSprite::updateValues", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateValues<DefaultConv, Derived, Base, types::pure852>::value, Membercall>(
 				"ColorChannelSprite::updateValues", 
-				(void*)addresses::address821(), 
-				(void*)wrap::updateValues<Membercall, Derived, Base, types::pure821>::value
+				(void*)addresses::address852()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure822>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure853>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ColorChannelSprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure853>::value, Cdecl>(
 				"ColorChannelSprite::create", 
-				(void*)addresses::address822(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure822>::value
+				(void*)addresses::address853()
 			);
 		}
 
@@ -2910,15 +2966,14 @@ struct Modify<Derived, cocos2d::CCSet> : ModifyBase<Modify<Derived, cocos2d::CCS
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::acceptVisitor<Derived, Base, types::pure420>::value) {
+		if constexpr (compare::acceptVisitor<Derived, Base, types::pure425>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSet::acceptVisitor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::acceptVisitor<DefaultConv, Derived, Base, types::pure425>::value, Thiscall>(
 				"cocos2d::CCSet::acceptVisitor", 
-				(void*)addresses::address420(), 
-				(void*)wrap::acceptVisitor<Thiscall, Derived, Base, types::pure420>::value
+				(void*)addresses::address425()
 			);
 		}
 
@@ -2933,27 +2988,25 @@ struct Modify<Derived, TableView> : ModifyBase<Modify<Derived, TableView>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure2065>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2126>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function TableView::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2126>::value, Optcall>(
 				"TableView::create", 
-				(void*)addresses::address2065(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure2065>::value
+				(void*)addresses::address2126()
 			);
 		}
 
-		if constexpr (compare::reloadData<Derived, Base, types::pure2066>::value) {
+		if constexpr (compare::reloadData<Derived, Base, types::pure2127>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function TableView::reloadData", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::reloadData<DefaultConv, Derived, Base, types::pure2127>::value, Thiscall>(
 				"TableView::reloadData", 
-				(void*)addresses::address2066(), 
-				(void*)wrap::reloadData<Thiscall, Derived, Base, types::pure2066>::value
+				(void*)addresses::address2127()
 			);
 		}
 
@@ -2979,15 +3032,14 @@ struct Modify<Derived, AchievementsLayer> : ModifyBase<Modify<Derived, Achieveme
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::loadPage<Derived, Base, types::pure640>::value) {
+		if constexpr (compare::loadPage<Derived, Base, types::pure671>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AchievementsLayer::loadPage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::loadPage<DefaultConv, Derived, Base, types::pure671>::value, Membercall>(
 				"AchievementsLayer::loadPage", 
-				(void*)addresses::address640(), 
-				(void*)wrap::loadPage<Membercall, Derived, Base, types::pure640>::value
+				(void*)addresses::address671()
 			);
 		}
 
@@ -3002,39 +3054,36 @@ struct Modify<Derived, cocos2d::CCIMEDispatcher> : ModifyBase<Modify<Derived, co
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedDispatcher<Derived, Base, types::pure109>::value) {
+		if constexpr (compare::sharedDispatcher<Derived, Base, types::pure110>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCIMEDispatcher::sharedDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedDispatcher<DefaultConv, Derived, Base, types::pure110>::value, Cdecl>(
 				"cocos2d::CCIMEDispatcher::sharedDispatcher", 
-				(void*)addresses::address109(), 
-				(void*)wrap::sharedDispatcher<Cdecl, Derived, Base, types::pure109>::value
+				(void*)addresses::address110()
 			);
 		}
 
-		if constexpr (compare::addDelegate<Derived, Base, types::pure110>::value) {
+		if constexpr (compare::addDelegate<Derived, Base, types::pure111>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCIMEDispatcher::addDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addDelegate<DefaultConv, Derived, Base, types::pure111>::value, Thiscall>(
 				"cocos2d::CCIMEDispatcher::addDelegate", 
-				(void*)addresses::address110(), 
-				(void*)wrap::addDelegate<Membercall, Derived, Base, types::pure110>::value
+				(void*)addresses::address111()
 			);
 		}
 
-		if constexpr (compare::removeDelegate<Derived, Base, types::pure111>::value) {
+		if constexpr (compare::removeDelegate<Derived, Base, types::pure112>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCIMEDispatcher::removeDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeDelegate<DefaultConv, Derived, Base, types::pure112>::value, Thiscall>(
 				"cocos2d::CCIMEDispatcher::removeDelegate", 
-				(void*)addresses::address111(), 
-				(void*)wrap::removeDelegate<Membercall, Derived, Base, types::pure111>::value
+				(void*)addresses::address112()
 			);
 		}
 
@@ -3049,27 +3098,47 @@ struct Modify<Derived, InfoLayer> : ModifyBase<Modify<Derived, InfoLayer>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure1509>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1549>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function InfoLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1549>::value, Membercall>(
 				"InfoLayer::init", 
-				(void*)addresses::address1509(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure1509>::value
+				(void*)addresses::address1549()
 			);
 		}
 
-		if constexpr (compare::setupCommentsBrowser<Derived, Base, types::pure1510>::value) {
+		if constexpr (compare::setupCommentsBrowser<Derived, Base, types::pure1550>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function InfoLayer::setupCommentsBrowser", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setupCommentsBrowser<DefaultConv, Derived, Base, types::pure1550>::value, Membercall>(
 				"InfoLayer::setupCommentsBrowser", 
-				(void*)addresses::address1510(), 
-				(void*)wrap::setupCommentsBrowser<Membercall, Derived, Base, types::pure1510>::value
+				(void*)addresses::address1550()
+			);
+		}
+
+		if constexpr (compare::onMore<Derived, Base, types::pure1551>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function InfoLayer::onMore", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onMore<DefaultConv, Derived, Base, types::pure1551>::value, Membercall>(
+				"InfoLayer::onMore", 
+				(void*)addresses::address1551()
+			);
+		}
+
+		if constexpr (compare::onLevelInfo<Derived, Base, types::pure1552>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function InfoLayer::onLevelInfo", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onLevelInfo<DefaultConv, Derived, Base, types::pure1552>::value, Membercall>(
+				"InfoLayer::onLevelInfo", 
+				(void*)addresses::address1552()
 			);
 		}
 
@@ -3084,135 +3153,124 @@ struct Modify<Derived, cocos2d::CCLayerColor> : ModifyBase<Modify<Derived, cocos
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure169>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure172>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure172>::value, Cdecl>(
 				"cocos2d::CCLayerColor::create", 
-				(void*)addresses::address169(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure169>::value
+				(void*)addresses::address172()
 			);
 		}
 
-		if constexpr (compare::draw<Derived, Base, types::pure170>::value) {
+		if constexpr (compare::draw<Derived, Base, types::pure173>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::draw", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure173>::value, Thiscall>(
 				"cocos2d::CCLayerColor::draw", 
-				(void*)addresses::address170(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure170>::value
+				(void*)addresses::address173()
 			);
 		}
 
-		if constexpr (compare::getBlendFunc<Derived, Base, types::pure171>::value) {
+		if constexpr (compare::getBlendFunc<Derived, Base, types::pure174>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::getBlendFunc", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getBlendFunc<DefaultConv, Derived, Base, types::pure174>::value, Thiscall>(
 				"cocos2d::CCLayerColor::getBlendFunc", 
-				(void*)addresses::address171(), 
-				(void*)wrap::getBlendFunc<Thiscall, Derived, Base, types::pure171>::value
+				(void*)addresses::address174()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure172>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure175>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure175>::value, Thiscall>(
 				"cocos2d::CCLayerColor::init", 
-				(void*)addresses::address172(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure172>::value
+				(void*)addresses::address175()
 			);
 		}
 
-		if constexpr (compare::initWithColor<Derived, Base, types::pure173>::value) {
+		if constexpr (compare::initWithColor<Derived, Base, types::pure176>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::initWithColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithColor<DefaultConv, Derived, Base, types::pure176>::value, Thiscall>(
 				"cocos2d::CCLayerColor::initWithColor", 
-				(void*)addresses::address173(), 
-				(void*)wrap::initWithColor<Membercall, Derived, Base, types::pure173>::value
+				(void*)addresses::address176()
 			);
 		}
 
-		if constexpr (compare::initWithColor<Derived, Base, types::pure174>::value) {
+		if constexpr (compare::initWithColor<Derived, Base, types::pure177>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::initWithColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithColor<DefaultConv, Derived, Base, types::pure177>::value, Thiscall>(
 				"cocos2d::CCLayerColor::initWithColor", 
-				(void*)addresses::address174(), 
-				(void*)wrap::initWithColor<Membercall, Derived, Base, types::pure174>::value
+				(void*)addresses::address177()
 			);
 		}
 
-		if constexpr (compare::setBlendFunc<Derived, Base, types::pure175>::value) {
+		if constexpr (compare::setBlendFunc<Derived, Base, types::pure178>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::setBlendFunc", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setBlendFunc<DefaultConv, Derived, Base, types::pure178>::value, Thiscall>(
 				"cocos2d::CCLayerColor::setBlendFunc", 
-				(void*)addresses::address175(), 
-				(void*)wrap::setBlendFunc<Membercall, Derived, Base, types::pure175>::value
+				(void*)addresses::address178()
 			);
 		}
 
-		if constexpr (compare::setColor<Derived, Base, types::pure176>::value) {
+		if constexpr (compare::setColor<Derived, Base, types::pure179>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::setColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setColor<DefaultConv, Derived, Base, types::pure179>::value, Thiscall>(
 				"cocos2d::CCLayerColor::setColor", 
-				(void*)addresses::address176(), 
-				(void*)wrap::setColor<Membercall, Derived, Base, types::pure176>::value
+				(void*)addresses::address179()
 			);
 		}
 
-		if constexpr (compare::setContentSize<Derived, Base, types::pure177>::value) {
+		if constexpr (compare::setContentSize<Derived, Base, types::pure180>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::setContentSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setContentSize<DefaultConv, Derived, Base, types::pure180>::value, Thiscall>(
 				"cocos2d::CCLayerColor::setContentSize", 
-				(void*)addresses::address177(), 
-				(void*)wrap::setContentSize<Membercall, Derived, Base, types::pure177>::value
+				(void*)addresses::address180()
 			);
 		}
 
-		if constexpr (compare::setOpacity<Derived, Base, types::pure178>::value) {
+		if constexpr (compare::setOpacity<Derived, Base, types::pure181>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::setOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacity<DefaultConv, Derived, Base, types::pure181>::value, Thiscall>(
 				"cocos2d::CCLayerColor::setOpacity", 
-				(void*)addresses::address178(), 
-				(void*)wrap::setOpacity<Membercall, Derived, Base, types::pure178>::value
+				(void*)addresses::address181()
 			);
 		}
 
-		if constexpr (compare::updateColor<Derived, Base, types::pure179>::value) {
+		if constexpr (compare::updateColor<Derived, Base, types::pure182>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerColor::updateColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateColor<DefaultConv, Derived, Base, types::pure182>::value, Thiscall>(
 				"cocos2d::CCLayerColor::updateColor", 
-				(void*)addresses::address179(), 
-				(void*)wrap::updateColor<Thiscall, Derived, Base, types::pure179>::value
+				(void*)addresses::address182()
 			);
 		}
 
@@ -3249,39 +3307,36 @@ struct Modify<Derived, cocos2d::CCKeypadHandler> : ModifyBase<Modify<Derived, co
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure120>::value) {
+		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure121>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCKeypadHandler::handlerWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::handlerWithDelegate<DefaultConv, Derived, Base, types::pure121>::value, Cdecl>(
 				"cocos2d::CCKeypadHandler::handlerWithDelegate", 
-				(void*)addresses::address120(), 
-				(void*)wrap::handlerWithDelegate<Optcall, Derived, Base, types::pure120>::value
+				(void*)addresses::address121()
 			);
 		}
 
-		if constexpr (compare::initWithDelegate<Derived, Base, types::pure121>::value) {
+		if constexpr (compare::initWithDelegate<Derived, Base, types::pure122>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCKeypadHandler::initWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithDelegate<DefaultConv, Derived, Base, types::pure122>::value, Thiscall>(
 				"cocos2d::CCKeypadHandler::initWithDelegate", 
-				(void*)addresses::address121(), 
-				(void*)wrap::initWithDelegate<Thiscall, Derived, Base, types::pure121>::value
+				(void*)addresses::address122()
 			);
 		}
 
-		if constexpr (compare::getDelegate<Derived, Base, types::pure123>::value) {
+		if constexpr (compare::getDelegate<Derived, Base, types::pure124>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCKeypadHandler::getDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDelegate<DefaultConv, Derived, Base, types::pure124>::value, Thiscall>(
 				"cocos2d::CCKeypadHandler::getDelegate", 
-				(void*)addresses::address123(), 
-				(void*)wrap::getDelegate<Thiscall, Derived, Base, types::pure123>::value
+				(void*)addresses::address124()
 			);
 		}
 
@@ -3307,27 +3362,25 @@ struct Modify<Derived, cocos2d::CCKeyboardDispatcher> : ModifyBase<Modify<Derive
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::dispatchKeyboardMSG<Derived, Base, types::pure115>::value) {
+		if constexpr (compare::dispatchKeyboardMSG<Derived, Base, types::pure116>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCKeyboardDispatcher::dispatchKeyboardMSG", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::dispatchKeyboardMSG<DefaultConv, Derived, Base, types::pure116>::value, Thiscall>(
 				"cocos2d::CCKeyboardDispatcher::dispatchKeyboardMSG", 
-				(void*)addresses::address115(), 
-				(void*)wrap::dispatchKeyboardMSG<Membercall, Derived, Base, types::pure115>::value
+				(void*)addresses::address116()
 			);
 		}
 
-		if constexpr (compare::keyToString<Derived, Base, types::pure116>::value) {
+		if constexpr (compare::keyToString<Derived, Base, types::pure117>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCKeyboardDispatcher::keyToString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyToString<DefaultConv, Derived, Base, types::pure117>::value, Thiscall>(
 				"cocos2d::CCKeyboardDispatcher::keyToString", 
-				(void*)addresses::address116(), 
-				(void*)wrap::keyToString<Membercall, Derived, Base, types::pure116>::value
+				(void*)addresses::address117()
 			);
 		}
 
@@ -3342,27 +3395,25 @@ struct Modify<Derived, cocos2d::CCKeyboardHandler> : ModifyBase<Modify<Derived, 
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure117>::value) {
+		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure118>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCKeyboardHandler::handlerWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::handlerWithDelegate<DefaultConv, Derived, Base, types::pure118>::value, Cdecl>(
 				"cocos2d::CCKeyboardHandler::handlerWithDelegate", 
-				(void*)addresses::address117(), 
-				(void*)wrap::handlerWithDelegate<Optcall, Derived, Base, types::pure117>::value
+				(void*)addresses::address118()
 			);
 		}
 
-		if constexpr (compare::initWithDelegate<Derived, Base, types::pure118>::value) {
+		if constexpr (compare::initWithDelegate<Derived, Base, types::pure119>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCKeyboardHandler::initWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithDelegate<DefaultConv, Derived, Base, types::pure119>::value, Thiscall>(
 				"cocos2d::CCKeyboardHandler::initWithDelegate", 
-				(void*)addresses::address118(), 
-				(void*)wrap::initWithDelegate<Thiscall, Derived, Base, types::pure118>::value
+				(void*)addresses::address119()
 			);
 		}
 
@@ -3377,39 +3428,36 @@ struct Modify<Derived, GaragePage> : ModifyBase<Modify<Derived, GaragePage>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::listButtonBarSwitchedPage<Derived, Base, types::pure1495>::value) {
+		if constexpr (compare::listButtonBarSwitchedPage<Derived, Base, types::pure1529>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GaragePage::listButtonBarSwitchedPage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::listButtonBarSwitchedPage<DefaultConv, Derived, Base, types::pure1529>::value, Membercall>(
 				"GaragePage::listButtonBarSwitchedPage", 
-				(void*)addresses::address1495(), 
-				(void*)wrap::listButtonBarSwitchedPage<Membercall, Derived, Base, types::pure1495>::value
+				(void*)addresses::address1529()
 			);
 		}
 
-		if constexpr (compare::constructor<Derived, Base, types::pure1496>::value) {
+		if constexpr (compare::constructor<Derived, Base, types::pure1530>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GaragePage::constructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constructor<DefaultConv, Derived, Base, types::pure1530>::value, Thiscall>(
 				"GaragePage::constructor", 
-				(void*)addresses::address1496(), 
-				(void*)wrap::constructor<Thiscall, Derived, Base, types::pure1496>::value
+				(void*)addresses::address1530()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure1497>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1531>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GaragePage::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1531>::value, Membercall>(
 				"GaragePage::init", 
-				(void*)addresses::address1497(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure1497>::value
+				(void*)addresses::address1531()
 			);
 		}
 
@@ -3424,99 +3472,91 @@ struct Modify<Derived, CCMenuItemToggler> : ModifyBase<Modify<Derived, CCMenuIte
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure735>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure767>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemToggler::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure767>::value, Optcall>(
 				"CCMenuItemToggler::create", 
-				(void*)addresses::address735(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure735>::value
+				(void*)addresses::address767()
 			);
 		}
 
-		if constexpr (compare::setSizeMult<Derived, Base, types::pure736>::value) {
+		if constexpr (compare::setSizeMult<Derived, Base, types::pure768>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemToggler::setSizeMult", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSizeMult<DefaultConv, Derived, Base, types::pure768>::value, Membercall>(
 				"CCMenuItemToggler::setSizeMult", 
-				(void*)addresses::address736(), 
-				(void*)wrap::setSizeMult<Membercall, Derived, Base, types::pure736>::value
+				(void*)addresses::address768()
 			);
 		}
 
-		if constexpr (compare::toggle<Derived, Base, types::pure737>::value) {
+		if constexpr (compare::toggle<Derived, Base, types::pure769>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemToggler::toggle", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggle<DefaultConv, Derived, Base, types::pure769>::value, Membercall>(
 				"CCMenuItemToggler::toggle", 
-				(void*)addresses::address737(), 
-				(void*)wrap::toggle<Membercall, Derived, Base, types::pure737>::value
+				(void*)addresses::address769()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure738>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure770>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemToggler::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure770>::value, Membercall>(
 				"CCMenuItemToggler::init", 
-				(void*)addresses::address738(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure738>::value
+				(void*)addresses::address770()
 			);
 		}
 
-		if constexpr (compare::activate<Derived, Base, types::pure739>::value) {
+		if constexpr (compare::activate<Derived, Base, types::pure771>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemToggler::activate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activate<DefaultConv, Derived, Base, types::pure771>::value, Thiscall>(
 				"CCMenuItemToggler::activate", 
-				(void*)addresses::address739(), 
-				(void*)wrap::activate<Thiscall, Derived, Base, types::pure739>::value
+				(void*)addresses::address771()
 			);
 		}
 
-		if constexpr (compare::selected<Derived, Base, types::pure740>::value) {
+		if constexpr (compare::selected<Derived, Base, types::pure772>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemToggler::selected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selected<DefaultConv, Derived, Base, types::pure772>::value, Thiscall>(
 				"CCMenuItemToggler::selected", 
-				(void*)addresses::address740(), 
-				(void*)wrap::selected<Thiscall, Derived, Base, types::pure740>::value
+				(void*)addresses::address772()
 			);
 		}
 
-		if constexpr (compare::unselected<Derived, Base, types::pure741>::value) {
+		if constexpr (compare::unselected<Derived, Base, types::pure773>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemToggler::unselected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unselected<DefaultConv, Derived, Base, types::pure773>::value, Thiscall>(
 				"CCMenuItemToggler::unselected", 
-				(void*)addresses::address741(), 
-				(void*)wrap::unselected<Thiscall, Derived, Base, types::pure741>::value
+				(void*)addresses::address773()
 			);
 		}
 
-		if constexpr (compare::setEnabled<Derived, Base, types::pure742>::value) {
+		if constexpr (compare::setEnabled<Derived, Base, types::pure774>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCMenuItemToggler::setEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setEnabled<DefaultConv, Derived, Base, types::pure774>::value, Membercall>(
 				"CCMenuItemToggler::setEnabled", 
-				(void*)addresses::address742(), 
-				(void*)wrap::setEnabled<Membercall, Derived, Base, types::pure742>::value
+				(void*)addresses::address774()
 			);
 		}
 
@@ -3531,423 +3571,388 @@ struct Modify<Derived, cocos2d::CCLayer> : ModifyBase<Modify<Derived, cocos2d::C
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure132>::value) {
+		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure135>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::ccTouchBegan", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchBegan<DefaultConv, Derived, Base, types::pure135>::value, Thiscall>(
 				"cocos2d::CCLayer::ccTouchBegan", 
-				(void*)addresses::address132(), 
-				(void*)wrap::ccTouchBegan<Thiscall, Derived, Base, types::pure132>::value
+				(void*)addresses::address135()
 			);
 		}
 
-		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure133>::value) {
+		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure136>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::ccTouchCancelled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchCancelled<DefaultConv, Derived, Base, types::pure136>::value, Thiscall>(
 				"cocos2d::CCLayer::ccTouchCancelled", 
-				(void*)addresses::address133(), 
-				(void*)wrap::ccTouchCancelled<Thiscall, Derived, Base, types::pure133>::value
+				(void*)addresses::address136()
 			);
 		}
 
-		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure134>::value) {
+		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure137>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::ccTouchEnded", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchEnded<DefaultConv, Derived, Base, types::pure137>::value, Thiscall>(
 				"cocos2d::CCLayer::ccTouchEnded", 
-				(void*)addresses::address134(), 
-				(void*)wrap::ccTouchEnded<Thiscall, Derived, Base, types::pure134>::value
+				(void*)addresses::address137()
 			);
 		}
 
-		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure135>::value) {
+		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure138>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::ccTouchMoved", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchMoved<DefaultConv, Derived, Base, types::pure138>::value, Thiscall>(
 				"cocos2d::CCLayer::ccTouchMoved", 
-				(void*)addresses::address135(), 
-				(void*)wrap::ccTouchMoved<Thiscall, Derived, Base, types::pure135>::value
+				(void*)addresses::address138()
 			);
 		}
 
-		if constexpr (compare::ccTouchesBegan<Derived, Base, types::pure136>::value) {
+		if constexpr (compare::ccTouchesBegan<Derived, Base, types::pure139>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::ccTouchesBegan", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchesBegan<DefaultConv, Derived, Base, types::pure139>::value, Thiscall>(
 				"cocos2d::CCLayer::ccTouchesBegan", 
-				(void*)addresses::address136(), 
-				(void*)wrap::ccTouchesBegan<Thiscall, Derived, Base, types::pure136>::value
+				(void*)addresses::address139()
 			);
 		}
 
-		if constexpr (compare::ccTouchesCancelled<Derived, Base, types::pure137>::value) {
+		if constexpr (compare::ccTouchesCancelled<Derived, Base, types::pure140>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::ccTouchesCancelled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchesCancelled<DefaultConv, Derived, Base, types::pure140>::value, Thiscall>(
 				"cocos2d::CCLayer::ccTouchesCancelled", 
-				(void*)addresses::address137(), 
-				(void*)wrap::ccTouchesCancelled<Thiscall, Derived, Base, types::pure137>::value
+				(void*)addresses::address140()
 			);
 		}
 
-		if constexpr (compare::ccTouchesEnded<Derived, Base, types::pure138>::value) {
+		if constexpr (compare::ccTouchesEnded<Derived, Base, types::pure141>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::ccTouchesEnded", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchesEnded<DefaultConv, Derived, Base, types::pure141>::value, Thiscall>(
 				"cocos2d::CCLayer::ccTouchesEnded", 
-				(void*)addresses::address138(), 
-				(void*)wrap::ccTouchesEnded<Thiscall, Derived, Base, types::pure138>::value
+				(void*)addresses::address141()
 			);
 		}
 
-		if constexpr (compare::ccTouchesMoved<Derived, Base, types::pure139>::value) {
+		if constexpr (compare::ccTouchesMoved<Derived, Base, types::pure142>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::ccTouchesMoved", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchesMoved<DefaultConv, Derived, Base, types::pure142>::value, Thiscall>(
 				"cocos2d::CCLayer::ccTouchesMoved", 
-				(void*)addresses::address139(), 
-				(void*)wrap::ccTouchesMoved<Thiscall, Derived, Base, types::pure139>::value
+				(void*)addresses::address142()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure140>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure143>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure143>::value, Cdecl>(
 				"cocos2d::CCLayer::create", 
-				(void*)addresses::address140(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure140>::value
+				(void*)addresses::address143()
 			);
 		}
 
-		if constexpr (compare::didAccelerate<Derived, Base, types::pure141>::value) {
+		if constexpr (compare::didAccelerate<Derived, Base, types::pure144>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::didAccelerate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::didAccelerate<DefaultConv, Derived, Base, types::pure144>::value, Thiscall>(
 				"cocos2d::CCLayer::didAccelerate", 
-				(void*)addresses::address141(), 
-				(void*)wrap::didAccelerate<Thiscall, Derived, Base, types::pure141>::value
+				(void*)addresses::address144()
 			);
 		}
 
-		if constexpr (compare::getTouchMode<Derived, Base, types::pure142>::value) {
+		if constexpr (compare::getTouchMode<Derived, Base, types::pure145>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::getTouchMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getTouchMode<DefaultConv, Derived, Base, types::pure145>::value, Thiscall>(
 				"cocos2d::CCLayer::getTouchMode", 
-				(void*)addresses::address142(), 
-				(void*)wrap::getTouchMode<Thiscall, Derived, Base, types::pure142>::value
+				(void*)addresses::address145()
 			);
 		}
 
-		if constexpr (compare::getTouchPriority<Derived, Base, types::pure143>::value) {
+		if constexpr (compare::getTouchPriority<Derived, Base, types::pure146>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::getTouchPriority", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getTouchPriority<DefaultConv, Derived, Base, types::pure146>::value, Thiscall>(
 				"cocos2d::CCLayer::getTouchPriority", 
-				(void*)addresses::address143(), 
-				(void*)wrap::getTouchPriority<Thiscall, Derived, Base, types::pure143>::value
+				(void*)addresses::address146()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure144>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure147>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure147>::value, Thiscall>(
 				"cocos2d::CCLayer::init", 
-				(void*)addresses::address144(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure144>::value
+				(void*)addresses::address147()
 			);
 		}
 
-		if constexpr (compare::isAccelerometerEnabled<Derived, Base, types::pure145>::value) {
+		if constexpr (compare::isAccelerometerEnabled<Derived, Base, types::pure148>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::isAccelerometerEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isAccelerometerEnabled<DefaultConv, Derived, Base, types::pure148>::value, Thiscall>(
 				"cocos2d::CCLayer::isAccelerometerEnabled", 
-				(void*)addresses::address145(), 
-				(void*)wrap::isAccelerometerEnabled<Thiscall, Derived, Base, types::pure145>::value
+				(void*)addresses::address148()
 			);
 		}
 
-		if constexpr (compare::isKeyboardEnabled<Derived, Base, types::pure146>::value) {
+		if constexpr (compare::isKeyboardEnabled<Derived, Base, types::pure149>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::isKeyboardEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isKeyboardEnabled<DefaultConv, Derived, Base, types::pure149>::value, Thiscall>(
 				"cocos2d::CCLayer::isKeyboardEnabled", 
-				(void*)addresses::address146(), 
-				(void*)wrap::isKeyboardEnabled<Thiscall, Derived, Base, types::pure146>::value
+				(void*)addresses::address149()
 			);
 		}
 
-		if constexpr (compare::isKeypadEnabled<Derived, Base, types::pure147>::value) {
+		if constexpr (compare::isKeypadEnabled<Derived, Base, types::pure150>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::isKeypadEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isKeypadEnabled<DefaultConv, Derived, Base, types::pure150>::value, Thiscall>(
 				"cocos2d::CCLayer::isKeypadEnabled", 
-				(void*)addresses::address147(), 
-				(void*)wrap::isKeypadEnabled<Thiscall, Derived, Base, types::pure147>::value
+				(void*)addresses::address150()
 			);
 		}
 
-		if constexpr (compare::isMouseEnabled<Derived, Base, types::pure148>::value) {
+		if constexpr (compare::isMouseEnabled<Derived, Base, types::pure151>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::isMouseEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isMouseEnabled<DefaultConv, Derived, Base, types::pure151>::value, Thiscall>(
 				"cocos2d::CCLayer::isMouseEnabled", 
-				(void*)addresses::address148(), 
-				(void*)wrap::isMouseEnabled<Thiscall, Derived, Base, types::pure148>::value
+				(void*)addresses::address151()
 			);
 		}
 
-		if constexpr (compare::isTouchEnabled<Derived, Base, types::pure149>::value) {
+		if constexpr (compare::isTouchEnabled<Derived, Base, types::pure152>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::isTouchEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isTouchEnabled<DefaultConv, Derived, Base, types::pure152>::value, Thiscall>(
 				"cocos2d::CCLayer::isTouchEnabled", 
-				(void*)addresses::address149(), 
-				(void*)wrap::isTouchEnabled<Thiscall, Derived, Base, types::pure149>::value
+				(void*)addresses::address152()
 			);
 		}
 
-		if constexpr (compare::keyBackClicked<Derived, Base, types::pure150>::value) {
+		if constexpr (compare::keyBackClicked<Derived, Base, types::pure153>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::keyBackClicked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyBackClicked<DefaultConv, Derived, Base, types::pure153>::value, Thiscall>(
 				"cocos2d::CCLayer::keyBackClicked", 
-				(void*)addresses::address150(), 
-				(void*)wrap::keyBackClicked<Thiscall, Derived, Base, types::pure150>::value
+				(void*)addresses::address153()
 			);
 		}
 
-		if constexpr (compare::keyDown<Derived, Base, types::pure151>::value) {
+		if constexpr (compare::keyDown<Derived, Base, types::pure154>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::keyDown", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyDown<DefaultConv, Derived, Base, types::pure154>::value, Thiscall>(
 				"cocos2d::CCLayer::keyDown", 
-				(void*)addresses::address151(), 
-				(void*)wrap::keyDown<Thiscall, Derived, Base, types::pure151>::value
+				(void*)addresses::address154()
 			);
 		}
 
-		if constexpr (compare::keyMenuClicked<Derived, Base, types::pure152>::value) {
+		if constexpr (compare::keyMenuClicked<Derived, Base, types::pure155>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::keyMenuClicked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyMenuClicked<DefaultConv, Derived, Base, types::pure155>::value, Thiscall>(
 				"cocos2d::CCLayer::keyMenuClicked", 
-				(void*)addresses::address152(), 
-				(void*)wrap::keyMenuClicked<Thiscall, Derived, Base, types::pure152>::value
+				(void*)addresses::address155()
 			);
 		}
 
-		if constexpr (compare::onEnter<Derived, Base, types::pure153>::value) {
+		if constexpr (compare::onEnter<Derived, Base, types::pure156>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::onEnter", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onEnter<DefaultConv, Derived, Base, types::pure156>::value, Thiscall>(
 				"cocos2d::CCLayer::onEnter", 
-				(void*)addresses::address153(), 
-				(void*)wrap::onEnter<Thiscall, Derived, Base, types::pure153>::value
+				(void*)addresses::address156()
 			);
 		}
 
-		if constexpr (compare::onEnterTransitionDidFinish<Derived, Base, types::pure154>::value) {
+		if constexpr (compare::onEnterTransitionDidFinish<Derived, Base, types::pure157>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::onEnterTransitionDidFinish", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onEnterTransitionDidFinish<DefaultConv, Derived, Base, types::pure157>::value, Thiscall>(
 				"cocos2d::CCLayer::onEnterTransitionDidFinish", 
-				(void*)addresses::address154(), 
-				(void*)wrap::onEnterTransitionDidFinish<Thiscall, Derived, Base, types::pure154>::value
+				(void*)addresses::address157()
 			);
 		}
 
-		if constexpr (compare::onExit<Derived, Base, types::pure155>::value) {
+		if constexpr (compare::onExit<Derived, Base, types::pure158>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::onExit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onExit<DefaultConv, Derived, Base, types::pure158>::value, Thiscall>(
 				"cocos2d::CCLayer::onExit", 
-				(void*)addresses::address155(), 
-				(void*)wrap::onExit<Thiscall, Derived, Base, types::pure155>::value
+				(void*)addresses::address158()
 			);
 		}
 
-		if constexpr (compare::registerScriptTouchHandler<Derived, Base, types::pure156>::value) {
+		if constexpr (compare::registerScriptTouchHandler<Derived, Base, types::pure159>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::registerScriptTouchHandler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerScriptTouchHandler<DefaultConv, Derived, Base, types::pure159>::value, Thiscall>(
 				"cocos2d::CCLayer::registerScriptTouchHandler", 
-				(void*)addresses::address156(), 
-				(void*)wrap::registerScriptTouchHandler<Thiscall, Derived, Base, types::pure156>::value
+				(void*)addresses::address159()
 			);
 		}
 
-		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure157>::value) {
+		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure160>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::registerWithTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerWithTouchDispatcher<DefaultConv, Derived, Base, types::pure160>::value, Thiscall>(
 				"cocos2d::CCLayer::registerWithTouchDispatcher", 
-				(void*)addresses::address157(), 
-				(void*)wrap::registerWithTouchDispatcher<Thiscall, Derived, Base, types::pure157>::value
+				(void*)addresses::address160()
 			);
 		}
 
-		if constexpr (compare::setAccelerometerEnabled<Derived, Base, types::pure158>::value) {
+		if constexpr (compare::setAccelerometerEnabled<Derived, Base, types::pure161>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::setAccelerometerEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAccelerometerEnabled<DefaultConv, Derived, Base, types::pure161>::value, Thiscall>(
 				"cocos2d::CCLayer::setAccelerometerEnabled", 
-				(void*)addresses::address158(), 
-				(void*)wrap::setAccelerometerEnabled<Thiscall, Derived, Base, types::pure158>::value
+				(void*)addresses::address161()
 			);
 		}
 
-		if constexpr (compare::setAccelerometerInterval<Derived, Base, types::pure159>::value) {
+		if constexpr (compare::setAccelerometerInterval<Derived, Base, types::pure162>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::setAccelerometerInterval", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAccelerometerInterval<DefaultConv, Derived, Base, types::pure162>::value, Thiscall>(
 				"cocos2d::CCLayer::setAccelerometerInterval", 
-				(void*)addresses::address159(), 
-				(void*)wrap::setAccelerometerInterval<Thiscall, Derived, Base, types::pure159>::value
+				(void*)addresses::address162()
 			);
 		}
 
-		if constexpr (compare::setKeyboardEnabled<Derived, Base, types::pure160>::value) {
+		if constexpr (compare::setKeyboardEnabled<Derived, Base, types::pure163>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::setKeyboardEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setKeyboardEnabled<DefaultConv, Derived, Base, types::pure163>::value, Thiscall>(
 				"cocos2d::CCLayer::setKeyboardEnabled", 
-				(void*)addresses::address160(), 
-				(void*)wrap::setKeyboardEnabled<Thiscall, Derived, Base, types::pure160>::value
+				(void*)addresses::address163()
 			);
 		}
 
-		if constexpr (compare::setKeypadEnabled<Derived, Base, types::pure161>::value) {
+		if constexpr (compare::setKeypadEnabled<Derived, Base, types::pure164>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::setKeypadEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setKeypadEnabled<DefaultConv, Derived, Base, types::pure164>::value, Thiscall>(
 				"cocos2d::CCLayer::setKeypadEnabled", 
-				(void*)addresses::address161(), 
-				(void*)wrap::setKeypadEnabled<Thiscall, Derived, Base, types::pure161>::value
+				(void*)addresses::address164()
 			);
 		}
 
-		if constexpr (compare::setMouseEnabled<Derived, Base, types::pure162>::value) {
+		if constexpr (compare::setMouseEnabled<Derived, Base, types::pure165>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::setMouseEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setMouseEnabled<DefaultConv, Derived, Base, types::pure165>::value, Thiscall>(
 				"cocos2d::CCLayer::setMouseEnabled", 
-				(void*)addresses::address162(), 
-				(void*)wrap::setMouseEnabled<Thiscall, Derived, Base, types::pure162>::value
+				(void*)addresses::address165()
 			);
 		}
 
-		if constexpr (compare::setTouchEnabled<Derived, Base, types::pure163>::value) {
+		if constexpr (compare::setTouchEnabled<Derived, Base, types::pure166>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::setTouchEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTouchEnabled<DefaultConv, Derived, Base, types::pure166>::value, Thiscall>(
 				"cocos2d::CCLayer::setTouchEnabled", 
-				(void*)addresses::address163(), 
-				(void*)wrap::setTouchEnabled<Thiscall, Derived, Base, types::pure163>::value
+				(void*)addresses::address166()
 			);
 		}
 
-		if constexpr (compare::setTouchMode<Derived, Base, types::pure164>::value) {
+		if constexpr (compare::setTouchMode<Derived, Base, types::pure167>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::setTouchMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTouchMode<DefaultConv, Derived, Base, types::pure167>::value, Thiscall>(
 				"cocos2d::CCLayer::setTouchMode", 
-				(void*)addresses::address164(), 
-				(void*)wrap::setTouchMode<Thiscall, Derived, Base, types::pure164>::value
+				(void*)addresses::address167()
 			);
 		}
 
-		if constexpr (compare::setTouchPriority<Derived, Base, types::pure165>::value) {
+		if constexpr (compare::setTouchPriority<Derived, Base, types::pure168>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::setTouchPriority", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTouchPriority<DefaultConv, Derived, Base, types::pure168>::value, Thiscall>(
 				"cocos2d::CCLayer::setTouchPriority", 
-				(void*)addresses::address165(), 
-				(void*)wrap::setTouchPriority<Thiscall, Derived, Base, types::pure165>::value
+				(void*)addresses::address168()
 			);
 		}
 
-		if constexpr (compare::unregisterScriptTouchHandler<Derived, Base, types::pure166>::value) {
+		if constexpr (compare::unregisterScriptTouchHandler<Derived, Base, types::pure169>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayer::unregisterScriptTouchHandler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unregisterScriptTouchHandler<DefaultConv, Derived, Base, types::pure169>::value, Thiscall>(
 				"cocos2d::CCLayer::unregisterScriptTouchHandler", 
-				(void*)addresses::address166(), 
-				(void*)wrap::unregisterScriptTouchHandler<Thiscall, Derived, Base, types::pure166>::value
+				(void*)addresses::address169()
 			);
 		}
 
@@ -3962,159 +3967,146 @@ struct Modify<Derived, cocos2d::CCLayerRGBA> : ModifyBase<Modify<Derived, cocos2
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure182>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure185>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure185>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::init", 
-				(void*)addresses::address182(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure182>::value
+				(void*)addresses::address185()
 			);
 		}
 
-		if constexpr (compare::getOpacity<Derived, Base, types::pure183>::value) {
+		if constexpr (compare::getOpacity<Derived, Base, types::pure186>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::getOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getOpacity<DefaultConv, Derived, Base, types::pure186>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::getOpacity", 
-				(void*)addresses::address183(), 
-				(void*)wrap::getOpacity<Thiscall, Derived, Base, types::pure183>::value
+				(void*)addresses::address186()
 			);
 		}
 
-		if constexpr (compare::getDisplayedOpacity<Derived, Base, types::pure184>::value) {
+		if constexpr (compare::getDisplayedOpacity<Derived, Base, types::pure187>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::getDisplayedOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDisplayedOpacity<DefaultConv, Derived, Base, types::pure187>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::getDisplayedOpacity", 
-				(void*)addresses::address184(), 
-				(void*)wrap::getDisplayedOpacity<Thiscall, Derived, Base, types::pure184>::value
+				(void*)addresses::address187()
 			);
 		}
 
-		if constexpr (compare::setOpacity<Derived, Base, types::pure185>::value) {
+		if constexpr (compare::setOpacity<Derived, Base, types::pure188>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::setOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacity<DefaultConv, Derived, Base, types::pure188>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::setOpacity", 
-				(void*)addresses::address185(), 
-				(void*)wrap::setOpacity<Thiscall, Derived, Base, types::pure185>::value
+				(void*)addresses::address188()
 			);
 		}
 
-		if constexpr (compare::updateDisplayedOpacity<Derived, Base, types::pure186>::value) {
+		if constexpr (compare::updateDisplayedOpacity<Derived, Base, types::pure189>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::updateDisplayedOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDisplayedOpacity<DefaultConv, Derived, Base, types::pure189>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::updateDisplayedOpacity", 
-				(void*)addresses::address186(), 
-				(void*)wrap::updateDisplayedOpacity<Thiscall, Derived, Base, types::pure186>::value
+				(void*)addresses::address189()
 			);
 		}
 
-		if constexpr (compare::isCascadeOpacityEnabled<Derived, Base, types::pure187>::value) {
+		if constexpr (compare::isCascadeOpacityEnabled<Derived, Base, types::pure190>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::isCascadeOpacityEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isCascadeOpacityEnabled<DefaultConv, Derived, Base, types::pure190>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::isCascadeOpacityEnabled", 
-				(void*)addresses::address187(), 
-				(void*)wrap::isCascadeOpacityEnabled<Thiscall, Derived, Base, types::pure187>::value
+				(void*)addresses::address190()
 			);
 		}
 
-		if constexpr (compare::setCascadeOpacityEnabled<Derived, Base, types::pure188>::value) {
+		if constexpr (compare::setCascadeOpacityEnabled<Derived, Base, types::pure191>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::setCascadeOpacityEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setCascadeOpacityEnabled<DefaultConv, Derived, Base, types::pure191>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::setCascadeOpacityEnabled", 
-				(void*)addresses::address188(), 
-				(void*)wrap::setCascadeOpacityEnabled<Thiscall, Derived, Base, types::pure188>::value
+				(void*)addresses::address191()
 			);
 		}
 
-		if constexpr (compare::getColor<Derived, Base, types::pure189>::value) {
+		if constexpr (compare::getColor<Derived, Base, types::pure192>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::getColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getColor<DefaultConv, Derived, Base, types::pure192>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::getColor", 
-				(void*)addresses::address189(), 
-				(void*)wrap::getColor<Thiscall, Derived, Base, types::pure189>::value
+				(void*)addresses::address192()
 			);
 		}
 
-		if constexpr (compare::getDisplayedColor<Derived, Base, types::pure190>::value) {
+		if constexpr (compare::getDisplayedColor<Derived, Base, types::pure193>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::getDisplayedColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDisplayedColor<DefaultConv, Derived, Base, types::pure193>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::getDisplayedColor", 
-				(void*)addresses::address190(), 
-				(void*)wrap::getDisplayedColor<Thiscall, Derived, Base, types::pure190>::value
+				(void*)addresses::address193()
 			);
 		}
 
-		if constexpr (compare::setColor<Derived, Base, types::pure191>::value) {
+		if constexpr (compare::setColor<Derived, Base, types::pure194>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::setColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setColor<DefaultConv, Derived, Base, types::pure194>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::setColor", 
-				(void*)addresses::address191(), 
-				(void*)wrap::setColor<Thiscall, Derived, Base, types::pure191>::value
+				(void*)addresses::address194()
 			);
 		}
 
-		if constexpr (compare::updateDisplayedColor<Derived, Base, types::pure192>::value) {
+		if constexpr (compare::updateDisplayedColor<Derived, Base, types::pure195>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::updateDisplayedColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDisplayedColor<DefaultConv, Derived, Base, types::pure195>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::updateDisplayedColor", 
-				(void*)addresses::address192(), 
-				(void*)wrap::updateDisplayedColor<Thiscall, Derived, Base, types::pure192>::value
+				(void*)addresses::address195()
 			);
 		}
 
-		if constexpr (compare::isCascadeColorEnabled<Derived, Base, types::pure193>::value) {
+		if constexpr (compare::isCascadeColorEnabled<Derived, Base, types::pure196>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::isCascadeColorEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isCascadeColorEnabled<DefaultConv, Derived, Base, types::pure196>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::isCascadeColorEnabled", 
-				(void*)addresses::address193(), 
-				(void*)wrap::isCascadeColorEnabled<Thiscall, Derived, Base, types::pure193>::value
+				(void*)addresses::address196()
 			);
 		}
 
-		if constexpr (compare::setCascadeColorEnabled<Derived, Base, types::pure194>::value) {
+		if constexpr (compare::setCascadeColorEnabled<Derived, Base, types::pure197>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCLayerRGBA::setCascadeColorEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setCascadeColorEnabled<DefaultConv, Derived, Base, types::pure197>::value, Thiscall>(
 				"cocos2d::CCLayerRGBA::setCascadeColorEnabled", 
-				(void*)addresses::address194(), 
-				(void*)wrap::setCascadeColorEnabled<Thiscall, Derived, Base, types::pure194>::value
+				(void*)addresses::address197()
 			);
 		}
 
@@ -4129,39 +4121,36 @@ struct Modify<Derived, cocos2d::CCParticleSystem> : ModifyBase<Modify<Derived, c
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::resetSystem<Derived, Base, types::pure398>::value) {
+		if constexpr (compare::resetSystem<Derived, Base, types::pure403>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCParticleSystem::resetSystem", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::resetSystem<DefaultConv, Derived, Base, types::pure403>::value, Thiscall>(
 				"cocos2d::CCParticleSystem::resetSystem", 
-				(void*)addresses::address398(), 
-				(void*)wrap::resetSystem<Thiscall, Derived, Base, types::pure398>::value
+				(void*)addresses::address403()
 			);
 		}
 
-		if constexpr (compare::resumeSystem<Derived, Base, types::pure399>::value) {
+		if constexpr (compare::resumeSystem<Derived, Base, types::pure404>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCParticleSystem::resumeSystem", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::resumeSystem<DefaultConv, Derived, Base, types::pure404>::value, Thiscall>(
 				"cocos2d::CCParticleSystem::resumeSystem", 
-				(void*)addresses::address399(), 
-				(void*)wrap::resumeSystem<Thiscall, Derived, Base, types::pure399>::value
+				(void*)addresses::address404()
 			);
 		}
 
-		if constexpr (compare::stopSystem<Derived, Base, types::pure400>::value) {
+		if constexpr (compare::stopSystem<Derived, Base, types::pure405>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCParticleSystem::stopSystem", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::stopSystem<DefaultConv, Derived, Base, types::pure405>::value, Thiscall>(
 				"cocos2d::CCParticleSystem::stopSystem", 
-				(void*)addresses::address400(), 
-				(void*)wrap::stopSystem<Thiscall, Derived, Base, types::pure400>::value
+				(void*)addresses::address405()
 			);
 		}
 
@@ -4176,207 +4165,190 @@ struct Modify<Derived, cocos2d::CCMenu> : ModifyBase<Modify<Derived, cocos2d::CC
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::alignItemsHorizontallyWithPadding<Derived, Base, types::pure196>::value) {
+		if constexpr (compare::alignItemsHorizontallyWithPadding<Derived, Base, types::pure199>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::alignItemsHorizontallyWithPadding", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::alignItemsHorizontallyWithPadding<DefaultConv, Derived, Base, types::pure199>::value, Thiscall>(
 				"cocos2d::CCMenu::alignItemsHorizontallyWithPadding", 
-				(void*)addresses::address196(), 
-				(void*)wrap::alignItemsHorizontallyWithPadding<Membercall, Derived, Base, types::pure196>::value
+				(void*)addresses::address199()
 			);
 		}
 
-		if constexpr (compare::alignItemsVerticallyWithPadding<Derived, Base, types::pure197>::value) {
+		if constexpr (compare::alignItemsVerticallyWithPadding<Derived, Base, types::pure200>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::alignItemsVerticallyWithPadding", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::alignItemsVerticallyWithPadding<DefaultConv, Derived, Base, types::pure200>::value, Thiscall>(
 				"cocos2d::CCMenu::alignItemsVerticallyWithPadding", 
-				(void*)addresses::address197(), 
-				(void*)wrap::alignItemsVerticallyWithPadding<Membercall, Derived, Base, types::pure197>::value
+				(void*)addresses::address200()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure198>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure201>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure201>::value, Cdecl>(
 				"cocos2d::CCMenu::create", 
-				(void*)addresses::address198(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure198>::value
+				(void*)addresses::address201()
 			);
 		}
 
-		if constexpr (compare::createWithArray<Derived, Base, types::pure199>::value) {
+		if constexpr (compare::createWithArray<Derived, Base, types::pure202>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::createWithArray", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithArray<DefaultConv, Derived, Base, types::pure202>::value, Cdecl>(
 				"cocos2d::CCMenu::createWithArray", 
-				(void*)addresses::address199(), 
-				(void*)wrap::createWithArray<Optcall, Derived, Base, types::pure199>::value
+				(void*)addresses::address202()
 			);
 		}
 
-		if constexpr (compare::createWithItem<Derived, Base, types::pure200>::value) {
+		if constexpr (compare::createWithItem<Derived, Base, types::pure203>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::createWithItem", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithItem<DefaultConv, Derived, Base, types::pure203>::value, Cdecl>(
 				"cocos2d::CCMenu::createWithItem", 
-				(void*)addresses::address200(), 
-				(void*)wrap::createWithItem<Optcall, Derived, Base, types::pure200>::value
+				(void*)addresses::address203()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure201>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure204>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure204>::value, Thiscall>(
 				"cocos2d::CCMenu::addChild", 
-				(void*)addresses::address201(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure201>::value
+				(void*)addresses::address204()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure202>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure205>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure205>::value, Thiscall>(
 				"cocos2d::CCMenu::addChild", 
-				(void*)addresses::address202(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure202>::value
+				(void*)addresses::address205()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure203>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure206>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure206>::value, Thiscall>(
 				"cocos2d::CCMenu::addChild", 
-				(void*)addresses::address203(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure203>::value
+				(void*)addresses::address206()
 			);
 		}
 
-		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure204>::value) {
+		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure207>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::ccTouchBegan", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchBegan<DefaultConv, Derived, Base, types::pure207>::value, Thiscall>(
 				"cocos2d::CCMenu::ccTouchBegan", 
-				(void*)addresses::address204(), 
-				(void*)wrap::ccTouchBegan<Thiscall, Derived, Base, types::pure204>::value
+				(void*)addresses::address207()
 			);
 		}
 
-		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure205>::value) {
+		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure208>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::ccTouchMoved", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchMoved<DefaultConv, Derived, Base, types::pure208>::value, Thiscall>(
 				"cocos2d::CCMenu::ccTouchMoved", 
-				(void*)addresses::address205(), 
-				(void*)wrap::ccTouchMoved<Thiscall, Derived, Base, types::pure205>::value
+				(void*)addresses::address208()
 			);
 		}
 
-		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure206>::value) {
+		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure209>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::ccTouchEnded", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchEnded<DefaultConv, Derived, Base, types::pure209>::value, Thiscall>(
 				"cocos2d::CCMenu::ccTouchEnded", 
-				(void*)addresses::address206(), 
-				(void*)wrap::ccTouchEnded<Thiscall, Derived, Base, types::pure206>::value
+				(void*)addresses::address209()
 			);
 		}
 
-		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure207>::value) {
+		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure210>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::ccTouchCancelled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchCancelled<DefaultConv, Derived, Base, types::pure210>::value, Thiscall>(
 				"cocos2d::CCMenu::ccTouchCancelled", 
-				(void*)addresses::address207(), 
-				(void*)wrap::ccTouchCancelled<Thiscall, Derived, Base, types::pure207>::value
+				(void*)addresses::address210()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure208>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure211>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure211>::value, Thiscall>(
 				"cocos2d::CCMenu::init", 
-				(void*)addresses::address208(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure208>::value
+				(void*)addresses::address211()
 			);
 		}
 
-		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure209>::value) {
+		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure212>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::registerWithTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerWithTouchDispatcher<DefaultConv, Derived, Base, types::pure212>::value, Thiscall>(
 				"cocos2d::CCMenu::registerWithTouchDispatcher", 
-				(void*)addresses::address209(), 
-				(void*)wrap::registerWithTouchDispatcher<Thiscall, Derived, Base, types::pure209>::value
+				(void*)addresses::address212()
 			);
 		}
 
-		if constexpr (compare::onExit<Derived, Base, types::pure210>::value) {
+		if constexpr (compare::onExit<Derived, Base, types::pure213>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::onExit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onExit<DefaultConv, Derived, Base, types::pure213>::value, Thiscall>(
 				"cocos2d::CCMenu::onExit", 
-				(void*)addresses::address210(), 
-				(void*)wrap::onExit<Thiscall, Derived, Base, types::pure210>::value
+				(void*)addresses::address213()
 			);
 		}
 
-		if constexpr (compare::removeChild<Derived, Base, types::pure211>::value) {
+		if constexpr (compare::removeChild<Derived, Base, types::pure214>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::removeChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeChild<DefaultConv, Derived, Base, types::pure214>::value, Thiscall>(
 				"cocos2d::CCMenu::removeChild", 
-				(void*)addresses::address211(), 
-				(void*)wrap::removeChild<Thiscall, Derived, Base, types::pure211>::value
+				(void*)addresses::address214()
 			);
 		}
 
-		if constexpr (compare::initWithArray<Derived, Base, types::pure212>::value) {
+		if constexpr (compare::initWithArray<Derived, Base, types::pure215>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenu::initWithArray", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithArray<DefaultConv, Derived, Base, types::pure215>::value, Thiscall>(
 				"cocos2d::CCMenu::initWithArray", 
-				(void*)addresses::address212(), 
-				(void*)wrap::initWithArray<Membercall, Derived, Base, types::pure212>::value
+				(void*)addresses::address215()
 			);
 		}
 
@@ -4391,111 +4363,102 @@ struct Modify<Derived, cocos2d::CCMenuItem> : ModifyBase<Modify<Derived, cocos2d
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::activate<Derived, Base, types::pure217>::value) {
+		if constexpr (compare::activate<Derived, Base, types::pure220>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::activate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activate<DefaultConv, Derived, Base, types::pure220>::value, Thiscall>(
 				"cocos2d::CCMenuItem::activate", 
-				(void*)addresses::address217(), 
-				(void*)wrap::activate<Thiscall, Derived, Base, types::pure217>::value
+				(void*)addresses::address220()
 			);
 		}
 
-		if constexpr (compare::selected<Derived, Base, types::pure218>::value) {
+		if constexpr (compare::selected<Derived, Base, types::pure221>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::selected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selected<DefaultConv, Derived, Base, types::pure221>::value, Thiscall>(
 				"cocos2d::CCMenuItem::selected", 
-				(void*)addresses::address218(), 
-				(void*)wrap::selected<Thiscall, Derived, Base, types::pure218>::value
+				(void*)addresses::address221()
 			);
 		}
 
-		if constexpr (compare::unselected<Derived, Base, types::pure219>::value) {
+		if constexpr (compare::unselected<Derived, Base, types::pure222>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::unselected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unselected<DefaultConv, Derived, Base, types::pure222>::value, Thiscall>(
 				"cocos2d::CCMenuItem::unselected", 
-				(void*)addresses::address219(), 
-				(void*)wrap::unselected<Thiscall, Derived, Base, types::pure219>::value
+				(void*)addresses::address222()
 			);
 		}
 
-		if constexpr (compare::registerScriptTapHandler<Derived, Base, types::pure220>::value) {
+		if constexpr (compare::registerScriptTapHandler<Derived, Base, types::pure223>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::registerScriptTapHandler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerScriptTapHandler<DefaultConv, Derived, Base, types::pure223>::value, Thiscall>(
 				"cocos2d::CCMenuItem::registerScriptTapHandler", 
-				(void*)addresses::address220(), 
-				(void*)wrap::registerScriptTapHandler<Thiscall, Derived, Base, types::pure220>::value
+				(void*)addresses::address223()
 			);
 		}
 
-		if constexpr (compare::unregisterScriptTapHandler<Derived, Base, types::pure221>::value) {
+		if constexpr (compare::unregisterScriptTapHandler<Derived, Base, types::pure224>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::unregisterScriptTapHandler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unregisterScriptTapHandler<DefaultConv, Derived, Base, types::pure224>::value, Thiscall>(
 				"cocos2d::CCMenuItem::unregisterScriptTapHandler", 
-				(void*)addresses::address221(), 
-				(void*)wrap::unregisterScriptTapHandler<Thiscall, Derived, Base, types::pure221>::value
+				(void*)addresses::address224()
 			);
 		}
 
-		if constexpr (compare::isEnabled<Derived, Base, types::pure222>::value) {
+		if constexpr (compare::isEnabled<Derived, Base, types::pure225>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::isEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isEnabled<DefaultConv, Derived, Base, types::pure225>::value, Thiscall>(
 				"cocos2d::CCMenuItem::isEnabled", 
-				(void*)addresses::address222(), 
-				(void*)wrap::isEnabled<Thiscall, Derived, Base, types::pure222>::value
+				(void*)addresses::address225()
 			);
 		}
 
-		if constexpr (compare::setEnabled<Derived, Base, types::pure223>::value) {
+		if constexpr (compare::setEnabled<Derived, Base, types::pure226>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::setEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setEnabled<DefaultConv, Derived, Base, types::pure226>::value, Thiscall>(
 				"cocos2d::CCMenuItem::setEnabled", 
-				(void*)addresses::address223(), 
-				(void*)wrap::setEnabled<Thiscall, Derived, Base, types::pure223>::value
+				(void*)addresses::address226()
 			);
 		}
 
-		if constexpr (compare::isSelected<Derived, Base, types::pure224>::value) {
+		if constexpr (compare::isSelected<Derived, Base, types::pure227>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::isSelected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isSelected<DefaultConv, Derived, Base, types::pure227>::value, Thiscall>(
 				"cocos2d::CCMenuItem::isSelected", 
-				(void*)addresses::address224(), 
-				(void*)wrap::isSelected<Thiscall, Derived, Base, types::pure224>::value
+				(void*)addresses::address227()
 			);
 		}
 
-		if constexpr (compare::rect<Derived, Base, types::pure225>::value) {
+		if constexpr (compare::rect<Derived, Base, types::pure228>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItem::rect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::rect<DefaultConv, Derived, Base, types::pure228>::value, Thiscall>(
 				"cocos2d::CCMenuItem::rect", 
-				(void*)addresses::address225(), 
-				(void*)wrap::rect<Thiscall, Derived, Base, types::pure225>::value
+				(void*)addresses::address228()
 			);
 		}
 
@@ -4521,51 +4484,47 @@ struct Modify<Derived, MusicDownloadManager> : ModifyBase<Modify<Derived, MusicD
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure1637>::value) {
+		if constexpr (compare::sharedState<Derived, Base, types::pure1695>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MusicDownloadManager::sharedState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedState<DefaultConv, Derived, Base, types::pure1695>::value, Cdecl>(
 				"MusicDownloadManager::sharedState", 
-				(void*)addresses::address1637(), 
-				(void*)wrap::sharedState<Cdecl, Derived, Base, types::pure1637>::value
+				(void*)addresses::address1695()
 			);
 		}
 
-		if constexpr (compare::pathForSong<Derived, Base, types::pure1638>::value) {
+		if constexpr (compare::pathForSong<Derived, Base, types::pure1696>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MusicDownloadManager::pathForSong", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pathForSong<DefaultConv, Derived, Base, types::pure1696>::value, Membercall>(
 				"MusicDownloadManager::pathForSong", 
-				(void*)addresses::address1638(), 
-				(void*)wrap::pathForSong<Membercall, Derived, Base, types::pure1638>::value
+				(void*)addresses::address1696()
 			);
 		}
 
-		if constexpr (compare::getDownloadedSongs<Derived, Base, types::pure1639>::value) {
+		if constexpr (compare::getDownloadedSongs<Derived, Base, types::pure1697>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MusicDownloadManager::getDownloadedSongs", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDownloadedSongs<DefaultConv, Derived, Base, types::pure1697>::value, Thiscall>(
 				"MusicDownloadManager::getDownloadedSongs", 
-				(void*)addresses::address1639(), 
-				(void*)wrap::getDownloadedSongs<Thiscall, Derived, Base, types::pure1639>::value
+				(void*)addresses::address1697()
 			);
 		}
 
-		if constexpr (compare::songStateChanged<Derived, Base, types::pure1640>::value) {
+		if constexpr (compare::songStateChanged<Derived, Base, types::pure1698>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MusicDownloadManager::songStateChanged", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::songStateChanged<DefaultConv, Derived, Base, types::pure1698>::value, Thiscall>(
 				"MusicDownloadManager::songStateChanged", 
-				(void*)addresses::address1640(), 
-				(void*)wrap::songStateChanged<Thiscall, Derived, Base, types::pure1640>::value
+				(void*)addresses::address1698()
 			);
 		}
 
@@ -4580,99 +4539,91 @@ struct Modify<Derived, cocos2d::CCString> : ModifyBase<Modify<Derived, cocos2d::
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::isEqual<Derived, Base, types::pure496>::value) {
+		if constexpr (compare::isEqual<Derived, Base, types::pure502>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCString::isEqual", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isEqual<DefaultConv, Derived, Base, types::pure502>::value, Thiscall>(
 				"cocos2d::CCString::isEqual", 
-				(void*)addresses::address496(), 
-				(void*)wrap::isEqual<Thiscall, Derived, Base, types::pure496>::value
+				(void*)addresses::address502()
 			);
 		}
 
-		if constexpr (compare::acceptVisitor<Derived, Base, types::pure497>::value) {
+		if constexpr (compare::acceptVisitor<Derived, Base, types::pure503>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCString::acceptVisitor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::acceptVisitor<DefaultConv, Derived, Base, types::pure503>::value, Thiscall>(
 				"cocos2d::CCString::acceptVisitor", 
-				(void*)addresses::address497(), 
-				(void*)wrap::acceptVisitor<Thiscall, Derived, Base, types::pure497>::value
+				(void*)addresses::address503()
 			);
 		}
 
-		if constexpr (compare::copyWithZone<Derived, Base, types::pure498>::value) {
+		if constexpr (compare::copyWithZone<Derived, Base, types::pure504>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCString::copyWithZone", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::copyWithZone<DefaultConv, Derived, Base, types::pure504>::value, Thiscall>(
 				"cocos2d::CCString::copyWithZone", 
-				(void*)addresses::address498(), 
-				(void*)wrap::copyWithZone<Thiscall, Derived, Base, types::pure498>::value
+				(void*)addresses::address504()
 			);
 		}
 
-		if constexpr (compare::boolValue<Derived, Base, types::pure499>::value) {
+		if constexpr (compare::boolValue<Derived, Base, types::pure505>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCString::boolValue", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::boolValue<DefaultConv, Derived, Base, types::pure505>::value, Thiscall>(
 				"cocos2d::CCString::boolValue", 
-				(void*)addresses::address499(), 
-				(void*)wrap::boolValue<Thiscall, Derived, Base, types::pure499>::value
+				(void*)addresses::address505()
 			);
 		}
 
-		if constexpr (compare::doubleValue<Derived, Base, types::pure500>::value) {
+		if constexpr (compare::doubleValue<Derived, Base, types::pure506>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCString::doubleValue", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::doubleValue<DefaultConv, Derived, Base, types::pure506>::value, Thiscall>(
 				"cocos2d::CCString::doubleValue", 
-				(void*)addresses::address500(), 
-				(void*)wrap::doubleValue<Thiscall, Derived, Base, types::pure500>::value
+				(void*)addresses::address506()
 			);
 		}
 
-		if constexpr (compare::floatValue<Derived, Base, types::pure501>::value) {
+		if constexpr (compare::floatValue<Derived, Base, types::pure507>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCString::floatValue", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::floatValue<DefaultConv, Derived, Base, types::pure507>::value, Thiscall>(
 				"cocos2d::CCString::floatValue", 
-				(void*)addresses::address501(), 
-				(void*)wrap::floatValue<Thiscall, Derived, Base, types::pure501>::value
+				(void*)addresses::address507()
 			);
 		}
 
-		if constexpr (compare::getCString<Derived, Base, types::pure502>::value) {
+		if constexpr (compare::getCString<Derived, Base, types::pure508>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCString::getCString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getCString<DefaultConv, Derived, Base, types::pure508>::value, Thiscall>(
 				"cocos2d::CCString::getCString", 
-				(void*)addresses::address502(), 
-				(void*)wrap::getCString<Thiscall, Derived, Base, types::pure502>::value
+				(void*)addresses::address508()
 			);
 		}
 
-		if constexpr (compare::intValue<Derived, Base, types::pure503>::value) {
+		if constexpr (compare::intValue<Derived, Base, types::pure509>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCString::intValue", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::intValue<DefaultConv, Derived, Base, types::pure509>::value, Thiscall>(
 				"cocos2d::CCString::intValue", 
-				(void*)addresses::address503(), 
-				(void*)wrap::intValue<Thiscall, Derived, Base, types::pure503>::value
+				(void*)addresses::address509()
 			);
 		}
 
@@ -4687,15 +4638,14 @@ struct Modify<Derived, cocos2d::CCMenuItemImage> : ModifyBase<Modify<Derived, co
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure226>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure229>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemImage::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure229>::value, Thiscall>(
 				"cocos2d::CCMenuItemImage::init", 
-				(void*)addresses::address226(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure226>::value
+				(void*)addresses::address229()
 			);
 		}
 
@@ -4710,159 +4660,157 @@ struct Modify<Derived, cocos2d::CCMenuItemSprite> : ModifyBase<Modify<Derived, c
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::selected<Derived, Base, types::pure236>::value) {
+		if constexpr (compare::selected<Derived, Base, types::pure239>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::selected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selected<DefaultConv, Derived, Base, types::pure239>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::selected", 
-				(void*)addresses::address236(), 
-				(void*)wrap::selected<Thiscall, Derived, Base, types::pure236>::value
+				(void*)addresses::address239()
 			);
 		}
 
-		if constexpr (compare::unselected<Derived, Base, types::pure237>::value) {
+		if constexpr (compare::unselected<Derived, Base, types::pure240>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::unselected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unselected<DefaultConv, Derived, Base, types::pure240>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::unselected", 
-				(void*)addresses::address237(), 
-				(void*)wrap::unselected<Thiscall, Derived, Base, types::pure237>::value
+				(void*)addresses::address240()
 			);
 		}
 
-		if constexpr (compare::setEnabled<Derived, Base, types::pure238>::value) {
+		if constexpr (compare::setEnabled<Derived, Base, types::pure241>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::setEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setEnabled<DefaultConv, Derived, Base, types::pure241>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::setEnabled", 
-				(void*)addresses::address238(), 
-				(void*)wrap::setEnabled<Thiscall, Derived, Base, types::pure238>::value
+				(void*)addresses::address241()
 			);
 		}
 
-		if constexpr (compare::getNormalImage<Derived, Base, types::pure239>::value) {
+		if constexpr (compare::getNormalImage<Derived, Base, types::pure242>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::getNormalImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getNormalImage<DefaultConv, Derived, Base, types::pure242>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::getNormalImage", 
-				(void*)addresses::address239(), 
-				(void*)wrap::getNormalImage<Thiscall, Derived, Base, types::pure239>::value
+				(void*)addresses::address242()
 			);
 		}
 
-		if constexpr (compare::setNormalImage<Derived, Base, types::pure240>::value) {
+		if constexpr (compare::setNormalImage<Derived, Base, types::pure243>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::setNormalImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setNormalImage<DefaultConv, Derived, Base, types::pure243>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::setNormalImage", 
-				(void*)addresses::address240(), 
-				(void*)wrap::setNormalImage<Thiscall, Derived, Base, types::pure240>::value
+				(void*)addresses::address243()
 			);
 		}
 
-		if constexpr (compare::getSelectedImage<Derived, Base, types::pure241>::value) {
+		if constexpr (compare::getSelectedImage<Derived, Base, types::pure244>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::getSelectedImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getSelectedImage<DefaultConv, Derived, Base, types::pure244>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::getSelectedImage", 
-				(void*)addresses::address241(), 
-				(void*)wrap::getSelectedImage<Thiscall, Derived, Base, types::pure241>::value
+				(void*)addresses::address244()
 			);
 		}
 
-		if constexpr (compare::setSelectedImage<Derived, Base, types::pure242>::value) {
+		if constexpr (compare::setSelectedImage<Derived, Base, types::pure245>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::setSelectedImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSelectedImage<DefaultConv, Derived, Base, types::pure245>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::setSelectedImage", 
-				(void*)addresses::address242(), 
-				(void*)wrap::setSelectedImage<Thiscall, Derived, Base, types::pure242>::value
+				(void*)addresses::address245()
 			);
 		}
 
-		if constexpr (compare::getDisabledImage<Derived, Base, types::pure243>::value) {
+		if constexpr (compare::getDisabledImage<Derived, Base, types::pure246>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::getDisabledImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDisabledImage<DefaultConv, Derived, Base, types::pure246>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::getDisabledImage", 
-				(void*)addresses::address243(), 
-				(void*)wrap::getDisabledImage<Thiscall, Derived, Base, types::pure243>::value
+				(void*)addresses::address246()
 			);
 		}
 
-		if constexpr (compare::setDisabledImage<Derived, Base, types::pure244>::value) {
+		if constexpr (compare::setDisabledImage<Derived, Base, types::pure247>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::setDisabledImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setDisabledImage<DefaultConv, Derived, Base, types::pure247>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::setDisabledImage", 
-				(void*)addresses::address244(), 
-				(void*)wrap::setDisabledImage<Thiscall, Derived, Base, types::pure244>::value
+				(void*)addresses::address247()
 			);
 		}
 
-		if constexpr (compare::updateImagesVisibility<Derived, Base, types::pure245>::value) {
+		if constexpr (compare::updateImagesVisibility<Derived, Base, types::pure248>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::updateImagesVisibility", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateImagesVisibility<DefaultConv, Derived, Base, types::pure248>::value, Thiscall>(
 				"cocos2d::CCMenuItemSprite::updateImagesVisibility", 
-				(void*)addresses::address245(), 
-				(void*)wrap::updateImagesVisibility<Thiscall, Derived, Base, types::pure245>::value
+				(void*)addresses::address248()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure246>::value) {
+		if constexpr (compare::initWithNormalSprite<Derived, Base, types::pure249>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCMenuItemSprite::initWithNormalSprite", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::initWithNormalSprite<DefaultConv, Derived, Base, types::pure249>::value, Thiscall>(
+				"cocos2d::CCMenuItemSprite::initWithNormalSprite", 
+				(void*)addresses::address249()
+			);
+		}
+
+		if constexpr (compare::create<Derived, Base, types::pure250>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure250>::value, Cdecl>(
 				"cocos2d::CCMenuItemSprite::create", 
-				(void*)addresses::address246(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure246>::value
+				(void*)addresses::address250()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure247>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure251>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure251>::value, Cdecl>(
 				"cocos2d::CCMenuItemSprite::create", 
-				(void*)addresses::address247(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure247>::value
+				(void*)addresses::address251()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure248>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure252>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMenuItemSprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure252>::value, Cdecl>(
 				"cocos2d::CCMenuItemSprite::create", 
-				(void*)addresses::address248(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure248>::value
+				(void*)addresses::address252()
 			);
 		}
 
@@ -4877,15 +4825,14 @@ struct Modify<Derived, cocos2d::CCMoveTo> : ModifyBase<Modify<Derived, cocos2d::
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure256>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure261>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMoveTo::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure261>::value, Cdecl>(
 				"cocos2d::CCMoveTo::create", 
-				(void*)addresses::address256(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure256>::value
+				(void*)addresses::address261()
 			);
 		}
 
@@ -4900,39 +4847,47 @@ struct Modify<Derived, cocos2d::CCMotionStreak> : ModifyBase<Modify<Derived, coc
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::reset<Derived, Base, types::pure249>::value) {
+		if constexpr (compare::reset<Derived, Base, types::pure253>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMotionStreak::reset", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::reset<DefaultConv, Derived, Base, types::pure253>::value, Thiscall>(
 				"cocos2d::CCMotionStreak::reset", 
-				(void*)addresses::address249(), 
-				(void*)wrap::reset<Thiscall, Derived, Base, types::pure249>::value
+				(void*)addresses::address253()
 			);
 		}
 
-		if constexpr (compare::resumeStroke<Derived, Base, types::pure250>::value) {
+		if constexpr (compare::resumeStroke<Derived, Base, types::pure254>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMotionStreak::resumeStroke", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::resumeStroke<DefaultConv, Derived, Base, types::pure254>::value, Thiscall>(
 				"cocos2d::CCMotionStreak::resumeStroke", 
-				(void*)addresses::address250(), 
-				(void*)wrap::resumeStroke<Thiscall, Derived, Base, types::pure250>::value
+				(void*)addresses::address254()
 			);
 		}
 
-		if constexpr (compare::stopStroke<Derived, Base, types::pure251>::value) {
+		if constexpr (compare::stopStroke<Derived, Base, types::pure255>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMotionStreak::stopStroke", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::stopStroke<DefaultConv, Derived, Base, types::pure255>::value, Thiscall>(
 				"cocos2d::CCMotionStreak::stopStroke", 
-				(void*)addresses::address251(), 
-				(void*)wrap::stopStroke<Thiscall, Derived, Base, types::pure251>::value
+				(void*)addresses::address255()
+			);
+		}
+
+		if constexpr (compare::initWithFade<Derived, Base, types::pure256>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCMotionStreak::initWithFade", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::initWithFade<DefaultConv, Derived, Base, types::pure256>::value, Thiscall>(
+				"cocos2d::CCMotionStreak::initWithFade", 
+				(void*)addresses::address256()
 			);
 		}
 
@@ -4947,15 +4902,14 @@ struct Modify<Derived, cocos2d::CCMoveBy> : ModifyBase<Modify<Derived, cocos2d::
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure255>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure260>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCMoveBy::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure260>::value, Cdecl>(
 				"cocos2d::CCMoveBy::create", 
-				(void*)addresses::address255(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure255>::value
+				(void*)addresses::address260()
 			);
 		}
 
@@ -4970,1359 +4924,1246 @@ struct Modify<Derived, cocos2d::CCNode> : ModifyBase<Modify<Derived, cocos2d::CC
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::_setZOrder<Derived, Base, types::pure258>::value) {
+		if constexpr (compare::_setZOrder<Derived, Base, types::pure263>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::_setZOrder", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::_setZOrder<DefaultConv, Derived, Base, types::pure263>::value, Thiscall>(
 				"cocos2d::CCNode::_setZOrder", 
-				(void*)addresses::address258(), 
-				(void*)wrap::_setZOrder<Membercall, Derived, Base, types::pure258>::value
+				(void*)addresses::address263()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure259>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure264>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure264>::value, Thiscall>(
 				"cocos2d::CCNode::addChild", 
-				(void*)addresses::address259(), 
-				(void*)wrap::addChild<Membercall, Derived, Base, types::pure259>::value
+				(void*)addresses::address264()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure260>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure265>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure265>::value, Thiscall>(
 				"cocos2d::CCNode::addChild", 
-				(void*)addresses::address260(), 
-				(void*)wrap::addChild<Membercall, Derived, Base, types::pure260>::value
+				(void*)addresses::address265()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure261>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure266>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure266>::value, Thiscall>(
 				"cocos2d::CCNode::addChild", 
-				(void*)addresses::address261(), 
-				(void*)wrap::addChild<Membercall, Derived, Base, types::pure261>::value
+				(void*)addresses::address266()
 			);
 		}
 
-		if constexpr (compare::addComponent<Derived, Base, types::pure262>::value) {
+		if constexpr (compare::addComponent<Derived, Base, types::pure267>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::addComponent", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addComponent<DefaultConv, Derived, Base, types::pure267>::value, Thiscall>(
 				"cocos2d::CCNode::addComponent", 
-				(void*)addresses::address262(), 
-				(void*)wrap::addComponent<Membercall, Derived, Base, types::pure262>::value
+				(void*)addresses::address267()
 			);
 		}
 
-		if constexpr (compare::cleanup<Derived, Base, types::pure263>::value) {
+		if constexpr (compare::cleanup<Derived, Base, types::pure268>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::cleanup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::cleanup<DefaultConv, Derived, Base, types::pure268>::value, Thiscall>(
 				"cocos2d::CCNode::cleanup", 
-				(void*)addresses::address263(), 
-				(void*)wrap::cleanup<Thiscall, Derived, Base, types::pure263>::value
+				(void*)addresses::address268()
 			);
 		}
 
-		if constexpr (compare::convertToNodeSpace<Derived, Base, types::pure264>::value) {
+		if constexpr (compare::convertToNodeSpace<Derived, Base, types::pure269>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::convertToNodeSpace", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::convertToNodeSpace<DefaultConv, Derived, Base, types::pure269>::value, Thiscall>(
 				"cocos2d::CCNode::convertToNodeSpace", 
-				(void*)addresses::address264(), 
-				(void*)wrap::convertToNodeSpace<Membercall, Derived, Base, types::pure264>::value
+				(void*)addresses::address269()
 			);
 		}
 
-		if constexpr (compare::convertToWorldSpace<Derived, Base, types::pure265>::value) {
+		if constexpr (compare::convertToWorldSpace<Derived, Base, types::pure270>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::convertToWorldSpace", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::convertToWorldSpace<DefaultConv, Derived, Base, types::pure270>::value, Thiscall>(
 				"cocos2d::CCNode::convertToWorldSpace", 
-				(void*)addresses::address265(), 
-				(void*)wrap::convertToWorldSpace<Membercall, Derived, Base, types::pure265>::value
+				(void*)addresses::address270()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure266>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure271>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure271>::value, Cdecl>(
 				"cocos2d::CCNode::create", 
-				(void*)addresses::address266(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure266>::value
+				(void*)addresses::address271()
 			);
 		}
 
-		if constexpr (compare::draw<Derived, Base, types::pure267>::value) {
+		if constexpr (compare::draw<Derived, Base, types::pure272>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::draw", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure272>::value, Thiscall>(
 				"cocos2d::CCNode::draw", 
-				(void*)addresses::address267(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure267>::value
+				(void*)addresses::address272()
 			);
 		}
 
-		if constexpr (compare::getActionByTag<Derived, Base, types::pure268>::value) {
+		if constexpr (compare::getActionByTag<Derived, Base, types::pure273>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getActionByTag", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getActionByTag<DefaultConv, Derived, Base, types::pure273>::value, Thiscall>(
 				"cocos2d::CCNode::getActionByTag", 
-				(void*)addresses::address268(), 
-				(void*)wrap::getActionByTag<Membercall, Derived, Base, types::pure268>::value
+				(void*)addresses::address273()
 			);
 		}
 
-		if constexpr (compare::getActionManager<Derived, Base, types::pure269>::value) {
+		if constexpr (compare::getActionManager<Derived, Base, types::pure274>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getActionManager", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getActionManager<DefaultConv, Derived, Base, types::pure274>::value, Thiscall>(
 				"cocos2d::CCNode::getActionManager", 
-				(void*)addresses::address269(), 
-				(void*)wrap::getActionManager<Thiscall, Derived, Base, types::pure269>::value
+				(void*)addresses::address274()
 			);
 		}
 
-		if constexpr (compare::getAnchorPoint<Derived, Base, types::pure270>::value) {
+		if constexpr (compare::getAnchorPoint<Derived, Base, types::pure275>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getAnchorPoint", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getAnchorPoint<DefaultConv, Derived, Base, types::pure275>::value, Thiscall>(
 				"cocos2d::CCNode::getAnchorPoint", 
-				(void*)addresses::address270(), 
-				(void*)wrap::getAnchorPoint<Thiscall, Derived, Base, types::pure270>::value
+				(void*)addresses::address275()
 			);
 		}
 
-		if constexpr (compare::getAnchorPointInPoints<Derived, Base, types::pure271>::value) {
+		if constexpr (compare::getAnchorPointInPoints<Derived, Base, types::pure276>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getAnchorPointInPoints", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getAnchorPointInPoints<DefaultConv, Derived, Base, types::pure276>::value, Thiscall>(
 				"cocos2d::CCNode::getAnchorPointInPoints", 
-				(void*)addresses::address271(), 
-				(void*)wrap::getAnchorPointInPoints<Thiscall, Derived, Base, types::pure271>::value
+				(void*)addresses::address276()
 			);
 		}
 
-		if constexpr (compare::getCamera<Derived, Base, types::pure272>::value) {
+		if constexpr (compare::getCamera<Derived, Base, types::pure277>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getCamera", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getCamera<DefaultConv, Derived, Base, types::pure277>::value, Thiscall>(
 				"cocos2d::CCNode::getCamera", 
-				(void*)addresses::address272(), 
-				(void*)wrap::getCamera<Thiscall, Derived, Base, types::pure272>::value
+				(void*)addresses::address277()
 			);
 		}
 
-		if constexpr (compare::getChildByTag<Derived, Base, types::pure273>::value) {
+		if constexpr (compare::getChildByTag<Derived, Base, types::pure278>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getChildByTag", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getChildByTag<DefaultConv, Derived, Base, types::pure278>::value, Thiscall>(
 				"cocos2d::CCNode::getChildByTag", 
-				(void*)addresses::address273(), 
-				(void*)wrap::getChildByTag<Membercall, Derived, Base, types::pure273>::value
+				(void*)addresses::address278()
 			);
 		}
 
-		if constexpr (compare::getChildren<Derived, Base, types::pure274>::value) {
+		if constexpr (compare::getChildren<Derived, Base, types::pure279>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getChildren", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getChildren<DefaultConv, Derived, Base, types::pure279>::value, Thiscall>(
 				"cocos2d::CCNode::getChildren", 
-				(void*)addresses::address274(), 
-				(void*)wrap::getChildren<Thiscall, Derived, Base, types::pure274>::value
+				(void*)addresses::address279()
 			);
 		}
 
-		if constexpr (compare::getChildrenCount<Derived, Base, types::pure275>::value) {
+		if constexpr (compare::getChildrenCount<Derived, Base, types::pure280>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getChildrenCount", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getChildrenCount<DefaultConv, Derived, Base, types::pure280>::value, Thiscall>(
 				"cocos2d::CCNode::getChildrenCount", 
-				(void*)addresses::address275(), 
-				(void*)wrap::getChildrenCount<Thiscall, Derived, Base, types::pure275>::value
+				(void*)addresses::address280()
 			);
 		}
 
-		if constexpr (compare::getContentSize<Derived, Base, types::pure276>::value) {
+		if constexpr (compare::getContentSize<Derived, Base, types::pure281>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getContentSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getContentSize<DefaultConv, Derived, Base, types::pure281>::value, Thiscall>(
 				"cocos2d::CCNode::getContentSize", 
-				(void*)addresses::address276(), 
-				(void*)wrap::getContentSize<Thiscall, Derived, Base, types::pure276>::value
+				(void*)addresses::address281()
 			);
 		}
 
-		if constexpr (compare::getGLServerState<Derived, Base, types::pure277>::value) {
+		if constexpr (compare::getGLServerState<Derived, Base, types::pure282>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getGLServerState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getGLServerState<DefaultConv, Derived, Base, types::pure282>::value, Thiscall>(
 				"cocos2d::CCNode::getGLServerState", 
-				(void*)addresses::address277(), 
-				(void*)wrap::getGLServerState<Thiscall, Derived, Base, types::pure277>::value
+				(void*)addresses::address282()
 			);
 		}
 
-		if constexpr (compare::getGrid<Derived, Base, types::pure278>::value) {
+		if constexpr (compare::getGrid<Derived, Base, types::pure283>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getGrid", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getGrid<DefaultConv, Derived, Base, types::pure283>::value, Thiscall>(
 				"cocos2d::CCNode::getGrid", 
-				(void*)addresses::address278(), 
-				(void*)wrap::getGrid<Thiscall, Derived, Base, types::pure278>::value
+				(void*)addresses::address283()
 			);
 		}
 
-		if constexpr (compare::getOrderOfArrival<Derived, Base, types::pure279>::value) {
+		if constexpr (compare::getOrderOfArrival<Derived, Base, types::pure284>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getOrderOfArrival", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getOrderOfArrival<DefaultConv, Derived, Base, types::pure284>::value, Thiscall>(
 				"cocos2d::CCNode::getOrderOfArrival", 
-				(void*)addresses::address279(), 
-				(void*)wrap::getOrderOfArrival<Thiscall, Derived, Base, types::pure279>::value
+				(void*)addresses::address284()
 			);
 		}
 
-		if constexpr (compare::getParent<Derived, Base, types::pure280>::value) {
+		if constexpr (compare::getParent<Derived, Base, types::pure285>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getParent", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getParent<DefaultConv, Derived, Base, types::pure285>::value, Thiscall>(
 				"cocos2d::CCNode::getParent", 
-				(void*)addresses::address280(), 
-				(void*)wrap::getParent<Thiscall, Derived, Base, types::pure280>::value
+				(void*)addresses::address285()
 			);
 		}
 
-		if constexpr (compare::getPosition<Derived, Base, types::pure281>::value) {
+		if constexpr (compare::getPosition<Derived, Base, types::pure286>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPosition<DefaultConv, Derived, Base, types::pure286>::value, Thiscall>(
 				"cocos2d::CCNode::getPosition", 
-				(void*)addresses::address281(), 
-				(void*)wrap::getPosition<Thiscall, Derived, Base, types::pure281>::value
+				(void*)addresses::address286()
 			);
 		}
 
-		if constexpr (compare::getPosition<Derived, Base, types::pure282>::value) {
+		if constexpr (compare::getPosition<Derived, Base, types::pure287>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPosition<DefaultConv, Derived, Base, types::pure287>::value, Thiscall>(
 				"cocos2d::CCNode::getPosition", 
-				(void*)addresses::address282(), 
-				(void*)wrap::getPosition<Membercall, Derived, Base, types::pure282>::value
+				(void*)addresses::address287()
 			);
 		}
 
-		if constexpr (compare::getPositionX<Derived, Base, types::pure283>::value) {
+		if constexpr (compare::getPositionX<Derived, Base, types::pure288>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getPositionX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPositionX<DefaultConv, Derived, Base, types::pure288>::value, Thiscall>(
 				"cocos2d::CCNode::getPositionX", 
-				(void*)addresses::address283(), 
-				(void*)wrap::getPositionX<Thiscall, Derived, Base, types::pure283>::value
+				(void*)addresses::address288()
 			);
 		}
 
-		if constexpr (compare::getPositionY<Derived, Base, types::pure284>::value) {
+		if constexpr (compare::getPositionY<Derived, Base, types::pure289>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getPositionY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPositionY<DefaultConv, Derived, Base, types::pure289>::value, Thiscall>(
 				"cocos2d::CCNode::getPositionY", 
-				(void*)addresses::address284(), 
-				(void*)wrap::getPositionY<Thiscall, Derived, Base, types::pure284>::value
+				(void*)addresses::address289()
 			);
 		}
 
-		if constexpr (compare::getRotation<Derived, Base, types::pure285>::value) {
+		if constexpr (compare::getRotation<Derived, Base, types::pure290>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getRotation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getRotation<DefaultConv, Derived, Base, types::pure290>::value, Thiscall>(
 				"cocos2d::CCNode::getRotation", 
-				(void*)addresses::address285(), 
-				(void*)wrap::getRotation<Thiscall, Derived, Base, types::pure285>::value
+				(void*)addresses::address290()
 			);
 		}
 
-		if constexpr (compare::getRotationX<Derived, Base, types::pure286>::value) {
+		if constexpr (compare::getRotationX<Derived, Base, types::pure291>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getRotationX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getRotationX<DefaultConv, Derived, Base, types::pure291>::value, Thiscall>(
 				"cocos2d::CCNode::getRotationX", 
-				(void*)addresses::address286(), 
-				(void*)wrap::getRotationX<Thiscall, Derived, Base, types::pure286>::value
+				(void*)addresses::address291()
 			);
 		}
 
-		if constexpr (compare::getRotationY<Derived, Base, types::pure287>::value) {
+		if constexpr (compare::getRotationY<Derived, Base, types::pure292>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getRotationY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getRotationY<DefaultConv, Derived, Base, types::pure292>::value, Thiscall>(
 				"cocos2d::CCNode::getRotationY", 
-				(void*)addresses::address287(), 
-				(void*)wrap::getRotationY<Thiscall, Derived, Base, types::pure287>::value
+				(void*)addresses::address292()
 			);
 		}
 
-		if constexpr (compare::getScale<Derived, Base, types::pure288>::value) {
+		if constexpr (compare::getScale<Derived, Base, types::pure293>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getScale<DefaultConv, Derived, Base, types::pure293>::value, Thiscall>(
 				"cocos2d::CCNode::getScale", 
-				(void*)addresses::address288(), 
-				(void*)wrap::getScale<Thiscall, Derived, Base, types::pure288>::value
+				(void*)addresses::address293()
 			);
 		}
 
-		if constexpr (compare::getScaleX<Derived, Base, types::pure289>::value) {
+		if constexpr (compare::getScaleX<Derived, Base, types::pure294>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getScaleX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getScaleX<DefaultConv, Derived, Base, types::pure294>::value, Thiscall>(
 				"cocos2d::CCNode::getScaleX", 
-				(void*)addresses::address289(), 
-				(void*)wrap::getScaleX<Thiscall, Derived, Base, types::pure289>::value
+				(void*)addresses::address294()
 			);
 		}
 
-		if constexpr (compare::getScaleY<Derived, Base, types::pure290>::value) {
+		if constexpr (compare::getScaleY<Derived, Base, types::pure295>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getScaleY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getScaleY<DefaultConv, Derived, Base, types::pure295>::value, Thiscall>(
 				"cocos2d::CCNode::getScaleY", 
-				(void*)addresses::address290(), 
-				(void*)wrap::getScaleY<Thiscall, Derived, Base, types::pure290>::value
+				(void*)addresses::address295()
 			);
 		}
 
-		if constexpr (compare::getScaledContentSize<Derived, Base, types::pure291>::value) {
+		if constexpr (compare::getScaledContentSize<Derived, Base, types::pure296>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getScaledContentSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getScaledContentSize<DefaultConv, Derived, Base, types::pure296>::value, Thiscall>(
 				"cocos2d::CCNode::getScaledContentSize", 
-				(void*)addresses::address291(), 
-				(void*)wrap::getScaledContentSize<Thiscall, Derived, Base, types::pure291>::value
+				(void*)addresses::address296()
 			);
 		}
 
-		if constexpr (compare::getScheduler<Derived, Base, types::pure292>::value) {
+		if constexpr (compare::getScheduler<Derived, Base, types::pure297>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getScheduler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getScheduler<DefaultConv, Derived, Base, types::pure297>::value, Thiscall>(
 				"cocos2d::CCNode::getScheduler", 
-				(void*)addresses::address292(), 
-				(void*)wrap::getScheduler<Thiscall, Derived, Base, types::pure292>::value
+				(void*)addresses::address297()
 			);
 		}
 
-		if constexpr (compare::getShaderProgram<Derived, Base, types::pure293>::value) {
+		if constexpr (compare::getShaderProgram<Derived, Base, types::pure298>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getShaderProgram", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getShaderProgram<DefaultConv, Derived, Base, types::pure298>::value, Thiscall>(
 				"cocos2d::CCNode::getShaderProgram", 
-				(void*)addresses::address293(), 
-				(void*)wrap::getShaderProgram<Thiscall, Derived, Base, types::pure293>::value
+				(void*)addresses::address298()
 			);
 		}
 
-		if constexpr (compare::getSkewX<Derived, Base, types::pure294>::value) {
+		if constexpr (compare::getSkewX<Derived, Base, types::pure299>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getSkewX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getSkewX<DefaultConv, Derived, Base, types::pure299>::value, Thiscall>(
 				"cocos2d::CCNode::getSkewX", 
-				(void*)addresses::address294(), 
-				(void*)wrap::getSkewX<Thiscall, Derived, Base, types::pure294>::value
+				(void*)addresses::address299()
 			);
 		}
 
-		if constexpr (compare::getSkewY<Derived, Base, types::pure295>::value) {
+		if constexpr (compare::getSkewY<Derived, Base, types::pure300>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getSkewY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getSkewY<DefaultConv, Derived, Base, types::pure300>::value, Thiscall>(
 				"cocos2d::CCNode::getSkewY", 
-				(void*)addresses::address295(), 
-				(void*)wrap::getSkewY<Thiscall, Derived, Base, types::pure295>::value
+				(void*)addresses::address300()
 			);
 		}
 
-		if constexpr (compare::getUserData<Derived, Base, types::pure296>::value) {
+		if constexpr (compare::getUserData<Derived, Base, types::pure301>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getUserData", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getUserData<DefaultConv, Derived, Base, types::pure301>::value, Thiscall>(
 				"cocos2d::CCNode::getUserData", 
-				(void*)addresses::address296(), 
-				(void*)wrap::getUserData<Thiscall, Derived, Base, types::pure296>::value
+				(void*)addresses::address301()
 			);
 		}
 
-		if constexpr (compare::getUserObject<Derived, Base, types::pure297>::value) {
+		if constexpr (compare::getUserObject<Derived, Base, types::pure302>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getUserObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getUserObject<DefaultConv, Derived, Base, types::pure302>::value, Thiscall>(
 				"cocos2d::CCNode::getUserObject", 
-				(void*)addresses::address297(), 
-				(void*)wrap::getUserObject<Thiscall, Derived, Base, types::pure297>::value
+				(void*)addresses::address302()
 			);
 		}
 
-		if constexpr (compare::getVertexZ<Derived, Base, types::pure298>::value) {
+		if constexpr (compare::getVertexZ<Derived, Base, types::pure303>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getVertexZ", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getVertexZ<DefaultConv, Derived, Base, types::pure303>::value, Thiscall>(
 				"cocos2d::CCNode::getVertexZ", 
-				(void*)addresses::address298(), 
-				(void*)wrap::getVertexZ<Thiscall, Derived, Base, types::pure298>::value
+				(void*)addresses::address303()
 			);
 		}
 
-		if constexpr (compare::getZOrder<Derived, Base, types::pure299>::value) {
+		if constexpr (compare::getZOrder<Derived, Base, types::pure304>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::getZOrder", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getZOrder<DefaultConv, Derived, Base, types::pure304>::value, Thiscall>(
 				"cocos2d::CCNode::getZOrder", 
-				(void*)addresses::address299(), 
-				(void*)wrap::getZOrder<Thiscall, Derived, Base, types::pure299>::value
+				(void*)addresses::address304()
 			);
 		}
 
-		if constexpr (compare::ignoreAnchorPointForPosition<Derived, Base, types::pure300>::value) {
+		if constexpr (compare::ignoreAnchorPointForPosition<Derived, Base, types::pure305>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::ignoreAnchorPointForPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ignoreAnchorPointForPosition<DefaultConv, Derived, Base, types::pure305>::value, Thiscall>(
 				"cocos2d::CCNode::ignoreAnchorPointForPosition", 
-				(void*)addresses::address300(), 
-				(void*)wrap::ignoreAnchorPointForPosition<Membercall, Derived, Base, types::pure300>::value
+				(void*)addresses::address305()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure301>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure306>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure306>::value, Thiscall>(
 				"cocos2d::CCNode::init", 
-				(void*)addresses::address301(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure301>::value
+				(void*)addresses::address306()
 			);
 		}
 
-		if constexpr (compare::isIgnoreAnchorPointForPosition<Derived, Base, types::pure302>::value) {
+		if constexpr (compare::isIgnoreAnchorPointForPosition<Derived, Base, types::pure307>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::isIgnoreAnchorPointForPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isIgnoreAnchorPointForPosition<DefaultConv, Derived, Base, types::pure307>::value, Thiscall>(
 				"cocos2d::CCNode::isIgnoreAnchorPointForPosition", 
-				(void*)addresses::address302(), 
-				(void*)wrap::isIgnoreAnchorPointForPosition<Thiscall, Derived, Base, types::pure302>::value
+				(void*)addresses::address307()
 			);
 		}
 
-		if constexpr (compare::isRunning<Derived, Base, types::pure303>::value) {
+		if constexpr (compare::isRunning<Derived, Base, types::pure308>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::isRunning", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isRunning<DefaultConv, Derived, Base, types::pure308>::value, Thiscall>(
 				"cocos2d::CCNode::isRunning", 
-				(void*)addresses::address303(), 
-				(void*)wrap::isRunning<Thiscall, Derived, Base, types::pure303>::value
+				(void*)addresses::address308()
 			);
 		}
 
-		if constexpr (compare::isVisible<Derived, Base, types::pure304>::value) {
+		if constexpr (compare::isVisible<Derived, Base, types::pure309>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::isVisible", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isVisible<DefaultConv, Derived, Base, types::pure309>::value, Thiscall>(
 				"cocos2d::CCNode::isVisible", 
-				(void*)addresses::address304(), 
-				(void*)wrap::isVisible<Thiscall, Derived, Base, types::pure304>::value
+				(void*)addresses::address309()
 			);
 		}
 
-		if constexpr (compare::nodeToParentTransform<Derived, Base, types::pure305>::value) {
+		if constexpr (compare::nodeToParentTransform<Derived, Base, types::pure310>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::nodeToParentTransform", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::nodeToParentTransform<DefaultConv, Derived, Base, types::pure310>::value, Thiscall>(
 				"cocos2d::CCNode::nodeToParentTransform", 
-				(void*)addresses::address305(), 
-				(void*)wrap::nodeToParentTransform<Thiscall, Derived, Base, types::pure305>::value
+				(void*)addresses::address310()
 			);
 		}
 
-		if constexpr (compare::nodeToWorldTransform<Derived, Base, types::pure306>::value) {
+		if constexpr (compare::nodeToWorldTransform<Derived, Base, types::pure311>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::nodeToWorldTransform", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::nodeToWorldTransform<DefaultConv, Derived, Base, types::pure311>::value, Thiscall>(
 				"cocos2d::CCNode::nodeToWorldTransform", 
-				(void*)addresses::address306(), 
-				(void*)wrap::nodeToWorldTransform<Thiscall, Derived, Base, types::pure306>::value
+				(void*)addresses::address311()
 			);
 		}
 
-		if constexpr (compare::onEnter<Derived, Base, types::pure307>::value) {
+		if constexpr (compare::onEnter<Derived, Base, types::pure312>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::onEnter", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onEnter<DefaultConv, Derived, Base, types::pure312>::value, Thiscall>(
 				"cocos2d::CCNode::onEnter", 
-				(void*)addresses::address307(), 
-				(void*)wrap::onEnter<Thiscall, Derived, Base, types::pure307>::value
+				(void*)addresses::address312()
 			);
 		}
 
-		if constexpr (compare::onEnterTransitionDidFinish<Derived, Base, types::pure308>::value) {
+		if constexpr (compare::onEnterTransitionDidFinish<Derived, Base, types::pure313>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::onEnterTransitionDidFinish", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onEnterTransitionDidFinish<DefaultConv, Derived, Base, types::pure313>::value, Thiscall>(
 				"cocos2d::CCNode::onEnterTransitionDidFinish", 
-				(void*)addresses::address308(), 
-				(void*)wrap::onEnterTransitionDidFinish<Thiscall, Derived, Base, types::pure308>::value
+				(void*)addresses::address313()
 			);
 		}
 
-		if constexpr (compare::onExit<Derived, Base, types::pure309>::value) {
+		if constexpr (compare::onExit<Derived, Base, types::pure314>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::onExit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onExit<DefaultConv, Derived, Base, types::pure314>::value, Thiscall>(
 				"cocos2d::CCNode::onExit", 
-				(void*)addresses::address309(), 
-				(void*)wrap::onExit<Thiscall, Derived, Base, types::pure309>::value
+				(void*)addresses::address314()
 			);
 		}
 
-		if constexpr (compare::onExitTransitionDidStart<Derived, Base, types::pure310>::value) {
+		if constexpr (compare::onExitTransitionDidStart<Derived, Base, types::pure315>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::onExitTransitionDidStart", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onExitTransitionDidStart<DefaultConv, Derived, Base, types::pure315>::value, Thiscall>(
 				"cocos2d::CCNode::onExitTransitionDidStart", 
-				(void*)addresses::address310(), 
-				(void*)wrap::onExitTransitionDidStart<Thiscall, Derived, Base, types::pure310>::value
+				(void*)addresses::address315()
 			);
 		}
 
-		if constexpr (compare::parentToNodeTransform<Derived, Base, types::pure311>::value) {
+		if constexpr (compare::parentToNodeTransform<Derived, Base, types::pure316>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::parentToNodeTransform", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::parentToNodeTransform<DefaultConv, Derived, Base, types::pure316>::value, Thiscall>(
 				"cocos2d::CCNode::parentToNodeTransform", 
-				(void*)addresses::address311(), 
-				(void*)wrap::parentToNodeTransform<Thiscall, Derived, Base, types::pure311>::value
+				(void*)addresses::address316()
 			);
 		}
 
-		if constexpr (compare::pauseSchedulerAndActions<Derived, Base, types::pure312>::value) {
+		if constexpr (compare::pauseSchedulerAndActions<Derived, Base, types::pure317>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::pauseSchedulerAndActions", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pauseSchedulerAndActions<DefaultConv, Derived, Base, types::pure317>::value, Thiscall>(
 				"cocos2d::CCNode::pauseSchedulerAndActions", 
-				(void*)addresses::address312(), 
-				(void*)wrap::pauseSchedulerAndActions<Thiscall, Derived, Base, types::pure312>::value
+				(void*)addresses::address317()
 			);
 		}
 
-		if constexpr (compare::registerScriptHandler<Derived, Base, types::pure313>::value) {
+		if constexpr (compare::registerScriptHandler<Derived, Base, types::pure318>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::registerScriptHandler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerScriptHandler<DefaultConv, Derived, Base, types::pure318>::value, Thiscall>(
 				"cocos2d::CCNode::registerScriptHandler", 
-				(void*)addresses::address313(), 
-				(void*)wrap::registerScriptHandler<Membercall, Derived, Base, types::pure313>::value
+				(void*)addresses::address318()
 			);
 		}
 
-		if constexpr (compare::removeAllChildren<Derived, Base, types::pure314>::value) {
+		if constexpr (compare::removeAllChildren<Derived, Base, types::pure319>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeAllChildren", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeAllChildren<DefaultConv, Derived, Base, types::pure319>::value, Thiscall>(
 				"cocos2d::CCNode::removeAllChildren", 
-				(void*)addresses::address314(), 
-				(void*)wrap::removeAllChildren<Thiscall, Derived, Base, types::pure314>::value
+				(void*)addresses::address319()
 			);
 		}
 
-		if constexpr (compare::removeAllChildrenWithCleanup<Derived, Base, types::pure315>::value) {
+		if constexpr (compare::removeAllChildrenWithCleanup<Derived, Base, types::pure320>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeAllChildrenWithCleanup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeAllChildrenWithCleanup<DefaultConv, Derived, Base, types::pure320>::value, Thiscall>(
 				"cocos2d::CCNode::removeAllChildrenWithCleanup", 
-				(void*)addresses::address315(), 
-				(void*)wrap::removeAllChildrenWithCleanup<Membercall, Derived, Base, types::pure315>::value
+				(void*)addresses::address320()
 			);
 		}
 
-		if constexpr (compare::removeAllComponents<Derived, Base, types::pure316>::value) {
+		if constexpr (compare::removeAllComponents<Derived, Base, types::pure321>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeAllComponents", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeAllComponents<DefaultConv, Derived, Base, types::pure321>::value, Thiscall>(
 				"cocos2d::CCNode::removeAllComponents", 
-				(void*)addresses::address316(), 
-				(void*)wrap::removeAllComponents<Thiscall, Derived, Base, types::pure316>::value
+				(void*)addresses::address321()
 			);
 		}
 
-		if constexpr (compare::removeChild<Derived, Base, types::pure317>::value) {
+		if constexpr (compare::removeChild<Derived, Base, types::pure322>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeChild<DefaultConv, Derived, Base, types::pure322>::value, Thiscall>(
 				"cocos2d::CCNode::removeChild", 
-				(void*)addresses::address317(), 
-				(void*)wrap::removeChild<Membercall, Derived, Base, types::pure317>::value
+				(void*)addresses::address322()
 			);
 		}
 
-		if constexpr (compare::removeChild<Derived, Base, types::pure318>::value) {
+		if constexpr (compare::removeChild<Derived, Base, types::pure323>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeChild<DefaultConv, Derived, Base, types::pure323>::value, Thiscall>(
 				"cocos2d::CCNode::removeChild", 
-				(void*)addresses::address318(), 
-				(void*)wrap::removeChild<Membercall, Derived, Base, types::pure318>::value
+				(void*)addresses::address323()
 			);
 		}
 
-		if constexpr (compare::removeChildByTag<Derived, Base, types::pure319>::value) {
+		if constexpr (compare::removeChildByTag<Derived, Base, types::pure324>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeChildByTag", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeChildByTag<DefaultConv, Derived, Base, types::pure324>::value, Thiscall>(
 				"cocos2d::CCNode::removeChildByTag", 
-				(void*)addresses::address319(), 
-				(void*)wrap::removeChildByTag<Membercall, Derived, Base, types::pure319>::value
+				(void*)addresses::address324()
 			);
 		}
 
-		if constexpr (compare::removeChildByTag<Derived, Base, types::pure320>::value) {
+		if constexpr (compare::removeChildByTag<Derived, Base, types::pure325>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeChildByTag", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeChildByTag<DefaultConv, Derived, Base, types::pure325>::value, Thiscall>(
 				"cocos2d::CCNode::removeChildByTag", 
-				(void*)addresses::address320(), 
-				(void*)wrap::removeChildByTag<Membercall, Derived, Base, types::pure320>::value
+				(void*)addresses::address325()
 			);
 		}
 
-		if constexpr (compare::removeComponent<Derived, Base, types::pure321>::value) {
+		if constexpr (compare::removeComponent<Derived, Base, types::pure326>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeComponent", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeComponent<DefaultConv, Derived, Base, types::pure326>::value, Thiscall>(
 				"cocos2d::CCNode::removeComponent", 
-				(void*)addresses::address321(), 
-				(void*)wrap::removeComponent<Membercall, Derived, Base, types::pure321>::value
+				(void*)addresses::address326()
 			);
 		}
 
-		if constexpr (compare::removeComponent<Derived, Base, types::pure322>::value) {
+		if constexpr (compare::removeComponent<Derived, Base, types::pure327>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeComponent", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeComponent<DefaultConv, Derived, Base, types::pure327>::value, Thiscall>(
 				"cocos2d::CCNode::removeComponent", 
-				(void*)addresses::address322(), 
-				(void*)wrap::removeComponent<Membercall, Derived, Base, types::pure322>::value
+				(void*)addresses::address327()
 			);
 		}
 
-		if constexpr (compare::removeFromParent<Derived, Base, types::pure323>::value) {
+		if constexpr (compare::removeFromParent<Derived, Base, types::pure328>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeFromParent", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeFromParent<DefaultConv, Derived, Base, types::pure328>::value, Thiscall>(
 				"cocos2d::CCNode::removeFromParent", 
-				(void*)addresses::address323(), 
-				(void*)wrap::removeFromParent<Thiscall, Derived, Base, types::pure323>::value
+				(void*)addresses::address328()
 			);
 		}
 
-		if constexpr (compare::removeFromParentAndCleanup<Derived, Base, types::pure324>::value) {
+		if constexpr (compare::removeFromParentAndCleanup<Derived, Base, types::pure329>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeFromParentAndCleanup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeFromParentAndCleanup<DefaultConv, Derived, Base, types::pure329>::value, Thiscall>(
 				"cocos2d::CCNode::removeFromParentAndCleanup", 
-				(void*)addresses::address324(), 
-				(void*)wrap::removeFromParentAndCleanup<Membercall, Derived, Base, types::pure324>::value
+				(void*)addresses::address329()
 			);
 		}
 
-		if constexpr (compare::removeMeAndCleanup<Derived, Base, types::pure325>::value) {
+		if constexpr (compare::removeMeAndCleanup<Derived, Base, types::pure330>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::removeMeAndCleanup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeMeAndCleanup<DefaultConv, Derived, Base, types::pure330>::value, Thiscall>(
 				"cocos2d::CCNode::removeMeAndCleanup", 
-				(void*)addresses::address325(), 
-				(void*)wrap::removeMeAndCleanup<Thiscall, Derived, Base, types::pure325>::value
+				(void*)addresses::address330()
 			);
 		}
 
-		if constexpr (compare::reorderChild<Derived, Base, types::pure326>::value) {
+		if constexpr (compare::reorderChild<Derived, Base, types::pure331>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::reorderChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::reorderChild<DefaultConv, Derived, Base, types::pure331>::value, Thiscall>(
 				"cocos2d::CCNode::reorderChild", 
-				(void*)addresses::address326(), 
-				(void*)wrap::reorderChild<Membercall, Derived, Base, types::pure326>::value
+				(void*)addresses::address331()
 			);
 		}
 
-		if constexpr (compare::resumeSchedulerAndActions<Derived, Base, types::pure327>::value) {
+		if constexpr (compare::resumeSchedulerAndActions<Derived, Base, types::pure332>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::resumeSchedulerAndActions", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::resumeSchedulerAndActions<DefaultConv, Derived, Base, types::pure332>::value, Thiscall>(
 				"cocos2d::CCNode::resumeSchedulerAndActions", 
-				(void*)addresses::address327(), 
-				(void*)wrap::resumeSchedulerAndActions<Thiscall, Derived, Base, types::pure327>::value
+				(void*)addresses::address332()
 			);
 		}
 
-		if constexpr (compare::runAction<Derived, Base, types::pure328>::value) {
+		if constexpr (compare::runAction<Derived, Base, types::pure333>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::runAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::runAction<DefaultConv, Derived, Base, types::pure333>::value, Thiscall>(
 				"cocos2d::CCNode::runAction", 
-				(void*)addresses::address328(), 
-				(void*)wrap::runAction<Membercall, Derived, Base, types::pure328>::value
+				(void*)addresses::address333()
 			);
 		}
 
-		if constexpr (compare::schedule<Derived, Base, types::pure329>::value) {
+		if constexpr (compare::schedule<Derived, Base, types::pure334>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::schedule", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::schedule<DefaultConv, Derived, Base, types::pure334>::value, Thiscall>(
 				"cocos2d::CCNode::schedule", 
-				(void*)addresses::address329(), 
-				(void*)wrap::schedule<Membercall, Derived, Base, types::pure329>::value
+				(void*)addresses::address334()
 			);
 		}
 
-		if constexpr (compare::schedule<Derived, Base, types::pure330>::value) {
+		if constexpr (compare::schedule<Derived, Base, types::pure335>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::schedule", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::schedule<DefaultConv, Derived, Base, types::pure335>::value, Thiscall>(
 				"cocos2d::CCNode::schedule", 
-				(void*)addresses::address330(), 
-				(void*)wrap::schedule<Membercall, Derived, Base, types::pure330>::value
+				(void*)addresses::address335()
 			);
 		}
 
-		if constexpr (compare::scheduleUpdate<Derived, Base, types::pure331>::value) {
+		if constexpr (compare::scheduleUpdate<Derived, Base, types::pure336>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::scheduleUpdate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::scheduleUpdate<DefaultConv, Derived, Base, types::pure336>::value, Thiscall>(
 				"cocos2d::CCNode::scheduleUpdate", 
-				(void*)addresses::address331(), 
-				(void*)wrap::scheduleUpdate<Thiscall, Derived, Base, types::pure331>::value
+				(void*)addresses::address336()
 			);
 		}
 
-		if constexpr (compare::setActionManager<Derived, Base, types::pure332>::value) {
+		if constexpr (compare::setActionManager<Derived, Base, types::pure337>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setActionManager", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setActionManager<DefaultConv, Derived, Base, types::pure337>::value, Thiscall>(
 				"cocos2d::CCNode::setActionManager", 
-				(void*)addresses::address332(), 
-				(void*)wrap::setActionManager<Membercall, Derived, Base, types::pure332>::value
+				(void*)addresses::address337()
 			);
 		}
 
-		if constexpr (compare::setAnchorPoint<Derived, Base, types::pure333>::value) {
+		if constexpr (compare::setAnchorPoint<Derived, Base, types::pure338>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setAnchorPoint", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAnchorPoint<DefaultConv, Derived, Base, types::pure338>::value, Thiscall>(
 				"cocos2d::CCNode::setAnchorPoint", 
-				(void*)addresses::address333(), 
-				(void*)wrap::setAnchorPoint<Membercall, Derived, Base, types::pure333>::value
+				(void*)addresses::address338()
 			);
 		}
 
-		if constexpr (compare::setContentSize<Derived, Base, types::pure334>::value) {
+		if constexpr (compare::setContentSize<Derived, Base, types::pure339>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setContentSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setContentSize<DefaultConv, Derived, Base, types::pure339>::value, Thiscall>(
 				"cocos2d::CCNode::setContentSize", 
-				(void*)addresses::address334(), 
-				(void*)wrap::setContentSize<Membercall, Derived, Base, types::pure334>::value
+				(void*)addresses::address339()
 			);
 		}
 
-		if constexpr (compare::setGLServerState<Derived, Base, types::pure335>::value) {
+		if constexpr (compare::setGLServerState<Derived, Base, types::pure340>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setGLServerState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setGLServerState<DefaultConv, Derived, Base, types::pure340>::value, Thiscall>(
 				"cocos2d::CCNode::setGLServerState", 
-				(void*)addresses::address335(), 
-				(void*)wrap::setGLServerState<Membercall, Derived, Base, types::pure335>::value
+				(void*)addresses::address340()
 			);
 		}
 
-		if constexpr (compare::setGrid<Derived, Base, types::pure336>::value) {
+		if constexpr (compare::setGrid<Derived, Base, types::pure341>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setGrid", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setGrid<DefaultConv, Derived, Base, types::pure341>::value, Thiscall>(
 				"cocos2d::CCNode::setGrid", 
-				(void*)addresses::address336(), 
-				(void*)wrap::setGrid<Membercall, Derived, Base, types::pure336>::value
+				(void*)addresses::address341()
 			);
 		}
 
-		if constexpr (compare::setOrderOfArrival<Derived, Base, types::pure337>::value) {
+		if constexpr (compare::setOrderOfArrival<Derived, Base, types::pure342>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setOrderOfArrival", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOrderOfArrival<DefaultConv, Derived, Base, types::pure342>::value, Thiscall>(
 				"cocos2d::CCNode::setOrderOfArrival", 
-				(void*)addresses::address337(), 
-				(void*)wrap::setOrderOfArrival<Membercall, Derived, Base, types::pure337>::value
+				(void*)addresses::address342()
 			);
 		}
 
-		if constexpr (compare::setParent<Derived, Base, types::pure338>::value) {
+		if constexpr (compare::setParent<Derived, Base, types::pure343>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setParent", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setParent<DefaultConv, Derived, Base, types::pure343>::value, Thiscall>(
 				"cocos2d::CCNode::setParent", 
-				(void*)addresses::address338(), 
-				(void*)wrap::setParent<Membercall, Derived, Base, types::pure338>::value
+				(void*)addresses::address343()
 			);
 		}
 
-		if constexpr (compare::setPosition<Derived, Base, types::pure339>::value) {
+		if constexpr (compare::setPosition<Derived, Base, types::pure344>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPosition<DefaultConv, Derived, Base, types::pure344>::value, Thiscall>(
 				"cocos2d::CCNode::setPosition", 
-				(void*)addresses::address339(), 
-				(void*)wrap::setPosition<Membercall, Derived, Base, types::pure339>::value
+				(void*)addresses::address344()
 			);
 		}
 
-		if constexpr (compare::setPosition<Derived, Base, types::pure340>::value) {
+		if constexpr (compare::setPosition<Derived, Base, types::pure345>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPosition<DefaultConv, Derived, Base, types::pure345>::value, Thiscall>(
 				"cocos2d::CCNode::setPosition", 
-				(void*)addresses::address340(), 
-				(void*)wrap::setPosition<Membercall, Derived, Base, types::pure340>::value
+				(void*)addresses::address345()
 			);
 		}
 
-		if constexpr (compare::setPositionX<Derived, Base, types::pure341>::value) {
+		if constexpr (compare::setPositionX<Derived, Base, types::pure346>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setPositionX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPositionX<DefaultConv, Derived, Base, types::pure346>::value, Thiscall>(
 				"cocos2d::CCNode::setPositionX", 
-				(void*)addresses::address341(), 
-				(void*)wrap::setPositionX<Membercall, Derived, Base, types::pure341>::value
+				(void*)addresses::address346()
 			);
 		}
 
-		if constexpr (compare::setPositionY<Derived, Base, types::pure342>::value) {
+		if constexpr (compare::setPositionY<Derived, Base, types::pure347>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setPositionY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPositionY<DefaultConv, Derived, Base, types::pure347>::value, Thiscall>(
 				"cocos2d::CCNode::setPositionY", 
-				(void*)addresses::address342(), 
-				(void*)wrap::setPositionY<Membercall, Derived, Base, types::pure342>::value
+				(void*)addresses::address347()
 			);
 		}
 
-		if constexpr (compare::setRotation<Derived, Base, types::pure343>::value) {
+		if constexpr (compare::setRotation<Derived, Base, types::pure348>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setRotation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRotation<DefaultConv, Derived, Base, types::pure348>::value, Thiscall>(
 				"cocos2d::CCNode::setRotation", 
-				(void*)addresses::address343(), 
-				(void*)wrap::setRotation<Membercall, Derived, Base, types::pure343>::value
+				(void*)addresses::address348()
 			);
 		}
 
-		if constexpr (compare::setRotationX<Derived, Base, types::pure344>::value) {
+		if constexpr (compare::setRotationX<Derived, Base, types::pure349>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setRotationX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRotationX<DefaultConv, Derived, Base, types::pure349>::value, Thiscall>(
 				"cocos2d::CCNode::setRotationX", 
-				(void*)addresses::address344(), 
-				(void*)wrap::setRotationX<Membercall, Derived, Base, types::pure344>::value
+				(void*)addresses::address349()
 			);
 		}
 
-		if constexpr (compare::setRotationY<Derived, Base, types::pure345>::value) {
+		if constexpr (compare::setRotationY<Derived, Base, types::pure350>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setRotationY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRotationY<DefaultConv, Derived, Base, types::pure350>::value, Thiscall>(
 				"cocos2d::CCNode::setRotationY", 
-				(void*)addresses::address345(), 
-				(void*)wrap::setRotationY<Membercall, Derived, Base, types::pure345>::value
+				(void*)addresses::address350()
 			);
 		}
 
-		if constexpr (compare::setScale<Derived, Base, types::pure346>::value) {
+		if constexpr (compare::setScale<Derived, Base, types::pure351>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScale<DefaultConv, Derived, Base, types::pure351>::value, Thiscall>(
 				"cocos2d::CCNode::setScale", 
-				(void*)addresses::address346(), 
-				(void*)wrap::setScale<Membercall, Derived, Base, types::pure346>::value
+				(void*)addresses::address351()
 			);
 		}
 
-		if constexpr (compare::setScale<Derived, Base, types::pure347>::value) {
+		if constexpr (compare::setScale<Derived, Base, types::pure352>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScale<DefaultConv, Derived, Base, types::pure352>::value, Thiscall>(
 				"cocos2d::CCNode::setScale", 
-				(void*)addresses::address347(), 
-				(void*)wrap::setScale<Membercall, Derived, Base, types::pure347>::value
+				(void*)addresses::address352()
 			);
 		}
 
-		if constexpr (compare::setScaleX<Derived, Base, types::pure348>::value) {
+		if constexpr (compare::setScaleX<Derived, Base, types::pure353>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setScaleX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScaleX<DefaultConv, Derived, Base, types::pure353>::value, Thiscall>(
 				"cocos2d::CCNode::setScaleX", 
-				(void*)addresses::address348(), 
-				(void*)wrap::setScaleX<Membercall, Derived, Base, types::pure348>::value
+				(void*)addresses::address353()
 			);
 		}
 
-		if constexpr (compare::setScaleY<Derived, Base, types::pure349>::value) {
+		if constexpr (compare::setScaleY<Derived, Base, types::pure354>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setScaleY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScaleY<DefaultConv, Derived, Base, types::pure354>::value, Thiscall>(
 				"cocos2d::CCNode::setScaleY", 
-				(void*)addresses::address349(), 
-				(void*)wrap::setScaleY<Membercall, Derived, Base, types::pure349>::value
+				(void*)addresses::address354()
 			);
 		}
 
-		if constexpr (compare::setScheduler<Derived, Base, types::pure350>::value) {
+		if constexpr (compare::setScheduler<Derived, Base, types::pure355>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setScheduler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScheduler<DefaultConv, Derived, Base, types::pure355>::value, Thiscall>(
 				"cocos2d::CCNode::setScheduler", 
-				(void*)addresses::address350(), 
-				(void*)wrap::setScheduler<Membercall, Derived, Base, types::pure350>::value
+				(void*)addresses::address355()
 			);
 		}
 
-		if constexpr (compare::setShaderProgram<Derived, Base, types::pure351>::value) {
+		if constexpr (compare::setShaderProgram<Derived, Base, types::pure356>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setShaderProgram", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setShaderProgram<DefaultConv, Derived, Base, types::pure356>::value, Thiscall>(
 				"cocos2d::CCNode::setShaderProgram", 
-				(void*)addresses::address351(), 
-				(void*)wrap::setShaderProgram<Membercall, Derived, Base, types::pure351>::value
+				(void*)addresses::address356()
 			);
 		}
 
-		if constexpr (compare::setSkewX<Derived, Base, types::pure352>::value) {
+		if constexpr (compare::setSkewX<Derived, Base, types::pure357>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setSkewX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSkewX<DefaultConv, Derived, Base, types::pure357>::value, Thiscall>(
 				"cocos2d::CCNode::setSkewX", 
-				(void*)addresses::address352(), 
-				(void*)wrap::setSkewX<Membercall, Derived, Base, types::pure352>::value
+				(void*)addresses::address357()
 			);
 		}
 
-		if constexpr (compare::setSkewY<Derived, Base, types::pure353>::value) {
+		if constexpr (compare::setSkewY<Derived, Base, types::pure358>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setSkewY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSkewY<DefaultConv, Derived, Base, types::pure358>::value, Thiscall>(
 				"cocos2d::CCNode::setSkewY", 
-				(void*)addresses::address353(), 
-				(void*)wrap::setSkewY<Membercall, Derived, Base, types::pure353>::value
+				(void*)addresses::address358()
 			);
 		}
 
-		if constexpr (compare::setUserData<Derived, Base, types::pure354>::value) {
+		if constexpr (compare::setUserData<Derived, Base, types::pure359>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setUserData", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setUserData<DefaultConv, Derived, Base, types::pure359>::value, Thiscall>(
 				"cocos2d::CCNode::setUserData", 
-				(void*)addresses::address354(), 
-				(void*)wrap::setUserData<Membercall, Derived, Base, types::pure354>::value
+				(void*)addresses::address359()
 			);
 		}
 
-		if constexpr (compare::setUserObject<Derived, Base, types::pure355>::value) {
+		if constexpr (compare::setUserObject<Derived, Base, types::pure360>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setUserObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setUserObject<DefaultConv, Derived, Base, types::pure360>::value, Thiscall>(
 				"cocos2d::CCNode::setUserObject", 
-				(void*)addresses::address355(), 
-				(void*)wrap::setUserObject<Membercall, Derived, Base, types::pure355>::value
+				(void*)addresses::address360()
 			);
 		}
 
-		if constexpr (compare::setVertexZ<Derived, Base, types::pure356>::value) {
+		if constexpr (compare::setVertexZ<Derived, Base, types::pure361>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setVertexZ", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setVertexZ<DefaultConv, Derived, Base, types::pure361>::value, Thiscall>(
 				"cocos2d::CCNode::setVertexZ", 
-				(void*)addresses::address356(), 
-				(void*)wrap::setVertexZ<Membercall, Derived, Base, types::pure356>::value
+				(void*)addresses::address361()
 			);
 		}
 
-		if constexpr (compare::setVisible<Derived, Base, types::pure357>::value) {
+		if constexpr (compare::setVisible<Derived, Base, types::pure362>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setVisible", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setVisible<DefaultConv, Derived, Base, types::pure362>::value, Thiscall>(
 				"cocos2d::CCNode::setVisible", 
-				(void*)addresses::address357(), 
-				(void*)wrap::setVisible<Membercall, Derived, Base, types::pure357>::value
+				(void*)addresses::address362()
 			);
 		}
 
-		if constexpr (compare::setZOrder<Derived, Base, types::pure358>::value) {
+		if constexpr (compare::setZOrder<Derived, Base, types::pure363>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::setZOrder", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setZOrder<DefaultConv, Derived, Base, types::pure363>::value, Thiscall>(
 				"cocos2d::CCNode::setZOrder", 
-				(void*)addresses::address358(), 
-				(void*)wrap::setZOrder<Membercall, Derived, Base, types::pure358>::value
+				(void*)addresses::address363()
 			);
 		}
 
-		if constexpr (compare::sortAllChildren<Derived, Base, types::pure359>::value) {
+		if constexpr (compare::sortAllChildren<Derived, Base, types::pure364>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::sortAllChildren", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sortAllChildren<DefaultConv, Derived, Base, types::pure364>::value, Thiscall>(
 				"cocos2d::CCNode::sortAllChildren", 
-				(void*)addresses::address359(), 
-				(void*)wrap::sortAllChildren<Thiscall, Derived, Base, types::pure359>::value
+				(void*)addresses::address364()
 			);
 		}
 
-		if constexpr (compare::stopActionByTag<Derived, Base, types::pure360>::value) {
+		if constexpr (compare::stopActionByTag<Derived, Base, types::pure365>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::stopActionByTag", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::stopActionByTag<DefaultConv, Derived, Base, types::pure365>::value, Thiscall>(
 				"cocos2d::CCNode::stopActionByTag", 
-				(void*)addresses::address360(), 
-				(void*)wrap::stopActionByTag<Membercall, Derived, Base, types::pure360>::value
+				(void*)addresses::address365()
 			);
 		}
 
-		if constexpr (compare::stopAllActions<Derived, Base, types::pure361>::value) {
+		if constexpr (compare::stopAllActions<Derived, Base, types::pure366>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::stopAllActions", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::stopAllActions<DefaultConv, Derived, Base, types::pure366>::value, Thiscall>(
 				"cocos2d::CCNode::stopAllActions", 
-				(void*)addresses::address361(), 
-				(void*)wrap::stopAllActions<Thiscall, Derived, Base, types::pure361>::value
+				(void*)addresses::address366()
 			);
 		}
 
-		if constexpr (compare::unregisterScriptHandler<Derived, Base, types::pure362>::value) {
+		if constexpr (compare::unregisterScriptHandler<Derived, Base, types::pure367>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::unregisterScriptHandler", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unregisterScriptHandler<DefaultConv, Derived, Base, types::pure367>::value, Thiscall>(
 				"cocos2d::CCNode::unregisterScriptHandler", 
-				(void*)addresses::address362(), 
-				(void*)wrap::unregisterScriptHandler<Thiscall, Derived, Base, types::pure362>::value
+				(void*)addresses::address367()
 			);
 		}
 
-		if constexpr (compare::unschedule<Derived, Base, types::pure363>::value) {
+		if constexpr (compare::unschedule<Derived, Base, types::pure368>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::unschedule", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unschedule<DefaultConv, Derived, Base, types::pure368>::value, Thiscall>(
 				"cocos2d::CCNode::unschedule", 
-				(void*)addresses::address363(), 
-				(void*)wrap::unschedule<Membercall, Derived, Base, types::pure363>::value
+				(void*)addresses::address368()
 			);
 		}
 
-		if constexpr (compare::unscheduleAllSelectors<Derived, Base, types::pure364>::value) {
+		if constexpr (compare::unscheduleAllSelectors<Derived, Base, types::pure369>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::unscheduleAllSelectors", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unscheduleAllSelectors<DefaultConv, Derived, Base, types::pure369>::value, Thiscall>(
 				"cocos2d::CCNode::unscheduleAllSelectors", 
-				(void*)addresses::address364(), 
-				(void*)wrap::unscheduleAllSelectors<Thiscall, Derived, Base, types::pure364>::value
+				(void*)addresses::address369()
 			);
 		}
 
-		if constexpr (compare::unscheduleUpdate<Derived, Base, types::pure365>::value) {
+		if constexpr (compare::unscheduleUpdate<Derived, Base, types::pure370>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::unscheduleUpdate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unscheduleUpdate<DefaultConv, Derived, Base, types::pure370>::value, Thiscall>(
 				"cocos2d::CCNode::unscheduleUpdate", 
-				(void*)addresses::address365(), 
-				(void*)wrap::unscheduleUpdate<Thiscall, Derived, Base, types::pure365>::value
+				(void*)addresses::address370()
 			);
 		}
 
-		if constexpr (compare::update<Derived, Base, types::pure366>::value) {
+		if constexpr (compare::update<Derived, Base, types::pure371>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::update", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::update<DefaultConv, Derived, Base, types::pure371>::value, Thiscall>(
 				"cocos2d::CCNode::update", 
-				(void*)addresses::address366(), 
-				(void*)wrap::update<Membercall, Derived, Base, types::pure366>::value
+				(void*)addresses::address371()
 			);
 		}
 
-		if constexpr (compare::updateTransform<Derived, Base, types::pure367>::value) {
+		if constexpr (compare::updateTransform<Derived, Base, types::pure372>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::updateTransform", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateTransform<DefaultConv, Derived, Base, types::pure372>::value, Thiscall>(
 				"cocos2d::CCNode::updateTransform", 
-				(void*)addresses::address367(), 
-				(void*)wrap::updateTransform<Thiscall, Derived, Base, types::pure367>::value
+				(void*)addresses::address372()
 			);
 		}
 
-		if constexpr (compare::updateTweenAction<Derived, Base, types::pure368>::value) {
+		if constexpr (compare::updateTweenAction<Derived, Base, types::pure373>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::updateTweenAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateTweenAction<DefaultConv, Derived, Base, types::pure373>::value, Thiscall>(
 				"cocos2d::CCNode::updateTweenAction", 
-				(void*)addresses::address368(), 
-				(void*)wrap::updateTweenAction<Membercall, Derived, Base, types::pure368>::value
+				(void*)addresses::address373()
 			);
 		}
 
-		if constexpr (compare::visit<Derived, Base, types::pure369>::value) {
+		if constexpr (compare::visit<Derived, Base, types::pure374>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::visit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::visit<DefaultConv, Derived, Base, types::pure374>::value, Thiscall>(
 				"cocos2d::CCNode::visit", 
-				(void*)addresses::address369(), 
-				(void*)wrap::visit<Thiscall, Derived, Base, types::pure369>::value
+				(void*)addresses::address374()
 			);
 		}
 
-		if constexpr (compare::worldToNodeTransform<Derived, Base, types::pure370>::value) {
+		if constexpr (compare::worldToNodeTransform<Derived, Base, types::pure375>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCNode::worldToNodeTransform", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::worldToNodeTransform<DefaultConv, Derived, Base, types::pure375>::value, Thiscall>(
 				"cocos2d::CCNode::worldToNodeTransform", 
-				(void*)addresses::address370(), 
-				(void*)wrap::worldToNodeTransform<Thiscall, Derived, Base, types::pure370>::value
+				(void*)addresses::address375()
 			);
 		}
 
@@ -6337,51 +6178,47 @@ struct Modify<Derived, cocos2d::CCRenderTexture> : ModifyBase<Modify<Derived, co
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::begin<Derived, Base, types::pure404>::value) {
+		if constexpr (compare::begin<Derived, Base, types::pure409>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCRenderTexture::begin", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::begin<DefaultConv, Derived, Base, types::pure409>::value, Thiscall>(
 				"cocos2d::CCRenderTexture::begin", 
-				(void*)addresses::address404(), 
-				(void*)wrap::begin<Thiscall, Derived, Base, types::pure404>::value
+				(void*)addresses::address409()
 			);
 		}
 
-		if constexpr (compare::end<Derived, Base, types::pure405>::value) {
+		if constexpr (compare::end<Derived, Base, types::pure410>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCRenderTexture::end", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::end<DefaultConv, Derived, Base, types::pure410>::value, Thiscall>(
 				"cocos2d::CCRenderTexture::end", 
-				(void*)addresses::address405(), 
-				(void*)wrap::end<Thiscall, Derived, Base, types::pure405>::value
+				(void*)addresses::address410()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure406>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure411>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCRenderTexture::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure411>::value, Cdecl>(
 				"cocos2d::CCRenderTexture::create", 
-				(void*)addresses::address406(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure406>::value
+				(void*)addresses::address411()
 			);
 		}
 
-		if constexpr (compare::newCCImage<Derived, Base, types::pure407>::value) {
+		if constexpr (compare::newCCImage<Derived, Base, types::pure412>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCRenderTexture::newCCImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::newCCImage<DefaultConv, Derived, Base, types::pure412>::value, Thiscall>(
 				"cocos2d::CCRenderTexture::newCCImage", 
-				(void*)addresses::address407(), 
-				(void*)wrap::newCCImage<Membercall, Derived, Base, types::pure407>::value
+				(void*)addresses::address412()
 			);
 		}
 
@@ -6396,111 +6233,102 @@ struct Modify<Derived, cocos2d::CCObject> : ModifyBase<Modify<Derived, cocos2d::
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::acceptVisitor<Derived, Base, types::pure388>::value) {
+		if constexpr (compare::acceptVisitor<Derived, Base, types::pure393>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::acceptVisitor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::acceptVisitor<DefaultConv, Derived, Base, types::pure393>::value, Thiscall>(
 				"cocos2d::CCObject::acceptVisitor", 
-				(void*)addresses::address388(), 
-				(void*)wrap::acceptVisitor<Membercall, Derived, Base, types::pure388>::value
+				(void*)addresses::address393()
 			);
 		}
 
-		if constexpr (compare::autorelease<Derived, Base, types::pure389>::value) {
+		if constexpr (compare::autorelease<Derived, Base, types::pure394>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::autorelease", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::autorelease<DefaultConv, Derived, Base, types::pure394>::value, Thiscall>(
 				"cocos2d::CCObject::autorelease", 
-				(void*)addresses::address389(), 
-				(void*)wrap::autorelease<Thiscall, Derived, Base, types::pure389>::value
+				(void*)addresses::address394()
 			);
 		}
 
-		if constexpr (compare::canEncode<Derived, Base, types::pure390>::value) {
+		if constexpr (compare::canEncode<Derived, Base, types::pure395>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::canEncode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::canEncode<DefaultConv, Derived, Base, types::pure395>::value, Thiscall>(
 				"cocos2d::CCObject::canEncode", 
-				(void*)addresses::address390(), 
-				(void*)wrap::canEncode<Thiscall, Derived, Base, types::pure390>::value
+				(void*)addresses::address395()
 			);
 		}
 
-		if constexpr (compare::encodeWithCoder<Derived, Base, types::pure391>::value) {
+		if constexpr (compare::encodeWithCoder<Derived, Base, types::pure396>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::encodeWithCoder", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::encodeWithCoder<DefaultConv, Derived, Base, types::pure396>::value, Thiscall>(
 				"cocos2d::CCObject::encodeWithCoder", 
-				(void*)addresses::address391(), 
-				(void*)wrap::encodeWithCoder<Membercall, Derived, Base, types::pure391>::value
+				(void*)addresses::address396()
 			);
 		}
 
-		if constexpr (compare::getTag<Derived, Base, types::pure392>::value) {
+		if constexpr (compare::getTag<Derived, Base, types::pure397>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::getTag", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getTag<DefaultConv, Derived, Base, types::pure397>::value, Thiscall>(
 				"cocos2d::CCObject::getTag", 
-				(void*)addresses::address392(), 
-				(void*)wrap::getTag<Thiscall, Derived, Base, types::pure392>::value
+				(void*)addresses::address397()
 			);
 		}
 
-		if constexpr (compare::isEqual<Derived, Base, types::pure393>::value) {
+		if constexpr (compare::isEqual<Derived, Base, types::pure398>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::isEqual", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isEqual<DefaultConv, Derived, Base, types::pure398>::value, Thiscall>(
 				"cocos2d::CCObject::isEqual", 
-				(void*)addresses::address393(), 
-				(void*)wrap::isEqual<Membercall, Derived, Base, types::pure393>::value
+				(void*)addresses::address398()
 			);
 		}
 
-		if constexpr (compare::release<Derived, Base, types::pure394>::value) {
+		if constexpr (compare::release<Derived, Base, types::pure399>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::release", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::release<DefaultConv, Derived, Base, types::pure399>::value, Thiscall>(
 				"cocos2d::CCObject::release", 
-				(void*)addresses::address394(), 
-				(void*)wrap::release<Thiscall, Derived, Base, types::pure394>::value
+				(void*)addresses::address399()
 			);
 		}
 
-		if constexpr (compare::retain<Derived, Base, types::pure395>::value) {
+		if constexpr (compare::retain<Derived, Base, types::pure400>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::retain", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::retain<DefaultConv, Derived, Base, types::pure400>::value, Thiscall>(
 				"cocos2d::CCObject::retain", 
-				(void*)addresses::address395(), 
-				(void*)wrap::retain<Thiscall, Derived, Base, types::pure395>::value
+				(void*)addresses::address400()
 			);
 		}
 
-		if constexpr (compare::setTag<Derived, Base, types::pure396>::value) {
+		if constexpr (compare::setTag<Derived, Base, types::pure401>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCObject::setTag", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTag<DefaultConv, Derived, Base, types::pure401>::value, Thiscall>(
 				"cocos2d::CCObject::setTag", 
-				(void*)addresses::address396(), 
-				(void*)wrap::setTag<Thiscall, Derived, Base, types::pure396>::value
+				(void*)addresses::address401()
 			);
 		}
 
@@ -6515,15 +6343,14 @@ struct Modify<Derived, cocos2d::CCParticleSystemQuad> : ModifyBase<Modify<Derive
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure401>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure406>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCParticleSystemQuad::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure406>::value, Cdecl>(
 				"cocos2d::CCParticleSystemQuad::create", 
-				(void*)addresses::address401(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure401>::value
+				(void*)addresses::address406()
 			);
 		}
 
@@ -6538,27 +6365,25 @@ struct Modify<Derived, cocos2d::CCScaleTo> : ModifyBase<Modify<Derived, cocos2d:
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure410>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure415>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCScaleTo::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure415>::value, Cdecl>(
 				"cocos2d::CCScaleTo::create", 
-				(void*)addresses::address410(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure410>::value
+				(void*)addresses::address415()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure411>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure416>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCScaleTo::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure416>::value, Cdecl>(
 				"cocos2d::CCScaleTo::create", 
-				(void*)addresses::address411(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure411>::value
+				(void*)addresses::address416()
 			);
 		}
 
@@ -6573,27 +6398,25 @@ struct Modify<Derived, cocos2d::CCScene> : ModifyBase<Modify<Derived, cocos2d::C
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure412>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure417>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCScene::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure417>::value, Cdecl>(
 				"cocos2d::CCScene::create", 
-				(void*)addresses::address412(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure412>::value
+				(void*)addresses::address417()
 			);
 		}
 
-		if constexpr (compare::getHighestChildZ<Derived, Base, types::pure413>::value) {
+		if constexpr (compare::getHighestChildZ<Derived, Base, types::pure418>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCScene::getHighestChildZ", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getHighestChildZ<DefaultConv, Derived, Base, types::pure418>::value, Thiscall>(
 				"cocos2d::CCScene::getHighestChildZ", 
-				(void*)addresses::address413(), 
-				(void*)wrap::getHighestChildZ<Thiscall, Derived, Base, types::pure413>::value
+				(void*)addresses::address418()
 			);
 		}
 
@@ -6608,51 +6431,47 @@ struct Modify<Derived, cocos2d::CCScheduler> : ModifyBase<Modify<Derived, cocos2
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::scheduleSelector<Derived, Base, types::pure414>::value) {
+		if constexpr (compare::scheduleSelector<Derived, Base, types::pure419>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCScheduler::scheduleSelector", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::scheduleSelector<DefaultConv, Derived, Base, types::pure419>::value, Thiscall>(
 				"cocos2d::CCScheduler::scheduleSelector", 
-				(void*)addresses::address414(), 
-				(void*)wrap::scheduleSelector<Membercall, Derived, Base, types::pure414>::value
+				(void*)addresses::address419()
 			);
 		}
 
-		if constexpr (compare::scheduleUpdateForTarget<Derived, Base, types::pure415>::value) {
+		if constexpr (compare::scheduleUpdateForTarget<Derived, Base, types::pure420>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCScheduler::scheduleUpdateForTarget", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::scheduleUpdateForTarget<DefaultConv, Derived, Base, types::pure420>::value, Thiscall>(
 				"cocos2d::CCScheduler::scheduleUpdateForTarget", 
-				(void*)addresses::address415(), 
-				(void*)wrap::scheduleUpdateForTarget<Membercall, Derived, Base, types::pure415>::value
+				(void*)addresses::address420()
 			);
 		}
 
-		if constexpr (compare::unscheduleAllForTarget<Derived, Base, types::pure416>::value) {
+		if constexpr (compare::unscheduleAllForTarget<Derived, Base, types::pure421>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCScheduler::unscheduleAllForTarget", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::unscheduleAllForTarget<DefaultConv, Derived, Base, types::pure421>::value, Thiscall>(
 				"cocos2d::CCScheduler::unscheduleAllForTarget", 
-				(void*)addresses::address416(), 
-				(void*)wrap::unscheduleAllForTarget<Membercall, Derived, Base, types::pure416>::value
+				(void*)addresses::address421()
 			);
 		}
 
-		if constexpr (compare::update<Derived, Base, types::pure417>::value) {
+		if constexpr (compare::update<Derived, Base, types::pure422>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCScheduler::update", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::update<DefaultConv, Derived, Base, types::pure422>::value, Thiscall>(
 				"cocos2d::CCScheduler::update", 
-				(void*)addresses::address417(), 
-				(void*)wrap::update<Membercall, Derived, Base, types::pure417>::value
+				(void*)addresses::address422()
 			);
 		}
 
@@ -6678,735 +6497,685 @@ struct Modify<Derived, cocos2d::CCSprite> : ModifyBase<Modify<Derived, cocos2d::
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure422>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure427>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure427>::value, Thiscall>(
 				"cocos2d::CCSprite::init", 
-				(void*)addresses::address422(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure422>::value
+				(void*)addresses::address427()
 			);
 		}
 
-		if constexpr (compare::setVertexZ<Derived, Base, types::pure423>::value) {
+		if constexpr (compare::setVertexZ<Derived, Base, types::pure428>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setVertexZ", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setVertexZ<DefaultConv, Derived, Base, types::pure428>::value, Thiscall>(
 				"cocos2d::CCSprite::setVertexZ", 
-				(void*)addresses::address423(), 
-				(void*)wrap::setVertexZ<Thiscall, Derived, Base, types::pure423>::value
+				(void*)addresses::address428()
 			);
 		}
 
-		if constexpr (compare::setScaleX<Derived, Base, types::pure424>::value) {
+		if constexpr (compare::setScaleX<Derived, Base, types::pure429>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setScaleX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScaleX<DefaultConv, Derived, Base, types::pure429>::value, Thiscall>(
 				"cocos2d::CCSprite::setScaleX", 
-				(void*)addresses::address424(), 
-				(void*)wrap::setScaleX<Thiscall, Derived, Base, types::pure424>::value
+				(void*)addresses::address429()
 			);
 		}
 
-		if constexpr (compare::setScaleY<Derived, Base, types::pure425>::value) {
+		if constexpr (compare::setScaleY<Derived, Base, types::pure430>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setScaleY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScaleY<DefaultConv, Derived, Base, types::pure430>::value, Thiscall>(
 				"cocos2d::CCSprite::setScaleY", 
-				(void*)addresses::address425(), 
-				(void*)wrap::setScaleY<Thiscall, Derived, Base, types::pure425>::value
+				(void*)addresses::address430()
 			);
 		}
 
-		if constexpr (compare::setScale<Derived, Base, types::pure426>::value) {
+		if constexpr (compare::setScale<Derived, Base, types::pure431>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScale<DefaultConv, Derived, Base, types::pure431>::value, Thiscall>(
 				"cocos2d::CCSprite::setScale", 
-				(void*)addresses::address426(), 
-				(void*)wrap::setScale<Thiscall, Derived, Base, types::pure426>::value
+				(void*)addresses::address431()
 			);
 		}
 
-		if constexpr (compare::setPosition<Derived, Base, types::pure427>::value) {
+		if constexpr (compare::setPosition<Derived, Base, types::pure432>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPosition<DefaultConv, Derived, Base, types::pure432>::value, Thiscall>(
 				"cocos2d::CCSprite::setPosition", 
-				(void*)addresses::address427(), 
-				(void*)wrap::setPosition<Thiscall, Derived, Base, types::pure427>::value
+				(void*)addresses::address432()
 			);
 		}
 
-		if constexpr (compare::setSkewX<Derived, Base, types::pure428>::value) {
+		if constexpr (compare::setSkewX<Derived, Base, types::pure433>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setSkewX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSkewX<DefaultConv, Derived, Base, types::pure433>::value, Thiscall>(
 				"cocos2d::CCSprite::setSkewX", 
-				(void*)addresses::address428(), 
-				(void*)wrap::setSkewX<Thiscall, Derived, Base, types::pure428>::value
+				(void*)addresses::address433()
 			);
 		}
 
-		if constexpr (compare::setSkewY<Derived, Base, types::pure429>::value) {
+		if constexpr (compare::setSkewY<Derived, Base, types::pure434>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setSkewY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSkewY<DefaultConv, Derived, Base, types::pure434>::value, Thiscall>(
 				"cocos2d::CCSprite::setSkewY", 
-				(void*)addresses::address429(), 
-				(void*)wrap::setSkewY<Thiscall, Derived, Base, types::pure429>::value
+				(void*)addresses::address434()
 			);
 		}
 
-		if constexpr (compare::setAnchorPoint<Derived, Base, types::pure430>::value) {
+		if constexpr (compare::setAnchorPoint<Derived, Base, types::pure435>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setAnchorPoint", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAnchorPoint<DefaultConv, Derived, Base, types::pure435>::value, Thiscall>(
 				"cocos2d::CCSprite::setAnchorPoint", 
-				(void*)addresses::address430(), 
-				(void*)wrap::setAnchorPoint<Thiscall, Derived, Base, types::pure430>::value
+				(void*)addresses::address435()
 			);
 		}
 
-		if constexpr (compare::setVisible<Derived, Base, types::pure431>::value) {
+		if constexpr (compare::setVisible<Derived, Base, types::pure436>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setVisible", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setVisible<DefaultConv, Derived, Base, types::pure436>::value, Thiscall>(
 				"cocos2d::CCSprite::setVisible", 
-				(void*)addresses::address431(), 
-				(void*)wrap::setVisible<Thiscall, Derived, Base, types::pure431>::value
+				(void*)addresses::address436()
 			);
 		}
 
-		if constexpr (compare::setRotation<Derived, Base, types::pure432>::value) {
+		if constexpr (compare::setRotation<Derived, Base, types::pure437>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setRotation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRotation<DefaultConv, Derived, Base, types::pure437>::value, Thiscall>(
 				"cocos2d::CCSprite::setRotation", 
-				(void*)addresses::address432(), 
-				(void*)wrap::setRotation<Thiscall, Derived, Base, types::pure432>::value
+				(void*)addresses::address437()
 			);
 		}
 
-		if constexpr (compare::setRotationX<Derived, Base, types::pure433>::value) {
+		if constexpr (compare::setRotationX<Derived, Base, types::pure438>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setRotationX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRotationX<DefaultConv, Derived, Base, types::pure438>::value, Thiscall>(
 				"cocos2d::CCSprite::setRotationX", 
-				(void*)addresses::address433(), 
-				(void*)wrap::setRotationX<Thiscall, Derived, Base, types::pure433>::value
+				(void*)addresses::address438()
 			);
 		}
 
-		if constexpr (compare::setRotationY<Derived, Base, types::pure434>::value) {
+		if constexpr (compare::setRotationY<Derived, Base, types::pure439>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setRotationY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRotationY<DefaultConv, Derived, Base, types::pure439>::value, Thiscall>(
 				"cocos2d::CCSprite::setRotationY", 
-				(void*)addresses::address434(), 
-				(void*)wrap::setRotationY<Thiscall, Derived, Base, types::pure434>::value
+				(void*)addresses::address439()
 			);
 		}
 
-		if constexpr (compare::ignoreAnchorPointForPosition<Derived, Base, types::pure435>::value) {
+		if constexpr (compare::ignoreAnchorPointForPosition<Derived, Base, types::pure440>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::ignoreAnchorPointForPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ignoreAnchorPointForPosition<DefaultConv, Derived, Base, types::pure440>::value, Thiscall>(
 				"cocos2d::CCSprite::ignoreAnchorPointForPosition", 
-				(void*)addresses::address435(), 
-				(void*)wrap::ignoreAnchorPointForPosition<Thiscall, Derived, Base, types::pure435>::value
+				(void*)addresses::address440()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure436>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure441>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure441>::value, Thiscall>(
 				"cocos2d::CCSprite::addChild", 
-				(void*)addresses::address436(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure436>::value
+				(void*)addresses::address441()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure437>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure442>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure442>::value, Thiscall>(
 				"cocos2d::CCSprite::addChild", 
-				(void*)addresses::address437(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure437>::value
+				(void*)addresses::address442()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure438>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure443>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure443>::value, Thiscall>(
 				"cocos2d::CCSprite::addChild", 
-				(void*)addresses::address438(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure438>::value
+				(void*)addresses::address443()
 			);
 		}
 
-		if constexpr (compare::removeChild<Derived, Base, types::pure439>::value) {
+		if constexpr (compare::removeChild<Derived, Base, types::pure444>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::removeChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeChild<DefaultConv, Derived, Base, types::pure444>::value, Thiscall>(
 				"cocos2d::CCSprite::removeChild", 
-				(void*)addresses::address439(), 
-				(void*)wrap::removeChild<Thiscall, Derived, Base, types::pure439>::value
+				(void*)addresses::address444()
 			);
 		}
 
-		if constexpr (compare::removeAllChildrenWithCleanup<Derived, Base, types::pure440>::value) {
+		if constexpr (compare::removeAllChildrenWithCleanup<Derived, Base, types::pure445>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::removeAllChildrenWithCleanup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeAllChildrenWithCleanup<DefaultConv, Derived, Base, types::pure445>::value, Thiscall>(
 				"cocos2d::CCSprite::removeAllChildrenWithCleanup", 
-				(void*)addresses::address440(), 
-				(void*)wrap::removeAllChildrenWithCleanup<Thiscall, Derived, Base, types::pure440>::value
+				(void*)addresses::address445()
 			);
 		}
 
-		if constexpr (compare::reorderChild<Derived, Base, types::pure441>::value) {
+		if constexpr (compare::reorderChild<Derived, Base, types::pure446>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::reorderChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::reorderChild<DefaultConv, Derived, Base, types::pure446>::value, Thiscall>(
 				"cocos2d::CCSprite::reorderChild", 
-				(void*)addresses::address441(), 
-				(void*)wrap::reorderChild<Thiscall, Derived, Base, types::pure441>::value
+				(void*)addresses::address446()
 			);
 		}
 
-		if constexpr (compare::sortAllChildren<Derived, Base, types::pure442>::value) {
+		if constexpr (compare::sortAllChildren<Derived, Base, types::pure447>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::sortAllChildren", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sortAllChildren<DefaultConv, Derived, Base, types::pure447>::value, Thiscall>(
 				"cocos2d::CCSprite::sortAllChildren", 
-				(void*)addresses::address442(), 
-				(void*)wrap::sortAllChildren<Thiscall, Derived, Base, types::pure442>::value
+				(void*)addresses::address447()
 			);
 		}
 
-		if constexpr (compare::draw<Derived, Base, types::pure443>::value) {
+		if constexpr (compare::draw<Derived, Base, types::pure448>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::draw", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure448>::value, Thiscall>(
 				"cocos2d::CCSprite::draw", 
-				(void*)addresses::address443(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure443>::value
+				(void*)addresses::address448()
 			);
 		}
 
-		if constexpr (compare::updateTransform<Derived, Base, types::pure444>::value) {
+		if constexpr (compare::updateTransform<Derived, Base, types::pure449>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::updateTransform", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateTransform<DefaultConv, Derived, Base, types::pure449>::value, Thiscall>(
 				"cocos2d::CCSprite::updateTransform", 
-				(void*)addresses::address444(), 
-				(void*)wrap::updateTransform<Thiscall, Derived, Base, types::pure444>::value
+				(void*)addresses::address449()
 			);
 		}
 
-		if constexpr (compare::setOpacity<Derived, Base, types::pure445>::value) {
+		if constexpr (compare::setOpacity<Derived, Base, types::pure450>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacity<DefaultConv, Derived, Base, types::pure450>::value, Thiscall>(
 				"cocos2d::CCSprite::setOpacity", 
-				(void*)addresses::address445(), 
-				(void*)wrap::setOpacity<Thiscall, Derived, Base, types::pure445>::value
+				(void*)addresses::address450()
 			);
 		}
 
-		if constexpr (compare::updateDisplayedOpacity<Derived, Base, types::pure446>::value) {
+		if constexpr (compare::updateDisplayedOpacity<Derived, Base, types::pure451>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::updateDisplayedOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDisplayedOpacity<DefaultConv, Derived, Base, types::pure451>::value, Thiscall>(
 				"cocos2d::CCSprite::updateDisplayedOpacity", 
-				(void*)addresses::address446(), 
-				(void*)wrap::updateDisplayedOpacity<Thiscall, Derived, Base, types::pure446>::value
+				(void*)addresses::address451()
 			);
 		}
 
-		if constexpr (compare::setColor<Derived, Base, types::pure447>::value) {
+		if constexpr (compare::setColor<Derived, Base, types::pure452>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setColor<DefaultConv, Derived, Base, types::pure452>::value, Thiscall>(
 				"cocos2d::CCSprite::setColor", 
-				(void*)addresses::address447(), 
-				(void*)wrap::setColor<Thiscall, Derived, Base, types::pure447>::value
+				(void*)addresses::address452()
 			);
 		}
 
-		if constexpr (compare::updateDisplayedColor<Derived, Base, types::pure448>::value) {
+		if constexpr (compare::updateDisplayedColor<Derived, Base, types::pure453>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::updateDisplayedColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDisplayedColor<DefaultConv, Derived, Base, types::pure453>::value, Thiscall>(
 				"cocos2d::CCSprite::updateDisplayedColor", 
-				(void*)addresses::address448(), 
-				(void*)wrap::updateDisplayedColor<Thiscall, Derived, Base, types::pure448>::value
+				(void*)addresses::address453()
 			);
 		}
 
-		if constexpr (compare::setOpacityModifyRGB<Derived, Base, types::pure449>::value) {
+		if constexpr (compare::setOpacityModifyRGB<Derived, Base, types::pure454>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setOpacityModifyRGB", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacityModifyRGB<DefaultConv, Derived, Base, types::pure454>::value, Thiscall>(
 				"cocos2d::CCSprite::setOpacityModifyRGB", 
-				(void*)addresses::address449(), 
-				(void*)wrap::setOpacityModifyRGB<Thiscall, Derived, Base, types::pure449>::value
+				(void*)addresses::address454()
 			);
 		}
 
-		if constexpr (compare::isOpacityModifyRGB<Derived, Base, types::pure450>::value) {
+		if constexpr (compare::isOpacityModifyRGB<Derived, Base, types::pure455>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::isOpacityModifyRGB", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isOpacityModifyRGB<DefaultConv, Derived, Base, types::pure455>::value, Thiscall>(
 				"cocos2d::CCSprite::isOpacityModifyRGB", 
-				(void*)addresses::address450(), 
-				(void*)wrap::isOpacityModifyRGB<Thiscall, Derived, Base, types::pure450>::value
+				(void*)addresses::address455()
 			);
 		}
 
-		if constexpr (compare::initWithTexture<Derived, Base, types::pure451>::value) {
+		if constexpr (compare::initWithTexture<Derived, Base, types::pure456>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::initWithTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithTexture<DefaultConv, Derived, Base, types::pure456>::value, Thiscall>(
 				"cocos2d::CCSprite::initWithTexture", 
-				(void*)addresses::address451(), 
-				(void*)wrap::initWithTexture<Thiscall, Derived, Base, types::pure451>::value
+				(void*)addresses::address456()
 			);
 		}
 
-		if constexpr (compare::initWithTexture<Derived, Base, types::pure452>::value) {
+		if constexpr (compare::initWithTexture<Derived, Base, types::pure457>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::initWithTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithTexture<DefaultConv, Derived, Base, types::pure457>::value, Thiscall>(
 				"cocos2d::CCSprite::initWithTexture", 
-				(void*)addresses::address452(), 
-				(void*)wrap::initWithTexture<Thiscall, Derived, Base, types::pure452>::value
+				(void*)addresses::address457()
 			);
 		}
 
-		if constexpr (compare::initWithTexture<Derived, Base, types::pure453>::value) {
+		if constexpr (compare::initWithTexture<Derived, Base, types::pure458>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::initWithTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithTexture<DefaultConv, Derived, Base, types::pure458>::value, Thiscall>(
 				"cocos2d::CCSprite::initWithTexture", 
-				(void*)addresses::address453(), 
-				(void*)wrap::initWithTexture<Thiscall, Derived, Base, types::pure453>::value
+				(void*)addresses::address458()
 			);
 		}
 
-		if constexpr (compare::initWithSpriteFrame<Derived, Base, types::pure454>::value) {
+		if constexpr (compare::initWithSpriteFrame<Derived, Base, types::pure459>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::initWithSpriteFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithSpriteFrame<DefaultConv, Derived, Base, types::pure459>::value, Thiscall>(
 				"cocos2d::CCSprite::initWithSpriteFrame", 
-				(void*)addresses::address454(), 
-				(void*)wrap::initWithSpriteFrame<Thiscall, Derived, Base, types::pure454>::value
+				(void*)addresses::address459()
 			);
 		}
 
-		if constexpr (compare::initWithSpriteFrameName<Derived, Base, types::pure455>::value) {
+		if constexpr (compare::initWithSpriteFrameName<Derived, Base, types::pure460>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::initWithSpriteFrameName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithSpriteFrameName<DefaultConv, Derived, Base, types::pure460>::value, Thiscall>(
 				"cocos2d::CCSprite::initWithSpriteFrameName", 
-				(void*)addresses::address455(), 
-				(void*)wrap::initWithSpriteFrameName<Thiscall, Derived, Base, types::pure455>::value
+				(void*)addresses::address460()
 			);
 		}
 
-		if constexpr (compare::initWithFile<Derived, Base, types::pure456>::value) {
+		if constexpr (compare::initWithFile<Derived, Base, types::pure461>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::initWithFile", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithFile<DefaultConv, Derived, Base, types::pure461>::value, Thiscall>(
 				"cocos2d::CCSprite::initWithFile", 
-				(void*)addresses::address456(), 
-				(void*)wrap::initWithFile<Thiscall, Derived, Base, types::pure456>::value
+				(void*)addresses::address461()
 			);
 		}
 
-		if constexpr (compare::initWithFile<Derived, Base, types::pure457>::value) {
+		if constexpr (compare::initWithFile<Derived, Base, types::pure462>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::initWithFile", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithFile<DefaultConv, Derived, Base, types::pure462>::value, Thiscall>(
 				"cocos2d::CCSprite::initWithFile", 
-				(void*)addresses::address457(), 
-				(void*)wrap::initWithFile<Thiscall, Derived, Base, types::pure457>::value
+				(void*)addresses::address462()
 			);
 		}
 
-		if constexpr (compare::setTexture<Derived, Base, types::pure458>::value) {
+		if constexpr (compare::setTexture<Derived, Base, types::pure463>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTexture<DefaultConv, Derived, Base, types::pure463>::value, Thiscall>(
 				"cocos2d::CCSprite::setTexture", 
-				(void*)addresses::address458(), 
-				(void*)wrap::setTexture<Thiscall, Derived, Base, types::pure458>::value
+				(void*)addresses::address463()
 			);
 		}
 
-		if constexpr (compare::getTexture<Derived, Base, types::pure459>::value) {
+		if constexpr (compare::getTexture<Derived, Base, types::pure464>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::getTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getTexture<DefaultConv, Derived, Base, types::pure464>::value, Thiscall>(
 				"cocos2d::CCSprite::getTexture", 
-				(void*)addresses::address459(), 
-				(void*)wrap::getTexture<Thiscall, Derived, Base, types::pure459>::value
+				(void*)addresses::address464()
 			);
 		}
 
-		if constexpr (compare::setChildColor<Derived, Base, types::pure460>::value) {
+		if constexpr (compare::setChildColor<Derived, Base, types::pure465>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setChildColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setChildColor<DefaultConv, Derived, Base, types::pure465>::value, Thiscall>(
 				"cocos2d::CCSprite::setChildColor", 
-				(void*)addresses::address460(), 
-				(void*)wrap::setChildColor<Thiscall, Derived, Base, types::pure460>::value
+				(void*)addresses::address465()
 			);
 		}
 
-		if constexpr (compare::setChildOpacity<Derived, Base, types::pure461>::value) {
+		if constexpr (compare::setChildOpacity<Derived, Base, types::pure466>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setChildOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setChildOpacity<DefaultConv, Derived, Base, types::pure466>::value, Thiscall>(
 				"cocos2d::CCSprite::setChildOpacity", 
-				(void*)addresses::address461(), 
-				(void*)wrap::setChildOpacity<Thiscall, Derived, Base, types::pure461>::value
+				(void*)addresses::address466()
 			);
 		}
 
-		if constexpr (compare::getBatchNode<Derived, Base, types::pure462>::value) {
+		if constexpr (compare::getBatchNode<Derived, Base, types::pure467>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::getBatchNode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getBatchNode<DefaultConv, Derived, Base, types::pure467>::value, Thiscall>(
 				"cocos2d::CCSprite::getBatchNode", 
-				(void*)addresses::address462(), 
-				(void*)wrap::getBatchNode<Thiscall, Derived, Base, types::pure462>::value
+				(void*)addresses::address467()
 			);
 		}
 
-		if constexpr (compare::setBatchNode<Derived, Base, types::pure463>::value) {
+		if constexpr (compare::setBatchNode<Derived, Base, types::pure468>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setBatchNode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setBatchNode<DefaultConv, Derived, Base, types::pure468>::value, Thiscall>(
 				"cocos2d::CCSprite::setBatchNode", 
-				(void*)addresses::address463(), 
-				(void*)wrap::setBatchNode<Thiscall, Derived, Base, types::pure463>::value
+				(void*)addresses::address468()
 			);
 		}
 
-		if constexpr (compare::refreshTextureRect<Derived, Base, types::pure464>::value) {
+		if constexpr (compare::refreshTextureRect<Derived, Base, types::pure469>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::refreshTextureRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::refreshTextureRect<DefaultConv, Derived, Base, types::pure469>::value, Thiscall>(
 				"cocos2d::CCSprite::refreshTextureRect", 
-				(void*)addresses::address464(), 
-				(void*)wrap::refreshTextureRect<Thiscall, Derived, Base, types::pure464>::value
+				(void*)addresses::address469()
 			);
 		}
 
-		if constexpr (compare::setTextureRect<Derived, Base, types::pure465>::value) {
+		if constexpr (compare::setTextureRect<Derived, Base, types::pure470>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setTextureRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTextureRect<DefaultConv, Derived, Base, types::pure470>::value, Thiscall>(
 				"cocos2d::CCSprite::setTextureRect", 
-				(void*)addresses::address465(), 
-				(void*)wrap::setTextureRect<Thiscall, Derived, Base, types::pure465>::value
+				(void*)addresses::address470()
 			);
 		}
 
-		if constexpr (compare::setTextureRect<Derived, Base, types::pure466>::value) {
+		if constexpr (compare::setTextureRect<Derived, Base, types::pure471>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setTextureRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTextureRect<DefaultConv, Derived, Base, types::pure471>::value, Thiscall>(
 				"cocos2d::CCSprite::setTextureRect", 
-				(void*)addresses::address466(), 
-				(void*)wrap::setTextureRect<Thiscall, Derived, Base, types::pure466>::value
+				(void*)addresses::address471()
 			);
 		}
 
-		if constexpr (compare::setVertexRect<Derived, Base, types::pure467>::value) {
+		if constexpr (compare::setVertexRect<Derived, Base, types::pure472>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setVertexRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setVertexRect<DefaultConv, Derived, Base, types::pure472>::value, Thiscall>(
 				"cocos2d::CCSprite::setVertexRect", 
-				(void*)addresses::address467(), 
-				(void*)wrap::setVertexRect<Thiscall, Derived, Base, types::pure467>::value
+				(void*)addresses::address472()
 			);
 		}
 
-		if constexpr (compare::setDisplayFrame<Derived, Base, types::pure468>::value) {
+		if constexpr (compare::setDisplayFrame<Derived, Base, types::pure473>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setDisplayFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setDisplayFrame<DefaultConv, Derived, Base, types::pure473>::value, Thiscall>(
 				"cocos2d::CCSprite::setDisplayFrame", 
-				(void*)addresses::address468(), 
-				(void*)wrap::setDisplayFrame<Thiscall, Derived, Base, types::pure468>::value
+				(void*)addresses::address473()
 			);
 		}
 
-		if constexpr (compare::isFrameDisplayed<Derived, Base, types::pure469>::value) {
+		if constexpr (compare::isFrameDisplayed<Derived, Base, types::pure474>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::isFrameDisplayed", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isFrameDisplayed<DefaultConv, Derived, Base, types::pure474>::value, Thiscall>(
 				"cocos2d::CCSprite::isFrameDisplayed", 
-				(void*)addresses::address469(), 
-				(void*)wrap::isFrameDisplayed<Thiscall, Derived, Base, types::pure469>::value
+				(void*)addresses::address474()
 			);
 		}
 
-		if constexpr (compare::displayFrame<Derived, Base, types::pure470>::value) {
+		if constexpr (compare::displayFrame<Derived, Base, types::pure475>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::displayFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::displayFrame<DefaultConv, Derived, Base, types::pure475>::value, Thiscall>(
 				"cocos2d::CCSprite::displayFrame", 
-				(void*)addresses::address470(), 
-				(void*)wrap::displayFrame<Thiscall, Derived, Base, types::pure470>::value
+				(void*)addresses::address475()
 			);
 		}
 
-		if constexpr (compare::setDisplayFrameWithAnimationName<Derived, Base, types::pure471>::value) {
+		if constexpr (compare::setDisplayFrameWithAnimationName<Derived, Base, types::pure476>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setDisplayFrameWithAnimationName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setDisplayFrameWithAnimationName<DefaultConv, Derived, Base, types::pure476>::value, Thiscall>(
 				"cocos2d::CCSprite::setDisplayFrameWithAnimationName", 
-				(void*)addresses::address471(), 
-				(void*)wrap::setDisplayFrameWithAnimationName<Thiscall, Derived, Base, types::pure471>::value
+				(void*)addresses::address476()
 			);
 		}
 
-		if constexpr (compare::setTextureCoords<Derived, Base, types::pure472>::value) {
+		if constexpr (compare::setTextureCoords<Derived, Base, types::pure477>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setTextureCoords", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTextureCoords<DefaultConv, Derived, Base, types::pure477>::value, Thiscall>(
 				"cocos2d::CCSprite::setTextureCoords", 
-				(void*)addresses::address472(), 
-				(void*)wrap::setTextureCoords<Thiscall, Derived, Base, types::pure472>::value
+				(void*)addresses::address477()
 			);
 		}
 
-		if constexpr (compare::updateBlendFunc<Derived, Base, types::pure473>::value) {
+		if constexpr (compare::updateBlendFunc<Derived, Base, types::pure478>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::updateBlendFunc", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateBlendFunc<DefaultConv, Derived, Base, types::pure478>::value, Thiscall>(
 				"cocos2d::CCSprite::updateBlendFunc", 
-				(void*)addresses::address473(), 
-				(void*)wrap::updateBlendFunc<Thiscall, Derived, Base, types::pure473>::value
+				(void*)addresses::address478()
 			);
 		}
 
-		if constexpr (compare::setReorderChildDirtyRecursively<Derived, Base, types::pure474>::value) {
+		if constexpr (compare::setReorderChildDirtyRecursively<Derived, Base, types::pure479>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setReorderChildDirtyRecursively", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setReorderChildDirtyRecursively<DefaultConv, Derived, Base, types::pure479>::value, Thiscall>(
 				"cocos2d::CCSprite::setReorderChildDirtyRecursively", 
-				(void*)addresses::address474(), 
-				(void*)wrap::setReorderChildDirtyRecursively<Thiscall, Derived, Base, types::pure474>::value
+				(void*)addresses::address479()
 			);
 		}
 
-		if constexpr (compare::setDirtyRecursively<Derived, Base, types::pure475>::value) {
+		if constexpr (compare::setDirtyRecursively<Derived, Base, types::pure480>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setDirtyRecursively", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setDirtyRecursively<DefaultConv, Derived, Base, types::pure480>::value, Thiscall>(
 				"cocos2d::CCSprite::setDirtyRecursively", 
-				(void*)addresses::address475(), 
-				(void*)wrap::setDirtyRecursively<Thiscall, Derived, Base, types::pure475>::value
+				(void*)addresses::address480()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure477>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure482>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure482>::value, Cdecl>(
 				"cocos2d::CCSprite::create", 
-				(void*)addresses::address477(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure477>::value
+				(void*)addresses::address482()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure478>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure483>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure483>::value, Cdecl>(
 				"cocos2d::CCSprite::create", 
-				(void*)addresses::address478(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure478>::value
+				(void*)addresses::address483()
 			);
 		}
 
-		if constexpr (compare::createWithSpriteFrame<Derived, Base, types::pure479>::value) {
+		if constexpr (compare::createWithSpriteFrame<Derived, Base, types::pure484>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::createWithSpriteFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithSpriteFrame<DefaultConv, Derived, Base, types::pure484>::value, Cdecl>(
 				"cocos2d::CCSprite::createWithSpriteFrame", 
-				(void*)addresses::address479(), 
-				(void*)wrap::createWithSpriteFrame<Optcall, Derived, Base, types::pure479>::value
+				(void*)addresses::address484()
 			);
 		}
 
-		if constexpr (compare::createWithSpriteFrameName<Derived, Base, types::pure480>::value) {
+		if constexpr (compare::createWithSpriteFrameName<Derived, Base, types::pure485>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::createWithSpriteFrameName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithSpriteFrameName<DefaultConv, Derived, Base, types::pure485>::value, Cdecl>(
 				"cocos2d::CCSprite::createWithSpriteFrameName", 
-				(void*)addresses::address480(), 
-				(void*)wrap::createWithSpriteFrameName<Optcall, Derived, Base, types::pure480>::value
+				(void*)addresses::address485()
 			);
 		}
 
-		if constexpr (compare::createWithTexture<Derived, Base, types::pure481>::value) {
+		if constexpr (compare::createWithTexture<Derived, Base, types::pure486>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::createWithTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithTexture<DefaultConv, Derived, Base, types::pure486>::value, Cdecl>(
 				"cocos2d::CCSprite::createWithTexture", 
-				(void*)addresses::address481(), 
-				(void*)wrap::createWithTexture<Optcall, Derived, Base, types::pure481>::value
+				(void*)addresses::address486()
 			);
 		}
 
-		if constexpr (compare::setFlipX<Derived, Base, types::pure482>::value) {
+		if constexpr (compare::createWithTexture<Derived, Base, types::pure487>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCSprite::createWithTexture", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::createWithTexture<DefaultConv, Derived, Base, types::pure487>::value, Cdecl>(
+				"cocos2d::CCSprite::createWithTexture", 
+				(void*)addresses::address487()
+			);
+		}
+
+		if constexpr (compare::setFlipX<Derived, Base, types::pure488>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setFlipX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setFlipX<DefaultConv, Derived, Base, types::pure488>::value, Thiscall>(
 				"cocos2d::CCSprite::setFlipX", 
-				(void*)addresses::address482(), 
-				(void*)wrap::setFlipX<Membercall, Derived, Base, types::pure482>::value
+				(void*)addresses::address488()
 			);
 		}
 
-		if constexpr (compare::setFlipY<Derived, Base, types::pure483>::value) {
+		if constexpr (compare::setFlipY<Derived, Base, types::pure489>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSprite::setFlipY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setFlipY<DefaultConv, Derived, Base, types::pure489>::value, Thiscall>(
 				"cocos2d::CCSprite::setFlipY", 
-				(void*)addresses::address483(), 
-				(void*)wrap::setFlipY<Membercall, Derived, Base, types::pure483>::value
+				(void*)addresses::address489()
 			);
 		}
 
@@ -7421,51 +7190,47 @@ struct Modify<Derived, cocos2d::CCSpriteBatchNode> : ModifyBase<Modify<Derived, 
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure484>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure490>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSpriteBatchNode::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure490>::value, Cdecl>(
 				"cocos2d::CCSpriteBatchNode::create", 
-				(void*)addresses::address484(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure484>::value
+				(void*)addresses::address490()
 			);
 		}
 
-		if constexpr (compare::createWithTexture<Derived, Base, types::pure485>::value) {
+		if constexpr (compare::createWithTexture<Derived, Base, types::pure491>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSpriteBatchNode::createWithTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithTexture<DefaultConv, Derived, Base, types::pure491>::value, Cdecl>(
 				"cocos2d::CCSpriteBatchNode::createWithTexture", 
-				(void*)addresses::address485(), 
-				(void*)wrap::createWithTexture<Optcall, Derived, Base, types::pure485>::value
+				(void*)addresses::address491()
 			);
 		}
 
-		if constexpr (compare::getUsedAtlasCapacity<Derived, Base, types::pure486>::value) {
+		if constexpr (compare::getUsedAtlasCapacity<Derived, Base, types::pure492>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSpriteBatchNode::getUsedAtlasCapacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getUsedAtlasCapacity<DefaultConv, Derived, Base, types::pure492>::value, Thiscall>(
 				"cocos2d::CCSpriteBatchNode::getUsedAtlasCapacity", 
-				(void*)addresses::address486(), 
-				(void*)wrap::getUsedAtlasCapacity<Thiscall, Derived, Base, types::pure486>::value
+				(void*)addresses::address492()
 			);
 		}
 
-		if constexpr (compare::increaseAtlasCapacity<Derived, Base, types::pure487>::value) {
+		if constexpr (compare::increaseAtlasCapacity<Derived, Base, types::pure493>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCSpriteBatchNode::increaseAtlasCapacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::increaseAtlasCapacity<DefaultConv, Derived, Base, types::pure493>::value, Thiscall>(
 				"cocos2d::CCSpriteBatchNode::increaseAtlasCapacity", 
-				(void*)addresses::address487(), 
-				(void*)wrap::increaseAtlasCapacity<Membercall, Derived, Base, types::pure487>::value
+				(void*)addresses::address493()
 			);
 		}
 
@@ -7491,27 +7256,25 @@ struct Modify<Derived, cocos2d::CCTargetedTouchHandler> : ModifyBase<Modify<Deri
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure504>::value) {
+		if constexpr (compare::handlerWithDelegate<Derived, Base, types::pure510>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTargetedTouchHandler::handlerWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::handlerWithDelegate<DefaultConv, Derived, Base, types::pure510>::value, Cdecl>(
 				"cocos2d::CCTargetedTouchHandler::handlerWithDelegate", 
-				(void*)addresses::address504(), 
-				(void*)wrap::handlerWithDelegate<Optcall, Derived, Base, types::pure504>::value
+				(void*)addresses::address510()
 			);
 		}
 
-		if constexpr (compare::initWithDelegate<Derived, Base, types::pure505>::value) {
+		if constexpr (compare::initWithDelegate<Derived, Base, types::pure511>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTargetedTouchHandler::initWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithDelegate<DefaultConv, Derived, Base, types::pure511>::value, Thiscall>(
 				"cocos2d::CCTargetedTouchHandler::initWithDelegate", 
-				(void*)addresses::address505(), 
-				(void*)wrap::initWithDelegate<Membercall, Derived, Base, types::pure505>::value
+				(void*)addresses::address511()
 			);
 		}
 
@@ -7537,207 +7300,190 @@ struct Modify<Derived, cocos2d::CCTexture2D> : ModifyBase<Modify<Derived, cocos2
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::getContentSize<Derived, Base, types::pure509>::value) {
+		if constexpr (compare::getContentSize<Derived, Base, types::pure515>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::getContentSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getContentSize<DefaultConv, Derived, Base, types::pure515>::value, Thiscall>(
 				"cocos2d::CCTexture2D::getContentSize", 
-				(void*)addresses::address509(), 
-				(void*)wrap::getContentSize<Thiscall, Derived, Base, types::pure509>::value
+				(void*)addresses::address515()
 			);
 		}
 
-		if constexpr (compare::getMaxS<Derived, Base, types::pure510>::value) {
+		if constexpr (compare::getMaxS<Derived, Base, types::pure516>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::getMaxS", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getMaxS<DefaultConv, Derived, Base, types::pure516>::value, Thiscall>(
 				"cocos2d::CCTexture2D::getMaxS", 
-				(void*)addresses::address510(), 
-				(void*)wrap::getMaxS<Thiscall, Derived, Base, types::pure510>::value
+				(void*)addresses::address516()
 			);
 		}
 
-		if constexpr (compare::getMaxT<Derived, Base, types::pure511>::value) {
+		if constexpr (compare::getMaxT<Derived, Base, types::pure517>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::getMaxT", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getMaxT<DefaultConv, Derived, Base, types::pure517>::value, Thiscall>(
 				"cocos2d::CCTexture2D::getMaxT", 
-				(void*)addresses::address511(), 
-				(void*)wrap::getMaxT<Thiscall, Derived, Base, types::pure511>::value
+				(void*)addresses::address517()
 			);
 		}
 
-		if constexpr (compare::getName<Derived, Base, types::pure512>::value) {
+		if constexpr (compare::getName<Derived, Base, types::pure518>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::getName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getName<DefaultConv, Derived, Base, types::pure518>::value, Thiscall>(
 				"cocos2d::CCTexture2D::getName", 
-				(void*)addresses::address512(), 
-				(void*)wrap::getName<Thiscall, Derived, Base, types::pure512>::value
+				(void*)addresses::address518()
 			);
 		}
 
-		if constexpr (compare::getPixelFormat<Derived, Base, types::pure513>::value) {
+		if constexpr (compare::getPixelFormat<Derived, Base, types::pure519>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::getPixelFormat", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPixelFormat<DefaultConv, Derived, Base, types::pure519>::value, Thiscall>(
 				"cocos2d::CCTexture2D::getPixelFormat", 
-				(void*)addresses::address513(), 
-				(void*)wrap::getPixelFormat<Thiscall, Derived, Base, types::pure513>::value
+				(void*)addresses::address519()
 			);
 		}
 
-		if constexpr (compare::getPixelsHigh<Derived, Base, types::pure514>::value) {
+		if constexpr (compare::getPixelsHigh<Derived, Base, types::pure520>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::getPixelsHigh", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPixelsHigh<DefaultConv, Derived, Base, types::pure520>::value, Thiscall>(
 				"cocos2d::CCTexture2D::getPixelsHigh", 
-				(void*)addresses::address514(), 
-				(void*)wrap::getPixelsHigh<Thiscall, Derived, Base, types::pure514>::value
+				(void*)addresses::address520()
 			);
 		}
 
-		if constexpr (compare::getPixelsWide<Derived, Base, types::pure515>::value) {
+		if constexpr (compare::getPixelsWide<Derived, Base, types::pure521>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::getPixelsWide", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPixelsWide<DefaultConv, Derived, Base, types::pure521>::value, Thiscall>(
 				"cocos2d::CCTexture2D::getPixelsWide", 
-				(void*)addresses::address515(), 
-				(void*)wrap::getPixelsWide<Thiscall, Derived, Base, types::pure515>::value
+				(void*)addresses::address521()
 			);
 		}
 
-		if constexpr (compare::getShaderProgram<Derived, Base, types::pure516>::value) {
+		if constexpr (compare::getShaderProgram<Derived, Base, types::pure522>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::getShaderProgram", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getShaderProgram<DefaultConv, Derived, Base, types::pure522>::value, Thiscall>(
 				"cocos2d::CCTexture2D::getShaderProgram", 
-				(void*)addresses::address516(), 
-				(void*)wrap::getShaderProgram<Thiscall, Derived, Base, types::pure516>::value
+				(void*)addresses::address522()
 			);
 		}
 
-		if constexpr (compare::initPremultipliedATextureWithImage<Derived, Base, types::pure517>::value) {
+		if constexpr (compare::initPremultipliedATextureWithImage<Derived, Base, types::pure523>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::initPremultipliedATextureWithImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initPremultipliedATextureWithImage<DefaultConv, Derived, Base, types::pure523>::value, Thiscall>(
 				"cocos2d::CCTexture2D::initPremultipliedATextureWithImage", 
-				(void*)addresses::address517(), 
-				(void*)wrap::initPremultipliedATextureWithImage<Membercall, Derived, Base, types::pure517>::value
+				(void*)addresses::address523()
 			);
 		}
 
-		if constexpr (compare::initWithData<Derived, Base, types::pure518>::value) {
+		if constexpr (compare::initWithData<Derived, Base, types::pure524>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::initWithData", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithData<DefaultConv, Derived, Base, types::pure524>::value, Thiscall>(
 				"cocos2d::CCTexture2D::initWithData", 
-				(void*)addresses::address518(), 
-				(void*)wrap::initWithData<Membercall, Derived, Base, types::pure518>::value
+				(void*)addresses::address524()
 			);
 		}
 
-		if constexpr (compare::setAliasTexParameters<Derived, Base, types::pure519>::value) {
+		if constexpr (compare::setAliasTexParameters<Derived, Base, types::pure525>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::setAliasTexParameters", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAliasTexParameters<DefaultConv, Derived, Base, types::pure525>::value, Thiscall>(
 				"cocos2d::CCTexture2D::setAliasTexParameters", 
-				(void*)addresses::address519(), 
-				(void*)wrap::setAliasTexParameters<Thiscall, Derived, Base, types::pure519>::value
+				(void*)addresses::address525()
 			);
 		}
 
-		if constexpr (compare::setAntiAliasTexParameters<Derived, Base, types::pure520>::value) {
+		if constexpr (compare::setAntiAliasTexParameters<Derived, Base, types::pure526>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::setAntiAliasTexParameters", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setAntiAliasTexParameters<DefaultConv, Derived, Base, types::pure526>::value, Thiscall>(
 				"cocos2d::CCTexture2D::setAntiAliasTexParameters", 
-				(void*)addresses::address520(), 
-				(void*)wrap::setAntiAliasTexParameters<Thiscall, Derived, Base, types::pure520>::value
+				(void*)addresses::address526()
 			);
 		}
 
-		if constexpr (compare::setMaxS<Derived, Base, types::pure521>::value) {
+		if constexpr (compare::setMaxS<Derived, Base, types::pure527>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::setMaxS", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setMaxS<DefaultConv, Derived, Base, types::pure527>::value, Thiscall>(
 				"cocos2d::CCTexture2D::setMaxS", 
-				(void*)addresses::address521(), 
-				(void*)wrap::setMaxS<Membercall, Derived, Base, types::pure521>::value
+				(void*)addresses::address527()
 			);
 		}
 
-		if constexpr (compare::setMaxT<Derived, Base, types::pure522>::value) {
+		if constexpr (compare::setMaxT<Derived, Base, types::pure528>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::setMaxT", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setMaxT<DefaultConv, Derived, Base, types::pure528>::value, Thiscall>(
 				"cocos2d::CCTexture2D::setMaxT", 
-				(void*)addresses::address522(), 
-				(void*)wrap::setMaxT<Membercall, Derived, Base, types::pure522>::value
+				(void*)addresses::address528()
 			);
 		}
 
-		if constexpr (compare::setShaderProgram<Derived, Base, types::pure523>::value) {
+		if constexpr (compare::setShaderProgram<Derived, Base, types::pure529>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::setShaderProgram", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setShaderProgram<DefaultConv, Derived, Base, types::pure529>::value, Thiscall>(
 				"cocos2d::CCTexture2D::setShaderProgram", 
-				(void*)addresses::address523(), 
-				(void*)wrap::setShaderProgram<Membercall, Derived, Base, types::pure523>::value
+				(void*)addresses::address529()
 			);
 		}
 
-		if constexpr (compare::initWithImage<Derived, Base, types::pure524>::value) {
+		if constexpr (compare::initWithImage<Derived, Base, types::pure530>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::initWithImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithImage<DefaultConv, Derived, Base, types::pure530>::value, Thiscall>(
 				"cocos2d::CCTexture2D::initWithImage", 
-				(void*)addresses::address524(), 
-				(void*)wrap::initWithImage<Membercall, Derived, Base, types::pure524>::value
+				(void*)addresses::address530()
 			);
 		}
 
-		if constexpr (compare::setTexParameters<Derived, Base, types::pure525>::value) {
+		if constexpr (compare::setTexParameters<Derived, Base, types::pure531>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTexture2D::setTexParameters", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTexParameters<DefaultConv, Derived, Base, types::pure531>::value, Thiscall>(
 				"cocos2d::CCTexture2D::setTexParameters", 
-				(void*)addresses::address525(), 
-				(void*)wrap::setTexParameters<Membercall, Derived, Base, types::pure525>::value
+				(void*)addresses::address531()
 			);
 		}
 
@@ -7774,27 +7520,47 @@ struct Modify<Derived, cocos2d::CCTextureCache> : ModifyBase<Modify<Derived, coc
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::addImage<Derived, Base, types::pure526>::value) {
+		if constexpr (compare::addImage<Derived, Base, types::pure532>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTextureCache::addImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addImage<DefaultConv, Derived, Base, types::pure532>::value, Thiscall>(
 				"cocos2d::CCTextureCache::addImage", 
-				(void*)addresses::address526(), 
-				(void*)wrap::addImage<Membercall, Derived, Base, types::pure526>::value
+				(void*)addresses::address532()
 			);
 		}
 
-		if constexpr (compare::sharedTextureCache<Derived, Base, types::pure527>::value) {
+		if constexpr (compare::sharedTextureCache<Derived, Base, types::pure533>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTextureCache::sharedTextureCache", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedTextureCache<DefaultConv, Derived, Base, types::pure533>::value, Cdecl>(
 				"cocos2d::CCTextureCache::sharedTextureCache", 
-				(void*)addresses::address527(), 
-				(void*)wrap::sharedTextureCache<Cdecl, Derived, Base, types::pure527>::value
+				(void*)addresses::address533()
+			);
+		}
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, cocos2d::CCTime> : ModifyBase<Modify<Derived, cocos2d::CCTime>> {
+	using ModifyBase<Modify<Derived, cocos2d::CCTime>>::ModifyBase;
+	using Base = cocos2d::CCTime;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+		if constexpr (compare::gettimeofdayCocos2d<Derived, Base, types::pure534>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::CCTime::gettimeofdayCocos2d", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::gettimeofdayCocos2d<DefaultConv, Derived, Base, types::pure534>::value, Cdecl>(
+				"cocos2d::CCTime::gettimeofdayCocos2d", 
+				(void*)addresses::address534()
 			);
 		}
 
@@ -7809,15 +7575,14 @@ struct Modify<Derived, PauseLayer> : ModifyBase<Modify<Derived, PauseLayer>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::createToggleButton<Derived, Base, types::pure1663>::value) {
+		if constexpr (compare::createToggleButton<Derived, Base, types::pure1721>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PauseLayer::createToggleButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createToggleButton<DefaultConv, Derived, Base, types::pure1721>::value, Membercall>(
 				"PauseLayer::createToggleButton", 
-				(void*)addresses::address1663(), 
-				(void*)wrap::createToggleButton<Membercall, Derived, Base, types::pure1663>::value
+				(void*)addresses::address1721()
 			);
 		}
 
@@ -7832,15 +7597,14 @@ struct Modify<Derived, cocos2d::CCTintTo> : ModifyBase<Modify<Derived, cocos2d::
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure528>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure535>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTintTo::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure535>::value, Cdecl>(
 				"cocos2d::CCTintTo::create", 
-				(void*)addresses::address528(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure528>::value
+				(void*)addresses::address535()
 			);
 		}
 
@@ -7855,27 +7619,25 @@ struct Modify<Derived, GameSoundManager> : ModifyBase<Modify<Derived, GameSoundM
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::playEffect<Derived, Base, types::pure1471>::value) {
+		if constexpr (compare::playEffect<Derived, Base, types::pure1506>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameSoundManager::playEffect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::playEffect<DefaultConv, Derived, Base, types::pure1506>::value, Membercall>(
 				"GameSoundManager::playEffect", 
-				(void*)addresses::address1471(), 
-				(void*)wrap::playEffect<Membercall, Derived, Base, types::pure1471>::value
+				(void*)addresses::address1506()
 			);
 		}
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure1475>::value) {
+		if constexpr (compare::sharedManager<Derived, Base, types::pure1509>::value) {
 			Interface::get()->logInfo(
-				"Adding hook at function GameSoundManager::sharedState", 
+				"Adding hook at function GameSoundManager::sharedManager", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
-				"GameSoundManager::sharedState", 
-				(void*)addresses::address1475(), 
-				(void*)wrap::sharedState<Cdecl, Derived, Base, types::pure1475>::value
+			Interface::get()->addHook<wrap::sharedManager<DefaultConv, Derived, Base, types::pure1509>::value, Cdecl>(
+				"GameSoundManager::sharedManager", 
+				(void*)addresses::address1509()
 			);
 		}
 
@@ -7890,51 +7652,47 @@ struct Modify<Derived, cocos2d::CCTouch> : ModifyBase<Modify<Derived, cocos2d::C
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::getDelta<Derived, Base, types::pure529>::value) {
+		if constexpr (compare::getDelta<Derived, Base, types::pure536>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTouch::getDelta", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getDelta<DefaultConv, Derived, Base, types::pure536>::value, Thiscall>(
 				"cocos2d::CCTouch::getDelta", 
-				(void*)addresses::address529(), 
-				(void*)wrap::getDelta<Thiscall, Derived, Base, types::pure529>::value
+				(void*)addresses::address536()
 			);
 		}
 
-		if constexpr (compare::getLocationInView<Derived, Base, types::pure530>::value) {
+		if constexpr (compare::getLocationInView<Derived, Base, types::pure537>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTouch::getLocationInView", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getLocationInView<DefaultConv, Derived, Base, types::pure537>::value, Thiscall>(
 				"cocos2d::CCTouch::getLocationInView", 
-				(void*)addresses::address530(), 
-				(void*)wrap::getLocationInView<Thiscall, Derived, Base, types::pure530>::value
+				(void*)addresses::address537()
 			);
 		}
 
-		if constexpr (compare::getPreviousLocationInView<Derived, Base, types::pure531>::value) {
+		if constexpr (compare::getPreviousLocationInView<Derived, Base, types::pure538>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTouch::getPreviousLocationInView", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPreviousLocationInView<DefaultConv, Derived, Base, types::pure538>::value, Thiscall>(
 				"cocos2d::CCTouch::getPreviousLocationInView", 
-				(void*)addresses::address531(), 
-				(void*)wrap::getPreviousLocationInView<Thiscall, Derived, Base, types::pure531>::value
+				(void*)addresses::address538()
 			);
 		}
 
-		if constexpr (compare::getLocation<Derived, Base, types::pure532>::value) {
+		if constexpr (compare::getLocation<Derived, Base, types::pure539>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTouch::getLocation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getLocation<DefaultConv, Derived, Base, types::pure539>::value, Thiscall>(
 				"cocos2d::CCTouch::getLocation", 
-				(void*)addresses::address532(), 
-				(void*)wrap::getLocation<Thiscall, Derived, Base, types::pure532>::value
+				(void*)addresses::address539()
 			);
 		}
 
@@ -7949,39 +7707,36 @@ struct Modify<Derived, cocos2d::CCTouchDispatcher> : ModifyBase<Modify<Derived, 
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::decrementForcePrio<Derived, Base, types::pure533>::value) {
+		if constexpr (compare::decrementForcePrio<Derived, Base, types::pure540>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTouchDispatcher::decrementForcePrio", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::decrementForcePrio<DefaultConv, Derived, Base, types::pure540>::value, Thiscall>(
 				"cocos2d::CCTouchDispatcher::decrementForcePrio", 
-				(void*)addresses::address533(), 
-				(void*)wrap::decrementForcePrio<Membercall, Derived, Base, types::pure533>::value
+				(void*)addresses::address540()
 			);
 		}
 
-		if constexpr (compare::incrementForcePrio<Derived, Base, types::pure534>::value) {
+		if constexpr (compare::incrementForcePrio<Derived, Base, types::pure541>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTouchDispatcher::incrementForcePrio", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::incrementForcePrio<DefaultConv, Derived, Base, types::pure541>::value, Thiscall>(
 				"cocos2d::CCTouchDispatcher::incrementForcePrio", 
-				(void*)addresses::address534(), 
-				(void*)wrap::incrementForcePrio<Membercall, Derived, Base, types::pure534>::value
+				(void*)addresses::address541()
 			);
 		}
 
-		if constexpr (compare::touches<Derived, Base, types::pure535>::value) {
+		if constexpr (compare::touches<Derived, Base, types::pure542>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTouchDispatcher::touches", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::touches<DefaultConv, Derived, Base, types::pure542>::value, Thiscall>(
 				"cocos2d::CCTouchDispatcher::touches", 
-				(void*)addresses::address535(), 
-				(void*)wrap::touches<Membercall, Derived, Base, types::pure535>::value
+				(void*)addresses::address542()
 			);
 		}
 
@@ -7996,15 +7751,14 @@ struct Modify<Derived, cocos2d::CCTouchHandler> : ModifyBase<Modify<Derived, coc
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::initWithDelegate<Derived, Base, types::pure536>::value) {
+		if constexpr (compare::initWithDelegate<Derived, Base, types::pure543>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTouchHandler::initWithDelegate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithDelegate<DefaultConv, Derived, Base, types::pure543>::value, Thiscall>(
 				"cocos2d::CCTouchHandler::initWithDelegate", 
-				(void*)addresses::address536(), 
-				(void*)wrap::initWithDelegate<Thiscall, Derived, Base, types::pure536>::value
+				(void*)addresses::address543()
 			);
 		}
 
@@ -8019,15 +7773,14 @@ struct Modify<Derived, cocos2d::CCTransitionFade> : ModifyBase<Modify<Derived, c
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure538>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure545>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::CCTransitionFade::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure545>::value, Cdecl>(
 				"cocos2d::CCTransitionFade::create", 
-				(void*)addresses::address538(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure538>::value
+				(void*)addresses::address545()
 			);
 		}
 
@@ -8042,39 +7795,36 @@ struct Modify<Derived, GameLevelManager> : ModifyBase<Modify<Derived, GameLevelM
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::createNewLevel<Derived, Base, types::pure1270>::value) {
+		if constexpr (compare::createNewLevel<Derived, Base, types::pure1304>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameLevelManager::createNewLevel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createNewLevel<DefaultConv, Derived, Base, types::pure1304>::value, Thiscall>(
 				"GameLevelManager::createNewLevel", 
-				(void*)addresses::address1270(), 
-				(void*)wrap::createNewLevel<Thiscall, Derived, Base, types::pure1270>::value
+				(void*)addresses::address1304()
 			);
 		}
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure1271>::value) {
+		if constexpr (compare::sharedState<Derived, Base, types::pure1305>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameLevelManager::sharedState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedState<DefaultConv, Derived, Base, types::pure1305>::value, Cdecl>(
 				"GameLevelManager::sharedState", 
-				(void*)addresses::address1271(), 
-				(void*)wrap::sharedState<Cdecl, Derived, Base, types::pure1271>::value
+				(void*)addresses::address1305()
 			);
 		}
 
-		if constexpr (compare::getMainLevel<Derived, Base, types::pure1277>::value) {
+		if constexpr (compare::getMainLevel<Derived, Base, types::pure1311>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameLevelManager::getMainLevel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getMainLevel<DefaultConv, Derived, Base, types::pure1311>::value, Membercall>(
 				"GameLevelManager::getMainLevel", 
-				(void*)addresses::address1277(), 
-				(void*)wrap::getMainLevel<Membercall, Derived, Base, types::pure1277>::value
+				(void*)addresses::address1311()
 			);
 		}
 
@@ -8089,15 +7839,36 @@ struct Modify<Derived, cocos2d::extension::CCControlColourPicker> : ModifyBase<M
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::setColorValue<Derived, Base, types::pure539>::value) {
+		if constexpr (compare::setColorValue<Derived, Base, types::pure566>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCControlColourPicker::setColorValue", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setColorValue<DefaultConv, Derived, Base, types::pure566>::value, Thiscall>(
 				"cocos2d::extension::CCControlColourPicker::setColorValue", 
-				(void*)addresses::address539(), 
-				(void*)wrap::setColorValue<Membercall, Derived, Base, types::pure539>::value
+				(void*)addresses::address566()
+			);
+		}
+
+		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure567>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControlColourPicker::ccTouchBegan", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::ccTouchBegan<DefaultConv, Derived, Base, types::pure567>::value, Thiscall>(
+				"cocos2d::extension::CCControlColourPicker::ccTouchBegan", 
+				(void*)addresses::address567()
+			);
+		}
+
+		if constexpr (compare::init<Derived, Base, types::pure568>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function cocos2d::extension::CCControlColourPicker::init", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure568>::value, Thiscall>(
+				"cocos2d::extension::CCControlColourPicker::init", 
+				(void*)addresses::address568()
 			);
 		}
 
@@ -8112,27 +7883,25 @@ struct Modify<Derived, cocos2d::extension::CCControlUtils> : ModifyBase<Modify<D
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::HSVfromRGB<Derived, Base, types::pure540>::value) {
+		if constexpr (compare::HSVfromRGB<Derived, Base, types::pure569>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCControlUtils::HSVfromRGB", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::HSVfromRGB<DefaultConv, Derived, Base, types::pure569>::value, Cdecl>(
 				"cocos2d::extension::CCControlUtils::HSVfromRGB", 
-				(void*)addresses::address540(), 
-				(void*)wrap::HSVfromRGB<Optcall, Derived, Base, types::pure540>::value
+				(void*)addresses::address569()
 			);
 		}
 
-		if constexpr (compare::RGBfromHSV<Derived, Base, types::pure541>::value) {
+		if constexpr (compare::RGBfromHSV<Derived, Base, types::pure570>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCControlUtils::RGBfromHSV", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::RGBfromHSV<DefaultConv, Derived, Base, types::pure570>::value, Cdecl>(
 				"cocos2d::extension::CCControlUtils::RGBfromHSV", 
-				(void*)addresses::address541(), 
-				(void*)wrap::RGBfromHSV<Optcall, Derived, Base, types::pure541>::value
+				(void*)addresses::address570()
 			);
 		}
 
@@ -8169,447 +7938,410 @@ struct Modify<Derived, cocos2d::extension::CCScale9Sprite> : ModifyBase<Modify<D
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure543>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure572>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure572>::value, Cdecl>(
 				"cocos2d::extension::CCScale9Sprite::create", 
-				(void*)addresses::address543(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure543>::value
+				(void*)addresses::address572()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure544>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure573>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure573>::value, Cdecl>(
 				"cocos2d::extension::CCScale9Sprite::create", 
-				(void*)addresses::address544(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure544>::value
+				(void*)addresses::address573()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure546>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure575>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure575>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::init", 
-				(void*)addresses::address546(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure546>::value
+				(void*)addresses::address575()
 			);
 		}
 
-		if constexpr (compare::setContentSize<Derived, Base, types::pure547>::value) {
+		if constexpr (compare::setContentSize<Derived, Base, types::pure576>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setContentSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setContentSize<DefaultConv, Derived, Base, types::pure576>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setContentSize", 
-				(void*)addresses::address547(), 
-				(void*)wrap::setContentSize<Thiscall, Derived, Base, types::pure547>::value
+				(void*)addresses::address576()
 			);
 		}
 
-		if constexpr (compare::visit<Derived, Base, types::pure548>::value) {
+		if constexpr (compare::visit<Derived, Base, types::pure577>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::visit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::visit<DefaultConv, Derived, Base, types::pure577>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::visit", 
-				(void*)addresses::address548(), 
-				(void*)wrap::visit<Thiscall, Derived, Base, types::pure548>::value
+				(void*)addresses::address577()
 			);
 		}
 
-		if constexpr (compare::getOpacity<Derived, Base, types::pure549>::value) {
+		if constexpr (compare::getOpacity<Derived, Base, types::pure578>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::getOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getOpacity<DefaultConv, Derived, Base, types::pure578>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::getOpacity", 
-				(void*)addresses::address549(), 
-				(void*)wrap::getOpacity<Thiscall, Derived, Base, types::pure549>::value
+				(void*)addresses::address578()
 			);
 		}
 
-		if constexpr (compare::setOpacity<Derived, Base, types::pure550>::value) {
+		if constexpr (compare::setOpacity<Derived, Base, types::pure579>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacity<DefaultConv, Derived, Base, types::pure579>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setOpacity", 
-				(void*)addresses::address550(), 
-				(void*)wrap::setOpacity<Thiscall, Derived, Base, types::pure550>::value
+				(void*)addresses::address579()
 			);
 		}
 
-		if constexpr (compare::updateDisplayedOpacity<Derived, Base, types::pure551>::value) {
+		if constexpr (compare::updateDisplayedOpacity<Derived, Base, types::pure580>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::updateDisplayedOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDisplayedOpacity<DefaultConv, Derived, Base, types::pure580>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::updateDisplayedOpacity", 
-				(void*)addresses::address551(), 
-				(void*)wrap::updateDisplayedOpacity<Thiscall, Derived, Base, types::pure551>::value
+				(void*)addresses::address580()
 			);
 		}
 
-		if constexpr (compare::getColor<Derived, Base, types::pure552>::value) {
+		if constexpr (compare::getColor<Derived, Base, types::pure581>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::getColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getColor<DefaultConv, Derived, Base, types::pure581>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::getColor", 
-				(void*)addresses::address552(), 
-				(void*)wrap::getColor<Thiscall, Derived, Base, types::pure552>::value
+				(void*)addresses::address581()
 			);
 		}
 
-		if constexpr (compare::setColor<Derived, Base, types::pure553>::value) {
+		if constexpr (compare::setColor<Derived, Base, types::pure582>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setColor<DefaultConv, Derived, Base, types::pure582>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setColor", 
-				(void*)addresses::address553(), 
-				(void*)wrap::setColor<Thiscall, Derived, Base, types::pure553>::value
+				(void*)addresses::address582()
 			);
 		}
 
-		if constexpr (compare::updateDisplayedColor<Derived, Base, types::pure554>::value) {
+		if constexpr (compare::updateDisplayedColor<Derived, Base, types::pure583>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::updateDisplayedColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDisplayedColor<DefaultConv, Derived, Base, types::pure583>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::updateDisplayedColor", 
-				(void*)addresses::address554(), 
-				(void*)wrap::updateDisplayedColor<Thiscall, Derived, Base, types::pure554>::value
+				(void*)addresses::address583()
 			);
 		}
 
-		if constexpr (compare::setOpacityModifyRGB<Derived, Base, types::pure555>::value) {
+		if constexpr (compare::setOpacityModifyRGB<Derived, Base, types::pure584>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setOpacityModifyRGB", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacityModifyRGB<DefaultConv, Derived, Base, types::pure584>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setOpacityModifyRGB", 
-				(void*)addresses::address555(), 
-				(void*)wrap::setOpacityModifyRGB<Thiscall, Derived, Base, types::pure555>::value
+				(void*)addresses::address584()
 			);
 		}
 
-		if constexpr (compare::isOpacityModifyRGB<Derived, Base, types::pure556>::value) {
+		if constexpr (compare::isOpacityModifyRGB<Derived, Base, types::pure585>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::isOpacityModifyRGB", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isOpacityModifyRGB<DefaultConv, Derived, Base, types::pure585>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::isOpacityModifyRGB", 
-				(void*)addresses::address556(), 
-				(void*)wrap::isOpacityModifyRGB<Thiscall, Derived, Base, types::pure556>::value
+				(void*)addresses::address585()
 			);
 		}
 
-		if constexpr (compare::getPreferredSize<Derived, Base, types::pure557>::value) {
+		if constexpr (compare::getPreferredSize<Derived, Base, types::pure586>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::getPreferredSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getPreferredSize<DefaultConv, Derived, Base, types::pure586>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::getPreferredSize", 
-				(void*)addresses::address557(), 
-				(void*)wrap::getPreferredSize<Thiscall, Derived, Base, types::pure557>::value
+				(void*)addresses::address586()
 			);
 		}
 
-		if constexpr (compare::setPreferredSize<Derived, Base, types::pure558>::value) {
+		if constexpr (compare::setPreferredSize<Derived, Base, types::pure587>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setPreferredSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPreferredSize<DefaultConv, Derived, Base, types::pure587>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setPreferredSize", 
-				(void*)addresses::address558(), 
-				(void*)wrap::setPreferredSize<Thiscall, Derived, Base, types::pure558>::value
+				(void*)addresses::address587()
 			);
 		}
 
-		if constexpr (compare::getCapInsets<Derived, Base, types::pure559>::value) {
+		if constexpr (compare::getCapInsets<Derived, Base, types::pure588>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::getCapInsets", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getCapInsets<DefaultConv, Derived, Base, types::pure588>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::getCapInsets", 
-				(void*)addresses::address559(), 
-				(void*)wrap::getCapInsets<Thiscall, Derived, Base, types::pure559>::value
+				(void*)addresses::address588()
 			);
 		}
 
-		if constexpr (compare::setCapInsets<Derived, Base, types::pure560>::value) {
+		if constexpr (compare::setCapInsets<Derived, Base, types::pure589>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setCapInsets", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setCapInsets<DefaultConv, Derived, Base, types::pure589>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setCapInsets", 
-				(void*)addresses::address560(), 
-				(void*)wrap::setCapInsets<Thiscall, Derived, Base, types::pure560>::value
+				(void*)addresses::address589()
 			);
 		}
 
-		if constexpr (compare::getInsetLeft<Derived, Base, types::pure561>::value) {
+		if constexpr (compare::getInsetLeft<Derived, Base, types::pure590>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::getInsetLeft", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getInsetLeft<DefaultConv, Derived, Base, types::pure590>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::getInsetLeft", 
-				(void*)addresses::address561(), 
-				(void*)wrap::getInsetLeft<Thiscall, Derived, Base, types::pure561>::value
+				(void*)addresses::address590()
 			);
 		}
 
-		if constexpr (compare::setInsetLeft<Derived, Base, types::pure562>::value) {
+		if constexpr (compare::setInsetLeft<Derived, Base, types::pure591>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setInsetLeft", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setInsetLeft<DefaultConv, Derived, Base, types::pure591>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setInsetLeft", 
-				(void*)addresses::address562(), 
-				(void*)wrap::setInsetLeft<Thiscall, Derived, Base, types::pure562>::value
+				(void*)addresses::address591()
 			);
 		}
 
-		if constexpr (compare::getInsetTop<Derived, Base, types::pure563>::value) {
+		if constexpr (compare::getInsetTop<Derived, Base, types::pure592>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::getInsetTop", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getInsetTop<DefaultConv, Derived, Base, types::pure592>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::getInsetTop", 
-				(void*)addresses::address563(), 
-				(void*)wrap::getInsetTop<Thiscall, Derived, Base, types::pure563>::value
+				(void*)addresses::address592()
 			);
 		}
 
-		if constexpr (compare::setInsetTop<Derived, Base, types::pure564>::value) {
+		if constexpr (compare::setInsetTop<Derived, Base, types::pure593>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setInsetTop", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setInsetTop<DefaultConv, Derived, Base, types::pure593>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setInsetTop", 
-				(void*)addresses::address564(), 
-				(void*)wrap::setInsetTop<Thiscall, Derived, Base, types::pure564>::value
+				(void*)addresses::address593()
 			);
 		}
 
-		if constexpr (compare::getInsetRight<Derived, Base, types::pure565>::value) {
+		if constexpr (compare::getInsetRight<Derived, Base, types::pure594>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::getInsetRight", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getInsetRight<DefaultConv, Derived, Base, types::pure594>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::getInsetRight", 
-				(void*)addresses::address565(), 
-				(void*)wrap::getInsetRight<Thiscall, Derived, Base, types::pure565>::value
+				(void*)addresses::address594()
 			);
 		}
 
-		if constexpr (compare::setInsetRight<Derived, Base, types::pure566>::value) {
+		if constexpr (compare::setInsetRight<Derived, Base, types::pure595>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setInsetRight", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setInsetRight<DefaultConv, Derived, Base, types::pure595>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setInsetRight", 
-				(void*)addresses::address566(), 
-				(void*)wrap::setInsetRight<Thiscall, Derived, Base, types::pure566>::value
+				(void*)addresses::address595()
 			);
 		}
 
-		if constexpr (compare::getInsetBottom<Derived, Base, types::pure567>::value) {
+		if constexpr (compare::getInsetBottom<Derived, Base, types::pure596>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::getInsetBottom", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getInsetBottom<DefaultConv, Derived, Base, types::pure596>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::getInsetBottom", 
-				(void*)addresses::address567(), 
-				(void*)wrap::getInsetBottom<Thiscall, Derived, Base, types::pure567>::value
+				(void*)addresses::address596()
 			);
 		}
 
-		if constexpr (compare::setInsetBottom<Derived, Base, types::pure568>::value) {
+		if constexpr (compare::setInsetBottom<Derived, Base, types::pure597>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setInsetBottom", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setInsetBottom<DefaultConv, Derived, Base, types::pure597>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setInsetBottom", 
-				(void*)addresses::address568(), 
-				(void*)wrap::setInsetBottom<Thiscall, Derived, Base, types::pure568>::value
+				(void*)addresses::address597()
 			);
 		}
 
-		if constexpr (compare::initWithBatchNode<Derived, Base, types::pure569>::value) {
+		if constexpr (compare::initWithBatchNode<Derived, Base, types::pure598>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithBatchNode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithBatchNode<DefaultConv, Derived, Base, types::pure598>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithBatchNode", 
-				(void*)addresses::address569(), 
-				(void*)wrap::initWithBatchNode<Thiscall, Derived, Base, types::pure569>::value
+				(void*)addresses::address598()
 			);
 		}
 
-		if constexpr (compare::initWithBatchNode<Derived, Base, types::pure570>::value) {
+		if constexpr (compare::initWithBatchNode<Derived, Base, types::pure599>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithBatchNode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithBatchNode<DefaultConv, Derived, Base, types::pure599>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithBatchNode", 
-				(void*)addresses::address570(), 
-				(void*)wrap::initWithBatchNode<Thiscall, Derived, Base, types::pure570>::value
+				(void*)addresses::address599()
 			);
 		}
 
-		if constexpr (compare::initWithFile<Derived, Base, types::pure571>::value) {
+		if constexpr (compare::initWithFile<Derived, Base, types::pure600>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithFile", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithFile<DefaultConv, Derived, Base, types::pure600>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithFile", 
-				(void*)addresses::address571(), 
-				(void*)wrap::initWithFile<Thiscall, Derived, Base, types::pure571>::value
+				(void*)addresses::address600()
 			);
 		}
 
-		if constexpr (compare::initWithFile<Derived, Base, types::pure572>::value) {
+		if constexpr (compare::initWithFile<Derived, Base, types::pure601>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithFile", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithFile<DefaultConv, Derived, Base, types::pure601>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithFile", 
-				(void*)addresses::address572(), 
-				(void*)wrap::initWithFile<Thiscall, Derived, Base, types::pure572>::value
+				(void*)addresses::address601()
 			);
 		}
 
-		if constexpr (compare::initWithFile<Derived, Base, types::pure573>::value) {
+		if constexpr (compare::initWithFile<Derived, Base, types::pure602>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithFile", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithFile<DefaultConv, Derived, Base, types::pure602>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithFile", 
-				(void*)addresses::address573(), 
-				(void*)wrap::initWithFile<Thiscall, Derived, Base, types::pure573>::value
+				(void*)addresses::address602()
 			);
 		}
 
-		if constexpr (compare::initWithFile<Derived, Base, types::pure574>::value) {
+		if constexpr (compare::initWithFile<Derived, Base, types::pure603>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithFile", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithFile<DefaultConv, Derived, Base, types::pure603>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithFile", 
-				(void*)addresses::address574(), 
-				(void*)wrap::initWithFile<Thiscall, Derived, Base, types::pure574>::value
+				(void*)addresses::address603()
 			);
 		}
 
-		if constexpr (compare::initWithSpriteFrame<Derived, Base, types::pure575>::value) {
+		if constexpr (compare::initWithSpriteFrame<Derived, Base, types::pure604>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithSpriteFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithSpriteFrame<DefaultConv, Derived, Base, types::pure604>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithSpriteFrame", 
-				(void*)addresses::address575(), 
-				(void*)wrap::initWithSpriteFrame<Thiscall, Derived, Base, types::pure575>::value
+				(void*)addresses::address604()
 			);
 		}
 
-		if constexpr (compare::initWithSpriteFrame<Derived, Base, types::pure576>::value) {
+		if constexpr (compare::initWithSpriteFrame<Derived, Base, types::pure605>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithSpriteFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithSpriteFrame<DefaultConv, Derived, Base, types::pure605>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithSpriteFrame", 
-				(void*)addresses::address576(), 
-				(void*)wrap::initWithSpriteFrame<Thiscall, Derived, Base, types::pure576>::value
+				(void*)addresses::address605()
 			);
 		}
 
-		if constexpr (compare::initWithSpriteFrameName<Derived, Base, types::pure577>::value) {
+		if constexpr (compare::initWithSpriteFrameName<Derived, Base, types::pure606>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithSpriteFrameName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithSpriteFrameName<DefaultConv, Derived, Base, types::pure606>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithSpriteFrameName", 
-				(void*)addresses::address577(), 
-				(void*)wrap::initWithSpriteFrameName<Thiscall, Derived, Base, types::pure577>::value
+				(void*)addresses::address606()
 			);
 		}
 
-		if constexpr (compare::initWithSpriteFrameName<Derived, Base, types::pure578>::value) {
+		if constexpr (compare::initWithSpriteFrameName<Derived, Base, types::pure607>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::initWithSpriteFrameName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithSpriteFrameName<DefaultConv, Derived, Base, types::pure607>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::initWithSpriteFrameName", 
-				(void*)addresses::address578(), 
-				(void*)wrap::initWithSpriteFrameName<Thiscall, Derived, Base, types::pure578>::value
+				(void*)addresses::address607()
 			);
 		}
 
-		if constexpr (compare::updateWithBatchNode<Derived, Base, types::pure579>::value) {
+		if constexpr (compare::updateWithBatchNode<Derived, Base, types::pure608>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::updateWithBatchNode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateWithBatchNode<DefaultConv, Derived, Base, types::pure608>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::updateWithBatchNode", 
-				(void*)addresses::address579(), 
-				(void*)wrap::updateWithBatchNode<Thiscall, Derived, Base, types::pure579>::value
+				(void*)addresses::address608()
 			);
 		}
 
-		if constexpr (compare::setSpriteFrame<Derived, Base, types::pure580>::value) {
+		if constexpr (compare::setSpriteFrame<Derived, Base, types::pure609>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScale9Sprite::setSpriteFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setSpriteFrame<DefaultConv, Derived, Base, types::pure609>::value, Thiscall>(
 				"cocos2d::extension::CCScale9Sprite::setSpriteFrame", 
-				(void*)addresses::address580(), 
-				(void*)wrap::setSpriteFrame<Thiscall, Derived, Base, types::pure580>::value
+				(void*)addresses::address609()
 			);
 		}
 
@@ -8624,159 +8356,146 @@ struct Modify<Derived, cocos2d::extension::CCScrollView> : ModifyBase<Modify<Der
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure583>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure612>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure612>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::init", 
-				(void*)addresses::address583(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure583>::value
+				(void*)addresses::address612()
 			);
 		}
 
-		if constexpr (compare::setContentSize<Derived, Base, types::pure584>::value) {
+		if constexpr (compare::setContentSize<Derived, Base, types::pure613>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::setContentSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setContentSize<DefaultConv, Derived, Base, types::pure613>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::setContentSize", 
-				(void*)addresses::address584(), 
-				(void*)wrap::setContentSize<Thiscall, Derived, Base, types::pure584>::value
+				(void*)addresses::address613()
 			);
 		}
 
-		if constexpr (compare::getContentSize<Derived, Base, types::pure585>::value) {
+		if constexpr (compare::getContentSize<Derived, Base, types::pure614>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::getContentSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getContentSize<DefaultConv, Derived, Base, types::pure614>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::getContentSize", 
-				(void*)addresses::address585(), 
-				(void*)wrap::getContentSize<Thiscall, Derived, Base, types::pure585>::value
+				(void*)addresses::address614()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure586>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure615>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure615>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::addChild", 
-				(void*)addresses::address586(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure586>::value
+				(void*)addresses::address615()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure587>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure616>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure616>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::addChild", 
-				(void*)addresses::address587(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure587>::value
+				(void*)addresses::address616()
 			);
 		}
 
-		if constexpr (compare::addChild<Derived, Base, types::pure588>::value) {
+		if constexpr (compare::addChild<Derived, Base, types::pure617>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::addChild", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addChild<DefaultConv, Derived, Base, types::pure617>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::addChild", 
-				(void*)addresses::address588(), 
-				(void*)wrap::addChild<Thiscall, Derived, Base, types::pure588>::value
+				(void*)addresses::address617()
 			);
 		}
 
-		if constexpr (compare::visit<Derived, Base, types::pure589>::value) {
+		if constexpr (compare::visit<Derived, Base, types::pure618>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::visit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::visit<DefaultConv, Derived, Base, types::pure618>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::visit", 
-				(void*)addresses::address589(), 
-				(void*)wrap::visit<Thiscall, Derived, Base, types::pure589>::value
+				(void*)addresses::address618()
 			);
 		}
 
-		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure590>::value) {
+		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure619>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::ccTouchBegan", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchBegan<DefaultConv, Derived, Base, types::pure619>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::ccTouchBegan", 
-				(void*)addresses::address590(), 
-				(void*)wrap::ccTouchBegan<Thiscall, Derived, Base, types::pure590>::value
+				(void*)addresses::address619()
 			);
 		}
 
-		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure591>::value) {
+		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure620>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::ccTouchMoved", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchMoved<DefaultConv, Derived, Base, types::pure620>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::ccTouchMoved", 
-				(void*)addresses::address591(), 
-				(void*)wrap::ccTouchMoved<Thiscall, Derived, Base, types::pure591>::value
+				(void*)addresses::address620()
 			);
 		}
 
-		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure592>::value) {
+		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure621>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::ccTouchEnded", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchEnded<DefaultConv, Derived, Base, types::pure621>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::ccTouchEnded", 
-				(void*)addresses::address592(), 
-				(void*)wrap::ccTouchEnded<Thiscall, Derived, Base, types::pure592>::value
+				(void*)addresses::address621()
 			);
 		}
 
-		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure593>::value) {
+		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure622>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::ccTouchCancelled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchCancelled<DefaultConv, Derived, Base, types::pure622>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::ccTouchCancelled", 
-				(void*)addresses::address593(), 
-				(void*)wrap::ccTouchCancelled<Thiscall, Derived, Base, types::pure593>::value
+				(void*)addresses::address622()
 			);
 		}
 
-		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure594>::value) {
+		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure623>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::registerWithTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerWithTouchDispatcher<DefaultConv, Derived, Base, types::pure623>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::registerWithTouchDispatcher", 
-				(void*)addresses::address594(), 
-				(void*)wrap::registerWithTouchDispatcher<Thiscall, Derived, Base, types::pure594>::value
+				(void*)addresses::address623()
 			);
 		}
 
-		if constexpr (compare::setTouchEnabled<Derived, Base, types::pure595>::value) {
+		if constexpr (compare::setTouchEnabled<Derived, Base, types::pure624>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function cocos2d::extension::CCScrollView::setTouchEnabled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setTouchEnabled<DefaultConv, Derived, Base, types::pure624>::value, Thiscall>(
 				"cocos2d::extension::CCScrollView::setTouchEnabled", 
-				(void*)addresses::address595(), 
-				(void*)wrap::setTouchEnabled<Thiscall, Derived, Base, types::pure595>::value
+				(void*)addresses::address624()
 			);
 		}
 
@@ -8824,15 +8543,14 @@ struct Modify<Derived, AchievementBar> : ModifyBase<Modify<Derived, AchievementB
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure631>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure662>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AchievementBar::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure662>::value, Optcall>(
 				"AchievementBar::create", 
-				(void*)addresses::address631(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure631>::value
+				(void*)addresses::address662()
 			);
 		}
 
@@ -8858,15 +8576,14 @@ struct Modify<Derived, AchievementManager> : ModifyBase<Modify<Derived, Achievem
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure634>::value) {
+		if constexpr (compare::sharedState<Derived, Base, types::pure665>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AchievementManager::sharedState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedState<DefaultConv, Derived, Base, types::pure665>::value, Cdecl>(
 				"AchievementManager::sharedState", 
-				(void*)addresses::address634(), 
-				(void*)wrap::sharedState<Thiscall, Derived, Base, types::pure634>::value
+				(void*)addresses::address665()
 			);
 		}
 
@@ -8892,27 +8609,25 @@ struct Modify<Derived, AchievementNotifier> : ModifyBase<Modify<Derived, Achieve
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure636>::value) {
+		if constexpr (compare::sharedState<Derived, Base, types::pure667>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AchievementNotifier::sharedState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedState<DefaultConv, Derived, Base, types::pure667>::value, Cdecl>(
 				"AchievementNotifier::sharedState", 
-				(void*)addresses::address636(), 
-				(void*)wrap::sharedState<Thiscall, Derived, Base, types::pure636>::value
+				(void*)addresses::address667()
 			);
 		}
 
-		if constexpr (compare::showNextAchievement<Derived, Base, types::pure638>::value) {
+		if constexpr (compare::showNextAchievement<Derived, Base, types::pure669>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AchievementNotifier::showNextAchievement", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::showNextAchievement<DefaultConv, Derived, Base, types::pure669>::value, Thiscall>(
 				"AchievementNotifier::showNextAchievement", 
-				(void*)addresses::address638(), 
-				(void*)wrap::showNextAchievement<Thiscall, Derived, Base, types::pure638>::value
+				(void*)addresses::address669()
 			);
 		}
 
@@ -8949,27 +8664,25 @@ struct Modify<Derived, AnimatedShopKeeper> : ModifyBase<Modify<Derived, Animated
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure644>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure675>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AnimatedShopKeeper::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure675>::value, Optcall>(
 				"AnimatedShopKeeper::create", 
-				(void*)addresses::address644(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure644>::value
+				(void*)addresses::address675()
 			);
 		}
 
-		if constexpr (compare::startAnimating<Derived, Base, types::pure645>::value) {
+		if constexpr (compare::startAnimating<Derived, Base, types::pure676>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AnimatedShopKeeper::startAnimating", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::startAnimating<DefaultConv, Derived, Base, types::pure676>::value, Thiscall>(
 				"AnimatedShopKeeper::startAnimating", 
-				(void*)addresses::address645(), 
-				(void*)wrap::startAnimating<Thiscall, Derived, Base, types::pure645>::value
+				(void*)addresses::address676()
 			);
 		}
 
@@ -8984,75 +8697,69 @@ struct Modify<Derived, AppDelegate> : ModifyBase<Modify<Derived, AppDelegate>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::applicationDidFinishLaunching<Derived, Base, types::pure647>::value) {
+		if constexpr (compare::applicationDidFinishLaunching<Derived, Base, types::pure678>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AppDelegate::applicationDidFinishLaunching", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::applicationDidFinishLaunching<DefaultConv, Derived, Base, types::pure678>::value, Thiscall>(
 				"AppDelegate::applicationDidFinishLaunching", 
-				(void*)addresses::address647(), 
-				(void*)wrap::applicationDidFinishLaunching<Thiscall, Derived, Base, types::pure647>::value
+				(void*)addresses::address678()
 			);
 		}
 
-		if constexpr (compare::applicationDidEnterBackground<Derived, Base, types::pure648>::value) {
+		if constexpr (compare::applicationDidEnterBackground<Derived, Base, types::pure679>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AppDelegate::applicationDidEnterBackground", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::applicationDidEnterBackground<DefaultConv, Derived, Base, types::pure679>::value, Thiscall>(
 				"AppDelegate::applicationDidEnterBackground", 
-				(void*)addresses::address648(), 
-				(void*)wrap::applicationDidEnterBackground<Thiscall, Derived, Base, types::pure648>::value
+				(void*)addresses::address679()
 			);
 		}
 
-		if constexpr (compare::applicationWillEnterForeground<Derived, Base, types::pure649>::value) {
+		if constexpr (compare::applicationWillEnterForeground<Derived, Base, types::pure680>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AppDelegate::applicationWillEnterForeground", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::applicationWillEnterForeground<DefaultConv, Derived, Base, types::pure680>::value, Thiscall>(
 				"AppDelegate::applicationWillEnterForeground", 
-				(void*)addresses::address649(), 
-				(void*)wrap::applicationWillEnterForeground<Thiscall, Derived, Base, types::pure649>::value
+				(void*)addresses::address680()
 			);
 		}
 
-		if constexpr (compare::applicationWillBecomeActive<Derived, Base, types::pure650>::value) {
+		if constexpr (compare::applicationWillBecomeActive<Derived, Base, types::pure681>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AppDelegate::applicationWillBecomeActive", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::applicationWillBecomeActive<DefaultConv, Derived, Base, types::pure681>::value, Thiscall>(
 				"AppDelegate::applicationWillBecomeActive", 
-				(void*)addresses::address650(), 
-				(void*)wrap::applicationWillBecomeActive<Thiscall, Derived, Base, types::pure650>::value
+				(void*)addresses::address681()
 			);
 		}
 
-		if constexpr (compare::applicationWillResignActive<Derived, Base, types::pure651>::value) {
+		if constexpr (compare::applicationWillResignActive<Derived, Base, types::pure682>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AppDelegate::applicationWillResignActive", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::applicationWillResignActive<DefaultConv, Derived, Base, types::pure682>::value, Thiscall>(
 				"AppDelegate::applicationWillResignActive", 
-				(void*)addresses::address651(), 
-				(void*)wrap::applicationWillResignActive<Thiscall, Derived, Base, types::pure651>::value
+				(void*)addresses::address682()
 			);
 		}
 
-		if constexpr (compare::trySaveGame<Derived, Base, types::pure652>::value) {
+		if constexpr (compare::trySaveGame<Derived, Base, types::pure683>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function AppDelegate::trySaveGame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::trySaveGame<DefaultConv, Derived, Base, types::pure683>::value, Thiscall>(
 				"AppDelegate::trySaveGame", 
-				(void*)addresses::address652(), 
-				(void*)wrap::trySaveGame<Thiscall, Derived, Base, types::pure652>::value
+				(void*)addresses::address683()
 			);
 		}
 
@@ -9078,87 +8785,223 @@ struct Modify<Derived, MenuLayer> : ModifyBase<Modify<Derived, MenuLayer>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure1622>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1666>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MenuLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1666>::value, Thiscall>(
 				"MenuLayer::init", 
-				(void*)addresses::address1622(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure1622>::value
+				(void*)addresses::address1666()
 			);
 		}
 
-		if constexpr (compare::keyBackClicked<Derived, Base, types::pure1623>::value) {
+		if constexpr (compare::keyBackClicked<Derived, Base, types::pure1667>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MenuLayer::keyBackClicked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyBackClicked<DefaultConv, Derived, Base, types::pure1667>::value, Thiscall>(
 				"MenuLayer::keyBackClicked", 
-				(void*)addresses::address1623(), 
-				(void*)wrap::keyBackClicked<Thiscall, Derived, Base, types::pure1623>::value
+				(void*)addresses::address1667()
 			);
 		}
 
-		if constexpr (compare::keyDown<Derived, Base, types::pure1624>::value) {
+		if constexpr (compare::keyDown<Derived, Base, types::pure1668>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MenuLayer::keyDown", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyDown<DefaultConv, Derived, Base, types::pure1668>::value, Thiscall>(
 				"MenuLayer::keyDown", 
-				(void*)addresses::address1624(), 
-				(void*)wrap::keyDown<Thiscall, Derived, Base, types::pure1624>::value
+				(void*)addresses::address1668()
 			);
 		}
 
-		if constexpr (compare::onMoreGames<Derived, Base, types::pure1627>::value) {
+		if constexpr (compare::onMoreGames<Derived, Base, types::pure1671>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MenuLayer::onMoreGames", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onMoreGames<DefaultConv, Derived, Base, types::pure1671>::value, Membercall>(
 				"MenuLayer::onMoreGames", 
-				(void*)addresses::address1627(), 
-				(void*)wrap::onMoreGames<Membercall, Derived, Base, types::pure1627>::value
+				(void*)addresses::address1671()
 			);
 		}
 
-		if constexpr (compare::onGarage<Derived, Base, types::pure1628>::value) {
+		if constexpr (compare::onGarage<Derived, Base, types::pure1672>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MenuLayer::onGarage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onGarage<DefaultConv, Derived, Base, types::pure1672>::value, Membercall>(
 				"MenuLayer::onGarage", 
-				(void*)addresses::address1628(), 
-				(void*)wrap::onGarage<Membercall, Derived, Base, types::pure1628>::value
+				(void*)addresses::address1672()
 			);
 		}
 
-		if constexpr (compare::scene<Derived, Base, types::pure1630>::value) {
+		if constexpr (compare::onQuit<Derived, Base, types::pure1673>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onQuit", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onQuit<DefaultConv, Derived, Base, types::pure1673>::value, Membercall>(
+				"MenuLayer::onQuit", 
+				(void*)addresses::address1673()
+			);
+		}
+
+		if constexpr (compare::onMyProfile<Derived, Base, types::pure1674>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onMyProfile", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onMyProfile<DefaultConv, Derived, Base, types::pure1674>::value, Membercall>(
+				"MenuLayer::onMyProfile", 
+				(void*)addresses::address1674()
+			);
+		}
+
+		if constexpr (compare::onPlay<Derived, Base, types::pure1675>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onPlay", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onPlay<DefaultConv, Derived, Base, types::pure1675>::value, Membercall>(
+				"MenuLayer::onPlay", 
+				(void*)addresses::address1675()
+			);
+		}
+
+		if constexpr (compare::onCreator<Derived, Base, types::pure1676>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onCreator", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onCreator<DefaultConv, Derived, Base, types::pure1676>::value, Membercall>(
+				"MenuLayer::onCreator", 
+				(void*)addresses::address1676()
+			);
+		}
+
+		if constexpr (compare::onRobTop<Derived, Base, types::pure1677>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onRobTop", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onRobTop<DefaultConv, Derived, Base, types::pure1677>::value, Membercall>(
+				"MenuLayer::onRobTop", 
+				(void*)addresses::address1677()
+			);
+		}
+
+		if constexpr (compare::onNewgrounds<Derived, Base, types::pure1678>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onNewgrounds", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onNewgrounds<DefaultConv, Derived, Base, types::pure1678>::value, Membercall>(
+				"MenuLayer::onNewgrounds", 
+				(void*)addresses::address1678()
+			);
+		}
+
+		if constexpr (compare::onDaily<Derived, Base, types::pure1679>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onDaily", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onDaily<DefaultConv, Derived, Base, types::pure1679>::value, Membercall>(
+				"MenuLayer::onDaily", 
+				(void*)addresses::address1679()
+			);
+		}
+
+		if constexpr (compare::onOptions<Derived, Base, types::pure1680>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onOptions", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onOptions<DefaultConv, Derived, Base, types::pure1680>::value, Membercall>(
+				"MenuLayer::onOptions", 
+				(void*)addresses::address1680()
+			);
+		}
+
+		if constexpr (compare::onAchievements<Derived, Base, types::pure1681>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onAchievements", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onAchievements<DefaultConv, Derived, Base, types::pure1681>::value, Membercall>(
+				"MenuLayer::onAchievements", 
+				(void*)addresses::address1681()
+			);
+		}
+
+		if constexpr (compare::onStats<Derived, Base, types::pure1682>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onStats", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onStats<DefaultConv, Derived, Base, types::pure1682>::value, Membercall>(
+				"MenuLayer::onStats", 
+				(void*)addresses::address1682()
+			);
+		}
+
+		if constexpr (compare::onFacebook<Derived, Base, types::pure1683>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onFacebook", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onFacebook<DefaultConv, Derived, Base, types::pure1683>::value, Membercall>(
+				"MenuLayer::onFacebook", 
+				(void*)addresses::address1683()
+			);
+		}
+
+		if constexpr (compare::onTwitter<Derived, Base, types::pure1684>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onTwitter", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onTwitter<DefaultConv, Derived, Base, types::pure1684>::value, Membercall>(
+				"MenuLayer::onTwitter", 
+				(void*)addresses::address1684()
+			);
+		}
+
+		if constexpr (compare::onYouTube<Derived, Base, types::pure1685>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MenuLayer::onYouTube", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onYouTube<DefaultConv, Derived, Base, types::pure1685>::value, Membercall>(
+				"MenuLayer::onYouTube", 
+				(void*)addresses::address1685()
+			);
+		}
+
+		if constexpr (compare::scene<Derived, Base, types::pure1686>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MenuLayer::scene", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::scene<DefaultConv, Derived, Base, types::pure1686>::value, Optcall>(
 				"MenuLayer::scene", 
-				(void*)addresses::address1630(), 
-				(void*)wrap::scene<Optcall, Derived, Base, types::pure1630>::value
+				(void*)addresses::address1686()
 			);
 		}
 
-		if constexpr (compare::node<Derived, Base, types::pure1631>::value) {
+		if constexpr (compare::node<Derived, Base, types::pure1687>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MenuLayer::node", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::node<DefaultConv, Derived, Base, types::pure1687>::value, Thiscall>(
 				"MenuLayer::node", 
-				(void*)addresses::address1631(), 
-				(void*)wrap::node<Thiscall, Derived, Base, types::pure1631>::value
+				(void*)addresses::address1687()
 			);
 		}
 
@@ -9173,99 +9016,91 @@ struct Modify<Derived, BoomListView> : ModifyBase<Modify<Derived, BoomListView>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure664>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure695>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomListView::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure695>::value, Membercall>(
 				"BoomListView::init", 
-				(void*)addresses::address664(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure664>::value
+				(void*)addresses::address695()
 			);
 		}
 
-		if constexpr (compare::setupList<Derived, Base, types::pure666>::value) {
+		if constexpr (compare::setupList<Derived, Base, types::pure697>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomListView::setupList", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setupList<DefaultConv, Derived, Base, types::pure697>::value, Thiscall>(
 				"BoomListView::setupList", 
-				(void*)addresses::address666(), 
-				(void*)wrap::setupList<Thiscall, Derived, Base, types::pure666>::value
+				(void*)addresses::address697()
 			);
 		}
 
-		if constexpr (compare::cellHeightForRowAtIndexPath<Derived, Base, types::pure668>::value) {
+		if constexpr (compare::cellHeightForRowAtIndexPath<Derived, Base, types::pure699>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomListView::cellHeightForRowAtIndexPath", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::cellHeightForRowAtIndexPath<DefaultConv, Derived, Base, types::pure699>::value, Thiscall>(
 				"BoomListView::cellHeightForRowAtIndexPath", 
-				(void*)addresses::address668(), 
-				(void*)wrap::cellHeightForRowAtIndexPath<Thiscall, Derived, Base, types::pure668>::value
+				(void*)addresses::address699()
 			);
 		}
 
-		if constexpr (compare::numberOfRowsInSection<Derived, Base, types::pure670>::value) {
+		if constexpr (compare::numberOfRowsInSection<Derived, Base, types::pure701>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomListView::numberOfRowsInSection", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::numberOfRowsInSection<DefaultConv, Derived, Base, types::pure701>::value, Thiscall>(
 				"BoomListView::numberOfRowsInSection", 
-				(void*)addresses::address670(), 
-				(void*)wrap::numberOfRowsInSection<Thiscall, Derived, Base, types::pure670>::value
+				(void*)addresses::address701()
 			);
 		}
 
-		if constexpr (compare::numberOfSectionsInTableView<Derived, Base, types::pure671>::value) {
+		if constexpr (compare::numberOfSectionsInTableView<Derived, Base, types::pure702>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomListView::numberOfSectionsInTableView", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::numberOfSectionsInTableView<DefaultConv, Derived, Base, types::pure702>::value, Thiscall>(
 				"BoomListView::numberOfSectionsInTableView", 
-				(void*)addresses::address671(), 
-				(void*)wrap::numberOfSectionsInTableView<Thiscall, Derived, Base, types::pure671>::value
+				(void*)addresses::address702()
 			);
 		}
 
-		if constexpr (compare::cellForRowAtIndexPath<Derived, Base, types::pure672>::value) {
+		if constexpr (compare::cellForRowAtIndexPath<Derived, Base, types::pure703>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomListView::cellForRowAtIndexPath", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::cellForRowAtIndexPath<DefaultConv, Derived, Base, types::pure703>::value, Thiscall>(
 				"BoomListView::cellForRowAtIndexPath", 
-				(void*)addresses::address672(), 
-				(void*)wrap::cellForRowAtIndexPath<Thiscall, Derived, Base, types::pure672>::value
+				(void*)addresses::address703()
 			);
 		}
 
-		if constexpr (compare::getListCell<Derived, Base, types::pure675>::value) {
+		if constexpr (compare::getListCell<Derived, Base, types::pure706>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomListView::getListCell", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getListCell<DefaultConv, Derived, Base, types::pure706>::value, Thiscall>(
 				"BoomListView::getListCell", 
-				(void*)addresses::address675(), 
-				(void*)wrap::getListCell<Thiscall, Derived, Base, types::pure675>::value
+				(void*)addresses::address706()
 			);
 		}
 
-		if constexpr (compare::loadCell<Derived, Base, types::pure676>::value) {
+		if constexpr (compare::loadCell<Derived, Base, types::pure707>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomListView::loadCell", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::loadCell<DefaultConv, Derived, Base, types::pure707>::value, Thiscall>(
 				"BoomListView::loadCell", 
-				(void*)addresses::address676(), 
-				(void*)wrap::loadCell<Thiscall, Derived, Base, types::pure676>::value
+				(void*)addresses::address707()
 			);
 		}
 
@@ -9280,27 +9115,25 @@ struct Modify<Derived, BoomScrollLayer> : ModifyBase<Modify<Derived, BoomScrollL
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::instantMoveToPage<Derived, Base, types::pure678>::value) {
+		if constexpr (compare::instantMoveToPage<Derived, Base, types::pure709>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomScrollLayer::instantMoveToPage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::instantMoveToPage<DefaultConv, Derived, Base, types::pure709>::value, Membercall>(
 				"BoomScrollLayer::instantMoveToPage", 
-				(void*)addresses::address678(), 
-				(void*)wrap::instantMoveToPage<Membercall, Derived, Base, types::pure678>::value
+				(void*)addresses::address709()
 			);
 		}
 
-		if constexpr (compare::moveToPage<Derived, Base, types::pure679>::value) {
+		if constexpr (compare::moveToPage<Derived, Base, types::pure710>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function BoomScrollLayer::moveToPage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::moveToPage<DefaultConv, Derived, Base, types::pure710>::value, Membercall>(
 				"BoomScrollLayer::moveToPage", 
-				(void*)addresses::address679(), 
-				(void*)wrap::moveToPage<Membercall, Derived, Base, types::pure679>::value
+				(void*)addresses::address710()
 			);
 		}
 
@@ -9315,51 +9148,47 @@ struct Modify<Derived, ButtonSprite> : ModifyBase<Modify<Derived, ButtonSprite>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure680>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure711>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ButtonSprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure711>::value, Optcall>(
 				"ButtonSprite::create", 
-				(void*)addresses::address680(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure680>::value
+				(void*)addresses::address711()
 			);
 		}
 
-		if constexpr (compare::updateBGImage<Derived, Base, types::pure683>::value) {
+		if constexpr (compare::updateBGImage<Derived, Base, types::pure714>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ButtonSprite::updateBGImage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateBGImage<DefaultConv, Derived, Base, types::pure714>::value, Membercall>(
 				"ButtonSprite::updateBGImage", 
-				(void*)addresses::address683(), 
-				(void*)wrap::updateBGImage<Membercall, Derived, Base, types::pure683>::value
+				(void*)addresses::address714()
 			);
 		}
 
-		if constexpr (compare::setString<Derived, Base, types::pure685>::value) {
+		if constexpr (compare::setString<Derived, Base, types::pure716>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ButtonSprite::setString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setString<DefaultConv, Derived, Base, types::pure716>::value, Membercall>(
 				"ButtonSprite::setString", 
-				(void*)addresses::address685(), 
-				(void*)wrap::setString<Membercall, Derived, Base, types::pure685>::value
+				(void*)addresses::address716()
 			);
 		}
 
-		if constexpr (compare::updateSpriteBGSize<Derived, Base, types::pure686>::value) {
+		if constexpr (compare::updateSpriteBGSize<Derived, Base, types::pure717>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ButtonSprite::updateSpriteBGSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateSpriteBGSize<DefaultConv, Derived, Base, types::pure717>::value, Membercall>(
 				"ButtonSprite::updateSpriteBGSize", 
-				(void*)addresses::address686(), 
-				(void*)wrap::updateSpriteBGSize<Membercall, Derived, Base, types::pure686>::value
+				(void*)addresses::address717()
 			);
 		}
 
@@ -9385,27 +9214,25 @@ struct Modify<Derived, CCAnimatedSprite> : ModifyBase<Modify<Derived, CCAnimated
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::runAnimation<Derived, Base, types::pure687>::value) {
+		if constexpr (compare::runAnimation<Derived, Base, types::pure718>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCAnimatedSprite::runAnimation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::runAnimation<DefaultConv, Derived, Base, types::pure718>::value, Membercall>(
 				"CCAnimatedSprite::runAnimation", 
-				(void*)addresses::address687(), 
-				(void*)wrap::runAnimation<Membercall, Derived, Base, types::pure687>::value
+				(void*)addresses::address718()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure689>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure720>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCAnimatedSprite::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure720>::value, Optcall>(
 				"CCAnimatedSprite::create", 
-				(void*)addresses::address689(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure689>::value
+				(void*)addresses::address720()
 			);
 		}
 
@@ -9420,87 +9247,80 @@ struct Modify<Derived, CCCircleWave> : ModifyBase<Modify<Derived, CCCircleWave>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure703>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure734>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCCircleWave::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure734>::value, Optcall>(
 				"CCCircleWave::create", 
-				(void*)addresses::address703(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure703>::value
+				(void*)addresses::address734()
 			);
 		}
 
-		if constexpr (compare::followObject<Derived, Base, types::pure705>::value) {
+		if constexpr (compare::followObject<Derived, Base, types::pure736>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCCircleWave::followObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::followObject<DefaultConv, Derived, Base, types::pure736>::value, Membercall>(
 				"CCCircleWave::followObject", 
-				(void*)addresses::address705(), 
-				(void*)wrap::followObject<Membercall, Derived, Base, types::pure705>::value
+				(void*)addresses::address736()
 			);
 		}
 
-		if constexpr (compare::updatePosition<Derived, Base, types::pure706>::value) {
+		if constexpr (compare::updatePosition<Derived, Base, types::pure737>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCCircleWave::updatePosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updatePosition<DefaultConv, Derived, Base, types::pure737>::value, Membercall>(
 				"CCCircleWave::updatePosition", 
-				(void*)addresses::address706(), 
-				(void*)wrap::updatePosition<Membercall, Derived, Base, types::pure706>::value
+				(void*)addresses::address737()
 			);
 		}
 
-		if constexpr (compare::setPosition<Derived, Base, types::pure707>::value) {
+		if constexpr (compare::setPosition<Derived, Base, types::pure738>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCCircleWave::setPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPosition<DefaultConv, Derived, Base, types::pure738>::value, Membercall>(
 				"CCCircleWave::setPosition", 
-				(void*)addresses::address707(), 
-				(void*)wrap::setPosition<Membercall, Derived, Base, types::pure707>::value
+				(void*)addresses::address738()
 			);
 		}
 
-		if constexpr (compare::removeMeAndCleanup<Derived, Base, types::pure708>::value) {
+		if constexpr (compare::removeMeAndCleanup<Derived, Base, types::pure739>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCCircleWave::removeMeAndCleanup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeMeAndCleanup<DefaultConv, Derived, Base, types::pure739>::value, Thiscall>(
 				"CCCircleWave::removeMeAndCleanup", 
-				(void*)addresses::address708(), 
-				(void*)wrap::removeMeAndCleanup<Thiscall, Derived, Base, types::pure708>::value
+				(void*)addresses::address739()
 			);
 		}
 
-		if constexpr (compare::draw<Derived, Base, types::pure709>::value) {
+		if constexpr (compare::draw<Derived, Base, types::pure740>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCCircleWave::draw", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure740>::value, Thiscall>(
 				"CCCircleWave::draw", 
-				(void*)addresses::address709(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure709>::value
+				(void*)addresses::address740()
 			);
 		}
 
-		if constexpr (compare::updateTweenAction<Derived, Base, types::pure710>::value) {
+		if constexpr (compare::updateTweenAction<Derived, Base, types::pure741>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCCircleWave::updateTweenAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateTweenAction<DefaultConv, Derived, Base, types::pure741>::value, Membercall>(
 				"CCCircleWave::updateTweenAction", 
-				(void*)addresses::address710(), 
-				(void*)wrap::updateTweenAction<Membercall, Derived, Base, types::pure710>::value
+				(void*)addresses::address741()
 			);
 		}
 
@@ -9515,15 +9335,25 @@ struct Modify<Derived, CCContentLayer> : ModifyBase<Modify<Derived, CCContentLay
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure712>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure743>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCContentLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure743>::value, Optcall>(
 				"CCContentLayer::create", 
-				(void*)addresses::address712(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure712>::value
+				(void*)addresses::address743()
+			);
+		}
+
+		if constexpr (compare::setPosition<Derived, Base, types::pure744>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function CCContentLayer::setPosition", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::setPosition<DefaultConv, Derived, Base, types::pure744>::value, Thiscall>(
+				"CCContentLayer::setPosition", 
+				(void*)addresses::address744()
 			);
 		}
 
@@ -9538,15 +9368,14 @@ struct Modify<Derived, CCIndexPath> : ModifyBase<Modify<Derived, CCIndexPath>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure713>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure745>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCIndexPath::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure745>::value, Optcall>(
 				"CCIndexPath::create", 
-				(void*)addresses::address713(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure713>::value
+				(void*)addresses::address745()
 			);
 		}
 
@@ -9561,15 +9390,14 @@ struct Modify<Derived, CCLightFlash> : ModifyBase<Modify<Derived, CCLightFlash>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::playEffect<Derived, Base, types::pure715>::value) {
+		if constexpr (compare::playEffect<Derived, Base, types::pure747>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCLightFlash::playEffect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::playEffect<DefaultConv, Derived, Base, types::pure747>::value, Membercall>(
 				"CCLightFlash::playEffect", 
-				(void*)addresses::address715(), 
-				(void*)wrap::playEffect<Membercall, Derived, Base, types::pure715>::value
+				(void*)addresses::address747()
 			);
 		}
 
@@ -9584,51 +9412,47 @@ struct Modify<Derived, TextArea> : ModifyBase<Modify<Derived, TextArea>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::constructor<Derived, Base, types::pure2079>::value) {
+		if constexpr (compare::constructor<Derived, Base, types::pure2140>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function TextArea::constructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constructor<DefaultConv, Derived, Base, types::pure2140>::value, Thiscall>(
 				"TextArea::constructor", 
-				(void*)addresses::address2079(), 
-				(void*)wrap::constructor<Thiscall, Derived, Base, types::pure2079>::value
+				(void*)addresses::address2140()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure2082>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure2143>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function TextArea::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure2143>::value, Membercall>(
 				"TextArea::init", 
-				(void*)addresses::address2082(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure2082>::value
+				(void*)addresses::address2143()
 			);
 		}
 
-		if constexpr (compare::colorAllCharactersTo<Derived, Base, types::pure2084>::value) {
+		if constexpr (compare::colorAllCharactersTo<Derived, Base, types::pure2145>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function TextArea::colorAllCharactersTo", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::colorAllCharactersTo<DefaultConv, Derived, Base, types::pure2145>::value, Membercall>(
 				"TextArea::colorAllCharactersTo", 
-				(void*)addresses::address2084(), 
-				(void*)wrap::colorAllCharactersTo<Membercall, Derived, Base, types::pure2084>::value
+				(void*)addresses::address2145()
 			);
 		}
 
-		if constexpr (compare::setString<Derived, Base, types::pure2085>::value) {
+		if constexpr (compare::setString<Derived, Base, types::pure2146>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function TextArea::setString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setString<DefaultConv, Derived, Base, types::pure2146>::value, Membercall>(
 				"TextArea::setString", 
-				(void*)addresses::address2085(), 
-				(void*)wrap::setString<Membercall, Derived, Base, types::pure2085>::value
+				(void*)addresses::address2146()
 			);
 		}
 
@@ -9665,39 +9489,36 @@ struct Modify<Derived, GameToolbox> : ModifyBase<Modify<Derived, GameToolbox>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::createToggleButton<Derived, Base, types::pure1491>::value) {
+		if constexpr (compare::createToggleButton<Derived, Base, types::pure1525>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameToolbox::createToggleButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createToggleButton<DefaultConv, Derived, Base, types::pure1525>::value, Optcall>(
 				"GameToolbox::createToggleButton", 
-				(void*)addresses::address1491(), 
-				(void*)wrap::createToggleButton<Optcall, Derived, Base, types::pure1491>::value
+				(void*)addresses::address1525()
 			);
 		}
 
-		if constexpr (compare::transformColor<Derived, Base, types::pure1492>::value) {
+		if constexpr (compare::transformColor<Derived, Base, types::pure1526>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameToolbox::transformColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::transformColor<DefaultConv, Derived, Base, types::pure1526>::value, Optcall>(
 				"GameToolbox::transformColor", 
-				(void*)addresses::address1492(), 
-				(void*)wrap::transformColor<Optcall, Derived, Base, types::pure1492>::value
+				(void*)addresses::address1526()
 			);
 		}
 
-		if constexpr (compare::alignItemsHorisontally<Derived, Base, types::pure1493>::value) {
+		if constexpr (compare::alignItemsHorisontally<Derived, Base, types::pure1527>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameToolbox::alignItemsHorisontally", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::alignItemsHorisontally<DefaultConv, Derived, Base, types::pure1527>::value, Optcall>(
 				"GameToolbox::alignItemsHorisontally", 
-				(void*)addresses::address1493(), 
-				(void*)wrap::alignItemsHorisontally<Optcall, Derived, Base, types::pure1493>::value
+				(void*)addresses::address1527()
 			);
 		}
 
@@ -9712,39 +9533,36 @@ struct Modify<Derived, CCNodeContainer> : ModifyBase<Modify<Derived, CCNodeConta
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure746>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure778>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCNodeContainer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure778>::value, Cdecl>(
 				"CCNodeContainer::create", 
-				(void*)addresses::address746(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure746>::value
+				(void*)addresses::address778()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure747>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure779>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCNodeContainer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure779>::value, Thiscall>(
 				"CCNodeContainer::init", 
-				(void*)addresses::address747(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure747>::value
+				(void*)addresses::address779()
 			);
 		}
 
-		if constexpr (compare::visit<Derived, Base, types::pure748>::value) {
+		if constexpr (compare::visit<Derived, Base, types::pure780>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCNodeContainer::visit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::visit<DefaultConv, Derived, Base, types::pure780>::value, Thiscall>(
 				"CCNodeContainer::visit", 
-				(void*)addresses::address748(), 
-				(void*)wrap::visit<Thiscall, Derived, Base, types::pure748>::value
+				(void*)addresses::address780()
 			);
 		}
 
@@ -9759,147 +9577,135 @@ struct Modify<Derived, CCScrollLayerExt> : ModifyBase<Modify<Derived, CCScrollLa
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::visit<Derived, Base, types::pure753>::value) {
+		if constexpr (compare::visit<Derived, Base, types::pure784>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::visit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::visit<DefaultConv, Derived, Base, types::pure784>::value, Thiscall>(
 				"CCScrollLayerExt::visit", 
-				(void*)addresses::address753(), 
-				(void*)wrap::visit<Thiscall, Derived, Base, types::pure753>::value
+				(void*)addresses::address784()
 			);
 		}
 
-		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure754>::value) {
+		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure785>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::ccTouchBegan", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchBegan<DefaultConv, Derived, Base, types::pure785>::value, Thiscall>(
 				"CCScrollLayerExt::ccTouchBegan", 
-				(void*)addresses::address754(), 
-				(void*)wrap::ccTouchBegan<Thiscall, Derived, Base, types::pure754>::value
+				(void*)addresses::address785()
 			);
 		}
 
-		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure755>::value) {
+		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure786>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::ccTouchMoved", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchMoved<DefaultConv, Derived, Base, types::pure786>::value, Thiscall>(
 				"CCScrollLayerExt::ccTouchMoved", 
-				(void*)addresses::address755(), 
-				(void*)wrap::ccTouchMoved<Thiscall, Derived, Base, types::pure755>::value
+				(void*)addresses::address786()
 			);
 		}
 
-		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure756>::value) {
+		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure787>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::ccTouchEnded", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchEnded<DefaultConv, Derived, Base, types::pure787>::value, Thiscall>(
 				"CCScrollLayerExt::ccTouchEnded", 
-				(void*)addresses::address756(), 
-				(void*)wrap::ccTouchEnded<Thiscall, Derived, Base, types::pure756>::value
+				(void*)addresses::address787()
 			);
 		}
 
-		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure757>::value) {
+		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure788>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::ccTouchCancelled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchCancelled<DefaultConv, Derived, Base, types::pure788>::value, Thiscall>(
 				"CCScrollLayerExt::ccTouchCancelled", 
-				(void*)addresses::address757(), 
-				(void*)wrap::ccTouchCancelled<Thiscall, Derived, Base, types::pure757>::value
+				(void*)addresses::address788()
 			);
 		}
 
-		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure758>::value) {
+		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure789>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::registerWithTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerWithTouchDispatcher<DefaultConv, Derived, Base, types::pure789>::value, Thiscall>(
 				"CCScrollLayerExt::registerWithTouchDispatcher", 
-				(void*)addresses::address758(), 
-				(void*)wrap::registerWithTouchDispatcher<Thiscall, Derived, Base, types::pure758>::value
+				(void*)addresses::address789()
 			);
 		}
 
-		if constexpr (compare::preVisitWithClippingRect<Derived, Base, types::pure759>::value) {
+		if constexpr (compare::preVisitWithClippingRect<Derived, Base, types::pure790>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::preVisitWithClippingRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::preVisitWithClippingRect<DefaultConv, Derived, Base, types::pure790>::value, Thiscall>(
 				"CCScrollLayerExt::preVisitWithClippingRect", 
-				(void*)addresses::address759(), 
-				(void*)wrap::preVisitWithClippingRect<Thiscall, Derived, Base, types::pure759>::value
+				(void*)addresses::address790()
 			);
 		}
 
-		if constexpr (compare::postVisit<Derived, Base, types::pure760>::value) {
+		if constexpr (compare::postVisit<Derived, Base, types::pure791>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::postVisit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::postVisit<DefaultConv, Derived, Base, types::pure791>::value, Thiscall>(
 				"CCScrollLayerExt::postVisit", 
-				(void*)addresses::address760(), 
-				(void*)wrap::postVisit<Thiscall, Derived, Base, types::pure760>::value
+				(void*)addresses::address791()
 			);
 		}
 
-		if constexpr (compare::moveToTop<Derived, Base, types::pure761>::value) {
+		if constexpr (compare::moveToTop<Derived, Base, types::pure792>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::moveToTop", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::moveToTop<DefaultConv, Derived, Base, types::pure792>::value, Thiscall>(
 				"CCScrollLayerExt::moveToTop", 
-				(void*)addresses::address761(), 
-				(void*)wrap::moveToTop<Thiscall, Derived, Base, types::pure761>::value
+				(void*)addresses::address792()
 			);
 		}
 
-		if constexpr (compare::moveToTopWithOffset<Derived, Base, types::pure762>::value) {
+		if constexpr (compare::moveToTopWithOffset<Derived, Base, types::pure793>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::moveToTopWithOffset", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::moveToTopWithOffset<DefaultConv, Derived, Base, types::pure793>::value, Membercall>(
 				"CCScrollLayerExt::moveToTopWithOffset", 
-				(void*)addresses::address762(), 
-				(void*)wrap::moveToTopWithOffset<Membercall, Derived, Base, types::pure762>::value
+				(void*)addresses::address793()
 			);
 		}
 
-		if constexpr (compare::constructor<Derived, Base, types::pure763>::value) {
+		if constexpr (compare::constructor<Derived, Base, types::pure794>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::constructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constructor<DefaultConv, Derived, Base, types::pure794>::value, Membercall>(
 				"CCScrollLayerExt::constructor", 
-				(void*)addresses::address763(), 
-				(void*)wrap::constructor<Membercall, Derived, Base, types::pure763>::value
+				(void*)addresses::address794()
 			);
 		}
 
-		if constexpr (compare::scrollLayer<Derived, Base, types::pure764>::value) {
+		if constexpr (compare::scrollLayer<Derived, Base, types::pure795>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCScrollLayerExt::scrollLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::scrollLayer<DefaultConv, Derived, Base, types::pure795>::value, Membercall>(
 				"CCScrollLayerExt::scrollLayer", 
-				(void*)addresses::address764(), 
-				(void*)wrap::scrollLayer<Membercall, Derived, Base, types::pure764>::value
+				(void*)addresses::address795()
 			);
 		}
 
@@ -9914,27 +9720,25 @@ struct Modify<Derived, SongInfoLayer> : ModifyBase<Modify<Derived, SongInfoLayer
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure2057>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2118>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SongInfoLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2118>::value, Optcall>(
 				"SongInfoLayer::create", 
-				(void*)addresses::address2057(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure2057>::value
+				(void*)addresses::address2118()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure2058>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2119>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SongInfoLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2119>::value, Optcall>(
 				"SongInfoLayer::create", 
-				(void*)addresses::address2058(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure2058>::value
+				(void*)addresses::address2119()
 			);
 		}
 
@@ -9960,15 +9764,14 @@ struct Modify<Derived, GJSpecialColorSelect> : ModifyBase<Modify<Derived, GJSpec
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::textForColorIdx<Derived, Base, types::pure1245>::value) {
+		if constexpr (compare::textForColorIdx<Derived, Base, types::pure1279>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJSpecialColorSelect::textForColorIdx", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::textForColorIdx<DefaultConv, Derived, Base, types::pure1279>::value, Optcall>(
 				"GJSpecialColorSelect::textForColorIdx", 
-				(void*)addresses::address1245(), 
-				(void*)wrap::textForColorIdx<Optcall, Derived, Base, types::pure1245>::value
+				(void*)addresses::address1279()
 			);
 		}
 
@@ -9983,123 +9786,113 @@ struct Modify<Derived, CCSpritePlus> : ModifyBase<Modify<Derived, CCSpritePlus>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::initWithSpriteFrameName<Derived, Base, types::pure771>::value) {
+		if constexpr (compare::initWithSpriteFrameName<Derived, Base, types::pure802>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::initWithSpriteFrameName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithSpriteFrameName<DefaultConv, Derived, Base, types::pure802>::value, Membercall>(
 				"CCSpritePlus::initWithSpriteFrameName", 
-				(void*)addresses::address771(), 
-				(void*)wrap::initWithSpriteFrameName<Membercall, Derived, Base, types::pure771>::value
+				(void*)addresses::address802()
 			);
 		}
 
-		if constexpr (compare::setScaleX<Derived, Base, types::pure772>::value) {
+		if constexpr (compare::setScaleX<Derived, Base, types::pure803>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::setScaleX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScaleX<DefaultConv, Derived, Base, types::pure803>::value, Membercall>(
 				"CCSpritePlus::setScaleX", 
-				(void*)addresses::address772(), 
-				(void*)wrap::setScaleX<Membercall, Derived, Base, types::pure772>::value
+				(void*)addresses::address803()
 			);
 		}
 
-		if constexpr (compare::setScaleY<Derived, Base, types::pure773>::value) {
+		if constexpr (compare::setScaleY<Derived, Base, types::pure804>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::setScaleY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScaleY<DefaultConv, Derived, Base, types::pure804>::value, Membercall>(
 				"CCSpritePlus::setScaleY", 
-				(void*)addresses::address773(), 
-				(void*)wrap::setScaleY<Membercall, Derived, Base, types::pure773>::value
+				(void*)addresses::address804()
 			);
 		}
 
-		if constexpr (compare::setScale<Derived, Base, types::pure774>::value) {
+		if constexpr (compare::setScale<Derived, Base, types::pure805>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::setScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScale<DefaultConv, Derived, Base, types::pure805>::value, Membercall>(
 				"CCSpritePlus::setScale", 
-				(void*)addresses::address774(), 
-				(void*)wrap::setScale<Membercall, Derived, Base, types::pure774>::value
+				(void*)addresses::address805()
 			);
 		}
 
-		if constexpr (compare::setPosition<Derived, Base, types::pure775>::value) {
+		if constexpr (compare::setPosition<Derived, Base, types::pure806>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::setPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPosition<DefaultConv, Derived, Base, types::pure806>::value, Membercall>(
 				"CCSpritePlus::setPosition", 
-				(void*)addresses::address775(), 
-				(void*)wrap::setPosition<Membercall, Derived, Base, types::pure775>::value
+				(void*)addresses::address806()
 			);
 		}
 
-		if constexpr (compare::setRotation<Derived, Base, types::pure776>::value) {
+		if constexpr (compare::setRotation<Derived, Base, types::pure807>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::setRotation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRotation<DefaultConv, Derived, Base, types::pure807>::value, Membercall>(
 				"CCSpritePlus::setRotation", 
-				(void*)addresses::address776(), 
-				(void*)wrap::setRotation<Membercall, Derived, Base, types::pure776>::value
+				(void*)addresses::address807()
 			);
 		}
 
-		if constexpr (compare::initWithTexture<Derived, Base, types::pure777>::value) {
+		if constexpr (compare::initWithTexture<Derived, Base, types::pure808>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::initWithTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithTexture<DefaultConv, Derived, Base, types::pure808>::value, Membercall>(
 				"CCSpritePlus::initWithTexture", 
-				(void*)addresses::address777(), 
-				(void*)wrap::initWithTexture<Membercall, Derived, Base, types::pure777>::value
+				(void*)addresses::address808()
 			);
 		}
 
-		if constexpr (compare::setFlipX<Derived, Base, types::pure778>::value) {
+		if constexpr (compare::setFlipX<Derived, Base, types::pure809>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::setFlipX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setFlipX<DefaultConv, Derived, Base, types::pure809>::value, Membercall>(
 				"CCSpritePlus::setFlipX", 
-				(void*)addresses::address778(), 
-				(void*)wrap::setFlipX<Membercall, Derived, Base, types::pure778>::value
+				(void*)addresses::address809()
 			);
 		}
 
-		if constexpr (compare::setFlipY<Derived, Base, types::pure779>::value) {
+		if constexpr (compare::setFlipY<Derived, Base, types::pure810>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::setFlipY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setFlipY<DefaultConv, Derived, Base, types::pure810>::value, Membercall>(
 				"CCSpritePlus::setFlipY", 
-				(void*)addresses::address779(), 
-				(void*)wrap::setFlipY<Membercall, Derived, Base, types::pure779>::value
+				(void*)addresses::address810()
 			);
 		}
 
-		if constexpr (compare::createWithSpriteFrame<Derived, Base, types::pure780>::value) {
+		if constexpr (compare::createWithSpriteFrame<Derived, Base, types::pure811>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCSpritePlus::createWithSpriteFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithSpriteFrame<DefaultConv, Derived, Base, types::pure811>::value, Optcall>(
 				"CCSpritePlus::createWithSpriteFrame", 
-				(void*)addresses::address780(), 
-				(void*)wrap::createWithSpriteFrame<Optcall, Derived, Base, types::pure780>::value
+				(void*)addresses::address811()
 			);
 		}
 
@@ -10114,147 +9907,135 @@ struct Modify<Derived, CCTextInputNode> : ModifyBase<Modify<Derived, CCTextInput
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::setString<Derived, Base, types::pure788>::value) {
+		if constexpr (compare::setString<Derived, Base, types::pure819>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::setString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setString<DefaultConv, Derived, Base, types::pure819>::value, Membercall>(
 				"CCTextInputNode::setString", 
-				(void*)addresses::address788(), 
-				(void*)wrap::setString<Membercall, Derived, Base, types::pure788>::value
+				(void*)addresses::address819()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure793>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure824>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure824>::value, Membercall>(
 				"CCTextInputNode::init", 
-				(void*)addresses::address793(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure793>::value
+				(void*)addresses::address824()
 			);
 		}
 
-		if constexpr (compare::refreshLabel<Derived, Base, types::pure794>::value) {
+		if constexpr (compare::refreshLabel<Derived, Base, types::pure825>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::refreshLabel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::refreshLabel<DefaultConv, Derived, Base, types::pure825>::value, Thiscall>(
 				"CCTextInputNode::refreshLabel", 
-				(void*)addresses::address794(), 
-				(void*)wrap::refreshLabel<Thiscall, Derived, Base, types::pure794>::value
+				(void*)addresses::address825()
 			);
 		}
 
-		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure796>::value) {
+		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure827>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::registerWithTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerWithTouchDispatcher<DefaultConv, Derived, Base, types::pure827>::value, Thiscall>(
 				"CCTextInputNode::registerWithTouchDispatcher", 
-				(void*)addresses::address796(), 
-				(void*)wrap::registerWithTouchDispatcher<Thiscall, Derived, Base, types::pure796>::value
+				(void*)addresses::address827()
 			);
 		}
 
-		if constexpr (compare::visit<Derived, Base, types::pure797>::value) {
+		if constexpr (compare::visit<Derived, Base, types::pure828>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::visit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::visit<DefaultConv, Derived, Base, types::pure828>::value, Thiscall>(
 				"CCTextInputNode::visit", 
-				(void*)addresses::address797(), 
-				(void*)wrap::visit<Thiscall, Derived, Base, types::pure797>::value
+				(void*)addresses::address828()
 			);
 		}
 
-		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure798>::value) {
+		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure829>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::ccTouchBegan", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchBegan<DefaultConv, Derived, Base, types::pure829>::value, Thiscall>(
 				"CCTextInputNode::ccTouchBegan", 
-				(void*)addresses::address798(), 
-				(void*)wrap::ccTouchBegan<Thiscall, Derived, Base, types::pure798>::value
+				(void*)addresses::address829()
 			);
 		}
 
-		if constexpr (compare::textChanged<Derived, Base, types::pure802>::value) {
+		if constexpr (compare::textChanged<Derived, Base, types::pure833>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::textChanged", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::textChanged<DefaultConv, Derived, Base, types::pure833>::value, Thiscall>(
 				"CCTextInputNode::textChanged", 
-				(void*)addresses::address802(), 
-				(void*)wrap::textChanged<Thiscall, Derived, Base, types::pure802>::value
+				(void*)addresses::address833()
 			);
 		}
 
-		if constexpr (compare::onClickTrackNode<Derived, Base, types::pure803>::value) {
+		if constexpr (compare::onClickTrackNode<Derived, Base, types::pure834>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::onClickTrackNode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onClickTrackNode<DefaultConv, Derived, Base, types::pure834>::value, Thiscall>(
 				"CCTextInputNode::onClickTrackNode", 
-				(void*)addresses::address803(), 
-				(void*)wrap::onClickTrackNode<Thiscall, Derived, Base, types::pure803>::value
+				(void*)addresses::address834()
 			);
 		}
 
-		if constexpr (compare::keyboardWillShow<Derived, Base, types::pure804>::value) {
+		if constexpr (compare::keyboardWillShow<Derived, Base, types::pure835>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::keyboardWillShow", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyboardWillShow<DefaultConv, Derived, Base, types::pure835>::value, Thiscall>(
 				"CCTextInputNode::keyboardWillShow", 
-				(void*)addresses::address804(), 
-				(void*)wrap::keyboardWillShow<Thiscall, Derived, Base, types::pure804>::value
+				(void*)addresses::address835()
 			);
 		}
 
-		if constexpr (compare::keyboardWillHide<Derived, Base, types::pure805>::value) {
+		if constexpr (compare::keyboardWillHide<Derived, Base, types::pure836>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::keyboardWillHide", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyboardWillHide<DefaultConv, Derived, Base, types::pure836>::value, Thiscall>(
 				"CCTextInputNode::keyboardWillHide", 
-				(void*)addresses::address805(), 
-				(void*)wrap::keyboardWillHide<Thiscall, Derived, Base, types::pure805>::value
+				(void*)addresses::address836()
 			);
 		}
 
-		if constexpr (compare::onTextFieldAttachWithIME<Derived, Base, types::pure807>::value) {
+		if constexpr (compare::onTextFieldAttachWithIME<Derived, Base, types::pure838>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::onTextFieldAttachWithIME", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onTextFieldAttachWithIME<DefaultConv, Derived, Base, types::pure838>::value, Thiscall>(
 				"CCTextInputNode::onTextFieldAttachWithIME", 
-				(void*)addresses::address807(), 
-				(void*)wrap::onTextFieldAttachWithIME<Thiscall, Derived, Base, types::pure807>::value
+				(void*)addresses::address838()
 			);
 		}
 
-		if constexpr (compare::onTextFieldDetachWithIME<Derived, Base, types::pure808>::value) {
+		if constexpr (compare::onTextFieldDetachWithIME<Derived, Base, types::pure839>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CCTextInputNode::onTextFieldDetachWithIME", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onTextFieldDetachWithIME<DefaultConv, Derived, Base, types::pure839>::value, Thiscall>(
 				"CCTextInputNode::onTextFieldDetachWithIME", 
-				(void*)addresses::address808(), 
-				(void*)wrap::onTextFieldDetachWithIME<Thiscall, Derived, Base, types::pure808>::value
+				(void*)addresses::address839()
 			);
 		}
 
@@ -10280,15 +10061,14 @@ struct Modify<Derived, ChallengesPage> : ModifyBase<Modify<Derived, ChallengesPa
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure809>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure840>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ChallengesPage::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure840>::value, Cdecl>(
 				"ChallengesPage::create", 
-				(void*)addresses::address809(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure809>::value
+				(void*)addresses::address840()
 			);
 		}
 
@@ -10380,15 +10160,14 @@ struct Modify<Derived, ColorSelectPopup> : ModifyBase<Modify<Derived, ColorSelec
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::colorValueChanged<Derived, Base, types::pure823>::value) {
+		if constexpr (compare::colorValueChanged<Derived, Base, types::pure854>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ColorSelectPopup::colorValueChanged", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::colorValueChanged<DefaultConv, Derived, Base, types::pure854>::value, Thiscall>(
 				"ColorSelectPopup::colorValueChanged", 
-				(void*)addresses::address823(), 
-				(void*)wrap::colorValueChanged<Thiscall, Derived, Base, types::pure823>::value
+				(void*)addresses::address854()
 			);
 		}
 
@@ -10458,15 +10237,14 @@ struct Modify<Derived, CreateGuidelinesLayer> : ModifyBase<Modify<Derived, Creat
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::onStop<Derived, Base, types::pure826>::value) {
+		if constexpr (compare::onStop<Derived, Base, types::pure857>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CreateGuidelinesLayer::onStop", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onStop<DefaultConv, Derived, Base, types::pure857>::value, Membercall>(
 				"CreateGuidelinesLayer::onStop", 
-				(void*)addresses::address826(), 
-				(void*)wrap::onStop<Membercall, Derived, Base, types::pure826>::value
+				(void*)addresses::address857()
 			);
 		}
 
@@ -10503,39 +10281,36 @@ struct Modify<Derived, DialogLayer> : ModifyBase<Modify<Derived, DialogLayer>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::createDialogLayer<Derived, Base, types::pure851>::value) {
+		if constexpr (compare::createDialogLayer<Derived, Base, types::pure883>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function DialogLayer::createDialogLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createDialogLayer<DefaultConv, Derived, Base, types::pure883>::value, Optcall>(
 				"DialogLayer::createDialogLayer", 
-				(void*)addresses::address851(), 
-				(void*)wrap::createDialogLayer<Optcall, Derived, Base, types::pure851>::value
+				(void*)addresses::address883()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure852>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure884>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function DialogLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure884>::value, Membercall>(
 				"DialogLayer::init", 
-				(void*)addresses::address852(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure852>::value
+				(void*)addresses::address884()
 			);
 		}
 
-		if constexpr (compare::animateIn<Derived, Base, types::pure853>::value) {
+		if constexpr (compare::animateIn<Derived, Base, types::pure885>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function DialogLayer::animateIn", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::animateIn<DefaultConv, Derived, Base, types::pure885>::value, Membercall>(
 				"DialogLayer::animateIn", 
-				(void*)addresses::address853(), 
-				(void*)wrap::animateIn<Membercall, Derived, Base, types::pure853>::value
+				(void*)addresses::address885()
 			);
 		}
 
@@ -10554,6 +10329,28 @@ struct Modify<Derived, CurrencyRewardLayer> : ModifyBase<Modify<Derived, Currenc
 };
 
 template<class Derived>
+struct Modify<Derived, DialogDelegate> : ModifyBase<Modify<Derived, DialogDelegate>> {
+	using ModifyBase<Modify<Derived, DialogDelegate>>::ModifyBase;
+	using Base = DialogDelegate;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, CurrencyRewardDelegate> : ModifyBase<Modify<Derived, CurrencyRewardDelegate>> {
+	using ModifyBase<Modify<Derived, CurrencyRewardDelegate>>::ModifyBase;
+	using Base = CurrencyRewardDelegate;
+	static void apply() {
+		using namespace geode::core::meta;
+		using namespace geode::core::meta::x86;
+
+	}
+};
+
+template<class Derived>
 struct Modify<Derived, CustomListView> : ModifyBase<Modify<Derived, CustomListView>> {
 	using ModifyBase<Modify<Derived, CustomListView>>::ModifyBase;
 	using Base = CustomListView;
@@ -10561,63 +10358,58 @@ struct Modify<Derived, CustomListView> : ModifyBase<Modify<Derived, CustomListVi
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure833>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure865>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomListView::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure865>::value, Optcall>(
 				"CustomListView::create", 
-				(void*)addresses::address833(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure833>::value
+				(void*)addresses::address865()
 			);
 		}
 
-		if constexpr (compare::getListCell<Derived, Base, types::pure834>::value) {
+		if constexpr (compare::getListCell<Derived, Base, types::pure866>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomListView::getListCell", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getListCell<DefaultConv, Derived, Base, types::pure866>::value, Thiscall>(
 				"CustomListView::getListCell", 
-				(void*)addresses::address834(), 
-				(void*)wrap::getListCell<Thiscall, Derived, Base, types::pure834>::value
+				(void*)addresses::address866()
 			);
 		}
 
-		if constexpr (compare::loadCell<Derived, Base, types::pure835>::value) {
+		if constexpr (compare::loadCell<Derived, Base, types::pure867>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomListView::loadCell", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::loadCell<DefaultConv, Derived, Base, types::pure867>::value, Thiscall>(
 				"CustomListView::loadCell", 
-				(void*)addresses::address835(), 
-				(void*)wrap::loadCell<Thiscall, Derived, Base, types::pure835>::value
+				(void*)addresses::address867()
 			);
 		}
 
-		if constexpr (compare::setupList<Derived, Base, types::pure836>::value) {
+		if constexpr (compare::setupList<Derived, Base, types::pure868>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomListView::setupList", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setupList<DefaultConv, Derived, Base, types::pure868>::value, Thiscall>(
 				"CustomListView::setupList", 
-				(void*)addresses::address836(), 
-				(void*)wrap::setupList<Thiscall, Derived, Base, types::pure836>::value
+				(void*)addresses::address868()
 			);
 		}
 
-		if constexpr (compare::constructor<Derived, Base, types::pure837>::value) {
+		if constexpr (compare::constructor<Derived, Base, types::pure869>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomListView::constructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constructor<DefaultConv, Derived, Base, types::pure869>::value, Thiscall>(
 				"CustomListView::constructor", 
-				(void*)addresses::address837(), 
-				(void*)wrap::constructor<Thiscall, Derived, Base, types::pure837>::value
+				(void*)addresses::address869()
 			);
 		}
 
@@ -10632,15 +10424,14 @@ struct Modify<Derived, CustomSongWidget> : ModifyBase<Modify<Derived, CustomSong
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::updateSongObject<Derived, Base, types::pure844>::value) {
+		if constexpr (compare::updateSongObject<Derived, Base, types::pure876>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomSongWidget::updateSongObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateSongObject<DefaultConv, Derived, Base, types::pure876>::value, Membercall>(
 				"CustomSongWidget::updateSongObject", 
-				(void*)addresses::address844(), 
-				(void*)wrap::updateSongObject<Membercall, Derived, Base, types::pure844>::value
+				(void*)addresses::address876()
 			);
 		}
 
@@ -10655,39 +10446,36 @@ struct Modify<Derived, CustomizeObjectLayer> : ModifyBase<Modify<Derived, Custom
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::onNextColorChannel<Derived, Base, types::pure845>::value) {
+		if constexpr (compare::onNextColorChannel<Derived, Base, types::pure877>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomizeObjectLayer::onNextColorChannel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onNextColorChannel<DefaultConv, Derived, Base, types::pure877>::value, Membercall>(
 				"CustomizeObjectLayer::onNextColorChannel", 
-				(void*)addresses::address845(), 
-				(void*)wrap::onNextColorChannel<Membercall, Derived, Base, types::pure845>::value
+				(void*)addresses::address877()
 			);
 		}
 
-		if constexpr (compare::onSelectColor<Derived, Base, types::pure846>::value) {
+		if constexpr (compare::onSelectColor<Derived, Base, types::pure878>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomizeObjectLayer::onSelectColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onSelectColor<DefaultConv, Derived, Base, types::pure878>::value, Membercall>(
 				"CustomizeObjectLayer::onSelectColor", 
-				(void*)addresses::address846(), 
-				(void*)wrap::onSelectColor<Membercall, Derived, Base, types::pure846>::value
+				(void*)addresses::address878()
 			);
 		}
 
-		if constexpr (compare::getActiveMode<Derived, Base, types::pure847>::value) {
+		if constexpr (compare::getActiveMode<Derived, Base, types::pure879>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function CustomizeObjectLayer::getActiveMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getActiveMode<DefaultConv, Derived, Base, types::pure879>::value, Membercall>(
 				"CustomizeObjectLayer::getActiveMode", 
-				(void*)addresses::address847(), 
-				(void*)wrap::getActiveMode<Membercall, Derived, Base, types::pure847>::value
+				(void*)addresses::address879()
 			);
 		}
 
@@ -10702,28 +10490,16 @@ struct Modify<Derived, DailyLevelPage> : ModifyBase<Modify<Derived, DailyLevelPa
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure848>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure880>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function DailyLevelPage::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure880>::value, Optcall>(
 				"DailyLevelPage::create", 
-				(void*)addresses::address848(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure848>::value
+				(void*)addresses::address880()
 			);
 		}
-
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, DialogDelegate> : ModifyBase<Modify<Derived, DialogDelegate>> {
-	using ModifyBase<Modify<Derived, DialogDelegate>>::ModifyBase;
-	using Base = DialogDelegate;
-	static void apply() {
-		using namespace geode::core::meta;
-		using namespace geode::core::meta::x86;
 
 	}
 };
@@ -10736,27 +10512,25 @@ struct Modify<Derived, DialogObject> : ModifyBase<Modify<Derived, DialogObject>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure864>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure897>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function DialogObject::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure897>::value, Optcall>(
 				"DialogObject::create", 
-				(void*)addresses::address864(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure864>::value
+				(void*)addresses::address897()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure865>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure898>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function DialogObject::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure898>::value, Membercall>(
 				"DialogObject::init", 
-				(void*)addresses::address865(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure865>::value
+				(void*)addresses::address898()
 			);
 		}
 
@@ -10771,15 +10545,14 @@ struct Modify<Derived, EditButtonBar> : ModifyBase<Modify<Derived, EditButtonBar
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::loadFromItems<Derived, Base, types::pure871>::value) {
+		if constexpr (compare::loadFromItems<Derived, Base, types::pure904>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditButtonBar::loadFromItems", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::loadFromItems<DefaultConv, Derived, Base, types::pure904>::value, Membercall>(
 				"EditButtonBar::loadFromItems", 
-				(void*)addresses::address871(), 
-				(void*)wrap::loadFromItems<Membercall, Derived, Base, types::pure871>::value
+				(void*)addresses::address904()
 			);
 		}
 
@@ -10794,15 +10567,14 @@ struct Modify<Derived, EditLevelLayer> : ModifyBase<Modify<Derived, EditLevelLay
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure873>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure906>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditLevelLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure906>::value, Optcall>(
 				"EditLevelLayer::create", 
-				(void*)addresses::address873(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure873>::value
+				(void*)addresses::address906()
 			);
 		}
 
@@ -10817,159 +10589,146 @@ struct Modify<Derived, EditorPauseLayer> : ModifyBase<Modify<Derived, EditorPaus
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::keyBackClicked<Derived, Base, types::pure877>::value) {
+		if constexpr (compare::keyBackClicked<Derived, Base, types::pure910>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::keyBackClicked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyBackClicked<DefaultConv, Derived, Base, types::pure910>::value, Thiscall>(
 				"EditorPauseLayer::keyBackClicked", 
-				(void*)addresses::address877(), 
-				(void*)wrap::keyBackClicked<Thiscall, Derived, Base, types::pure877>::value
+				(void*)addresses::address910()
 			);
 		}
 
-		if constexpr (compare::FLAlert_Clicked<Derived, Base, types::pure880>::value) {
+		if constexpr (compare::FLAlert_Clicked<Derived, Base, types::pure913>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::FLAlert_Clicked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::FLAlert_Clicked<DefaultConv, Derived, Base, types::pure913>::value, Thiscall>(
 				"EditorPauseLayer::FLAlert_Clicked", 
-				(void*)addresses::address880(), 
-				(void*)wrap::FLAlert_Clicked<Thiscall, Derived, Base, types::pure880>::value
+				(void*)addresses::address913()
 			);
 		}
 
-		if constexpr (compare::saveLevel<Derived, Base, types::pure881>::value) {
+		if constexpr (compare::saveLevel<Derived, Base, types::pure914>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::saveLevel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::saveLevel<DefaultConv, Derived, Base, types::pure914>::value, Thiscall>(
 				"EditorPauseLayer::saveLevel", 
-				(void*)addresses::address881(), 
-				(void*)wrap::saveLevel<Thiscall, Derived, Base, types::pure881>::value
+				(void*)addresses::address914()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure882>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure915>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure915>::value, Membercall>(
 				"EditorPauseLayer::init", 
-				(void*)addresses::address882(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure882>::value
+				(void*)addresses::address915()
 			);
 		}
 
-		if constexpr (compare::onExitEditor<Derived, Base, types::pure883>::value) {
+		if constexpr (compare::onExitEditor<Derived, Base, types::pure916>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::onExitEditor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onExitEditor<DefaultConv, Derived, Base, types::pure916>::value, Membercall>(
 				"EditorPauseLayer::onExitEditor", 
-				(void*)addresses::address883(), 
-				(void*)wrap::onExitEditor<Membercall, Derived, Base, types::pure883>::value
+				(void*)addresses::address916()
 			);
 		}
 
-		if constexpr (compare::playStep2<Derived, Base, types::pure884>::value) {
+		if constexpr (compare::playStep2<Derived, Base, types::pure917>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::playStep2", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::playStep2<DefaultConv, Derived, Base, types::pure917>::value, Thiscall>(
 				"EditorPauseLayer::playStep2", 
-				(void*)addresses::address884(), 
-				(void*)wrap::playStep2<Thiscall, Derived, Base, types::pure884>::value
+				(void*)addresses::address917()
 			);
 		}
 
-		if constexpr (compare::onResume<Derived, Base, types::pure885>::value) {
+		if constexpr (compare::onResume<Derived, Base, types::pure918>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::onResume", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onResume<DefaultConv, Derived, Base, types::pure918>::value, Membercall>(
 				"EditorPauseLayer::onResume", 
-				(void*)addresses::address885(), 
-				(void*)wrap::onResume<Membercall, Derived, Base, types::pure885>::value
+				(void*)addresses::address918()
 			);
 		}
 
-		if constexpr (compare::onSaveAndPlay<Derived, Base, types::pure886>::value) {
+		if constexpr (compare::onSaveAndPlay<Derived, Base, types::pure919>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::onSaveAndPlay", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onSaveAndPlay<DefaultConv, Derived, Base, types::pure919>::value, Membercall>(
 				"EditorPauseLayer::onSaveAndPlay", 
-				(void*)addresses::address886(), 
-				(void*)wrap::onSaveAndPlay<Membercall, Derived, Base, types::pure886>::value
+				(void*)addresses::address919()
 			);
 		}
 
-		if constexpr (compare::onSaveAndExit<Derived, Base, types::pure887>::value) {
+		if constexpr (compare::onSaveAndExit<Derived, Base, types::pure920>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::onSaveAndExit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onSaveAndExit<DefaultConv, Derived, Base, types::pure920>::value, Membercall>(
 				"EditorPauseLayer::onSaveAndExit", 
-				(void*)addresses::address887(), 
-				(void*)wrap::onSaveAndExit<Membercall, Derived, Base, types::pure887>::value
+				(void*)addresses::address920()
 			);
 		}
 
-		if constexpr (compare::onSave<Derived, Base, types::pure888>::value) {
+		if constexpr (compare::onSave<Derived, Base, types::pure921>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::onSave", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onSave<DefaultConv, Derived, Base, types::pure921>::value, Membercall>(
 				"EditorPauseLayer::onSave", 
-				(void*)addresses::address888(), 
-				(void*)wrap::onSave<Membercall, Derived, Base, types::pure888>::value
+				(void*)addresses::address921()
 			);
 		}
 
-		if constexpr (compare::onExitNoSave<Derived, Base, types::pure889>::value) {
+		if constexpr (compare::onExitNoSave<Derived, Base, types::pure922>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::onExitNoSave", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onExitNoSave<DefaultConv, Derived, Base, types::pure922>::value, Membercall>(
 				"EditorPauseLayer::onExitNoSave", 
-				(void*)addresses::address889(), 
-				(void*)wrap::onExitNoSave<Membercall, Derived, Base, types::pure889>::value
+				(void*)addresses::address922()
 			);
 		}
 
-		if constexpr (compare::uncheckAllPortals<Derived, Base, types::pure890>::value) {
+		if constexpr (compare::uncheckAllPortals<Derived, Base, types::pure923>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::uncheckAllPortals", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::uncheckAllPortals<DefaultConv, Derived, Base, types::pure923>::value, Membercall>(
 				"EditorPauseLayer::uncheckAllPortals", 
-				(void*)addresses::address890(), 
-				(void*)wrap::uncheckAllPortals<Membercall, Derived, Base, types::pure890>::value
+				(void*)addresses::address923()
 			);
 		}
 
-		if constexpr (compare::constructor<Derived, Base, types::pure891>::value) {
+		if constexpr (compare::constructor<Derived, Base, types::pure924>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorPauseLayer::constructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constructor<DefaultConv, Derived, Base, types::pure924>::value, Thiscall>(
 				"EditorPauseLayer::constructor", 
-				(void*)addresses::address891(), 
-				(void*)wrap::constructor<Thiscall, Derived, Base, types::pure891>::value
+				(void*)addresses::address924()
 			);
 		}
 
@@ -10984,879 +10743,806 @@ struct Modify<Derived, EditorUI> : ModifyBase<Modify<Derived, EditorUI>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::deselectAll<Derived, Base, types::pure895>::value) {
+		if constexpr (compare::deselectAll<Derived, Base, types::pure928>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::deselectAll", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::deselectAll<DefaultConv, Derived, Base, types::pure928>::value, Thiscall>(
 				"EditorUI::deselectAll", 
-				(void*)addresses::address895(), 
-				(void*)wrap::deselectAll<Thiscall, Derived, Base, types::pure895>::value
+				(void*)addresses::address928()
 			);
 		}
 
-		if constexpr (compare::disableButton<Derived, Base, types::pure897>::value) {
+		if constexpr (compare::disableButton<Derived, Base, types::pure930>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::disableButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::disableButton<DefaultConv, Derived, Base, types::pure930>::value, Membercall>(
 				"EditorUI::disableButton", 
-				(void*)addresses::address897(), 
-				(void*)wrap::disableButton<Membercall, Derived, Base, types::pure897>::value
+				(void*)addresses::address930()
 			);
 		}
 
-		if constexpr (compare::editObject<Derived, Base, types::pure899>::value) {
+		if constexpr (compare::editObject<Derived, Base, types::pure932>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::editObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::editObject<DefaultConv, Derived, Base, types::pure932>::value, Membercall>(
 				"EditorUI::editObject", 
-				(void*)addresses::address899(), 
-				(void*)wrap::editObject<Membercall, Derived, Base, types::pure899>::value
+				(void*)addresses::address932()
 			);
 		}
 
-		if constexpr (compare::enableButton<Derived, Base, types::pure900>::value) {
+		if constexpr (compare::enableButton<Derived, Base, types::pure933>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::enableButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::enableButton<DefaultConv, Derived, Base, types::pure933>::value, Membercall>(
 				"EditorUI::enableButton", 
-				(void*)addresses::address900(), 
-				(void*)wrap::enableButton<Membercall, Derived, Base, types::pure900>::value
+				(void*)addresses::address933()
 			);
 		}
 
-		if constexpr (compare::getCreateBtn<Derived, Base, types::pure901>::value) {
+		if constexpr (compare::getCreateBtn<Derived, Base, types::pure934>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::getCreateBtn", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getCreateBtn<DefaultConv, Derived, Base, types::pure934>::value, Membercall>(
 				"EditorUI::getCreateBtn", 
-				(void*)addresses::address901(), 
-				(void*)wrap::getCreateBtn<Membercall, Derived, Base, types::pure901>::value
+				(void*)addresses::address934()
 			);
 		}
 
-		if constexpr (compare::getGroupCenter<Derived, Base, types::pure902>::value) {
+		if constexpr (compare::getGroupCenter<Derived, Base, types::pure935>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::getGroupCenter", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getGroupCenter<DefaultConv, Derived, Base, types::pure935>::value, Membercall>(
 				"EditorUI::getGroupCenter", 
-				(void*)addresses::address902(), 
-				(void*)wrap::getGroupCenter<Membercall, Derived, Base, types::pure902>::value
+				(void*)addresses::address935()
 			);
 		}
 
-		if constexpr (compare::getSelectedObjects<Derived, Base, types::pure903>::value) {
+		if constexpr (compare::getSelectedObjects<Derived, Base, types::pure936>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::getSelectedObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getSelectedObjects<DefaultConv, Derived, Base, types::pure936>::value, Thiscall>(
 				"EditorUI::getSelectedObjects", 
-				(void*)addresses::address903(), 
-				(void*)wrap::getSelectedObjects<Thiscall, Derived, Base, types::pure903>::value
+				(void*)addresses::address936()
 			);
 		}
 
-		if constexpr (compare::keyDown<Derived, Base, types::pure908>::value) {
+		if constexpr (compare::keyDown<Derived, Base, types::pure941>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::keyDown", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyDown<DefaultConv, Derived, Base, types::pure941>::value, Thiscall>(
 				"EditorUI::keyDown", 
-				(void*)addresses::address908(), 
-				(void*)wrap::keyDown<Thiscall, Derived, Base, types::pure908>::value
+				(void*)addresses::address941()
 			);
 		}
 
-		if constexpr (compare::moveObject<Derived, Base, types::pure909>::value) {
+		if constexpr (compare::moveObject<Derived, Base, types::pure942>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::moveObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::moveObject<DefaultConv, Derived, Base, types::pure942>::value, Membercall>(
 				"EditorUI::moveObject", 
-				(void*)addresses::address909(), 
-				(void*)wrap::moveObject<Membercall, Derived, Base, types::pure909>::value
+				(void*)addresses::address942()
 			);
 		}
 
-		if constexpr (compare::onDuplicate<Derived, Base, types::pure910>::value) {
+		if constexpr (compare::onDuplicate<Derived, Base, types::pure943>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onDuplicate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onDuplicate<DefaultConv, Derived, Base, types::pure943>::value, Membercall>(
 				"EditorUI::onDuplicate", 
-				(void*)addresses::address910(), 
-				(void*)wrap::onDuplicate<Membercall, Derived, Base, types::pure910>::value
+				(void*)addresses::address943()
 			);
 		}
 
-		if constexpr (compare::pasteObjects<Derived, Base, types::pure911>::value) {
+		if constexpr (compare::pasteObjects<Derived, Base, types::pure944>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::pasteObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pasteObjects<DefaultConv, Derived, Base, types::pure944>::value, Membercall>(
 				"EditorUI::pasteObjects", 
-				(void*)addresses::address911(), 
-				(void*)wrap::pasteObjects<Membercall, Derived, Base, types::pure911>::value
+				(void*)addresses::address944()
 			);
 		}
 
-		if constexpr (compare::redoLastAction<Derived, Base, types::pure914>::value) {
+		if constexpr (compare::redoLastAction<Derived, Base, types::pure947>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::redoLastAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::redoLastAction<DefaultConv, Derived, Base, types::pure947>::value, Membercall>(
 				"EditorUI::redoLastAction", 
-				(void*)addresses::address914(), 
-				(void*)wrap::redoLastAction<Membercall, Derived, Base, types::pure914>::value
+				(void*)addresses::address947()
 			);
 		}
 
-		if constexpr (compare::scaleObjects<Derived, Base, types::pure917>::value) {
+		if constexpr (compare::scaleObjects<Derived, Base, types::pure950>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::scaleObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::scaleObjects<DefaultConv, Derived, Base, types::pure950>::value, Membercall>(
 				"EditorUI::scaleObjects", 
-				(void*)addresses::address917(), 
-				(void*)wrap::scaleObjects<Membercall, Derived, Base, types::pure917>::value
+				(void*)addresses::address950()
 			);
 		}
 
-		if constexpr (compare::selectObjects<Derived, Base, types::pure918>::value) {
+		if constexpr (compare::selectObjects<Derived, Base, types::pure951>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::selectObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selectObjects<DefaultConv, Derived, Base, types::pure951>::value, Membercall>(
 				"EditorUI::selectObjects", 
-				(void*)addresses::address918(), 
-				(void*)wrap::selectObjects<Membercall, Derived, Base, types::pure918>::value
+				(void*)addresses::address951()
 			);
 		}
 
-		if constexpr (compare::undoLastAction<Derived, Base, types::pure920>::value) {
+		if constexpr (compare::undoLastAction<Derived, Base, types::pure953>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::undoLastAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::undoLastAction<DefaultConv, Derived, Base, types::pure953>::value, Membercall>(
 				"EditorUI::undoLastAction", 
-				(void*)addresses::address920(), 
-				(void*)wrap::undoLastAction<Membercall, Derived, Base, types::pure920>::value
+				(void*)addresses::address953()
 			);
 		}
 
-		if constexpr (compare::updateButtons<Derived, Base, types::pure921>::value) {
+		if constexpr (compare::updateButtons<Derived, Base, types::pure954>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::updateButtons", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateButtons<DefaultConv, Derived, Base, types::pure954>::value, Thiscall>(
 				"EditorUI::updateButtons", 
-				(void*)addresses::address921(), 
-				(void*)wrap::updateButtons<Thiscall, Derived, Base, types::pure921>::value
+				(void*)addresses::address954()
 			);
 		}
 
-		if constexpr (compare::updateObjectInfoLabel<Derived, Base, types::pure922>::value) {
+		if constexpr (compare::updateObjectInfoLabel<Derived, Base, types::pure955>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::updateObjectInfoLabel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateObjectInfoLabel<DefaultConv, Derived, Base, types::pure955>::value, Thiscall>(
 				"EditorUI::updateObjectInfoLabel", 
-				(void*)addresses::address922(), 
-				(void*)wrap::updateObjectInfoLabel<Thiscall, Derived, Base, types::pure922>::value
+				(void*)addresses::address955()
 			);
 		}
 
-		if constexpr (compare::updateSlider<Derived, Base, types::pure923>::value) {
+		if constexpr (compare::updateSlider<Derived, Base, types::pure956>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::updateSlider", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateSlider<DefaultConv, Derived, Base, types::pure956>::value, Thiscall>(
 				"EditorUI::updateSlider", 
-				(void*)addresses::address923(), 
-				(void*)wrap::updateSlider<Thiscall, Derived, Base, types::pure923>::value
+				(void*)addresses::address956()
 			);
 		}
 
-		if constexpr (compare::updateZoom<Derived, Base, types::pure924>::value) {
+		if constexpr (compare::updateZoom<Derived, Base, types::pure957>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::updateZoom", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateZoom<DefaultConv, Derived, Base, types::pure957>::value, Membercall>(
 				"EditorUI::updateZoom", 
-				(void*)addresses::address924(), 
-				(void*)wrap::updateZoom<Membercall, Derived, Base, types::pure924>::value
+				(void*)addresses::address957()
 			);
 		}
 
-		if constexpr (compare::selectObject<Derived, Base, types::pure925>::value) {
+		if constexpr (compare::selectObject<Derived, Base, types::pure958>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::selectObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selectObject<DefaultConv, Derived, Base, types::pure958>::value, Membercall>(
 				"EditorUI::selectObject", 
-				(void*)addresses::address925(), 
-				(void*)wrap::selectObject<Membercall, Derived, Base, types::pure925>::value
+				(void*)addresses::address958()
 			);
 		}
 
-		if constexpr (compare::selectAll<Derived, Base, types::pure926>::value) {
+		if constexpr (compare::selectAll<Derived, Base, types::pure959>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::selectAll", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selectAll<DefaultConv, Derived, Base, types::pure959>::value, Thiscall>(
 				"EditorUI::selectAll", 
-				(void*)addresses::address926(), 
-				(void*)wrap::selectAll<Thiscall, Derived, Base, types::pure926>::value
+				(void*)addresses::address959()
 			);
 		}
 
-		if constexpr (compare::selectAllWithDirection<Derived, Base, types::pure927>::value) {
+		if constexpr (compare::selectAllWithDirection<Derived, Base, types::pure960>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::selectAllWithDirection", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selectAllWithDirection<DefaultConv, Derived, Base, types::pure960>::value, Membercall>(
 				"EditorUI::selectAllWithDirection", 
-				(void*)addresses::address927(), 
-				(void*)wrap::selectAllWithDirection<Membercall, Derived, Base, types::pure927>::value
+				(void*)addresses::address960()
 			);
 		}
 
-		if constexpr (compare::getTouchPoint<Derived, Base, types::pure928>::value) {
+		if constexpr (compare::getTouchPoint<Derived, Base, types::pure961>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::getTouchPoint", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getTouchPoint<DefaultConv, Derived, Base, types::pure961>::value, Membercall>(
 				"EditorUI::getTouchPoint", 
-				(void*)addresses::address928(), 
-				(void*)wrap::getTouchPoint<Membercall, Derived, Base, types::pure928>::value
+				(void*)addresses::address961()
 			);
 		}
 
-		if constexpr (compare::onSelectBuildTab<Derived, Base, types::pure929>::value) {
+		if constexpr (compare::onSelectBuildTab<Derived, Base, types::pure962>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onSelectBuildTab", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onSelectBuildTab<DefaultConv, Derived, Base, types::pure962>::value, Membercall>(
 				"EditorUI::onSelectBuildTab", 
-				(void*)addresses::address929(), 
-				(void*)wrap::onSelectBuildTab<Membercall, Derived, Base, types::pure929>::value
+				(void*)addresses::address962()
 			);
 		}
 
-		if constexpr (compare::onCreateButton<Derived, Base, types::pure930>::value) {
+		if constexpr (compare::onCreateButton<Derived, Base, types::pure963>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onCreateButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onCreateButton<DefaultConv, Derived, Base, types::pure963>::value, Membercall>(
 				"EditorUI::onCreateButton", 
-				(void*)addresses::address930(), 
-				(void*)wrap::onCreateButton<Membercall, Derived, Base, types::pure930>::value
+				(void*)addresses::address963()
 			);
 		}
 
-		if constexpr (compare::getSpriteButton<Derived, Base, types::pure931>::value) {
+		if constexpr (compare::getSpriteButton<Derived, Base, types::pure964>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::getSpriteButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getSpriteButton<DefaultConv, Derived, Base, types::pure964>::value, Membercall>(
 				"EditorUI::getSpriteButton", 
-				(void*)addresses::address931(), 
-				(void*)wrap::getSpriteButton<Membercall, Derived, Base, types::pure931>::value
+				(void*)addresses::address964()
 			);
 		}
 
-		if constexpr (compare::offsetForKey<Derived, Base, types::pure932>::value) {
+		if constexpr (compare::offsetForKey<Derived, Base, types::pure965>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::offsetForKey", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::offsetForKey<DefaultConv, Derived, Base, types::pure965>::value, Membercall>(
 				"EditorUI::offsetForKey", 
-				(void*)addresses::address932(), 
-				(void*)wrap::offsetForKey<Membercall, Derived, Base, types::pure932>::value
+				(void*)addresses::address965()
 			);
 		}
 
-		if constexpr (compare::updateDeleteMenu<Derived, Base, types::pure933>::value) {
+		if constexpr (compare::updateDeleteMenu<Derived, Base, types::pure966>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::updateDeleteMenu", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateDeleteMenu<DefaultConv, Derived, Base, types::pure966>::value, Thiscall>(
 				"EditorUI::updateDeleteMenu", 
-				(void*)addresses::address933(), 
-				(void*)wrap::updateDeleteMenu<Thiscall, Derived, Base, types::pure933>::value
+				(void*)addresses::address966()
 			);
 		}
 
-		if constexpr (compare::updateCreateMenu<Derived, Base, types::pure934>::value) {
+		if constexpr (compare::updateCreateMenu<Derived, Base, types::pure967>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::updateCreateMenu", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateCreateMenu<DefaultConv, Derived, Base, types::pure967>::value, Membercall>(
 				"EditorUI::updateCreateMenu", 
-				(void*)addresses::address934(), 
-				(void*)wrap::updateCreateMenu<Membercall, Derived, Base, types::pure934>::value
+				(void*)addresses::address967()
 			);
 		}
 
-		if constexpr (compare::toggleMode<Derived, Base, types::pure935>::value) {
+		if constexpr (compare::toggleMode<Derived, Base, types::pure968>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::toggleMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleMode<DefaultConv, Derived, Base, types::pure968>::value, Membercall>(
 				"EditorUI::toggleMode", 
-				(void*)addresses::address935(), 
-				(void*)wrap::toggleMode<Membercall, Derived, Base, types::pure935>::value
+				(void*)addresses::address968()
 			);
 		}
 
-		if constexpr (compare::zoomIn<Derived, Base, types::pure936>::value) {
+		if constexpr (compare::zoomIn<Derived, Base, types::pure969>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::zoomIn", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::zoomIn<DefaultConv, Derived, Base, types::pure969>::value, Membercall>(
 				"EditorUI::zoomIn", 
-				(void*)addresses::address936(), 
-				(void*)wrap::zoomIn<Membercall, Derived, Base, types::pure936>::value
+				(void*)addresses::address969()
 			);
 		}
 
-		if constexpr (compare::zoomOut<Derived, Base, types::pure937>::value) {
+		if constexpr (compare::zoomOut<Derived, Base, types::pure970>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::zoomOut", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::zoomOut<DefaultConv, Derived, Base, types::pure970>::value, Membercall>(
 				"EditorUI::zoomOut", 
-				(void*)addresses::address937(), 
-				(void*)wrap::zoomOut<Membercall, Derived, Base, types::pure937>::value
+				(void*)addresses::address970()
 			);
 		}
 
-		if constexpr (compare::rotateObjects<Derived, Base, types::pure938>::value) {
+		if constexpr (compare::rotateObjects<Derived, Base, types::pure971>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::rotateObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::rotateObjects<DefaultConv, Derived, Base, types::pure971>::value, Membercall>(
 				"EditorUI::rotateObjects", 
-				(void*)addresses::address938(), 
-				(void*)wrap::rotateObjects<Membercall, Derived, Base, types::pure938>::value
+				(void*)addresses::address971()
 			);
 		}
 
-		if constexpr (compare::updateGridNodeSize<Derived, Base, types::pure939>::value) {
+		if constexpr (compare::updateGridNodeSize<Derived, Base, types::pure972>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::updateGridNodeSize", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateGridNodeSize<DefaultConv, Derived, Base, types::pure972>::value, Thiscall>(
 				"EditorUI::updateGridNodeSize", 
-				(void*)addresses::address939(), 
-				(void*)wrap::updateGridNodeSize<Thiscall, Derived, Base, types::pure939>::value
+				(void*)addresses::address972()
 			);
 		}
 
-		if constexpr (compare::updateSpecialUIElements<Derived, Base, types::pure940>::value) {
+		if constexpr (compare::updateSpecialUIElements<Derived, Base, types::pure973>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::updateSpecialUIElements", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateSpecialUIElements<DefaultConv, Derived, Base, types::pure973>::value, Thiscall>(
 				"EditorUI::updateSpecialUIElements", 
-				(void*)addresses::address940(), 
-				(void*)wrap::updateSpecialUIElements<Thiscall, Derived, Base, types::pure940>::value
+				(void*)addresses::address973()
 			);
 		}
 
-		if constexpr (compare::constrainGameLayerPosition<Derived, Base, types::pure941>::value) {
+		if constexpr (compare::constrainGameLayerPosition<Derived, Base, types::pure974>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::constrainGameLayerPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constrainGameLayerPosition<DefaultConv, Derived, Base, types::pure974>::value, Membercall>(
 				"EditorUI::constrainGameLayerPosition", 
-				(void*)addresses::address941(), 
-				(void*)wrap::constrainGameLayerPosition<Membercall, Derived, Base, types::pure941>::value
+				(void*)addresses::address974()
 			);
 		}
 
-		if constexpr (compare::moveGameLayer<Derived, Base, types::pure942>::value) {
+		if constexpr (compare::moveGameLayer<Derived, Base, types::pure975>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::moveGameLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::moveGameLayer<DefaultConv, Derived, Base, types::pure975>::value, Membercall>(
 				"EditorUI::moveGameLayer", 
-				(void*)addresses::address942(), 
-				(void*)wrap::moveGameLayer<Membercall, Derived, Base, types::pure942>::value
+				(void*)addresses::address975()
 			);
 		}
 
-		if constexpr (compare::showUI<Derived, Base, types::pure943>::value) {
+		if constexpr (compare::showUI<Derived, Base, types::pure976>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::showUI", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::showUI<DefaultConv, Derived, Base, types::pure976>::value, Membercall>(
 				"EditorUI::showUI", 
-				(void*)addresses::address943(), 
-				(void*)wrap::showUI<Membercall, Derived, Base, types::pure943>::value
+				(void*)addresses::address976()
 			);
 		}
 
-		if constexpr (compare::editObject2<Derived, Base, types::pure944>::value) {
+		if constexpr (compare::editObject2<Derived, Base, types::pure977>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::editObject2", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::editObject2<DefaultConv, Derived, Base, types::pure977>::value, Membercall>(
 				"EditorUI::editObject2", 
-				(void*)addresses::address944(), 
-				(void*)wrap::editObject2<Membercall, Derived, Base, types::pure944>::value
+				(void*)addresses::address977()
 			);
 		}
 
-		if constexpr (compare::editGroup<Derived, Base, types::pure945>::value) {
+		if constexpr (compare::editGroup<Derived, Base, types::pure978>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::editGroup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::editGroup<DefaultConv, Derived, Base, types::pure978>::value, Membercall>(
 				"EditorUI::editGroup", 
-				(void*)addresses::address945(), 
-				(void*)wrap::editGroup<Membercall, Derived, Base, types::pure945>::value
+				(void*)addresses::address978()
 			);
 		}
 
-		if constexpr (compare::moveObjectCall<Derived, Base, types::pure946>::value) {
+		if constexpr (compare::moveObjectCall<Derived, Base, types::pure979>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::moveObjectCall", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::moveObjectCall<DefaultConv, Derived, Base, types::pure979>::value, Membercall>(
 				"EditorUI::moveObjectCall", 
-				(void*)addresses::address946(), 
-				(void*)wrap::moveObjectCall<Membercall, Derived, Base, types::pure946>::value
+				(void*)addresses::address979()
 			);
 		}
 
-		if constexpr (compare::transformObjectCall<Derived, Base, types::pure947>::value) {
+		if constexpr (compare::transformObjectCall<Derived, Base, types::pure980>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::transformObjectCall", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::transformObjectCall<DefaultConv, Derived, Base, types::pure980>::value, Membercall>(
 				"EditorUI::transformObjectCall", 
-				(void*)addresses::address947(), 
-				(void*)wrap::transformObjectCall<Membercall, Derived, Base, types::pure947>::value
+				(void*)addresses::address980()
 			);
 		}
 
-		if constexpr (compare::onDeleteSelected<Derived, Base, types::pure948>::value) {
+		if constexpr (compare::onDeleteSelected<Derived, Base, types::pure981>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onDeleteSelected", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onDeleteSelected<DefaultConv, Derived, Base, types::pure981>::value, Membercall>(
 				"EditorUI::onDeleteSelected", 
-				(void*)addresses::address948(), 
-				(void*)wrap::onDeleteSelected<Membercall, Derived, Base, types::pure948>::value
+				(void*)addresses::address981()
 			);
 		}
 
-		if constexpr (compare::onCopy<Derived, Base, types::pure949>::value) {
+		if constexpr (compare::onCopy<Derived, Base, types::pure982>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onCopy", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onCopy<DefaultConv, Derived, Base, types::pure982>::value, Membercall>(
 				"EditorUI::onCopy", 
-				(void*)addresses::address949(), 
-				(void*)wrap::onCopy<Membercall, Derived, Base, types::pure949>::value
+				(void*)addresses::address982()
 			);
 		}
 
-		if constexpr (compare::onPaste<Derived, Base, types::pure950>::value) {
+		if constexpr (compare::onPaste<Derived, Base, types::pure983>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onPaste", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPaste<DefaultConv, Derived, Base, types::pure983>::value, Membercall>(
 				"EditorUI::onPaste", 
-				(void*)addresses::address950(), 
-				(void*)wrap::onPaste<Membercall, Derived, Base, types::pure950>::value
+				(void*)addresses::address983()
 			);
 		}
 
-		if constexpr (compare::toggleEnableRotate<Derived, Base, types::pure951>::value) {
+		if constexpr (compare::toggleEnableRotate<Derived, Base, types::pure984>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::toggleEnableRotate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleEnableRotate<DefaultConv, Derived, Base, types::pure984>::value, Membercall>(
 				"EditorUI::toggleEnableRotate", 
-				(void*)addresses::address951(), 
-				(void*)wrap::toggleEnableRotate<Membercall, Derived, Base, types::pure951>::value
+				(void*)addresses::address984()
 			);
 		}
 
-		if constexpr (compare::toggleFreeMove<Derived, Base, types::pure952>::value) {
+		if constexpr (compare::toggleFreeMove<Derived, Base, types::pure985>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::toggleFreeMove", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleFreeMove<DefaultConv, Derived, Base, types::pure985>::value, Membercall>(
 				"EditorUI::toggleFreeMove", 
-				(void*)addresses::address952(), 
-				(void*)wrap::toggleFreeMove<Membercall, Derived, Base, types::pure952>::value
+				(void*)addresses::address985()
 			);
 		}
 
-		if constexpr (compare::toggleSwipe<Derived, Base, types::pure953>::value) {
+		if constexpr (compare::toggleSwipe<Derived, Base, types::pure986>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::toggleSwipe", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleSwipe<DefaultConv, Derived, Base, types::pure986>::value, Membercall>(
 				"EditorUI::toggleSwipe", 
-				(void*)addresses::address953(), 
-				(void*)wrap::toggleSwipe<Membercall, Derived, Base, types::pure953>::value
+				(void*)addresses::address986()
 			);
 		}
 
-		if constexpr (compare::toggleSnap<Derived, Base, types::pure954>::value) {
+		if constexpr (compare::toggleSnap<Derived, Base, types::pure987>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::toggleSnap", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleSnap<DefaultConv, Derived, Base, types::pure987>::value, Membercall>(
 				"EditorUI::toggleSnap", 
-				(void*)addresses::address954(), 
-				(void*)wrap::toggleSnap<Membercall, Derived, Base, types::pure954>::value
+				(void*)addresses::address987()
 			);
 		}
 
-		if constexpr (compare::onPlayback<Derived, Base, types::pure955>::value) {
+		if constexpr (compare::onPlayback<Derived, Base, types::pure988>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onPlayback", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPlayback<DefaultConv, Derived, Base, types::pure988>::value, Membercall>(
 				"EditorUI::onPlayback", 
-				(void*)addresses::address955(), 
-				(void*)wrap::onPlayback<Membercall, Derived, Base, types::pure955>::value
+				(void*)addresses::address988()
 			);
 		}
 
-		if constexpr (compare::onPlaytest<Derived, Base, types::pure956>::value) {
+		if constexpr (compare::onPlaytest<Derived, Base, types::pure989>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onPlaytest", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPlaytest<DefaultConv, Derived, Base, types::pure989>::value, Membercall>(
 				"EditorUI::onPlaytest", 
-				(void*)addresses::address956(), 
-				(void*)wrap::onPlaytest<Membercall, Derived, Base, types::pure956>::value
+				(void*)addresses::address989()
 			);
 		}
 
-		if constexpr (compare::onStopPlaytest<Derived, Base, types::pure957>::value) {
+		if constexpr (compare::onStopPlaytest<Derived, Base, types::pure990>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onStopPlaytest", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onStopPlaytest<DefaultConv, Derived, Base, types::pure990>::value, Membercall>(
 				"EditorUI::onStopPlaytest", 
-				(void*)addresses::address957(), 
-				(void*)wrap::onStopPlaytest<Membercall, Derived, Base, types::pure957>::value
+				(void*)addresses::address990()
 			);
 		}
 
-		if constexpr (compare::onGroupUp<Derived, Base, types::pure958>::value) {
+		if constexpr (compare::onGroupUp<Derived, Base, types::pure991>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onGroupUp", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onGroupUp<DefaultConv, Derived, Base, types::pure991>::value, Membercall>(
 				"EditorUI::onGroupUp", 
-				(void*)addresses::address958(), 
-				(void*)wrap::onGroupUp<Membercall, Derived, Base, types::pure958>::value
+				(void*)addresses::address991()
 			);
 		}
 
-		if constexpr (compare::onGroupDown<Derived, Base, types::pure959>::value) {
+		if constexpr (compare::onGroupDown<Derived, Base, types::pure992>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onGroupDown", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onGroupDown<DefaultConv, Derived, Base, types::pure992>::value, Membercall>(
 				"EditorUI::onGroupDown", 
-				(void*)addresses::address959(), 
-				(void*)wrap::onGroupDown<Membercall, Derived, Base, types::pure959>::value
+				(void*)addresses::address992()
 			);
 		}
 
-		if constexpr (compare::selectBuildTab<Derived, Base, types::pure960>::value) {
+		if constexpr (compare::selectBuildTab<Derived, Base, types::pure993>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::selectBuildTab", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selectBuildTab<DefaultConv, Derived, Base, types::pure993>::value, Membercall>(
 				"EditorUI::selectBuildTab", 
-				(void*)addresses::address960(), 
-				(void*)wrap::selectBuildTab<Membercall, Derived, Base, types::pure960>::value
+				(void*)addresses::address993()
 			);
 		}
 
-		if constexpr (compare::onPause<Derived, Base, types::pure961>::value) {
+		if constexpr (compare::onPause<Derived, Base, types::pure994>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onPause", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPause<DefaultConv, Derived, Base, types::pure994>::value, Membercall>(
 				"EditorUI::onPause", 
-				(void*)addresses::address961(), 
-				(void*)wrap::onPause<Membercall, Derived, Base, types::pure961>::value
+				(void*)addresses::address994()
 			);
 		}
 
-		if constexpr (compare::onSettings<Derived, Base, types::pure962>::value) {
+		if constexpr (compare::onSettings<Derived, Base, types::pure995>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onSettings", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onSettings<DefaultConv, Derived, Base, types::pure995>::value, Membercall>(
 				"EditorUI::onSettings", 
-				(void*)addresses::address962(), 
-				(void*)wrap::onSettings<Membercall, Derived, Base, types::pure962>::value
+				(void*)addresses::address995()
 			);
 		}
 
-		if constexpr (compare::activateRotationControl<Derived, Base, types::pure963>::value) {
+		if constexpr (compare::activateRotationControl<Derived, Base, types::pure996>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::activateRotationControl", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activateRotationControl<DefaultConv, Derived, Base, types::pure996>::value, Membercall>(
 				"EditorUI::activateRotationControl", 
-				(void*)addresses::address963(), 
-				(void*)wrap::activateRotationControl<Membercall, Derived, Base, types::pure963>::value
+				(void*)addresses::address996()
 			);
 		}
 
-		if constexpr (compare::activateScaleControl<Derived, Base, types::pure964>::value) {
+		if constexpr (compare::activateScaleControl<Derived, Base, types::pure997>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::activateScaleControl", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activateScaleControl<DefaultConv, Derived, Base, types::pure997>::value, Membercall>(
 				"EditorUI::activateScaleControl", 
-				(void*)addresses::address964(), 
-				(void*)wrap::activateScaleControl<Membercall, Derived, Base, types::pure964>::value
+				(void*)addresses::address997()
 			);
 		}
 
-		if constexpr (compare::dynamicGroupUpdate<Derived, Base, types::pure965>::value) {
+		if constexpr (compare::dynamicGroupUpdate<Derived, Base, types::pure998>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::dynamicGroupUpdate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::dynamicGroupUpdate<DefaultConv, Derived, Base, types::pure998>::value, Membercall>(
 				"EditorUI::dynamicGroupUpdate", 
-				(void*)addresses::address965(), 
-				(void*)wrap::dynamicGroupUpdate<Membercall, Derived, Base, types::pure965>::value
+				(void*)addresses::address998()
 			);
 		}
 
-		if constexpr (compare::createRockOutline<Derived, Base, types::pure966>::value) {
+		if constexpr (compare::createRockOutline<Derived, Base, types::pure999>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::createRockOutline", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createRockOutline<DefaultConv, Derived, Base, types::pure999>::value, Thiscall>(
 				"EditorUI::createRockOutline", 
-				(void*)addresses::address966(), 
-				(void*)wrap::createRockOutline<Thiscall, Derived, Base, types::pure966>::value
+				(void*)addresses::address999()
 			);
 		}
 
-		if constexpr (compare::createRockEdges<Derived, Base, types::pure967>::value) {
+		if constexpr (compare::createRockEdges<Derived, Base, types::pure1000>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::createRockEdges", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createRockEdges<DefaultConv, Derived, Base, types::pure1000>::value, Thiscall>(
 				"EditorUI::createRockEdges", 
-				(void*)addresses::address967(), 
-				(void*)wrap::createRockEdges<Thiscall, Derived, Base, types::pure967>::value
+				(void*)addresses::address1000()
 			);
 		}
 
-		if constexpr (compare::createRockBase<Derived, Base, types::pure968>::value) {
+		if constexpr (compare::createRockBase<Derived, Base, types::pure1001>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::createRockBase", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createRockBase<DefaultConv, Derived, Base, types::pure1001>::value, Thiscall>(
 				"EditorUI::createRockBase", 
-				(void*)addresses::address968(), 
-				(void*)wrap::createRockBase<Thiscall, Derived, Base, types::pure968>::value
+				(void*)addresses::address1001()
 			);
 		}
 
-		if constexpr (compare::onCopyState<Derived, Base, types::pure969>::value) {
+		if constexpr (compare::onCopyState<Derived, Base, types::pure1002>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onCopyState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onCopyState<DefaultConv, Derived, Base, types::pure1002>::value, Membercall>(
 				"EditorUI::onCopyState", 
-				(void*)addresses::address969(), 
-				(void*)wrap::onCopyState<Membercall, Derived, Base, types::pure969>::value
+				(void*)addresses::address1002()
 			);
 		}
 
-		if constexpr (compare::onPasteColor<Derived, Base, types::pure970>::value) {
+		if constexpr (compare::onPasteColor<Derived, Base, types::pure1003>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onPasteColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPasteColor<DefaultConv, Derived, Base, types::pure1003>::value, Membercall>(
 				"EditorUI::onPasteColor", 
-				(void*)addresses::address970(), 
-				(void*)wrap::onPasteColor<Membercall, Derived, Base, types::pure970>::value
+				(void*)addresses::address1003()
 			);
 		}
 
-		if constexpr (compare::onPasteState<Derived, Base, types::pure971>::value) {
+		if constexpr (compare::onPasteState<Derived, Base, types::pure1004>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onPasteState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPasteState<DefaultConv, Derived, Base, types::pure1004>::value, Membercall>(
 				"EditorUI::onPasteState", 
-				(void*)addresses::address971(), 
-				(void*)wrap::onPasteState<Membercall, Derived, Base, types::pure971>::value
+				(void*)addresses::address1004()
 			);
 		}
 
-		if constexpr (compare::onGroupSticky<Derived, Base, types::pure972>::value) {
+		if constexpr (compare::onGroupSticky<Derived, Base, types::pure1005>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onGroupSticky", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onGroupSticky<DefaultConv, Derived, Base, types::pure1005>::value, Membercall>(
 				"EditorUI::onGroupSticky", 
-				(void*)addresses::address972(), 
-				(void*)wrap::onGroupSticky<Membercall, Derived, Base, types::pure972>::value
+				(void*)addresses::address1005()
 			);
 		}
 
-		if constexpr (compare::onUngroupSticky<Derived, Base, types::pure973>::value) {
+		if constexpr (compare::onUngroupSticky<Derived, Base, types::pure1006>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onUngroupSticky", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onUngroupSticky<DefaultConv, Derived, Base, types::pure1006>::value, Membercall>(
 				"EditorUI::onUngroupSticky", 
-				(void*)addresses::address973(), 
-				(void*)wrap::onUngroupSticky<Membercall, Derived, Base, types::pure973>::value
+				(void*)addresses::address1006()
 			);
 		}
 
-		if constexpr (compare::onGoToLayer<Derived, Base, types::pure974>::value) {
+		if constexpr (compare::onGoToLayer<Derived, Base, types::pure1007>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onGoToLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onGoToLayer<DefaultConv, Derived, Base, types::pure1007>::value, Membercall>(
 				"EditorUI::onGoToLayer", 
-				(void*)addresses::address974(), 
-				(void*)wrap::onGoToLayer<Membercall, Derived, Base, types::pure974>::value
+				(void*)addresses::address1007()
 			);
 		}
 
-		if constexpr (compare::onGoToBaseLayer<Derived, Base, types::pure975>::value) {
+		if constexpr (compare::onGoToBaseLayer<Derived, Base, types::pure1008>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::onGoToBaseLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onGoToBaseLayer<DefaultConv, Derived, Base, types::pure1008>::value, Membercall>(
 				"EditorUI::onGoToBaseLayer", 
-				(void*)addresses::address975(), 
-				(void*)wrap::onGoToBaseLayer<Membercall, Derived, Base, types::pure975>::value
+				(void*)addresses::address1008()
 			);
 		}
 
-		if constexpr (compare::editColor<Derived, Base, types::pure976>::value) {
+		if constexpr (compare::editColor<Derived, Base, types::pure1009>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::editColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::editColor<DefaultConv, Derived, Base, types::pure1009>::value, Membercall>(
 				"EditorUI::editColor", 
-				(void*)addresses::address976(), 
-				(void*)wrap::editColor<Membercall, Derived, Base, types::pure976>::value
+				(void*)addresses::address1009()
 			);
 		}
 
-		if constexpr (compare::alignObjects<Derived, Base, types::pure977>::value) {
+		if constexpr (compare::alignObjects<Derived, Base, types::pure1010>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::alignObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::alignObjects<DefaultConv, Derived, Base, types::pure1010>::value, Membercall>(
 				"EditorUI::alignObjects", 
-				(void*)addresses::address977(), 
-				(void*)wrap::alignObjects<Membercall, Derived, Base, types::pure977>::value
+				(void*)addresses::address1010()
 			);
 		}
 
-		if constexpr (compare::keyUp<Derived, Base, types::pure978>::value) {
+		if constexpr (compare::keyUp<Derived, Base, types::pure1011>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EditorUI::keyUp", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyUp<DefaultConv, Derived, Base, types::pure1011>::value, Thiscall>(
 				"EditorUI::keyUp", 
-				(void*)addresses::address978(), 
-				(void*)wrap::keyUp<Thiscall, Derived, Base, types::pure978>::value
+				(void*)addresses::address1011()
 			);
 		}
 
@@ -11871,39 +11557,36 @@ struct Modify<Derived, EffectGameObject> : ModifyBase<Modify<Derived, EffectGame
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure980>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1013>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EffectGameObject::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1013>::value, Optcall>(
 				"EffectGameObject::create", 
-				(void*)addresses::address980(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure980>::value
+				(void*)addresses::address1013()
 			);
 		}
 
-		if constexpr (compare::triggerObject<Derived, Base, types::pure982>::value) {
+		if constexpr (compare::triggerObject<Derived, Base, types::pure1015>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EffectGameObject::triggerObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::triggerObject<DefaultConv, Derived, Base, types::pure1015>::value, Thiscall>(
 				"EffectGameObject::triggerObject", 
-				(void*)addresses::address982(), 
-				(void*)wrap::triggerObject<Thiscall, Derived, Base, types::pure982>::value
+				(void*)addresses::address1015()
 			);
 		}
 
-		if constexpr (compare::getSaveString<Derived, Base, types::pure983>::value) {
+		if constexpr (compare::getSaveString<Derived, Base, types::pure1016>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function EffectGameObject::getSaveString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getSaveString<DefaultConv, Derived, Base, types::pure1016>::value, Thiscall>(
 				"EffectGameObject::getSaveString", 
-				(void*)addresses::address983(), 
-				(void*)wrap::getSaveString<Thiscall, Derived, Base, types::pure983>::value
+				(void*)addresses::address1016()
 			);
 		}
 
@@ -11918,15 +11601,14 @@ struct Modify<Derived, GJRotationControl> : ModifyBase<Modify<Derived, GJRotatio
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::updateSliderPosition<Derived, Base, types::pure1240>::value) {
+		if constexpr (compare::updateSliderPosition<Derived, Base, types::pure1274>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJRotationControl::updateSliderPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateSliderPosition<DefaultConv, Derived, Base, types::pure1274>::value, Membercall>(
 				"GJRotationControl::updateSliderPosition", 
-				(void*)addresses::address1240(), 
-				(void*)wrap::updateSliderPosition<Membercall, Derived, Base, types::pure1240>::value
+				(void*)addresses::address1274()
 			);
 		}
 
@@ -11963,15 +11645,14 @@ struct Modify<Derived, GManager> : ModifyBase<Modify<Derived, GManager>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::save<Derived, Base, types::pure1267>::value) {
+		if constexpr (compare::save<Derived, Base, types::pure1301>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GManager::save", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::save<DefaultConv, Derived, Base, types::pure1301>::value, Thiscall>(
 				"GManager::save", 
-				(void*)addresses::address1267(), 
-				(void*)wrap::save<Thiscall, Derived, Base, types::pure1267>::value
+				(void*)addresses::address1301()
 			);
 		}
 
@@ -11997,171 +11678,157 @@ struct Modify<Derived, FLAlertLayer> : ModifyBase<Modify<Derived, FLAlertLayer>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::onEnter<Derived, Base, types::pure988>::value) {
+		if constexpr (compare::onEnter<Derived, Base, types::pure1021>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::onEnter", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onEnter<DefaultConv, Derived, Base, types::pure1021>::value, Thiscall>(
 				"FLAlertLayer::onEnter", 
-				(void*)addresses::address988(), 
-				(void*)wrap::onEnter<Thiscall, Derived, Base, types::pure988>::value
+				(void*)addresses::address1021()
 			);
 		}
 
-		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure989>::value) {
+		if constexpr (compare::ccTouchBegan<Derived, Base, types::pure1022>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::ccTouchBegan", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchBegan<DefaultConv, Derived, Base, types::pure1022>::value, Thiscall>(
 				"FLAlertLayer::ccTouchBegan", 
-				(void*)addresses::address989(), 
-				(void*)wrap::ccTouchBegan<Thiscall, Derived, Base, types::pure989>::value
+				(void*)addresses::address1022()
 			);
 		}
 
-		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure990>::value) {
+		if constexpr (compare::ccTouchMoved<Derived, Base, types::pure1023>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::ccTouchMoved", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchMoved<DefaultConv, Derived, Base, types::pure1023>::value, Thiscall>(
 				"FLAlertLayer::ccTouchMoved", 
-				(void*)addresses::address990(), 
-				(void*)wrap::ccTouchMoved<Thiscall, Derived, Base, types::pure990>::value
+				(void*)addresses::address1023()
 			);
 		}
 
-		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure991>::value) {
+		if constexpr (compare::ccTouchEnded<Derived, Base, types::pure1024>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::ccTouchEnded", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchEnded<DefaultConv, Derived, Base, types::pure1024>::value, Thiscall>(
 				"FLAlertLayer::ccTouchEnded", 
-				(void*)addresses::address991(), 
-				(void*)wrap::ccTouchEnded<Thiscall, Derived, Base, types::pure991>::value
+				(void*)addresses::address1024()
 			);
 		}
 
-		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure992>::value) {
+		if constexpr (compare::ccTouchCancelled<Derived, Base, types::pure1025>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::ccTouchCancelled", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::ccTouchCancelled<DefaultConv, Derived, Base, types::pure1025>::value, Thiscall>(
 				"FLAlertLayer::ccTouchCancelled", 
-				(void*)addresses::address992(), 
-				(void*)wrap::ccTouchCancelled<Thiscall, Derived, Base, types::pure992>::value
+				(void*)addresses::address1025()
 			);
 		}
 
-		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure993>::value) {
+		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure1026>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::registerWithTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerWithTouchDispatcher<DefaultConv, Derived, Base, types::pure1026>::value, Thiscall>(
 				"FLAlertLayer::registerWithTouchDispatcher", 
-				(void*)addresses::address993(), 
-				(void*)wrap::registerWithTouchDispatcher<Thiscall, Derived, Base, types::pure993>::value
+				(void*)addresses::address1026()
 			);
 		}
 
-		if constexpr (compare::keyBackClicked<Derived, Base, types::pure994>::value) {
+		if constexpr (compare::keyBackClicked<Derived, Base, types::pure1027>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::keyBackClicked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyBackClicked<DefaultConv, Derived, Base, types::pure1027>::value, Thiscall>(
 				"FLAlertLayer::keyBackClicked", 
-				(void*)addresses::address994(), 
-				(void*)wrap::keyBackClicked<Thiscall, Derived, Base, types::pure994>::value
+				(void*)addresses::address1027()
 			);
 		}
 
-		if constexpr (compare::keyDown<Derived, Base, types::pure995>::value) {
+		if constexpr (compare::keyDown<Derived, Base, types::pure1028>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::keyDown", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyDown<DefaultConv, Derived, Base, types::pure1028>::value, Thiscall>(
 				"FLAlertLayer::keyDown", 
-				(void*)addresses::address995(), 
-				(void*)wrap::keyDown<Thiscall, Derived, Base, types::pure995>::value
+				(void*)addresses::address1028()
 			);
 		}
 
-		if constexpr (compare::show<Derived, Base, types::pure996>::value) {
+		if constexpr (compare::show<Derived, Base, types::pure1029>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::show", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::show<DefaultConv, Derived, Base, types::pure1029>::value, Thiscall>(
 				"FLAlertLayer::show", 
-				(void*)addresses::address996(), 
-				(void*)wrap::show<Thiscall, Derived, Base, types::pure996>::value
+				(void*)addresses::address1029()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure998>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1031>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1031>::value, Optcall>(
 				"FLAlertLayer::create", 
-				(void*)addresses::address998(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure998>::value
+				(void*)addresses::address1031()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure999>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1032>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1032>::value, Optcall>(
 				"FLAlertLayer::create", 
-				(void*)addresses::address999(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure999>::value
+				(void*)addresses::address1032()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure1000>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1033>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1033>::value, Optcall>(
 				"FLAlertLayer::create", 
-				(void*)addresses::address1000(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1000>::value
+				(void*)addresses::address1033()
 			);
 		}
 
-		if constexpr (compare::onBtn1<Derived, Base, types::pure1001>::value) {
+		if constexpr (compare::onBtn1<Derived, Base, types::pure1034>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::onBtn1", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onBtn1<DefaultConv, Derived, Base, types::pure1034>::value, Membercall>(
 				"FLAlertLayer::onBtn1", 
-				(void*)addresses::address1001(), 
-				(void*)wrap::onBtn1<Membercall, Derived, Base, types::pure1001>::value
+				(void*)addresses::address1034()
 			);
 		}
 
-		if constexpr (compare::onBtn2<Derived, Base, types::pure1002>::value) {
+		if constexpr (compare::onBtn2<Derived, Base, types::pure1035>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FLAlertLayer::onBtn2", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onBtn2<DefaultConv, Derived, Base, types::pure1035>::value, Membercall>(
 				"FLAlertLayer::onBtn2", 
-				(void*)addresses::address1002(), 
-				(void*)wrap::onBtn2<Membercall, Derived, Base, types::pure1002>::value
+				(void*)addresses::address1035()
 			);
 		}
 
@@ -12187,63 +11854,58 @@ struct Modify<Derived, FMODAudioEngine> : ModifyBase<Modify<Derived, FMODAudioEn
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedEngine<Derived, Base, types::pure1004>::value) {
+		if constexpr (compare::sharedEngine<Derived, Base, types::pure1037>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FMODAudioEngine::sharedEngine", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedEngine<DefaultConv, Derived, Base, types::pure1037>::value, Cdecl>(
 				"FMODAudioEngine::sharedEngine", 
-				(void*)addresses::address1004(), 
-				(void*)wrap::sharedEngine<Cdecl, Derived, Base, types::pure1004>::value
+				(void*)addresses::address1037()
 			);
 		}
 
-		if constexpr (compare::preloadEffect<Derived, Base, types::pure1005>::value) {
+		if constexpr (compare::preloadEffect<Derived, Base, types::pure1038>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FMODAudioEngine::preloadEffect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::preloadEffect<DefaultConv, Derived, Base, types::pure1038>::value, Membercall>(
 				"FMODAudioEngine::preloadEffect", 
-				(void*)addresses::address1005(), 
-				(void*)wrap::preloadEffect<Membercall, Derived, Base, types::pure1005>::value
+				(void*)addresses::address1038()
 			);
 		}
 
-		if constexpr (compare::isBackgroundMusicPlaying<Derived, Base, types::pure1006>::value) {
+		if constexpr (compare::isBackgroundMusicPlaying<Derived, Base, types::pure1039>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FMODAudioEngine::isBackgroundMusicPlaying", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isBackgroundMusicPlaying<DefaultConv, Derived, Base, types::pure1039>::value, Thiscall>(
 				"FMODAudioEngine::isBackgroundMusicPlaying", 
-				(void*)addresses::address1006(), 
-				(void*)wrap::isBackgroundMusicPlaying<Thiscall, Derived, Base, types::pure1006>::value
+				(void*)addresses::address1039()
 			);
 		}
 
-		if constexpr (compare::isBackgroundMusicPlaying<Derived, Base, types::pure1007>::value) {
+		if constexpr (compare::isBackgroundMusicPlaying<Derived, Base, types::pure1040>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FMODAudioEngine::isBackgroundMusicPlaying", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isBackgroundMusicPlaying<DefaultConv, Derived, Base, types::pure1040>::value, Membercall>(
 				"FMODAudioEngine::isBackgroundMusicPlaying", 
-				(void*)addresses::address1007(), 
-				(void*)wrap::isBackgroundMusicPlaying<Membercall, Derived, Base, types::pure1007>::value
+				(void*)addresses::address1040()
 			);
 		}
 
-		if constexpr (compare::playBackgroundMusic<Derived, Base, types::pure1008>::value) {
+		if constexpr (compare::playBackgroundMusic<Derived, Base, types::pure1041>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FMODAudioEngine::playBackgroundMusic", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::playBackgroundMusic<DefaultConv, Derived, Base, types::pure1041>::value, Membercall>(
 				"FMODAudioEngine::playBackgroundMusic", 
-				(void*)addresses::address1008(), 
-				(void*)wrap::playBackgroundMusic<Membercall, Derived, Base, types::pure1008>::value
+				(void*)addresses::address1041()
 			);
 		}
 
@@ -12258,15 +11920,14 @@ struct Modify<Derived, LeaderboardsLayer> : ModifyBase<Modify<Derived, Leaderboa
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1517>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1559>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LeaderboardsLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1559>::value, Optcall>(
 				"LeaderboardsLayer::create", 
-				(void*)addresses::address1517(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1517>::value
+				(void*)addresses::address1559()
 			);
 		}
 
@@ -12281,15 +11942,14 @@ struct Modify<Derived, FMODSound> : ModifyBase<Modify<Derived, FMODSound>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1009>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1042>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function FMODSound::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1042>::value, Optcall>(
 				"FMODSound::create", 
-				(void*)addresses::address1009(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1009>::value
+				(void*)addresses::address1042()
 			);
 		}
 
@@ -12337,15 +11997,14 @@ struct Modify<Derived, GJAccountManager> : ModifyBase<Modify<Derived, GJAccountM
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure1015>::value) {
+		if constexpr (compare::sharedState<Derived, Base, types::pure1048>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJAccountManager::sharedState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedState<DefaultConv, Derived, Base, types::pure1048>::value, Cdecl>(
 				"GJAccountManager::sharedState", 
-				(void*)addresses::address1015(), 
-				(void*)wrap::sharedState<Cdecl, Derived, Base, types::pure1015>::value
+				(void*)addresses::address1048()
 			);
 		}
 
@@ -12371,63 +12030,58 @@ struct Modify<Derived, GJBaseGameLayer> : ModifyBase<Modify<Derived, GJBaseGameL
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::toggleGroupTriggered<Derived, Base, types::pure1025>::value) {
+		if constexpr (compare::toggleGroupTriggered<Derived, Base, types::pure1059>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJBaseGameLayer::toggleGroupTriggered", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleGroupTriggered<DefaultConv, Derived, Base, types::pure1059>::value, Thiscall>(
 				"GJBaseGameLayer::toggleGroupTriggered", 
-				(void*)addresses::address1025(), 
-				(void*)wrap::toggleGroupTriggered<Thiscall, Derived, Base, types::pure1025>::value
+				(void*)addresses::address1059()
 			);
 		}
 
-		if constexpr (compare::spawnGroup<Derived, Base, types::pure1026>::value) {
+		if constexpr (compare::spawnGroup<Derived, Base, types::pure1060>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJBaseGameLayer::spawnGroup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::spawnGroup<DefaultConv, Derived, Base, types::pure1060>::value, Thiscall>(
 				"GJBaseGameLayer::spawnGroup", 
-				(void*)addresses::address1026(), 
-				(void*)wrap::spawnGroup<Thiscall, Derived, Base, types::pure1026>::value
+				(void*)addresses::address1060()
 			);
 		}
 
-		if constexpr (compare::getCapacityString<Derived, Base, types::pure1042>::value) {
+		if constexpr (compare::getCapacityString<Derived, Base, types::pure1076>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJBaseGameLayer::getCapacityString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getCapacityString<DefaultConv, Derived, Base, types::pure1076>::value, Thiscall>(
 				"GJBaseGameLayer::getCapacityString", 
-				(void*)addresses::address1042(), 
-				(void*)wrap::getCapacityString<Thiscall, Derived, Base, types::pure1042>::value
+				(void*)addresses::address1076()
 			);
 		}
 
-		if constexpr (compare::pushButton<Derived, Base, types::pure1063>::value) {
+		if constexpr (compare::pushButton<Derived, Base, types::pure1097>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJBaseGameLayer::pushButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pushButton<DefaultConv, Derived, Base, types::pure1097>::value, Membercall>(
 				"GJBaseGameLayer::pushButton", 
-				(void*)addresses::address1063(), 
-				(void*)wrap::pushButton<Membercall, Derived, Base, types::pure1063>::value
+				(void*)addresses::address1097()
 			);
 		}
 
-		if constexpr (compare::releaseButton<Derived, Base, types::pure1066>::value) {
+		if constexpr (compare::releaseButton<Derived, Base, types::pure1100>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJBaseGameLayer::releaseButton", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::releaseButton<DefaultConv, Derived, Base, types::pure1100>::value, Membercall>(
 				"GJBaseGameLayer::releaseButton", 
-				(void*)addresses::address1066(), 
-				(void*)wrap::releaseButton<Membercall, Derived, Base, types::pure1066>::value
+				(void*)addresses::address1100()
 			);
 		}
 
@@ -12453,15 +12107,14 @@ struct Modify<Derived, GJComment> : ModifyBase<Modify<Derived, GJComment>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1091>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1125>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJComment::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1125>::value, Optcall>(
 				"GJComment::create", 
-				(void*)addresses::address1091(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1091>::value
+				(void*)addresses::address1125()
 			);
 		}
 
@@ -12498,147 +12151,135 @@ struct Modify<Derived, GJDropDownLayer> : ModifyBase<Modify<Derived, GJDropDownL
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::enterLayer<Derived, Base, types::pure1095>::value) {
+		if constexpr (compare::enterLayer<Derived, Base, types::pure1129>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::enterLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::enterLayer<DefaultConv, Derived, Base, types::pure1129>::value, Thiscall>(
 				"GJDropDownLayer::enterLayer", 
-				(void*)addresses::address1095(), 
-				(void*)wrap::enterLayer<Thiscall, Derived, Base, types::pure1095>::value
+				(void*)addresses::address1129()
 			);
 		}
 
-		if constexpr (compare::exitLayer<Derived, Base, types::pure1096>::value) {
+		if constexpr (compare::exitLayer<Derived, Base, types::pure1130>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::exitLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::exitLayer<DefaultConv, Derived, Base, types::pure1130>::value, Thiscall>(
 				"GJDropDownLayer::exitLayer", 
-				(void*)addresses::address1096(), 
-				(void*)wrap::exitLayer<Thiscall, Derived, Base, types::pure1096>::value
+				(void*)addresses::address1130()
 			);
 		}
 
-		if constexpr (compare::showLayer<Derived, Base, types::pure1097>::value) {
+		if constexpr (compare::showLayer<Derived, Base, types::pure1131>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::showLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::showLayer<DefaultConv, Derived, Base, types::pure1131>::value, Thiscall>(
 				"GJDropDownLayer::showLayer", 
-				(void*)addresses::address1097(), 
-				(void*)wrap::showLayer<Thiscall, Derived, Base, types::pure1097>::value
+				(void*)addresses::address1131()
 			);
 		}
 
-		if constexpr (compare::hideLayer<Derived, Base, types::pure1098>::value) {
+		if constexpr (compare::hideLayer<Derived, Base, types::pure1132>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::hideLayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::hideLayer<DefaultConv, Derived, Base, types::pure1132>::value, Thiscall>(
 				"GJDropDownLayer::hideLayer", 
-				(void*)addresses::address1098(), 
-				(void*)wrap::hideLayer<Thiscall, Derived, Base, types::pure1098>::value
+				(void*)addresses::address1132()
 			);
 		}
 
-		if constexpr (compare::layerVisible<Derived, Base, types::pure1099>::value) {
+		if constexpr (compare::layerVisible<Derived, Base, types::pure1133>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::layerVisible", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::layerVisible<DefaultConv, Derived, Base, types::pure1133>::value, Thiscall>(
 				"GJDropDownLayer::layerVisible", 
-				(void*)addresses::address1099(), 
-				(void*)wrap::layerVisible<Thiscall, Derived, Base, types::pure1099>::value
+				(void*)addresses::address1133()
 			);
 		}
 
-		if constexpr (compare::layerHidden<Derived, Base, types::pure1100>::value) {
+		if constexpr (compare::layerHidden<Derived, Base, types::pure1134>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::layerHidden", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::layerHidden<DefaultConv, Derived, Base, types::pure1134>::value, Thiscall>(
 				"GJDropDownLayer::layerHidden", 
-				(void*)addresses::address1100(), 
-				(void*)wrap::layerHidden<Thiscall, Derived, Base, types::pure1100>::value
+				(void*)addresses::address1134()
 			);
 		}
 
-		if constexpr (compare::disableUI<Derived, Base, types::pure1102>::value) {
+		if constexpr (compare::disableUI<Derived, Base, types::pure1136>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::disableUI", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::disableUI<DefaultConv, Derived, Base, types::pure1136>::value, Thiscall>(
 				"GJDropDownLayer::disableUI", 
-				(void*)addresses::address1102(), 
-				(void*)wrap::disableUI<Thiscall, Derived, Base, types::pure1102>::value
+				(void*)addresses::address1136()
 			);
 		}
 
-		if constexpr (compare::enableUI<Derived, Base, types::pure1103>::value) {
+		if constexpr (compare::enableUI<Derived, Base, types::pure1137>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::enableUI", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::enableUI<DefaultConv, Derived, Base, types::pure1137>::value, Thiscall>(
 				"GJDropDownLayer::enableUI", 
-				(void*)addresses::address1103(), 
-				(void*)wrap::enableUI<Thiscall, Derived, Base, types::pure1103>::value
+				(void*)addresses::address1137()
 			);
 		}
 
-		if constexpr (compare::draw<Derived, Base, types::pure1109>::value) {
+		if constexpr (compare::draw<Derived, Base, types::pure1143>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::draw", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure1143>::value, Thiscall>(
 				"GJDropDownLayer::draw", 
-				(void*)addresses::address1109(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure1109>::value
+				(void*)addresses::address1143()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure1110>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1144>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1144>::value, Membercall>(
 				"GJDropDownLayer::init", 
-				(void*)addresses::address1110(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure1110>::value
+				(void*)addresses::address1144()
 			);
 		}
 
-		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure1111>::value) {
+		if constexpr (compare::registerWithTouchDispatcher<Derived, Base, types::pure1145>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::registerWithTouchDispatcher", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::registerWithTouchDispatcher<DefaultConv, Derived, Base, types::pure1145>::value, Thiscall>(
 				"GJDropDownLayer::registerWithTouchDispatcher", 
-				(void*)addresses::address1111(), 
-				(void*)wrap::registerWithTouchDispatcher<Thiscall, Derived, Base, types::pure1111>::value
+				(void*)addresses::address1145()
 			);
 		}
 
-		if constexpr (compare::keyBackClicked<Derived, Base, types::pure1112>::value) {
+		if constexpr (compare::keyBackClicked<Derived, Base, types::pure1146>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJDropDownLayer::keyBackClicked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyBackClicked<DefaultConv, Derived, Base, types::pure1146>::value, Thiscall>(
 				"GJDropDownLayer::keyBackClicked", 
-				(void*)addresses::address1112(), 
-				(void*)wrap::keyBackClicked<Thiscall, Derived, Base, types::pure1112>::value
+				(void*)addresses::address1146()
 			);
 		}
 
@@ -12664,15 +12305,25 @@ struct Modify<Derived, GJEffectManager> : ModifyBase<Modify<Derived, GJEffectMan
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::getColorAction<Derived, Base, types::pure1136>::value) {
+		if constexpr (compare::getColorAction<Derived, Base, types::pure1170>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJEffectManager::getColorAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getColorAction<DefaultConv, Derived, Base, types::pure1170>::value, Membercall>(
 				"GJEffectManager::getColorAction", 
-				(void*)addresses::address1136(), 
-				(void*)wrap::getColorAction<Membercall, Derived, Base, types::pure1136>::value
+				(void*)addresses::address1170()
+			);
+		}
+
+		if constexpr (compare::updateOpacityEffects<Derived, Base, types::pure1226>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function GJEffectManager::updateOpacityEffects", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::updateOpacityEffects<DefaultConv, Derived, Base, types::pure1226>::value, Membercall>(
+				"GJEffectManager::updateOpacityEffects", 
+				(void*)addresses::address1226()
 			);
 		}
 
@@ -12687,63 +12338,58 @@ struct Modify<Derived, GJGameLevel> : ModifyBase<Modify<Derived, GJGameLevel>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1203>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1237>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGameLevel::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1237>::value, Cdecl>(
 				"GJGameLevel::create", 
-				(void*)addresses::address1203(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure1203>::value
+				(void*)addresses::address1237()
 			);
 		}
 
-		if constexpr (compare::getAudioFileName<Derived, Base, types::pure1204>::value) {
+		if constexpr (compare::getAudioFileName<Derived, Base, types::pure1238>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGameLevel::getAudioFileName", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getAudioFileName<DefaultConv, Derived, Base, types::pure1238>::value, Thiscall>(
 				"GJGameLevel::getAudioFileName", 
-				(void*)addresses::address1204(), 
-				(void*)wrap::getAudioFileName<Thiscall, Derived, Base, types::pure1204>::value
+				(void*)addresses::address1238()
 			);
 		}
 
-		if constexpr (compare::levelWasAltered<Derived, Base, types::pure1208>::value) {
+		if constexpr (compare::levelWasAltered<Derived, Base, types::pure1242>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGameLevel::levelWasAltered", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::levelWasAltered<DefaultConv, Derived, Base, types::pure1242>::value, Thiscall>(
 				"GJGameLevel::levelWasAltered", 
-				(void*)addresses::address1208(), 
-				(void*)wrap::levelWasAltered<Thiscall, Derived, Base, types::pure1208>::value
+				(void*)addresses::address1242()
 			);
 		}
 
-		if constexpr (compare::dataLoaded<Derived, Base, types::pure1210>::value) {
+		if constexpr (compare::dataLoaded<Derived, Base, types::pure1244>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGameLevel::dataLoaded", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::dataLoaded<DefaultConv, Derived, Base, types::pure1244>::value, Membercall>(
 				"GJGameLevel::dataLoaded", 
-				(void*)addresses::address1210(), 
-				(void*)wrap::dataLoaded<Membercall, Derived, Base, types::pure1210>::value
+				(void*)addresses::address1244()
 			);
 		}
 
-		if constexpr (compare::getAverageDifficulty<Derived, Base, types::pure1211>::value) {
+		if constexpr (compare::getAverageDifficulty<Derived, Base, types::pure1245>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGameLevel::getAverageDifficulty", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getAverageDifficulty<DefaultConv, Derived, Base, types::pure1245>::value, Thiscall>(
 				"GJGameLevel::getAverageDifficulty", 
-				(void*)addresses::address1211(), 
-				(void*)wrap::getAverageDifficulty<Thiscall, Derived, Base, types::pure1211>::value
+				(void*)addresses::address1245()
 			);
 		}
 
@@ -12758,159 +12404,168 @@ struct Modify<Derived, GJGarageLayer> : ModifyBase<Modify<Derived, GJGarageLayer
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1214>::value) {
+		if constexpr (compare::onPlayerColor1<Derived, Base, types::pure1246>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function GJGarageLayer::onPlayerColor1", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onPlayerColor1<DefaultConv, Derived, Base, types::pure1246>::value, Membercall>(
+				"GJGarageLayer::onPlayerColor1", 
+				(void*)addresses::address1246()
+			);
+		}
+
+		if constexpr (compare::onPlayerColor2<Derived, Base, types::pure1247>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function GJGarageLayer::onPlayerColor2", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onPlayerColor2<DefaultConv, Derived, Base, types::pure1247>::value, Membercall>(
+				"GJGarageLayer::onPlayerColor2", 
+				(void*)addresses::address1247()
+			);
+		}
+
+		if constexpr (compare::create<Derived, Base, types::pure1248>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1248>::value, Cdecl>(
 				"GJGarageLayer::create", 
-				(void*)addresses::address1214(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure1214>::value
+				(void*)addresses::address1248()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure1215>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1249>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1249>::value, Thiscall>(
 				"GJGarageLayer::init", 
-				(void*)addresses::address1215(), 
-				(void*)wrap::init<Thiscall, Derived, Base, types::pure1215>::value
+				(void*)addresses::address1249()
 			);
 		}
 
-		if constexpr (compare::onSelectTab<Derived, Base, types::pure1216>::value) {
+		if constexpr (compare::onSelectTab<Derived, Base, types::pure1250>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onSelectTab", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onSelectTab<DefaultConv, Derived, Base, types::pure1250>::value, Membercall>(
 				"GJGarageLayer::onSelectTab", 
-				(void*)addresses::address1216(), 
-				(void*)wrap::onSelectTab<Membercall, Derived, Base, types::pure1216>::value
+				(void*)addresses::address1250()
 			);
 		}
 
-		if constexpr (compare::onPlayerIcon<Derived, Base, types::pure1217>::value) {
+		if constexpr (compare::onPlayerIcon<Derived, Base, types::pure1251>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onPlayerIcon", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPlayerIcon<DefaultConv, Derived, Base, types::pure1251>::value, Membercall>(
 				"GJGarageLayer::onPlayerIcon", 
-				(void*)addresses::address1217(), 
-				(void*)wrap::onPlayerIcon<Membercall, Derived, Base, types::pure1217>::value
+				(void*)addresses::address1251()
 			);
 		}
 
-		if constexpr (compare::onShipIcon<Derived, Base, types::pure1218>::value) {
+		if constexpr (compare::onShipIcon<Derived, Base, types::pure1252>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onShipIcon", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onShipIcon<DefaultConv, Derived, Base, types::pure1252>::value, Membercall>(
 				"GJGarageLayer::onShipIcon", 
-				(void*)addresses::address1218(), 
-				(void*)wrap::onShipIcon<Membercall, Derived, Base, types::pure1218>::value
+				(void*)addresses::address1252()
 			);
 		}
 
-		if constexpr (compare::onBallIcon<Derived, Base, types::pure1219>::value) {
+		if constexpr (compare::onBallIcon<Derived, Base, types::pure1253>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onBallIcon", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onBallIcon<DefaultConv, Derived, Base, types::pure1253>::value, Membercall>(
 				"GJGarageLayer::onBallIcon", 
-				(void*)addresses::address1219(), 
-				(void*)wrap::onBallIcon<Membercall, Derived, Base, types::pure1219>::value
+				(void*)addresses::address1253()
 			);
 		}
 
-		if constexpr (compare::onBirdIcon<Derived, Base, types::pure1220>::value) {
+		if constexpr (compare::onBirdIcon<Derived, Base, types::pure1254>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onBirdIcon", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onBirdIcon<DefaultConv, Derived, Base, types::pure1254>::value, Membercall>(
 				"GJGarageLayer::onBirdIcon", 
-				(void*)addresses::address1220(), 
-				(void*)wrap::onBirdIcon<Membercall, Derived, Base, types::pure1220>::value
+				(void*)addresses::address1254()
 			);
 		}
 
-		if constexpr (compare::onDartIcon<Derived, Base, types::pure1221>::value) {
+		if constexpr (compare::onDartIcon<Derived, Base, types::pure1255>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onDartIcon", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onDartIcon<DefaultConv, Derived, Base, types::pure1255>::value, Membercall>(
 				"GJGarageLayer::onDartIcon", 
-				(void*)addresses::address1221(), 
-				(void*)wrap::onDartIcon<Membercall, Derived, Base, types::pure1221>::value
+				(void*)addresses::address1255()
 			);
 		}
 
-		if constexpr (compare::onRobotIcon<Derived, Base, types::pure1222>::value) {
+		if constexpr (compare::onRobotIcon<Derived, Base, types::pure1256>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onRobotIcon", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onRobotIcon<DefaultConv, Derived, Base, types::pure1256>::value, Membercall>(
 				"GJGarageLayer::onRobotIcon", 
-				(void*)addresses::address1222(), 
-				(void*)wrap::onRobotIcon<Membercall, Derived, Base, types::pure1222>::value
+				(void*)addresses::address1256()
 			);
 		}
 
-		if constexpr (compare::onSpiderIcon<Derived, Base, types::pure1223>::value) {
+		if constexpr (compare::onSpiderIcon<Derived, Base, types::pure1257>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onSpiderIcon", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onSpiderIcon<DefaultConv, Derived, Base, types::pure1257>::value, Membercall>(
 				"GJGarageLayer::onSpiderIcon", 
-				(void*)addresses::address1223(), 
-				(void*)wrap::onSpiderIcon<Membercall, Derived, Base, types::pure1223>::value
+				(void*)addresses::address1257()
 			);
 		}
 
-		if constexpr (compare::onShards<Derived, Base, types::pure1224>::value) {
+		if constexpr (compare::onShards<Derived, Base, types::pure1258>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onShards", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onShards<DefaultConv, Derived, Base, types::pure1258>::value, Membercall>(
 				"GJGarageLayer::onShards", 
-				(void*)addresses::address1224(), 
-				(void*)wrap::onShards<Membercall, Derived, Base, types::pure1224>::value
+				(void*)addresses::address1258()
 			);
 		}
 
-		if constexpr (compare::onBack<Derived, Base, types::pure1225>::value) {
+		if constexpr (compare::onBack<Derived, Base, types::pure1259>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onBack", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onBack<DefaultConv, Derived, Base, types::pure1259>::value, Membercall>(
 				"GJGarageLayer::onBack", 
-				(void*)addresses::address1225(), 
-				(void*)wrap::onBack<Membercall, Derived, Base, types::pure1225>::value
+				(void*)addresses::address1259()
 			);
 		}
 
-		if constexpr (compare::onShop<Derived, Base, types::pure1226>::value) {
+		if constexpr (compare::onShop<Derived, Base, types::pure1260>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGarageLayer::onShop", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onShop<DefaultConv, Derived, Base, types::pure1260>::value, Membercall>(
 				"GJGarageLayer::onShop", 
-				(void*)addresses::address1226(), 
-				(void*)wrap::onShop<Membercall, Derived, Base, types::pure1226>::value
+				(void*)addresses::address1260()
 			);
 		}
 
@@ -12925,15 +12580,14 @@ struct Modify<Derived, GJGroundLayer> : ModifyBase<Modify<Derived, GJGroundLayer
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::updateGroundWidth<Derived, Base, types::pure1227>::value) {
+		if constexpr (compare::updateGroundWidth<Derived, Base, types::pure1261>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJGroundLayer::updateGroundWidth", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateGroundWidth<DefaultConv, Derived, Base, types::pure1261>::value, Thiscall>(
 				"GJGroundLayer::updateGroundWidth", 
-				(void*)addresses::address1227(), 
-				(void*)wrap::updateGroundWidth<Thiscall, Derived, Base, types::pure1227>::value
+				(void*)addresses::address1261()
 			);
 		}
 
@@ -12948,15 +12602,14 @@ struct Modify<Derived, GJItemIcon> : ModifyBase<Modify<Derived, GJItemIcon>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1229>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1263>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJItemIcon::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1263>::value, Optcall>(
 				"GJItemIcon::create", 
-				(void*)addresses::address1229(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1229>::value
+				(void*)addresses::address1263()
 			);
 		}
 
@@ -12971,15 +12624,14 @@ struct Modify<Derived, GJListLayer> : ModifyBase<Modify<Derived, GJListLayer>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1231>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1265>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJListLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1265>::value, Optcall>(
 				"GJListLayer::create", 
-				(void*)addresses::address1231(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1231>::value
+				(void*)addresses::address1265()
 			);
 		}
 
@@ -13016,39 +12668,36 @@ struct Modify<Derived, LevelBrowserLayer> : ModifyBase<Modify<Derived, LevelBrow
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure1519>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1561>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelBrowserLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1561>::value, Membercall>(
 				"LevelBrowserLayer::init", 
-				(void*)addresses::address1519(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure1519>::value
+				(void*)addresses::address1561()
 			);
 		}
 
-		if constexpr (compare::setupLevelBrowser<Derived, Base, types::pure1520>::value) {
+		if constexpr (compare::setupLevelBrowser<Derived, Base, types::pure1562>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelBrowserLayer::setupLevelBrowser", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setupLevelBrowser<DefaultConv, Derived, Base, types::pure1562>::value, Membercall>(
 				"LevelBrowserLayer::setupLevelBrowser", 
-				(void*)addresses::address1520(), 
-				(void*)wrap::setupLevelBrowser<Membercall, Derived, Base, types::pure1520>::value
+				(void*)addresses::address1562()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure1521>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1563>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelBrowserLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1563>::value, Optcall>(
 				"LevelBrowserLayer::create", 
-				(void*)addresses::address1521(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1521>::value
+				(void*)addresses::address1563()
 			);
 		}
 
@@ -13107,27 +12756,25 @@ struct Modify<Derived, GJScaleControl> : ModifyBase<Modify<Derived, GJScaleContr
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::updateLabel<Derived, Base, types::pure1241>::value) {
+		if constexpr (compare::updateLabel<Derived, Base, types::pure1275>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJScaleControl::updateLabel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateLabel<DefaultConv, Derived, Base, types::pure1275>::value, Membercall>(
 				"GJScaleControl::updateLabel", 
-				(void*)addresses::address1241(), 
-				(void*)wrap::updateLabel<Membercall, Derived, Base, types::pure1241>::value
+				(void*)addresses::address1275()
 			);
 		}
 
-		if constexpr (compare::loadValues<Derived, Base, types::pure1242>::value) {
+		if constexpr (compare::loadValues<Derived, Base, types::pure1276>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJScaleControl::loadValues", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::loadValues<DefaultConv, Derived, Base, types::pure1276>::value, Membercall>(
 				"GJScaleControl::loadValues", 
-				(void*)addresses::address1242(), 
-				(void*)wrap::loadValues<Membercall, Derived, Base, types::pure1242>::value
+				(void*)addresses::address1276()
 			);
 		}
 
@@ -13164,15 +12811,14 @@ struct Modify<Derived, GJSearchObject> : ModifyBase<Modify<Derived, GJSearchObje
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1244>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1278>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GJSearchObject::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1278>::value, Optcall>(
 				"GJSearchObject::create", 
-				(void*)addresses::address1244(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1244>::value
+				(void*)addresses::address1278()
 			);
 		}
 
@@ -13220,171 +12866,157 @@ struct Modify<Derived, GameManager> : ModifyBase<Modify<Derived, GameManager>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::colorForIdx<Derived, Base, types::pure1310>::value) {
+		if constexpr (compare::colorForIdx<Derived, Base, types::pure1345>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::colorForIdx", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::colorForIdx<DefaultConv, Derived, Base, types::pure1345>::value, Membercall>(
 				"GameManager::colorForIdx", 
-				(void*)addresses::address1310(), 
-				(void*)wrap::colorForIdx<Membercall, Derived, Base, types::pure1310>::value
+				(void*)addresses::address1345()
 			);
 		}
 
-		if constexpr (compare::fadeInMusic<Derived, Base, types::pure1313>::value) {
+		if constexpr (compare::fadeInMusic<Derived, Base, types::pure1348>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::fadeInMusic", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::fadeInMusic<DefaultConv, Derived, Base, types::pure1348>::value, Membercall>(
 				"GameManager::fadeInMusic", 
-				(void*)addresses::address1313(), 
-				(void*)wrap::fadeInMusic<Membercall, Derived, Base, types::pure1313>::value
+				(void*)addresses::address1348()
 			);
 		}
 
-		if constexpr (compare::getGameVariable<Derived, Base, types::pure1316>::value) {
+		if constexpr (compare::getGameVariable<Derived, Base, types::pure1351>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::getGameVariable", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getGameVariable<DefaultConv, Derived, Base, types::pure1351>::value, Membercall>(
 				"GameManager::getGameVariable", 
-				(void*)addresses::address1316(), 
-				(void*)wrap::getGameVariable<Membercall, Derived, Base, types::pure1316>::value
+				(void*)addresses::address1351()
 			);
 		}
 
-		if constexpr (compare::getIntGameVariable<Derived, Base, types::pure1317>::value) {
+		if constexpr (compare::getIntGameVariable<Derived, Base, types::pure1352>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::getIntGameVariable", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getIntGameVariable<DefaultConv, Derived, Base, types::pure1352>::value, Membercall>(
 				"GameManager::getIntGameVariable", 
-				(void*)addresses::address1317(), 
-				(void*)wrap::getIntGameVariable<Membercall, Derived, Base, types::pure1317>::value
+				(void*)addresses::address1352()
 			);
 		}
 
-		if constexpr (compare::getUGV<Derived, Base, types::pure1318>::value) {
+		if constexpr (compare::getUGV<Derived, Base, types::pure1353>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::getUGV", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getUGV<DefaultConv, Derived, Base, types::pure1353>::value, Membercall>(
 				"GameManager::getUGV", 
-				(void*)addresses::address1318(), 
-				(void*)wrap::getUGV<Membercall, Derived, Base, types::pure1318>::value
+				(void*)addresses::address1353()
 			);
 		}
 
-		if constexpr (compare::reloadAll<Derived, Base, types::pure1321>::value) {
+		if constexpr (compare::reloadAll<Derived, Base, types::pure1356>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::reloadAll", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::reloadAll<DefaultConv, Derived, Base, types::pure1356>::value, Membercall>(
 				"GameManager::reloadAll", 
-				(void*)addresses::address1321(), 
-				(void*)wrap::reloadAll<Membercall, Derived, Base, types::pure1321>::value
+				(void*)addresses::address1356()
 			);
 		}
 
-		if constexpr (compare::reloadAllStep2<Derived, Base, types::pure1322>::value) {
+		if constexpr (compare::reloadAllStep2<Derived, Base, types::pure1357>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::reloadAllStep2", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::reloadAllStep2<DefaultConv, Derived, Base, types::pure1357>::value, Thiscall>(
 				"GameManager::reloadAllStep2", 
-				(void*)addresses::address1322(), 
-				(void*)wrap::reloadAllStep2<Thiscall, Derived, Base, types::pure1322>::value
+				(void*)addresses::address1357()
 			);
 		}
 
-		if constexpr (compare::setGameVariable<Derived, Base, types::pure1325>::value) {
+		if constexpr (compare::setGameVariable<Derived, Base, types::pure1360>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::setGameVariable", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setGameVariable<DefaultConv, Derived, Base, types::pure1360>::value, Membercall>(
 				"GameManager::setGameVariable", 
-				(void*)addresses::address1325(), 
-				(void*)wrap::setGameVariable<Membercall, Derived, Base, types::pure1325>::value
+				(void*)addresses::address1360()
 			);
 		}
 
-		if constexpr (compare::setIntGameVariable<Derived, Base, types::pure1326>::value) {
+		if constexpr (compare::setIntGameVariable<Derived, Base, types::pure1361>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::setIntGameVariable", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setIntGameVariable<DefaultConv, Derived, Base, types::pure1361>::value, Membercall>(
 				"GameManager::setIntGameVariable", 
-				(void*)addresses::address1326(), 
-				(void*)wrap::setIntGameVariable<Membercall, Derived, Base, types::pure1326>::value
+				(void*)addresses::address1361()
 			);
 		}
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure1328>::value) {
+		if constexpr (compare::sharedState<Derived, Base, types::pure1363>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::sharedState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedState<DefaultConv, Derived, Base, types::pure1363>::value, Cdecl>(
 				"GameManager::sharedState", 
-				(void*)addresses::address1328(), 
-				(void*)wrap::sharedState<Cdecl, Derived, Base, types::pure1328>::value
+				(void*)addresses::address1363()
 			);
 		}
 
-		if constexpr (compare::isColorUnlocked<Derived, Base, types::pure1335>::value) {
+		if constexpr (compare::isColorUnlocked<Derived, Base, types::pure1370>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::isColorUnlocked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isColorUnlocked<DefaultConv, Derived, Base, types::pure1370>::value, Membercall>(
 				"GameManager::isColorUnlocked", 
-				(void*)addresses::address1335(), 
-				(void*)wrap::isColorUnlocked<Membercall, Derived, Base, types::pure1335>::value
+				(void*)addresses::address1370()
 			);
 		}
 
-		if constexpr (compare::isIconUnlocked<Derived, Base, types::pure1336>::value) {
+		if constexpr (compare::isIconUnlocked<Derived, Base, types::pure1371>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::isIconUnlocked", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isIconUnlocked<DefaultConv, Derived, Base, types::pure1371>::value, Membercall>(
 				"GameManager::isIconUnlocked", 
-				(void*)addresses::address1336(), 
-				(void*)wrap::isIconUnlocked<Membercall, Derived, Base, types::pure1336>::value
+				(void*)addresses::address1371()
 			);
 		}
 
-		if constexpr (compare::toggleGameVariable<Derived, Base, types::pure1337>::value) {
+		if constexpr (compare::toggleGameVariable<Derived, Base, types::pure1372>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::toggleGameVariable", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::toggleGameVariable<DefaultConv, Derived, Base, types::pure1372>::value, Membercall>(
 				"GameManager::toggleGameVariable", 
-				(void*)addresses::address1337(), 
-				(void*)wrap::toggleGameVariable<Membercall, Derived, Base, types::pure1337>::value
+				(void*)addresses::address1372()
 			);
 		}
 
-		if constexpr (compare::returnToLastScene<Derived, Base, types::pure1338>::value) {
+		if constexpr (compare::returnToLastScene<Derived, Base, types::pure1373>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameManager::returnToLastScene", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::returnToLastScene<DefaultConv, Derived, Base, types::pure1373>::value, Optcall>(
 				"GameManager::returnToLastScene", 
-				(void*)addresses::address1338(), 
-				(void*)wrap::returnToLastScene<Optcall, Derived, Base, types::pure1338>::value
+				(void*)addresses::address1373()
 			);
 		}
 
@@ -13399,579 +13031,542 @@ struct Modify<Derived, GameObject> : ModifyBase<Modify<Derived, GameObject>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::setScaleX<Derived, Base, types::pure1352>::value) {
+		if constexpr (compare::setScaleX<Derived, Base, types::pure1387>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setScaleX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScaleX<DefaultConv, Derived, Base, types::pure1387>::value, Thiscall>(
 				"GameObject::setScaleX", 
-				(void*)addresses::address1352(), 
-				(void*)wrap::setScaleX<Thiscall, Derived, Base, types::pure1352>::value
+				(void*)addresses::address1387()
 			);
 		}
 
-		if constexpr (compare::setScaleY<Derived, Base, types::pure1353>::value) {
+		if constexpr (compare::setScaleY<Derived, Base, types::pure1388>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setScaleY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScaleY<DefaultConv, Derived, Base, types::pure1388>::value, Thiscall>(
 				"GameObject::setScaleY", 
-				(void*)addresses::address1353(), 
-				(void*)wrap::setScaleY<Thiscall, Derived, Base, types::pure1353>::value
+				(void*)addresses::address1388()
 			);
 		}
 
-		if constexpr (compare::setScale<Derived, Base, types::pure1354>::value) {
+		if constexpr (compare::setScale<Derived, Base, types::pure1389>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setScale<DefaultConv, Derived, Base, types::pure1389>::value, Thiscall>(
 				"GameObject::setScale", 
-				(void*)addresses::address1354(), 
-				(void*)wrap::setScale<Thiscall, Derived, Base, types::pure1354>::value
+				(void*)addresses::address1389()
 			);
 		}
 
-		if constexpr (compare::setPosition<Derived, Base, types::pure1355>::value) {
+		if constexpr (compare::setPosition<Derived, Base, types::pure1390>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setPosition<DefaultConv, Derived, Base, types::pure1390>::value, Thiscall>(
 				"GameObject::setPosition", 
-				(void*)addresses::address1355(), 
-				(void*)wrap::setPosition<Thiscall, Derived, Base, types::pure1355>::value
+				(void*)addresses::address1390()
 			);
 		}
 
-		if constexpr (compare::setVisible<Derived, Base, types::pure1356>::value) {
+		if constexpr (compare::setVisible<Derived, Base, types::pure1391>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setVisible", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setVisible<DefaultConv, Derived, Base, types::pure1391>::value, Thiscall>(
 				"GameObject::setVisible", 
-				(void*)addresses::address1356(), 
-				(void*)wrap::setVisible<Thiscall, Derived, Base, types::pure1356>::value
+				(void*)addresses::address1391()
 			);
 		}
 
-		if constexpr (compare::setRotation<Derived, Base, types::pure1357>::value) {
+		if constexpr (compare::setRotation<Derived, Base, types::pure1392>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setRotation", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRotation<DefaultConv, Derived, Base, types::pure1392>::value, Thiscall>(
 				"GameObject::setRotation", 
-				(void*)addresses::address1357(), 
-				(void*)wrap::setRotation<Thiscall, Derived, Base, types::pure1357>::value
+				(void*)addresses::address1392()
 			);
 		}
 
-		if constexpr (compare::setOpacity<Derived, Base, types::pure1358>::value) {
+		if constexpr (compare::setOpacity<Derived, Base, types::pure1393>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacity<DefaultConv, Derived, Base, types::pure1393>::value, Thiscall>(
 				"GameObject::setOpacity", 
-				(void*)addresses::address1358(), 
-				(void*)wrap::setOpacity<Thiscall, Derived, Base, types::pure1358>::value
+				(void*)addresses::address1393()
 			);
 		}
 
-		if constexpr (compare::initWithTexture<Derived, Base, types::pure1359>::value) {
+		if constexpr (compare::initWithTexture<Derived, Base, types::pure1394>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::initWithTexture", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::initWithTexture<DefaultConv, Derived, Base, types::pure1394>::value, Thiscall>(
 				"GameObject::initWithTexture", 
-				(void*)addresses::address1359(), 
-				(void*)wrap::initWithTexture<Thiscall, Derived, Base, types::pure1359>::value
+				(void*)addresses::address1394()
 			);
 		}
 
-		if constexpr (compare::setChildColor<Derived, Base, types::pure1360>::value) {
+		if constexpr (compare::setChildColor<Derived, Base, types::pure1395>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setChildColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setChildColor<DefaultConv, Derived, Base, types::pure1395>::value, Thiscall>(
 				"GameObject::setChildColor", 
-				(void*)addresses::address1360(), 
-				(void*)wrap::setChildColor<Thiscall, Derived, Base, types::pure1360>::value
+				(void*)addresses::address1395()
 			);
 		}
 
-		if constexpr (compare::setupCustomSprites<Derived, Base, types::pure1364>::value) {
+		if constexpr (compare::setupCustomSprites<Derived, Base, types::pure1399>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setupCustomSprites", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setupCustomSprites<DefaultConv, Derived, Base, types::pure1399>::value, Thiscall>(
 				"GameObject::setupCustomSprites", 
-				(void*)addresses::address1364(), 
-				(void*)wrap::setupCustomSprites<Thiscall, Derived, Base, types::pure1364>::value
+				(void*)addresses::address1399()
 			);
 		}
 
-		if constexpr (compare::addMainSpriteToParent<Derived, Base, types::pure1365>::value) {
+		if constexpr (compare::addMainSpriteToParent<Derived, Base, types::pure1400>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::addMainSpriteToParent", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addMainSpriteToParent<DefaultConv, Derived, Base, types::pure1400>::value, Thiscall>(
 				"GameObject::addMainSpriteToParent", 
-				(void*)addresses::address1365(), 
-				(void*)wrap::addMainSpriteToParent<Thiscall, Derived, Base, types::pure1365>::value
+				(void*)addresses::address1400()
 			);
 		}
 
-		if constexpr (compare::resetObject<Derived, Base, types::pure1366>::value) {
+		if constexpr (compare::resetObject<Derived, Base, types::pure1401>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::resetObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::resetObject<DefaultConv, Derived, Base, types::pure1401>::value, Thiscall>(
 				"GameObject::resetObject", 
-				(void*)addresses::address1366(), 
-				(void*)wrap::resetObject<Thiscall, Derived, Base, types::pure1366>::value
+				(void*)addresses::address1401()
 			);
 		}
 
-		if constexpr (compare::activateObject<Derived, Base, types::pure1368>::value) {
+		if constexpr (compare::activateObject<Derived, Base, types::pure1403>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::activateObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activateObject<DefaultConv, Derived, Base, types::pure1403>::value, Thiscall>(
 				"GameObject::activateObject", 
-				(void*)addresses::address1368(), 
-				(void*)wrap::activateObject<Thiscall, Derived, Base, types::pure1368>::value
+				(void*)addresses::address1403()
 			);
 		}
 
-		if constexpr (compare::deactivateObject<Derived, Base, types::pure1369>::value) {
+		if constexpr (compare::deactivateObject<Derived, Base, types::pure1404>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::deactivateObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::deactivateObject<DefaultConv, Derived, Base, types::pure1404>::value, Thiscall>(
 				"GameObject::deactivateObject", 
-				(void*)addresses::address1369(), 
-				(void*)wrap::deactivateObject<Thiscall, Derived, Base, types::pure1369>::value
+				(void*)addresses::address1404()
 			);
 		}
 
-		if constexpr (compare::getObjectRect<Derived, Base, types::pure1370>::value) {
+		if constexpr (compare::getObjectRect<Derived, Base, types::pure1405>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getObjectRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getObjectRect<DefaultConv, Derived, Base, types::pure1405>::value, Thiscall>(
 				"GameObject::getObjectRect", 
-				(void*)addresses::address1370(), 
-				(void*)wrap::getObjectRect<Thiscall, Derived, Base, types::pure1370>::value
+				(void*)addresses::address1405()
 			);
 		}
 
-		if constexpr (compare::getObjectRect<Derived, Base, types::pure1371>::value) {
+		if constexpr (compare::getObjectRect<Derived, Base, types::pure1406>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getObjectRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getObjectRect<DefaultConv, Derived, Base, types::pure1406>::value, Thiscall>(
 				"GameObject::getObjectRect", 
-				(void*)addresses::address1371(), 
-				(void*)wrap::getObjectRect<Thiscall, Derived, Base, types::pure1371>::value
+				(void*)addresses::address1406()
 			);
 		}
 
-		if constexpr (compare::getObjectRect2<Derived, Base, types::pure1372>::value) {
+		if constexpr (compare::getObjectRect2<Derived, Base, types::pure1407>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getObjectRect2", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getObjectRect2<DefaultConv, Derived, Base, types::pure1407>::value, Thiscall>(
 				"GameObject::getObjectRect2", 
-				(void*)addresses::address1372(), 
-				(void*)wrap::getObjectRect2<Thiscall, Derived, Base, types::pure1372>::value
+				(void*)addresses::address1407()
 			);
 		}
 
-		if constexpr (compare::getObjectTextureRect<Derived, Base, types::pure1373>::value) {
+		if constexpr (compare::getObjectTextureRect<Derived, Base, types::pure1408>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getObjectTextureRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getObjectTextureRect<DefaultConv, Derived, Base, types::pure1408>::value, Thiscall>(
 				"GameObject::getObjectTextureRect", 
-				(void*)addresses::address1373(), 
-				(void*)wrap::getObjectTextureRect<Thiscall, Derived, Base, types::pure1373>::value
+				(void*)addresses::address1408()
 			);
 		}
 
-		if constexpr (compare::getRealPosition<Derived, Base, types::pure1374>::value) {
+		if constexpr (compare::getRealPosition<Derived, Base, types::pure1409>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getRealPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getRealPosition<DefaultConv, Derived, Base, types::pure1409>::value, Thiscall>(
 				"GameObject::getRealPosition", 
-				(void*)addresses::address1374(), 
-				(void*)wrap::getRealPosition<Thiscall, Derived, Base, types::pure1374>::value
+				(void*)addresses::address1409()
 			);
 		}
 
-		if constexpr (compare::setStartPos<Derived, Base, types::pure1375>::value) {
+		if constexpr (compare::setStartPos<Derived, Base, types::pure1410>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setStartPos", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setStartPos<DefaultConv, Derived, Base, types::pure1410>::value, Thiscall>(
 				"GameObject::setStartPos", 
-				(void*)addresses::address1375(), 
-				(void*)wrap::setStartPos<Thiscall, Derived, Base, types::pure1375>::value
+				(void*)addresses::address1410()
 			);
 		}
 
-		if constexpr (compare::updateStartValues<Derived, Base, types::pure1376>::value) {
+		if constexpr (compare::updateStartValues<Derived, Base, types::pure1411>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::updateStartValues", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateStartValues<DefaultConv, Derived, Base, types::pure1411>::value, Thiscall>(
 				"GameObject::updateStartValues", 
-				(void*)addresses::address1376(), 
-				(void*)wrap::updateStartValues<Thiscall, Derived, Base, types::pure1376>::value
+				(void*)addresses::address1411()
 			);
 		}
 
-		if constexpr (compare::getSaveString<Derived, Base, types::pure1378>::value) {
+		if constexpr (compare::getSaveString<Derived, Base, types::pure1413>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getSaveString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getSaveString<DefaultConv, Derived, Base, types::pure1413>::value, Thiscall>(
 				"GameObject::getSaveString", 
-				(void*)addresses::address1378(), 
-				(void*)wrap::getSaveString<Thiscall, Derived, Base, types::pure1378>::value
+				(void*)addresses::address1413()
 			);
 		}
 
-		if constexpr (compare::isFlipX<Derived, Base, types::pure1379>::value) {
+		if constexpr (compare::isFlipX<Derived, Base, types::pure1414>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::isFlipX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isFlipX<DefaultConv, Derived, Base, types::pure1414>::value, Thiscall>(
 				"GameObject::isFlipX", 
-				(void*)addresses::address1379(), 
-				(void*)wrap::isFlipX<Thiscall, Derived, Base, types::pure1379>::value
+				(void*)addresses::address1414()
 			);
 		}
 
-		if constexpr (compare::isFlipY<Derived, Base, types::pure1380>::value) {
+		if constexpr (compare::isFlipY<Derived, Base, types::pure1415>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::isFlipY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::isFlipY<DefaultConv, Derived, Base, types::pure1415>::value, Thiscall>(
 				"GameObject::isFlipY", 
-				(void*)addresses::address1380(), 
-				(void*)wrap::isFlipY<Thiscall, Derived, Base, types::pure1380>::value
+				(void*)addresses::address1415()
 			);
 		}
 
-		if constexpr (compare::setRScaleX<Derived, Base, types::pure1381>::value) {
+		if constexpr (compare::setRScaleX<Derived, Base, types::pure1416>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setRScaleX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRScaleX<DefaultConv, Derived, Base, types::pure1416>::value, Thiscall>(
 				"GameObject::setRScaleX", 
-				(void*)addresses::address1381(), 
-				(void*)wrap::setRScaleX<Thiscall, Derived, Base, types::pure1381>::value
+				(void*)addresses::address1416()
 			);
 		}
 
-		if constexpr (compare::setRScaleY<Derived, Base, types::pure1382>::value) {
+		if constexpr (compare::setRScaleY<Derived, Base, types::pure1417>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setRScaleY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRScaleY<DefaultConv, Derived, Base, types::pure1417>::value, Thiscall>(
 				"GameObject::setRScaleY", 
-				(void*)addresses::address1382(), 
-				(void*)wrap::setRScaleY<Thiscall, Derived, Base, types::pure1382>::value
+				(void*)addresses::address1417()
 			);
 		}
 
-		if constexpr (compare::setRScale<Derived, Base, types::pure1383>::value) {
+		if constexpr (compare::setRScale<Derived, Base, types::pure1418>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setRScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setRScale<DefaultConv, Derived, Base, types::pure1418>::value, Thiscall>(
 				"GameObject::setRScale", 
-				(void*)addresses::address1383(), 
-				(void*)wrap::setRScale<Thiscall, Derived, Base, types::pure1383>::value
+				(void*)addresses::address1418()
 			);
 		}
 
-		if constexpr (compare::getRScaleY<Derived, Base, types::pure1385>::value) {
+		if constexpr (compare::getRScaleY<Derived, Base, types::pure1420>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getRScaleY", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getRScaleY<DefaultConv, Derived, Base, types::pure1420>::value, Thiscall>(
 				"GameObject::getRScaleY", 
-				(void*)addresses::address1385(), 
-				(void*)wrap::getRScaleY<Thiscall, Derived, Base, types::pure1385>::value
+				(void*)addresses::address1420()
 			);
 		}
 
-		if constexpr (compare::calculateSpawnXPos<Derived, Base, types::pure1386>::value) {
+		if constexpr (compare::calculateSpawnXPos<Derived, Base, types::pure1421>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::calculateSpawnXPos", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::calculateSpawnXPos<DefaultConv, Derived, Base, types::pure1421>::value, Thiscall>(
 				"GameObject::calculateSpawnXPos", 
-				(void*)addresses::address1386(), 
-				(void*)wrap::calculateSpawnXPos<Thiscall, Derived, Base, types::pure1386>::value
+				(void*)addresses::address1421()
 			);
 		}
 
-		if constexpr (compare::powerOnObject<Derived, Base, types::pure1388>::value) {
+		if constexpr (compare::powerOnObject<Derived, Base, types::pure1423>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::powerOnObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::powerOnObject<DefaultConv, Derived, Base, types::pure1423>::value, Thiscall>(
 				"GameObject::powerOnObject", 
-				(void*)addresses::address1388(), 
-				(void*)wrap::powerOnObject<Thiscall, Derived, Base, types::pure1388>::value
+				(void*)addresses::address1423()
 			);
 		}
 
-		if constexpr (compare::powerOffObject<Derived, Base, types::pure1389>::value) {
+		if constexpr (compare::powerOffObject<Derived, Base, types::pure1424>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::powerOffObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::powerOffObject<DefaultConv, Derived, Base, types::pure1424>::value, Thiscall>(
 				"GameObject::powerOffObject", 
-				(void*)addresses::address1389(), 
-				(void*)wrap::powerOffObject<Thiscall, Derived, Base, types::pure1389>::value
+				(void*)addresses::address1424()
 			);
 		}
 
-		if constexpr (compare::setObjectColor<Derived, Base, types::pure1390>::value) {
+		if constexpr (compare::setObjectColor<Derived, Base, types::pure1425>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setObjectColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setObjectColor<DefaultConv, Derived, Base, types::pure1425>::value, Thiscall>(
 				"GameObject::setObjectColor", 
-				(void*)addresses::address1390(), 
-				(void*)wrap::setObjectColor<Thiscall, Derived, Base, types::pure1390>::value
+				(void*)addresses::address1425()
 			);
 		}
 
-		if constexpr (compare::setGlowColor<Derived, Base, types::pure1391>::value) {
+		if constexpr (compare::setGlowColor<Derived, Base, types::pure1426>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setGlowColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setGlowColor<DefaultConv, Derived, Base, types::pure1426>::value, Thiscall>(
 				"GameObject::setGlowColor", 
-				(void*)addresses::address1391(), 
-				(void*)wrap::setGlowColor<Thiscall, Derived, Base, types::pure1391>::value
+				(void*)addresses::address1426()
 			);
 		}
 
-		if constexpr (compare::getOrientedBox<Derived, Base, types::pure1392>::value) {
+		if constexpr (compare::getOrientedBox<Derived, Base, types::pure1427>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getOrientedBox", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getOrientedBox<DefaultConv, Derived, Base, types::pure1427>::value, Thiscall>(
 				"GameObject::getOrientedBox", 
-				(void*)addresses::address1392(), 
-				(void*)wrap::getOrientedBox<Thiscall, Derived, Base, types::pure1392>::value
+				(void*)addresses::address1427()
 			);
 		}
 
-		if constexpr (compare::addToGroup<Derived, Base, types::pure1393>::value) {
+		if constexpr (compare::addToGroup<Derived, Base, types::pure1428>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::addToGroup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addToGroup<DefaultConv, Derived, Base, types::pure1428>::value, Thiscall>(
 				"GameObject::addToGroup", 
-				(void*)addresses::address1393(), 
-				(void*)wrap::addToGroup<Thiscall, Derived, Base, types::pure1393>::value
+				(void*)addresses::address1428()
 			);
 		}
 
-		if constexpr (compare::removeFromGroup<Derived, Base, types::pure1394>::value) {
+		if constexpr (compare::removeFromGroup<Derived, Base, types::pure1429>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::removeFromGroup", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeFromGroup<DefaultConv, Derived, Base, types::pure1429>::value, Thiscall>(
 				"GameObject::removeFromGroup", 
-				(void*)addresses::address1394(), 
-				(void*)wrap::removeFromGroup<Thiscall, Derived, Base, types::pure1394>::value
+				(void*)addresses::address1429()
 			);
 		}
 
-		if constexpr (compare::getType<Derived, Base, types::pure1400>::value) {
+		if constexpr (compare::getType<Derived, Base, types::pure1435>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getType", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getType<DefaultConv, Derived, Base, types::pure1435>::value, Thiscall>(
 				"GameObject::getType", 
-				(void*)addresses::address1400(), 
-				(void*)wrap::getType<Thiscall, Derived, Base, types::pure1400>::value
+				(void*)addresses::address1435()
 			);
 		}
 
-		if constexpr (compare::setType<Derived, Base, types::pure1401>::value) {
+		if constexpr (compare::setType<Derived, Base, types::pure1436>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setType", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setType<DefaultConv, Derived, Base, types::pure1436>::value, Thiscall>(
 				"GameObject::setType", 
-				(void*)addresses::address1401(), 
-				(void*)wrap::setType<Thiscall, Derived, Base, types::pure1401>::value
+				(void*)addresses::address1436()
 			);
 		}
 
-		if constexpr (compare::getStartPos<Derived, Base, types::pure1402>::value) {
+		if constexpr (compare::getStartPos<Derived, Base, types::pure1437>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getStartPos", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getStartPos<DefaultConv, Derived, Base, types::pure1437>::value, Thiscall>(
 				"GameObject::getStartPos", 
-				(void*)addresses::address1402(), 
-				(void*)wrap::getStartPos<Thiscall, Derived, Base, types::pure1402>::value
+				(void*)addresses::address1437()
 			);
 		}
 
-		if constexpr (compare::createWithFrame<Derived, Base, types::pure1412>::value) {
+		if constexpr (compare::commonSetup<Derived, Base, types::pure1445>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function GameObject::commonSetup", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::commonSetup<DefaultConv, Derived, Base, types::pure1445>::value, Thiscall>(
+				"GameObject::commonSetup", 
+				(void*)addresses::address1445()
+			);
+		}
+
+		if constexpr (compare::createWithFrame<Derived, Base, types::pure1447>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::createWithFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithFrame<DefaultConv, Derived, Base, types::pure1447>::value, Optcall>(
 				"GameObject::createWithFrame", 
-				(void*)addresses::address1412(), 
-				(void*)wrap::createWithFrame<Optcall, Derived, Base, types::pure1412>::value
+				(void*)addresses::address1447()
 			);
 		}
 
-		if constexpr (compare::createWithKey<Derived, Base, types::pure1413>::value) {
+		if constexpr (compare::createWithKey<Derived, Base, types::pure1448>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::createWithKey", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithKey<DefaultConv, Derived, Base, types::pure1448>::value, Optcall>(
 				"GameObject::createWithKey", 
-				(void*)addresses::address1413(), 
-				(void*)wrap::createWithKey<Optcall, Derived, Base, types::pure1413>::value
+				(void*)addresses::address1448()
 			);
 		}
 
-		if constexpr (compare::getBoxOffset<Derived, Base, types::pure1418>::value) {
+		if constexpr (compare::getBoxOffset<Derived, Base, types::pure1453>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::getBoxOffset", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getBoxOffset<DefaultConv, Derived, Base, types::pure1453>::value, Thiscall>(
 				"GameObject::getBoxOffset", 
-				(void*)addresses::address1418(), 
-				(void*)wrap::getBoxOffset<Thiscall, Derived, Base, types::pure1418>::value
+				(void*)addresses::address1453()
 			);
 		}
 
-		if constexpr (compare::objectFromString<Derived, Base, types::pure1438>::value) {
+		if constexpr (compare::objectFromString<Derived, Base, types::pure1473>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::objectFromString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::objectFromString<DefaultConv, Derived, Base, types::pure1473>::value, Optcall>(
 				"GameObject::objectFromString", 
-				(void*)addresses::address1438(), 
-				(void*)wrap::objectFromString<Optcall, Derived, Base, types::pure1438>::value
+				(void*)addresses::address1473()
 			);
 		}
 
-		if constexpr (compare::selectObject<Derived, Base, types::pure1444>::value) {
+		if constexpr (compare::selectObject<Derived, Base, types::pure1479>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::selectObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::selectObject<DefaultConv, Derived, Base, types::pure1479>::value, Membercall>(
 				"GameObject::selectObject", 
-				(void*)addresses::address1444(), 
-				(void*)wrap::selectObject<Membercall, Derived, Base, types::pure1444>::value
+				(void*)addresses::address1479()
 			);
 		}
 
-		if constexpr (compare::updateCustomScale<Derived, Base, types::pure1454>::value) {
+		if constexpr (compare::updateCustomScale<Derived, Base, types::pure1489>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::updateCustomScale", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateCustomScale<DefaultConv, Derived, Base, types::pure1489>::value, Membercall>(
 				"GameObject::updateCustomScale", 
-				(void*)addresses::address1454(), 
-				(void*)wrap::updateCustomScale<Membercall, Derived, Base, types::pure1454>::value
+				(void*)addresses::address1489()
 			);
 		}
 
-		if constexpr (compare::deselectObject<Derived, Base, types::pure1461>::value) {
+		if constexpr (compare::deselectObject<Derived, Base, types::pure1496>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::deselectObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::deselectObject<DefaultConv, Derived, Base, types::pure1496>::value, Thiscall>(
 				"GameObject::deselectObject", 
-				(void*)addresses::address1461(), 
-				(void*)wrap::deselectObject<Thiscall, Derived, Base, types::pure1461>::value
+				(void*)addresses::address1496()
 			);
 		}
 
-		if constexpr (compare::createRotateAction<Derived, Base, types::pure1462>::value) {
+		if constexpr (compare::createRotateAction<Derived, Base, types::pure1497>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::createRotateAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createRotateAction<DefaultConv, Derived, Base, types::pure1497>::value, Membercall>(
 				"GameObject::createRotateAction", 
-				(void*)addresses::address1462(), 
-				(void*)wrap::createRotateAction<Membercall, Derived, Base, types::pure1462>::value
+				(void*)addresses::address1497()
 			);
 		}
 
-		if constexpr (compare::setMyAction<Derived, Base, types::pure1463>::value) {
+		if constexpr (compare::setMyAction<Derived, Base, types::pure1498>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameObject::setMyAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setMyAction<DefaultConv, Derived, Base, types::pure1498>::value, Membercall>(
 				"GameObject::setMyAction", 
-				(void*)addresses::address1463(), 
-				(void*)wrap::setMyAction<Membercall, Derived, Base, types::pure1463>::value
+				(void*)addresses::address1498()
 			);
 		}
 
@@ -13997,15 +13592,14 @@ struct Modify<Derived, GameStatsManager> : ModifyBase<Modify<Derived, GameStatsM
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure1486>::value) {
+		if constexpr (compare::sharedState<Derived, Base, types::pure1520>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GameStatsManager::sharedState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedState<DefaultConv, Derived, Base, types::pure1520>::value, Cdecl>(
 				"GameStatsManager::sharedState", 
-				(void*)addresses::address1486(), 
-				(void*)wrap::sharedState<Thiscall, Derived, Base, types::pure1486>::value
+				(void*)addresses::address1520()
 			);
 		}
 
@@ -14020,15 +13614,14 @@ struct Modify<Derived, GauntletSelectLayer> : ModifyBase<Modify<Derived, Gauntle
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1498>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1532>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function GauntletSelectLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1532>::value, Cdecl>(
 				"GauntletSelectLayer::create", 
-				(void*)addresses::address1498(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure1498>::value
+				(void*)addresses::address1532()
 			);
 		}
 
@@ -14087,51 +13680,47 @@ struct Modify<Derived, InfoAlertButton> : ModifyBase<Modify<Derived, InfoAlertBu
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure1505>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1545>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function InfoAlertButton::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1545>::value, Membercall>(
 				"InfoAlertButton::init", 
-				(void*)addresses::address1505(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure1505>::value
+				(void*)addresses::address1545()
 			);
 		}
 
-		if constexpr (compare::activate<Derived, Base, types::pure1506>::value) {
+		if constexpr (compare::activate<Derived, Base, types::pure1546>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function InfoAlertButton::activate", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::activate<DefaultConv, Derived, Base, types::pure1546>::value, Thiscall>(
 				"InfoAlertButton::activate", 
-				(void*)addresses::address1506(), 
-				(void*)wrap::activate<Thiscall, Derived, Base, types::pure1506>::value
+				(void*)addresses::address1546()
 			);
 		}
 
-		if constexpr (compare::constructor<Derived, Base, types::pure1507>::value) {
+		if constexpr (compare::constructor<Derived, Base, types::pure1547>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function InfoAlertButton::constructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constructor<DefaultConv, Derived, Base, types::pure1547>::value, Thiscall>(
 				"InfoAlertButton::constructor", 
-				(void*)addresses::address1507(), 
-				(void*)wrap::constructor<Thiscall, Derived, Base, types::pure1507>::value
+				(void*)addresses::address1547()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure1508>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1548>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function InfoAlertButton::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1548>::value, Optcall>(
 				"InfoAlertButton::create", 
-				(void*)addresses::address1508(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1508>::value
+				(void*)addresses::address1548()
 			);
 		}
 
@@ -14146,51 +13735,47 @@ struct Modify<Derived, KeybindingsLayer> : ModifyBase<Modify<Derived, Keybinding
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::onClose<Derived, Base, types::pure1511>::value) {
+		if constexpr (compare::onClose<Derived, Base, types::pure1553>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function KeybindingsLayer::onClose", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onClose<DefaultConv, Derived, Base, types::pure1553>::value, Membercall>(
 				"KeybindingsLayer::onClose", 
-				(void*)addresses::address1511(), 
-				(void*)wrap::onClose<Membercall, Derived, Base, types::pure1511>::value
+				(void*)addresses::address1553()
 			);
 		}
 
-		if constexpr (compare::onPrevPage<Derived, Base, types::pure1512>::value) {
+		if constexpr (compare::onPrevPage<Derived, Base, types::pure1554>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function KeybindingsLayer::onPrevPage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPrevPage<DefaultConv, Derived, Base, types::pure1554>::value, Membercall>(
 				"KeybindingsLayer::onPrevPage", 
-				(void*)addresses::address1512(), 
-				(void*)wrap::onPrevPage<Membercall, Derived, Base, types::pure1512>::value
+				(void*)addresses::address1554()
 			);
 		}
 
-		if constexpr (compare::onNextPage<Derived, Base, types::pure1513>::value) {
+		if constexpr (compare::onNextPage<Derived, Base, types::pure1555>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function KeybindingsLayer::onNextPage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onNextPage<DefaultConv, Derived, Base, types::pure1555>::value, Membercall>(
 				"KeybindingsLayer::onNextPage", 
-				(void*)addresses::address1513(), 
-				(void*)wrap::onNextPage<Membercall, Derived, Base, types::pure1513>::value
+				(void*)addresses::address1555()
 			);
 		}
 
-		if constexpr (compare::goToPage<Derived, Base, types::pure1514>::value) {
+		if constexpr (compare::goToPage<Derived, Base, types::pure1556>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function KeybindingsLayer::goToPage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::goToPage<DefaultConv, Derived, Base, types::pure1556>::value, Membercall>(
 				"KeybindingsLayer::goToPage", 
-				(void*)addresses::address1514(), 
-				(void*)wrap::goToPage<Membercall, Derived, Base, types::pure1514>::value
+				(void*)addresses::address1556()
 			);
 		}
 
@@ -14260,183 +13845,168 @@ struct Modify<Derived, LevelEditorLayer> : ModifyBase<Modify<Derived, LevelEdito
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::update<Derived, Base, types::pure1525>::value) {
+		if constexpr (compare::update<Derived, Base, types::pure1567>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::update", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::update<DefaultConv, Derived, Base, types::pure1567>::value, Thiscall>(
 				"LevelEditorLayer::update", 
-				(void*)addresses::address1525(), 
-				(void*)wrap::update<Thiscall, Derived, Base, types::pure1525>::value
+				(void*)addresses::address1567()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure1535>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1577>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1577>::value, Optcall>(
 				"LevelEditorLayer::create", 
-				(void*)addresses::address1535(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1535>::value
+				(void*)addresses::address1577()
 			);
 		}
 
-		if constexpr (compare::addObjectFromString<Derived, Base, types::pure1537>::value) {
+		if constexpr (compare::addObjectFromString<Derived, Base, types::pure1579>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::addObjectFromString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addObjectFromString<DefaultConv, Derived, Base, types::pure1579>::value, Membercall>(
 				"LevelEditorLayer::addObjectFromString", 
-				(void*)addresses::address1537(), 
-				(void*)wrap::addObjectFromString<Membercall, Derived, Base, types::pure1537>::value
+				(void*)addresses::address1579()
 			);
 		}
 
-		if constexpr (compare::addSpecial<Derived, Base, types::pure1538>::value) {
+		if constexpr (compare::addSpecial<Derived, Base, types::pure1580>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::addSpecial", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addSpecial<DefaultConv, Derived, Base, types::pure1580>::value, Membercall>(
 				"LevelEditorLayer::addSpecial", 
-				(void*)addresses::address1538(), 
-				(void*)wrap::addSpecial<Membercall, Derived, Base, types::pure1538>::value
+				(void*)addresses::address1580()
 			);
 		}
 
-		if constexpr (compare::createObject<Derived, Base, types::pure1545>::value) {
+		if constexpr (compare::createObject<Derived, Base, types::pure1587>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::createObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createObject<DefaultConv, Derived, Base, types::pure1587>::value, Membercall>(
 				"LevelEditorLayer::createObject", 
-				(void*)addresses::address1545(), 
-				(void*)wrap::createObject<Membercall, Derived, Base, types::pure1545>::value
+				(void*)addresses::address1587()
 			);
 		}
 
-		if constexpr (compare::getLastObjectX<Derived, Base, types::pure1548>::value) {
+		if constexpr (compare::getLastObjectX<Derived, Base, types::pure1590>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::getLastObjectX", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getLastObjectX<DefaultConv, Derived, Base, types::pure1590>::value, Thiscall>(
 				"LevelEditorLayer::getLastObjectX", 
-				(void*)addresses::address1548(), 
-				(void*)wrap::getLastObjectX<Thiscall, Derived, Base, types::pure1548>::value
+				(void*)addresses::address1590()
 			);
 		}
 
-		if constexpr (compare::getLevelString<Derived, Base, types::pure1549>::value) {
+		if constexpr (compare::getLevelString<Derived, Base, types::pure1591>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::getLevelString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getLevelString<DefaultConv, Derived, Base, types::pure1591>::value, Thiscall>(
 				"LevelEditorLayer::getLevelString", 
-				(void*)addresses::address1549(), 
-				(void*)wrap::getLevelString<Thiscall, Derived, Base, types::pure1549>::value
+				(void*)addresses::address1591()
 			);
 		}
 
-		if constexpr (compare::getNextFreeGroupID<Derived, Base, types::pure1552>::value) {
+		if constexpr (compare::getNextFreeGroupID<Derived, Base, types::pure1594>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::getNextFreeGroupID", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getNextFreeGroupID<DefaultConv, Derived, Base, types::pure1594>::value, Membercall>(
 				"LevelEditorLayer::getNextFreeGroupID", 
-				(void*)addresses::address1552(), 
-				(void*)wrap::getNextFreeGroupID<Membercall, Derived, Base, types::pure1552>::value
+				(void*)addresses::address1594()
 			);
 		}
 
-		if constexpr (compare::getObjectRect<Derived, Base, types::pure1554>::value) {
+		if constexpr (compare::getObjectRect<Derived, Base, types::pure1596>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::getObjectRect", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getObjectRect<DefaultConv, Derived, Base, types::pure1596>::value, Membercall>(
 				"LevelEditorLayer::getObjectRect", 
-				(void*)addresses::address1554(), 
-				(void*)wrap::getObjectRect<Membercall, Derived, Base, types::pure1554>::value
+				(void*)addresses::address1596()
 			);
 		}
 
-		if constexpr (compare::objectAtPosition<Derived, Base, types::pure1558>::value) {
+		if constexpr (compare::objectAtPosition<Derived, Base, types::pure1600>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::objectAtPosition", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::objectAtPosition<DefaultConv, Derived, Base, types::pure1600>::value, Membercall>(
 				"LevelEditorLayer::objectAtPosition", 
-				(void*)addresses::address1558(), 
-				(void*)wrap::objectAtPosition<Membercall, Derived, Base, types::pure1558>::value
+				(void*)addresses::address1600()
 			);
 		}
 
-		if constexpr (compare::pasteAttributeState<Derived, Base, types::pure1563>::value) {
+		if constexpr (compare::pasteAttributeState<Derived, Base, types::pure1605>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::pasteAttributeState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::pasteAttributeState<DefaultConv, Derived, Base, types::pure1605>::value, Membercall>(
 				"LevelEditorLayer::pasteAttributeState", 
-				(void*)addresses::address1563(), 
-				(void*)wrap::pasteAttributeState<Membercall, Derived, Base, types::pure1563>::value
+				(void*)addresses::address1605()
 			);
 		}
 
-		if constexpr (compare::removeAllObjects<Derived, Base, types::pure1567>::value) {
+		if constexpr (compare::removeAllObjects<Derived, Base, types::pure1609>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::removeAllObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeAllObjects<DefaultConv, Derived, Base, types::pure1609>::value, Thiscall>(
 				"LevelEditorLayer::removeAllObjects", 
-				(void*)addresses::address1567(), 
-				(void*)wrap::removeAllObjects<Thiscall, Derived, Base, types::pure1567>::value
+				(void*)addresses::address1609()
 			);
 		}
 
-		if constexpr (compare::removeObject<Derived, Base, types::pure1569>::value) {
+		if constexpr (compare::removeObject<Derived, Base, types::pure1611>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::removeObject", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeObject<DefaultConv, Derived, Base, types::pure1611>::value, Membercall>(
 				"LevelEditorLayer::removeObject", 
-				(void*)addresses::address1569(), 
-				(void*)wrap::removeObject<Membercall, Derived, Base, types::pure1569>::value
+				(void*)addresses::address1611()
 			);
 		}
 
-		if constexpr (compare::updateEditorMode<Derived, Base, types::pure1588>::value) {
+		if constexpr (compare::updateEditorMode<Derived, Base, types::pure1630>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::updateEditorMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateEditorMode<DefaultConv, Derived, Base, types::pure1630>::value, Thiscall>(
 				"LevelEditorLayer::updateEditorMode", 
-				(void*)addresses::address1588(), 
-				(void*)wrap::updateEditorMode<Thiscall, Derived, Base, types::pure1588>::value
+				(void*)addresses::address1630()
 			);
 		}
 
-		if constexpr (compare::updateOptions<Derived, Base, types::pure1592>::value) {
+		if constexpr (compare::updateOptions<Derived, Base, types::pure1634>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelEditorLayer::updateOptions", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateOptions<DefaultConv, Derived, Base, types::pure1634>::value, Thiscall>(
 				"LevelEditorLayer::updateOptions", 
-				(void*)addresses::address1592(), 
-				(void*)wrap::updateOptions<Thiscall, Derived, Base, types::pure1592>::value
+				(void*)addresses::address1634()
 			);
 		}
 
@@ -14451,27 +14021,47 @@ struct Modify<Derived, LevelInfoLayer> : ModifyBase<Modify<Derived, LevelInfoLay
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1595>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1637>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelInfoLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1637>::value, Optcall>(
 				"LevelInfoLayer::create", 
-				(void*)addresses::address1595(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1595>::value
+				(void*)addresses::address1637()
 			);
 		}
 
-		if constexpr (compare::onGarage<Derived, Base, types::pure1596>::value) {
+		if constexpr (compare::onGarage<Derived, Base, types::pure1638>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelInfoLayer::onGarage", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onGarage<DefaultConv, Derived, Base, types::pure1638>::value, Membercall>(
 				"LevelInfoLayer::onGarage", 
-				(void*)addresses::address1596(), 
-				(void*)wrap::onGarage<Membercall, Derived, Base, types::pure1596>::value
+				(void*)addresses::address1638()
+			);
+		}
+
+		if constexpr (compare::onViewProfile<Derived, Base, types::pure1639>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function LevelInfoLayer::onViewProfile", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onViewProfile<DefaultConv, Derived, Base, types::pure1639>::value, Membercall>(
+				"LevelInfoLayer::onViewProfile", 
+				(void*)addresses::address1639()
+			);
+		}
+
+		if constexpr (compare::onLevelInfo<Derived, Base, types::pure1640>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function LevelInfoLayer::onLevelInfo", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onLevelInfo<DefaultConv, Derived, Base, types::pure1640>::value, Membercall>(
+				"LevelInfoLayer::onLevelInfo", 
+				(void*)addresses::address1640()
 			);
 		}
 
@@ -14486,15 +14076,14 @@ struct Modify<Derived, LevelSelectLayer> : ModifyBase<Modify<Derived, LevelSelec
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1598>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1642>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelSelectLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1642>::value, Optcall>(
 				"LevelSelectLayer::create", 
-				(void*)addresses::address1598(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1598>::value
+				(void*)addresses::address1642()
 			);
 		}
 
@@ -14520,15 +14109,14 @@ struct Modify<Derived, LevelSettingsLayer> : ModifyBase<Modify<Derived, LevelSet
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1599>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1643>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LevelSettingsLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1643>::value, Optcall>(
 				"LevelSettingsLayer::create", 
-				(void*)addresses::address1599(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1599>::value
+				(void*)addresses::address1643()
 			);
 		}
 
@@ -14598,63 +14186,58 @@ struct Modify<Derived, LoadingLayer> : ModifyBase<Modify<Derived, LoadingLayer>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1612>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1656>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LoadingLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1656>::value, Optcall>(
 				"LoadingLayer::create", 
-				(void*)addresses::address1612(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1612>::value
+				(void*)addresses::address1656()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure1613>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1657>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LoadingLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1657>::value, Membercall>(
 				"LoadingLayer::init", 
-				(void*)addresses::address1613(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure1613>::value
+				(void*)addresses::address1657()
 			);
 		}
 
-		if constexpr (compare::getLoadingString<Derived, Base, types::pure1614>::value) {
+		if constexpr (compare::getLoadingString<Derived, Base, types::pure1658>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LoadingLayer::getLoadingString", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getLoadingString<DefaultConv, Derived, Base, types::pure1658>::value, Thiscall>(
 				"LoadingLayer::getLoadingString", 
-				(void*)addresses::address1614(), 
-				(void*)wrap::getLoadingString<Thiscall, Derived, Base, types::pure1614>::value
+				(void*)addresses::address1658()
 			);
 		}
 
-		if constexpr (compare::loadAssets<Derived, Base, types::pure1615>::value) {
+		if constexpr (compare::loadAssets<Derived, Base, types::pure1659>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LoadingLayer::loadAssets", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::loadAssets<DefaultConv, Derived, Base, types::pure1659>::value, Thiscall>(
 				"LoadingLayer::loadAssets", 
-				(void*)addresses::address1615(), 
-				(void*)wrap::loadAssets<Thiscall, Derived, Base, types::pure1615>::value
+				(void*)addresses::address1659()
 			);
 		}
 
-		if constexpr (compare::loadingFinished<Derived, Base, types::pure1616>::value) {
+		if constexpr (compare::loadingFinished<Derived, Base, types::pure1660>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function LoadingLayer::loadingFinished", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::loadingFinished<DefaultConv, Derived, Base, types::pure1660>::value, Thiscall>(
 				"LoadingLayer::loadingFinished", 
-				(void*)addresses::address1616(), 
-				(void*)wrap::loadingFinished<Thiscall, Derived, Base, types::pure1616>::value
+				(void*)addresses::address1660()
 			);
 		}
 
@@ -14713,27 +14296,36 @@ struct Modify<Derived, MoreOptionsLayer> : ModifyBase<Modify<Derived, MoreOption
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1632>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1688>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MoreOptionsLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1688>::value, Cdecl>(
 				"MoreOptionsLayer::create", 
-				(void*)addresses::address1632(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure1632>::value
+				(void*)addresses::address1688()
 			);
 		}
 
-		if constexpr (compare::addToggle<Derived, Base, types::pure1633>::value) {
+		if constexpr (compare::addToggle<Derived, Base, types::pure1689>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function MoreOptionsLayer::addToggle", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::addToggle<DefaultConv, Derived, Base, types::pure1689>::value, Membercall>(
 				"MoreOptionsLayer::addToggle", 
-				(void*)addresses::address1633(), 
-				(void*)wrap::addToggle<Membercall, Derived, Base, types::pure1633>::value
+				(void*)addresses::address1689()
+			);
+		}
+
+		if constexpr (compare::onKeybindings<Derived, Base, types::pure1690>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function MoreOptionsLayer::onKeybindings", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::onKeybindings<DefaultConv, Derived, Base, types::pure1690>::value, Membercall>(
+				"MoreOptionsLayer::onKeybindings", 
+				(void*)addresses::address1690()
 			);
 		}
 
@@ -14759,39 +14351,36 @@ struct Modify<Derived, ObjectToolbox> : ModifyBase<Modify<Derived, ObjectToolbox
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::sharedState<Derived, Base, types::pure1652>::value) {
+		if constexpr (compare::sharedState<Derived, Base, types::pure1710>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ObjectToolbox::sharedState", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::sharedState<DefaultConv, Derived, Base, types::pure1710>::value, Cdecl>(
 				"ObjectToolbox::sharedState", 
-				(void*)addresses::address1652(), 
-				(void*)wrap::sharedState<Cdecl, Derived, Base, types::pure1652>::value
+				(void*)addresses::address1710()
 			);
 		}
 
-		if constexpr (compare::gridNodeSizeForKey<Derived, Base, types::pure1653>::value) {
+		if constexpr (compare::gridNodeSizeForKey<Derived, Base, types::pure1711>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ObjectToolbox::gridNodeSizeForKey", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::gridNodeSizeForKey<DefaultConv, Derived, Base, types::pure1711>::value, Membercall>(
 				"ObjectToolbox::gridNodeSizeForKey", 
-				(void*)addresses::address1653(), 
-				(void*)wrap::gridNodeSizeForKey<Membercall, Derived, Base, types::pure1653>::value
+				(void*)addresses::address1711()
 			);
 		}
 
-		if constexpr (compare::perspectiveBlockFrame<Derived, Base, types::pure1654>::value) {
+		if constexpr (compare::perspectiveBlockFrame<Derived, Base, types::pure1712>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ObjectToolbox::perspectiveBlockFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::perspectiveBlockFrame<DefaultConv, Derived, Base, types::pure1712>::value, Membercall>(
 				"ObjectToolbox::perspectiveBlockFrame", 
-				(void*)addresses::address1654(), 
-				(void*)wrap::perspectiveBlockFrame<Membercall, Derived, Base, types::pure1654>::value
+				(void*)addresses::address1712()
 			);
 		}
 
@@ -14817,15 +14406,14 @@ struct Modify<Derived, OptionsLayer> : ModifyBase<Modify<Derived, OptionsLayer>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1660>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure1718>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function OptionsLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1718>::value, Cdecl>(
 				"OptionsLayer::create", 
-				(void*)addresses::address1660(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure1660>::value
+				(void*)addresses::address1718()
 			);
 		}
 
@@ -14840,279 +14428,267 @@ struct Modify<Derived, PlayLayer> : ModifyBase<Modify<Derived, PlayLayer>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1686>::value) {
+		if constexpr (compare::addObject<Derived, Base, types::pure1729>::value) {
+			Interface::get()->logInfo(
+				"Adding hook at function PlayLayer::addObject", 
+				Severity::Debug
+			);
+			Interface::get()->addHook<wrap::addObject<DefaultConv, Derived, Base, types::pure1729>::value, Membercall>(
+				"PlayLayer::addObject", 
+				(void*)addresses::address1729()
+			);
+		}
+
+		if constexpr (compare::create<Derived, Base, types::pure1746>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure1746>::value, Optcall>(
 				"PlayLayer::create", 
-				(void*)addresses::address1686(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1686>::value
+				(void*)addresses::address1746()
 			);
 		}
 
-		if constexpr (compare::createCheckpoint<Derived, Base, types::pure1687>::value) {
+		if constexpr (compare::createCheckpoint<Derived, Base, types::pure1747>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::createCheckpoint", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createCheckpoint<DefaultConv, Derived, Base, types::pure1747>::value, Thiscall>(
 				"PlayLayer::createCheckpoint", 
-				(void*)addresses::address1687(), 
-				(void*)wrap::createCheckpoint<Thiscall, Derived, Base, types::pure1687>::value
+				(void*)addresses::address1747()
 			);
 		}
 
-		if constexpr (compare::destroyPlayer<Derived, Base, types::pure1692>::value) {
+		if constexpr (compare::destroyPlayer<Derived, Base, types::pure1752>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::destroyPlayer", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::destroyPlayer<DefaultConv, Derived, Base, types::pure1752>::value, Membercall>(
 				"PlayLayer::destroyPlayer", 
-				(void*)addresses::address1692(), 
-				(void*)wrap::destroyPlayer<Membercall, Derived, Base, types::pure1692>::value
+				(void*)addresses::address1752()
 			);
 		}
 
-		if constexpr (compare::draw<Derived, Base, types::pure1694>::value) {
+		if constexpr (compare::draw<Derived, Base, types::pure1754>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::draw", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure1754>::value, Thiscall>(
 				"PlayLayer::draw", 
-				(void*)addresses::address1694(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure1694>::value
+				(void*)addresses::address1754()
 			);
 		}
 
-		if constexpr (compare::init<Derived, Base, types::pure1720>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure1780>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure1780>::value, Membercall>(
 				"PlayLayer::init", 
-				(void*)addresses::address1720(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure1720>::value
+				(void*)addresses::address1780()
 			);
 		}
 
-		if constexpr (compare::levelComplete<Derived, Base, types::pure1722>::value) {
+		if constexpr (compare::levelComplete<Derived, Base, types::pure1782>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::levelComplete", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::levelComplete<DefaultConv, Derived, Base, types::pure1782>::value, Thiscall>(
 				"PlayLayer::levelComplete", 
-				(void*)addresses::address1722(), 
-				(void*)wrap::levelComplete<Thiscall, Derived, Base, types::pure1722>::value
+				(void*)addresses::address1782()
 			);
 		}
 
-		if constexpr (compare::markCheckpoint<Derived, Base, types::pure1729>::value) {
+		if constexpr (compare::markCheckpoint<Derived, Base, types::pure1789>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::markCheckpoint", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::markCheckpoint<DefaultConv, Derived, Base, types::pure1789>::value, Thiscall>(
 				"PlayLayer::markCheckpoint", 
-				(void*)addresses::address1729(), 
-				(void*)wrap::markCheckpoint<Thiscall, Derived, Base, types::pure1729>::value
+				(void*)addresses::address1789()
 			);
 		}
 
-		if constexpr (compare::onEnterTransitionDidFinish<Derived, Base, types::pure1731>::value) {
+		if constexpr (compare::onEnterTransitionDidFinish<Derived, Base, types::pure1791>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::onEnterTransitionDidFinish", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onEnterTransitionDidFinish<DefaultConv, Derived, Base, types::pure1791>::value, Thiscall>(
 				"PlayLayer::onEnterTransitionDidFinish", 
-				(void*)addresses::address1731(), 
-				(void*)wrap::onEnterTransitionDidFinish<Thiscall, Derived, Base, types::pure1731>::value
+				(void*)addresses::address1791()
 			);
 		}
 
-		if constexpr (compare::onExit<Derived, Base, types::pure1732>::value) {
+		if constexpr (compare::onExit<Derived, Base, types::pure1792>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::onExit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onExit<DefaultConv, Derived, Base, types::pure1792>::value, Thiscall>(
 				"PlayLayer::onExit", 
-				(void*)addresses::address1732(), 
-				(void*)wrap::onExit<Thiscall, Derived, Base, types::pure1732>::value
+				(void*)addresses::address1792()
 			);
 		}
 
-		if constexpr (compare::onQuit<Derived, Base, types::pure1733>::value) {
+		if constexpr (compare::onQuit<Derived, Base, types::pure1793>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::onQuit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onQuit<DefaultConv, Derived, Base, types::pure1793>::value, Thiscall>(
 				"PlayLayer::onQuit", 
-				(void*)addresses::address1733(), 
-				(void*)wrap::onQuit<Thiscall, Derived, Base, types::pure1733>::value
+				(void*)addresses::address1793()
 			);
 		}
 
-		if constexpr (compare::removeLastCheckpoint<Derived, Base, types::pure1754>::value) {
+		if constexpr (compare::removeLastCheckpoint<Derived, Base, types::pure1814>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::removeLastCheckpoint", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::removeLastCheckpoint<DefaultConv, Derived, Base, types::pure1814>::value, Thiscall>(
 				"PlayLayer::removeLastCheckpoint", 
-				(void*)addresses::address1754(), 
-				(void*)wrap::removeLastCheckpoint<Thiscall, Derived, Base, types::pure1754>::value
+				(void*)addresses::address1814()
 			);
 		}
 
-		if constexpr (compare::resetLevel<Derived, Base, types::pure1756>::value) {
+		if constexpr (compare::resetLevel<Derived, Base, types::pure1816>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::resetLevel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::resetLevel<DefaultConv, Derived, Base, types::pure1816>::value, Thiscall>(
 				"PlayLayer::resetLevel", 
-				(void*)addresses::address1756(), 
-				(void*)wrap::resetLevel<Thiscall, Derived, Base, types::pure1756>::value
+				(void*)addresses::address1816()
 			);
 		}
 
-		if constexpr (compare::scene<Derived, Base, types::pure1760>::value) {
+		if constexpr (compare::scene<Derived, Base, types::pure1820>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::scene", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::scene<DefaultConv, Derived, Base, types::pure1820>::value, Membercall>(
 				"PlayLayer::scene", 
-				(void*)addresses::address1760(), 
-				(void*)wrap::scene<Membercall, Derived, Base, types::pure1760>::value
+				(void*)addresses::address1820()
 			);
 		}
 
-		if constexpr (compare::setupLevelStart<Derived, Base, types::pure1761>::value) {
+		if constexpr (compare::setupLevelStart<Derived, Base, types::pure1821>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::setupLevelStart", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setupLevelStart<DefaultConv, Derived, Base, types::pure1821>::value, Membercall>(
 				"PlayLayer::setupLevelStart", 
-				(void*)addresses::address1761(), 
-				(void*)wrap::setupLevelStart<Membercall, Derived, Base, types::pure1761>::value
+				(void*)addresses::address1821()
 			);
 		}
 
-		if constexpr (compare::timeForXPos2<Derived, Base, types::pure1789>::value) {
+		if constexpr (compare::timeForXPos2<Derived, Base, types::pure1849>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::timeForXPos2", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::timeForXPos2<DefaultConv, Derived, Base, types::pure1849>::value, Membercall>(
 				"PlayLayer::timeForXPos2", 
-				(void*)addresses::address1789(), 
-				(void*)wrap::timeForXPos2<Membercall, Derived, Base, types::pure1789>::value
+				(void*)addresses::address1849()
 			);
 		}
 
-		if constexpr (compare::togglePracticeMode<Derived, Base, types::pure1795>::value) {
+		if constexpr (compare::togglePracticeMode<Derived, Base, types::pure1855>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::togglePracticeMode", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::togglePracticeMode<DefaultConv, Derived, Base, types::pure1855>::value, Membercall>(
 				"PlayLayer::togglePracticeMode", 
-				(void*)addresses::address1795(), 
-				(void*)wrap::togglePracticeMode<Membercall, Derived, Base, types::pure1795>::value
+				(void*)addresses::address1855()
 			);
 		}
 
-		if constexpr (compare::update<Derived, Base, types::pure1801>::value) {
+		if constexpr (compare::update<Derived, Base, types::pure1861>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::update", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::update<DefaultConv, Derived, Base, types::pure1861>::value, Thiscall>(
 				"PlayLayer::update", 
-				(void*)addresses::address1801(), 
-				(void*)wrap::update<Thiscall, Derived, Base, types::pure1801>::value
+				(void*)addresses::address1861()
 			);
 		}
 
-		if constexpr (compare::updateAttempts<Derived, Base, types::pure1802>::value) {
+		if constexpr (compare::updateAttempts<Derived, Base, types::pure1862>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::updateAttempts", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateAttempts<DefaultConv, Derived, Base, types::pure1862>::value, Thiscall>(
 				"PlayLayer::updateAttempts", 
-				(void*)addresses::address1802(), 
-				(void*)wrap::updateAttempts<Thiscall, Derived, Base, types::pure1802>::value
+				(void*)addresses::address1862()
 			);
 		}
 
-		if constexpr (compare::updateReplay<Derived, Base, types::pure1810>::value) {
+		if constexpr (compare::updateReplay<Derived, Base, types::pure1870>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::updateReplay", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateReplay<DefaultConv, Derived, Base, types::pure1870>::value, Membercall>(
 				"PlayLayer::updateReplay", 
-				(void*)addresses::address1810(), 
-				(void*)wrap::updateReplay<Membercall, Derived, Base, types::pure1810>::value
+				(void*)addresses::address1870()
 			);
 		}
 
-		if constexpr (compare::updateTweenAction<Derived, Base, types::pure1812>::value) {
+		if constexpr (compare::updateTweenAction<Derived, Base, types::pure1872>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::updateTweenAction", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateTweenAction<DefaultConv, Derived, Base, types::pure1872>::value, Thiscall>(
 				"PlayLayer::updateTweenAction", 
-				(void*)addresses::address1812(), 
-				(void*)wrap::updateTweenAction<Thiscall, Derived, Base, types::pure1812>::value
+				(void*)addresses::address1872()
 			);
 		}
 
-		if constexpr (compare::updateVisibility<Derived, Base, types::pure1813>::value) {
+		if constexpr (compare::updateVisibility<Derived, Base, types::pure1873>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::updateVisibility", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateVisibility<DefaultConv, Derived, Base, types::pure1873>::value, Thiscall>(
 				"PlayLayer::updateVisibility", 
-				(void*)addresses::address1813(), 
-				(void*)wrap::updateVisibility<Thiscall, Derived, Base, types::pure1813>::value
+				(void*)addresses::address1873()
 			);
 		}
 
-		if constexpr (compare::visit<Derived, Base, types::pure1815>::value) {
+		if constexpr (compare::visit<Derived, Base, types::pure1875>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::visit", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::visit<DefaultConv, Derived, Base, types::pure1875>::value, Thiscall>(
 				"PlayLayer::visit", 
-				(void*)addresses::address1815(), 
-				(void*)wrap::visit<Thiscall, Derived, Base, types::pure1815>::value
+				(void*)addresses::address1875()
 			);
 		}
 
-		if constexpr (compare::destructor<Derived, Base, types::pure1819>::value) {
+		if constexpr (compare::destructor<Derived, Base, types::pure1879>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PlayLayer::destructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::destructor<DefaultConv, Derived, Base, types::pure1879>::value, Thiscall>(
 				"PlayLayer::destructor", 
-				(void*)addresses::address1819(), 
-				(void*)wrap::destructor<Thiscall, Derived, Base, types::pure1819>::value
+				(void*)addresses::address1879()
 			);
 		}
 
@@ -15127,15 +14703,14 @@ struct Modify<Derived, PointNode> : ModifyBase<Modify<Derived, PointNode>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1974>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2034>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function PointNode::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2034>::value, Optcall>(
 				"PointNode::create", 
-				(void*)addresses::address1974(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1974>::value
+				(void*)addresses::address2034()
 			);
 		}
 
@@ -15150,15 +14725,14 @@ struct Modify<Derived, ProfilePage> : ModifyBase<Modify<Derived, ProfilePage>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1975>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2035>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function ProfilePage::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2035>::value, Optcall>(
 				"ProfilePage::create", 
-				(void*)addresses::address1975(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1975>::value
+				(void*)addresses::address2035()
 			);
 		}
 
@@ -15217,15 +14791,14 @@ struct Modify<Derived, SelectArtLayer> : ModifyBase<Modify<Derived, SelectArtLay
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure1980>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2040>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SelectArtLayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2040>::value, Optcall>(
 				"SelectArtLayer::create", 
-				(void*)addresses::address1980(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure1980>::value
+				(void*)addresses::address2040()
 			);
 		}
 
@@ -15240,51 +14813,47 @@ struct Modify<Derived, SetGroupIDLayer> : ModifyBase<Modify<Derived, SetGroupIDL
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::updateGroupIDLabel<Derived, Base, types::pure1983>::value) {
+		if constexpr (compare::updateGroupIDLabel<Derived, Base, types::pure2043>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SetGroupIDLayer::updateGroupIDLabel", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateGroupIDLabel<DefaultConv, Derived, Base, types::pure2043>::value, Thiscall>(
 				"SetGroupIDLayer::updateGroupIDLabel", 
-				(void*)addresses::address1983(), 
-				(void*)wrap::updateGroupIDLabel<Thiscall, Derived, Base, types::pure1983>::value
+				(void*)addresses::address2043()
 			);
 		}
 
-		if constexpr (compare::updateEditorLayerID<Derived, Base, types::pure1985>::value) {
+		if constexpr (compare::updateEditorLayerID<Derived, Base, types::pure2045>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SetGroupIDLayer::updateEditorLayerID", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateEditorLayerID<DefaultConv, Derived, Base, types::pure2045>::value, Thiscall>(
 				"SetGroupIDLayer::updateEditorLayerID", 
-				(void*)addresses::address1985(), 
-				(void*)wrap::updateEditorLayerID<Thiscall, Derived, Base, types::pure1985>::value
+				(void*)addresses::address2045()
 			);
 		}
 
-		if constexpr (compare::updateEditorLayerID2<Derived, Base, types::pure1986>::value) {
+		if constexpr (compare::updateEditorLayerID2<Derived, Base, types::pure2046>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SetGroupIDLayer::updateEditorLayerID2", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateEditorLayerID2<DefaultConv, Derived, Base, types::pure2046>::value, Thiscall>(
 				"SetGroupIDLayer::updateEditorLayerID2", 
-				(void*)addresses::address1986(), 
-				(void*)wrap::updateEditorLayerID2<Thiscall, Derived, Base, types::pure1986>::value
+				(void*)addresses::address2046()
 			);
 		}
 
-		if constexpr (compare::updateZOrder<Derived, Base, types::pure1987>::value) {
+		if constexpr (compare::updateZOrder<Derived, Base, types::pure2047>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SetGroupIDLayer::updateZOrder", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateZOrder<DefaultConv, Derived, Base, types::pure2047>::value, Thiscall>(
 				"SetGroupIDLayer::updateZOrder", 
-				(void*)addresses::address1987(), 
-				(void*)wrap::updateZOrder<Thiscall, Derived, Base, types::pure1987>::value
+				(void*)addresses::address2047()
 			);
 		}
 
@@ -15409,87 +14978,80 @@ struct Modify<Derived, SimplePlayer> : ModifyBase<Modify<Derived, SimplePlayer>>
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::init<Derived, Base, types::pure2042>::value) {
+		if constexpr (compare::init<Derived, Base, types::pure2102>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SimplePlayer::init", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::init<DefaultConv, Derived, Base, types::pure2102>::value, Membercall>(
 				"SimplePlayer::init", 
-				(void*)addresses::address2042(), 
-				(void*)wrap::init<Membercall, Derived, Base, types::pure2042>::value
+				(void*)addresses::address2102()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure2043>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2103>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SimplePlayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2103>::value, Optcall>(
 				"SimplePlayer::create", 
-				(void*)addresses::address2043(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure2043>::value
+				(void*)addresses::address2103()
 			);
 		}
 
-		if constexpr (compare::updatePlayerFrame<Derived, Base, types::pure2044>::value) {
+		if constexpr (compare::updatePlayerFrame<Derived, Base, types::pure2104>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SimplePlayer::updatePlayerFrame", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updatePlayerFrame<DefaultConv, Derived, Base, types::pure2104>::value, Membercall>(
 				"SimplePlayer::updatePlayerFrame", 
-				(void*)addresses::address2044(), 
-				(void*)wrap::updatePlayerFrame<Membercall, Derived, Base, types::pure2044>::value
+				(void*)addresses::address2104()
 			);
 		}
 
-		if constexpr (compare::updateColors<Derived, Base, types::pure2045>::value) {
+		if constexpr (compare::updateColors<Derived, Base, types::pure2105>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SimplePlayer::updateColors", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateColors<DefaultConv, Derived, Base, types::pure2105>::value, Thiscall>(
 				"SimplePlayer::updateColors", 
-				(void*)addresses::address2045(), 
-				(void*)wrap::updateColors<Thiscall, Derived, Base, types::pure2045>::value
+				(void*)addresses::address2105()
 			);
 		}
 
-		if constexpr (compare::setFrames<Derived, Base, types::pure2046>::value) {
+		if constexpr (compare::setFrames<Derived, Base, types::pure2106>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SimplePlayer::setFrames", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setFrames<DefaultConv, Derived, Base, types::pure2106>::value, Membercall>(
 				"SimplePlayer::setFrames", 
-				(void*)addresses::address2046(), 
-				(void*)wrap::setFrames<Membercall, Derived, Base, types::pure2046>::value
+				(void*)addresses::address2106()
 			);
 		}
 
-		if constexpr (compare::setColor<Derived, Base, types::pure2047>::value) {
+		if constexpr (compare::setColor<Derived, Base, types::pure2107>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SimplePlayer::setColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setColor<DefaultConv, Derived, Base, types::pure2107>::value, Membercall>(
 				"SimplePlayer::setColor", 
-				(void*)addresses::address2047(), 
-				(void*)wrap::setColor<Membercall, Derived, Base, types::pure2047>::value
+				(void*)addresses::address2107()
 			);
 		}
 
-		if constexpr (compare::setOpacity<Derived, Base, types::pure2048>::value) {
+		if constexpr (compare::setOpacity<Derived, Base, types::pure2108>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SimplePlayer::setOpacity", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setOpacity<DefaultConv, Derived, Base, types::pure2108>::value, Membercall>(
 				"SimplePlayer::setOpacity", 
-				(void*)addresses::address2048(), 
-				(void*)wrap::setOpacity<Membercall, Derived, Base, types::pure2048>::value
+				(void*)addresses::address2108()
 			);
 		}
 
@@ -15504,39 +15066,36 @@ struct Modify<Derived, Slider> : ModifyBase<Modify<Derived, Slider>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::getValue<Derived, Base, types::pure2052>::value) {
+		if constexpr (compare::getValue<Derived, Base, types::pure2112>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function Slider::getValue", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::getValue<DefaultConv, Derived, Base, types::pure2112>::value, Thiscall>(
 				"Slider::getValue", 
-				(void*)addresses::address2052(), 
-				(void*)wrap::getValue<Thiscall, Derived, Base, types::pure2052>::value
+				(void*)addresses::address2112()
 			);
 		}
 
-		if constexpr (compare::updateBar<Derived, Base, types::pure2053>::value) {
+		if constexpr (compare::updateBar<Derived, Base, types::pure2113>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function Slider::updateBar", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateBar<DefaultConv, Derived, Base, types::pure2113>::value, Thiscall>(
 				"Slider::updateBar", 
-				(void*)addresses::address2053(), 
-				(void*)wrap::updateBar<Thiscall, Derived, Base, types::pure2053>::value
+				(void*)addresses::address2113()
 			);
 		}
 
-		if constexpr (compare::create<Derived, Base, types::pure2054>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2114>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function Slider::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2114>::value, Optcall>(
 				"Slider::create", 
-				(void*)addresses::address2054(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure2054>::value
+				(void*)addresses::address2114()
 			);
 		}
 
@@ -15551,15 +15110,14 @@ struct Modify<Derived, SliderThumb> : ModifyBase<Modify<Derived, SliderThumb>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::setValue<Derived, Base, types::pure2055>::value) {
+		if constexpr (compare::setValue<Derived, Base, types::pure2115>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function SliderThumb::setValue", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::setValue<DefaultConv, Derived, Base, types::pure2115>::value, Membercall>(
 				"SliderThumb::setValue", 
-				(void*)addresses::address2055(), 
-				(void*)wrap::setValue<Membercall, Derived, Base, types::pure2055>::value
+				(void*)addresses::address2115()
 			);
 		}
 
@@ -15585,27 +15143,25 @@ struct Modify<Derived, StatsCell> : ModifyBase<Modify<Derived, StatsCell>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::updateBGColor<Derived, Base, types::pure2063>::value) {
+		if constexpr (compare::updateBGColor<Derived, Base, types::pure2124>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function StatsCell::updateBGColor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::updateBGColor<DefaultConv, Derived, Base, types::pure2124>::value, Membercall>(
 				"StatsCell::updateBGColor", 
-				(void*)addresses::address2063(), 
-				(void*)wrap::updateBGColor<Membercall, Derived, Base, types::pure2063>::value
+				(void*)addresses::address2124()
 			);
 		}
 
-		if constexpr (compare::draw<Derived, Base, types::pure2064>::value) {
+		if constexpr (compare::draw<Derived, Base, types::pure2125>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function StatsCell::draw", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::draw<DefaultConv, Derived, Base, types::pure2125>::value, Thiscall>(
 				"StatsCell::draw", 
-				(void*)addresses::address2064(), 
-				(void*)wrap::draw<Thiscall, Derived, Base, types::pure2064>::value
+				(void*)addresses::address2125()
 			);
 		}
 
@@ -15620,15 +15176,14 @@ struct Modify<Derived, TextAlertPopup> : ModifyBase<Modify<Derived, TextAlertPop
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure2078>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2139>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function TextAlertPopup::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2139>::value, Optcall>(
 				"TextAlertPopup::create", 
-				(void*)addresses::address2078(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure2078>::value
+				(void*)addresses::address2139()
 			);
 		}
 
@@ -15709,99 +15264,91 @@ struct Modify<Derived, UILayer> : ModifyBase<Modify<Derived, UILayer>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure2099>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2162>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UILayer::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2162>::value, Cdecl>(
 				"UILayer::create", 
-				(void*)addresses::address2099(), 
-				(void*)wrap::create<Cdecl, Derived, Base, types::pure2099>::value
+				(void*)addresses::address2162()
 			);
 		}
 
-		if constexpr (compare::onCheck<Derived, Base, types::pure2104>::value) {
+		if constexpr (compare::onCheck<Derived, Base, types::pure2167>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UILayer::onCheck", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onCheck<DefaultConv, Derived, Base, types::pure2167>::value, Membercall>(
 				"UILayer::onCheck", 
-				(void*)addresses::address2104(), 
-				(void*)wrap::onCheck<Membercall, Derived, Base, types::pure2104>::value
+				(void*)addresses::address2167()
 			);
 		}
 
-		if constexpr (compare::onDeleteCheck<Derived, Base, types::pure2105>::value) {
+		if constexpr (compare::onDeleteCheck<Derived, Base, types::pure2168>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UILayer::onDeleteCheck", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onDeleteCheck<DefaultConv, Derived, Base, types::pure2168>::value, Membercall>(
 				"UILayer::onDeleteCheck", 
-				(void*)addresses::address2105(), 
-				(void*)wrap::onDeleteCheck<Membercall, Derived, Base, types::pure2105>::value
+				(void*)addresses::address2168()
 			);
 		}
 
-		if constexpr (compare::onPause<Derived, Base, types::pure2106>::value) {
+		if constexpr (compare::onPause<Derived, Base, types::pure2169>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UILayer::onPause", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::onPause<DefaultConv, Derived, Base, types::pure2169>::value, Membercall>(
 				"UILayer::onPause", 
-				(void*)addresses::address2106(), 
-				(void*)wrap::onPause<Membercall, Derived, Base, types::pure2106>::value
+				(void*)addresses::address2169()
 			);
 		}
 
-		if constexpr (compare::keyDown<Derived, Base, types::pure2107>::value) {
+		if constexpr (compare::keyDown<Derived, Base, types::pure2170>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UILayer::keyDown", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyDown<DefaultConv, Derived, Base, types::pure2170>::value, Thiscall>(
 				"UILayer::keyDown", 
-				(void*)addresses::address2107(), 
-				(void*)wrap::keyDown<Thiscall, Derived, Base, types::pure2107>::value
+				(void*)addresses::address2170()
 			);
 		}
 
-		if constexpr (compare::keyUp<Derived, Base, types::pure2108>::value) {
+		if constexpr (compare::keyUp<Derived, Base, types::pure2171>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UILayer::keyUp", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::keyUp<DefaultConv, Derived, Base, types::pure2171>::value, Thiscall>(
 				"UILayer::keyUp", 
-				(void*)addresses::address2108(), 
-				(void*)wrap::keyUp<Thiscall, Derived, Base, types::pure2108>::value
+				(void*)addresses::address2171()
 			);
 		}
 
-		if constexpr (compare::constructor<Derived, Base, types::pure2109>::value) {
+		if constexpr (compare::constructor<Derived, Base, types::pure2172>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UILayer::constructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::constructor<DefaultConv, Derived, Base, types::pure2172>::value, Thiscall>(
 				"UILayer::constructor", 
-				(void*)addresses::address2109(), 
-				(void*)wrap::constructor<Thiscall, Derived, Base, types::pure2109>::value
+				(void*)addresses::address2172()
 			);
 		}
 
-		if constexpr (compare::destructor<Derived, Base, types::pure2110>::value) {
+		if constexpr (compare::destructor<Derived, Base, types::pure2173>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UILayer::destructor", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::destructor<DefaultConv, Derived, Base, types::pure2173>::value, Thiscall>(
 				"UILayer::destructor", 
-				(void*)addresses::address2110(), 
-				(void*)wrap::destructor<Thiscall, Derived, Base, types::pure2110>::value
+				(void*)addresses::address2173()
 			);
 		}
 
@@ -15816,39 +15363,36 @@ struct Modify<Derived, UndoObject> : ModifyBase<Modify<Derived, UndoObject>> {
 		using namespace geode::core::meta;
 		using namespace geode::core::meta::x86;
 
-		if constexpr (compare::create<Derived, Base, types::pure2112>::value) {
+		if constexpr (compare::create<Derived, Base, types::pure2175>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UndoObject::create", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::create<DefaultConv, Derived, Base, types::pure2175>::value, Optcall>(
 				"UndoObject::create", 
-				(void*)addresses::address2112(), 
-				(void*)wrap::create<Optcall, Derived, Base, types::pure2112>::value
+				(void*)addresses::address2175()
 			);
 		}
 
-		if constexpr (compare::createWithArray<Derived, Base, types::pure2113>::value) {
+		if constexpr (compare::createWithArray<Derived, Base, types::pure2176>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UndoObject::createWithArray", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithArray<DefaultConv, Derived, Base, types::pure2176>::value, Optcall>(
 				"UndoObject::createWithArray", 
-				(void*)addresses::address2113(), 
-				(void*)wrap::createWithArray<Optcall, Derived, Base, types::pure2113>::value
+				(void*)addresses::address2176()
 			);
 		}
 
-		if constexpr (compare::createWithTransformObjects<Derived, Base, types::pure2114>::value) {
+		if constexpr (compare::createWithTransformObjects<Derived, Base, types::pure2177>::value) {
 			Interface::get()->logInfo(
 				"Adding hook at function UndoObject::createWithTransformObjects", 
 				Severity::Debug
 			);
-			Interface::get()->addHook(
+			Interface::get()->addHook<wrap::createWithTransformObjects<DefaultConv, Derived, Base, types::pure2177>::value, Optcall>(
 				"UndoObject::createWithTransformObjects", 
-				(void*)addresses::address2114(), 
-				(void*)wrap::createWithTransformObjects<Optcall, Derived, Base, types::pure2114>::value
+				(void*)addresses::address2177()
 			);
 		}
 
