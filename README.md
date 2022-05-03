@@ -1,2 +1,2 @@
-# bin
-Official binaries and libraries for the Geode SDK
+# suite
+Geode development suite.
