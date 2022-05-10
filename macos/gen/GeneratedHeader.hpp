@@ -1,3 +1,6 @@
+#pragma once
+#include <gdstdlib.hpp>
+#include <cocos2d.h>
 class UILayer;
 class ToggleTriggerAction;
 class TextInputDelegate;
@@ -57,6 +60,8 @@ class LoadingCircle;
 class ListButtonBar;
 class LevelSettingsDelegate;
 class LevelSearchLayer;
+class LevelLeaderboard;
+class LevelCell;
 class LeaderboardsLayer;
 class SetupInstantCountPopup;
 class InheritanceNode;
@@ -96,6 +101,7 @@ class TableView;
 class TopArtistsLayer;
 class GJColorSetupLayer;
 class EndPortalObject;
+class LevelPage;
 class GJAccountSyncDelegate;
 class SongInfoLayer;
 class ObjectManager;
@@ -113,7 +119,6 @@ class HSVWidgetPopupDelegate;
 class ColorSelectDelegate;
 class ColorSetupDelegate;
 class CustomizeObjectLayer;
-class HardStreak;
 class CustomSongCell;
 class CreatorLayer;
 class CurrencyRewardDelegate;
@@ -177,6 +182,7 @@ class GJListLayer;
 class GJComment;
 class SetupTouchTogglePopup;
 class EditorOptionsLayer;
+class HardStreak;
 class FMODSound;
 class SetGroupIDLayer;
 class EffectGameObject;
@@ -200,6 +206,7 @@ class GhostTrailEffect;
 class SetItemIDLayer;
 class ButtonSprite;
 class CCLightFlash;
+class GJChallengeItem;
 class AudioEffectsLayer;
 class GJItemIcon;
 class VideoOptionsLayer;
@@ -2696,20 +2703,11 @@ public:
 
     GEODE_CODEGEN_DLL void setFade(bool fade);
 
-    template <bool T=false>
-    static LoadingCircle* create(){
-        static_assert(T, "Implement LoadingCircle::create");
-    }
+    GEODE_CODEGEN_DLL static LoadingCircle* create();
 
-    template <bool T=false>
-    void show(){
-        static_assert(T, "Implement LoadingCircle::show");
-    }
+    GEODE_CODEGEN_DLL void show();
 
-    template <bool T=false>
-    void fadeAndRemove(){
-        static_assert(T, "Implement LoadingCircle::fadeAndRemove");
-    }
+    GEODE_CODEGEN_DLL void fadeAndRemove();
 
         cocos2d::CCSprite* m_sprite;
         cocos2d::CCLayer* m_parentLayer;
@@ -2735,6 +2733,36 @@ public:
         static_assert(T, "Implement LevelSearchLayer::create");
     }
 
+};
+
+class LevelLeaderboard : public FLAlertLayer {
+public:
+
+    template <bool T=false>
+    void onChangeType(cocos2d::CCObject* pSender){
+        static_assert(T, "Implement LevelLeaderboard::onChangeType");
+    }
+
+    template <bool T=false>
+    void onGarage(cocos2d::CCObject* pSender){
+        static_assert(T, "Implement LevelLeaderboard::onGarage");
+    }
+
+    template <bool T=false>
+    bool init(GJGameLevel* level, int type){
+        static_assert(T, "Implement LevelLeaderboard::init");
+    }
+
+    GEODE_CODEGEN_DLL static LevelLeaderboard* create(GJGameLevel* level, int leaderboardType);
+
+};
+
+class LevelCell : public TableViewCell {
+public:
+
+        CCMenuItemSpriteExtra* m_button;
+        GJGameLevel* m_level;
+        bool m_cellDrawn;
 };
 
 class LeaderboardsLayer {
@@ -2803,8 +2831,36 @@ public:
         static_assert(T, "Implement InfoLayer::onLevelInfo");
     }
 
-        GEODE_UNIMPLEMENTED_PAD
+    template <bool T=false>
+    void loadPage(int page){
+        static_assert(T, "Implement InfoLayer::loadPage");
+    }
+
+    template <bool T=false>
+    static InfoLayer* create(GJGameLevel* level, GJUserScore* score){
+        static_assert(T, "Implement InfoLayer::create");
+    }
+
+        GJGameLevel* m_level;
+        GJUserScore* m_score;
+        gd::string m_commentKey;
+        LoadingCircle* m_loadingCircle;
+        cocos2d::CCLabelBMFont* m_pageLabel;
+        cocos2d::CCLabelBMFont* m_commentsGoldLabel;
         GJCommentListLayer* m_list;
+        CCMenuItemSpriteExtra* m_leftArrow;
+        CCMenuItemSpriteExtra* m_rightArrow;
+        CCMenuItemSpriteExtra* m_likeBtn;
+        CCMenuItemSpriteExtra* m_timeBtn;
+        CCMenuItemSpriteExtra* m_reportBtn;
+        CCMenuItemSpriteExtra* m_commentsBtn;
+        CCMenuItemSpriteExtra* m_refreshCommentsBtn;
+        int m_itemCount;
+        int m_pageStartIdx;
+        int m_pageEndIdx;
+        int m_page;
+        bool m_canUpdateUserScore;
+        bool m_commentHistory;
 };
 
 class InfoAlertButton {
@@ -2878,8 +2934,30 @@ public:
 
     GEODE_CODEGEN_DLL static ProfilePage* create(int accountID, bool idk);
 
-        GEODE_UNIMPLEMENTED_PAD
+    template <bool T=false>
+    void getUserInfoFailed(int p0){
+        static_assert(T, "Implement ProfilePage::getUserInfoFailed");
+    }
+
+    template <bool T=false>
+    bool init(int accountID, bool idk){
+        static_assert(T, "Implement ProfilePage::init");
+    }
+
+    template <bool T=false>
+    void onUpdate(cocos2d::CCObject* p0){
+        static_assert(T, "Implement ProfilePage::onUpdate");
+    }
+
+    template <bool T=false>
+    void loadPageFromUserInfo(GJUserScore* score){
+        static_assert(T, "Implement ProfilePage::loadPageFromUserInfo");
+    }
+
+        GJUserScore* m_score;
         int m_accountID;
+        GEODE_UNIMPLEMENTED_PAD
+        cocos2d::CCArray* m_buttons;
 };
 
 class GameSoundManager : public cocos2d::CCNode {
@@ -3249,7 +3327,11 @@ public:
         static_assert(T, "Implement GameLevelManager::getMainLevel");
     }
 
-        CLASSPARAM(cocos2d::CCDictionary*, timerDict, 0x1e8);
+    template <bool T=false>
+    gd::string userNameForUserID(int id){
+        static_assert(T, "Implement GameLevelManager::userNameForUserID");
+    }
+
         cocos2d::CCDictionary* m_mainLevels;
         cocos2d::CCDictionary* m_searchFilters;
         cocos2d::CCDictionary* m_onlineLevels;
@@ -3258,6 +3340,7 @@ public:
         cocos2d::CCDictionary* m_downloadedLevels;
         cocos2d::CCDictionary* m_likedLevels;
         cocos2d::CCDictionary* m_ratedLevels;
+        cocos2d::CCDictionary* m_ratedDemons;
         cocos2d::CCDictionary* m_reportedLevels;
         cocos2d::CCDictionary* m_onlineFolders;
         cocos2d::CCDictionary* m_localLevelsFolders;
@@ -3270,22 +3353,23 @@ public:
         int m_weeklyID;
         int m_weeklyIDUnk;
         cocos2d::CCDictionary* m_gauntletLevels;
+        cocos2d::CCDictionary* m_unkDict13;
         GEODE_UNIMPLEMENTED_PAD
-        cocos2d::CCDictionary* m_unkDict14;
+        cocos2d::CCDictionary* timerDict;
         cocos2d::CCDictionary* m_knownUsers;
         cocos2d::CCDictionary* m_accountIDtoUserIDDict;
         cocos2d::CCDictionary* m_userIDtoAccountIDDict;
-        cocos2d::CCDictionary* m_unkDict18;
-        cocos2d::CCDictionary* m_unkDict19;
+        cocos2d::CCDictionary* m_storedLevels;
+        cocos2d::CCDictionary* m_pageInfo;
         cocos2d::CCDictionary* m_unkDict20;
-        cocos2d::CCDictionary* m_unkDict21;
-        cocos2d::CCDictionary* m_unkDict22;
-        cocos2d::CCDictionary* m_unkDict23;
+        cocos2d::CCDictionary* m_savedPacks;
+        cocos2d::CCDictionary* m_savedGauntlets;
+        cocos2d::CCDictionary* m_downloadObjects;
         cocos2d::CCDictionary* m_unkDict24;
-        cocos2d::CCDictionary* m_unkDict25;
-        cocos2d::CCDictionary* m_unkDict26;
-        cocos2d::CCDictionary* m_unkDict27;
-        cocos2d::CCDictionary* m_unkDict28;
+        cocos2d::CCDictionary* m_storedUserInfo;
+        cocos2d::CCDictionary* m_friendRequests;
+        cocos2d::CCDictionary* m_userMessages;
+        cocos2d::CCDictionary* m_userReplies;
         gd::string m_unkStr1;
         gd::string m_unkStr2;
         GEODE_UNIMPLEMENTED_PAD
@@ -3595,6 +3679,11 @@ public:
         static_assert(T, "Implement GJGameLevel::getAverageDifficulty");
     }
 
+    template <bool T=false>
+    gd::string getUnpackedLevelDescription(){
+        static_assert(T, "Implement GJGameLevel::getUnpackedLevelDescription");
+    }
+
         CLASSPARAM(int, levelId, 0x130);
         CLASSPARAM(gd::string, name, 0x138);
         CLASSPARAM(gd::string, levelString, 0x148);
@@ -3613,8 +3702,8 @@ public:
         CLASSPARAM(OBB2D*, hitbox, 0x2b0);
         CLASSPARAM(bool, official, 0x324);
         cocos2d::CCDictionary* m_lastBuildSave;
-        int m_levelID_rand;
-        int m_levelID_seed;
+        int m_levelIDRand;
+        int m_levelIDSeed;
         int m_levelID;
         gd::string m_levelName;
         gd::string m_levelDesc;
@@ -3623,19 +3712,19 @@ public:
         gd::string m_recordString;
         gd::string m_uploadDate;
         gd::string m_updateDate;
-        int m_userID_rand;
-        int m_userID_seed;
+        int m_userIDRand;
+        int m_userIDSeed;
         int m_userID;
-        int m_accountID_rand;
-        int m_accountID_seed;
+        int m_accountIDRand;
+        int m_accountIDSeed;
         int m_accountID;
         GJDifficulty m_difficulty;
         int m_audioTrack;
         int m_songID;
         int m_levelRev;
         bool m_unlisted;
-        int m_objectCount_rand;
-        int m_objectCount_seed;
+        int m_objectCountRand;
+        int m_objectCountSeed;
         int m_objectCount;
         int m_levelIndex;
         int m_ratings;
@@ -3648,36 +3737,36 @@ public:
         int m_workingTime2;
         bool m_lowDetailMode;
         bool m_lowDetailModeToggled;
-        int m_isVerified_rand;
-        int m_isVerified_seed;
+        int m_isVerifiedRand;
+        int m_isVerifiedSeed;
         bool m_isVerified;
         bool m_isUploaded;
         bool m_hasBeenModified;
         int m_levelVersion;
         int m_gameVersion;
-        int m_attempts_rand;
-        int m_attempts_seed;
+        int m_attemptsRand;
+        int m_attemptsSeed;
         int m_attempts;
-        int m_jumps_rand;
-        int m_jumps_seed;
+        int m_jumpsRand;
+        int m_jumpsSeed;
         int m_jumps;
-        int m_clicks_rand;
-        int m_clicks_seed;
+        int m_clicksRand;
+        int m_clicksSeed;
         int m_clicks;
-        int m_attemptTime_rand;
-        int m_attemptTime_seed;
+        int m_attemptTimeRand;
+        int m_attemptTimeSeed;
         int m_attemptTime;
         int m_chk;
         bool m_isChkValid;
         bool m_isCompletionLegitimate;
         int m_normalPercent;
-        int m_normalPercent_seed;
-        int m_normalPercent_rand;
-        int m_orbCompletion_rand;
-        int m_orbCompletion_seed;
+        int m_normalPercentSeed;
+        int m_normalPercentRand;
+        int m_orbCompletionRand;
+        int m_orbCompletionSeed;
         int m_orbCompletion;
-        int m_newNormalPercent2_rand;
-        int m_newNormalPercent2_seed;
+        int m_newNormalPercent2Rand;
+        int m_newNormalPercent2Seed;
         int m_newNormalPercent2;
         int m_practicePercent;
         int m_likes;
@@ -3687,36 +3776,36 @@ public:
         bool m_isEpic;
         bool m_levelFavorited;
         int m_levelFolder;
-        int m_dailyID_rand;
-        int m_dailyID_seed;
+        int m_dailyIDRand;
+        int m_dailyIDSeed;
         int m_dailyID;
-        int m_demon_rand;
-        int m_demon_seed;
+        int m_demonRand;
+        int m_demonSeed;
         int m_demon;
         int m_demonDifficulty;
-        int m_stars_rand;
-        int m_stars_seed;
+        int m_starsRand;
+        int m_starsSeed;
         int m_stars;
         bool m_autoLevel;
         int m_coins;
-        int m_coinsVerified_rand;
-        int m_coinsVerified_seed;
+        int m_coinsVerifiedRand;
+        int m_coinsVerifiedSeed;
         int m_coinsVerified;
-        int m_password_rand;
-        int m_password_seed;
-        int m_originalLevel_rand;
-        int m_originalLevel_seed;
+        int m_passwordRand;
+        int m_passwordSeed;
+        int m_originalLevelRand;
+        int m_originalLevelSeed;
         int m_originalLevel;
         bool m_twoPlayerMode;
         int m_failedPasswordAttempts;
-        int m_firstCoinVerified_rand;
-        int m_firstCoinVerified_seed;
+        int m_firstCoinVerifiedRand;
+        int m_firstCoinVerifiedSeed;
         int m_firstCoinVerified;
-        int m_secondCoinVerified_rand;
-        int m_secondCoinVerified_seed;
+        int m_secondCoinVerifiedRand;
+        int m_secondCoinVerifiedSeed;
         int m_secondCoinVerified;
-        int m_thirdCoinVerified_rand;
-        int m_thirdCoinVerified_seed;
+        int m_thirdCoinVerifiedRand;
+        int m_thirdCoinVerifiedSeed;
         int m_thirdCoinVerified;
         int m_starsRequested;
         bool m_showedSongWarning;
@@ -3875,6 +3964,13 @@ public:
 
     GEODE_CODEGEN_DLL void updateColors(cocos2d::_ccColor3B p0);
 
+};
+
+class LevelPage {
+public:
+
+        GEODE_UNIMPLEMENTED_PAD
+        GJGameLevel* m_level;
 };
 
 class GJAccountSyncDelegate {
@@ -4121,6 +4217,11 @@ public:
 
     GEODE_CODEGEN_DLL static EditLevelLayer* create(GJGameLevel* level);
 
+    template <bool T=false>
+    void onLevelInfo(){
+        static_assert(T, "Implement EditLevelLayer::onLevelInfo");
+    }
+
         cocos2d::CCMenu* m_buttonMenu;
         GJGameLevel* m_level;
         TextArea* m_descriptionInput;
@@ -4276,39 +4377,6 @@ public:
         bool m_customColorSelected;
 };
 
-class HardStreak : public cocos2d::CCDrawNode {
-public:
-
-        GEODE_CODEGEN_DLL ~HardStreak();
-    GEODE_CODEGEN_DLL virtual bool init();
-
-    GEODE_CODEGEN_DLL void addPoint(cocos2d::CCPoint p0);
-
-    GEODE_CODEGEN_DLL void clearBehindXPos(float p0);
-
-    GEODE_CODEGEN_DLL static HardStreak* create();
-
-    GEODE_CODEGEN_DLL void firstSetup();
-
-    GEODE_CODEGEN_DLL double normalizeAngle(double p0);
-
-    GEODE_CODEGEN_DLL cocos2d::CCPoint quadCornerOffset(cocos2d::CCPoint p0, cocos2d::CCPoint p1, float p2);
-
-    GEODE_CODEGEN_DLL void reset();
-
-    GEODE_CODEGEN_DLL void resumeStroke();
-
-    GEODE_CODEGEN_DLL void stopStroke();
-
-    GEODE_CODEGEN_DLL void updateStroke(float p0);
-
-        cocos2d::CCArray* m_pointsArr;
-        cocos2d::CCPoint m_currentPoint;
-        float m_waveSize;
-        float m_pulseSize;
-        bool m_isSolid;
-};
-
 class CustomSongCell : public TableViewCell {
 public:
 
@@ -4319,9 +4387,19 @@ public:
 class CreatorLayer : public cocos2d::CCLayer {
 public:
 
+    template <bool T=false>
+    void onChallenge(cocos2d::CCObject* p0){
+        static_assert(T, "Implement CreatorLayer::onChallenge");
+    }
+
     GEODE_CODEGEN_DLL void onMyLevels(cocos2d::CCObject* p0);
 
     GEODE_CODEGEN_DLL void onSavedLevels(cocos2d::CCObject* p0);
+
+    template <bool T=false>
+    bool init(){
+        static_assert(T, "Implement CreatorLayer::init");
+    }
 
     template <bool T=false>
     static CreatorLayer* create(){
@@ -4987,6 +5065,26 @@ public:
 
     GEODE_CODEGEN_DLL void awardSecretKey();
 
+    template <bool T=false>
+    int getAwardedCurrencyForLevel(GJGameLevel* p0){
+        static_assert(T, "Implement GameStatsManager::getAwardedCurrencyForLevel");
+    }
+
+    template <bool T=false>
+    int getBaseCurrencyForLevel(GJGameLevel* p0){
+        static_assert(T, "Implement GameStatsManager::getBaseCurrencyForLevel");
+    }
+
+    template <bool T=false>
+    const char* getCoinKey(int p0){
+        static_assert(T, "Implement GameStatsManager::getCoinKey");
+    }
+
+    template <bool T=false>
+    GJChallengeItem* getChallenge(int id){
+        static_assert(T, "Implement GameStatsManager::getChallenge");
+    }
+
     GEODE_CODEGEN_DLL void getSecretCoinKey(char const* p0);
 
     GEODE_CODEGEN_DLL void getStat(char const* p0);
@@ -5097,14 +5195,32 @@ public:
     }
 
     template <bool T=false>
+    void loadPage(GJSearchObject* pSearch){
+        static_assert(T, "Implement LevelBrowserLayer::loadPage");
+    }
+
+    template <bool T=false>
     void setupLevelBrowser(cocos2d::CCArray* levels){
         static_assert(T, "Implement LevelBrowserLayer::setupLevelBrowser");
+    }
+
+    template <bool T=false>
+    void updateLevelsLabel(cocos2d::CCArray* levels){
+        static_assert(T, "Implement LevelBrowserLayer::updateLevelsLabel");
     }
 
     GEODE_CODEGEN_DLL static LevelBrowserLayer* create(GJSearchObject* pSearch);
 
         GEODE_UNIMPLEMENTED_PAD
         GJListLayer* m_list;
+        CCMenuItemSpriteExtra* m_leftArrow;
+        CCMenuItemSpriteExtra* m_rightArrow;
+        GEODE_UNIMPLEMENTED_PAD
+        GJSearchObject* m_searchObject;
+        GEODE_UNIMPLEMENTED_PAD
+        int m_itemCount;
+        int m_pageStartIdx;
+        int m_pageEndIdx;
 };
 
 class CCAnimateFrameCache : public cocos2d::CCObject {
@@ -5707,13 +5823,20 @@ public:
     }
 
         gd::string m_commentString;
-        GEODE_UNIMPLEMENTED_PAD
+        gd::string m_userName;
         int m_commentID;
-        GEODE_UNIMPLEMENTED_PAD
+        int m_userID;
         int m_likeCount;
-        GEODE_UNIMPLEMENTED_PAD
+        int m_levelID;
+        bool m_isSpam;
         int m_accountID;
         gd::string m_uploadDate;
+        bool m_commentDeleted;
+        int m_percentage;
+        int m_modBadge;
+        cocos2d::ccColor3B m_color;
+        bool m_hasLevelID;
+        GJUserScore* m_userScore;
 };
 
 class SetupTouchTogglePopup : public FLAlertLayer {
@@ -5734,6 +5857,39 @@ public:
 
     GEODE_CODEGEN_DLL void onButtonsPerRow(cocos2d::CCObject* p0);
 
+};
+
+class HardStreak : public cocos2d::CCDrawNode {
+public:
+
+        GEODE_CODEGEN_DLL ~HardStreak();
+    GEODE_CODEGEN_DLL virtual bool init();
+
+    GEODE_CODEGEN_DLL void addPoint(cocos2d::CCPoint p0);
+
+    GEODE_CODEGEN_DLL void clearBehindXPos(float p0);
+
+    GEODE_CODEGEN_DLL static HardStreak* create();
+
+    GEODE_CODEGEN_DLL void firstSetup();
+
+    GEODE_CODEGEN_DLL double normalizeAngle(double p0);
+
+    GEODE_CODEGEN_DLL cocos2d::CCPoint quadCornerOffset(cocos2d::CCPoint p0, cocos2d::CCPoint p1, float p2);
+
+    GEODE_CODEGEN_DLL void reset();
+
+    GEODE_CODEGEN_DLL void resumeStroke();
+
+    GEODE_CODEGEN_DLL void stopStroke();
+
+    GEODE_CODEGEN_DLL void updateStroke(float p0);
+
+        cocos2d::CCArray* m_pointsArr;
+        cocos2d::CCPoint m_currentPoint;
+        float m_waveSize;
+        float m_pulseSize;
+        bool m_isSolid;
 };
 
 class FMODSound : public cocos2d::CCNode {
@@ -5901,7 +6057,7 @@ public:
     GEODE_CODEGEN_DLL static DialogLayer* createDialogLayer(DialogObject* p0, cocos2d::CCArray* p1, int p2);
 
     template <bool T=false>
-    void init(DialogLayer* p0, DialogObject* p1, cocos2d::CCArray* p2, int p3){
+    bool init(DialogLayer* p0, DialogObject* p1, cocos2d::CCArray* p2, int p3){
         static_assert(T, "Implement DialogLayer::init");
     }
 
@@ -5954,6 +6110,11 @@ public:
     template <bool T=false>
     void onLevelInfo(cocos2d::CCObject* pSender){
         static_assert(T, "Implement LevelInfoLayer::onLevelInfo");
+    }
+
+    template <bool T=false>
+    void setupProgressBars(){
+        static_assert(T, "Implement LevelInfoLayer::setupProgressBars");
     }
 
         GEODE_UNIMPLEMENTED_PAD
@@ -6016,6 +6177,7 @@ public:
         GEODE_UNIMPLEMENTED_PAD
         gd::string m_password;
         gd::string m_username;
+        int m_accountID;
 };
 
 class LevelEditorLayer : public GJBaseGameLayer, public LevelSettingsDelegate {
@@ -6507,6 +6669,18 @@ public:
         static_assert(T, "Implement DailyLevelPage::create");
     }
 
+    template <bool T=false>
+    bool init(bool weekly){
+        static_assert(T, "Implement DailyLevelPage::init");
+    }
+
+    template <bool T=false>
+    void updateTimers(float p0){
+        static_assert(T, "Implement DailyLevelPage::updateTimers");
+    }
+
+        GEODE_UNIMPLEMENTED_PAD
+        bool m_weekly;
 };
 
 class TouchToggleAction : public cocos2d::CCNode {
@@ -6617,6 +6791,25 @@ public:
 
     GEODE_CODEGEN_DLL void playEffect(cocos2d::CCPoint p0, cocos2d::_ccColor3B p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float p9, float p10, float p11, float p12, float p13, float p14, float p15, int p16, bool p17, bool p18, float p19);
 
+};
+
+class GJChallengeItem : public cocos2d::CCObject {
+public:
+
+        GJChallengeType m_challengeType;
+        int m_countSeed;
+        int m_countRand;
+        int m_count;
+        int m_rewardSeed;
+        int m_rewardRand;
+        int m_reward;
+        int m_goalSeed;
+        int m_goalRand;
+        int m_goal;
+        int m_timeLeft;
+        bool m_canClaim;
+        int m_position;
+        gd::string m_name;
 };
 
 class AudioEffectsLayer {
