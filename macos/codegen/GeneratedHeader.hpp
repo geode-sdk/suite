@@ -557,7 +557,30 @@ public:
 class SetupPulsePopup : public FLAlertLayer, public cocos2d::extension::ColorPickerDelegate, public TextInputDelegate, public GJSpecialColorSelectDelegate {
 public:
 
-    GEODE_CODEGEN_DLL virtual void colorValueChanged(cocos2d::ccColor3B color);
+    template <bool T=false>
+    void colorValueChanged(cocos2d::ccColor3B color){
+        static_assert(T, "Implement SetupPulsePopup::colorValueChanged");
+    }
+
+    template <bool T=false>
+    bool init(EffectGameObject* triggerObj, cocos2d::CCArray* triggerObjs){
+        static_assert(T, "Implement SetupPulsePopup::init");
+    }
+
+    template <bool T=false>
+    void updateColorValue(){
+        static_assert(T, "Implement SetupPulsePopup::updateColorValue");
+    }
+
+    template <bool T=false>
+    void onSelectPulseMode(cocos2d::CCObject* p0){
+        static_assert(T, "Implement SetupPulsePopup::onSelectPulseMode");
+    }
+
+    template <bool T=false>
+    void updatePulseMode(){
+        static_assert(T, "Implement SetupPulsePopup::updatePulseMode");
+    }
 
         cocos2d::extension::CCControlColourPicker* m_colorPicker;
         GEODE_UNIMPLEMENTED_PAD
@@ -3174,15 +3197,9 @@ public:
 
     GEODE_CODEGEN_DLL void update(float p0);
 
-    template <bool T=false>
-    bool isColorUnlocked(int _id, bool _type){
-        static_assert(T, "Implement GameManager::isColorUnlocked");
-    }
+    GEODE_CODEGEN_DLL bool isColorUnlocked(int _id, bool _type);
 
-    template <bool T=false>
-    bool isIconUnlocked(int _id, IconType _type){
-        static_assert(T, "Implement GameManager::isIconUnlocked");
-    }
+    GEODE_CODEGEN_DLL bool isIconUnlocked(int _id, IconType _type);
 
     template <bool T=false>
     void toggleGameVariable(const char* key){
@@ -6377,6 +6394,21 @@ public:
         static_assert(T, "Implement ColorSelectPopup::colorValueChanged");
     }
 
+    template <bool T=false>
+    bool init(EffectGameObject* triggerObj, cocos2d::CCArray* triggerObjs, ColorAction* colorAction){
+        static_assert(T, "Implement ColorSelectPopup::init");
+    }
+
+    template <bool T=false>
+    void updateColorValue(){
+        static_assert(T, "Implement ColorSelectPopup::updateColorValue");
+    }
+
+    template <bool T=false>
+    void updateCopyColorTextInputLabel(){
+        static_assert(T, "Implement ColorSelectPopup::updateCopyColorTextInputLabel");
+    }
+
         cocos2d::extension::CCControlColourPicker* m_colorPicker;
         cocos2d::CCLabelBMFont* m_unk1DC;
         cocos2d::CCLabelBMFont* m_label;
@@ -6392,7 +6424,7 @@ public:
         unsigned int m_bgrColor;
         GJColorSetupLayer* m_colorSetupLayer;
         float m_fadeTime;
-        int m_olayerColor;
+        int m_playerColor;
         bool m_isBlending;
         float m_opacity;
         ColorAction* m_colorAction;
@@ -6407,7 +6439,7 @@ public:
         bool m_unk234;
         int m_copyChannelID;
         bool m_copyOpacity;
-        ConfigureHSVWidget* m_configurehsvwidget;
+        ConfigureHSVWidget* m_hsvWidget;
         GEODE_UNIMPLEMENTED_PAD
         cocos2d::CCArray* m_unk254;
         cocos2d::CCArray* m_unk258;

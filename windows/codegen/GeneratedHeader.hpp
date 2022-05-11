@@ -3600,6 +3600,12 @@ public:
 
     GEODE_CODEGEN_DLL virtual void colorValueChanged(cocos2d::ccColor3B color);
 
+    GEODE_CODEGEN_DLL bool init(EffectGameObject* triggerObj, cocos2d::CCArray* triggerObjs, ColorAction* colorAction);
+
+    GEODE_CODEGEN_DLL void updateColorValue();
+
+    GEODE_CODEGEN_DLL void updateCopyColorTextInputLabel();
+
         cocos2d::extension::CCControlColourPicker* m_colorPicker;
         cocos2d::CCLabelBMFont* m_unk1DC;
         cocos2d::CCLabelBMFont* m_label;
@@ -3615,7 +3621,7 @@ public:
         unsigned int m_bgrColor;
         GJColorSetupLayer* m_colorSetupLayer;
         float m_fadeTime;
-        int m_olayerColor;
+        int m_playerColor;
         bool m_isBlending;
         float m_opacity;
         ColorAction* m_colorAction;
@@ -3630,7 +3636,7 @@ public:
         bool m_unk234;
         int m_copyChannelID;
         bool m_copyOpacity;
-        ConfigureHSVWidget* m_configurehsvwidget;
+        ConfigureHSVWidget* m_hsvWidget;
         GEODE_PAD(0x10);
         cocos2d::CCArray* m_unk254;
         cocos2d::CCArray* m_unk258;
@@ -8386,6 +8392,14 @@ class SetupPulsePopup : public FLAlertLayer, public cocos2d::extension::ColorPic
 public:
 
     GEODE_CODEGEN_DLL virtual void colorValueChanged(cocos2d::ccColor3B color);
+
+    GEODE_CODEGEN_DLL bool init(EffectGameObject* triggerObj, cocos2d::CCArray* triggerObjs);
+
+    GEODE_CODEGEN_DLL void updateColorValue();
+
+    GEODE_CODEGEN_DLL void onSelectPulseMode(cocos2d::CCObject* p0);
+
+    GEODE_CODEGEN_DLL void updatePulseMode();
 
         cocos2d::extension::CCControlColourPicker* m_colorPicker;
         GEODE_PAD(0x30);
