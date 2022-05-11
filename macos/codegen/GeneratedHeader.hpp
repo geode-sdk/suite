@@ -3174,9 +3174,15 @@ public:
 
     GEODE_CODEGEN_DLL void update(float p0);
 
-    GEODE_CODEGEN_DLL bool isColorUnlocked(int _id, bool _type);
+    template <bool T=false>
+    bool isColorUnlocked(int _id, bool _type){
+        static_assert(T, "Implement GameManager::isColorUnlocked");
+    }
 
-    GEODE_CODEGEN_DLL bool isIconUnlocked(int _id, IconType _type);
+    template <bool T=false>
+    bool isIconUnlocked(int _id, IconType _type){
+        static_assert(T, "Implement GameManager::isIconUnlocked");
+    }
 
     template <bool T=false>
     void toggleGameVariable(const char* key){
@@ -4505,7 +4511,7 @@ public:
     GEODE_CODEGEN_DLL void setupFromString(gd::string p0);
 
         GEODE_PAD(0xc);
-        GEODE_PAD(0x12c);
+        CLASSPARAM(cocos2d::ccColor3B, color, 0x12c);
         GEODE_PAD(0x5);
         float m_unk100;
         bool m_blending;
