@@ -42,7 +42,7 @@ jobs:
 
       - name: Update version info
         run: |
-          echo ${{ format('{\"loader\": \"{0}\", \"api\": \"{1}\", \"cli\": \"{2}\"}', steps.versions.outputs.loader_ver, steps.versions.outputs.api_ver, steps.versions.outputs.cli_ver)  }} > ${{ github.workspace }}/suite/versions.json
+          echo ${{ format('{{\"loader\": \"{0}\", \"api\": \"{1}\", \"cli\": \"{2}\"}}', steps.versions.outputs.loader_ver, steps.versions.outputs.api_ver, steps.versions.outputs.cli_ver)  }} > ${{ github.workspace }}/suite/versions.json
 
       - name: Commit, push to suite, and merge
         working-directory: ${{ github.workspace }}/suite
