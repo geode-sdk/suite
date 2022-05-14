@@ -44,11 +44,9 @@ jobs:
           echo ${{ steps.versions.outputs.api }}
           echo ${{ format('{{\"loader\": \"{0}\", \"api\": \"{1}\", \"cli\": \"{2}\"}}', steps.versions.outputs.loader, steps.versions.outputs.api, steps.versions.outputs.cli)  }} > ${{ github.workspace }}/suite/versions.json
 
-      - name: Commit, push to suite, and merge
+      - name: Commit, push to suite
         working-directory: ${{ github.workspace }}/suite
         run: |
-          git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-          git fetch origin
           git config --local user.email "${{ secrets.GEODE_BOT_EMAIL }}"
           git config --local user.name "GeodeBot"
           git add -A
@@ -59,3 +57,11 @@ jobs:
           git merge nightly
           git commit -m "Loader: ${{steps.versions.outputs.loader}} API: ${{steps.versions.outputs.api}} CLI: ${{steps.versions.outputs.cli}}"
           git push "https://GeodeBot:${{ secrets.GEODE_BOT_PUSH_BIN_TOKEN}}@github.com/geode-sdk/suite.git"
+
+      - name: Merge
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: nightly
+          target_branch: main
+          github_token: ${{secrets.GEODE_BOT_PUSH_BIN_TOKEN}}
