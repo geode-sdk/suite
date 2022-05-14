@@ -27,7 +27,8 @@ jobs:
           path: suite
           submodules: recursive
           token: '${{ secrets.GEODE_BOT_PUSH_BIN_TOKEN }}'
-      - run: git checkout nightly
+          ref: 'nightly'
+      - run: git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
         working-directory: ${{ github.workspace }}/suite
 
       - id: json
