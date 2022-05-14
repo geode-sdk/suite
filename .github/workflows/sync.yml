@@ -31,8 +31,7 @@ jobs:
 
       - id: json
         run: |
-          ls ${{ github.workspace }}
-          content=`cat ${{ github.workspace }}/versions.json`
+          content=`cat ${{ github.workspace }}/suite/versions.json`
           echo "::set-output name=json::$content"
       - id: versions
         run: |
@@ -42,7 +41,7 @@ jobs:
 
       - name: Update version info
         run: |
-          echo ${{toJSON(steps.versions.outputs)}} > ${{ github.workspace }}/versions.json
+          echo ${{toJSON(steps.versions.outputs)}} > ${{ github.workspace }}/suite/versions.json
 
       - name: Commit, push to suite, and merge
         working-directory: ${{ github.workspace }}/suite
