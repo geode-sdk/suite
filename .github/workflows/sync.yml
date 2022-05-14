@@ -36,9 +36,9 @@ jobs:
           echo "::set-output name=json::$content"
       - id: versions
         run: |
-          echo "::set-output loader=${{github.event.inputs.loader_ver != '' && github.event.inputs.loader_ver || fromJson(steps.json.outputs.json).loader}}"
-          echo "::set-output api=${{github.event.inputs.api_ver != '' && github.event.inputs.api_ver || fromJson(steps.json.outputs.json).api}}"
-          echo "::set-output cli=${{github.event.inputs.cli_ver != '' && github.event.inputs.cli_ver || fromJson(steps.json.outputs.json).cli}}"
+          echo "::set-output name=loader::${{github.event.inputs.loader_ver != '' && github.event.inputs.loader_ver || fromJson(steps.json.outputs.json).loader}}"
+          echo "::set-output name=api::${{github.event.inputs.api_ver != '' && github.event.inputs.api_ver || fromJson(steps.json.outputs.json).api}}"
+          echo "::set-output name=cli::${{github.event.inputs.cli_ver != '' && github.event.inputs.cli_ver || fromJson(steps.json.outputs.json).cli}}"
 
       - name: Update version info
         run: |
