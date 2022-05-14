@@ -28,8 +28,6 @@ jobs:
           submodules: recursive
           token: '${{ secrets.GEODE_BOT_PUSH_BIN_TOKEN }}'
           ref: 'nightly'
-      - run: git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-        working-directory: ${{ github.workspace }}/suite
 
       - id: json
         run: |
@@ -49,6 +47,8 @@ jobs:
       - name: Commit, push to suite, and merge
         working-directory: ${{ github.workspace }}/suite
         run: |
+          git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+          git fetch origin
           git config --local user.email "${{ secrets.GEODE_BOT_EMAIL }}"
           git config --local user.name "GeodeBot"
           git add -A
