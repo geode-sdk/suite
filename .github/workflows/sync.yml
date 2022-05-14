@@ -1,32 +1,62 @@
 # This is a basic workflow that is manually triggered
 
-name: Manual workflow
+name: Push update
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
     inputs:
       loader_ver:
         description: 'Loader version'
-        required: true
+        default: ''
       api_ver:
         description: 'API version'
-        required: true
+        default: ''
       cli_ver:
         description: 'CLI version'
-        required: true
+        default: ''
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
-    # The type of runner that the job will run on
+  push:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.api_ver }}"
+
+      - uses: actions/checkout@v2
+        with:
+          repository: geode-sdk/suite
+          path: suite
+          submodules: recursive
+          token: '${{ secrets.GEODE_BOT_PUSH_BIN_TOKEN }}'
+          ref: 'nightly'
+
+      - id: json
+        run: |
+          content=`cat ${{ github.workspace }}/suite/versions.json`
+          echo "::set-output name=json::$content"
+      - id: versions
+        run: |
+          echo "::set-output name=loader::${{github.event.inputs.loader_ver != '' && github.event.inputs.loader_ver || fromJson(steps.json.outputs.json).loader}}"
+          echo "::set-output name=api::${{github.event.inputs.api_ver != '' && github.event.inputs.api_ver || fromJson(steps.json.outputs.json).api}}"
+          echo "::set-output name=cli::${{github.event.inputs.cli_ver != '' && github.event.inputs.cli_ver || fromJson(steps.json.outputs.json).cli}}"
+
+      - name: Update version info
+        run: |
+          echo ${{ steps.versions.outputs.api }}
+          echo ${{ format('{{\"loader\": \"{0}\", \"api\": \"{1}\", \"cli\": \"{2}\"}}', steps.versions.outputs.loader, steps.versions.outputs.api, steps.versions.outputs.cli)  }} > ${{ github.workspace }}/suite/versions.json
+
+      - name: Commit, push to suite
+        working-directory: ${{ github.workspace }}/suite
+        run: |
+          git config --local user.email "${{ secrets.GEODE_BOT_EMAIL }}"
+          git config --local user.name "GeodeBot"
+          git add -A
+          git commit -m "Stable update push"
+          git push "https://GeodeBot:${{ secrets.GEODE_BOT_PUSH_BIN_TOKEN}}@github.com/geode-sdk/suite.git"
+
+      - name: Merge
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: nightly
+          target_branch: main
+          github_token: ${{secrets.GEODE_BOT_PUSH_BIN_TOKEN}}
