@@ -1,32 +1,36 @@
 # This is a basic workflow that is manually triggered
 
-name: Manual workflow
+name: Push update
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
     inputs:
       loader_ver:
         description: 'Loader version'
-        required: true
+        default: ''
       api_ver:
         description: 'API version'
-        required: true
+        default: ''
       cli_ver:
         description: 'CLI version'
-        required: true
+        default: ''
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
-    # The type of runner that the job will run on
+  push:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.api_ver }}"
+
+      - id: json
+        run: |
+          content=`cat ./versions.json`
+          echo "::set-output name=json::$content"
+      - id: versions
+        run: |
+          echo "::set-output loader=${{github.event.inputs.loader_ver != '' && github.event.inputs.loader_ver || fromJson(steps.json.outputs.json).loader}}"
+          echo "::set-output api=${{github.event.inputs.api_ver != '' && github.event.inputs.api_ver || fromJson(steps.json.outputs.json).api}}"
+          echo "::set-output cli=${{github.event.inputs.cli_ver != '' && github.event.inputs.cli_ver || fromJson(steps.json.outputs.json).cli}}"
+
+      - name: Update version info
+        run: |
+          echo ${{toJSON(steps.versions.outputs)}} > ./versions.json
