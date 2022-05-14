@@ -59,4 +59,5 @@ jobs:
           type: now
           from_branch: nightly
           target_branch: main
+          message: "Loader: ${{ steps.versions.outputs.loader }} API: ${{ steps.versions.outputs.api }} CLI: ${{ steps.versions.outputs.cli }}"
           github_token: ${{secrets.GEODE_BOT_PUSH_BIN_TOKEN}}
