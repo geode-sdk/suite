@@ -52,6 +52,7 @@ jobs:
           git add -A
           git commit -m "Stable update push"
           git push "https://GeodeBot:${{ secrets.GEODE_BOT_PUSH_BIN_TOKEN}}@github.com/geode-sdk/suite.git"
+          git branch
           git checkout main
           git merge nightly
           git commit -m "Loader: ${{steps.versions.outputs.loader}} API: ${{steps.versions.outputs.api}} CLI: ${{steps.versions.outputs.cli}}"
