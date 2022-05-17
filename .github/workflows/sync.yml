@@ -62,7 +62,7 @@ jobs:
           message: "Loader: ${{ steps.versions.outputs.loader }} API: ${{ steps.versions.outputs.api }} CLI: ${{ steps.versions.outputs.cli }}"
           github_token: ${{secrets.GEODE_BOT_PUSH_BIN_TOKEN}}
   
-      - name: Merge
+      - name: Merge back
         uses: devmasx/merge-branch@master
         with:
           type: now
