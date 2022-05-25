@@ -8316,7 +8316,7 @@ public:
         float unknown5c4;
         GJGroundLayer* m_bottomGround;
         GJGroundLayer* m_topGround;
-        GEODE_PAD(0x8);
+        double m_completelyUninitializedData;
         bool m_isDead;
         bool m_startCameraAtCorner;
         bool m_cameraYLocked;
@@ -8398,12 +8398,12 @@ public:
         bool unk4D1;
         cocos2d::CCArray* unk4D4;
         cocos2d::CCDictionary* unk4D8;
-        GEODE_PAD(0x4);
-        double unk4E0;
-        double unk4E8;
-        GEODE_PAD(0xc);
-        float unk4FC;
-        int unk500;
+        double m_inlineCalculatedKickTime;
+        double m_accumulatedKickDeltaTime;
+        double m_unusedKickDouble;
+        bool m_shouldTryToKick;
+        float m_kickCheckDeltaSnapshot;
+        int m_accumulatedKickCounter;
         GEODE_PAD(0x4);
         double unk508;
         GEODE_PAD(0x8);
