@@ -49,6 +49,7 @@ class PlatformDownloadDelegate;
 class MusicDownloadManager;
 class GJUserScore;
 class SetupCountTriggerPopup;
+class ColorSelectDelegate;
 class CCCircleWaveDelegate;
 class PauseLayer;
 class GameSoundManager;
@@ -94,7 +95,6 @@ class CollisionBlockPopup;
 class CollisionTriggerAction;
 class ColorAction;
 class ColorActionSprite;
-class ColorSelectDelegate;
 class GJSpecialColorSelectDelegate;
 class ColorSelectPopup;
 class ColorSetupDelegate;
@@ -2627,6 +2627,13 @@ public:
 
 };
 
+class ColorSelectDelegate {
+public:
+
+    GEODE_CODEGEN_DLL virtual void colorSelectClosed(cocos2d::CCNode* p0);
+
+};
+
 class CCCircleWaveDelegate {
 public:
 
@@ -3420,7 +3427,7 @@ public:
 class CCTextInputNode : public cocos2d::CCLayer, public cocos2d::CCIMEDelegate, public cocos2d::CCTextFieldDelegate {
 public:
 	 CCTextInputNode() : cocos2d::CCLayer(), cocos2d::CCIMEDelegate(), cocos2d::CCTextFieldDelegate(), m_caption(), m_allowedChars() {
-		m_unknown0 = nullptr;
+		m_numberInput = false;
 		m_unknown1 = 0;
 		m_selected = false;
 		m_unknown2 = false;
@@ -3487,6 +3494,11 @@ public:
         static_assert(T, "Implement CCTextInputNode::updateLabel");
     }
 
+    template <bool T=false>
+    void updateBlinkLabel(){
+        static_assert(T, "Implement CCTextInputNode::updateBlinkLabel");
+    }
+
     GEODE_CODEGEN_DLL virtual void registerWithTouchDispatcher();
 
     GEODE_CODEGEN_DLL virtual void visit();
@@ -3525,7 +3537,7 @@ public:
 
     GEODE_CODEGEN_DLL virtual bool onTextFieldDetachWithIME(cocos2d::CCTextFieldTTF* p0);
 
-        void* m_unknown0;
+        bool m_numberInput;
         gd::string m_caption;
         int m_unknown1;
         bool m_selected;
@@ -3701,13 +3713,6 @@ public:
         float m_opacity;
         cocos2d::_ccColor3B m_f0124;
         cocos2d::_ccColor3B m_activeColor;
-};
-
-class ColorSelectDelegate {
-public:
-
-    GEODE_CODEGEN_DLL virtual void colorSelectClosed(cocos2d::CCNode* p0);
-
 };
 
 class GJSpecialColorSelectDelegate {

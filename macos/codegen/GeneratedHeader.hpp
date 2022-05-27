@@ -169,12 +169,11 @@ class ChallengesPage;
 class AchievementManager;
 class ConfigureHSVWidget;
 class SetupInteractObjectPopup;
+class UndoObject;
+class GJSearchObject;
 class GJAccountLoginDelegate;
 class EndLevelLayer;
 class AnimatedGameObject;
-class UndoObject;
-class GJSearchObject;
-class CountTriggerAction;
 class BoomListView;
 class CCTextInputNode;
 class GJUserCell;
@@ -201,6 +200,7 @@ class UploadActionDelegate;
 class LevelManagerDelegate;
 class DialogLayer;
 class GJCommentListLayer;
+class CountTriggerAction;
 class GaragePage;
 class GJAccountManager;
 class LevelEditorLayer;
@@ -5449,31 +5449,6 @@ public:
 
 };
 
-class GJAccountLoginDelegate {
-public:
-
-    GEODE_CODEGEN_DLL virtual bool loginAccountFailed(AccountError p0);
-
-    GEODE_CODEGEN_DLL virtual bool loginAccountFinished(int p0, int p1);
-
-};
-
-class EndLevelLayer {
-public:
-
-    GEODE_CODEGEN_DLL static EndLevelLayer* create();
-
-};
-
-class AnimatedGameObject {
-public:
-
-    GEODE_CODEGEN_DLL void playAnimation(int p0);
-
-    GEODE_CODEGEN_DLL void updateChildSpriteColor(cocos2d::_ccColor3B p0);
-
-};
-
 class UndoObject : public cocos2d::CCObject {
 public:
 
@@ -5530,16 +5505,29 @@ public:
         bool m_songFilter;
 };
 
-class CountTriggerAction : public cocos2d::CCNode {
+class GJAccountLoginDelegate {
 public:
 
-    GEODE_CODEGEN_DLL static CountTriggerAction* createFromString(gd::string p0);
+    GEODE_CODEGEN_DLL virtual bool loginAccountFailed(AccountError p0);
 
-        int m_previousCount;
-        int m_targetCount;
-        int m_targetID;
-        bool m_activateGroup;
-        CLASSPARAM(bool, multiActivate, 0x138);
+    GEODE_CODEGEN_DLL virtual bool loginAccountFinished(int p0, int p1);
+
+};
+
+class EndLevelLayer {
+public:
+
+    GEODE_CODEGEN_DLL static EndLevelLayer* create();
+
+};
+
+class AnimatedGameObject {
+public:
+
+    GEODE_CODEGEN_DLL void playAnimation(int p0);
+
+    GEODE_CODEGEN_DLL void updateChildSpriteColor(cocos2d::_ccColor3B p0);
+
 };
 
 class BoomListView : public cocos2d::CCLayer, public TableViewDelegate, public TableViewDataSource {
@@ -5591,7 +5579,7 @@ public:
 class CCTextInputNode : public cocos2d::CCLayer, public cocos2d::CCIMEDelegate, public cocos2d::CCTextFieldDelegate {
 public:
 	 CCTextInputNode() : cocos2d::CCLayer(), cocos2d::CCIMEDelegate(), cocos2d::CCTextFieldDelegate(), m_caption(), m_allowedChars() {
-		m_unknown0 = nullptr;
+		m_numberInput = false;
 		m_unknown1 = 0;
 		m_selected = false;
 		m_unknown2 = false;
@@ -5655,6 +5643,8 @@ public:
 
     GEODE_CODEGEN_DLL void updateLabel(gd::string p0);
 
+    GEODE_CODEGEN_DLL void updateBlinkLabel();
+
     GEODE_CODEGEN_DLL virtual void registerWithTouchDispatcher();
 
     GEODE_CODEGEN_DLL virtual void visit();
@@ -5681,7 +5671,7 @@ public:
 
     GEODE_CODEGEN_DLL virtual bool onTextFieldDetachWithIME(cocos2d::CCTextFieldTTF* p0);
 
-        void* m_unknown0;
+        bool m_numberInput;
         gd::string m_caption;
         int m_unknown1;
         bool m_selected;
@@ -6152,6 +6142,18 @@ public:
     GEODE_CODEGEN_DLL static GJCommentListLayer* create(BoomListView* p0, char const* p1, cocos2d::_ccColor4B p2, float p3, float p4, bool p5);
 
         BoomListView* m_list;
+};
+
+class CountTriggerAction : public cocos2d::CCNode {
+public:
+
+    GEODE_CODEGEN_DLL static CountTriggerAction* createFromString(gd::string p0);
+
+        int m_previousCount;
+        int m_targetCount;
+        int m_targetID;
+        bool m_activateGroup;
+        CLASSPARAM(bool, multiActivate, 0x138);
 };
 
 class GaragePage : public cocos2d::CCLayer, public ListButtonBarDelegate {
