@@ -1571,7 +1571,7 @@ public:
         double m_xAccel;
         double m_jumpAccel;
         double m_gravity;
-        GEODE_PAD(0x08);
+        double m_unknown20;
         bool m_unk538;
         bool m_unk539;
         bool m_unk53A;

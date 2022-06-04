@@ -16,16 +16,16 @@ struct Modify<Derived, UILayer> : ModifyBase<Modify<Derived, UILayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2267, DefaultConv, UILayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2268, DefaultConv, UILayer, disableMenu)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2269, DefaultConv, UILayer, enableMenu)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2270, DefaultConv, UILayer, pCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2271, DefaultConv, UILayer, toggleCheckpointsMenu)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2272, DefaultConv, UILayer, onCheck)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2273, DefaultConv, UILayer, onDeleteCheck)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2274, DefaultConv, UILayer, onPause)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2275, DefaultConv, UILayer, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2276, DefaultConv, UILayer, keyUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2268, DefaultConv, UILayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2269, DefaultConv, UILayer, disableMenu)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2270, DefaultConv, UILayer, enableMenu)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2271, DefaultConv, UILayer, pCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2272, DefaultConv, UILayer, toggleCheckpointsMenu)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2273, DefaultConv, UILayer, onCheck)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2274, DefaultConv, UILayer, onDeleteCheck)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2275, DefaultConv, UILayer, onPause)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2276, DefaultConv, UILayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2277, DefaultConv, UILayer, keyUp)
 	}
 };
 
@@ -46,12 +46,12 @@ struct Modify<Derived, TextArea> : ModifyBase<Modify<Derived, TextArea>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2245, DefaultConv, TextArea, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2246, DefaultConv, TextArea, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2247, DefaultConv, TextArea, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2248, DefaultConv, TextArea, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2249, DefaultConv, TextArea, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2251, DefaultConv, TextArea, setString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2246, DefaultConv, TextArea, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2247, DefaultConv, TextArea, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2248, DefaultConv, TextArea, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2249, DefaultConv, TextArea, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2250, DefaultConv, TextArea, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2252, DefaultConv, TextArea, setString)
 	}
 };
 
@@ -92,7 +92,7 @@ struct Modify<Derived, StatsCell> : ModifyBase<Modify<Derived, StatsCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2230, DefaultConv, StatsCell, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2231, DefaultConv, StatsCell, draw)
 	}
 };
 
@@ -133,7 +133,7 @@ struct Modify<Derived, SliderThumb> : ModifyBase<Modify<Derived, SliderThumb>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2219, DefaultConv, SliderThumb, setValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2220, DefaultConv, SliderThumb, setValue)
 	}
 };
 
@@ -144,11 +144,11 @@ struct Modify<Derived, SimplePlayer> : ModifyBase<Modify<Derived, SimplePlayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2206, DefaultConv, SimplePlayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2207, DefaultConv, SimplePlayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2208, DefaultConv, SimplePlayer, updatePlayerFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2209, DefaultConv, SimplePlayer, updateColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2211, DefaultConv, SimplePlayer, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2207, DefaultConv, SimplePlayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2208, DefaultConv, SimplePlayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2209, DefaultConv, SimplePlayer, updatePlayerFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2210, DefaultConv, SimplePlayer, updateColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2212, DefaultConv, SimplePlayer, setColor)
 	}
 };
 
@@ -159,7 +159,7 @@ struct Modify<Derived, SpawnTriggerAction> : ModifyBase<Modify<Derived, SpawnTri
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2228, DefaultConv, SpawnTriggerAction, createFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2229, DefaultConv, SpawnTriggerAction, createFromString)
 	}
 };
 
@@ -170,11 +170,11 @@ struct Modify<Derived, SetupSpawnPopup> : ModifyBase<Modify<Derived, SetupSpawnP
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2194, DefaultConv, SetupSpawnPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2195, DefaultConv, SetupSpawnPopup, createToggleButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2196, DefaultConv, SetupSpawnPopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2197, DefaultConv, SetupSpawnPopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2198, DefaultConv, SetupSpawnPopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2195, DefaultConv, SetupSpawnPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2196, DefaultConv, SetupSpawnPopup, createToggleButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2197, DefaultConv, SetupSpawnPopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2198, DefaultConv, SetupSpawnPopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2199, DefaultConv, SetupSpawnPopup, updateTargetID)
 	}
 };
 
@@ -185,7 +185,7 @@ struct Modify<Derived, SetupShakePopup> : ModifyBase<Modify<Derived, SetupShakeP
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2193, DefaultConv, SetupShakePopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2194, DefaultConv, SetupShakePopup, create)
 	}
 };
 
@@ -206,11 +206,11 @@ struct Modify<Derived, SetupObjectTogglePopup> : ModifyBase<Modify<Derived, Setu
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2174, DefaultConv, SetupObjectTogglePopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2175, DefaultConv, SetupObjectTogglePopup, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2176, DefaultConv, SetupObjectTogglePopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2177, DefaultConv, SetupObjectTogglePopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2178, DefaultConv, SetupObjectTogglePopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2175, DefaultConv, SetupObjectTogglePopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2176, DefaultConv, SetupObjectTogglePopup, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2177, DefaultConv, SetupObjectTogglePopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2178, DefaultConv, SetupObjectTogglePopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2179, DefaultConv, SetupObjectTogglePopup, updateTargetID)
 	}
 };
 
@@ -221,10 +221,10 @@ struct Modify<Derived, SetupCountTriggerPopup> : ModifyBase<Modify<Derived, Setu
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2162, DefaultConv, SetupCountTriggerPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2163, DefaultConv, SetupCountTriggerPopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2164, DefaultConv, SetupCountTriggerPopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2165, DefaultConv, SetupCountTriggerPopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2163, DefaultConv, SetupCountTriggerPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2164, DefaultConv, SetupCountTriggerPopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2165, DefaultConv, SetupCountTriggerPopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2166, DefaultConv, SetupCountTriggerPopup, updateTargetID)
 	}
 };
 
@@ -235,10 +235,10 @@ struct Modify<Derived, SetupAnimationPopup> : ModifyBase<Modify<Derived, SetupAn
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2154, DefaultConv, SetupAnimationPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2155, DefaultConv, SetupAnimationPopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2156, DefaultConv, SetupAnimationPopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2157, DefaultConv, SetupAnimationPopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2155, DefaultConv, SetupAnimationPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2156, DefaultConv, SetupAnimationPopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2157, DefaultConv, SetupAnimationPopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2158, DefaultConv, SetupAnimationPopup, updateTargetID)
 	}
 };
 
@@ -249,10 +249,10 @@ struct Modify<Derived, SetTargetIDLayer> : ModifyBase<Modify<Derived, SetTargetI
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2150, DefaultConv, SetTargetIDLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2151, DefaultConv, SetTargetIDLayer, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2152, DefaultConv, SetTargetIDLayer, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2153, DefaultConv, SetTargetIDLayer, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2151, DefaultConv, SetTargetIDLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2152, DefaultConv, SetTargetIDLayer, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2153, DefaultConv, SetTargetIDLayer, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2154, DefaultConv, SetTargetIDLayer, updateTargetID)
 	}
 };
 
@@ -283,7 +283,7 @@ struct Modify<Derived, ScrollingLayer> : ModifyBase<Modify<Derived, ScrollingLay
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2138, DefaultConv, ScrollingLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2139, DefaultConv, ScrollingLayer, create)
 	}
 };
 
@@ -294,7 +294,7 @@ struct Modify<Derived, RetryLevelLayer> : ModifyBase<Modify<Derived, RetryLevelL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2137, DefaultConv, RetryLevelLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2138, DefaultConv, RetryLevelLayer, create)
 	}
 };
 
@@ -305,11 +305,11 @@ struct Modify<Derived, SetupPickupTriggerPopup> : ModifyBase<Modify<Derived, Set
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2183, DefaultConv, SetupPickupTriggerPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2184, DefaultConv, SetupPickupTriggerPopup, onItemIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2185, DefaultConv, SetupPickupTriggerPopup, onNextItemID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2186, DefaultConv, SetupPickupTriggerPopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2187, DefaultConv, SetupPickupTriggerPopup, updateItemID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2184, DefaultConv, SetupPickupTriggerPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2185, DefaultConv, SetupPickupTriggerPopup, onItemIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2186, DefaultConv, SetupPickupTriggerPopup, onNextItemID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2187, DefaultConv, SetupPickupTriggerPopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2188, DefaultConv, SetupPickupTriggerPopup, updateItemID)
 	}
 };
 
@@ -330,155 +330,155 @@ struct Modify<Derived, PlayerObject> : ModifyBase<Modify<Derived, PlayerObject>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1976, DefaultConv, PlayerObject, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1977, DefaultConv, PlayerObject, update)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1978, DefaultConv, PlayerObject, setScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1979, DefaultConv, PlayerObject, setScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1980, DefaultConv, PlayerObject, setScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1981, DefaultConv, PlayerObject, setPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1982, DefaultConv, PlayerObject, setVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1983, DefaultConv, PlayerObject, setRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1984, DefaultConv, PlayerObject, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1985, DefaultConv, PlayerObject, setColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1986, DefaultConv, PlayerObject, setFlipX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1987, DefaultConv, PlayerObject, setFlipY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1988, DefaultConv, PlayerObject, resetObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1989, DefaultConv, PlayerObject, getRealPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1990, DefaultConv, PlayerObject, getOrientedBox)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1991, DefaultConv, PlayerObject, animationFinished)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1992, DefaultConv, PlayerObject, activateStreak)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1993, DefaultConv, PlayerObject, addAllParticles)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1994, DefaultConv, PlayerObject, addToTouchedRings)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1995, DefaultConv, PlayerObject, boostPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1996, DefaultConv, PlayerObject, bumpPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1997, DefaultConv, PlayerObject, buttonDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1998, DefaultConv, PlayerObject, checkSnapJumpToObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1999, DefaultConv, PlayerObject, collidedWithObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1977, DefaultConv, PlayerObject, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1978, DefaultConv, PlayerObject, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1979, DefaultConv, PlayerObject, setScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1980, DefaultConv, PlayerObject, setScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1981, DefaultConv, PlayerObject, setScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1982, DefaultConv, PlayerObject, setPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1983, DefaultConv, PlayerObject, setVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1984, DefaultConv, PlayerObject, setRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1985, DefaultConv, PlayerObject, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1986, DefaultConv, PlayerObject, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1987, DefaultConv, PlayerObject, setFlipX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1988, DefaultConv, PlayerObject, setFlipY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1989, DefaultConv, PlayerObject, resetObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1990, DefaultConv, PlayerObject, getRealPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1991, DefaultConv, PlayerObject, getOrientedBox)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1992, DefaultConv, PlayerObject, animationFinished)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1993, DefaultConv, PlayerObject, activateStreak)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1994, DefaultConv, PlayerObject, addAllParticles)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1995, DefaultConv, PlayerObject, addToTouchedRings)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1996, DefaultConv, PlayerObject, boostPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1997, DefaultConv, PlayerObject, bumpPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1998, DefaultConv, PlayerObject, buttonDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1999, DefaultConv, PlayerObject, checkSnapJumpToObject)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(2000, DefaultConv, PlayerObject, collidedWithObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2001, DefaultConv, PlayerObject, collidedWithSlope)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2002, DefaultConv, PlayerObject, convertToClosestRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2003, DefaultConv, PlayerObject, copyAttributes)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2004, DefaultConv, PlayerObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2005, DefaultConv, PlayerObject, deactivateParticle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2006, DefaultConv, PlayerObject, deactivateStreak)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2007, DefaultConv, PlayerObject, fadeOutStreak2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2008, DefaultConv, PlayerObject, flashPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2009, DefaultConv, PlayerObject, flipGravity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2010, DefaultConv, PlayerObject, flipMod)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2011, DefaultConv, PlayerObject, getActiveMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2012, DefaultConv, PlayerObject, getModifiedSlopeYVel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2013, DefaultConv, PlayerObject, getOldPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2014, DefaultConv, PlayerObject, getSecondColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2015, DefaultConv, PlayerObject, gravityDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2016, DefaultConv, PlayerObject, gravityUp)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2017, DefaultConv, PlayerObject, hardFlipGravity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2018, DefaultConv, PlayerObject, hitGround)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2019, DefaultConv, PlayerObject, incrementJumps)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2020, DefaultConv, PlayerObject, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2021, DefaultConv, PlayerObject, isBoostValid)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2022, DefaultConv, PlayerObject, isFlying)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2023, DefaultConv, PlayerObject, isSafeFlip)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2024, DefaultConv, PlayerObject, isSafeMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2025, DefaultConv, PlayerObject, isSafeSpiderFlip)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2026, DefaultConv, PlayerObject, levelFlipFinished)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2027, DefaultConv, PlayerObject, levelFlipping)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2028, DefaultConv, PlayerObject, levelWillFlip)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2029, DefaultConv, PlayerObject, loadFromCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2030, DefaultConv, PlayerObject, lockPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2031, DefaultConv, PlayerObject, logValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2032, DefaultConv, PlayerObject, modeDidChange)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2033, DefaultConv, PlayerObject, placeStreakPoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2034, DefaultConv, PlayerObject, playBurstEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2035, DefaultConv, PlayerObject, playDeathEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2036, DefaultConv, PlayerObject, playDynamicSpiderRun)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2037, DefaultConv, PlayerObject, playerDestroyed)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2038, DefaultConv, PlayerObject, playerIsFalling)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2039, DefaultConv, PlayerObject, playerTeleported)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2040, DefaultConv, PlayerObject, playingEndEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2041, DefaultConv, PlayerObject, postCollision)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2042, DefaultConv, PlayerObject, preCollision)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2043, DefaultConv, PlayerObject, preSlopeCollision)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2044, DefaultConv, PlayerObject, propellPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2045, DefaultConv, PlayerObject, pushButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2046, DefaultConv, PlayerObject, pushDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2047, DefaultConv, PlayerObject, pushPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2048, DefaultConv, PlayerObject, releaseButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2049, DefaultConv, PlayerObject, removeAllParticles)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2050, DefaultConv, PlayerObject, removePendingCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2051, DefaultConv, PlayerObject, resetAllParticles)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2052, DefaultConv, PlayerObject, resetCollisionLog)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2053, DefaultConv, PlayerObject, resetPlayerIcon)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2054, DefaultConv, PlayerObject, resetStateVariables)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2055, DefaultConv, PlayerObject, resetStreak)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2056, DefaultConv, PlayerObject, ringJump)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2057, DefaultConv, PlayerObject, runBallRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2058, DefaultConv, PlayerObject, runBallRotation2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2059, DefaultConv, PlayerObject, runNormalRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2060, DefaultConv, PlayerObject, runRotateAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2061, DefaultConv, PlayerObject, saveToCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2062, DefaultConv, PlayerObject, setSecondColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2063, DefaultConv, PlayerObject, setupStreak)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2064, DefaultConv, PlayerObject, spawnCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2065, DefaultConv, PlayerObject, spawnCircle2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2066, DefaultConv, PlayerObject, spawnDualCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2067, DefaultConv, PlayerObject, spawnFromPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2068, DefaultConv, PlayerObject, spawnPortalCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2069, DefaultConv, PlayerObject, spawnScaleCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2070, DefaultConv, PlayerObject, specialGroundHit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2071, DefaultConv, PlayerObject, speedDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2072, DefaultConv, PlayerObject, speedUp)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2073, DefaultConv, PlayerObject, spiderTestJump)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2074, DefaultConv, PlayerObject, startDashing)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2075, DefaultConv, PlayerObject, stopBurstEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2076, DefaultConv, PlayerObject, stopDashing)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2077, DefaultConv, PlayerObject, stopRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2078, DefaultConv, PlayerObject, storeCollision)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2079, DefaultConv, PlayerObject, switchedToMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2080, DefaultConv, PlayerObject, testForMoving)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2081, DefaultConv, PlayerObject, toggleBirdMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2082, DefaultConv, PlayerObject, toggleDartMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2083, DefaultConv, PlayerObject, toggleFlyMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2084, DefaultConv, PlayerObject, toggleGhostEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2085, DefaultConv, PlayerObject, togglePlayerScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2086, DefaultConv, PlayerObject, toggleRobotMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2087, DefaultConv, PlayerObject, toggleRollMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2088, DefaultConv, PlayerObject, toggleSpiderMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2089, DefaultConv, PlayerObject, toggleVisibility)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2090, DefaultConv, PlayerObject, touchedObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2091, DefaultConv, PlayerObject, tryPlaceCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2092, DefaultConv, PlayerObject, updateCheckpointMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2093, DefaultConv, PlayerObject, updateCheckpointTest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2094, DefaultConv, PlayerObject, updateCollide)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2095, DefaultConv, PlayerObject, updateCollideBottom)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2096, DefaultConv, PlayerObject, updateCollideTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2097, DefaultConv, PlayerObject, updateDashAnimation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2098, DefaultConv, PlayerObject, updateDashArt)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2099, DefaultConv, PlayerObject, updateGlowColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2100, DefaultConv, PlayerObject, updateJump)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2101, DefaultConv, PlayerObject, updateJumpVariables)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2102, DefaultConv, PlayerObject, updatePlayerBirdFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2103, DefaultConv, PlayerObject, updatePlayerDartFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2104, DefaultConv, PlayerObject, updatePlayerFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2105, DefaultConv, PlayerObject, updatePlayerGlow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2106, DefaultConv, PlayerObject, updatePlayerRobotFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2107, DefaultConv, PlayerObject, updatePlayerRollFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2108, DefaultConv, PlayerObject, updatePlayerScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2109, DefaultConv, PlayerObject, updatePlayerShipFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2110, DefaultConv, PlayerObject, updatePlayerSpiderFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2111, DefaultConv, PlayerObject, updatePlayerSpriteExtra)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2112, DefaultConv, PlayerObject, updateRobotAnimationSpeed)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2113, DefaultConv, PlayerObject, updateRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2001, DefaultConv, PlayerObject, collidedWithObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2002, DefaultConv, PlayerObject, collidedWithSlope)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2003, DefaultConv, PlayerObject, convertToClosestRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2004, DefaultConv, PlayerObject, copyAttributes)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2005, DefaultConv, PlayerObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2006, DefaultConv, PlayerObject, deactivateParticle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2007, DefaultConv, PlayerObject, deactivateStreak)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2008, DefaultConv, PlayerObject, fadeOutStreak2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2009, DefaultConv, PlayerObject, flashPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2010, DefaultConv, PlayerObject, flipGravity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2011, DefaultConv, PlayerObject, flipMod)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2012, DefaultConv, PlayerObject, getActiveMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2013, DefaultConv, PlayerObject, getModifiedSlopeYVel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2014, DefaultConv, PlayerObject, getOldPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2015, DefaultConv, PlayerObject, getSecondColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2016, DefaultConv, PlayerObject, gravityDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2017, DefaultConv, PlayerObject, gravityUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2018, DefaultConv, PlayerObject, hardFlipGravity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2019, DefaultConv, PlayerObject, hitGround)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2020, DefaultConv, PlayerObject, incrementJumps)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2021, DefaultConv, PlayerObject, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2022, DefaultConv, PlayerObject, isBoostValid)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2023, DefaultConv, PlayerObject, isFlying)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2024, DefaultConv, PlayerObject, isSafeFlip)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2025, DefaultConv, PlayerObject, isSafeMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2026, DefaultConv, PlayerObject, isSafeSpiderFlip)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2027, DefaultConv, PlayerObject, levelFlipFinished)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2028, DefaultConv, PlayerObject, levelFlipping)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2029, DefaultConv, PlayerObject, levelWillFlip)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2030, DefaultConv, PlayerObject, loadFromCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2031, DefaultConv, PlayerObject, lockPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2032, DefaultConv, PlayerObject, logValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2033, DefaultConv, PlayerObject, modeDidChange)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2034, DefaultConv, PlayerObject, placeStreakPoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2035, DefaultConv, PlayerObject, playBurstEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2036, DefaultConv, PlayerObject, playDeathEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2037, DefaultConv, PlayerObject, playDynamicSpiderRun)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2038, DefaultConv, PlayerObject, playerDestroyed)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2039, DefaultConv, PlayerObject, playerIsFalling)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2040, DefaultConv, PlayerObject, playerTeleported)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2041, DefaultConv, PlayerObject, playingEndEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2042, DefaultConv, PlayerObject, postCollision)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2043, DefaultConv, PlayerObject, preCollision)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2044, DefaultConv, PlayerObject, preSlopeCollision)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2045, DefaultConv, PlayerObject, propellPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2046, DefaultConv, PlayerObject, pushButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2047, DefaultConv, PlayerObject, pushDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2048, DefaultConv, PlayerObject, pushPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2049, DefaultConv, PlayerObject, releaseButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2050, DefaultConv, PlayerObject, removeAllParticles)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2051, DefaultConv, PlayerObject, removePendingCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2052, DefaultConv, PlayerObject, resetAllParticles)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2053, DefaultConv, PlayerObject, resetCollisionLog)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2054, DefaultConv, PlayerObject, resetPlayerIcon)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2055, DefaultConv, PlayerObject, resetStateVariables)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2056, DefaultConv, PlayerObject, resetStreak)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2057, DefaultConv, PlayerObject, ringJump)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2058, DefaultConv, PlayerObject, runBallRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2059, DefaultConv, PlayerObject, runBallRotation2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2060, DefaultConv, PlayerObject, runNormalRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2061, DefaultConv, PlayerObject, runRotateAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2062, DefaultConv, PlayerObject, saveToCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2063, DefaultConv, PlayerObject, setSecondColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2064, DefaultConv, PlayerObject, setupStreak)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2065, DefaultConv, PlayerObject, spawnCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2066, DefaultConv, PlayerObject, spawnCircle2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2067, DefaultConv, PlayerObject, spawnDualCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2068, DefaultConv, PlayerObject, spawnFromPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2069, DefaultConv, PlayerObject, spawnPortalCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2070, DefaultConv, PlayerObject, spawnScaleCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2071, DefaultConv, PlayerObject, specialGroundHit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2072, DefaultConv, PlayerObject, speedDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2073, DefaultConv, PlayerObject, speedUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2074, DefaultConv, PlayerObject, spiderTestJump)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2075, DefaultConv, PlayerObject, startDashing)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2076, DefaultConv, PlayerObject, stopBurstEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2077, DefaultConv, PlayerObject, stopDashing)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2078, DefaultConv, PlayerObject, stopRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2079, DefaultConv, PlayerObject, storeCollision)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2080, DefaultConv, PlayerObject, switchedToMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2081, DefaultConv, PlayerObject, testForMoving)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2082, DefaultConv, PlayerObject, toggleBirdMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2083, DefaultConv, PlayerObject, toggleDartMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2084, DefaultConv, PlayerObject, toggleFlyMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2085, DefaultConv, PlayerObject, toggleGhostEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2086, DefaultConv, PlayerObject, togglePlayerScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2087, DefaultConv, PlayerObject, toggleRobotMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2088, DefaultConv, PlayerObject, toggleRollMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2089, DefaultConv, PlayerObject, toggleSpiderMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2090, DefaultConv, PlayerObject, toggleVisibility)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2091, DefaultConv, PlayerObject, touchedObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2092, DefaultConv, PlayerObject, tryPlaceCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2093, DefaultConv, PlayerObject, updateCheckpointMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2094, DefaultConv, PlayerObject, updateCheckpointTest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2095, DefaultConv, PlayerObject, updateCollide)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2096, DefaultConv, PlayerObject, updateCollideBottom)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2097, DefaultConv, PlayerObject, updateCollideTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2098, DefaultConv, PlayerObject, updateDashAnimation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2099, DefaultConv, PlayerObject, updateDashArt)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2100, DefaultConv, PlayerObject, updateGlowColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2101, DefaultConv, PlayerObject, updateJump)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2102, DefaultConv, PlayerObject, updateJumpVariables)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2103, DefaultConv, PlayerObject, updatePlayerBirdFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2104, DefaultConv, PlayerObject, updatePlayerDartFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2105, DefaultConv, PlayerObject, updatePlayerFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2106, DefaultConv, PlayerObject, updatePlayerGlow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2107, DefaultConv, PlayerObject, updatePlayerRobotFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2108, DefaultConv, PlayerObject, updatePlayerRollFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2109, DefaultConv, PlayerObject, updatePlayerScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2110, DefaultConv, PlayerObject, updatePlayerShipFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2111, DefaultConv, PlayerObject, updatePlayerSpiderFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2112, DefaultConv, PlayerObject, updatePlayerSpriteExtra)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2113, DefaultConv, PlayerObject, updateRobotAnimationSpeed)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(2114, DefaultConv, PlayerObject, updateRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2115, DefaultConv, PlayerObject, updateShipRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2116, DefaultConv, PlayerObject, updateShipSpriteExtra)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2117, DefaultConv, PlayerObject, updateSlopeRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2118, DefaultConv, PlayerObject, updateSlopeYVelocity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2119, DefaultConv, PlayerObject, updateSpecial)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2120, DefaultConv, PlayerObject, updateStateVariables)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2121, DefaultConv, PlayerObject, updateTimeMod)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2122, DefaultConv, PlayerObject, usingWallLimitedMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2123, DefaultConv, PlayerObject, yStartDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2124, DefaultConv, PlayerObject, yStartUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2115, DefaultConv, PlayerObject, updateRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2116, DefaultConv, PlayerObject, updateShipRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2117, DefaultConv, PlayerObject, updateShipSpriteExtra)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2118, DefaultConv, PlayerObject, updateSlopeRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2119, DefaultConv, PlayerObject, updateSlopeYVelocity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2120, DefaultConv, PlayerObject, updateSpecial)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2121, DefaultConv, PlayerObject, updateStateVariables)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2122, DefaultConv, PlayerObject, updateTimeMod)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2123, DefaultConv, PlayerObject, usingWallLimitedMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2124, DefaultConv, PlayerObject, yStartDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2125, DefaultConv, PlayerObject, yStartUp)
 	}
 };
 
@@ -489,9 +489,9 @@ struct Modify<Derived, PlayerCheckpoint> : ModifyBase<Modify<Derived, PlayerChec
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1973, DefaultConv, PlayerCheckpoint, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1974, DefaultConv, PlayerCheckpoint, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1975, DefaultConv, PlayerCheckpoint, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1974, DefaultConv, PlayerCheckpoint, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1975, DefaultConv, PlayerCheckpoint, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1976, DefaultConv, PlayerCheckpoint, create)
 	}
 };
 
@@ -502,158 +502,158 @@ struct Modify<Derived, PlayLayer> : ModifyBase<Modify<Derived, PlayLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1821, DefaultConv, PlayLayer, addCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1822, DefaultConv, PlayLayer, addObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1823, DefaultConv, PlayLayer, addToGroupOld)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1824, DefaultConv, PlayLayer, addToSpeedObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1825, DefaultConv, PlayLayer, animateInDualGround)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1826, DefaultConv, PlayLayer, animateInGround)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1827, DefaultConv, PlayLayer, animateOutGround)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1828, DefaultConv, PlayLayer, animateOutGroundFinished)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1829, DefaultConv, PlayLayer, applyEnterEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1830, DefaultConv, PlayLayer, calculateColorValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1831, DefaultConv, PlayLayer, cameraMoveX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1832, DefaultConv, PlayLayer, cameraMoveY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1833, DefaultConv, PlayLayer, checkCollisions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1834, DefaultConv, PlayLayer, circleWaveWillBeRemoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1835, DefaultConv, PlayLayer, claimParticle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1836, DefaultConv, PlayLayer, clearPickedUpItems)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1837, DefaultConv, PlayLayer, colorObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1838, DefaultConv, PlayLayer, commitJumps)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1839, DefaultConv, PlayLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1840, DefaultConv, PlayLayer, createCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1841, DefaultConv, PlayLayer, createObjectsFromSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1842, DefaultConv, PlayLayer, createParticle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1843, DefaultConv, PlayLayer, currencyWillExit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1844, DefaultConv, PlayLayer, delayedResetLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1845, DefaultConv, PlayLayer, destroyPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1846, DefaultConv, PlayLayer, dialogClosed)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1847, DefaultConv, PlayLayer, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1848, DefaultConv, PlayLayer, enterDualMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1849, DefaultConv, PlayLayer, exitAirMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1850, DefaultConv, PlayLayer, exitBirdMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1851, DefaultConv, PlayLayer, exitDartMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1852, DefaultConv, PlayLayer, exitFlyMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1853, DefaultConv, PlayLayer, exitRobotMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1854, DefaultConv, PlayLayer, exitRollMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1855, DefaultConv, PlayLayer, exitSpiderMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1856, DefaultConv, PlayLayer, flipFinished)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1857, DefaultConv, PlayLayer, flipGravity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1858, DefaultConv, PlayLayer, flipObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1859, DefaultConv, PlayLayer, fullReset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1860, DefaultConv, PlayLayer, getLastCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1861, DefaultConv, PlayLayer, getMaxPortalY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1862, DefaultConv, PlayLayer, getMinPortalY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1863, DefaultConv, PlayLayer, getObjectsState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1864, DefaultConv, PlayLayer, getOtherPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1865, DefaultConv, PlayLayer, getParticleKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1866, DefaultConv, PlayLayer, getParticleKey2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1867, DefaultConv, PlayLayer, getRelativeMod)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1868, DefaultConv, PlayLayer, getTempMilliTime)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1869, DefaultConv, PlayLayer, gravityEffectFinished)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1870, DefaultConv, PlayLayer, hasItem)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1871, DefaultConv, PlayLayer, hasUniqueCoin)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1872, DefaultConv, PlayLayer, incrementJumps)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1873, DefaultConv, PlayLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1874, DefaultConv, PlayLayer, isFlipping)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1875, DefaultConv, PlayLayer, levelComplete)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1876, DefaultConv, PlayLayer, lightningFlash)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1822, DefaultConv, PlayLayer, addCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1823, DefaultConv, PlayLayer, addObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1824, DefaultConv, PlayLayer, addToGroupOld)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1825, DefaultConv, PlayLayer, addToSpeedObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1826, DefaultConv, PlayLayer, animateInDualGround)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1827, DefaultConv, PlayLayer, animateInGround)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1828, DefaultConv, PlayLayer, animateOutGround)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1829, DefaultConv, PlayLayer, animateOutGroundFinished)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1830, DefaultConv, PlayLayer, applyEnterEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1831, DefaultConv, PlayLayer, calculateColorValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1832, DefaultConv, PlayLayer, cameraMoveX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1833, DefaultConv, PlayLayer, cameraMoveY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1834, DefaultConv, PlayLayer, checkCollisions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1835, DefaultConv, PlayLayer, circleWaveWillBeRemoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1836, DefaultConv, PlayLayer, claimParticle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1837, DefaultConv, PlayLayer, clearPickedUpItems)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1838, DefaultConv, PlayLayer, colorObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1839, DefaultConv, PlayLayer, commitJumps)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1840, DefaultConv, PlayLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1841, DefaultConv, PlayLayer, createCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1842, DefaultConv, PlayLayer, createObjectsFromSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1843, DefaultConv, PlayLayer, createParticle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1844, DefaultConv, PlayLayer, currencyWillExit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1845, DefaultConv, PlayLayer, delayedResetLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1846, DefaultConv, PlayLayer, destroyPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1847, DefaultConv, PlayLayer, dialogClosed)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1848, DefaultConv, PlayLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1849, DefaultConv, PlayLayer, enterDualMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1850, DefaultConv, PlayLayer, exitAirMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1851, DefaultConv, PlayLayer, exitBirdMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1852, DefaultConv, PlayLayer, exitDartMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1853, DefaultConv, PlayLayer, exitFlyMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1854, DefaultConv, PlayLayer, exitRobotMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1855, DefaultConv, PlayLayer, exitRollMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1856, DefaultConv, PlayLayer, exitSpiderMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1857, DefaultConv, PlayLayer, flipFinished)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1858, DefaultConv, PlayLayer, flipGravity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1859, DefaultConv, PlayLayer, flipObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1860, DefaultConv, PlayLayer, fullReset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1861, DefaultConv, PlayLayer, getLastCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1862, DefaultConv, PlayLayer, getMaxPortalY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1863, DefaultConv, PlayLayer, getMinPortalY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1864, DefaultConv, PlayLayer, getObjectsState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1865, DefaultConv, PlayLayer, getOtherPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1866, DefaultConv, PlayLayer, getParticleKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1867, DefaultConv, PlayLayer, getParticleKey2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1868, DefaultConv, PlayLayer, getRelativeMod)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1869, DefaultConv, PlayLayer, getTempMilliTime)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1870, DefaultConv, PlayLayer, gravityEffectFinished)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1871, DefaultConv, PlayLayer, hasItem)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1872, DefaultConv, PlayLayer, hasUniqueCoin)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1873, DefaultConv, PlayLayer, incrementJumps)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1874, DefaultConv, PlayLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1875, DefaultConv, PlayLayer, isFlipping)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1876, DefaultConv, PlayLayer, levelComplete)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(1877, DefaultConv, PlayLayer, lightningFlash)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1878, DefaultConv, PlayLayer, loadDefaultColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1879, DefaultConv, PlayLayer, loadFromCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1880, DefaultConv, PlayLayer, loadLastCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1881, DefaultConv, PlayLayer, loadSavedObjectsState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1882, DefaultConv, PlayLayer, markCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1883, DefaultConv, PlayLayer, moveCameraToPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1884, DefaultConv, PlayLayer, onEnterTransitionDidFinish)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1885, DefaultConv, PlayLayer, onExit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1886, DefaultConv, PlayLayer, onQuit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1887, DefaultConv, PlayLayer, optimizeColorGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1888, DefaultConv, PlayLayer, optimizeOpacityGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1889, DefaultConv, PlayLayer, optimizeSaveRequiredGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1890, DefaultConv, PlayLayer, pauseGame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1891, DefaultConv, PlayLayer, pickupItem)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1892, DefaultConv, PlayLayer, playAnimationCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1893, DefaultConv, PlayLayer, playEndAnimationToPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1894, DefaultConv, PlayLayer, playExitDualEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1895, DefaultConv, PlayLayer, playFlashEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1896, DefaultConv, PlayLayer, playGravityEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1897, DefaultConv, PlayLayer, playSpeedParticle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1898, DefaultConv, PlayLayer, playerWillSwitchMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1899, DefaultConv, PlayLayer, prepareSpawnObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1900, DefaultConv, PlayLayer, processItems)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1901, DefaultConv, PlayLayer, processLoadedMoveActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1902, DefaultConv, PlayLayer, recordAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1903, DefaultConv, PlayLayer, registerActiveObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1904, DefaultConv, PlayLayer, registerStateObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1905, DefaultConv, PlayLayer, removeAllObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1906, DefaultConv, PlayLayer, removeFromGroupOld)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1907, DefaultConv, PlayLayer, removeLastCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1908, DefaultConv, PlayLayer, removePlayer2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1909, DefaultConv, PlayLayer, resetLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1910, DefaultConv, PlayLayer, resume)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1911, DefaultConv, PlayLayer, resumeAndRestart)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1912, DefaultConv, PlayLayer, saveRecordAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1913, DefaultConv, PlayLayer, scene)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1914, DefaultConv, PlayLayer, setupLevelStart)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1915, DefaultConv, PlayLayer, setupReplay)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1916, DefaultConv, PlayLayer, shakeCamera)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1917, DefaultConv, PlayLayer, shouldBlend)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1918, DefaultConv, PlayLayer, showCompleteEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1919, DefaultConv, PlayLayer, showCompleteText)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1920, DefaultConv, PlayLayer, showEndLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1921, DefaultConv, PlayLayer, showHint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1922, DefaultConv, PlayLayer, showNewBest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1923, DefaultConv, PlayLayer, showRetryLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1924, DefaultConv, PlayLayer, showTwoPlayerGuide)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1925, DefaultConv, PlayLayer, sortGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1926, DefaultConv, PlayLayer, spawnCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1927, DefaultConv, PlayLayer, spawnFirework)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1928, DefaultConv, PlayLayer, spawnParticle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1929, DefaultConv, PlayLayer, spawnPlayer2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1930, DefaultConv, PlayLayer, startGame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1931, DefaultConv, PlayLayer, startMusic)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1932, DefaultConv, PlayLayer, startRecording)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1933, DefaultConv, PlayLayer, startRecordingDelayed)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1934, DefaultConv, PlayLayer, stopCameraShake)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1935, DefaultConv, PlayLayer, stopRecording)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1936, DefaultConv, PlayLayer, storeCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1937, DefaultConv, PlayLayer, switchToFlyMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1938, DefaultConv, PlayLayer, switchToRobotMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1939, DefaultConv, PlayLayer, switchToRollMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1940, DefaultConv, PlayLayer, switchToSpiderMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1941, DefaultConv, PlayLayer, timeForXPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1942, DefaultConv, PlayLayer, timeForXPos2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1943, DefaultConv, PlayLayer, toggleBGEffectVisibility)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1944, DefaultConv, PlayLayer, toggleDualMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1945, DefaultConv, PlayLayer, toggleFlipped)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1946, DefaultConv, PlayLayer, toggleGhostEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1947, DefaultConv, PlayLayer, toggleGlitter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1948, DefaultConv, PlayLayer, togglePracticeMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1949, DefaultConv, PlayLayer, toggleProgressbar)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1950, DefaultConv, PlayLayer, tryStartRecord)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1951, DefaultConv, PlayLayer, unclaimParticle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1952, DefaultConv, PlayLayer, unregisterActiveObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1953, DefaultConv, PlayLayer, unregisterStateObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1954, DefaultConv, PlayLayer, update)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1955, DefaultConv, PlayLayer, updateAttempts)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1956, DefaultConv, PlayLayer, updateCamera)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1957, DefaultConv, PlayLayer, updateColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1958, DefaultConv, PlayLayer, updateDualGround)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1959, DefaultConv, PlayLayer, updateEffectPositions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1960, DefaultConv, PlayLayer, updateLevelColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1961, DefaultConv, PlayLayer, updateMoveObjectsLastPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1962, DefaultConv, PlayLayer, updateProgressbar)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1963, DefaultConv, PlayLayer, updateReplay)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1964, DefaultConv, PlayLayer, updateTimeMod)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1965, DefaultConv, PlayLayer, updateTweenAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1966, DefaultConv, PlayLayer, updateVisibility)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1967, DefaultConv, PlayLayer, vfDChk)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1968, DefaultConv, PlayLayer, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1969, DefaultConv, PlayLayer, visitWithColorFlash)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1970, DefaultConv, PlayLayer, willSwitchToMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1971, DefaultConv, PlayLayer, xPosForTime)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1972, DefaultConv, PlayLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1878, DefaultConv, PlayLayer, lightningFlash)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1879, DefaultConv, PlayLayer, loadDefaultColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1880, DefaultConv, PlayLayer, loadFromCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1881, DefaultConv, PlayLayer, loadLastCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1882, DefaultConv, PlayLayer, loadSavedObjectsState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1883, DefaultConv, PlayLayer, markCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1884, DefaultConv, PlayLayer, moveCameraToPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1885, DefaultConv, PlayLayer, onEnterTransitionDidFinish)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1886, DefaultConv, PlayLayer, onExit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1887, DefaultConv, PlayLayer, onQuit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1888, DefaultConv, PlayLayer, optimizeColorGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1889, DefaultConv, PlayLayer, optimizeOpacityGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1890, DefaultConv, PlayLayer, optimizeSaveRequiredGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1891, DefaultConv, PlayLayer, pauseGame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1892, DefaultConv, PlayLayer, pickupItem)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1893, DefaultConv, PlayLayer, playAnimationCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1894, DefaultConv, PlayLayer, playEndAnimationToPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1895, DefaultConv, PlayLayer, playExitDualEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1896, DefaultConv, PlayLayer, playFlashEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1897, DefaultConv, PlayLayer, playGravityEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1898, DefaultConv, PlayLayer, playSpeedParticle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1899, DefaultConv, PlayLayer, playerWillSwitchMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1900, DefaultConv, PlayLayer, prepareSpawnObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1901, DefaultConv, PlayLayer, processItems)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1902, DefaultConv, PlayLayer, processLoadedMoveActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1903, DefaultConv, PlayLayer, recordAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1904, DefaultConv, PlayLayer, registerActiveObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1905, DefaultConv, PlayLayer, registerStateObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1906, DefaultConv, PlayLayer, removeAllObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1907, DefaultConv, PlayLayer, removeFromGroupOld)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1908, DefaultConv, PlayLayer, removeLastCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1909, DefaultConv, PlayLayer, removePlayer2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1910, DefaultConv, PlayLayer, resetLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1911, DefaultConv, PlayLayer, resume)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1912, DefaultConv, PlayLayer, resumeAndRestart)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1913, DefaultConv, PlayLayer, saveRecordAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1914, DefaultConv, PlayLayer, scene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1915, DefaultConv, PlayLayer, setupLevelStart)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1916, DefaultConv, PlayLayer, setupReplay)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1917, DefaultConv, PlayLayer, shakeCamera)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1918, DefaultConv, PlayLayer, shouldBlend)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1919, DefaultConv, PlayLayer, showCompleteEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1920, DefaultConv, PlayLayer, showCompleteText)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1921, DefaultConv, PlayLayer, showEndLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1922, DefaultConv, PlayLayer, showHint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1923, DefaultConv, PlayLayer, showNewBest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1924, DefaultConv, PlayLayer, showRetryLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1925, DefaultConv, PlayLayer, showTwoPlayerGuide)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1926, DefaultConv, PlayLayer, sortGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1927, DefaultConv, PlayLayer, spawnCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1928, DefaultConv, PlayLayer, spawnFirework)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1929, DefaultConv, PlayLayer, spawnParticle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1930, DefaultConv, PlayLayer, spawnPlayer2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1931, DefaultConv, PlayLayer, startGame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1932, DefaultConv, PlayLayer, startMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1933, DefaultConv, PlayLayer, startRecording)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1934, DefaultConv, PlayLayer, startRecordingDelayed)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1935, DefaultConv, PlayLayer, stopCameraShake)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1936, DefaultConv, PlayLayer, stopRecording)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1937, DefaultConv, PlayLayer, storeCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1938, DefaultConv, PlayLayer, switchToFlyMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1939, DefaultConv, PlayLayer, switchToRobotMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1940, DefaultConv, PlayLayer, switchToRollMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1941, DefaultConv, PlayLayer, switchToSpiderMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1942, DefaultConv, PlayLayer, timeForXPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1943, DefaultConv, PlayLayer, timeForXPos2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1944, DefaultConv, PlayLayer, toggleBGEffectVisibility)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1945, DefaultConv, PlayLayer, toggleDualMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1946, DefaultConv, PlayLayer, toggleFlipped)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1947, DefaultConv, PlayLayer, toggleGhostEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1948, DefaultConv, PlayLayer, toggleGlitter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1949, DefaultConv, PlayLayer, togglePracticeMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1950, DefaultConv, PlayLayer, toggleProgressbar)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1951, DefaultConv, PlayLayer, tryStartRecord)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1952, DefaultConv, PlayLayer, unclaimParticle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1953, DefaultConv, PlayLayer, unregisterActiveObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1954, DefaultConv, PlayLayer, unregisterStateObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1955, DefaultConv, PlayLayer, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1956, DefaultConv, PlayLayer, updateAttempts)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1957, DefaultConv, PlayLayer, updateCamera)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1958, DefaultConv, PlayLayer, updateColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1959, DefaultConv, PlayLayer, updateDualGround)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1960, DefaultConv, PlayLayer, updateEffectPositions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1961, DefaultConv, PlayLayer, updateLevelColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1962, DefaultConv, PlayLayer, updateMoveObjectsLastPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1963, DefaultConv, PlayLayer, updateProgressbar)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1964, DefaultConv, PlayLayer, updateReplay)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1965, DefaultConv, PlayLayer, updateTimeMod)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1966, DefaultConv, PlayLayer, updateTweenAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1967, DefaultConv, PlayLayer, updateVisibility)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1968, DefaultConv, PlayLayer, vfDChk)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1969, DefaultConv, PlayLayer, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1970, DefaultConv, PlayLayer, visitWithColorFlash)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1971, DefaultConv, PlayLayer, willSwitchToMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1972, DefaultConv, PlayLayer, xPosForTime)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1973, DefaultConv, PlayLayer, destructor)
 	}
 };
 
@@ -664,9 +664,9 @@ struct Modify<Derived, PlatformToolbox> : ModifyBase<Modify<Derived, PlatformToo
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1817, DefaultConv, PlatformToolbox, hideCursor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1818, DefaultConv, PlatformToolbox, showCursor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1819, DefaultConv, PlatformToolbox, isControllerConnected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1818, DefaultConv, PlatformToolbox, hideCursor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1819, DefaultConv, PlatformToolbox, showCursor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1820, DefaultConv, PlatformToolbox, isControllerConnected)
 	}
 };
 
@@ -677,7 +677,7 @@ struct Modify<Derived, OptionsLayer> : ModifyBase<Modify<Derived, OptionsLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1811, DefaultConv, OptionsLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1812, DefaultConv, OptionsLayer, create)
 	}
 };
 
@@ -688,10 +688,10 @@ struct Modify<Derived, OpacityEffectAction> : ModifyBase<Modify<Derived, Opacity
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1803, DefaultConv, OpacityEffectAction, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1804, DefaultConv, OpacityEffectAction, createFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1805, DefaultConv, OpacityEffectAction, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1806, DefaultConv, OpacityEffectAction, step)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1804, DefaultConv, OpacityEffectAction, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1805, DefaultConv, OpacityEffectAction, createFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1806, DefaultConv, OpacityEffectAction, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1807, DefaultConv, OpacityEffectAction, step)
 	}
 };
 
@@ -702,8 +702,8 @@ struct Modify<Derived, ObjectToolbox> : ModifyBase<Modify<Derived, ObjectToolbox
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1799, DefaultConv, ObjectToolbox, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1800, DefaultConv, ObjectToolbox, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1800, DefaultConv, ObjectToolbox, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1801, DefaultConv, ObjectToolbox, sharedState)
 	}
 };
 
@@ -714,11 +714,11 @@ struct Modify<Derived, OBB2D> : ModifyBase<Modify<Derived, OBB2D>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1787, DefaultConv, OBB2D, calculateWithCenter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1788, DefaultConv, OBB2D, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1789, DefaultConv, OBB2D, getBoundingRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1790, DefaultConv, OBB2D, overlaps)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1791, DefaultConv, OBB2D, overlaps1Way)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1788, DefaultConv, OBB2D, calculateWithCenter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1789, DefaultConv, OBB2D, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1790, DefaultConv, OBB2D, getBoundingRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1791, DefaultConv, OBB2D, overlaps)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1792, DefaultConv, OBB2D, overlaps1Way)
 	}
 };
 
@@ -749,9 +749,9 @@ struct Modify<Derived, MusicDownloadManager> : ModifyBase<Modify<Derived, MusicD
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1781, DefaultConv, MusicDownloadManager, incrementPriorityForSong)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1782, DefaultConv, MusicDownloadManager, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1783, DefaultConv, MusicDownloadManager, pathForSong)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1782, DefaultConv, MusicDownloadManager, incrementPriorityForSong)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1783, DefaultConv, MusicDownloadManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1784, DefaultConv, MusicDownloadManager, pathForSong)
 	}
 };
 
@@ -782,9 +782,9 @@ struct Modify<Derived, MoreVideoOptionsLayer> : ModifyBase<Modify<Derived, MoreV
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1773, DefaultConv, MoreVideoOptionsLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1774, DefaultConv, MoreVideoOptionsLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1775, DefaultConv, MoreVideoOptionsLayer, onClose)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1774, DefaultConv, MoreVideoOptionsLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1775, DefaultConv, MoreVideoOptionsLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1776, DefaultConv, MoreVideoOptionsLayer, onClose)
 	}
 };
 
@@ -795,16 +795,16 @@ struct Modify<Derived, MenuLayer> : ModifyBase<Modify<Derived, MenuLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1745, DefaultConv, MenuLayer, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1746, DefaultConv, MenuLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1747, DefaultConv, MenuLayer, keyBackClicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1748, DefaultConv, MenuLayer, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1749, DefaultConv, MenuLayer, googlePlaySignedIn)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1750, DefaultConv, MenuLayer, FLAlert_Clicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1751, DefaultConv, MenuLayer, onMoreGames)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1753, DefaultConv, MenuLayer, onQuit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1754, DefaultConv, MenuLayer, onMyProfile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1766, DefaultConv, MenuLayer, scene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1746, DefaultConv, MenuLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1747, DefaultConv, MenuLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1748, DefaultConv, MenuLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1749, DefaultConv, MenuLayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1750, DefaultConv, MenuLayer, googlePlaySignedIn)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1751, DefaultConv, MenuLayer, FLAlert_Clicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1752, DefaultConv, MenuLayer, onMoreGames)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1754, DefaultConv, MenuLayer, onQuit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1755, DefaultConv, MenuLayer, onMyProfile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1767, DefaultConv, MenuLayer, scene)
 	}
 };
 
@@ -825,8 +825,8 @@ struct Modify<Derived, MenuGameLayer> : ModifyBase<Modify<Derived, MenuGameLayer
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1743, DefaultConv, MenuGameLayer, resetPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1744, DefaultConv, MenuGameLayer, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1744, DefaultConv, MenuGameLayer, resetPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1745, DefaultConv, MenuGameLayer, update)
 	}
 };
 
@@ -847,9 +847,9 @@ struct Modify<Derived, LoadingCircle> : ModifyBase<Modify<Derived, LoadingCircle
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1731, DefaultConv, LoadingCircle, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1732, DefaultConv, LoadingCircle, show)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1733, DefaultConv, LoadingCircle, fadeAndRemove)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1732, DefaultConv, LoadingCircle, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1733, DefaultConv, LoadingCircle, show)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1734, DefaultConv, LoadingCircle, fadeAndRemove)
 	}
 };
 
@@ -940,10 +940,10 @@ struct Modify<Derived, SetupInstantCountPopup> : ModifyBase<Modify<Derived, Setu
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2166, DefaultConv, SetupInstantCountPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2167, DefaultConv, SetupInstantCountPopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2168, DefaultConv, SetupInstantCountPopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2169, DefaultConv, SetupInstantCountPopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2167, DefaultConv, SetupInstantCountPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2168, DefaultConv, SetupInstantCountPopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2169, DefaultConv, SetupInstantCountPopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2170, DefaultConv, SetupInstantCountPopup, updateTargetID)
 	}
 };
 
@@ -1004,7 +1004,7 @@ struct Modify<Derived, LevelInfoLayer> : ModifyBase<Modify<Derived, LevelInfoLay
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1705, DefaultConv, LevelInfoLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1706, DefaultConv, LevelInfoLayer, create)
 	}
 };
 
@@ -1035,146 +1035,118 @@ struct Modify<Derived, GameObject> : ModifyBase<Modify<Derived, GameObject>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1431, DefaultConv, GameObject, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1432, DefaultConv, GameObject, update)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1433, DefaultConv, GameObject, setScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1434, DefaultConv, GameObject, setScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1435, DefaultConv, GameObject, setScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1436, DefaultConv, GameObject, setPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1437, DefaultConv, GameObject, setVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1438, DefaultConv, GameObject, setRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1439, DefaultConv, GameObject, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1440, DefaultConv, GameObject, initWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1441, DefaultConv, GameObject, setChildColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1442, DefaultConv, GameObject, setFlipX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1443, DefaultConv, GameObject, setFlipY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1444, DefaultConv, GameObject, customSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1445, DefaultConv, GameObject, setupCustomSprites)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1446, DefaultConv, GameObject, addMainSpriteToParent)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1447, DefaultConv, GameObject, resetObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1448, DefaultConv, GameObject, triggerObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1449, DefaultConv, GameObject, activateObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1450, DefaultConv, GameObject, deactivateObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1451, DefaultConv, GameObject, getObjectRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1432, DefaultConv, GameObject, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1433, DefaultConv, GameObject, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1434, DefaultConv, GameObject, setScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1435, DefaultConv, GameObject, setScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1436, DefaultConv, GameObject, setScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1437, DefaultConv, GameObject, setPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1438, DefaultConv, GameObject, setVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1439, DefaultConv, GameObject, setRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1440, DefaultConv, GameObject, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1441, DefaultConv, GameObject, initWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1442, DefaultConv, GameObject, setChildColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1443, DefaultConv, GameObject, setFlipX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1444, DefaultConv, GameObject, setFlipY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1445, DefaultConv, GameObject, customSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1446, DefaultConv, GameObject, setupCustomSprites)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1447, DefaultConv, GameObject, addMainSpriteToParent)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1448, DefaultConv, GameObject, resetObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1449, DefaultConv, GameObject, triggerObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1450, DefaultConv, GameObject, activateObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1451, DefaultConv, GameObject, deactivateObject)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(1452, DefaultConv, GameObject, getObjectRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1453, DefaultConv, GameObject, getObjectRect2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1454, DefaultConv, GameObject, getObjectTextureRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1455, DefaultConv, GameObject, getRealPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1456, DefaultConv, GameObject, setStartPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1457, DefaultConv, GameObject, updateStartValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1458, DefaultConv, GameObject, customObjectSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1459, DefaultConv, GameObject, getSaveString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1460, DefaultConv, GameObject, isFlipX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1461, DefaultConv, GameObject, isFlipY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1462, DefaultConv, GameObject, setRScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1463, DefaultConv, GameObject, setRScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1464, DefaultConv, GameObject, setRScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1465, DefaultConv, GameObject, getRScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1466, DefaultConv, GameObject, getRScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1467, DefaultConv, GameObject, calculateSpawnXPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1468, DefaultConv, GameObject, triggerActivated)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1469, DefaultConv, GameObject, powerOnObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1470, DefaultConv, GameObject, powerOffObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1471, DefaultConv, GameObject, setObjectColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1472, DefaultConv, GameObject, setGlowColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1473, DefaultConv, GameObject, getOrientedBox)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1474, DefaultConv, GameObject, addToGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1475, DefaultConv, GameObject, removeFromGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1476, DefaultConv, GameObject, spawnXPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1477, DefaultConv, GameObject, getObjectRectDirty)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1478, DefaultConv, GameObject, setObjectRectDirty)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1479, DefaultConv, GameObject, getOrientedRectDirty)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1480, DefaultConv, GameObject, setOrientedRectDirty)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1481, DefaultConv, GameObject, getType)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1482, DefaultConv, GameObject, setType)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1483, DefaultConv, GameObject, getStartPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1484, DefaultConv, GameObject, activatedByPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1485, DefaultConv, GameObject, addColorSprite)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1486, DefaultConv, GameObject, addColorSpriteToParent)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1487, DefaultConv, GameObject, addGlow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1488, DefaultConv, GameObject, addToTempOffset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1489, DefaultConv, GameObject, calculateOrientedBox)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1490, DefaultConv, GameObject, canChangeCustomColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1491, DefaultConv, GameObject, colorForMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1492, DefaultConv, GameObject, commonSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1493, DefaultConv, GameObject, copyGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1494, DefaultConv, GameObject, createWithFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1495, DefaultConv, GameObject, createWithKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1496, DefaultConv, GameObject, destroyObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1497, DefaultConv, GameObject, determineSlopeDirection)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1498, DefaultConv, GameObject, getActiveColorForMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1499, DefaultConv, GameObject, getBallFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1500, DefaultConv, GameObject, getBoxOffset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1501, DefaultConv, GameObject, getColorIndex)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1502, DefaultConv, GameObject, getDidUpdateLastPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1503, DefaultConv, GameObject, getLastPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1504, DefaultConv, GameObject, getMainColorMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1505, DefaultConv, GameObject, getObjectZOrder)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1506, DefaultConv, GameObject, getObjectRadius)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1507, DefaultConv, GameObject, getSecondaryColorMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1508, DefaultConv, GameObject, getSectionIdx)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1509, DefaultConv, GameObject, groupWasDisabled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1510, DefaultConv, GameObject, groupWasEnabled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1511, DefaultConv, GameObject, hasBeenActivated)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1512, DefaultConv, GameObject, hasBeenActivatedByPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1513, DefaultConv, GameObject, hasSecondaryColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1514, DefaultConv, GameObject, ignoreEnter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1515, DefaultConv, GameObject, ignoreFade)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1516, DefaultConv, GameObject, isBasicTrigger)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1517, DefaultConv, GameObject, isColorTrigger)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1518, DefaultConv, GameObject, isSpawnableTrigger)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1519, DefaultConv, GameObject, isSpecialObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1520, DefaultConv, GameObject, objectFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1521, DefaultConv, GameObject, playShineEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1522, DefaultConv, GameObject, quickUpdatePosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1523, DefaultConv, GameObject, removeGlow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1524, DefaultConv, GameObject, resetGroupDisabled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1525, DefaultConv, GameObject, saveActiveColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1526, DefaultConv, GameObject, selectObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1527, DefaultConv, GameObject, setDefaultMainColorMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1528, DefaultConv, GameObject, setDidUpdateLastPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1529, DefaultConv, GameObject, setGlowOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1530, DefaultConv, GameObject, setLastPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1531, DefaultConv, GameObject, setMainColorMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1532, DefaultConv, GameObject, setSectionIdx)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1533, DefaultConv, GameObject, setupCoinArt)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1534, DefaultConv, GameObject, slopeFloorTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1535, DefaultConv, GameObject, slopeWallLeft)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1536, DefaultConv, GameObject, updateCustomScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1537, DefaultConv, GameObject, updateMainColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1538, DefaultConv, GameObject, updateOrientedBox)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1539, DefaultConv, GameObject, updateSecondaryColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1540, DefaultConv, GameObject, updateStartPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1541, DefaultConv, GameObject, updateState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1542, DefaultConv, GameObject, updateSyncedAnimation)
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, GJRobotSprite> : ModifyBase<Modify<Derived, GJRobotSprite>> {
-	using ModifyBase<Modify<Derived, GJRobotSprite>>::ModifyBase;
-	using Base = GJRobotSprite;
-	static void apply() {
-		using namespace geode::core::meta;
-
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1286, DefaultConv, GJRobotSprite, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1287, DefaultConv, GJRobotSprite, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1288, DefaultConv, GJRobotSprite, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1289, DefaultConv, GJRobotSprite, hideSecondary)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1290, DefaultConv, GJRobotSprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1291, DefaultConv, GJRobotSprite, updateColor02)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1292, DefaultConv, GJRobotSprite, updateFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1293, DefaultConv, GJRobotSprite, hideGlow)
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, GooglePlayDelegate> : ModifyBase<Modify<Derived, GooglePlayDelegate>> {
-	using ModifyBase<Modify<Derived, GooglePlayDelegate>>::ModifyBase;
-	using Base = GooglePlayDelegate;
-	static void apply() {
-		using namespace geode::core::meta;
-
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1453, DefaultConv, GameObject, getObjectRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1454, DefaultConv, GameObject, getObjectRect2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1455, DefaultConv, GameObject, getObjectTextureRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1456, DefaultConv, GameObject, getRealPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1457, DefaultConv, GameObject, setStartPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1458, DefaultConv, GameObject, updateStartValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1459, DefaultConv, GameObject, customObjectSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1460, DefaultConv, GameObject, getSaveString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1461, DefaultConv, GameObject, isFlipX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1462, DefaultConv, GameObject, isFlipY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1463, DefaultConv, GameObject, setRScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1464, DefaultConv, GameObject, setRScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1465, DefaultConv, GameObject, setRScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1466, DefaultConv, GameObject, getRScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1467, DefaultConv, GameObject, getRScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1468, DefaultConv, GameObject, calculateSpawnXPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1469, DefaultConv, GameObject, triggerActivated)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1470, DefaultConv, GameObject, powerOnObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1471, DefaultConv, GameObject, powerOffObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1472, DefaultConv, GameObject, setObjectColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1473, DefaultConv, GameObject, setGlowColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1474, DefaultConv, GameObject, getOrientedBox)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1475, DefaultConv, GameObject, addToGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1476, DefaultConv, GameObject, removeFromGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1477, DefaultConv, GameObject, spawnXPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1478, DefaultConv, GameObject, getObjectRectDirty)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1479, DefaultConv, GameObject, setObjectRectDirty)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1480, DefaultConv, GameObject, getOrientedRectDirty)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1481, DefaultConv, GameObject, setOrientedRectDirty)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1482, DefaultConv, GameObject, getType)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1483, DefaultConv, GameObject, setType)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1484, DefaultConv, GameObject, getStartPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1485, DefaultConv, GameObject, activatedByPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1486, DefaultConv, GameObject, addColorSprite)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1487, DefaultConv, GameObject, addColorSpriteToParent)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1488, DefaultConv, GameObject, addGlow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1489, DefaultConv, GameObject, addToTempOffset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1490, DefaultConv, GameObject, calculateOrientedBox)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1491, DefaultConv, GameObject, canChangeCustomColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1492, DefaultConv, GameObject, colorForMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1493, DefaultConv, GameObject, commonSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1494, DefaultConv, GameObject, copyGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1495, DefaultConv, GameObject, createWithFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1496, DefaultConv, GameObject, createWithKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1497, DefaultConv, GameObject, destroyObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1498, DefaultConv, GameObject, determineSlopeDirection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1499, DefaultConv, GameObject, getActiveColorForMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1500, DefaultConv, GameObject, getBallFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1501, DefaultConv, GameObject, getBoxOffset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1502, DefaultConv, GameObject, getColorIndex)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1503, DefaultConv, GameObject, getDidUpdateLastPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1504, DefaultConv, GameObject, getLastPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1505, DefaultConv, GameObject, getMainColorMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1506, DefaultConv, GameObject, getObjectZOrder)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1507, DefaultConv, GameObject, getObjectRadius)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1508, DefaultConv, GameObject, getSecondaryColorMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1509, DefaultConv, GameObject, getSectionIdx)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1510, DefaultConv, GameObject, groupWasDisabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1511, DefaultConv, GameObject, groupWasEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1512, DefaultConv, GameObject, hasBeenActivated)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1513, DefaultConv, GameObject, hasBeenActivatedByPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1514, DefaultConv, GameObject, hasSecondaryColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1515, DefaultConv, GameObject, ignoreEnter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1516, DefaultConv, GameObject, ignoreFade)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1517, DefaultConv, GameObject, isBasicTrigger)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1518, DefaultConv, GameObject, isColorTrigger)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1519, DefaultConv, GameObject, isSpawnableTrigger)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1520, DefaultConv, GameObject, isSpecialObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1521, DefaultConv, GameObject, objectFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1522, DefaultConv, GameObject, playShineEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1523, DefaultConv, GameObject, quickUpdatePosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1524, DefaultConv, GameObject, removeGlow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1525, DefaultConv, GameObject, resetGroupDisabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1526, DefaultConv, GameObject, saveActiveColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1527, DefaultConv, GameObject, selectObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1528, DefaultConv, GameObject, setDefaultMainColorMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1529, DefaultConv, GameObject, setDidUpdateLastPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1530, DefaultConv, GameObject, setGlowOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1531, DefaultConv, GameObject, setLastPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1532, DefaultConv, GameObject, setMainColorMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1533, DefaultConv, GameObject, setSectionIdx)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1534, DefaultConv, GameObject, setupCoinArt)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1535, DefaultConv, GameObject, slopeFloorTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1536, DefaultConv, GameObject, slopeWallLeft)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1537, DefaultConv, GameObject, updateCustomScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1538, DefaultConv, GameObject, updateMainColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1539, DefaultConv, GameObject, updateOrientedBox)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1540, DefaultConv, GameObject, updateSecondaryColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1541, DefaultConv, GameObject, updateStartPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1542, DefaultConv, GameObject, updateState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1543, DefaultConv, GameObject, updateSyncedAnimation)
 	}
 };
 
@@ -1195,9 +1167,9 @@ struct Modify<Derived, GManager> : ModifyBase<Modify<Derived, GManager>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1337, DefaultConv, GManager, save)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1338, DefaultConv, GManager, saveData)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1339, DefaultConv, GManager, saveGMTo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1338, DefaultConv, GManager, save)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1339, DefaultConv, GManager, saveData)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1340, DefaultConv, GManager, saveGMTo)
 	}
 };
 
@@ -1205,16 +1177,6 @@ template<class Derived>
 struct Modify<Derived, GJUserScore> : ModifyBase<Modify<Derived, GJUserScore>> {
 	using ModifyBase<Modify<Derived, GJUserScore>>::ModifyBase;
 	using Base = GJUserScore;
-	static void apply() {
-		using namespace geode::core::meta;
-
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, GJSpriteColor> : ModifyBase<Modify<Derived, GJSpriteColor>> {
-	using ModifyBase<Modify<Derived, GJSpriteColor>>::ModifyBase;
-	using Base = GJSpriteColor;
 	static void apply() {
 		using namespace geode::core::meta;
 
@@ -1269,14 +1231,14 @@ struct Modify<Derived, CCMenuItemToggler> : ModifyBase<Modify<Derived, CCMenuIte
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(766, DefaultConv, CCMenuItemToggler, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(767, DefaultConv, CCMenuItemToggler, setSizeMult)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(768, DefaultConv, CCMenuItemToggler, toggle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(769, DefaultConv, CCMenuItemToggler, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(770, DefaultConv, CCMenuItemToggler, activate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(771, DefaultConv, CCMenuItemToggler, selected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(772, DefaultConv, CCMenuItemToggler, unselected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(773, DefaultConv, CCMenuItemToggler, setEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(767, DefaultConv, CCMenuItemToggler, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(768, DefaultConv, CCMenuItemToggler, setSizeMult)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(769, DefaultConv, CCMenuItemToggler, toggle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(770, DefaultConv, CCMenuItemToggler, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(771, DefaultConv, CCMenuItemToggler, activate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(772, DefaultConv, CCMenuItemToggler, selected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(773, DefaultConv, CCMenuItemToggler, unselected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(774, DefaultConv, CCMenuItemToggler, setEnabled)
 	}
 };
 
@@ -1350,9 +1312,9 @@ struct Modify<Derived, GJGarageLayer> : ModifyBase<Modify<Derived, GJGarageLayer
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1263, DefaultConv, GJGarageLayer, onPlayerColor1)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1264, DefaultConv, GJGarageLayer, onPlayerColor2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1266, DefaultConv, GJGarageLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1264, DefaultConv, GJGarageLayer, onPlayerColor1)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1265, DefaultConv, GJGarageLayer, onPlayerColor2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1267, DefaultConv, GJGarageLayer, init)
 	}
 };
 
@@ -1373,18 +1335,18 @@ struct Modify<Derived, GJGameLevel> : ModifyBase<Modify<Derived, GJGameLevel>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1249, DefaultConv, GJGameLevel, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1250, DefaultConv, GJGameLevel, encodeWithCoder)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1251, DefaultConv, GJGameLevel, canEncode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1252, DefaultConv, GJGameLevel, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1253, DefaultConv, GJGameLevel, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1254, DefaultConv, GJGameLevel, getAudioFileName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1255, DefaultConv, GJGameLevel, getCoinKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1256, DefaultConv, GJGameLevel, getLengthKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1257, DefaultConv, GJGameLevel, getNormalPercent)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1258, DefaultConv, GJGameLevel, levelWasAltered)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1259, DefaultConv, GJGameLevel, savePercentage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1260, DefaultConv, GJGameLevel, dataLoaded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1250, DefaultConv, GJGameLevel, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1251, DefaultConv, GJGameLevel, encodeWithCoder)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1252, DefaultConv, GJGameLevel, canEncode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1253, DefaultConv, GJGameLevel, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1254, DefaultConv, GJGameLevel, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1255, DefaultConv, GJGameLevel, getAudioFileName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1256, DefaultConv, GJGameLevel, getCoinKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1257, DefaultConv, GJGameLevel, getLengthKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1258, DefaultConv, GJGameLevel, getNormalPercent)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1259, DefaultConv, GJGameLevel, levelWasAltered)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1260, DefaultConv, GJGameLevel, savePercentage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1261, DefaultConv, GJGameLevel, dataLoaded)
 	}
 };
 
@@ -1395,8 +1357,8 @@ struct Modify<Derived, TableView> : ModifyBase<Modify<Derived, TableView>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2231, DefaultConv, TableView, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2232, DefaultConv, TableView, reloadData)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2232, DefaultConv, TableView, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2233, DefaultConv, TableView, reloadData)
 	}
 };
 
@@ -1417,11 +1379,11 @@ struct Modify<Derived, TopArtistsLayer> : ModifyBase<Modify<Derived, TopArtistsL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2259, DefaultConv, TopArtistsLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2260, DefaultConv, TopArtistsLayer, setupLeaderboard)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2261, DefaultConv, TopArtistsLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2262, DefaultConv, TopArtistsLayer, loadPage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2263, DefaultConv, TopArtistsLayer, setupPageInfo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2260, DefaultConv, TopArtistsLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2261, DefaultConv, TopArtistsLayer, setupLeaderboard)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2262, DefaultConv, TopArtistsLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2263, DefaultConv, TopArtistsLayer, loadPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2264, DefaultConv, TopArtistsLayer, setupPageInfo)
 	}
 };
 
@@ -1432,7 +1394,7 @@ struct Modify<Derived, cocos2d::CCTransitionFade> : ModifyBase<Modify<Derived, c
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(575, DefaultConv, cocos2d::CCTransitionFade, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(576, DefaultConv, cocos2d::CCTransitionFade, create)
 	}
 };
 
@@ -1443,18 +1405,18 @@ struct Modify<Derived, GJDropDownLayer> : ModifyBase<Modify<Derived, GJDropDownL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1144, DefaultConv, GJDropDownLayer, enterLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1145, DefaultConv, GJDropDownLayer, exitLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1146, DefaultConv, GJDropDownLayer, showLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1147, DefaultConv, GJDropDownLayer, hideLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1148, DefaultConv, GJDropDownLayer, layerVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1149, DefaultConv, GJDropDownLayer, layerHidden)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1151, DefaultConv, GJDropDownLayer, disableUI)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1152, DefaultConv, GJDropDownLayer, enableUI)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1158, DefaultConv, GJDropDownLayer, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1159, DefaultConv, GJDropDownLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1160, DefaultConv, GJDropDownLayer, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1161, DefaultConv, GJDropDownLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1145, DefaultConv, GJDropDownLayer, enterLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1146, DefaultConv, GJDropDownLayer, exitLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1147, DefaultConv, GJDropDownLayer, showLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1148, DefaultConv, GJDropDownLayer, hideLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1149, DefaultConv, GJDropDownLayer, layerVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1150, DefaultConv, GJDropDownLayer, layerHidden)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1152, DefaultConv, GJDropDownLayer, disableUI)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1153, DefaultConv, GJDropDownLayer, enableUI)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1159, DefaultConv, GJDropDownLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1160, DefaultConv, GJDropDownLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1161, DefaultConv, GJDropDownLayer, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1162, DefaultConv, GJDropDownLayer, keyBackClicked)
 	}
 };
 
@@ -1525,8 +1487,8 @@ struct Modify<Derived, EndPortalObject> : ModifyBase<Modify<Derived, EndPortalOb
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1033, DefaultConv, EndPortalObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1034, DefaultConv, EndPortalObject, updateColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1034, DefaultConv, EndPortalObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1035, DefaultConv, EndPortalObject, updateColors)
 	}
 };
 
@@ -1537,75 +1499,75 @@ struct Modify<Derived, GJBaseGameLayer> : ModifyBase<Modify<Derived, GJBaseGameL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1069, DefaultConv, GJBaseGameLayer, objectsCollided)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1070, DefaultConv, GJBaseGameLayer, createMoveCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1071, DefaultConv, GJBaseGameLayer, updateColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1072, DefaultConv, GJBaseGameLayer, flipGravity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1073, DefaultConv, GJBaseGameLayer, calculateColorValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1074, DefaultConv, GJBaseGameLayer, toggleGroupTriggered)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1075, DefaultConv, GJBaseGameLayer, spawnGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1076, DefaultConv, GJBaseGameLayer, addToSection)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1077, DefaultConv, GJBaseGameLayer, addToGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1078, DefaultConv, GJBaseGameLayer, removeFromGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1079, DefaultConv, GJBaseGameLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1080, DefaultConv, GJBaseGameLayer, addObjectCounter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1081, DefaultConv, GJBaseGameLayer, addToGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1082, DefaultConv, GJBaseGameLayer, atlasValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1083, DefaultConv, GJBaseGameLayer, bumpPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1084, DefaultConv, GJBaseGameLayer, calculateOpacityValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1085, DefaultConv, GJBaseGameLayer, checkSpawnObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1086, DefaultConv, GJBaseGameLayer, collectItem)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1087, DefaultConv, GJBaseGameLayer, collectedObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1088, DefaultConv, GJBaseGameLayer, createTextLayers)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1089, DefaultConv, GJBaseGameLayer, damagingObjectsInRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1090, DefaultConv, GJBaseGameLayer, enableHighCapacityMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1091, DefaultConv, GJBaseGameLayer, getCapacityString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1092, DefaultConv, GJBaseGameLayer, getGroundHeightForMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1093, DefaultConv, GJBaseGameLayer, getGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1094, DefaultConv, GJBaseGameLayer, getMoveDeltaForObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1095, DefaultConv, GJBaseGameLayer, getOptimizedGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1096, DefaultConv, GJBaseGameLayer, getStaticGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1097, DefaultConv, GJBaseGameLayer, isGroupDisabledForObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1098, DefaultConv, GJBaseGameLayer, isGroupDisabledForObjectFull)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1099, DefaultConv, GJBaseGameLayer, loadUpToPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1100, DefaultConv, GJBaseGameLayer, objectIntersectsCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1101, DefaultConv, GJBaseGameLayer, objectTriggered)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1102, DefaultConv, GJBaseGameLayer, optimizeMoveGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1103, DefaultConv, GJBaseGameLayer, parentForZLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1104, DefaultConv, GJBaseGameLayer, playerTouchedRing)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1105, DefaultConv, GJBaseGameLayer, processColorObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1106, DefaultConv, GJBaseGameLayer, processFollowActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1107, DefaultConv, GJBaseGameLayer, processMoveActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1108, DefaultConv, GJBaseGameLayer, processMoveActionsStep)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1109, DefaultConv, GJBaseGameLayer, processOpacityObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1110, DefaultConv, GJBaseGameLayer, processPlayerFollowActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1111, DefaultConv, GJBaseGameLayer, processRotationActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1112, DefaultConv, GJBaseGameLayer, pushButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1113, DefaultConv, GJBaseGameLayer, rectIntersectsCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1114, DefaultConv, GJBaseGameLayer, refreshCounterLabels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1115, DefaultConv, GJBaseGameLayer, releaseButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1116, DefaultConv, GJBaseGameLayer, removeFromGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1117, DefaultConv, GJBaseGameLayer, removeObjectFromSection)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1118, DefaultConv, GJBaseGameLayer, reorderObjectSection)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1119, DefaultConv, GJBaseGameLayer, resetGroupCounters)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1120, DefaultConv, GJBaseGameLayer, resetMoveOptimizedValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1121, DefaultConv, GJBaseGameLayer, sectionForPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1122, DefaultConv, GJBaseGameLayer, setupLayers)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1123, DefaultConv, GJBaseGameLayer, shouldExitHackedLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1124, DefaultConv, GJBaseGameLayer, spawnGroupTriggered)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1125, DefaultConv, GJBaseGameLayer, staticObjectsInRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1126, DefaultConv, GJBaseGameLayer, testInstantCountTrigger)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1127, DefaultConv, GJBaseGameLayer, toggleGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1128, DefaultConv, GJBaseGameLayer, togglePlayerVisibility)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1129, DefaultConv, GJBaseGameLayer, triggerMoveCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1130, DefaultConv, GJBaseGameLayer, updateCollisionBlocks)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1131, DefaultConv, GJBaseGameLayer, updateCounters)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1132, DefaultConv, GJBaseGameLayer, updateDisabledObjectsLastPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1133, DefaultConv, GJBaseGameLayer, updateLayerCapacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1134, DefaultConv, GJBaseGameLayer, updateLegacyLayerCapacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1135, DefaultConv, GJBaseGameLayer, updateOBB2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1136, DefaultConv, GJBaseGameLayer, updateQueuedLabels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1137, DefaultConv, GJBaseGameLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1070, DefaultConv, GJBaseGameLayer, objectsCollided)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1071, DefaultConv, GJBaseGameLayer, createMoveCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1072, DefaultConv, GJBaseGameLayer, updateColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1073, DefaultConv, GJBaseGameLayer, flipGravity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1074, DefaultConv, GJBaseGameLayer, calculateColorValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1075, DefaultConv, GJBaseGameLayer, toggleGroupTriggered)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1076, DefaultConv, GJBaseGameLayer, spawnGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1077, DefaultConv, GJBaseGameLayer, addToSection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1078, DefaultConv, GJBaseGameLayer, addToGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1079, DefaultConv, GJBaseGameLayer, removeFromGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1080, DefaultConv, GJBaseGameLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1081, DefaultConv, GJBaseGameLayer, addObjectCounter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1082, DefaultConv, GJBaseGameLayer, addToGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1083, DefaultConv, GJBaseGameLayer, atlasValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1084, DefaultConv, GJBaseGameLayer, bumpPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1085, DefaultConv, GJBaseGameLayer, calculateOpacityValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1086, DefaultConv, GJBaseGameLayer, checkSpawnObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1087, DefaultConv, GJBaseGameLayer, collectItem)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1088, DefaultConv, GJBaseGameLayer, collectedObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1089, DefaultConv, GJBaseGameLayer, createTextLayers)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1090, DefaultConv, GJBaseGameLayer, damagingObjectsInRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1091, DefaultConv, GJBaseGameLayer, enableHighCapacityMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1092, DefaultConv, GJBaseGameLayer, getCapacityString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1093, DefaultConv, GJBaseGameLayer, getGroundHeightForMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1094, DefaultConv, GJBaseGameLayer, getGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1095, DefaultConv, GJBaseGameLayer, getMoveDeltaForObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1096, DefaultConv, GJBaseGameLayer, getOptimizedGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1097, DefaultConv, GJBaseGameLayer, getStaticGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1098, DefaultConv, GJBaseGameLayer, isGroupDisabledForObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1099, DefaultConv, GJBaseGameLayer, isGroupDisabledForObjectFull)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1100, DefaultConv, GJBaseGameLayer, loadUpToPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1101, DefaultConv, GJBaseGameLayer, objectIntersectsCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1102, DefaultConv, GJBaseGameLayer, objectTriggered)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1103, DefaultConv, GJBaseGameLayer, optimizeMoveGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1104, DefaultConv, GJBaseGameLayer, parentForZLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1105, DefaultConv, GJBaseGameLayer, playerTouchedRing)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1106, DefaultConv, GJBaseGameLayer, processColorObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1107, DefaultConv, GJBaseGameLayer, processFollowActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1108, DefaultConv, GJBaseGameLayer, processMoveActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1109, DefaultConv, GJBaseGameLayer, processMoveActionsStep)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1110, DefaultConv, GJBaseGameLayer, processOpacityObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1111, DefaultConv, GJBaseGameLayer, processPlayerFollowActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1112, DefaultConv, GJBaseGameLayer, processRotationActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1113, DefaultConv, GJBaseGameLayer, pushButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1114, DefaultConv, GJBaseGameLayer, rectIntersectsCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1115, DefaultConv, GJBaseGameLayer, refreshCounterLabels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1116, DefaultConv, GJBaseGameLayer, releaseButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1117, DefaultConv, GJBaseGameLayer, removeFromGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1118, DefaultConv, GJBaseGameLayer, removeObjectFromSection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1119, DefaultConv, GJBaseGameLayer, reorderObjectSection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1120, DefaultConv, GJBaseGameLayer, resetGroupCounters)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1121, DefaultConv, GJBaseGameLayer, resetMoveOptimizedValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1122, DefaultConv, GJBaseGameLayer, sectionForPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1123, DefaultConv, GJBaseGameLayer, setupLayers)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1124, DefaultConv, GJBaseGameLayer, shouldExitHackedLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1125, DefaultConv, GJBaseGameLayer, spawnGroupTriggered)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1126, DefaultConv, GJBaseGameLayer, staticObjectsInRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1127, DefaultConv, GJBaseGameLayer, testInstantCountTrigger)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1128, DefaultConv, GJBaseGameLayer, toggleGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1129, DefaultConv, GJBaseGameLayer, togglePlayerVisibility)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1130, DefaultConv, GJBaseGameLayer, triggerMoveCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1131, DefaultConv, GJBaseGameLayer, updateCollisionBlocks)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1132, DefaultConv, GJBaseGameLayer, updateCounters)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1133, DefaultConv, GJBaseGameLayer, updateDisabledObjectsLastPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1134, DefaultConv, GJBaseGameLayer, updateLayerCapacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1135, DefaultConv, GJBaseGameLayer, updateLegacyLayerCapacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1136, DefaultConv, GJBaseGameLayer, updateOBB2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1137, DefaultConv, GJBaseGameLayer, updateQueuedLabels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1138, DefaultConv, GJBaseGameLayer, destructor)
 	}
 };
 
@@ -1676,7 +1638,7 @@ struct Modify<Derived, FMODAudioEngine> : ModifyBase<Modify<Derived, FMODAudioEn
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1052, DefaultConv, FMODAudioEngine, sharedEngine)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1053, DefaultConv, FMODAudioEngine, sharedEngine)
 	}
 };
 
@@ -1687,8 +1649,8 @@ struct Modify<Derived, PulseEffectAction> : ModifyBase<Modify<Derived, PulseEffe
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2134, DefaultConv, PulseEffectAction, createFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2135, DefaultConv, PulseEffectAction, getSaveString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2135, DefaultConv, PulseEffectAction, createFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2136, DefaultConv, PulseEffectAction, getSaveString)
 	}
 };
 
@@ -1709,13 +1671,13 @@ struct Modify<Derived, EditorPauseLayer> : ModifyBase<Modify<Derived, EditorPaus
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(924, DefaultConv, EditorPauseLayer, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(925, DefaultConv, EditorPauseLayer, keyBackClicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(926, DefaultConv, EditorPauseLayer, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(927, DefaultConv, EditorPauseLayer, customSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(928, DefaultConv, EditorPauseLayer, FLAlert_Clicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(929, DefaultConv, EditorPauseLayer, saveLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(930, DefaultConv, EditorPauseLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(925, DefaultConv, EditorPauseLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(926, DefaultConv, EditorPauseLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(927, DefaultConv, EditorPauseLayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(928, DefaultConv, EditorPauseLayer, customSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(929, DefaultConv, EditorPauseLayer, FLAlert_Clicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(930, DefaultConv, EditorPauseLayer, saveLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(931, DefaultConv, EditorPauseLayer, init)
 	}
 };
 
@@ -1737,7 +1699,7 @@ struct Modify<Derived, EditLevelLayer> : ModifyBase<Modify<Derived, EditLevelLay
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(920, DefaultConv, EditLevelLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(921, DefaultConv, EditLevelLayer, create)
 	}
 };
 
@@ -1748,7 +1710,7 @@ struct Modify<Derived, EditButtonBar> : ModifyBase<Modify<Derived, EditButtonBar
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(918, DefaultConv, EditButtonBar, loadFromItems)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(919, DefaultConv, EditButtonBar, loadFromItems)
 	}
 };
 
@@ -1759,7 +1721,7 @@ struct Modify<Derived, ToggleTriggerAction> : ModifyBase<Modify<Derived, ToggleT
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2258, DefaultConv, ToggleTriggerAction, createFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2259, DefaultConv, ToggleTriggerAction, createFromString)
 	}
 };
 
@@ -1780,9 +1742,9 @@ struct Modify<Derived, LoadingLayer> : ModifyBase<Modify<Derived, LoadingLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1735, DefaultConv, LoadingLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1736, DefaultConv, LoadingLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1738, DefaultConv, LoadingLayer, loadAssets)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1736, DefaultConv, LoadingLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1737, DefaultConv, LoadingLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1739, DefaultConv, LoadingLayer, loadAssets)
 	}
 };
 
@@ -1813,7 +1775,7 @@ struct Modify<Derived, SetIDLayer> : ModifyBase<Modify<Derived, SetIDLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2147, DefaultConv, SetIDLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2148, DefaultConv, SetIDLayer, create)
 	}
 };
 
@@ -1834,13 +1796,13 @@ struct Modify<Derived, GameLevelManager> : ModifyBase<Modify<Derived, GameLevelM
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1342, DefaultConv, GameLevelManager, createNewLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1343, DefaultConv, GameLevelManager, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1347, DefaultConv, GameLevelManager, getPageInfo)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1349, DefaultConv, GameLevelManager, getStoredOnlineLevels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1350, DefaultConv, GameLevelManager, getTopArtists)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1351, DefaultConv, GameLevelManager, getTopArtistsKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1352, DefaultConv, GameLevelManager, makeTimeStamp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1343, DefaultConv, GameLevelManager, createNewLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1344, DefaultConv, GameLevelManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1348, DefaultConv, GameLevelManager, getPageInfo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1350, DefaultConv, GameLevelManager, getStoredOnlineLevels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1351, DefaultConv, GameLevelManager, getTopArtists)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1352, DefaultConv, GameLevelManager, getTopArtistsKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1353, DefaultConv, GameLevelManager, makeTimeStamp)
 	}
 };
 
@@ -1851,9 +1813,9 @@ struct Modify<Derived, CustomSongLayer> : ModifyBase<Modify<Derived, CustomSongL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(883, DefaultConv, CustomSongLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(884, DefaultConv, CustomSongLayer, onArtists)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(885, DefaultConv, CustomSongLayer, onSongBrowser)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(884, DefaultConv, CustomSongLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(885, DefaultConv, CustomSongLayer, onArtists)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(886, DefaultConv, CustomSongLayer, onSongBrowser)
 	}
 };
 
@@ -1864,7 +1826,7 @@ struct Modify<Derived, CustomSongCell> : ModifyBase<Modify<Derived, CustomSongCe
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(882, DefaultConv, CustomSongCell, loadFromObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(883, DefaultConv, CustomSongCell, loadFromObject)
 	}
 };
 
@@ -1886,8 +1848,8 @@ struct Modify<Derived, CreatorLayer> : ModifyBase<Modify<Derived, CreatorLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(869, DefaultConv, CreatorLayer, onMyLevels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(870, DefaultConv, CreatorLayer, onSavedLevels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(870, DefaultConv, CreatorLayer, onMyLevels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(871, DefaultConv, CreatorLayer, onSavedLevels)
 	}
 };
 
@@ -1918,9 +1880,9 @@ struct Modify<Derived, GameObjectCopy> : ModifyBase<Modify<Derived, GameObjectCo
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1546, DefaultConv, GameObjectCopy, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1547, DefaultConv, GameObjectCopy, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1548, DefaultConv, GameObjectCopy, resetObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1547, DefaultConv, GameObjectCopy, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1548, DefaultConv, GameObjectCopy, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1549, DefaultConv, GameObjectCopy, resetObject)
 	}
 };
 
@@ -1931,14 +1893,14 @@ struct Modify<Derived, cocos2d::CCString> : ModifyBase<Modify<Derived, cocos2d::
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(525, DefaultConv, cocos2d::CCString, isEqual)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(526, DefaultConv, cocos2d::CCString, acceptVisitor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(527, DefaultConv, cocos2d::CCString, copyWithZone)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(528, DefaultConv, cocos2d::CCString, boolValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(529, DefaultConv, cocos2d::CCString, doubleValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(530, DefaultConv, cocos2d::CCString, floatValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(531, DefaultConv, cocos2d::CCString, getCString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(532, DefaultConv, cocos2d::CCString, intValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(526, DefaultConv, cocos2d::CCString, isEqual)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(527, DefaultConv, cocos2d::CCString, acceptVisitor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(528, DefaultConv, cocos2d::CCString, copyWithZone)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(529, DefaultConv, cocos2d::CCString, boolValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(530, DefaultConv, cocos2d::CCString, doubleValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(531, DefaultConv, cocos2d::CCString, floatValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(532, DefaultConv, cocos2d::CCString, getCString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(533, DefaultConv, cocos2d::CCString, intValue)
 	}
 };
 
@@ -1959,7 +1921,7 @@ struct Modify<Derived, CommentCell> : ModifyBase<Modify<Derived, CommentCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(859, DefaultConv, CommentCell, loadFromComment)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(860, DefaultConv, CommentCell, loadFromComment)
 	}
 };
 
@@ -1990,7 +1952,7 @@ struct Modify<Derived, CCSpritePlus> : ModifyBase<Modify<Derived, CCSpritePlus>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(801, DefaultConv, CCSpritePlus, initWithSpriteFrameName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(802, DefaultConv, CCSpritePlus, initWithSpriteFrameName)
 	}
 };
 
@@ -2011,11 +1973,11 @@ struct Modify<Derived, ColorChannelSprite> : ModifyBase<Modify<Derived, ColorCha
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(849, DefaultConv, ColorChannelSprite, updateBlending)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(850, DefaultConv, ColorChannelSprite, updateCopyLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(851, DefaultConv, ColorChannelSprite, updateOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(852, DefaultConv, ColorChannelSprite, updateValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(853, DefaultConv, ColorChannelSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(850, DefaultConv, ColorChannelSprite, updateBlending)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(851, DefaultConv, ColorChannelSprite, updateCopyLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(852, DefaultConv, ColorChannelSprite, updateOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(853, DefaultConv, ColorChannelSprite, updateValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(854, DefaultConv, ColorChannelSprite, create)
 	}
 };
 
@@ -2036,9 +1998,9 @@ struct Modify<Derived, ColorAction> : ModifyBase<Modify<Derived, ColorAction>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(846, DefaultConv, ColorAction, getSaveString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(847, DefaultConv, ColorAction, setupFromDict)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(848, DefaultConv, ColorAction, setupFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(847, DefaultConv, ColorAction, getSaveString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(848, DefaultConv, ColorAction, setupFromDict)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(849, DefaultConv, ColorAction, setupFromString)
 	}
 };
 
@@ -2049,7 +2011,7 @@ struct Modify<Derived, CollisionTriggerAction> : ModifyBase<Modify<Derived, Coll
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(845, DefaultConv, CollisionTriggerAction, createFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(846, DefaultConv, CollisionTriggerAction, createFromString)
 	}
 };
 
@@ -2060,64 +2022,64 @@ struct Modify<Derived, EditorUI> : ModifyBase<Modify<Derived, EditorUI>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(941, DefaultConv, EditorUI, constrainGameLayerPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(942, DefaultConv, EditorUI, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(943, DefaultConv, EditorUI, deselectAll)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(944, DefaultConv, EditorUI, onDeselectAll)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(945, DefaultConv, EditorUI, disableButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(946, DefaultConv, EditorUI, editButtonUsable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(947, DefaultConv, EditorUI, editObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(948, DefaultConv, EditorUI, enableButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(949, DefaultConv, EditorUI, getCreateBtn)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(950, DefaultConv, EditorUI, getGroupCenter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(951, DefaultConv, EditorUI, getSelectedObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(952, DefaultConv, EditorUI, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(953, DefaultConv, EditorUI, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(954, DefaultConv, EditorUI, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(955, DefaultConv, EditorUI, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(956, DefaultConv, EditorUI, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(957, DefaultConv, EditorUI, moveObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(958, DefaultConv, EditorUI, onDuplicate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(959, DefaultConv, EditorUI, pasteObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(960, DefaultConv, EditorUI, playerTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(961, DefaultConv, EditorUI, playtestStopped)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(962, DefaultConv, EditorUI, redoLastAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(963, DefaultConv, EditorUI, replaceGroupID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(964, DefaultConv, EditorUI, scaleChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(965, DefaultConv, EditorUI, scaleObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(966, DefaultConv, EditorUI, selectObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(967, DefaultConv, EditorUI, setupCreateMenu)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(968, DefaultConv, EditorUI, undoLastAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(969, DefaultConv, EditorUI, updateButtons)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(970, DefaultConv, EditorUI, updateObjectInfoLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(971, DefaultConv, EditorUI, updateSlider)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(972, DefaultConv, EditorUI, updateZoom)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(973, DefaultConv, EditorUI, selectObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(982, DefaultConv, EditorUI, updateCreateMenu)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(983, DefaultConv, EditorUI, toggleMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(984, DefaultConv, EditorUI, zoomIn)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(985, DefaultConv, EditorUI, zoomOut)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(987, DefaultConv, EditorUI, updateGridNodeSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(989, DefaultConv, EditorUI, constrainGameLayerPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(990, DefaultConv, EditorUI, moveGameLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(991, DefaultConv, EditorUI, showUI)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(994, DefaultConv, EditorUI, moveObjectCall)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(995, DefaultConv, EditorUI, transformObjectCall)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(996, DefaultConv, EditorUI, onDeleteSelected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(997, DefaultConv, EditorUI, onCopy)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(998, DefaultConv, EditorUI, onPaste)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(999, DefaultConv, EditorUI, toggleEnableRotate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1000, DefaultConv, EditorUI, toggleFreeMove)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1001, DefaultConv, EditorUI, toggleSwipe)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1002, DefaultConv, EditorUI, toggleSnap)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1003, DefaultConv, EditorUI, onPlayback)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1004, DefaultConv, EditorUI, onPlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1005, DefaultConv, EditorUI, onStopPlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1006, DefaultConv, EditorUI, onGroupUp)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1007, DefaultConv, EditorUI, onGroupDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1008, DefaultConv, EditorUI, selectBuildTab)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1009, DefaultConv, EditorUI, onPause)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1026, DefaultConv, EditorUI, keyUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(942, DefaultConv, EditorUI, constrainGameLayerPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(943, DefaultConv, EditorUI, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(944, DefaultConv, EditorUI, deselectAll)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(945, DefaultConv, EditorUI, onDeselectAll)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(946, DefaultConv, EditorUI, disableButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(947, DefaultConv, EditorUI, editButtonUsable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(948, DefaultConv, EditorUI, editObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(949, DefaultConv, EditorUI, enableButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(950, DefaultConv, EditorUI, getCreateBtn)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(951, DefaultConv, EditorUI, getGroupCenter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(952, DefaultConv, EditorUI, getSelectedObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(953, DefaultConv, EditorUI, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(954, DefaultConv, EditorUI, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(955, DefaultConv, EditorUI, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(956, DefaultConv, EditorUI, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(957, DefaultConv, EditorUI, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(958, DefaultConv, EditorUI, moveObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(959, DefaultConv, EditorUI, onDuplicate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(960, DefaultConv, EditorUI, pasteObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(961, DefaultConv, EditorUI, playerTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(962, DefaultConv, EditorUI, playtestStopped)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(963, DefaultConv, EditorUI, redoLastAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(964, DefaultConv, EditorUI, replaceGroupID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(965, DefaultConv, EditorUI, scaleChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(966, DefaultConv, EditorUI, scaleObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(967, DefaultConv, EditorUI, selectObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(968, DefaultConv, EditorUI, setupCreateMenu)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(969, DefaultConv, EditorUI, undoLastAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(970, DefaultConv, EditorUI, updateButtons)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(971, DefaultConv, EditorUI, updateObjectInfoLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(972, DefaultConv, EditorUI, updateSlider)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(973, DefaultConv, EditorUI, updateZoom)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(974, DefaultConv, EditorUI, selectObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(983, DefaultConv, EditorUI, updateCreateMenu)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(984, DefaultConv, EditorUI, toggleMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(985, DefaultConv, EditorUI, zoomIn)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(986, DefaultConv, EditorUI, zoomOut)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(988, DefaultConv, EditorUI, updateGridNodeSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(990, DefaultConv, EditorUI, constrainGameLayerPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(991, DefaultConv, EditorUI, moveGameLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(992, DefaultConv, EditorUI, showUI)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(995, DefaultConv, EditorUI, moveObjectCall)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(996, DefaultConv, EditorUI, transformObjectCall)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(997, DefaultConv, EditorUI, onDeleteSelected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(998, DefaultConv, EditorUI, onCopy)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(999, DefaultConv, EditorUI, onPaste)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1000, DefaultConv, EditorUI, toggleEnableRotate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1001, DefaultConv, EditorUI, toggleFreeMove)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1002, DefaultConv, EditorUI, toggleSwipe)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1003, DefaultConv, EditorUI, toggleSnap)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1004, DefaultConv, EditorUI, onPlayback)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1005, DefaultConv, EditorUI, onPlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1006, DefaultConv, EditorUI, onStopPlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1007, DefaultConv, EditorUI, onGroupUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1008, DefaultConv, EditorUI, onGroupDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1009, DefaultConv, EditorUI, selectBuildTab)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1010, DefaultConv, EditorUI, onPause)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1027, DefaultConv, EditorUI, keyUp)
 	}
 };
 
@@ -2128,8 +2090,8 @@ struct Modify<Derived, CollisionBlockPopup> : ModifyBase<Modify<Derived, Collisi
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(843, DefaultConv, CollisionBlockPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(844, DefaultConv, CollisionBlockPopup, onNextItemID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(844, DefaultConv, CollisionBlockPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(845, DefaultConv, CollisionBlockPopup, onNextItemID)
 	}
 };
 
@@ -2140,8 +2102,8 @@ struct Modify<Derived, CheckpointObject> : ModifyBase<Modify<Derived, Checkpoint
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(841, DefaultConv, CheckpointObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(842, DefaultConv, CheckpointObject, getObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(842, DefaultConv, CheckpointObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(843, DefaultConv, CheckpointObject, getObject)
 	}
 };
 
@@ -2152,7 +2114,7 @@ struct Modify<Derived, CreateMenuItem> : ModifyBase<Modify<Derived, CreateMenuIt
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(865, DefaultConv, CreateMenuItem, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(866, DefaultConv, CreateMenuItem, create)
 	}
 };
 
@@ -2163,7 +2125,7 @@ struct Modify<Derived, LocalLevelManager> : ModifyBase<Modify<Derived, LocalLeve
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1741, DefaultConv, LocalLevelManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1742, DefaultConv, LocalLevelManager, sharedState)
 	}
 };
 
@@ -2174,18 +2136,18 @@ struct Modify<Derived, CCScrollLayerExt> : ModifyBase<Modify<Derived, CCScrollLa
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(783, DefaultConv, CCScrollLayerExt, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(784, DefaultConv, CCScrollLayerExt, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(785, DefaultConv, CCScrollLayerExt, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(786, DefaultConv, CCScrollLayerExt, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(787, DefaultConv, CCScrollLayerExt, ccTouchCancelled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(788, DefaultConv, CCScrollLayerExt, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(789, DefaultConv, CCScrollLayerExt, preVisitWithClippingRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(790, DefaultConv, CCScrollLayerExt, postVisit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(791, DefaultConv, CCScrollLayerExt, moveToTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(792, DefaultConv, CCScrollLayerExt, moveToTopWithOffset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(793, DefaultConv, CCScrollLayerExt, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(794, DefaultConv, CCScrollLayerExt, scrollLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(784, DefaultConv, CCScrollLayerExt, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(785, DefaultConv, CCScrollLayerExt, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(786, DefaultConv, CCScrollLayerExt, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(787, DefaultConv, CCScrollLayerExt, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(788, DefaultConv, CCScrollLayerExt, ccTouchCancelled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(789, DefaultConv, CCScrollLayerExt, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(790, DefaultConv, CCScrollLayerExt, preVisitWithClippingRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(791, DefaultConv, CCScrollLayerExt, postVisit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(792, DefaultConv, CCScrollLayerExt, moveToTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(793, DefaultConv, CCScrollLayerExt, moveToTopWithOffset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(794, DefaultConv, CCScrollLayerExt, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(795, DefaultConv, CCScrollLayerExt, scrollLayer)
 	}
 };
 
@@ -2196,9 +2158,9 @@ struct Modify<Derived, cocos2d::CCStandardTouchHandler> : ModifyBase<Modify<Deri
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(522, DefaultConv, cocos2d::CCStandardTouchHandler, handlerWithDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(523, DefaultConv, cocos2d::CCStandardTouchHandler, initWithDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(524, DefaultConv, cocos2d::CCStandardTouchHandler, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(523, DefaultConv, cocos2d::CCStandardTouchHandler, handlerWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(524, DefaultConv, cocos2d::CCStandardTouchHandler, initWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(525, DefaultConv, cocos2d::CCStandardTouchHandler, destructor)
 	}
 };
 
@@ -2209,9 +2171,9 @@ struct Modify<Derived, CCMoveCNode> : ModifyBase<Modify<Derived, CCMoveCNode>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(774, DefaultConv, CCMoveCNode, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(775, DefaultConv, CCMoveCNode, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(776, DefaultConv, CCMoveCNode, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(775, DefaultConv, CCMoveCNode, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(776, DefaultConv, CCMoveCNode, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(777, DefaultConv, CCMoveCNode, destructor)
 	}
 };
 
@@ -2272,20 +2234,20 @@ struct Modify<Derived, GameStatsManager> : ModifyBase<Modify<Derived, GameStatsM
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1557, DefaultConv, GameStatsManager, awardCurrencyForLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1558, DefaultConv, GameStatsManager, awardDiamondsForLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1559, DefaultConv, GameStatsManager, awardSecretKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1564, DefaultConv, GameStatsManager, getSecretCoinKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1565, DefaultConv, GameStatsManager, getStat)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1566, DefaultConv, GameStatsManager, hasPendingUserCoin)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1567, DefaultConv, GameStatsManager, hasSecretCoin)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1568, DefaultConv, GameStatsManager, hasUserCoin)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1570, DefaultConv, GameStatsManager, incrementStat)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1558, DefaultConv, GameStatsManager, awardCurrencyForLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1559, DefaultConv, GameStatsManager, awardDiamondsForLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1560, DefaultConv, GameStatsManager, awardSecretKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1565, DefaultConv, GameStatsManager, getSecretCoinKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1566, DefaultConv, GameStatsManager, getStat)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1567, DefaultConv, GameStatsManager, hasPendingUserCoin)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1568, DefaultConv, GameStatsManager, hasSecretCoin)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1569, DefaultConv, GameStatsManager, hasUserCoin)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(1571, DefaultConv, GameStatsManager, incrementStat)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1572, DefaultConv, GameStatsManager, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1573, DefaultConv, GameStatsManager, storePendingUserCoin)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1574, DefaultConv, GameStatsManager, storeSecretCoin)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1575, DefaultConv, GameStatsManager, storeUserCoin)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1572, DefaultConv, GameStatsManager, incrementStat)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1573, DefaultConv, GameStatsManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1574, DefaultConv, GameStatsManager, storePendingUserCoin)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1575, DefaultConv, GameStatsManager, storeSecretCoin)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1576, DefaultConv, GameStatsManager, storeUserCoin)
 	}
 };
 
@@ -2306,11 +2268,11 @@ struct Modify<Derived, CCCircleWave> : ModifyBase<Modify<Derived, CCCircleWave>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(732, DefaultConv, CCCircleWave, create)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(733, DefaultConv, CCCircleWave, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(734, DefaultConv, CCCircleWave, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(735, DefaultConv, CCCircleWave, followObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(736, DefaultConv, CCCircleWave, updatePosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(734, DefaultConv, CCCircleWave, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(735, DefaultConv, CCCircleWave, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(736, DefaultConv, CCCircleWave, followObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(737, DefaultConv, CCCircleWave, updatePosition)
 	}
 };
 
@@ -2321,7 +2283,7 @@ struct Modify<Derived, LevelBrowserLayer> : ModifyBase<Modify<Derived, LevelBrow
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1620, DefaultConv, LevelBrowserLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1621, DefaultConv, LevelBrowserLayer, create)
 	}
 };
 
@@ -2332,18 +2294,41 @@ struct Modify<Derived, CCBlockLayer> : ModifyBase<Modify<Derived, CCBlockLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(720, DefaultConv, CCBlockLayer, disableUI)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(721, DefaultConv, CCBlockLayer, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(722, DefaultConv, CCBlockLayer, enableUI)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(723, DefaultConv, CCBlockLayer, enterAnimFinished)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(724, DefaultConv, CCBlockLayer, enterLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(725, DefaultConv, CCBlockLayer, exitLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(726, DefaultConv, CCBlockLayer, hideLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(727, DefaultConv, CCBlockLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(728, DefaultConv, CCBlockLayer, layerHidden)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(729, DefaultConv, CCBlockLayer, layerVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(730, DefaultConv, CCBlockLayer, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(731, DefaultConv, CCBlockLayer, showLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(721, DefaultConv, CCBlockLayer, disableUI)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(722, DefaultConv, CCBlockLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(723, DefaultConv, CCBlockLayer, enableUI)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(724, DefaultConv, CCBlockLayer, enterAnimFinished)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(725, DefaultConv, CCBlockLayer, enterLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(726, DefaultConv, CCBlockLayer, exitLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(727, DefaultConv, CCBlockLayer, hideLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(728, DefaultConv, CCBlockLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(729, DefaultConv, CCBlockLayer, layerHidden)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(730, DefaultConv, CCBlockLayer, layerVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(731, DefaultConv, CCBlockLayer, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(732, DefaultConv, CCBlockLayer, showLayer)
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, EditorOptionsLayer> : ModifyBase<Modify<Derived, EditorOptionsLayer>> {
+	using ModifyBase<Modify<Derived, EditorOptionsLayer>>::ModifyBase;
+	using Base = EditorOptionsLayer;
+	static void apply() {
+		using namespace geode::core::meta;
+
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(923, DefaultConv, EditorOptionsLayer, onButtonsPerRow)
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, CCAnimatedSprite> : ModifyBase<Modify<Derived, CCAnimatedSprite>> {
+	using ModifyBase<Modify<Derived, CCAnimatedSprite>>::ModifyBase;
+	using Base = CCAnimatedSprite;
+	static void apply() {
+		using namespace geode::core::meta;
+
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(716, DefaultConv, CCAnimatedSprite, runAnimation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(717, DefaultConv, CCAnimatedSprite, tweenToAnimation)
 	}
 };
 
@@ -2354,11 +2339,11 @@ struct Modify<Derived, ArtistCell> : ModifyBase<Modify<Derived, ArtistCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(682, DefaultConv, ArtistCell, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(683, DefaultConv, ArtistCell, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(684, DefaultConv, ArtistCell, loadFromObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(685, DefaultConv, ArtistCell, onNewgrounds)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(686, DefaultConv, ArtistCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(683, DefaultConv, ArtistCell, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(684, DefaultConv, ArtistCell, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(685, DefaultConv, ArtistCell, loadFromObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(686, DefaultConv, ArtistCell, onNewgrounds)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(687, DefaultConv, ArtistCell, updateBGColor)
 	}
 };
 
@@ -2369,8 +2354,8 @@ struct Modify<Derived, AchievementsLayer> : ModifyBase<Modify<Derived, Achieveme
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(666, DefaultConv, AchievementsLayer, customSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(667, DefaultConv, AchievementsLayer, loadPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(667, DefaultConv, AchievementsLayer, customSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(668, DefaultConv, AchievementsLayer, loadPage)
 	}
 };
 
@@ -2381,9 +2366,9 @@ struct Modify<Derived, AchievementNotifier> : ModifyBase<Modify<Derived, Achieve
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(663, DefaultConv, AchievementNotifier, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(664, DefaultConv, AchievementNotifier, willSwitchToScene)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(665, DefaultConv, AchievementNotifier, showNextAchievement)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(664, DefaultConv, AchievementNotifier, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(665, DefaultConv, AchievementNotifier, willSwitchToScene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(666, DefaultConv, AchievementNotifier, showNextAchievement)
 	}
 };
 
@@ -2404,7 +2389,7 @@ struct Modify<Derived, AchievementCell> : ModifyBase<Modify<Derived, Achievement
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(659, DefaultConv, AchievementCell, loadFromDict)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(660, DefaultConv, AchievementCell, loadFromDict)
 	}
 };
 
@@ -2415,7 +2400,7 @@ struct Modify<Derived, AchievementBar> : ModifyBase<Modify<Derived, AchievementB
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(658, DefaultConv, AchievementBar, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(659, DefaultConv, AchievementBar, create)
 	}
 };
 
@@ -2453,21 +2438,21 @@ struct Modify<Derived, cocos2d::extension::CCScrollView> : ModifyBase<Modify<Der
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(641, DefaultConv, cocos2d::extension::CCScrollView, destructor)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(642, DefaultConv, cocos2d::extension::CCScrollView, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(643, DefaultConv, cocos2d::extension::CCScrollView, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(644, DefaultConv, cocos2d::extension::CCScrollView, setContentSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(645, DefaultConv, cocos2d::extension::CCScrollView, getContentSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(646, DefaultConv, cocos2d::extension::CCScrollView, addChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(643, DefaultConv, cocos2d::extension::CCScrollView, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(644, DefaultConv, cocos2d::extension::CCScrollView, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(645, DefaultConv, cocos2d::extension::CCScrollView, setContentSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(646, DefaultConv, cocos2d::extension::CCScrollView, getContentSize)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(647, DefaultConv, cocos2d::extension::CCScrollView, addChild)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(648, DefaultConv, cocos2d::extension::CCScrollView, addChild)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(649, DefaultConv, cocos2d::extension::CCScrollView, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(650, DefaultConv, cocos2d::extension::CCScrollView, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(651, DefaultConv, cocos2d::extension::CCScrollView, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(652, DefaultConv, cocos2d::extension::CCScrollView, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(653, DefaultConv, cocos2d::extension::CCScrollView, ccTouchCancelled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(654, DefaultConv, cocos2d::extension::CCScrollView, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(655, DefaultConv, cocos2d::extension::CCScrollView, setTouchEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(649, DefaultConv, cocos2d::extension::CCScrollView, addChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(650, DefaultConv, cocos2d::extension::CCScrollView, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(651, DefaultConv, cocos2d::extension::CCScrollView, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(652, DefaultConv, cocos2d::extension::CCScrollView, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(653, DefaultConv, cocos2d::extension::CCScrollView, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(654, DefaultConv, cocos2d::extension::CCScrollView, ccTouchCancelled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(655, DefaultConv, cocos2d::extension::CCScrollView, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(656, DefaultConv, cocos2d::extension::CCScrollView, setTouchEnabled)
 	}
 };
 
@@ -2478,8 +2463,8 @@ struct Modify<Derived, CurrencyRewardLayer> : ModifyBase<Modify<Derived, Currenc
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(874, DefaultConv, CurrencyRewardLayer, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(875, DefaultConv, CurrencyRewardLayer, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(875, DefaultConv, CurrencyRewardLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(876, DefaultConv, CurrencyRewardLayer, update)
 	}
 };
 
@@ -2545,10 +2530,10 @@ struct Modify<Derived, cocos2d::CCSet> : ModifyBase<Modify<Derived, cocos2d::CCS
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(444, DefaultConv, cocos2d::CCSet, destructor)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(445, DefaultConv, cocos2d::CCSet, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(446, DefaultConv, cocos2d::CCSet, acceptVisitor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(447, DefaultConv, cocos2d::CCSet, anyObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(446, DefaultConv, cocos2d::CCSet, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(447, DefaultConv, cocos2d::CCSet, acceptVisitor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(448, DefaultConv, cocos2d::CCSet, anyObject)
 	}
 };
 
@@ -2559,8 +2544,8 @@ struct Modify<Derived, cocos2d::extension::CCControlUtils> : ModifyBase<Modify<D
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(600, DefaultConv, cocos2d::extension::CCControlUtils, HSVfromRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(601, DefaultConv, cocos2d::extension::CCControlUtils, RGBfromHSV)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(601, DefaultConv, cocos2d::extension::CCControlUtils, HSVfromRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(602, DefaultConv, cocos2d::extension::CCControlUtils, RGBfromHSV)
 	}
 };
 
@@ -2582,8 +2567,8 @@ struct Modify<Derived, AchievementManager> : ModifyBase<Modify<Derived, Achievem
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(660, DefaultConv, AchievementManager, getAllAchievements)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(661, DefaultConv, AchievementManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(661, DefaultConv, AchievementManager, getAllAchievements)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(662, DefaultConv, AchievementManager, sharedState)
 	}
 };
 
@@ -2594,9 +2579,9 @@ struct Modify<Derived, cocos2d::CCTouchHandler> : ModifyBase<Modify<Derived, coc
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(572, DefaultConv, cocos2d::CCTouchHandler, initWithDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(573, DefaultConv, cocos2d::CCTouchHandler, getPriority)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(574, DefaultConv, cocos2d::CCTouchHandler, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(573, DefaultConv, cocos2d::CCTouchHandler, initWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(574, DefaultConv, cocos2d::CCTouchHandler, getPriority)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(575, DefaultConv, cocos2d::CCTouchHandler, destructor)
 	}
 };
 
@@ -2617,10 +2602,10 @@ struct Modify<Derived, SetupInteractObjectPopup> : ModifyBase<Modify<Derived, Se
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2170, DefaultConv, SetupInteractObjectPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2171, DefaultConv, SetupInteractObjectPopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2172, DefaultConv, SetupInteractObjectPopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2173, DefaultConv, SetupInteractObjectPopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2171, DefaultConv, SetupInteractObjectPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2172, DefaultConv, SetupInteractObjectPopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2173, DefaultConv, SetupInteractObjectPopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2174, DefaultConv, SetupInteractObjectPopup, updateTargetID)
 	}
 };
 
@@ -2631,70 +2616,70 @@ struct Modify<Derived, cocos2d::CCSprite> : ModifyBase<Modify<Derived, cocos2d::
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(448, DefaultConv, cocos2d::CCSprite, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(449, DefaultConv, cocos2d::CCSprite, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(450, DefaultConv, cocos2d::CCSprite, setVertexZ)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(451, DefaultConv, cocos2d::CCSprite, setScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(452, DefaultConv, cocos2d::CCSprite, setScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(453, DefaultConv, cocos2d::CCSprite, setScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(454, DefaultConv, cocos2d::CCSprite, setPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(455, DefaultConv, cocos2d::CCSprite, setSkewX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(456, DefaultConv, cocos2d::CCSprite, setSkewY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(457, DefaultConv, cocos2d::CCSprite, setAnchorPoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(458, DefaultConv, cocos2d::CCSprite, setVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(459, DefaultConv, cocos2d::CCSprite, setRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(460, DefaultConv, cocos2d::CCSprite, setRotationX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(461, DefaultConv, cocos2d::CCSprite, setRotationY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(462, DefaultConv, cocos2d::CCSprite, ignoreAnchorPointForPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(463, DefaultConv, cocos2d::CCSprite, addChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(449, DefaultConv, cocos2d::CCSprite, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(450, DefaultConv, cocos2d::CCSprite, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(451, DefaultConv, cocos2d::CCSprite, setVertexZ)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(452, DefaultConv, cocos2d::CCSprite, setScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(453, DefaultConv, cocos2d::CCSprite, setScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(454, DefaultConv, cocos2d::CCSprite, setScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(455, DefaultConv, cocos2d::CCSprite, setPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(456, DefaultConv, cocos2d::CCSprite, setSkewX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(457, DefaultConv, cocos2d::CCSprite, setSkewY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(458, DefaultConv, cocos2d::CCSprite, setAnchorPoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(459, DefaultConv, cocos2d::CCSprite, setVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(460, DefaultConv, cocos2d::CCSprite, setRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(461, DefaultConv, cocos2d::CCSprite, setRotationX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(462, DefaultConv, cocos2d::CCSprite, setRotationY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(463, DefaultConv, cocos2d::CCSprite, ignoreAnchorPointForPosition)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(464, DefaultConv, cocos2d::CCSprite, addChild)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(465, DefaultConv, cocos2d::CCSprite, addChild)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(466, DefaultConv, cocos2d::CCSprite, removeChild)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(467, DefaultConv, cocos2d::CCSprite, removeAllChildrenWithCleanup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(468, DefaultConv, cocos2d::CCSprite, reorderChild)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(469, DefaultConv, cocos2d::CCSprite, sortAllChildren)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(470, DefaultConv, cocos2d::CCSprite, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(471, DefaultConv, cocos2d::CCSprite, updateTransform)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(472, DefaultConv, cocos2d::CCSprite, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(473, DefaultConv, cocos2d::CCSprite, updateDisplayedOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(474, DefaultConv, cocos2d::CCSprite, setColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(475, DefaultConv, cocos2d::CCSprite, updateDisplayedColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(476, DefaultConv, cocos2d::CCSprite, setOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(477, DefaultConv, cocos2d::CCSprite, isOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(478, DefaultConv, cocos2d::CCSprite, initWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(466, DefaultConv, cocos2d::CCSprite, addChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(467, DefaultConv, cocos2d::CCSprite, removeChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(468, DefaultConv, cocos2d::CCSprite, removeAllChildrenWithCleanup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(469, DefaultConv, cocos2d::CCSprite, reorderChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(470, DefaultConv, cocos2d::CCSprite, sortAllChildren)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(471, DefaultConv, cocos2d::CCSprite, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(472, DefaultConv, cocos2d::CCSprite, updateTransform)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(473, DefaultConv, cocos2d::CCSprite, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(474, DefaultConv, cocos2d::CCSprite, updateDisplayedOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(475, DefaultConv, cocos2d::CCSprite, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(476, DefaultConv, cocos2d::CCSprite, updateDisplayedColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(477, DefaultConv, cocos2d::CCSprite, setOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(478, DefaultConv, cocos2d::CCSprite, isOpacityModifyRGB)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(479, DefaultConv, cocos2d::CCSprite, initWithTexture)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(480, DefaultConv, cocos2d::CCSprite, initWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(481, DefaultConv, cocos2d::CCSprite, initWithSpriteFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(482, DefaultConv, cocos2d::CCSprite, initWithSpriteFrameName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(483, DefaultConv, cocos2d::CCSprite, initWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(481, DefaultConv, cocos2d::CCSprite, initWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(482, DefaultConv, cocos2d::CCSprite, initWithSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(483, DefaultConv, cocos2d::CCSprite, initWithSpriteFrameName)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(484, DefaultConv, cocos2d::CCSprite, initWithFile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(485, DefaultConv, cocos2d::CCSprite, setTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(486, DefaultConv, cocos2d::CCSprite, getTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(487, DefaultConv, cocos2d::CCSprite, setChildColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(488, DefaultConv, cocos2d::CCSprite, setChildOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(489, DefaultConv, cocos2d::CCSprite, getBatchNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(490, DefaultConv, cocos2d::CCSprite, setBatchNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(491, DefaultConv, cocos2d::CCSprite, refreshTextureRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(492, DefaultConv, cocos2d::CCSprite, setTextureRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(485, DefaultConv, cocos2d::CCSprite, initWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(486, DefaultConv, cocos2d::CCSprite, setTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(487, DefaultConv, cocos2d::CCSprite, getTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(488, DefaultConv, cocos2d::CCSprite, setChildColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(489, DefaultConv, cocos2d::CCSprite, setChildOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(490, DefaultConv, cocos2d::CCSprite, getBatchNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(491, DefaultConv, cocos2d::CCSprite, setBatchNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(492, DefaultConv, cocos2d::CCSprite, refreshTextureRect)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(493, DefaultConv, cocos2d::CCSprite, setTextureRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(494, DefaultConv, cocos2d::CCSprite, setVertexRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(495, DefaultConv, cocos2d::CCSprite, setDisplayFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(496, DefaultConv, cocos2d::CCSprite, isFrameDisplayed)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(497, DefaultConv, cocos2d::CCSprite, displayFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(498, DefaultConv, cocos2d::CCSprite, setDisplayFrameWithAnimationName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(499, DefaultConv, cocos2d::CCSprite, setTextureCoords)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(500, DefaultConv, cocos2d::CCSprite, updateBlendFunc)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(501, DefaultConv, cocos2d::CCSprite, setReorderChildDirtyRecursively)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(502, DefaultConv, cocos2d::CCSprite, setDirtyRecursively)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(503, DefaultConv, cocos2d::CCSprite, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(504, DefaultConv, cocos2d::CCSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(494, DefaultConv, cocos2d::CCSprite, setTextureRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(495, DefaultConv, cocos2d::CCSprite, setVertexRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(496, DefaultConv, cocos2d::CCSprite, setDisplayFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(497, DefaultConv, cocos2d::CCSprite, isFrameDisplayed)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(498, DefaultConv, cocos2d::CCSprite, displayFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(499, DefaultConv, cocos2d::CCSprite, setDisplayFrameWithAnimationName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(500, DefaultConv, cocos2d::CCSprite, setTextureCoords)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(501, DefaultConv, cocos2d::CCSprite, updateBlendFunc)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(502, DefaultConv, cocos2d::CCSprite, setReorderChildDirtyRecursively)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(503, DefaultConv, cocos2d::CCSprite, setDirtyRecursively)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(504, DefaultConv, cocos2d::CCSprite, destructor)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(505, DefaultConv, cocos2d::CCSprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(506, DefaultConv, cocos2d::CCSprite, createWithSpriteFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(507, DefaultConv, cocos2d::CCSprite, createWithSpriteFrameName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(508, DefaultConv, cocos2d::CCSprite, createWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(506, DefaultConv, cocos2d::CCSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(507, DefaultConv, cocos2d::CCSprite, createWithSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(508, DefaultConv, cocos2d::CCSprite, createWithSpriteFrameName)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(509, DefaultConv, cocos2d::CCSprite, createWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(510, DefaultConv, cocos2d::CCSprite, setFlipX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(511, DefaultConv, cocos2d::CCSprite, setFlipY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(510, DefaultConv, cocos2d::CCSprite, createWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(511, DefaultConv, cocos2d::CCSprite, setFlipX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(512, DefaultConv, cocos2d::CCSprite, setFlipY)
 	}
 };
 
@@ -2715,12 +2700,12 @@ struct Modify<Derived, cocos2d::CCTouchDispatcher> : ModifyBase<Modify<Derived, 
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(565, DefaultConv, cocos2d::CCTouchDispatcher, addTargetedDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(566, DefaultConv, cocos2d::CCTouchDispatcher, addStandardDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(567, DefaultConv, cocos2d::CCTouchDispatcher, removeDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(568, DefaultConv, cocos2d::CCTouchDispatcher, decrementForcePrio)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(569, DefaultConv, cocos2d::CCTouchDispatcher, incrementForcePrio)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(570, DefaultConv, cocos2d::CCTouchDispatcher, touches)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(566, DefaultConv, cocos2d::CCTouchDispatcher, addTargetedDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(567, DefaultConv, cocos2d::CCTouchDispatcher, addStandardDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(568, DefaultConv, cocos2d::CCTouchDispatcher, removeDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(569, DefaultConv, cocos2d::CCTouchDispatcher, decrementForcePrio)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(570, DefaultConv, cocos2d::CCTouchDispatcher, incrementForcePrio)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(571, DefaultConv, cocos2d::CCTouchDispatcher, touches)
 	}
 };
 
@@ -2731,9 +2716,9 @@ struct Modify<Derived, UndoObject> : ModifyBase<Modify<Derived, UndoObject>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2279, DefaultConv, UndoObject, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2280, DefaultConv, UndoObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2281, DefaultConv, UndoObject, createWithArray)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2280, DefaultConv, UndoObject, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2281, DefaultConv, UndoObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2282, DefaultConv, UndoObject, createWithArray)
 	}
 };
 
@@ -2768,7 +2753,7 @@ struct Modify<Derived, cocos2d::CCTintTo> : ModifyBase<Modify<Derived, cocos2d::
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(560, DefaultConv, cocos2d::CCTintTo, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(561, DefaultConv, cocos2d::CCTintTo, create)
 	}
 };
 
@@ -2789,7 +2774,7 @@ struct Modify<Derived, EndLevelLayer> : ModifyBase<Modify<Derived, EndLevelLayer
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1032, DefaultConv, EndLevelLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1033, DefaultConv, EndLevelLayer, create)
 	}
 };
 
@@ -2800,8 +2785,8 @@ struct Modify<Derived, AnimatedGameObject> : ModifyBase<Modify<Derived, Animated
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(668, DefaultConv, AnimatedGameObject, playAnimation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(669, DefaultConv, AnimatedGameObject, updateChildSpriteColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(669, DefaultConv, AnimatedGameObject, playAnimation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(670, DefaultConv, AnimatedGameObject, updateChildSpriteColor)
 	}
 };
 
@@ -2812,7 +2797,7 @@ struct Modify<Derived, cocos2d::CCTime> : ModifyBase<Modify<Derived, cocos2d::CC
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(559, DefaultConv, cocos2d::CCTime, gettimeofdayCocos2d)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(560, DefaultConv, cocos2d::CCTime, gettimeofdayCocos2d)
 	}
 };
 
@@ -2849,19 +2834,19 @@ struct Modify<Derived, BoomListView> : ModifyBase<Modify<Derived, BoomListView>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(690, DefaultConv, BoomListView, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(691, DefaultConv, BoomListView, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(692, DefaultConv, BoomListView, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(693, DefaultConv, BoomListView, setupList)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(694, DefaultConv, BoomListView, TableViewWillDisplayCellForRowAtIndexPath)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(695, DefaultConv, BoomListView, cellHeightForRowAtIndexPath)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(697, DefaultConv, BoomListView, numberOfRowsInSection)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(698, DefaultConv, BoomListView, numberOfSectionsInTableView)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(699, DefaultConv, BoomListView, cellForRowAtIndexPath)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(700, DefaultConv, BoomListView, TableViewCommitCellEditingStyleForRowAtIndexPath)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(701, DefaultConv, BoomListView, TableViewWillReloadCellForRowAtIndexPath)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(702, DefaultConv, BoomListView, getListCell)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(703, DefaultConv, BoomListView, loadCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(691, DefaultConv, BoomListView, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(692, DefaultConv, BoomListView, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(693, DefaultConv, BoomListView, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(694, DefaultConv, BoomListView, setupList)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(695, DefaultConv, BoomListView, TableViewWillDisplayCellForRowAtIndexPath)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(696, DefaultConv, BoomListView, cellHeightForRowAtIndexPath)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(698, DefaultConv, BoomListView, numberOfRowsInSection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(699, DefaultConv, BoomListView, numberOfSectionsInTableView)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(700, DefaultConv, BoomListView, cellForRowAtIndexPath)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(701, DefaultConv, BoomListView, TableViewCommitCellEditingStyleForRowAtIndexPath)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(702, DefaultConv, BoomListView, TableViewWillReloadCellForRowAtIndexPath)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(703, DefaultConv, BoomListView, getListCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(704, DefaultConv, BoomListView, loadCell)
 	}
 };
 
@@ -2872,24 +2857,24 @@ struct Modify<Derived, CCTextInputNode> : ModifyBase<Modify<Derived, CCTextInput
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(818, DefaultConv, CCTextInputNode, setString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(823, DefaultConv, CCTextInputNode, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(824, DefaultConv, CCTextInputNode, refreshLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(825, DefaultConv, CCTextInputNode, updateLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(826, DefaultConv, CCTextInputNode, updateBlinkLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(827, DefaultConv, CCTextInputNode, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(828, DefaultConv, CCTextInputNode, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(829, DefaultConv, CCTextInputNode, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(830, DefaultConv, CCTextInputNode, ccTouchCancelled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(831, DefaultConv, CCTextInputNode, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(832, DefaultConv, CCTextInputNode, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(833, DefaultConv, CCTextInputNode, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(834, DefaultConv, CCTextInputNode, onClickTrackNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(835, DefaultConv, CCTextInputNode, keyboardWillShow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(836, DefaultConv, CCTextInputNode, keyboardWillHide)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(837, DefaultConv, CCTextInputNode, onTextFieldInsertText)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(838, DefaultConv, CCTextInputNode, onTextFieldAttachWithIME)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(839, DefaultConv, CCTextInputNode, onTextFieldDetachWithIME)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(819, DefaultConv, CCTextInputNode, setString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(824, DefaultConv, CCTextInputNode, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(825, DefaultConv, CCTextInputNode, refreshLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(826, DefaultConv, CCTextInputNode, updateLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(827, DefaultConv, CCTextInputNode, updateBlinkLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(828, DefaultConv, CCTextInputNode, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(829, DefaultConv, CCTextInputNode, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(830, DefaultConv, CCTextInputNode, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(831, DefaultConv, CCTextInputNode, ccTouchCancelled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(832, DefaultConv, CCTextInputNode, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(833, DefaultConv, CCTextInputNode, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(834, DefaultConv, CCTextInputNode, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(835, DefaultConv, CCTextInputNode, onClickTrackNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(836, DefaultConv, CCTextInputNode, keyboardWillShow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(837, DefaultConv, CCTextInputNode, keyboardWillHide)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(838, DefaultConv, CCTextInputNode, onTextFieldInsertText)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(839, DefaultConv, CCTextInputNode, onTextFieldAttachWithIME)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(840, DefaultConv, CCTextInputNode, onTextFieldDetachWithIME)
 	}
 };
 
@@ -2910,9 +2895,9 @@ struct Modify<Derived, cocos2d::CCSpriteFrame> : ModifyBase<Modify<Derived, coco
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(516, DefaultConv, cocos2d::CCSpriteFrame, createWithTexture)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(517, DefaultConv, cocos2d::CCSpriteFrame, createWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(518, DefaultConv, cocos2d::CCSpriteFrame, getTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(518, DefaultConv, cocos2d::CCSpriteFrame, createWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(519, DefaultConv, cocos2d::CCSpriteFrame, getTexture)
 	}
 };
 
@@ -2923,12 +2908,12 @@ struct Modify<Derived, LevelSettingsObject> : ModifyBase<Modify<Derived, LevelSe
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1720, DefaultConv, LevelSettingsObject, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1721, DefaultConv, LevelSettingsObject, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1722, DefaultConv, LevelSettingsObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1723, DefaultConv, LevelSettingsObject, objectFromDict)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1724, DefaultConv, LevelSettingsObject, objectFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1725, DefaultConv, LevelSettingsObject, setupColorsFromLegacyMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1721, DefaultConv, LevelSettingsObject, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1722, DefaultConv, LevelSettingsObject, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1723, DefaultConv, LevelSettingsObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1724, DefaultConv, LevelSettingsObject, objectFromDict)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1725, DefaultConv, LevelSettingsObject, objectFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1726, DefaultConv, LevelSettingsObject, setupColorsFromLegacyMode)
 	}
 };
 
@@ -2939,25 +2924,25 @@ struct Modify<Derived, cocos2d::CCTexture2D> : ModifyBase<Modify<Derived, cocos2
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(536, DefaultConv, cocos2d::CCTexture2D, destructor)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(537, DefaultConv, cocos2d::CCTexture2D, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(538, DefaultConv, cocos2d::CCTexture2D, getContentSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(539, DefaultConv, cocos2d::CCTexture2D, getMaxS)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(540, DefaultConv, cocos2d::CCTexture2D, getMaxT)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(541, DefaultConv, cocos2d::CCTexture2D, getName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(542, DefaultConv, cocos2d::CCTexture2D, getPixelFormat)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(543, DefaultConv, cocos2d::CCTexture2D, getPixelsHigh)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(544, DefaultConv, cocos2d::CCTexture2D, getPixelsWide)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(545, DefaultConv, cocos2d::CCTexture2D, getShaderProgram)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(546, DefaultConv, cocos2d::CCTexture2D, initPremultipliedATextureWithImage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(547, DefaultConv, cocos2d::CCTexture2D, initWithData)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(548, DefaultConv, cocos2d::CCTexture2D, setAliasTexParameters)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(549, DefaultConv, cocos2d::CCTexture2D, setAntiAliasTexParameters)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(550, DefaultConv, cocos2d::CCTexture2D, setMaxS)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(551, DefaultConv, cocos2d::CCTexture2D, setMaxT)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(552, DefaultConv, cocos2d::CCTexture2D, setShaderProgram)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(553, DefaultConv, cocos2d::CCTexture2D, initWithImage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(554, DefaultConv, cocos2d::CCTexture2D, setTexParameters)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(538, DefaultConv, cocos2d::CCTexture2D, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(539, DefaultConv, cocos2d::CCTexture2D, getContentSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(540, DefaultConv, cocos2d::CCTexture2D, getMaxS)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(541, DefaultConv, cocos2d::CCTexture2D, getMaxT)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(542, DefaultConv, cocos2d::CCTexture2D, getName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(543, DefaultConv, cocos2d::CCTexture2D, getPixelFormat)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(544, DefaultConv, cocos2d::CCTexture2D, getPixelsHigh)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(545, DefaultConv, cocos2d::CCTexture2D, getPixelsWide)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(546, DefaultConv, cocos2d::CCTexture2D, getShaderProgram)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(547, DefaultConv, cocos2d::CCTexture2D, initPremultipliedATextureWithImage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(548, DefaultConv, cocos2d::CCTexture2D, initWithData)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(549, DefaultConv, cocos2d::CCTexture2D, setAliasTexParameters)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(550, DefaultConv, cocos2d::CCTexture2D, setAntiAliasTexParameters)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(551, DefaultConv, cocos2d::CCTexture2D, setMaxS)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(552, DefaultConv, cocos2d::CCTexture2D, setMaxT)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(553, DefaultConv, cocos2d::CCTexture2D, setShaderProgram)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(554, DefaultConv, cocos2d::CCTexture2D, initWithImage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(555, DefaultConv, cocos2d::CCTexture2D, setTexParameters)
 	}
 };
 
@@ -2978,9 +2963,37 @@ struct Modify<Derived, cocos2d::CCTargetedTouchHandler> : ModifyBase<Modify<Deri
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(533, DefaultConv, cocos2d::CCTargetedTouchHandler, handlerWithDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(534, DefaultConv, cocos2d::CCTargetedTouchHandler, initWithDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(535, DefaultConv, cocos2d::CCTargetedTouchHandler, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(534, DefaultConv, cocos2d::CCTargetedTouchHandler, handlerWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(535, DefaultConv, cocos2d::CCTargetedTouchHandler, initWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(536, DefaultConv, cocos2d::CCTargetedTouchHandler, destructor)
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, GooglePlayDelegate> : ModifyBase<Modify<Derived, GooglePlayDelegate>> {
+	using ModifyBase<Modify<Derived, GooglePlayDelegate>>::ModifyBase;
+	using Base = GooglePlayDelegate;
+	static void apply() {
+		using namespace geode::core::meta;
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, GJRobotSprite> : ModifyBase<Modify<Derived, GJRobotSprite>> {
+	using ModifyBase<Modify<Derived, GJRobotSprite>>::ModifyBase;
+	using Base = GJRobotSprite;
+	static void apply() {
+		using namespace geode::core::meta;
+
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1287, DefaultConv, GJRobotSprite, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1288, DefaultConv, GJRobotSprite, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1289, DefaultConv, GJRobotSprite, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1290, DefaultConv, GJRobotSprite, hideSecondary)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1291, DefaultConv, GJRobotSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1292, DefaultConv, GJRobotSprite, updateColor02)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1293, DefaultConv, GJRobotSprite, updateFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1294, DefaultConv, GJRobotSprite, hideGlow)
 	}
 };
 
@@ -3001,21 +3014,21 @@ struct Modify<Derived, FLAlertLayer> : ModifyBase<Modify<Derived, FLAlertLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1036, DefaultConv, FLAlertLayer, onEnter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1037, DefaultConv, FLAlertLayer, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1038, DefaultConv, FLAlertLayer, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1039, DefaultConv, FLAlertLayer, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1040, DefaultConv, FLAlertLayer, ccTouchCancelled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1041, DefaultConv, FLAlertLayer, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1042, DefaultConv, FLAlertLayer, keyBackClicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1043, DefaultConv, FLAlertLayer, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1044, DefaultConv, FLAlertLayer, show)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1045, DefaultConv, FLAlertLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1046, DefaultConv, FLAlertLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1037, DefaultConv, FLAlertLayer, onEnter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1038, DefaultConv, FLAlertLayer, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1039, DefaultConv, FLAlertLayer, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1040, DefaultConv, FLAlertLayer, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1041, DefaultConv, FLAlertLayer, ccTouchCancelled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1042, DefaultConv, FLAlertLayer, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1043, DefaultConv, FLAlertLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1044, DefaultConv, FLAlertLayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1045, DefaultConv, FLAlertLayer, show)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1046, DefaultConv, FLAlertLayer, init)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(1047, DefaultConv, FLAlertLayer, create)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(1048, DefaultConv, FLAlertLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1049, DefaultConv, FLAlertLayer, onBtn1)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1050, DefaultConv, FLAlertLayer, onBtn2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1049, DefaultConv, FLAlertLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1050, DefaultConv, FLAlertLayer, onBtn1)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1051, DefaultConv, FLAlertLayer, onBtn2)
 	}
 };
 
@@ -3026,7 +3039,7 @@ struct Modify<Derived, GameToolbox> : ModifyBase<Modify<Derived, GameToolbox>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1577, DefaultConv, GameToolbox, createToggleButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1578, DefaultConv, GameToolbox, createToggleButton)
 	}
 };
 
@@ -3037,10 +3050,10 @@ struct Modify<Derived, cocos2d::CCSpriteBatchNode> : ModifyBase<Modify<Derived, 
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(512, DefaultConv, cocos2d::CCSpriteBatchNode, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(513, DefaultConv, cocos2d::CCSpriteBatchNode, createWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(514, DefaultConv, cocos2d::CCSpriteBatchNode, getUsedAtlasCapacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(515, DefaultConv, cocos2d::CCSpriteBatchNode, increaseAtlasCapacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(513, DefaultConv, cocos2d::CCSpriteBatchNode, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(514, DefaultConv, cocos2d::CCSpriteBatchNode, createWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(515, DefaultConv, cocos2d::CCSpriteBatchNode, getUsedAtlasCapacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(516, DefaultConv, cocos2d::CCSpriteBatchNode, increaseAtlasCapacity)
 	}
 };
 
@@ -3061,7 +3074,7 @@ struct Modify<Derived, BoomScrollLayer> : ModifyBase<Modify<Derived, BoomScrollL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(704, DefaultConv, BoomScrollLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(705, DefaultConv, BoomScrollLayer, destructor)
 	}
 };
 
@@ -3072,7 +3085,7 @@ struct Modify<Derived, cocos2d::CCSequence> : ModifyBase<Modify<Derived, cocos2d
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(443, DefaultConv, cocos2d::CCSequence, createWithVariableList)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(444, DefaultConv, cocos2d::CCSequence, createWithVariableList)
 	}
 };
 
@@ -3083,8 +3096,8 @@ struct Modify<Derived, cocos2d::CCScene> : ModifyBase<Modify<Derived, cocos2d::C
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(437, DefaultConv, cocos2d::CCScene, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(438, DefaultConv, cocos2d::CCScene, getHighestChildZ)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(438, DefaultConv, cocos2d::CCScene, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(439, DefaultConv, cocos2d::CCScene, getHighestChildZ)
 	}
 };
 
@@ -3095,8 +3108,29 @@ struct Modify<Derived, cocos2d::CCScaleTo> : ModifyBase<Modify<Derived, cocos2d:
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(435, DefaultConv, cocos2d::CCScaleTo, create)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(436, DefaultConv, cocos2d::CCScaleTo, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(437, DefaultConv, cocos2d::CCScaleTo, create)
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, GJSpriteColor> : ModifyBase<Modify<Derived, GJSpriteColor>> {
+	using ModifyBase<Modify<Derived, GJSpriteColor>>::ModifyBase;
+	using Base = GJSpriteColor;
+	static void apply() {
+		using namespace geode::core::meta;
+
+	}
+};
+
+template<class Derived>
+struct Modify<Derived, cocos2d::CCRotateTo> : ModifyBase<Modify<Derived, cocos2d::CCRotateTo>> {
+	using ModifyBase<Modify<Derived, cocos2d::CCRotateTo>>::ModifyBase;
+	using Base = cocos2d::CCRotateTo;
+	static void apply() {
+		using namespace geode::core::meta;
+
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(435, DefaultConv, cocos2d::CCRotateTo, create)
 	}
 };
 
@@ -3142,10 +3176,10 @@ struct Modify<Derived, SetupCollisionTriggerPopup> : ModifyBase<Modify<Derived, 
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2158, DefaultConv, SetupCollisionTriggerPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2159, DefaultConv, SetupCollisionTriggerPopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2160, DefaultConv, SetupCollisionTriggerPopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2161, DefaultConv, SetupCollisionTriggerPopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2159, DefaultConv, SetupCollisionTriggerPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2160, DefaultConv, SetupCollisionTriggerPopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2161, DefaultConv, SetupCollisionTriggerPopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2162, DefaultConv, SetupCollisionTriggerPopup, updateTargetID)
 	}
 };
 
@@ -3254,7 +3288,7 @@ struct Modify<Derived, GJSpecialColorSelect> : ModifyBase<Modify<Derived, GJSpec
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1311, DefaultConv, GJSpecialColorSelect, textForColorIdx)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1312, DefaultConv, GJSpecialColorSelect, textForColorIdx)
 	}
 };
 
@@ -3275,7 +3309,7 @@ struct Modify<Derived, cocos2d::CCTextFieldTTF> : ModifyBase<Modify<Derived, coc
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(555, DefaultConv, cocos2d::CCTextFieldTTF, textFieldWithPlaceHolder)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(556, DefaultConv, cocos2d::CCTextFieldTTF, textFieldWithPlaceHolder)
 	}
 };
 
@@ -3331,10 +3365,10 @@ struct Modify<Derived, SetupTouchTogglePopup> : ModifyBase<Modify<Derived, Setup
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2199, DefaultConv, SetupTouchTogglePopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2200, DefaultConv, SetupTouchTogglePopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2201, DefaultConv, SetupTouchTogglePopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2202, DefaultConv, SetupTouchTogglePopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2200, DefaultConv, SetupTouchTogglePopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2201, DefaultConv, SetupTouchTogglePopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2202, DefaultConv, SetupTouchTogglePopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2203, DefaultConv, SetupTouchTogglePopup, updateTargetID)
 	}
 };
 
@@ -3485,29 +3519,6 @@ struct Modify<Derived, cocos2d::CCNode> : ModifyBase<Modify<Derived, cocos2d::CC
 };
 
 template<class Derived>
-struct Modify<Derived, EditorOptionsLayer> : ModifyBase<Modify<Derived, EditorOptionsLayer>> {
-	using ModifyBase<Modify<Derived, EditorOptionsLayer>>::ModifyBase;
-	using Base = EditorOptionsLayer;
-	static void apply() {
-		using namespace geode::core::meta;
-
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(922, DefaultConv, EditorOptionsLayer, onButtonsPerRow)
-	}
-};
-
-template<class Derived>
-struct Modify<Derived, CCAnimatedSprite> : ModifyBase<Modify<Derived, CCAnimatedSprite>> {
-	using ModifyBase<Modify<Derived, CCAnimatedSprite>>::ModifyBase;
-	using Base = CCAnimatedSprite;
-	static void apply() {
-		using namespace geode::core::meta;
-
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(715, DefaultConv, CCAnimatedSprite, runAnimation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(716, DefaultConv, CCAnimatedSprite, tweenToAnimation)
-	}
-};
-
-template<class Derived>
 struct Modify<Derived, cocos2d::CCObject> : ModifyBase<Modify<Derived, cocos2d::CCObject>> {
 	using ModifyBase<Modify<Derived, cocos2d::CCObject>>::ModifyBase;
 	using Base = cocos2d::CCObject;
@@ -3535,10 +3546,10 @@ struct Modify<Derived, cocos2d::CCScheduler> : ModifyBase<Modify<Derived, cocos2
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(439, DefaultConv, cocos2d::CCScheduler, scheduleSelector)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(440, DefaultConv, cocos2d::CCScheduler, scheduleUpdateForTarget)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(441, DefaultConv, cocos2d::CCScheduler, unscheduleAllForTarget)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(442, DefaultConv, cocos2d::CCScheduler, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(440, DefaultConv, cocos2d::CCScheduler, scheduleSelector)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(441, DefaultConv, cocos2d::CCScheduler, scheduleUpdateForTarget)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(442, DefaultConv, cocos2d::CCScheduler, unscheduleAllForTarget)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(443, DefaultConv, cocos2d::CCScheduler, update)
 	}
 };
 
@@ -3549,18 +3560,18 @@ struct Modify<Derived, HardStreak> : ModifyBase<Modify<Derived, HardStreak>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1585, DefaultConv, HardStreak, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1586, DefaultConv, HardStreak, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1587, DefaultConv, HardStreak, addPoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1588, DefaultConv, HardStreak, clearBehindXPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1589, DefaultConv, HardStreak, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1590, DefaultConv, HardStreak, firstSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1591, DefaultConv, HardStreak, normalizeAngle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1592, DefaultConv, HardStreak, quadCornerOffset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1593, DefaultConv, HardStreak, reset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1594, DefaultConv, HardStreak, resumeStroke)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1595, DefaultConv, HardStreak, stopStroke)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1596, DefaultConv, HardStreak, updateStroke)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1586, DefaultConv, HardStreak, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1587, DefaultConv, HardStreak, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1588, DefaultConv, HardStreak, addPoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1589, DefaultConv, HardStreak, clearBehindXPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1590, DefaultConv, HardStreak, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1591, DefaultConv, HardStreak, firstSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1592, DefaultConv, HardStreak, normalizeAngle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1593, DefaultConv, HardStreak, quadCornerOffset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1594, DefaultConv, HardStreak, reset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1595, DefaultConv, HardStreak, resumeStroke)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1596, DefaultConv, HardStreak, stopStroke)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1597, DefaultConv, HardStreak, updateStroke)
 	}
 };
 
@@ -3643,10 +3654,10 @@ struct Modify<Derived, SetGroupIDLayer> : ModifyBase<Modify<Derived, SetGroupIDL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2140, DefaultConv, SetGroupIDLayer, onNextGroupID1)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2141, DefaultConv, SetGroupIDLayer, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2142, DefaultConv, SetGroupIDLayer, updateGroupIDLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2143, DefaultConv, SetGroupIDLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2141, DefaultConv, SetGroupIDLayer, onNextGroupID1)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2142, DefaultConv, SetGroupIDLayer, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2143, DefaultConv, SetGroupIDLayer, updateGroupIDLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2144, DefaultConv, SetGroupIDLayer, destructor)
 	}
 };
 
@@ -3657,9 +3668,9 @@ struct Modify<Derived, EffectGameObject> : ModifyBase<Modify<Derived, EffectGame
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1028, DefaultConv, EffectGameObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1029, DefaultConv, EffectGameObject, getTargetColorIndex)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1030, DefaultConv, EffectGameObject, triggerObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1029, DefaultConv, EffectGameObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1030, DefaultConv, EffectGameObject, getTargetColorIndex)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1031, DefaultConv, EffectGameObject, triggerObject)
 	}
 };
 
@@ -3736,10 +3747,10 @@ struct Modify<Derived, cocos2d::CCTouch> : ModifyBase<Modify<Derived, cocos2d::C
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(561, DefaultConv, cocos2d::CCTouch, getDelta)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(562, DefaultConv, cocos2d::CCTouch, getLocationInView)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(563, DefaultConv, cocos2d::CCTouch, getPreviousLocationInView)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(564, DefaultConv, cocos2d::CCTouch, getLocation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(562, DefaultConv, cocos2d::CCTouch, getDelta)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(563, DefaultConv, cocos2d::CCTouch, getLocationInView)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(564, DefaultConv, cocos2d::CCTouch, getPreviousLocationInView)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(565, DefaultConv, cocos2d::CCTouch, getLocation)
 	}
 };
 
@@ -3750,17 +3761,17 @@ struct Modify<Derived, DialogLayer> : ModifyBase<Modify<Derived, DialogLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(897, DefaultConv, DialogLayer, createDialogLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(900, DefaultConv, DialogLayer, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(901, DefaultConv, DialogLayer, onEnter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(902, DefaultConv, DialogLayer, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(903, DefaultConv, DialogLayer, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(904, DefaultConv, DialogLayer, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(905, DefaultConv, DialogLayer, ccTouchCancelled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(906, DefaultConv, DialogLayer, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(907, DefaultConv, DialogLayer, keyBackClicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(908, DefaultConv, DialogLayer, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(909, DefaultConv, DialogLayer, fadeInTextFinished)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(898, DefaultConv, DialogLayer, createDialogLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(901, DefaultConv, DialogLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(902, DefaultConv, DialogLayer, onEnter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(903, DefaultConv, DialogLayer, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(904, DefaultConv, DialogLayer, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(905, DefaultConv, DialogLayer, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(906, DefaultConv, DialogLayer, ccTouchCancelled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(907, DefaultConv, DialogLayer, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(908, DefaultConv, DialogLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(909, DefaultConv, DialogLayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(910, DefaultConv, DialogLayer, fadeInTextFinished)
 	}
 };
 
@@ -3794,8 +3805,8 @@ struct Modify<Derived, GJCommentListLayer> : ModifyBase<Modify<Derived, GJCommen
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1141, DefaultConv, GJCommentListLayer, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1142, DefaultConv, GJCommentListLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1142, DefaultConv, GJCommentListLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1143, DefaultConv, GJCommentListLayer, create)
 	}
 };
 
@@ -3844,7 +3855,7 @@ struct Modify<Derived, CountTriggerAction> : ModifyBase<Modify<Derived, CountTri
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(863, DefaultConv, CountTriggerAction, createFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(864, DefaultConv, CountTriggerAction, createFromString)
 	}
 };
 
@@ -3855,7 +3866,7 @@ struct Modify<Derived, GaragePage> : ModifyBase<Modify<Derived, GaragePage>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1583, DefaultConv, GaragePage, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1584, DefaultConv, GaragePage, init)
 	}
 };
 
@@ -3876,9 +3887,9 @@ struct Modify<Derived, cocos2d::CCSpriteFrameCache> : ModifyBase<Modify<Derived,
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(519, DefaultConv, cocos2d::CCSpriteFrameCache, addSpriteFramesWithFile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(520, DefaultConv, cocos2d::CCSpriteFrameCache, sharedSpriteFrameCache)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(521, DefaultConv, cocos2d::CCSpriteFrameCache, spriteFrameByName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(520, DefaultConv, cocos2d::CCSpriteFrameCache, addSpriteFramesWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(521, DefaultConv, cocos2d::CCSpriteFrameCache, sharedSpriteFrameCache)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(522, DefaultConv, cocos2d::CCSpriteFrameCache, spriteFrameByName)
 	}
 };
 
@@ -3899,76 +3910,76 @@ struct Modify<Derived, LevelEditorLayer> : ModifyBase<Modify<Derived, LevelEdito
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1634, DefaultConv, LevelEditorLayer, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1635, DefaultConv, LevelEditorLayer, update)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1636, DefaultConv, LevelEditorLayer, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1637, DefaultConv, LevelEditorLayer, updateColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1638, DefaultConv, LevelEditorLayer, flipGravity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1639, DefaultConv, LevelEditorLayer, calculateColorValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1640, DefaultConv, LevelEditorLayer, addToGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1641, DefaultConv, LevelEditorLayer, removeFromGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1642, DefaultConv, LevelEditorLayer, timeForXPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1643, DefaultConv, LevelEditorLayer, xPosForTime)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1644, DefaultConv, LevelEditorLayer, levelSettingsUpdated)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1645, DefaultConv, LevelEditorLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1646, DefaultConv, LevelEditorLayer, activateTriggerEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1647, DefaultConv, LevelEditorLayer, addObjectFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1648, DefaultConv, LevelEditorLayer, addSpecial)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1649, DefaultConv, LevelEditorLayer, addToRedoList)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1650, DefaultConv, LevelEditorLayer, addToUndoList)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1651, DefaultConv, LevelEditorLayer, animateInDualGround)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1652, DefaultConv, LevelEditorLayer, checkCollisions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1653, DefaultConv, LevelEditorLayer, createBackground)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1654, DefaultConv, LevelEditorLayer, createGroundLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1655, DefaultConv, LevelEditorLayer, createObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1656, DefaultConv, LevelEditorLayer, createObjectsFromSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1657, DefaultConv, LevelEditorLayer, createObjectsFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1658, DefaultConv, LevelEditorLayer, getLastObjectX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1659, DefaultConv, LevelEditorLayer, getLevelString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1660, DefaultConv, LevelEditorLayer, getNextColorChannel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1661, DefaultConv, LevelEditorLayer, getNextFreeBlockID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1662, DefaultConv, LevelEditorLayer, getNextFreeGroupID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1663, DefaultConv, LevelEditorLayer, getNextFreeItemID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1664, DefaultConv, LevelEditorLayer, getObjectRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1665, DefaultConv, LevelEditorLayer, getRelativeOffset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1666, DefaultConv, LevelEditorLayer, handleAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1667, DefaultConv, LevelEditorLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1668, DefaultConv, LevelEditorLayer, objectAtPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1669, DefaultConv, LevelEditorLayer, objectMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1670, DefaultConv, LevelEditorLayer, objectsInRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1671, DefaultConv, LevelEditorLayer, onPlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1672, DefaultConv, LevelEditorLayer, onStopPlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1674, DefaultConv, LevelEditorLayer, playMusic)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1675, DefaultConv, LevelEditorLayer, recreateGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1676, DefaultConv, LevelEditorLayer, redoLastAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1677, DefaultConv, LevelEditorLayer, removeAllObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1678, DefaultConv, LevelEditorLayer, removeAllObjectsOfType)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1679, DefaultConv, LevelEditorLayer, removeObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1680, DefaultConv, LevelEditorLayer, removeSpecial)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1681, DefaultConv, LevelEditorLayer, resetMovingObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1682, DefaultConv, LevelEditorLayer, resetObjectVector)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1683, DefaultConv, LevelEditorLayer, resetToggledGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1684, DefaultConv, LevelEditorLayer, resetToggledGroupsAndObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1685, DefaultConv, LevelEditorLayer, resetUnusedColorChannels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1686, DefaultConv, LevelEditorLayer, rotationForSlopeNearObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1687, DefaultConv, LevelEditorLayer, runColorEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1688, DefaultConv, LevelEditorLayer, setupLevelStart)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1689, DefaultConv, LevelEditorLayer, sortStickyGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1690, DefaultConv, LevelEditorLayer, stopTriggersInGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1691, DefaultConv, LevelEditorLayer, toggleDualMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1692, DefaultConv, LevelEditorLayer, toggleGroupPreview)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1693, DefaultConv, LevelEditorLayer, transferDefaultColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1694, DefaultConv, LevelEditorLayer, undoLastAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1695, DefaultConv, LevelEditorLayer, updateBGAndGColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1696, DefaultConv, LevelEditorLayer, updateBlendValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1697, DefaultConv, LevelEditorLayer, updateDualGround)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1698, DefaultConv, LevelEditorLayer, updateEditorMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1699, DefaultConv, LevelEditorLayer, updateGameObjectsNew)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1700, DefaultConv, LevelEditorLayer, updateGround)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1701, DefaultConv, LevelEditorLayer, updateGroundWidth)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1702, DefaultConv, LevelEditorLayer, updateOptions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1703, DefaultConv, LevelEditorLayer, updateToggledGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1704, DefaultConv, LevelEditorLayer, updateVisibility)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1635, DefaultConv, LevelEditorLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1636, DefaultConv, LevelEditorLayer, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1637, DefaultConv, LevelEditorLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1638, DefaultConv, LevelEditorLayer, updateColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1639, DefaultConv, LevelEditorLayer, flipGravity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1640, DefaultConv, LevelEditorLayer, calculateColorValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1641, DefaultConv, LevelEditorLayer, addToGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1642, DefaultConv, LevelEditorLayer, removeFromGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1643, DefaultConv, LevelEditorLayer, timeForXPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1644, DefaultConv, LevelEditorLayer, xPosForTime)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1645, DefaultConv, LevelEditorLayer, levelSettingsUpdated)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1646, DefaultConv, LevelEditorLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1647, DefaultConv, LevelEditorLayer, activateTriggerEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1648, DefaultConv, LevelEditorLayer, addObjectFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1649, DefaultConv, LevelEditorLayer, addSpecial)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1650, DefaultConv, LevelEditorLayer, addToRedoList)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1651, DefaultConv, LevelEditorLayer, addToUndoList)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1652, DefaultConv, LevelEditorLayer, animateInDualGround)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1653, DefaultConv, LevelEditorLayer, checkCollisions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1654, DefaultConv, LevelEditorLayer, createBackground)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1655, DefaultConv, LevelEditorLayer, createGroundLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1656, DefaultConv, LevelEditorLayer, createObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1657, DefaultConv, LevelEditorLayer, createObjectsFromSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1658, DefaultConv, LevelEditorLayer, createObjectsFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1659, DefaultConv, LevelEditorLayer, getLastObjectX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1660, DefaultConv, LevelEditorLayer, getLevelString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1661, DefaultConv, LevelEditorLayer, getNextColorChannel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1662, DefaultConv, LevelEditorLayer, getNextFreeBlockID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1663, DefaultConv, LevelEditorLayer, getNextFreeGroupID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1664, DefaultConv, LevelEditorLayer, getNextFreeItemID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1665, DefaultConv, LevelEditorLayer, getObjectRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1666, DefaultConv, LevelEditorLayer, getRelativeOffset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1667, DefaultConv, LevelEditorLayer, handleAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1668, DefaultConv, LevelEditorLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1669, DefaultConv, LevelEditorLayer, objectAtPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1670, DefaultConv, LevelEditorLayer, objectMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1671, DefaultConv, LevelEditorLayer, objectsInRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1672, DefaultConv, LevelEditorLayer, onPlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1673, DefaultConv, LevelEditorLayer, onStopPlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1675, DefaultConv, LevelEditorLayer, playMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1676, DefaultConv, LevelEditorLayer, recreateGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1677, DefaultConv, LevelEditorLayer, redoLastAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1678, DefaultConv, LevelEditorLayer, removeAllObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1679, DefaultConv, LevelEditorLayer, removeAllObjectsOfType)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1680, DefaultConv, LevelEditorLayer, removeObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1681, DefaultConv, LevelEditorLayer, removeSpecial)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1682, DefaultConv, LevelEditorLayer, resetMovingObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1683, DefaultConv, LevelEditorLayer, resetObjectVector)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1684, DefaultConv, LevelEditorLayer, resetToggledGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1685, DefaultConv, LevelEditorLayer, resetToggledGroupsAndObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1686, DefaultConv, LevelEditorLayer, resetUnusedColorChannels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1687, DefaultConv, LevelEditorLayer, rotationForSlopeNearObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1688, DefaultConv, LevelEditorLayer, runColorEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1689, DefaultConv, LevelEditorLayer, setupLevelStart)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1690, DefaultConv, LevelEditorLayer, sortStickyGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1691, DefaultConv, LevelEditorLayer, stopTriggersInGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1692, DefaultConv, LevelEditorLayer, toggleDualMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1693, DefaultConv, LevelEditorLayer, toggleGroupPreview)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1694, DefaultConv, LevelEditorLayer, transferDefaultColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1695, DefaultConv, LevelEditorLayer, undoLastAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1696, DefaultConv, LevelEditorLayer, updateBGAndGColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1697, DefaultConv, LevelEditorLayer, updateBlendValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1698, DefaultConv, LevelEditorLayer, updateDualGround)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1699, DefaultConv, LevelEditorLayer, updateEditorMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1700, DefaultConv, LevelEditorLayer, updateGameObjectsNew)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1701, DefaultConv, LevelEditorLayer, updateGround)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1702, DefaultConv, LevelEditorLayer, updateGroundWidth)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1703, DefaultConv, LevelEditorLayer, updateOptions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1704, DefaultConv, LevelEditorLayer, updateToggledGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1705, DefaultConv, LevelEditorLayer, updateVisibility)
 	}
 };
 
@@ -4002,9 +4013,9 @@ struct Modify<Derived, Slider> : ModifyBase<Modify<Derived, Slider>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2216, DefaultConv, Slider, getValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2217, DefaultConv, Slider, updateBar)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2218, DefaultConv, Slider, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2217, DefaultConv, Slider, getValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2218, DefaultConv, Slider, updateBar)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2219, DefaultConv, Slider, create)
 	}
 };
 
@@ -4026,7 +4037,7 @@ struct Modify<Derived, SetItemIDLayer> : ModifyBase<Modify<Derived, SetItemIDLay
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2149, DefaultConv, SetItemIDLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2150, DefaultConv, SetItemIDLayer, create)
 	}
 };
 
@@ -4090,7 +4101,7 @@ struct Modify<Derived, ProfilePage> : ModifyBase<Modify<Derived, ProfilePage>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2128, DefaultConv, ProfilePage, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2129, DefaultConv, ProfilePage, create)
 	}
 };
 
@@ -4101,14 +4112,14 @@ struct Modify<Derived, GameSoundManager> : ModifyBase<Modify<Derived, GameSoundM
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1549, DefaultConv, GameSoundManager, disableMetering)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1550, DefaultConv, GameSoundManager, enableMetering)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1551, DefaultConv, GameSoundManager, getMeteringValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1552, DefaultConv, GameSoundManager, playBackgroundMusic)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1553, DefaultConv, GameSoundManager, playEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1554, DefaultConv, GameSoundManager, stopBackgroundMusic)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1555, DefaultConv, GameSoundManager, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1556, DefaultConv, GameSoundManager, sharedManager)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1550, DefaultConv, GameSoundManager, disableMetering)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1551, DefaultConv, GameSoundManager, enableMetering)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1552, DefaultConv, GameSoundManager, getMeteringValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1553, DefaultConv, GameSoundManager, playBackgroundMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1554, DefaultConv, GameSoundManager, playEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1555, DefaultConv, GameSoundManager, stopBackgroundMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1556, DefaultConv, GameSoundManager, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1557, DefaultConv, GameSoundManager, sharedManager)
 	}
 };
 
@@ -4131,10 +4142,10 @@ struct Modify<Derived, CCMenuItemSpriteExtra> : ModifyBase<Modify<Derived, CCMen
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(751, DefaultConv, CCMenuItemSpriteExtra, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(752, DefaultConv, CCMenuItemSpriteExtra, setSizeMult)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(753, DefaultConv, CCMenuItemSpriteExtra, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(755, DefaultConv, CCMenuItemSpriteExtra, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(752, DefaultConv, CCMenuItemSpriteExtra, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(753, DefaultConv, CCMenuItemSpriteExtra, setSizeMult)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(754, DefaultConv, CCMenuItemSpriteExtra, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(756, DefaultConv, CCMenuItemSpriteExtra, init)
 	}
 };
 
@@ -4172,11 +4183,11 @@ struct Modify<Derived, ButtonSprite> : ModifyBase<Modify<Derived, ButtonSprite>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(707, DefaultConv, ButtonSprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(709, DefaultConv, ButtonSprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(710, DefaultConv, ButtonSprite, updateBGImage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(711, DefaultConv, ButtonSprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(714, DefaultConv, ButtonSprite, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(708, DefaultConv, ButtonSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(710, DefaultConv, ButtonSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(711, DefaultConv, ButtonSprite, updateBGImage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(712, DefaultConv, ButtonSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(715, DefaultConv, ButtonSprite, setColor)
 	}
 };
 
@@ -4187,8 +4198,8 @@ struct Modify<Derived, CCLightFlash> : ModifyBase<Modify<Derived, CCLightFlash>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(745, DefaultConv, CCLightFlash, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(746, DefaultConv, CCLightFlash, playEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(746, DefaultConv, CCLightFlash, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(747, DefaultConv, CCLightFlash, playEffect)
 	}
 };
 
@@ -4199,7 +4210,7 @@ struct Modify<Derived, TouchToggleAction> : ModifyBase<Modify<Derived, TouchTogg
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2264, DefaultConv, TouchToggleAction, createFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2265, DefaultConv, TouchToggleAction, createFromString)
 	}
 };
 
@@ -4251,9 +4262,9 @@ struct Modify<Derived, AudioEffectsLayer> : ModifyBase<Modify<Derived, AudioEffe
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(687, DefaultConv, AudioEffectsLayer, audioStep)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(688, DefaultConv, AudioEffectsLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(689, DefaultConv, AudioEffectsLayer, resetAudioVars)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(688, DefaultConv, AudioEffectsLayer, audioStep)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(689, DefaultConv, AudioEffectsLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(690, DefaultConv, AudioEffectsLayer, resetAudioVars)
 	}
 };
 
@@ -4264,7 +4275,7 @@ struct Modify<Derived, GJItemIcon> : ModifyBase<Modify<Derived, GJItemIcon>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1280, DefaultConv, GJItemIcon, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1281, DefaultConv, GJItemIcon, create)
 	}
 };
 
@@ -4297,8 +4308,8 @@ struct Modify<Derived, PauseLayer> : ModifyBase<Modify<Derived, PauseLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1812, DefaultConv, PauseLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1813, DefaultConv, PauseLayer, onEdit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1813, DefaultConv, PauseLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1814, DefaultConv, PauseLayer, onEdit)
 	}
 };
 
@@ -4330,8 +4341,8 @@ struct Modify<Derived, GJListLayer> : ModifyBase<Modify<Derived, GJListLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1282, DefaultConv, GJListLayer, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1283, DefaultConv, GJListLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1283, DefaultConv, GJListLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1284, DefaultConv, GJListLayer, create)
 	}
 };
 
@@ -4342,9 +4353,9 @@ struct Modify<Derived, GJSpiderSprite> : ModifyBase<Modify<Derived, GJSpiderSpri
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1313, DefaultConv, GJSpiderSprite, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1314, DefaultConv, GJSpiderSprite, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1315, DefaultConv, GJSpiderSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1314, DefaultConv, GJSpiderSprite, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1315, DefaultConv, GJSpiderSprite, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1316, DefaultConv, GJSpiderSprite, create)
 	}
 };
 
@@ -4365,91 +4376,91 @@ struct Modify<Derived, GJEffectManager> : ModifyBase<Modify<Derived, GJEffectMan
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1163, DefaultConv, GJEffectManager, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1164, DefaultConv, GJEffectManager, activeColorForIndex)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1165, DefaultConv, GJEffectManager, activeOpacityForIndex)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1166, DefaultConv, GJEffectManager, addAllInheritedColorActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1167, DefaultConv, GJEffectManager, addGroupPulseEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1168, DefaultConv, GJEffectManager, calculateBaseActiveColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1169, DefaultConv, GJEffectManager, calculateInheritedColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1170, DefaultConv, GJEffectManager, calculateLightBGColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1171, DefaultConv, GJEffectManager, colorActionChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1172, DefaultConv, GJEffectManager, colorExists)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1173, DefaultConv, GJEffectManager, colorForEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1174, DefaultConv, GJEffectManager, colorForGroupID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1175, DefaultConv, GJEffectManager, colorForIndex)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1176, DefaultConv, GJEffectManager, colorForPulseEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1177, DefaultConv, GJEffectManager, countChangedForItem)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1178, DefaultConv, GJEffectManager, countForItem)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1179, DefaultConv, GJEffectManager, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1180, DefaultConv, GJEffectManager, createFollowCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1181, DefaultConv, GJEffectManager, createMoveCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1182, DefaultConv, GJEffectManager, createPlayerFollowCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1183, DefaultConv, GJEffectManager, createRotateCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1184, DefaultConv, GJEffectManager, getAllColorActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1185, DefaultConv, GJEffectManager, getAllColorSprites)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1186, DefaultConv, GJEffectManager, getColorAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1187, DefaultConv, GJEffectManager, getColorSprite)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1188, DefaultConv, GJEffectManager, getCurrentStateString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1189, DefaultConv, GJEffectManager, getLoadedMoveOffset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1190, DefaultConv, GJEffectManager, getMixedColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1191, DefaultConv, GJEffectManager, getOpacityActionForGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1192, DefaultConv, GJEffectManager, getSaveString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1193, DefaultConv, GJEffectManager, handleObjectCollision)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1194, DefaultConv, GJEffectManager, hasActiveDualTouch)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1195, DefaultConv, GJEffectManager, hasBeenTriggered)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1196, DefaultConv, GJEffectManager, hasPulseEffectForGroupID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1197, DefaultConv, GJEffectManager, isGroupEnabled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1198, DefaultConv, GJEffectManager, keyForGroupIDColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1199, DefaultConv, GJEffectManager, loadState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1200, DefaultConv, GJEffectManager, objectsCollided)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1201, DefaultConv, GJEffectManager, opacityForIndex)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1202, DefaultConv, GJEffectManager, opacityModForGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1203, DefaultConv, GJEffectManager, playerButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1204, DefaultConv, GJEffectManager, playerDied)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1205, DefaultConv, GJEffectManager, postCollisionCheck)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1206, DefaultConv, GJEffectManager, preCollisionCheck)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1207, DefaultConv, GJEffectManager, prepareMoveActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1208, DefaultConv, GJEffectManager, processColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1209, DefaultConv, GJEffectManager, processCopyColorPulseActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1210, DefaultConv, GJEffectManager, processInheritedColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1211, DefaultConv, GJEffectManager, processPulseActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1212, DefaultConv, GJEffectManager, registerCollisionTrigger)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1213, DefaultConv, GJEffectManager, removeAllPulseActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1214, DefaultConv, GJEffectManager, removeColorAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1215, DefaultConv, GJEffectManager, reset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1216, DefaultConv, GJEffectManager, resetColorCache)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1217, DefaultConv, GJEffectManager, resetEffects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1218, DefaultConv, GJEffectManager, resetMoveActions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1219, DefaultConv, GJEffectManager, resetToggledGroups)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1220, DefaultConv, GJEffectManager, resetTriggeredIDs)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1221, DefaultConv, GJEffectManager, runCountTrigger)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1222, DefaultConv, GJEffectManager, runDeathTrigger)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1223, DefaultConv, GJEffectManager, runOpacityActionOnGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1224, DefaultConv, GJEffectManager, runPulseEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1225, DefaultConv, GJEffectManager, runTouchTriggerCommand)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1226, DefaultConv, GJEffectManager, setColorAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1227, DefaultConv, GJEffectManager, setFollowing)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1228, DefaultConv, GJEffectManager, setupFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1229, DefaultConv, GJEffectManager, shouldBlend)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1230, DefaultConv, GJEffectManager, spawnGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1231, DefaultConv, GJEffectManager, stopActionsForTrigger)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1232, DefaultConv, GJEffectManager, stopMoveActionsForGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1233, DefaultConv, GJEffectManager, storeTriggeredID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1234, DefaultConv, GJEffectManager, toggleGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1235, DefaultConv, GJEffectManager, traverseInheritanceChain)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1236, DefaultConv, GJEffectManager, updateActiveOpacityEffects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1237, DefaultConv, GJEffectManager, updateColorAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1238, DefaultConv, GJEffectManager, updateColorEffects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1239, DefaultConv, GJEffectManager, updateColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1240, DefaultConv, GJEffectManager, updateEffects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1241, DefaultConv, GJEffectManager, updateOpacityAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1242, DefaultConv, GJEffectManager, updateOpacityEffects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1243, DefaultConv, GJEffectManager, updatePulseEffects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1244, DefaultConv, GJEffectManager, updateSpawnTriggers)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1245, DefaultConv, GJEffectManager, wasFollowing)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1246, DefaultConv, GJEffectManager, wouldCreateLoop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1247, DefaultConv, GJEffectManager, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1164, DefaultConv, GJEffectManager, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1165, DefaultConv, GJEffectManager, activeColorForIndex)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1166, DefaultConv, GJEffectManager, activeOpacityForIndex)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1167, DefaultConv, GJEffectManager, addAllInheritedColorActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1168, DefaultConv, GJEffectManager, addGroupPulseEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1169, DefaultConv, GJEffectManager, calculateBaseActiveColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1170, DefaultConv, GJEffectManager, calculateInheritedColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1171, DefaultConv, GJEffectManager, calculateLightBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1172, DefaultConv, GJEffectManager, colorActionChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1173, DefaultConv, GJEffectManager, colorExists)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1174, DefaultConv, GJEffectManager, colorForEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1175, DefaultConv, GJEffectManager, colorForGroupID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1176, DefaultConv, GJEffectManager, colorForIndex)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1177, DefaultConv, GJEffectManager, colorForPulseEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1178, DefaultConv, GJEffectManager, countChangedForItem)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1179, DefaultConv, GJEffectManager, countForItem)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1180, DefaultConv, GJEffectManager, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1181, DefaultConv, GJEffectManager, createFollowCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1182, DefaultConv, GJEffectManager, createMoveCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1183, DefaultConv, GJEffectManager, createPlayerFollowCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1184, DefaultConv, GJEffectManager, createRotateCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1185, DefaultConv, GJEffectManager, getAllColorActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1186, DefaultConv, GJEffectManager, getAllColorSprites)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1187, DefaultConv, GJEffectManager, getColorAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1188, DefaultConv, GJEffectManager, getColorSprite)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1189, DefaultConv, GJEffectManager, getCurrentStateString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1190, DefaultConv, GJEffectManager, getLoadedMoveOffset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1191, DefaultConv, GJEffectManager, getMixedColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1192, DefaultConv, GJEffectManager, getOpacityActionForGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1193, DefaultConv, GJEffectManager, getSaveString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1194, DefaultConv, GJEffectManager, handleObjectCollision)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1195, DefaultConv, GJEffectManager, hasActiveDualTouch)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1196, DefaultConv, GJEffectManager, hasBeenTriggered)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1197, DefaultConv, GJEffectManager, hasPulseEffectForGroupID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1198, DefaultConv, GJEffectManager, isGroupEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1199, DefaultConv, GJEffectManager, keyForGroupIDColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1200, DefaultConv, GJEffectManager, loadState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1201, DefaultConv, GJEffectManager, objectsCollided)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1202, DefaultConv, GJEffectManager, opacityForIndex)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1203, DefaultConv, GJEffectManager, opacityModForGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1204, DefaultConv, GJEffectManager, playerButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1205, DefaultConv, GJEffectManager, playerDied)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1206, DefaultConv, GJEffectManager, postCollisionCheck)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1207, DefaultConv, GJEffectManager, preCollisionCheck)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1208, DefaultConv, GJEffectManager, prepareMoveActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1209, DefaultConv, GJEffectManager, processColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1210, DefaultConv, GJEffectManager, processCopyColorPulseActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1211, DefaultConv, GJEffectManager, processInheritedColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1212, DefaultConv, GJEffectManager, processPulseActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1213, DefaultConv, GJEffectManager, registerCollisionTrigger)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1214, DefaultConv, GJEffectManager, removeAllPulseActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1215, DefaultConv, GJEffectManager, removeColorAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1216, DefaultConv, GJEffectManager, reset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1217, DefaultConv, GJEffectManager, resetColorCache)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1218, DefaultConv, GJEffectManager, resetEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1219, DefaultConv, GJEffectManager, resetMoveActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1220, DefaultConv, GJEffectManager, resetToggledGroups)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1221, DefaultConv, GJEffectManager, resetTriggeredIDs)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1222, DefaultConv, GJEffectManager, runCountTrigger)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1223, DefaultConv, GJEffectManager, runDeathTrigger)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1224, DefaultConv, GJEffectManager, runOpacityActionOnGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1225, DefaultConv, GJEffectManager, runPulseEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1226, DefaultConv, GJEffectManager, runTouchTriggerCommand)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1227, DefaultConv, GJEffectManager, setColorAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1228, DefaultConv, GJEffectManager, setFollowing)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1229, DefaultConv, GJEffectManager, setupFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1230, DefaultConv, GJEffectManager, shouldBlend)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1231, DefaultConv, GJEffectManager, spawnGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1232, DefaultConv, GJEffectManager, stopActionsForTrigger)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1233, DefaultConv, GJEffectManager, stopMoveActionsForGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1234, DefaultConv, GJEffectManager, storeTriggeredID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1235, DefaultConv, GJEffectManager, toggleGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1236, DefaultConv, GJEffectManager, traverseInheritanceChain)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1237, DefaultConv, GJEffectManager, updateActiveOpacityEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1238, DefaultConv, GJEffectManager, updateColorAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1239, DefaultConv, GJEffectManager, updateColorEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1240, DefaultConv, GJEffectManager, updateColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1241, DefaultConv, GJEffectManager, updateEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1242, DefaultConv, GJEffectManager, updateOpacityAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1243, DefaultConv, GJEffectManager, updateOpacityEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1244, DefaultConv, GJEffectManager, updatePulseEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1245, DefaultConv, GJEffectManager, updateSpawnTriggers)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1246, DefaultConv, GJEffectManager, wasFollowing)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1247, DefaultConv, GJEffectManager, wouldCreateLoop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1248, DefaultConv, GJEffectManager, destructor)
 	}
 };
 
@@ -4460,9 +4471,9 @@ struct Modify<Derived, cocos2d::CCTextureCache> : ModifyBase<Modify<Derived, coc
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(556, DefaultConv, cocos2d::CCTextureCache, addImage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(557, DefaultConv, cocos2d::CCTextureCache, textureForKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(558, DefaultConv, cocos2d::CCTextureCache, sharedTextureCache)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(557, DefaultConv, cocos2d::CCTextureCache, addImage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(558, DefaultConv, cocos2d::CCTextureCache, textureForKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(559, DefaultConv, cocos2d::CCTextureCache, sharedTextureCache)
 	}
 };
 
@@ -4503,10 +4514,10 @@ struct Modify<Derived, SetupOpacityPopup> : ModifyBase<Modify<Derived, SetupOpac
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2179, DefaultConv, SetupOpacityPopup, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2180, DefaultConv, SetupOpacityPopup, onTargetIDArrow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2181, DefaultConv, SetupOpacityPopup, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2182, DefaultConv, SetupOpacityPopup, updateTargetID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2180, DefaultConv, SetupOpacityPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2181, DefaultConv, SetupOpacityPopup, onTargetIDArrow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2182, DefaultConv, SetupOpacityPopup, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2183, DefaultConv, SetupOpacityPopup, updateTargetID)
 	}
 };
 
@@ -4595,45 +4606,45 @@ struct Modify<Derived, cocos2d::extension::CCScale9Sprite> : ModifyBase<Modify<D
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(602, DefaultConv, cocos2d::extension::CCScale9Sprite, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(603, DefaultConv, cocos2d::extension::CCScale9Sprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(603, DefaultConv, cocos2d::extension::CCScale9Sprite, destructor)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(604, DefaultConv, cocos2d::extension::CCScale9Sprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(605, DefaultConv, cocos2d::extension::CCScale9Sprite, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(606, DefaultConv, cocos2d::extension::CCScale9Sprite, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(607, DefaultConv, cocos2d::extension::CCScale9Sprite, setContentSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(608, DefaultConv, cocos2d::extension::CCScale9Sprite, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(609, DefaultConv, cocos2d::extension::CCScale9Sprite, getOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(610, DefaultConv, cocos2d::extension::CCScale9Sprite, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(611, DefaultConv, cocos2d::extension::CCScale9Sprite, updateDisplayedOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(612, DefaultConv, cocos2d::extension::CCScale9Sprite, getColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(613, DefaultConv, cocos2d::extension::CCScale9Sprite, setColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(614, DefaultConv, cocos2d::extension::CCScale9Sprite, updateDisplayedColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(615, DefaultConv, cocos2d::extension::CCScale9Sprite, setOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(616, DefaultConv, cocos2d::extension::CCScale9Sprite, isOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(617, DefaultConv, cocos2d::extension::CCScale9Sprite, getPreferredSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(618, DefaultConv, cocos2d::extension::CCScale9Sprite, setPreferredSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(619, DefaultConv, cocos2d::extension::CCScale9Sprite, getCapInsets)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(620, DefaultConv, cocos2d::extension::CCScale9Sprite, setCapInsets)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(621, DefaultConv, cocos2d::extension::CCScale9Sprite, getInsetLeft)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(622, DefaultConv, cocos2d::extension::CCScale9Sprite, setInsetLeft)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(623, DefaultConv, cocos2d::extension::CCScale9Sprite, getInsetTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(624, DefaultConv, cocos2d::extension::CCScale9Sprite, setInsetTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(625, DefaultConv, cocos2d::extension::CCScale9Sprite, getInsetRight)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(626, DefaultConv, cocos2d::extension::CCScale9Sprite, setInsetRight)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(627, DefaultConv, cocos2d::extension::CCScale9Sprite, getInsetBottom)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(628, DefaultConv, cocos2d::extension::CCScale9Sprite, setInsetBottom)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(629, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithBatchNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(605, DefaultConv, cocos2d::extension::CCScale9Sprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(606, DefaultConv, cocos2d::extension::CCScale9Sprite, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(607, DefaultConv, cocos2d::extension::CCScale9Sprite, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(608, DefaultConv, cocos2d::extension::CCScale9Sprite, setContentSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(609, DefaultConv, cocos2d::extension::CCScale9Sprite, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(610, DefaultConv, cocos2d::extension::CCScale9Sprite, getOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(611, DefaultConv, cocos2d::extension::CCScale9Sprite, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(612, DefaultConv, cocos2d::extension::CCScale9Sprite, updateDisplayedOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(613, DefaultConv, cocos2d::extension::CCScale9Sprite, getColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(614, DefaultConv, cocos2d::extension::CCScale9Sprite, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(615, DefaultConv, cocos2d::extension::CCScale9Sprite, updateDisplayedColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(616, DefaultConv, cocos2d::extension::CCScale9Sprite, setOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(617, DefaultConv, cocos2d::extension::CCScale9Sprite, isOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(618, DefaultConv, cocos2d::extension::CCScale9Sprite, getPreferredSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(619, DefaultConv, cocos2d::extension::CCScale9Sprite, setPreferredSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(620, DefaultConv, cocos2d::extension::CCScale9Sprite, getCapInsets)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(621, DefaultConv, cocos2d::extension::CCScale9Sprite, setCapInsets)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(622, DefaultConv, cocos2d::extension::CCScale9Sprite, getInsetLeft)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(623, DefaultConv, cocos2d::extension::CCScale9Sprite, setInsetLeft)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(624, DefaultConv, cocos2d::extension::CCScale9Sprite, getInsetTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(625, DefaultConv, cocos2d::extension::CCScale9Sprite, setInsetTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(626, DefaultConv, cocos2d::extension::CCScale9Sprite, getInsetRight)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(627, DefaultConv, cocos2d::extension::CCScale9Sprite, setInsetRight)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(628, DefaultConv, cocos2d::extension::CCScale9Sprite, getInsetBottom)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(629, DefaultConv, cocos2d::extension::CCScale9Sprite, setInsetBottom)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(630, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithBatchNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(631, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(631, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithBatchNode)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(632, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithFile)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(633, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithFile)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(634, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithFile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(635, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(635, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithFile)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(636, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithSpriteFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(637, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithSpriteFrameName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(637, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithSpriteFrame)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(638, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithSpriteFrameName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(639, DefaultConv, cocos2d::extension::CCScale9Sprite, updateWithBatchNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(640, DefaultConv, cocos2d::extension::CCScale9Sprite, setSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(639, DefaultConv, cocos2d::extension::CCScale9Sprite, initWithSpriteFrameName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(640, DefaultConv, cocos2d::extension::CCScale9Sprite, updateWithBatchNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(641, DefaultConv, cocos2d::extension::CCScale9Sprite, setSpriteFrame)
 	}
 };
 
@@ -4665,8 +4676,8 @@ struct Modify<Derived, GJComment> : ModifyBase<Modify<Derived, GJComment>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1138, DefaultConv, GJComment, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1139, DefaultConv, GJComment, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1139, DefaultConv, GJComment, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1140, DefaultConv, GJComment, init)
 	}
 };
 
@@ -4711,25 +4722,25 @@ struct Modify<Derived, cocos2d::extension::CCControl> : ModifyBase<Modify<Derive
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(576, DefaultConv, cocos2d::extension::CCControl, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(577, DefaultConv, cocos2d::extension::CCControl, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(578, DefaultConv, cocos2d::extension::CCControl, sendActionsForControlEvents)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(579, DefaultConv, cocos2d::extension::CCControl, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(580, DefaultConv, cocos2d::extension::CCControl, setOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(581, DefaultConv, cocos2d::extension::CCControl, onExit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(582, DefaultConv, cocos2d::extension::CCControl, isTouchInside)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(583, DefaultConv, cocos2d::extension::CCControl, setEnabled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(584, DefaultConv, cocos2d::extension::CCControl, onEnter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(585, DefaultConv, cocos2d::extension::CCControl, isEnabled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(586, DefaultConv, cocos2d::extension::CCControl, setSelected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(587, DefaultConv, cocos2d::extension::CCControl, isOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(588, DefaultConv, cocos2d::extension::CCControl, setHighlighted)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(589, DefaultConv, cocos2d::extension::CCControl, needsLayout)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(590, DefaultConv, cocos2d::extension::CCControl, getTouchLocation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(591, DefaultConv, cocos2d::extension::CCControl, isHighlighted)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(592, DefaultConv, cocos2d::extension::CCControl, addTargetWithActionForControlEvents)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(593, DefaultConv, cocos2d::extension::CCControl, removeTargetWithActionForControlEvents)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(594, DefaultConv, cocos2d::extension::CCControl, isSelected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(577, DefaultConv, cocos2d::extension::CCControl, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(578, DefaultConv, cocos2d::extension::CCControl, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(579, DefaultConv, cocos2d::extension::CCControl, sendActionsForControlEvents)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(580, DefaultConv, cocos2d::extension::CCControl, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(581, DefaultConv, cocos2d::extension::CCControl, setOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(582, DefaultConv, cocos2d::extension::CCControl, onExit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(583, DefaultConv, cocos2d::extension::CCControl, isTouchInside)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(584, DefaultConv, cocos2d::extension::CCControl, setEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(585, DefaultConv, cocos2d::extension::CCControl, onEnter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(586, DefaultConv, cocos2d::extension::CCControl, isEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(587, DefaultConv, cocos2d::extension::CCControl, setSelected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(588, DefaultConv, cocos2d::extension::CCControl, isOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(589, DefaultConv, cocos2d::extension::CCControl, setHighlighted)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(590, DefaultConv, cocos2d::extension::CCControl, needsLayout)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(591, DefaultConv, cocos2d::extension::CCControl, getTouchLocation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(592, DefaultConv, cocos2d::extension::CCControl, isHighlighted)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(593, DefaultConv, cocos2d::extension::CCControl, addTargetWithActionForControlEvents)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(594, DefaultConv, cocos2d::extension::CCControl, removeTargetWithActionForControlEvents)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(595, DefaultConv, cocos2d::extension::CCControl, isSelected)
 	}
 };
 
@@ -4750,11 +4761,11 @@ struct Modify<Derived, cocos2d::extension::CCControlColourPicker> : ModifyBase<M
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(595, DefaultConv, cocos2d::extension::CCControlColourPicker, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(596, DefaultConv, cocos2d::extension::CCControlColourPicker, setColorValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(597, DefaultConv, cocos2d::extension::CCControlColourPicker, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(598, DefaultConv, cocos2d::extension::CCControlColourPicker, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(599, DefaultConv, cocos2d::extension::CCControlColourPicker, colourPicker)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(596, DefaultConv, cocos2d::extension::CCControlColourPicker, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(597, DefaultConv, cocos2d::extension::CCControlColourPicker, setColorValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(598, DefaultConv, cocos2d::extension::CCControlColourPicker, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(599, DefaultConv, cocos2d::extension::CCControlColourPicker, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(600, DefaultConv, cocos2d::extension::CCControlColourPicker, colourPicker)
 	}
 };
 
@@ -4776,9 +4787,9 @@ struct Modify<Derived, CCNodeContainer> : ModifyBase<Modify<Derived, CCNodeConta
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(777, DefaultConv, CCNodeContainer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(778, DefaultConv, CCNodeContainer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(779, DefaultConv, CCNodeContainer, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(778, DefaultConv, CCNodeContainer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(779, DefaultConv, CCNodeContainer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(780, DefaultConv, CCNodeContainer, visit)
 	}
 };
 
@@ -4809,34 +4820,34 @@ struct Modify<Derived, GameManager> : ModifyBase<Modify<Derived, GameManager>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1390, DefaultConv, GameManager, accountStatusChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1391, DefaultConv, GameManager, colorForIdx)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1392, DefaultConv, GameManager, didExitPlayscene)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1393, DefaultConv, GameManager, doQuickSave)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1394, DefaultConv, GameManager, fadeInMusic)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1395, DefaultConv, GameManager, getBGTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1396, DefaultConv, GameManager, getFontFile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1397, DefaultConv, GameManager, getGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1398, DefaultConv, GameManager, getIntGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1399, DefaultConv, GameManager, getUGV)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1400, DefaultConv, GameManager, loadDeathEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1401, DefaultConv, GameManager, loadFont)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1402, DefaultConv, GameManager, reloadAll)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1403, DefaultConv, GameManager, reloadAllStep2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1404, DefaultConv, GameManager, reloadAllStep5)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1405, DefaultConv, GameManager, reportPercentageForLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1406, DefaultConv, GameManager, setGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1407, DefaultConv, GameManager, setIntGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1408, DefaultConv, GameManager, setUGV)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1409, DefaultConv, GameManager, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1410, DefaultConv, GameManager, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1411, DefaultConv, GameManager, getGTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1412, DefaultConv, GameManager, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1413, DefaultConv, GameManager, reportAchievementWithID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1414, DefaultConv, GameManager, resolutionForKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1415, DefaultConv, GameManager, update)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1416, DefaultConv, GameManager, isColorUnlocked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1417, DefaultConv, GameManager, isIconUnlocked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1391, DefaultConv, GameManager, accountStatusChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1392, DefaultConv, GameManager, colorForIdx)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1393, DefaultConv, GameManager, didExitPlayscene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1394, DefaultConv, GameManager, doQuickSave)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1395, DefaultConv, GameManager, fadeInMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1396, DefaultConv, GameManager, getBGTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1397, DefaultConv, GameManager, getFontFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1398, DefaultConv, GameManager, getGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1399, DefaultConv, GameManager, getIntGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1400, DefaultConv, GameManager, getUGV)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1401, DefaultConv, GameManager, loadDeathEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1402, DefaultConv, GameManager, loadFont)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1403, DefaultConv, GameManager, reloadAll)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1404, DefaultConv, GameManager, reloadAllStep2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1405, DefaultConv, GameManager, reloadAllStep5)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1406, DefaultConv, GameManager, reportPercentageForLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1407, DefaultConv, GameManager, setGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1408, DefaultConv, GameManager, setIntGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1409, DefaultConv, GameManager, setUGV)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1410, DefaultConv, GameManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1411, DefaultConv, GameManager, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1412, DefaultConv, GameManager, getGTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1413, DefaultConv, GameManager, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1414, DefaultConv, GameManager, reportAchievementWithID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1415, DefaultConv, GameManager, resolutionForKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1416, DefaultConv, GameManager, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1417, DefaultConv, GameManager, isColorUnlocked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1418, DefaultConv, GameManager, isIconUnlocked)
 	}
 };
 
@@ -4870,10 +4881,10 @@ struct Modify<Derived, CustomListView> : ModifyBase<Modify<Derived, CustomListVi
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(877, DefaultConv, CustomListView, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(878, DefaultConv, CustomListView, getListCell)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(879, DefaultConv, CustomListView, loadCell)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(880, DefaultConv, CustomListView, setupList)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(878, DefaultConv, CustomListView, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(879, DefaultConv, CustomListView, getListCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(880, DefaultConv, CustomListView, loadCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(881, DefaultConv, CustomListView, setupList)
 	}
 };
 
@@ -4884,9 +4895,9 @@ struct Modify<Derived, SongInfoObject> : ModifyBase<Modify<Derived, SongInfoObje
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2225, DefaultConv, SongInfoObject, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2226, DefaultConv, SongInfoObject, encodeWithCoder)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2227, DefaultConv, SongInfoObject, canEncode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2226, DefaultConv, SongInfoObject, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2227, DefaultConv, SongInfoObject, encodeWithCoder)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2228, DefaultConv, SongInfoObject, canEncode)
 	}
 };
 
@@ -4897,15 +4908,15 @@ struct Modify<Derived, AppDelegate> : ModifyBase<Modify<Derived, AppDelegate>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(673, DefaultConv, AppDelegate, bgScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(674, DefaultConv, AppDelegate, applicationDidFinishLaunching)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(675, DefaultConv, AppDelegate, applicationDidEnterBackground)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(676, DefaultConv, AppDelegate, applicationWillEnterForeground)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(677, DefaultConv, AppDelegate, applicationWillBecomeActive)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(678, DefaultConv, AppDelegate, applicationWillResignActive)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(679, DefaultConv, AppDelegate, trySaveGame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(680, DefaultConv, AppDelegate, willSwitchToScene)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(681, DefaultConv, AppDelegate, get)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(674, DefaultConv, AppDelegate, bgScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(675, DefaultConv, AppDelegate, applicationDidFinishLaunching)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(676, DefaultConv, AppDelegate, applicationDidEnterBackground)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(677, DefaultConv, AppDelegate, applicationWillEnterForeground)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(678, DefaultConv, AppDelegate, applicationWillBecomeActive)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(679, DefaultConv, AppDelegate, applicationWillResignActive)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(680, DefaultConv, AppDelegate, trySaveGame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(681, DefaultConv, AppDelegate, willSwitchToScene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(682, DefaultConv, AppDelegate, get)
 	}
 };
 
@@ -4947,8 +4958,8 @@ struct Modify<Derived, LabelGameObject> : ModifyBase<Modify<Derived, LabelGameOb
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1611, DefaultConv, LabelGameObject, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1612, DefaultConv, LabelGameObject, setObjectColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1612, DefaultConv, LabelGameObject, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1613, DefaultConv, LabelGameObject, setObjectColor)
 	}
 };
 

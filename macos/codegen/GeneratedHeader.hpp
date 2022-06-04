@@ -84,12 +84,8 @@ class SetIDPopupDelegate;
 class LevelInfoLayer;
 class GauntletSelectLayer;
 class GameRateDelegate;
-class CCAnimatedSprite;
-class GJRobotSprite;
-class GooglePlayDelegate;
 class GManager;
 class GJUserScore;
-class GJSpriteColor;
 class GJScoreCell;
 class GJScaleControlDelegate;
 class CCMenuItemToggler;
@@ -158,6 +154,8 @@ class CCContentLayer;
 class GameStatsManager;
 class CCCircleWave;
 class LevelBrowserLayer;
+class EditorOptionsLayer;
+class CCAnimatedSprite;
 class ArtistCell;
 class AchievementsLayer;
 class AchievementNotifier;
@@ -179,9 +177,12 @@ class CCTextInputNode;
 class GJUserCell;
 class LevelSettingsObject;
 class UploadPopupDelegate;
+class GooglePlayDelegate;
+class GJRobotSprite;
 class GameToolbox;
 class AnimatedShopKeeper;
 class BoomScrollLayer;
+class GJSpriteColor;
 class SetupCollisionTriggerPopup;
 class CustomSongWidget;
 class TeleportPortalObject;
@@ -189,7 +190,6 @@ class GJSpecialColorSelect;
 class GJAccountDelegate;
 class SetupTouchTogglePopup;
 class GJRewardDelegate;
-class EditorOptionsLayer;
 class HardStreak;
 class GJRequestCell;
 class FMODSound;
@@ -1583,7 +1583,7 @@ public:
         double m_xAccel;
         double m_jumpAccel;
         double m_gravity;
-        GEODE_PAD(0x10);
+        double m_unknown20;
         bool m_unk538;
         bool m_unk539;
         bool m_unk53A;
@@ -3149,54 +3149,6 @@ public:
 
 };
 
-class GEODE_CODEGEN_DLL CCAnimatedSprite : public cocos2d::CCSprite {
-public:
-
-    void runAnimation(gd::string p0);
-
-    void tweenToAnimation(gd::string p0, float p1);
-
-    template <bool T=false>
-    static CCAnimatedSprite* create(const char* file){
-        static_assert(T, "Implement CCAnimatedSprite::create");
-    }
-
-        gd::string m_unknown1;
-        gd::string m_unknown2;
-        GEODE_UNIMPLEMENTED_PAD
-        gd::string m_unknown3;
-        GEODE_UNIMPLEMENTED_PAD
-};
-
-class GEODE_CODEGEN_DLL GJRobotSprite : public CCAnimatedSprite {
-public:
-
-        ~GJRobotSprite();
-    virtual bool init();
-
-    virtual void setOpacity(unsigned char p0);
-
-    virtual void hideSecondary();
-
-    static GJRobotSprite* create();
-
-    void updateColor02(cocos2d::_ccColor3B p0);
-
-    void updateFrame(int p0);
-
-    void hideGlow();
-
-        GEODE_UNIMPLEMENTED_PAD
-        cocos2d::ccColor3B m_secondaryColor;
-};
-
-class GEODE_CODEGEN_DLL GooglePlayDelegate {
-public:
-
-    virtual void googlePlaySignedIn();
-
-};
-
 class GEODE_CODEGEN_DLL GManager : public cocos2d::CCNode {
 public:
 
@@ -3301,18 +3253,6 @@ public:
         int m_friendReqCount;
         bool m_isBlocked;
         gd::string m_lastScoreAge;
-};
-
-class GEODE_CODEGEN_DLL GJSpriteColor : public cocos2d::CCNode {
-public:
-
-        int m_colorID;
-        int m_defaultColorID;
-        float m_unk_0F4;
-        cocos2d::ccHSVValue m_hsv;
-        bool unk_108;
-        float unk_10C;
-        bool unk_110;
 };
 
 class GEODE_CODEGEN_DLL GJScoreCell : public TableViewCell {
@@ -5339,6 +5279,32 @@ public:
         int m_pageEndIdx;
 };
 
+class GEODE_CODEGEN_DLL EditorOptionsLayer {
+public:
+
+    void onButtonsPerRow(cocos2d::CCObject* p0);
+
+};
+
+class GEODE_CODEGEN_DLL CCAnimatedSprite : public cocos2d::CCSprite {
+public:
+
+    void runAnimation(gd::string p0);
+
+    void tweenToAnimation(gd::string p0, float p1);
+
+    template <bool T=false>
+    static CCAnimatedSprite* create(const char* file){
+        static_assert(T, "Implement CCAnimatedSprite::create");
+    }
+
+        gd::string m_unknown1;
+        gd::string m_unknown2;
+        GEODE_UNIMPLEMENTED_PAD
+        gd::string m_unknown3;
+        GEODE_UNIMPLEMENTED_PAD
+};
+
 class GEODE_CODEGEN_DLL ArtistCell : public TableViewCell {
 public:
 
@@ -5746,6 +5712,35 @@ public:
 
 };
 
+class GEODE_CODEGEN_DLL GooglePlayDelegate {
+public:
+
+    virtual void googlePlaySignedIn();
+
+};
+
+class GEODE_CODEGEN_DLL GJRobotSprite : public CCAnimatedSprite {
+public:
+
+        ~GJRobotSprite();
+    virtual bool init();
+
+    virtual void setOpacity(unsigned char p0);
+
+    virtual void hideSecondary();
+
+    static GJRobotSprite* create();
+
+    void updateColor02(cocos2d::_ccColor3B p0);
+
+    void updateFrame(int p0);
+
+    void hideGlow();
+
+        GEODE_UNIMPLEMENTED_PAD
+        cocos2d::ccColor3B m_secondaryColor;
+};
+
 class GEODE_CODEGEN_DLL GameToolbox {
 public:
 
@@ -5807,6 +5802,18 @@ public:
         ExtendedLayer* m_layer;
         GEODE_UNIMPLEMENTED_PAD
         int m_page;
+};
+
+class GEODE_CODEGEN_DLL GJSpriteColor : public cocos2d::CCNode {
+public:
+
+        int m_colorID;
+        int m_defaultColorID;
+        float m_unk_0F4;
+        cocos2d::ccHSVValue m_hsv;
+        bool unk_108;
+        float unk_10C;
+        bool unk_110;
 };
 
 class GEODE_CODEGEN_DLL SetupCollisionTriggerPopup : public FLAlertLayer {
@@ -5879,13 +5886,6 @@ public:
 
 class GEODE_CODEGEN_DLL GJRewardDelegate {
 public:
-
-};
-
-class GEODE_CODEGEN_DLL EditorOptionsLayer {
-public:
-
-    void onButtonsPerRow(cocos2d::CCObject* p0);
 
 };
 
