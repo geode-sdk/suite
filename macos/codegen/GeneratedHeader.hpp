@@ -4517,15 +4517,16 @@ public:
         static_assert(T, "Implement MoreOptionsLayer::create");
     }
 
-    template <bool T=false>
-    void addToggle(const char* name, const char* key, const char* info){
-        static_assert(T, "Implement MoreOptionsLayer::addToggle");
-    }
+    bool init();
+
+    void addToggle(const char* name, const char* key, const char* info);
 
     template <bool T=false>
-    void onKeybindings(cocos2d::CCObject* pSender){
+    void onKeybindings(cocos2d::CCObject* sender){
         static_assert(T, "Implement MoreOptionsLayer::onKeybindings");
     }
+
+    void onToggle(cocos2d::CCObject* sender);
 
 };
 
@@ -6278,6 +6279,10 @@ public:
     void objectsInRect(cocos2d::CCRect p0, bool p1);
 
     void onPlaytest();
+
+    void onResumePlaytest();
+
+    void onPausePlaytest();
 
     void onStopPlaytest();
 

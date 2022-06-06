@@ -9,152 +9,152 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address428() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1983() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1987() {
 	static uintptr_t ret = base::get() + 0x1fa860;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1987() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1991() {
 	static uintptr_t ret = base::get() + 0x1fa690;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1988() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1992() {
 	static uintptr_t ret = base::get() + 0x1fa740;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1989() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1993() {
 	static uintptr_t ret = base::get() + 0x1eecd0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1990() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1994() {
 	static uintptr_t ret = base::get() + 0x1f7e20;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1991() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1995() {
 	static uintptr_t ret = base::get() + 0x1f95d0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1993() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1997() {
 	static uintptr_t ret = base::get() + 0x1f9080;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2008() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2012() {
 	static uintptr_t ret = base::get() + 0x1f9110;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2010() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2014() {
 	static uintptr_t ret = base::get() + 0x1f59d0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2020() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2024() {
 	static uintptr_t ret = base::get() + 0x1e9a20;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2035() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2039() {
 	static uintptr_t ret = base::get() + 0x1f6790;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2036() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2040() {
 	static uintptr_t ret = base::get() + 0x2efbe0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2038() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2042() {
 	static uintptr_t ret = base::get() + 0x1efaa0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2039() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2043() {
 	static uintptr_t ret = base::get() + 0x1f5d60;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2046() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2050() {
 	static uintptr_t ret = base::get() + 0x1f4e40;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2049() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2053() {
 	static uintptr_t ret = base::get() + 0x1f4f70;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2057() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2061() {
 	static uintptr_t ret = base::get() + 0x1f4ff0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2060() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2064() {
 	static uintptr_t ret = base::get() + 0x1e9c50;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2074() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2078() {
 	static uintptr_t ret = base::get() + 0x1ed360;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2082() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2086() {
 	static uintptr_t ret = base::get() + 0x1f6050;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2083() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2087() {
 	static uintptr_t ret = base::get() + 0x1f62c0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2084() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2088() {
 	static uintptr_t ret = base::get() + 0x1f5e40;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2085() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2089() {
 	static uintptr_t ret = base::get() + 0x1f8930;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2086() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2090() {
 	static uintptr_t ret = base::get() + 0x1f9640;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2087() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2091() {
 	static uintptr_t ret = base::get() + 0x1f6a10;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2088() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2092() {
 	static uintptr_t ret = base::get() + 0x1f68e0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2089() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2093() {
 	static uintptr_t ret = base::get() + 0x1f94d1;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2122() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2126() {
 	static uintptr_t ret = base::get() + 0x1f94e0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2126() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2130() {
 	static uintptr_t ret = base::get() + 0x1e9bf0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2127() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2131() {
 	static uintptr_t ret = base::get() + 0x1e9d10;
 	return ret;
 }
@@ -519,7 +519,7 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address411() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2223() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2227() {
 	static uintptr_t ret = base::get() + 0x5c6b0;
 	return ret;
 }
@@ -1044,17 +1044,17 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address278() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1732() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1734() {
 	static uintptr_t ret = base::get() + 0x2a0d0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1733() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1735() {
 	static uintptr_t ret = base::get() + 0x2a290;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1734() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1736() {
 	static uintptr_t ret = base::get() + 0x2a370;
 	return ret;
 }
@@ -1134,17 +1134,17 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address256() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1771() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1773() {
 	static uintptr_t ret = base::get() + 0x1de850;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1772() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1775() {
 	static uintptr_t ret = base::get() + 0x1df6b0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1773() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1776() {
 	static uintptr_t ret = base::get() + 0x749d0;
 	return ret;
 }
@@ -1244,12 +1244,12 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address448() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2232() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2236() {
 	static uintptr_t ret = base::get() + 0x30ed0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2233() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2237() {
 	static uintptr_t ret = base::get() + 0x317e0;
 	return ret;
 }
@@ -2949,22 +2949,22 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address512() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1715() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1717() {
 	static uintptr_t ret = base::get() + 0x17d9c0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1716() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1718() {
 	static uintptr_t ret = base::get() + 0x1805f0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1717() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1719() {
 	static uintptr_t ret = base::get() + 0x17f500;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1718() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1720() {
 	static uintptr_t ret = base::get() + 0x180fc0;
 	return ret;
 }
@@ -2979,22 +2979,22 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address524() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1783() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1787() {
 	static uintptr_t ret = base::get() + 0x1945b0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1784() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1788() {
 	static uintptr_t ret = base::get() + 0x1960e0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1785() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1789() {
 	static uintptr_t ret = base::get() + 0x195640;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1786() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1790() {
 	static uintptr_t ret = base::get() + 0x194d90;
 	return ret;
 }
@@ -3169,7 +3169,7 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address560() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1815() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1819() {
 	static uintptr_t ret = base::get() + 0x1e5570;
 	return ret;
 }
@@ -3181,6 +3181,11 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address561() {
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1554() {
 	static uintptr_t ret = base::get() + 0x25450;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1555() {
+	static uintptr_t ret = base::get() + 0x253A0;
 	return ret;
 }
 
@@ -3599,7 +3604,7 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address656() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1743() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1745() {
 	static uintptr_t ret = base::get() + 0x5c6b0;
 	return ret;
 }
@@ -3674,107 +3679,107 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address681() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1747() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1749() {
 	static uintptr_t ret = base::get() + 0x1907b0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1748() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1750() {
 	static uintptr_t ret = base::get() + 0x191f90;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1749() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1751() {
 	static uintptr_t ret = base::get() + 0x1922c0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1751() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1753() {
 	static uintptr_t ret = base::get() + 0x192150;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1752() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1754() {
 	static uintptr_t ret = base::get() + 0x1919c0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1753() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1755() {
 	static uintptr_t ret = base::get() + 0x191dc0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1754() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1756() {
 	static uintptr_t ret = base::get() + 0x191fa0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1755() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1757() {
 	static uintptr_t ret = base::get() + 0x1e0950;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1756() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1758() {
 	static uintptr_t ret = base::get() + 0x191b50;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1757() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1759() {
 	static uintptr_t ret = base::get() + 0x191cd0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1758() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1760() {
 	static uintptr_t ret = base::get() + 0x191940;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1759() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1761() {
 	static uintptr_t ret = base::get() + 0x191e90;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1760() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1762() {
 	static uintptr_t ret = base::get() + 0x1916e0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1761() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1763() {
 	static uintptr_t ret = base::get() + 0x191c30;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1762() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1764() {
 	static uintptr_t ret = base::get() + 0x191af0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1763() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1765() {
 	static uintptr_t ret = base::get() + 0x191ca0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1764() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1766() {
 	static uintptr_t ret = base::get() + 0x191960;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1765() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1767() {
 	static uintptr_t ret = base::get() + 0x191980;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1766() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1768() {
 	static uintptr_t ret = base::get() + 0x1919A0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1767() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1769() {
 	static uintptr_t ret = base::get() + 0x190720;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1768() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1770() {
 	static uintptr_t ret = base::get() + 0x190550;
 	return ret;
 }
@@ -3929,27 +3934,27 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address747() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2246() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2250() {
 	static uintptr_t ret = base::get() + 0x33110;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2249() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2253() {
 	static uintptr_t ret = base::get() + 0x33370;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2250() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2254() {
 	static uintptr_t ret = base::get() + 0x33270;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2251() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2255() {
 	static uintptr_t ret = base::get() + 0x33830;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2252() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2256() {
 	static uintptr_t ret = base::get() + 0x33480;
 	return ret;
 }
@@ -4044,12 +4049,12 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address795() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2224() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2228() {
 	static uintptr_t ret = base::get() + 0x250520;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2225() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2229() {
 	static uintptr_t ret = base::get() + 0x250830;
 	return ret;
 }
@@ -4171,6 +4176,11 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address840() {
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address841() {
 	static uintptr_t ret = base::get() + 0x3e050;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address842() {
+	static uintptr_t ret = base::get() + 0x20DDD0;
 	return ret;
 }
 
@@ -4884,22 +4894,22 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1064() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1711() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1713() {
 	static uintptr_t ret = base::get() + 0x17d090;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1712() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1714() {
 	static uintptr_t ret = base::get() + 0x17d1b0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1713() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1715() {
 	static uintptr_t ret = base::get() + 0x17c4f0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1714() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1716() {
 	static uintptr_t ret = base::get() + 0x17c440;
 	return ret;
 }
@@ -5654,462 +5664,467 @@ GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1669() {
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1674() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1676() {
 	static uintptr_t ret = base::get() + 0x16b740;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1678() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1680() {
 	static uintptr_t ret = base::get() + 0x161d60;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1680() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1682() {
 	static uintptr_t ret = base::get() + 0x161cb0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1699() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1701() {
 	static uintptr_t ret = base::get() + 0x1652b0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1703() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1705() {
 	static uintptr_t ret = base::get() + 0x15fcc0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1706() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1708() {
 	static uintptr_t ret = base::get() + 0x175d50;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1707() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1709() {
 	static uintptr_t ret = base::get() + 0x177c10;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1708() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1710() {
 	static uintptr_t ret = base::get() + 0x17ac90;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1709() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1711() {
 	static uintptr_t ret = base::get() + 0x17acf0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1710() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1712() {
 	static uintptr_t ret = base::get() + 0x177fc0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1719() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1721() {
 	static uintptr_t ret = base::get() + 0x185500;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1720() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1722() {
 	static uintptr_t ret = base::get() + 0x170d90;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1736() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1738() {
 	static uintptr_t ret = base::get() + 0x18bfe0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1737() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1739() {
 	static uintptr_t ret = base::get() + 0x18c080;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1738() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1740() {
 	static uintptr_t ret = base::get() + 0x18cf40;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1739() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1741() {
 	static uintptr_t ret = base::get() + 0x18c8e0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1740() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1742() {
 	static uintptr_t ret = base::get() + 0x18c790;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1769() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1771() {
 	static uintptr_t ret = base::get() + 0x182520;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1770() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1772() {
 	static uintptr_t ret = base::get() + 0x1825c0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1793() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1797() {
 	static uintptr_t ret = base::get() + 0x2c2c0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1794() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1798() {
 	static uintptr_t ret = base::get() + 0x2c3b0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1801() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1805() {
 	static uintptr_t ret = base::get() + 0x198a80;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1802() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1806() {
 	static uintptr_t ret = base::get() + 0x1dc920;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1803() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1807() {
 	static uintptr_t ret = base::get() + 0x1dcd00;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1812() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1816() {
 	static uintptr_t ret = base::get() + 0x1dd310;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1823() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1827() {
 	static uintptr_t ret = base::get() + 0x2017e0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1840() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1844() {
 	static uintptr_t ret = base::get() + 0x1fb6d0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1841() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1845() {
 	static uintptr_t ret = base::get() + 0x20b050;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1846() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1850() {
 	static uintptr_t ret = base::get() + 0x20a1a0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1848() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1852() {
 	static uintptr_t ret = base::get() + 0x208870;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1874() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1878() {
 	static uintptr_t ret = base::get() + 0x01fb780;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1876() {
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1880() {
 	static uintptr_t ret = base::get() + 0x1fd3d0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1883() {
-	static uintptr_t ret = base::get() + 0x25fb60;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1885() {
-	static uintptr_t ret = base::get() + 0x20dbd0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1886() {
-	static uintptr_t ret = base::get() + 0x020D810;
 	return ret;
 }
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1887() {
-	static uintptr_t ret = base::get() + 0x20d810;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1908() {
-	static uintptr_t ret = base::get() + 0x20b830;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1910() {
-	static uintptr_t ret = base::get() + 0x20bf00;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1914() {
-	static uintptr_t ret = base::get() + 0x1fb690;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1915() {
-	static uintptr_t ret = base::get() + 0x1fb780;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1917() {
-	static uintptr_t ret = base::get() + 0x1ff210;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1943() {
-	static uintptr_t ret = base::get() + 0x1fd3d0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1949() {
-	static uintptr_t ret = base::get() + 0x20d0d0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1955() {
-	static uintptr_t ret = base::get() + 0x2029C0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1956() {
-	static uintptr_t ret = base::get() + 0x20ced0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1964() {
-	static uintptr_t ret = base::get() + 0x20af40;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1966() {
-	static uintptr_t ret = base::get() + 0x20d1f0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1967() {
-	static uintptr_t ret = base::get() + 0x205460;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1969() {
-	static uintptr_t ret = base::get() + 0x200020;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1973() {
-	static uintptr_t ret = base::get() + 0x1fafc0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2128() {
-	static uintptr_t ret = base::get() + 0x14ec80;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2129() {
-	static uintptr_t ret = base::get() + 0x20ee50;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2130() {
-	static uintptr_t ret = base::get() + 0x2133e0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2131() {
-	static uintptr_t ret = base::get() + 0x20ef00;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2132() {
-	static uintptr_t ret = base::get() + 0x211bb0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2133() {
-	static uintptr_t ret = base::get() + 0x20fa20;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2134() {
-	static uintptr_t ret = base::get() + 0x210040;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2140() {
-	static uintptr_t ret = base::get() + 0x174b00;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2143() {
-	static uintptr_t ret = base::get() + 0x22e450;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2145() {
-	static uintptr_t ret = base::get() + 0x22e0b0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2146() {
-	static uintptr_t ret = base::get() + 0x22e110;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2147() {
-	static uintptr_t ret = base::get() + 0x22e3d0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2189() {
-	static uintptr_t ret = base::get() + 0x242660;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2190() {
-	static uintptr_t ret = base::get() + 0x23e980;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2191() {
-	static uintptr_t ret = base::get() + 0x2426b0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2192() {
-	static uintptr_t ret = base::get() + 0x241420;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2193() {
-	static uintptr_t ret = base::get() + 0x242cf0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2207() {
-	static uintptr_t ret = base::get() + 0x12be20;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2208() {
-	static uintptr_t ret = base::get() + 0x12bd80;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2209() {
-	static uintptr_t ret = base::get() + 0x12c650;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2210() {
-	static uintptr_t ret = base::get() + 0x12c440;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2211() {
-	static uintptr_t ret = base::get() + 0x12c9e0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2212() {
-	static uintptr_t ret = base::get() + 0x12c410;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2213() {
-	static uintptr_t ret = base::get() + 0x12cb90;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2217() {
-	static uintptr_t ret = base::get() + 0x2e970;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2218() {
-	static uintptr_t ret = base::get() + 0x2ea10;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2219() {
-	static uintptr_t ret = base::get() + 0x2e6e0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2220() {
-	static uintptr_t ret = base::get() + 0x2e1b0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2230() {
-	static uintptr_t ret = base::get() + 0x59cf0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2231() {
-	static uintptr_t ret = base::get() + 0x59d40;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2245() {
-	static uintptr_t ret = base::get() + 0x1450b0;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2268() {
-	static uintptr_t ret = base::get() + 0x25f310;
-	return ret;
-}
-
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2273() {
 	static uintptr_t ret = base::get() + 0x25fb60;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2274() {
-	static uintptr_t ret = base::get() + 0x25fc90;
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1889() {
+	static uintptr_t ret = base::get() + 0x20dbd0;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2275() {
-	static uintptr_t ret = base::get() + 0x25fad0;
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1890() {
+	static uintptr_t ret = base::get() + 0x020D810;
 	return ret;
 }
 
-GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2276() {
-	static uintptr_t ret = base::get() + 0x25f890;
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1891() {
+	static uintptr_t ret = base::get() + 0x20d810;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1912() {
+	static uintptr_t ret = base::get() + 0x20b830;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1914() {
+	static uintptr_t ret = base::get() + 0x20bf00;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1918() {
+	static uintptr_t ret = base::get() + 0x1fb690;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1919() {
+	static uintptr_t ret = base::get() + 0x1fb780;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1921() {
+	static uintptr_t ret = base::get() + 0x1ff210;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1936() {
+	static uintptr_t ret = base::get() + 0x20C8F0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1947() {
+	static uintptr_t ret = base::get() + 0x1fd3d0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1953() {
+	static uintptr_t ret = base::get() + 0x20d0d0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1959() {
+	static uintptr_t ret = base::get() + 0x2029C0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1960() {
+	static uintptr_t ret = base::get() + 0x20ced0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1968() {
+	static uintptr_t ret = base::get() + 0x20af40;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1970() {
+	static uintptr_t ret = base::get() + 0x20d1f0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1971() {
+	static uintptr_t ret = base::get() + 0x205460;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1973() {
+	static uintptr_t ret = base::get() + 0x200020;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address1977() {
+	static uintptr_t ret = base::get() + 0x1fafc0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2132() {
+	static uintptr_t ret = base::get() + 0x14ec80;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2133() {
+	static uintptr_t ret = base::get() + 0x20ee50;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2134() {
+	static uintptr_t ret = base::get() + 0x2133e0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2135() {
+	static uintptr_t ret = base::get() + 0x20ef00;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2136() {
+	static uintptr_t ret = base::get() + 0x211bb0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2137() {
+	static uintptr_t ret = base::get() + 0x20fa20;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2138() {
+	static uintptr_t ret = base::get() + 0x210040;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2144() {
+	static uintptr_t ret = base::get() + 0x174b00;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2147() {
+	static uintptr_t ret = base::get() + 0x22e450;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2149() {
+	static uintptr_t ret = base::get() + 0x22e0b0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2150() {
+	static uintptr_t ret = base::get() + 0x22e110;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2151() {
+	static uintptr_t ret = base::get() + 0x22e3d0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2193() {
+	static uintptr_t ret = base::get() + 0x242660;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2194() {
+	static uintptr_t ret = base::get() + 0x23e980;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2195() {
+	static uintptr_t ret = base::get() + 0x2426b0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2196() {
+	static uintptr_t ret = base::get() + 0x241420;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2197() {
+	static uintptr_t ret = base::get() + 0x242cf0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2211() {
+	static uintptr_t ret = base::get() + 0x12be20;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2212() {
+	static uintptr_t ret = base::get() + 0x12bd80;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2213() {
+	static uintptr_t ret = base::get() + 0x12c650;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2214() {
+	static uintptr_t ret = base::get() + 0x12c440;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2215() {
+	static uintptr_t ret = base::get() + 0x12c9e0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2216() {
+	static uintptr_t ret = base::get() + 0x12c410;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2217() {
+	static uintptr_t ret = base::get() + 0x12cb90;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2221() {
+	static uintptr_t ret = base::get() + 0x2e970;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2222() {
+	static uintptr_t ret = base::get() + 0x2ea10;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2223() {
+	static uintptr_t ret = base::get() + 0x2e6e0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2224() {
+	static uintptr_t ret = base::get() + 0x2e1b0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2234() {
+	static uintptr_t ret = base::get() + 0x59cf0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2235() {
+	static uintptr_t ret = base::get() + 0x59d40;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2249() {
+	static uintptr_t ret = base::get() + 0x1450b0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2272() {
+	static uintptr_t ret = base::get() + 0x25f310;
 	return ret;
 }
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2277() {
-	static uintptr_t ret = base::get() + 0x25fa10;
+	static uintptr_t ret = base::get() + 0x25fb60;
 	return ret;
 }
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2278() {
-	static uintptr_t ret = base::get() + 0x25f230;
+	static uintptr_t ret = base::get() + 0x25fc90;
 	return ret;
 }
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2279() {
-	static uintptr_t ret = base::get() + 0x25fef0;
+	static uintptr_t ret = base::get() + 0x25fad0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2280() {
+	static uintptr_t ret = base::get() + 0x25f890;
 	return ret;
 }
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2281() {
-	static uintptr_t ret = base::get() + 0x16bc20;
+	static uintptr_t ret = base::get() + 0x25fa10;
 	return ret;
 }
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2282() {
-	static uintptr_t ret = base::get() + 0x16bee0;
+	static uintptr_t ret = base::get() + 0x25f230;
 	return ret;
 }
 
 GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2283() {
+	static uintptr_t ret = base::get() + 0x25fef0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2285() {
+	static uintptr_t ret = base::get() + 0x16bc20;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2286() {
+	static uintptr_t ret = base::get() + 0x16bee0;
+	return ret;
+}
+
+GEODE_NOINLINE GEODE_HIDDEN inline static uintptr_t address2287() {
 	static uintptr_t ret = base::get() + 0x16bcd0;
 	return ret;
 }

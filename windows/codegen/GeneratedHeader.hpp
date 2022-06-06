@@ -2097,9 +2097,19 @@ public:
 
     static MoreOptionsLayer* create();
 
+    template <bool T=false>
+    bool init(){
+        static_assert(T, "Implement MoreOptionsLayer::init");
+    }
+
     void addToggle(const char* name, const char* key, const char* info);
 
-    void onKeybindings(cocos2d::CCObject* pSender);
+    void onKeybindings(cocos2d::CCObject* sender);
+
+    template <bool T=false>
+    void onToggle(cocos2d::CCObject* sender){
+        static_assert(T, "Implement MoreOptionsLayer::onToggle");
+    }
 
 };
 
@@ -2694,10 +2704,7 @@ public:
 
     void playEffect(gd::string p0, float p1, float p2, float p3);
 
-    template <bool T=false>
-    void stopBackgroundMusic(){
-        static_assert(T, "Implement GameSoundManager::stopBackgroundMusic");
-    }
+    void stopBackgroundMusic();
 
     static GameSoundManager* sharedManager();
 
@@ -3627,10 +3634,7 @@ public:
 class GEODE_CODEGEN_DLL CheckpointObject : public cocos2d::CCNode {
 public:
 
-    template <bool T=false>
-    static CheckpointObject* create(){
-        static_assert(T, "Implement CheckpointObject::create");
-    }
+    static CheckpointObject* create();
 
     template <bool T=false>
     void getObject(){
@@ -7084,6 +7088,16 @@ public:
     }
 
     template <bool T=false>
+    void onResumePlaytest(){
+        static_assert(T, "Implement LevelEditorLayer::onResumePlaytest");
+    }
+
+    template <bool T=false>
+    void onPausePlaytest(){
+        static_assert(T, "Implement LevelEditorLayer::onPausePlaytest");
+    }
+
+    template <bool T=false>
     void onStopPlaytest(){
         static_assert(T, "Implement LevelEditorLayer::onStopPlaytest");
     }
@@ -8094,10 +8108,7 @@ public:
         static_assert(T, "Implement PlayLayer::startGame");
     }
 
-    template <bool T=false>
-    void startMusic(){
-        static_assert(T, "Implement PlayLayer::startMusic");
-    }
+    void startMusic();
 
     template <bool T=false>
     void startRecording(){
