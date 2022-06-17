@@ -32,6 +32,7 @@ class CCScrollLayerExt;
 class CCScrollLayerExtDelegate;
 class TableView;
 class ListButtonBar;
+class GJDropDownLayer;
 class AchievementsLayer;
 class LevelCommentDelegate;
 class CommentUploadDelegate;
@@ -63,6 +64,7 @@ class AchievementCell;
 class AchievementManager;
 class AchievementNotifier;
 class PlatformToolbox;
+class SpritePartDelegate;
 class AnimatedGameObject;
 class CCAnimatedSprite;
 class AnimatedShopKeeper;
@@ -87,6 +89,7 @@ class CCNodeContainer;
 class SongInfoLayer;
 class GJSpecialColorSelect;
 class CCTextInputNode;
+class EffectGameObject;
 class StartPosObject;
 class ChallengesPage;
 class OBB2D;
@@ -115,6 +118,7 @@ class HSVWidgetPopupDelegate;
 class CustomizeObjectLayer;
 class DailyLevelPage;
 class DialogObject;
+class CustomSongLayerDelegate;
 class DownloadMessageDelegate;
 class EditButtonBar;
 class EditLevelLayer;
@@ -123,7 +127,6 @@ class GJDailyLevelDelegate;
 class GJRotationControlDelegate;
 class GJScaleControlDelegate;
 class EditorUI;
-class EffectGameObject;
 class GJRotationControl;
 class EndPortalObject;
 class LevelDeleteDelegate;
@@ -147,7 +150,6 @@ class GJColorSetupLayer;
 class GJComment;
 class GJCommentListLayer;
 class LikeItemDelegate;
-class GJDropDownLayer;
 class GJEffectManager;
 class GJLevelScoreCell;
 class GJGameLevel;
@@ -184,6 +186,7 @@ class KeybindingsLayer;
 class LeaderboardManagerDelegate;
 class PlayerCheckpoint;
 class LevelDownloadDelegate;
+class SelectArtDelegate;
 class LevelSettingsDelegate;
 class LevelEditorLayer;
 class LevelUpdateDelegate;
@@ -213,6 +216,7 @@ class UploadActionDelegate;
 class UploadPopupDelegate;
 class ProfilePage;
 class RetryLevelLayer;
+class RingObject;
 class ScrollingLayer;
 class SelectArtLayer;
 class SetGroupIDLayer;
@@ -229,11 +233,11 @@ class SimplePlayer;
 class Slider;
 class SliderThumb;
 class SliderTouchLogic;
+class TouchToggleAction;
 class StatsCell;
 class TextAlertPopup;
 class ToggleTriggerAction;
 class TopArtistsLayer;
-class TouchToggleAction;
 class UILayer;
 class UndoObject;
 class UploadMessageDelegate;
@@ -536,10 +540,7 @@ public:
         static_assert(T, "Implement GameObject::getObjectZOrder");
     }
 
-    template <bool T=false>
-    float getObjectRadius(){
-        static_assert(T, "Implement GameObject::getObjectRadius");
-    }
+    float getObjectRadius();
 
     template <bool T=false>
     void getSecondaryColorMode(){
@@ -687,10 +688,7 @@ public:
         static_assert(T, "Implement GameObject::updateMainColor");
     }
 
-    template <bool T=false>
-    void updateOrientedBox(){
-        static_assert(T, "Implement GameObject::updateOrientedBox");
-    }
+    void updateOrientedBox();
 
     template <bool T=false>
     void updateSecondaryColor(){
@@ -781,9 +779,13 @@ public:
         bool m_isSaw;
         int m_customRotateSpeed;
         bool m_sawIsDisabled;
-        GEODE_PAD(0x4);
+        bool m_unknownVisibility345;
+        bool m_unknown346;
+        bool m_unknownVisibility347;
+        cocos2d::CCSprite* m_baseSprite;
         cocos2d::CCSprite* m_detailSprite;
-        GEODE_PAD(0x8);
+        GEODE_PAD(0x4);
+        float m_objectRadius;
         bool m_isRotatedSide;
         float m_unk2F4;
         float m_unk2F8;
@@ -810,7 +812,7 @@ public:
         int m_targetColorID;
         float m_scale;
         int m_objectID;
-        GEODE_PAD(0x4);
+        int m_unknown3c8;
         bool m_unk368;
         bool m_unk369;
         bool m_unk36A;
@@ -836,7 +838,7 @@ public:
         int m_slopeType;
         float m_slopeAngle;
         bool m_hazardousSlope;
-        float m_unkWin18C;
+        float m_realOpacity;
         GJSpriteColor* m_baseColor;
         GJSpriteColor* m_detailColor;
         int m_unknown420;
@@ -2097,10 +2099,7 @@ public:
 
     static MoreOptionsLayer* create();
 
-    template <bool T=false>
-    bool init(){
-        static_assert(T, "Implement MoreOptionsLayer::init");
-    }
+    bool init();
 
     void addToggle(const char* name, const char* key, const char* info);
 
@@ -2282,13 +2281,71 @@ public:
         BoomScrollLayer* m_scrollLayer;
 };
 
-class GEODE_CODEGEN_DLL AchievementsLayer {
+class GEODE_CODEGEN_DLL GJDropDownLayer : public cocos2d::CCLayerColor {
+public:
+	 GJDropDownLayer() {
+		m_endPosition = cocos2d::CCPointMake(0.f, 0.f);
+		m_startPosition = cocos2d::CCPointMake(0.f, 0.f);
+		m_buttonMenu = nullptr;
+		m_listLayer = nullptr;
+		m_controllerEnabled = false;
+		m_mainLayer = nullptr;
+		m_hidden = false;
+		m_delegate = nullptr;
+	}
+
+    virtual void customSetup();
+
+    virtual void enterLayer();
+
+    virtual void exitLayer(cocos2d::CCObject* p0);
+
+    virtual void showLayer(bool p0);
+
+    virtual void hideLayer(bool p0);
+
+    virtual void layerVisible();
+
+    virtual void layerHidden();
+
+    virtual void enterAnimFinished();
+
+    virtual void disableUI();
+
+    virtual void enableUI();
+
+    static GJDropDownLayer* create(const char* title, float height);
+
+    virtual bool ccTouchBegan(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
+
+    virtual void ccTouchMoved(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
+
+    virtual void ccTouchEnded(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
+
+    virtual void ccTouchCancelled(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
+
+    virtual void draw();
+
+    bool init(const char* title, float height);
+
+    virtual void registerWithTouchDispatcher();
+
+    virtual void keyBackClicked();
+
+        cocos2d::CCPoint m_endPosition;
+        cocos2d::CCPoint m_startPosition;
+        cocos2d::CCMenu* m_buttonMenu;
+        GJListLayer* m_listLayer;
+        bool m_controllerEnabled;
+        cocos2d::CCLayer* m_mainLayer;
+        bool m_hidden;
+        GJDropDownLayerDelegate* m_delegate;
+};
+
+class GEODE_CODEGEN_DLL AchievementsLayer : public GJDropDownLayer {
 public:
 
-    template <bool T=false>
-    void customSetup(){
-        static_assert(T, "Implement AchievementsLayer::customSetup");
-    }
+    void customSetup();
 
     void loadPage(int p0);
 
@@ -2399,10 +2456,7 @@ public:
         static_assert(T, "Implement ArtistCell::init");
     }
 
-    template <bool T=false>
-    void loadFromObject(SongInfoObject* p0){
-        static_assert(T, "Implement ArtistCell::loadFromObject");
-    }
+    void loadFromObject(SongInfoObject* p0);
 
     template <bool T=false>
     void onNewgrounds(cocos2d::CCObject* p0){
@@ -2663,17 +2717,19 @@ public:
 class GEODE_CODEGEN_DLL PauseLayer : public CCBlockLayer {
 public:
 
-    template <bool T=false>
-    static PauseLayer* create(bool p0){
-        static_assert(T, "Implement PauseLayer::create");
-    }
+    static PauseLayer* create(bool p0);
 
-    template <bool T=false>
-    void onEdit(cocos2d::CCObject* p0){
-        static_assert(T, "Implement PauseLayer::onEdit");
-    }
+    void onEdit(cocos2d::CCObject* p0);
 
-    void createToggleButton(cocos2d::SEL_MenuHandler callback, bool on, cocos2d::CCMenu* menu, gd::string caption, cocos2d::CCPoint pos);
+    void onQuit(cocos2d::CCObject* p0);
+
+    void createToggleButton(gd::string caption, cocos2d::SEL_MenuHandler callback, bool on, cocos2d::CCMenu* menu, cocos2d::CCPoint pos);
+
+    virtual void customSetup();
+
+    void onRestart(cocos2d::CCObject* sender);
+
+    void keyDown(cocos2d::enumKeyCodes p0);
 
         bool m_unknown;
         bool m_unknown2;
@@ -2938,7 +2994,12 @@ public:
 
 };
 
-class GEODE_CODEGEN_DLL AnimatedGameObject {
+class GEODE_CODEGEN_DLL SpritePartDelegate {
+public:
+
+};
+
+class GEODE_CODEGEN_DLL AnimatedGameObject : public GameObject, public AnimatedSpriteDelegate, public SpritePartDelegate {
 public:
 
     template <bool T=false>
@@ -3012,6 +3073,14 @@ public:
     static AppDelegate* get(){
         static_assert(T, "Implement AppDelegate::get");
     }
+
+    bool musicTest();
+
+    void pauseGame();
+
+    void resumeSound();
+
+    void setupGLView();
 
         cocos2d::CCScene* m_runningScene;
 };
@@ -3574,9 +3643,98 @@ public:
         bool m_forceOffset;
 };
 
-class GEODE_CODEGEN_DLL StartPosObject {
+class GEODE_CODEGEN_DLL EffectGameObject : public GameObject {
 public:
 
+    void updateLabel();
+
+    static EffectGameObject* create(const char* p0);
+
+    bool init(char const* p0);
+
+    template <bool T=false>
+    void getTargetColorIndex(){
+        static_assert(T, "Implement EffectGameObject::getTargetColorIndex");
+    }
+
+    virtual void triggerObject(GJBaseGameLayer* p0);
+
+    gd::string getSaveString();
+
+    void updateSpecialColor();
+
+    void spawnXPosition();
+
+    void triggerActivated(float p0);
+
+        cocos2d::ccColor3B m_colColor;
+        float m_duration;
+        float m_opacity;
+        int m_targetGroupID;
+        int m_centerGroupID;
+        float m_shakeStrength;
+        float m_shakeInterval;
+        bool m_tintGround;
+        bool m_playerColor1;
+        bool m_playerColor2;
+        bool m_blending;
+        cocos2d::CCPoint m_move;
+        EasingType m_easingType;
+        float m_easingRate;
+        bool m_lockToPlayerX;
+        bool m_lockToPlayerY;
+        bool m_useTarget;
+        MoveTargetType m_moveTargetType;
+        int m_rotateDegrees;
+        int m_times360;
+        bool m_lockObjectRotation;
+        cocos2d::CCPoint m_followMod;
+        bool UndocuementedLevelProperty74;
+        float m_followYSpeed;
+        float m_followYDelay;
+        int m_followYOffset;
+        float m_followYMaxSpeed;
+        float m_fadeInTime;
+        float m_holdTime;
+        float m_fadeOutTime;
+        int m_pulseHSVMode;
+        int m_pulseGroupMode;
+        cocos2d::ccHSVValue m_HSVValue;
+        int m_copyColorID;
+        bool m_copyOpacity;
+        bool m_pulseMainOnly;
+        bool m_pulseDetailOnly;
+        bool m_pulseExclusive;
+        bool m_activateGroup;
+        bool m_touchHoldMode;
+        TouchToggleMode m_touchToggleMode;
+        bool m_touchDualMode;
+        int m_animationID;
+        float m_spawnDelay;
+        cocos2d::CCPoint m_spawnPosition;
+        bool m_multiTrigger;
+        bool m_editorDisabled;
+        int m_targetCount;
+        bool m_subtractCount;
+        ComparisonType m_comparisonType;
+        bool m_multiActivate;
+        bool m_triggerOnExit;
+        int m_blockBID;
+        bool m_dynamicBlock;
+        int m_targetItemID;
+        int m_pickupMode;
+        GEODE_PAD(0x24);
+};
+
+class GEODE_CODEGEN_DLL StartPosObject : public EffectGameObject {
+public:
+
+    template <bool T=false>
+    static StartPosObject* create(){
+        static_assert(T, "Implement StartPosObject::create");
+    }
+
+        LevelSettingsObject* m_levelSettings;
 };
 
 class GEODE_CODEGEN_DLL ChallengesPage {
@@ -3684,7 +3842,7 @@ class GEODE_CODEGEN_DLL ColorAction : public cocos2d::CCNode {
 public:
 
     template <bool T=false>
-    void getSaveString(){
+    gd::string getSaveString(){
         static_assert(T, "Implement ColorAction::getSaveString");
     }
 
@@ -4060,6 +4218,13 @@ public:
         bool m_canSkip;
 };
 
+class GEODE_CODEGEN_DLL CustomSongLayerDelegate {
+public:
+
+    virtual void customSongLayerClosed();
+
+};
+
 class GEODE_CODEGEN_DLL DownloadMessageDelegate {
 public:
 
@@ -4237,11 +4402,21 @@ public:
 
     virtual void keyDown(cocos2d::enumKeyCodes p0);
 
+    template <bool T=false>
+    CreateMenuItem* menuItemFromObjectString(gd::string p0, int p1){
+        static_assert(T, "Implement EditorUI::menuItemFromObjectString");
+    }
+
     void moveObject(GameObject* p0, cocos2d::CCPoint p1);
 
     void onDuplicate(cocos2d::CCObject* p0);
 
-    cocos2d::CCArray* pasteObjects(gd::string const& p0);
+    template <bool T=false>
+    void onCreateObject(int p0){
+        static_assert(T, "Implement EditorUI::onCreateObject");
+    }
+
+    cocos2d::CCArray* pasteObjects(gd::string p0);
 
     template <bool T=false>
     void playerTouchBegan(cocos2d::CCTouch* p0, cocos2d::CCEvent* p1){
@@ -4284,7 +4459,17 @@ public:
 
     void updateZoom(float p0);
 
-    void selectObject(GameObject* obj, bool idk);
+    void selectObject(GameObject* obj, bool filter);
+
+    template <bool T=false>
+    void deselectObject(GameObject* object){
+        static_assert(T, "Implement EditorUI::deselectObject");
+    }
+
+    template <bool T=false>
+    void deleteObject(GameObject* object, bool filter){
+        static_assert(T, "Implement EditorUI::deleteObject");
+    }
 
     void selectAll();
 
@@ -4483,81 +4668,6 @@ public:
         int m_timesSelected;
         GEODE_PAD(0x20);
         bool m_spaceKeyPressed;
-};
-
-class GEODE_CODEGEN_DLL EffectGameObject : public GameObject {
-public:
-
-    void updateLabel();
-
-    static EffectGameObject* create(const char* p0);
-
-    template <bool T=false>
-    void getTargetColorIndex(){
-        static_assert(T, "Implement EffectGameObject::getTargetColorIndex");
-    }
-
-    virtual void triggerObject(GJBaseGameLayer* p0);
-
-    gd::string getSaveString();
-
-        cocos2d::ccColor3B m_colColor;
-        float m_duration;
-        float m_opacity;
-        int m_targetGroupID;
-        int m_centerGroupID;
-        float m_shakeStrength;
-        float m_shakeInterval;
-        bool m_tintGround;
-        bool m_playerColor1;
-        bool m_playerColor2;
-        bool m_blending;
-        cocos2d::CCPoint m_move;
-        EasingType m_easingType;
-        float m_easingRate;
-        bool m_lockToPlayerX;
-        bool m_lockToPlayerY;
-        bool m_useTarget;
-        MoveTargetType m_moveTargetType;
-        int m_rotateDegrees;
-        int m_times360;
-        bool m_lockObjectRotation;
-        cocos2d::CCPoint m_followMod;
-        bool UndocuementedLevelProperty74;
-        float m_followYSpeed;
-        float m_followYDelay;
-        int m_followYOffset;
-        float m_followYMaxSpeed;
-        float m_fadeInTime;
-        float m_holdTime;
-        float m_fadeOutTime;
-        int m_pulseHSVMode;
-        int m_pulseGroupMode;
-        cocos2d::ccHSVValue m_HSVValue;
-        int m_copyColorID;
-        bool m_copyOpacity;
-        bool m_pulseMainOnly;
-        bool m_pulseDetailOnly;
-        bool m_pulseExclusive;
-        bool m_activateGroup;
-        bool m_touchHoldMode;
-        TouchToggleMode m_touchToggleMode;
-        bool m_touchDualMode;
-        int m_animationID;
-        float m_spawnDelay;
-        cocos2d::CCPoint m_spawnPosition;
-        bool m_multiTrigger;
-        bool m_editorDisabled;
-        int m_targetCount;
-        bool m_subtractCount;
-        ComparisonType m_comparisonType;
-        bool m_multiActivate;
-        bool m_triggerOnExit;
-        int m_blockBID;
-        bool m_dynamicBlock;
-        int m_targetItemID;
-        int m_pickupMode;
-        GEODE_PAD(0x24);
 };
 
 class GEODE_CODEGEN_DLL GJRotationControl : public cocos2d::CCLayer {
@@ -5027,10 +5137,7 @@ public:
         static_assert(T, "Implement GJBaseGameLayer::resetMoveOptimizedValue");
     }
 
-    template <bool T=false>
-    int sectionForPos(float p0){
-        static_assert(T, "Implement GJBaseGameLayer::sectionForPos");
-    }
+    int sectionForPos(float x);
 
     template <bool T=false>
     void setupLayers(){
@@ -5262,67 +5369,6 @@ public:
 
 };
 
-class GEODE_CODEGEN_DLL GJDropDownLayer : public cocos2d::CCLayerColor {
-public:
-	 GJDropDownLayer() {
-		m_endPosition = cocos2d::CCPointMake(0.f, 0.f);
-		m_startPosition = cocos2d::CCPointMake(0.f, 0.f);
-		m_buttonMenu = nullptr;
-		m_listLayer = nullptr;
-		m_controllerEnabled = false;
-		m_mainLayer = nullptr;
-		m_hidden = false;
-		m_unknown = nullptr;
-	}
-
-    virtual void customSetup();
-
-    virtual void enterLayer();
-
-    virtual void exitLayer(cocos2d::CCObject* p0);
-
-    virtual void showLayer(bool p0);
-
-    virtual void hideLayer(bool p0);
-
-    virtual void layerVisible();
-
-    virtual void layerHidden();
-
-    virtual void enterAnimFinished();
-
-    virtual void disableUI();
-
-    virtual void enableUI();
-
-    static GJDropDownLayer* create(const char* title, float height);
-
-    virtual bool ccTouchBegan(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
-
-    virtual void ccTouchMoved(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
-
-    virtual void ccTouchEnded(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
-
-    virtual void ccTouchCancelled(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
-
-    virtual void draw();
-
-    bool init(const char* title, float height);
-
-    virtual void registerWithTouchDispatcher();
-
-    virtual void keyBackClicked();
-
-        cocos2d::CCPoint m_endPosition;
-        cocos2d::CCPoint m_startPosition;
-        cocos2d::CCMenu* m_buttonMenu;
-        GJListLayer* m_listLayer;
-        bool m_controllerEnabled;
-        cocos2d::CCLayer* m_mainLayer;
-        bool m_hidden;
-        void* m_unknown;
-};
-
 class GEODE_CODEGEN_DLL GJEffectManager : public cocos2d::CCNode {
 public:
 
@@ -5469,7 +5515,7 @@ public:
     }
 
     template <bool T=false>
-    void getSaveString(){
+    gd::string getSaveString(){
         static_assert(T, "Implement GJEffectManager::getSaveString");
     }
 
@@ -5654,7 +5700,7 @@ public:
     }
 
     template <bool T=false>
-    void shouldBlend(int p0){
+    bool shouldBlend(int p0){
         static_assert(T, "Implement GJEffectManager::shouldBlend");
     }
 
@@ -5980,8 +6026,8 @@ public:
 	 GJGarageLayer() {
 		m_nameInput = nullptr;
 		m_playerPreview = nullptr;
-		m_unkSprite0x140 = nullptr;
-		m_unkSprite0x144 = nullptr;
+		m_colorSelector1 = nullptr;
+		m_colorSelector2 = nullptr;
 		m_unkButton0x148 = nullptr;
 		m_unkButton0x14c = nullptr;
 		m_pagesArray = nullptr;
@@ -6027,11 +6073,17 @@ public:
 
     void onShop(cocos2d::CCObject* pSender);
 
+    template <bool T=false>
+    void setupColorSelect(){
+        static_assert(T, "Implement GJGarageLayer::setupColorSelect");
+    }
+
+        GEODE_UNIMPLEMENTED_PAD
         CCTextInputNode* m_nameInput;
         SimplePlayer* m_playerPreview;
         GEODE_PAD(0x8);
-        cocos2d::CCSprite* m_unkSprite0x140;
-        cocos2d::CCSprite* m_unkSprite0x144;
+        cocos2d::CCSprite* m_colorSelector1;
+        cocos2d::CCSprite* m_colorSelector2;
         CCMenuItemSpriteExtra* m_unkButton0x148;
         CCMenuItemSpriteExtra* m_unkButton0x14c;
         GEODE_PAD(0x8);
@@ -6254,6 +6306,31 @@ public:
 class GEODE_CODEGEN_DLL GJScaleControl : public cocos2d::CCLayer {
 public:
 
+    template <bool T=false>
+    bool init(){
+        static_assert(T, "Implement GJScaleControl::init");
+    }
+
+    template <bool T=false>
+    bool ccTouchBegan(cocos2d::CCTouch* p0, cocos2d::CCEvent* p1){
+        static_assert(T, "Implement GJScaleControl::ccTouchBegan");
+    }
+
+    template <bool T=false>
+    void ccTouchMoved(cocos2d::CCTouch* p0, cocos2d::CCEvent* p1){
+        static_assert(T, "Implement GJScaleControl::ccTouchMoved");
+    }
+
+    template <bool T=false>
+    void ccTouchEnded(cocos2d::CCTouch* p0, cocos2d::CCEvent* p1){
+        static_assert(T, "Implement GJScaleControl::ccTouchEnded");
+    }
+
+    template <bool T=false>
+    void ccTouchCancelled(cocos2d::CCTouch* p0, cocos2d::CCEvent* p1){
+        static_assert(T, "Implement GJScaleControl::ccTouchCancelled");
+    }
+
     void updateLabel(float value);
 
     void loadValues(GameObject* obj, cocos2d::CCArray* objs);
@@ -6334,6 +6411,11 @@ public:
 
 class GEODE_CODEGEN_DLL GJSpriteColor : public cocos2d::CCNode {
 public:
+
+    template <bool T=false>
+    void resetCustomColorMode(){
+        static_assert(T, "Implement GJSpriteColor::resetCustomColorMode");
+    }
 
         int m_colorID;
         int m_defaultColorID;
@@ -6537,7 +6619,7 @@ public:
         double m_adCache;
         GEODE_PAD(0x8);
         double m_unknownDouble;
-        GEODE_PAD(0x4);
+        GEODE_PAD(0x8);
         bool m_loaded;
         gd::string m_unknownString;
         PlayLayer* m_playLayer;
@@ -6920,6 +7002,13 @@ public:
 
 };
 
+class GEODE_CODEGEN_DLL SelectArtDelegate {
+public:
+
+    virtual void selectArtClosed(SelectArtLayer* p0);
+
+};
+
 class GEODE_CODEGEN_DLL LevelSettingsDelegate {
 public:
 
@@ -7005,10 +7094,7 @@ public:
         static_assert(T, "Implement LevelEditorLayer::animateInDualGround");
     }
 
-    template <bool T=false>
-    void checkCollisions(PlayerObject* p0, float p1){
-        static_assert(T, "Implement LevelEditorLayer::checkCollisions");
-    }
+    bool checkCollisions(PlayerObject* p0, float p1);
 
     template <bool T=false>
     void createBackground(){
@@ -7028,7 +7114,7 @@ public:
     }
 
     template <bool T=false>
-    void createObjectsFromString(gd::string p0, bool p1){
+    cocos2d::CCArray* createObjectsFromString(gd::string p0, bool p1){
         static_assert(T, "Implement LevelEditorLayer::createObjectsFromString");
     }
 
@@ -7065,10 +7151,7 @@ public:
         static_assert(T, "Implement LevelEditorLayer::handleAction");
     }
 
-    template <bool T=false>
-    bool init(GJGameLevel* p0){
-        static_assert(T, "Implement LevelEditorLayer::init");
-    }
+    bool init(GJGameLevel* p0);
 
     void objectAtPosition(cocos2d::CCPoint p0);
 
@@ -7082,25 +7165,13 @@ public:
         static_assert(T, "Implement LevelEditorLayer::objectsInRect");
     }
 
-    template <bool T=false>
-    void onPlaytest(){
-        static_assert(T, "Implement LevelEditorLayer::onPlaytest");
-    }
+    void onPlaytest();
 
-    template <bool T=false>
-    void onResumePlaytest(){
-        static_assert(T, "Implement LevelEditorLayer::onResumePlaytest");
-    }
+    void onResumePlaytest();
 
-    template <bool T=false>
-    void onPausePlaytest(){
-        static_assert(T, "Implement LevelEditorLayer::onPausePlaytest");
-    }
+    void onPausePlaytest();
 
-    template <bool T=false>
-    void onStopPlaytest(){
-        static_assert(T, "Implement LevelEditorLayer::onStopPlaytest");
-    }
+    void onStopPlaytest();
 
     void pasteAttributeState(GameObject* obj, cocos2d::CCArray* objs);
 
@@ -7299,6 +7370,8 @@ public:
 
     static LevelInfoLayer* create(GJGameLevel* level);
 
+    bool init(GJGameLevel* level);
+
     void onGarage(cocos2d::CCObject* pSender);
 
     void onViewProfile(cocos2d::CCObject* pSender);
@@ -7347,11 +7420,13 @@ public:
         BoomScrollLayer* m_scrollLayer;
 };
 
-class GEODE_CODEGEN_DLL LevelSettingsLayer {
+class GEODE_CODEGEN_DLL LevelSettingsLayer : public FLAlertLayer, public ColorSelectDelegate, public SelectArtDelegate, public FLAlertLayerProtocol, public CustomSongLayerDelegate {
 public:
 
     static LevelSettingsLayer* create(LevelSettingsObject* levelSettings, LevelEditorLayer* editor);
 
+        GEODE_UNIMPLEMENTED_PAD
+        LevelSettingsObject* m_settingsObject;
 };
 
 class GEODE_CODEGEN_DLL LevelSettingsObject : public cocos2d::CCNode {
@@ -7515,7 +7590,7 @@ public:
     }
 
     template <bool T=false>
-    void getSaveString(){
+    gd::string getSaveString(){
         static_assert(T, "Implement PulseEffectAction::getSaveString");
     }
 
@@ -7601,7 +7676,7 @@ public:
 
 };
 
-class GEODE_CODEGEN_DLL PlayLayer : public GJBaseGameLayer, public CCCircleWaveDelegate, public DialogDelegate {
+class GEODE_CODEGEN_DLL PlayLayer : public GJBaseGameLayer, public CCCircleWaveDelegate, public CurrencyRewardDelegate, public DialogDelegate {
 public:
 
     static PlayLayer* get();
@@ -7663,10 +7738,7 @@ public:
         static_assert(T, "Implement PlayLayer::cameraMoveY");
     }
 
-    template <bool T=false>
-    void checkCollisions(PlayerObject* p0, float p1){
-        static_assert(T, "Implement PlayLayer::checkCollisions");
-    }
+    void checkCollisions(PlayerObject* p0, float p1);
 
     template <bool T=false>
     void circleWaveWillBeRemoved(CCCircleWave* p0){
@@ -8296,6 +8368,7 @@ public:
         bool m_debugPauseOff;
         bool m_shouldSmoothCamera;
         float unused_4e0;
+        GEODE_PAD(0x4);
         cocos2d::CCObject* unknown4e8;
         float m_camera4f0;
         int unused4f4;
@@ -8309,6 +8382,7 @@ public:
         float unknown510;
         float unknown514;
         float unknown518;
+        GEODE_PAD(0x4);
         StartPosObject* m_startPos;
         CheckpointObject* m_startPosCheckpoint;
         EndPortalObject* m_endPortal;
@@ -8406,7 +8480,7 @@ public:
         bool unk497;
         cocos2d::CCArray* unk498;
         bool unk49C;
-        cocos2d::CCPoint unk4A0;
+        cocos2d::CCPoint m_playerStartPosition;
         int m_currentAttempt;
         int m_jumpCount;
         bool unk4B0;
@@ -8415,7 +8489,7 @@ public:
         bool unk4BC;
         bool m_hasLevelCompleteMenu;
         bool m_hasCompletedLevel;
-        bool unk4BF;
+        bool m_delayedResetLevel;
         int m_lastDeathPercent;
         bool unk4C4;
         GEODE_PAD(0xb);
@@ -8501,6 +8575,38 @@ public:
     static RetryLevelLayer* create(){
         static_assert(T, "Implement RetryLevelLayer::create");
     }
+
+};
+
+class GEODE_CODEGEN_DLL RingObject : public EffectGameObject {
+public:
+
+    bool create(char const* p0);
+
+    bool init(char const* p0);
+
+    void spawnCircle();
+
+    virtual void setRotation(float p0);
+
+    virtual void setScale(float p0);
+
+    virtual void resetObject();
+
+    virtual void customObjectSetup(gd::map<gd::string, gd::string>& p0);
+
+    virtual gd::string getSaveString();
+
+    virtual void powerOnObject();
+
+    template <bool T=false>
+    void powerOffObject(){
+        static_assert(T, "Implement RingObject::powerOffObject");
+    }
+
+    virtual void setRScale(float p0);
+
+    virtual void triggerActivated(float p0);
 
 };
 
@@ -8845,6 +8951,16 @@ public:
         bool m_vertical;
 };
 
+class GEODE_CODEGEN_DLL TouchToggleAction : public cocos2d::CCNode {
+public:
+
+    template <bool T=false>
+    static TouchToggleAction* createFromString(gd::string p0){
+        static_assert(T, "Implement TouchToggleAction::createFromString");
+    }
+
+};
+
 class GEODE_CODEGEN_DLL StatsCell {
 public:
 
@@ -8901,20 +9017,15 @@ public:
 
 };
 
-class GEODE_CODEGEN_DLL TouchToggleAction : public cocos2d::CCNode {
-public:
-
-    template <bool T=false>
-    static TouchToggleAction* createFromString(gd::string p0){
-        static_assert(T, "Implement TouchToggleAction::createFromString");
-    }
-
-};
-
 class GEODE_CODEGEN_DLL UILayer : public cocos2d::CCLayerColor {
 public:
 
     static UILayer* create();
+
+    template <bool T=false>
+    bool init(){
+        static_assert(T, "Implement UILayer::init");
+    }
 
     template <bool T=false>
     void disableMenu(){
