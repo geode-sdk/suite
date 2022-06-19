@@ -18,36 +18,39 @@ struct Modify<Derived, PlayerObject> : ModifyBase<Modify<Derived, PlayerObject>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2015, x86::Thiscall, PlayerObject, setVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2019, x86::Thiscall, PlayerObject, setFlipX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2020, x86::Thiscall, PlayerObject, setFlipY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2021, x86::Thiscall, PlayerObject, resetObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2022, x86::Thiscall, PlayerObject, getRealPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2023, x86::Thiscall, PlayerObject, getOrientedBox)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2025, x86::Membercall, PlayerObject, activateStreak)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2040, x86::Membercall, PlayerObject, fadeOutStreak2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2042, x86::Membercall, PlayerObject, flipGravity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2052, x86::Membercall, PlayerObject, incrementJumps)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2067, x86::Membercall, PlayerObject, playBurstEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2068, x86::Membercall, PlayerObject, playDeathEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2070, x86::Membercall, PlayerObject, playerDestroyed)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2071, x86::Membercall, PlayerObject, playerIsFalling)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2078, x86::Membercall, PlayerObject, pushButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2081, x86::Membercall, PlayerObject, releaseButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2089, x86::Membercall, PlayerObject, ringJump)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2092, x86::Membercall, PlayerObject, runNormalRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2106, x86::Membercall, PlayerObject, spiderTestJump)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2114, x86::Membercall, PlayerObject, toggleBirdMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2115, x86::Membercall, PlayerObject, toggleDartMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2116, x86::Membercall, PlayerObject, toggleFlyMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2117, x86::Membercall, PlayerObject, toggleGhostEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2118, x86::Membercall, PlayerObject, togglePlayerScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2119, x86::Membercall, PlayerObject, toggleRobotMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2120, x86::Membercall, PlayerObject, toggleRollMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2121, x86::Membercall, PlayerObject, toggleSpiderMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2154, x86::Membercall, PlayerObject, updateTimeMod)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2158, x86::Membercall, PlayerObject, runRotateAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2159, x86::Membercall, PlayerObject, runBallRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2018, x86::Thiscall, PlayerObject, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2023, x86::Thiscall, PlayerObject, setVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2027, x86::Thiscall, PlayerObject, setFlipX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2028, x86::Thiscall, PlayerObject, setFlipY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2029, x86::Thiscall, PlayerObject, resetObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2030, x86::Thiscall, PlayerObject, getRealPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2031, x86::Thiscall, PlayerObject, getOrientedBox)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2033, x86::Membercall, PlayerObject, activateStreak)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2048, x86::Membercall, PlayerObject, fadeOutStreak2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2050, x86::Membercall, PlayerObject, flipGravity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2060, x86::Membercall, PlayerObject, incrementJumps)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2061, x86::Membercall, PlayerObject, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2075, x86::Membercall, PlayerObject, playBurstEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2076, x86::Membercall, PlayerObject, playDeathEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2078, x86::Membercall, PlayerObject, playerDestroyed)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2079, x86::Membercall, PlayerObject, playerIsFalling)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2086, x86::Membercall, PlayerObject, pushButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2089, x86::Membercall, PlayerObject, releaseButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2097, x86::Membercall, PlayerObject, ringJump)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2100, x86::Membercall, PlayerObject, runNormalRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2114, x86::Membercall, PlayerObject, spiderTestJump)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2122, x86::Membercall, PlayerObject, toggleBirdMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2123, x86::Membercall, PlayerObject, toggleDartMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2124, x86::Membercall, PlayerObject, toggleFlyMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2125, x86::Membercall, PlayerObject, toggleGhostEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2126, x86::Membercall, PlayerObject, togglePlayerScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2127, x86::Membercall, PlayerObject, toggleRobotMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2128, x86::Membercall, PlayerObject, toggleRollMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2129, x86::Membercall, PlayerObject, toggleSpiderMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2134, x86::Membercall, PlayerObject, updateCheckpointTest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2162, x86::Membercall, PlayerObject, updateTimeMod)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2166, x86::Membercall, PlayerObject, runRotateAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2167, x86::Membercall, PlayerObject, runBallRotation)
 	}
 };
 
@@ -138,12 +141,12 @@ struct Modify<Derived, CreatorLayer> : ModifyBase<Modify<Derived, CreatorLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(872, x86::Membercall, CreatorLayer, onBack)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(873, x86::Membercall, CreatorLayer, onChallenge)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(874, x86::Membercall, CreatorLayer, onLeaderboards)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(877, x86::Thiscall, CreatorLayer, sceneWillResume)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(878, x86::Membercall, CreatorLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(879, x86::Optcall, CreatorLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(873, x86::Membercall, CreatorLayer, onBack)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(874, x86::Membercall, CreatorLayer, onChallenge)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(875, x86::Membercall, CreatorLayer, onLeaderboards)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(878, x86::Thiscall, CreatorLayer, sceneWillResume)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(879, x86::Membercall, CreatorLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(880, x86::Optcall, CreatorLayer, create)
 	}
 };
 
@@ -201,7 +204,9 @@ struct Modify<Derived, DrawGridLayer> : ModifyBase<Modify<Derived, DrawGridLayer
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(919, x86::Membercall, DrawGridLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(920, x86::Membercall, DrawGridLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(921, x86::Membercall, DrawGridLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(922, x86::Thiscall, DrawGridLayer, update)
 	}
 };
 
@@ -340,7 +345,7 @@ struct Modify<Derived, SongCell> : ModifyBase<Modify<Derived, SongCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2267, x86::Membercall, SongCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2275, x86::Membercall, SongCell, updateBGColor)
 	}
 };
 
@@ -362,10 +367,10 @@ struct Modify<Derived, cocos2d::CCSpriteBatchNode> : ModifyBase<Modify<Derived, 
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(514, x86::Cdecl, cocos2d::CCSpriteBatchNode, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(515, x86::Cdecl, cocos2d::CCSpriteBatchNode, createWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(516, x86::Thiscall, cocos2d::CCSpriteBatchNode, getUsedAtlasCapacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(517, x86::Thiscall, cocos2d::CCSpriteBatchNode, increaseAtlasCapacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(515, x86::Cdecl, cocos2d::CCSpriteBatchNode, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(516, x86::Cdecl, cocos2d::CCSpriteBatchNode, createWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(517, x86::Thiscall, cocos2d::CCSpriteBatchNode, getUsedAtlasCapacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(518, x86::Thiscall, cocos2d::CCSpriteBatchNode, increaseAtlasCapacity)
 	}
 };
 
@@ -407,9 +412,9 @@ struct Modify<Derived, cocos2d::CCSpriteFrame> : ModifyBase<Modify<Derived, coco
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(518, x86::Cdecl, cocos2d::CCSpriteFrame, createWithTexture)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(519, x86::Cdecl, cocos2d::CCSpriteFrame, createWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(520, x86::Thiscall, cocos2d::CCSpriteFrame, getTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(520, x86::Cdecl, cocos2d::CCSpriteFrame, createWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(521, x86::Thiscall, cocos2d::CCSpriteFrame, getTexture)
 	}
 };
 
@@ -420,24 +425,24 @@ struct Modify<Derived, cocos2d::extension::CCControl> : ModifyBase<Modify<Derive
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(578, x86::Thiscall, cocos2d::extension::CCControl, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(580, x86::Thiscall, cocos2d::extension::CCControl, sendActionsForControlEvents)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(581, x86::Thiscall, cocos2d::extension::CCControl, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(582, x86::Thiscall, cocos2d::extension::CCControl, setOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(583, x86::Thiscall, cocos2d::extension::CCControl, onExit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(584, x86::Thiscall, cocos2d::extension::CCControl, isTouchInside)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(585, x86::Thiscall, cocos2d::extension::CCControl, setEnabled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(586, x86::Thiscall, cocos2d::extension::CCControl, onEnter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(587, x86::Thiscall, cocos2d::extension::CCControl, isEnabled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(588, x86::Thiscall, cocos2d::extension::CCControl, setSelected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(589, x86::Thiscall, cocos2d::extension::CCControl, isOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(590, x86::Thiscall, cocos2d::extension::CCControl, setHighlighted)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(591, x86::Thiscall, cocos2d::extension::CCControl, needsLayout)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(592, x86::Thiscall, cocos2d::extension::CCControl, getTouchLocation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(593, x86::Thiscall, cocos2d::extension::CCControl, isHighlighted)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(594, x86::Thiscall, cocos2d::extension::CCControl, addTargetWithActionForControlEvents)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(595, x86::Thiscall, cocos2d::extension::CCControl, removeTargetWithActionForControlEvents)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(596, x86::Thiscall, cocos2d::extension::CCControl, isSelected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(579, x86::Thiscall, cocos2d::extension::CCControl, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(581, x86::Thiscall, cocos2d::extension::CCControl, sendActionsForControlEvents)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(582, x86::Thiscall, cocos2d::extension::CCControl, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(583, x86::Thiscall, cocos2d::extension::CCControl, setOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(584, x86::Thiscall, cocos2d::extension::CCControl, onExit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(585, x86::Thiscall, cocos2d::extension::CCControl, isTouchInside)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(586, x86::Thiscall, cocos2d::extension::CCControl, setEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(587, x86::Thiscall, cocos2d::extension::CCControl, onEnter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(588, x86::Thiscall, cocos2d::extension::CCControl, isEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(589, x86::Thiscall, cocos2d::extension::CCControl, setSelected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(590, x86::Thiscall, cocos2d::extension::CCControl, isOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(591, x86::Thiscall, cocos2d::extension::CCControl, setHighlighted)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(592, x86::Thiscall, cocos2d::extension::CCControl, needsLayout)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(593, x86::Thiscall, cocos2d::extension::CCControl, getTouchLocation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(594, x86::Thiscall, cocos2d::extension::CCControl, isHighlighted)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(595, x86::Thiscall, cocos2d::extension::CCControl, addTargetWithActionForControlEvents)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(596, x86::Thiscall, cocos2d::extension::CCControl, removeTargetWithActionForControlEvents)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(597, x86::Thiscall, cocos2d::extension::CCControl, isSelected)
 	}
 };
 
@@ -533,9 +538,9 @@ struct Modify<Derived, cocos2d::CCSpriteFrameCache> : ModifyBase<Modify<Derived,
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(521, x86::Thiscall, cocos2d::CCSpriteFrameCache, addSpriteFramesWithFile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(522, x86::Cdecl, cocos2d::CCSpriteFrameCache, sharedSpriteFrameCache)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(523, x86::Thiscall, cocos2d::CCSpriteFrameCache, spriteFrameByName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(522, x86::Thiscall, cocos2d::CCSpriteFrameCache, addSpriteFramesWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(523, x86::Cdecl, cocos2d::CCSpriteFrameCache, sharedSpriteFrameCache)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(524, x86::Thiscall, cocos2d::CCSpriteFrameCache, spriteFrameByName)
 	}
 };
 
@@ -635,9 +640,9 @@ struct Modify<Derived, LoadingCircle> : ModifyBase<Modify<Derived, LoadingCircle
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1758, x86::Optcall, LoadingCircle, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1759, x86::Membercall, LoadingCircle, show)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1760, x86::Membercall, LoadingCircle, fadeAndRemove)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1766, x86::Optcall, LoadingCircle, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1767, x86::Membercall, LoadingCircle, show)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1768, x86::Membercall, LoadingCircle, fadeAndRemove)
 	}
 };
 
@@ -648,7 +653,7 @@ struct Modify<Derived, GJMessageCell> : ModifyBase<Modify<Derived, GJMessageCell
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1300, x86::Membercall, GJMessageCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1306, x86::Membercall, GJMessageCell, updateBGColor)
 	}
 };
 
@@ -753,10 +758,10 @@ struct Modify<Derived, MoreOptionsLayer> : ModifyBase<Modify<Derived, MoreOption
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1797, x86::Optcall, MoreOptionsLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1798, x86::Membercall, MoreOptionsLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1799, x86::Membercall, MoreOptionsLayer, addToggle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1800, x86::Membercall, MoreOptionsLayer, onKeybindings)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1805, x86::Optcall, MoreOptionsLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1806, x86::Membercall, MoreOptionsLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1807, x86::Membercall, MoreOptionsLayer, addToggle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1808, x86::Membercall, MoreOptionsLayer, onKeybindings)
 	}
 };
 
@@ -778,15 +783,15 @@ struct Modify<Derived, CCMenuItemSpriteExtra> : ModifyBase<Modify<Derived, CCMen
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(757, x86::Optcall, CCMenuItemSpriteExtra, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(758, x86::Membercall, CCMenuItemSpriteExtra, setSizeMult)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(759, x86::Membercall, CCMenuItemSpriteExtra, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(758, x86::Optcall, CCMenuItemSpriteExtra, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(759, x86::Membercall, CCMenuItemSpriteExtra, setSizeMult)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(760, x86::Membercall, CCMenuItemSpriteExtra, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(761, x86::Membercall, CCMenuItemSpriteExtra, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(761, x86::Membercall, CCMenuItemSpriteExtra, destructor)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(762, x86::Membercall, CCMenuItemSpriteExtra, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(763, x86::Membercall, CCMenuItemSpriteExtra, activate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(764, x86::Membercall, CCMenuItemSpriteExtra, selected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(765, x86::Membercall, CCMenuItemSpriteExtra, unselected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(763, x86::Membercall, CCMenuItemSpriteExtra, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(764, x86::Membercall, CCMenuItemSpriteExtra, activate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(765, x86::Membercall, CCMenuItemSpriteExtra, selected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(766, x86::Membercall, CCMenuItemSpriteExtra, unselected)
 	}
 };
 
@@ -829,11 +834,11 @@ struct Modify<Derived, ColorChannelSprite> : ModifyBase<Modify<Derived, ColorCha
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(855, x86::Membercall, ColorChannelSprite, updateBlending)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(856, x86::Membercall, ColorChannelSprite, updateCopyLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(857, x86::Membercall, ColorChannelSprite, updateOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(858, x86::Membercall, ColorChannelSprite, updateValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(859, x86::Optcall, ColorChannelSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(856, x86::Membercall, ColorChannelSprite, updateBlending)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(857, x86::Membercall, ColorChannelSprite, updateCopyLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(858, x86::Membercall, ColorChannelSprite, updateOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(859, x86::Membercall, ColorChannelSprite, updateValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(860, x86::Optcall, ColorChannelSprite, create)
 	}
 };
 
@@ -844,8 +849,8 @@ struct Modify<Derived, cocos2d::CCSet> : ModifyBase<Modify<Derived, cocos2d::CCS
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(448, x86::Thiscall, cocos2d::CCSet, acceptVisitor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(449, x86::Thiscall, cocos2d::CCSet, anyObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(449, x86::Thiscall, cocos2d::CCSet, acceptVisitor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(450, x86::Thiscall, cocos2d::CCSet, anyObject)
 	}
 };
 
@@ -856,8 +861,8 @@ struct Modify<Derived, TableView> : ModifyBase<Modify<Derived, TableView>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2277, x86::Optcall, TableView, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2278, x86::Membercall, TableView, reloadData)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2285, x86::Optcall, TableView, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2286, x86::Membercall, TableView, reloadData)
 	}
 };
 
@@ -878,8 +883,8 @@ struct Modify<Derived, AchievementsLayer> : ModifyBase<Modify<Derived, Achieveme
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(668, x86::Membercall, AchievementsLayer, customSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(669, x86::Membercall, AchievementsLayer, loadPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(669, x86::Membercall, AchievementsLayer, customSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(670, x86::Membercall, AchievementsLayer, loadPage)
 	}
 };
 
@@ -903,12 +908,12 @@ struct Modify<Derived, InfoLayer> : ModifyBase<Modify<Derived, InfoLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1623, x86::Membercall, InfoLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1624, x86::Membercall, InfoLayer, setupCommentsBrowser)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1625, x86::Membercall, InfoLayer, onMore)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1626, x86::Membercall, InfoLayer, onLevelInfo)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1627, x86::Membercall, InfoLayer, loadPage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1628, x86::Optcall, InfoLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1631, x86::Membercall, InfoLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1632, x86::Membercall, InfoLayer, setupCommentsBrowser)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1633, x86::Membercall, InfoLayer, onMore)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1634, x86::Membercall, InfoLayer, onLevelInfo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1635, x86::Membercall, InfoLayer, loadPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1636, x86::Optcall, InfoLayer, create)
 	}
 };
 
@@ -950,7 +955,7 @@ struct Modify<Derived, CommentCell> : ModifyBase<Modify<Derived, CommentCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(865, x86::Membercall, CommentCell, loadFromComment)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(866, x86::Membercall, CommentCell, loadFromComment)
 	}
 };
 
@@ -961,8 +966,8 @@ struct Modify<Derived, ArtistCell> : ModifyBase<Modify<Derived, ArtistCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(690, x86::Membercall, ArtistCell, loadFromObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(692, x86::Membercall, ArtistCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(691, x86::Membercall, ArtistCell, loadFromObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(693, x86::Membercall, ArtistCell, updateBGColor)
 	}
 };
 
@@ -1020,9 +1025,9 @@ struct Modify<Derived, GaragePage> : ModifyBase<Modify<Derived, GaragePage>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1603, x86::Membercall, GaragePage, listButtonBarSwitchedPage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1604, x86::Membercall, GaragePage, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1605, x86::Membercall, GaragePage, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1611, x86::Membercall, GaragePage, listButtonBarSwitchedPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1612, x86::Membercall, GaragePage, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1613, x86::Membercall, GaragePage, init)
 	}
 };
 
@@ -1033,14 +1038,14 @@ struct Modify<Derived, CCMenuItemToggler> : ModifyBase<Modify<Derived, CCMenuIte
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(772, x86::Optcall, CCMenuItemToggler, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(773, x86::Membercall, CCMenuItemToggler, setSizeMult)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(774, x86::Membercall, CCMenuItemToggler, toggle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(775, x86::Membercall, CCMenuItemToggler, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(776, x86::Membercall, CCMenuItemToggler, activate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(777, x86::Membercall, CCMenuItemToggler, selected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(778, x86::Membercall, CCMenuItemToggler, unselected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(779, x86::Membercall, CCMenuItemToggler, setEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(773, x86::Optcall, CCMenuItemToggler, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(774, x86::Membercall, CCMenuItemToggler, setSizeMult)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(775, x86::Membercall, CCMenuItemToggler, toggle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(776, x86::Membercall, CCMenuItemToggler, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(777, x86::Membercall, CCMenuItemToggler, activate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(778, x86::Membercall, CCMenuItemToggler, selected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(779, x86::Membercall, CCMenuItemToggler, unselected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(780, x86::Membercall, CCMenuItemToggler, setEnabled)
 	}
 };
 
@@ -1456,7 +1461,8 @@ struct Modify<Derived, cocos2d::CCScheduler> : ModifyBase<Modify<Derived, cocos2
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(441, x86::Thiscall, cocos2d::CCScheduler, scheduleSelector)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(442, x86::Thiscall, cocos2d::CCScheduler, scheduleUpdateForTarget)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(443, x86::Thiscall, cocos2d::CCScheduler, unscheduleAllForTarget)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(444, x86::Thiscall, cocos2d::CCScheduler, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(444, x86::Thiscall, cocos2d::CCScheduler, unscheduleUpdateForTarget)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(445, x86::Thiscall, cocos2d::CCScheduler, update)
 	}
 };
 
@@ -1467,7 +1473,7 @@ struct Modify<Derived, cocos2d::CCSequence> : ModifyBase<Modify<Derived, cocos2d
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(445, x86::Cdecl, cocos2d::CCSequence, createWithVariableList)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(446, x86::Cdecl, cocos2d::CCSequence, createWithVariableList)
 	}
 };
 
@@ -1478,68 +1484,68 @@ struct Modify<Derived, cocos2d::CCSprite> : ModifyBase<Modify<Derived, cocos2d::
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(451, x86::Thiscall, cocos2d::CCSprite, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(452, x86::Thiscall, cocos2d::CCSprite, setVertexZ)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(453, x86::Thiscall, cocos2d::CCSprite, setScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(454, x86::Thiscall, cocos2d::CCSprite, setScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(455, x86::Thiscall, cocos2d::CCSprite, setScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(456, x86::Thiscall, cocos2d::CCSprite, setPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(457, x86::Thiscall, cocos2d::CCSprite, setSkewX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(458, x86::Thiscall, cocos2d::CCSprite, setSkewY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(459, x86::Thiscall, cocos2d::CCSprite, setAnchorPoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(460, x86::Thiscall, cocos2d::CCSprite, setVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(461, x86::Thiscall, cocos2d::CCSprite, setRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(462, x86::Thiscall, cocos2d::CCSprite, setRotationX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(463, x86::Thiscall, cocos2d::CCSprite, setRotationY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(464, x86::Thiscall, cocos2d::CCSprite, ignoreAnchorPointForPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(465, x86::Thiscall, cocos2d::CCSprite, addChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(452, x86::Thiscall, cocos2d::CCSprite, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(453, x86::Thiscall, cocos2d::CCSprite, setVertexZ)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(454, x86::Thiscall, cocos2d::CCSprite, setScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(455, x86::Thiscall, cocos2d::CCSprite, setScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(456, x86::Thiscall, cocos2d::CCSprite, setScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(457, x86::Thiscall, cocos2d::CCSprite, setPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(458, x86::Thiscall, cocos2d::CCSprite, setSkewX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(459, x86::Thiscall, cocos2d::CCSprite, setSkewY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(460, x86::Thiscall, cocos2d::CCSprite, setAnchorPoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(461, x86::Thiscall, cocos2d::CCSprite, setVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(462, x86::Thiscall, cocos2d::CCSprite, setRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(463, x86::Thiscall, cocos2d::CCSprite, setRotationX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(464, x86::Thiscall, cocos2d::CCSprite, setRotationY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(465, x86::Thiscall, cocos2d::CCSprite, ignoreAnchorPointForPosition)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(466, x86::Thiscall, cocos2d::CCSprite, addChild)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(467, x86::Thiscall, cocos2d::CCSprite, addChild)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(468, x86::Thiscall, cocos2d::CCSprite, removeChild)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(469, x86::Thiscall, cocos2d::CCSprite, removeAllChildrenWithCleanup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(470, x86::Thiscall, cocos2d::CCSprite, reorderChild)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(471, x86::Thiscall, cocos2d::CCSprite, sortAllChildren)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(472, x86::Thiscall, cocos2d::CCSprite, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(473, x86::Thiscall, cocos2d::CCSprite, updateTransform)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(474, x86::Thiscall, cocos2d::CCSprite, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(475, x86::Thiscall, cocos2d::CCSprite, updateDisplayedOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(476, x86::Thiscall, cocos2d::CCSprite, setColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(477, x86::Thiscall, cocos2d::CCSprite, updateDisplayedColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(478, x86::Thiscall, cocos2d::CCSprite, setOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(479, x86::Thiscall, cocos2d::CCSprite, isOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(480, x86::Thiscall, cocos2d::CCSprite, initWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(468, x86::Thiscall, cocos2d::CCSprite, addChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(469, x86::Thiscall, cocos2d::CCSprite, removeChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(470, x86::Thiscall, cocos2d::CCSprite, removeAllChildrenWithCleanup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(471, x86::Thiscall, cocos2d::CCSprite, reorderChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(472, x86::Thiscall, cocos2d::CCSprite, sortAllChildren)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(473, x86::Thiscall, cocos2d::CCSprite, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(474, x86::Thiscall, cocos2d::CCSprite, updateTransform)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(475, x86::Thiscall, cocos2d::CCSprite, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(476, x86::Thiscall, cocos2d::CCSprite, updateDisplayedOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(477, x86::Thiscall, cocos2d::CCSprite, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(478, x86::Thiscall, cocos2d::CCSprite, updateDisplayedColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(479, x86::Thiscall, cocos2d::CCSprite, setOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(480, x86::Thiscall, cocos2d::CCSprite, isOpacityModifyRGB)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(481, x86::Thiscall, cocos2d::CCSprite, initWithTexture)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(482, x86::Thiscall, cocos2d::CCSprite, initWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(483, x86::Thiscall, cocos2d::CCSprite, initWithSpriteFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(484, x86::Thiscall, cocos2d::CCSprite, initWithSpriteFrameName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(485, x86::Thiscall, cocos2d::CCSprite, initWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(483, x86::Thiscall, cocos2d::CCSprite, initWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(484, x86::Thiscall, cocos2d::CCSprite, initWithSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(485, x86::Thiscall, cocos2d::CCSprite, initWithSpriteFrameName)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(486, x86::Thiscall, cocos2d::CCSprite, initWithFile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(487, x86::Thiscall, cocos2d::CCSprite, setTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(488, x86::Thiscall, cocos2d::CCSprite, getTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(489, x86::Thiscall, cocos2d::CCSprite, setChildColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(490, x86::Thiscall, cocos2d::CCSprite, setChildOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(491, x86::Thiscall, cocos2d::CCSprite, getBatchNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(492, x86::Thiscall, cocos2d::CCSprite, setBatchNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(493, x86::Thiscall, cocos2d::CCSprite, refreshTextureRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(494, x86::Thiscall, cocos2d::CCSprite, setTextureRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(487, x86::Thiscall, cocos2d::CCSprite, initWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(488, x86::Thiscall, cocos2d::CCSprite, setTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(489, x86::Thiscall, cocos2d::CCSprite, getTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(490, x86::Thiscall, cocos2d::CCSprite, setChildColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(491, x86::Thiscall, cocos2d::CCSprite, setChildOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(492, x86::Thiscall, cocos2d::CCSprite, getBatchNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(493, x86::Thiscall, cocos2d::CCSprite, setBatchNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(494, x86::Thiscall, cocos2d::CCSprite, refreshTextureRect)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(495, x86::Thiscall, cocos2d::CCSprite, setTextureRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(496, x86::Thiscall, cocos2d::CCSprite, setVertexRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(497, x86::Thiscall, cocos2d::CCSprite, setDisplayFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(498, x86::Thiscall, cocos2d::CCSprite, isFrameDisplayed)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(499, x86::Thiscall, cocos2d::CCSprite, displayFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(500, x86::Thiscall, cocos2d::CCSprite, setDisplayFrameWithAnimationName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(501, x86::Thiscall, cocos2d::CCSprite, setTextureCoords)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(502, x86::Thiscall, cocos2d::CCSprite, updateBlendFunc)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(503, x86::Thiscall, cocos2d::CCSprite, setReorderChildDirtyRecursively)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(504, x86::Thiscall, cocos2d::CCSprite, setDirtyRecursively)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(506, x86::Cdecl, cocos2d::CCSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(496, x86::Thiscall, cocos2d::CCSprite, setTextureRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(497, x86::Thiscall, cocos2d::CCSprite, setVertexRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(498, x86::Thiscall, cocos2d::CCSprite, setDisplayFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(499, x86::Thiscall, cocos2d::CCSprite, isFrameDisplayed)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(500, x86::Thiscall, cocos2d::CCSprite, displayFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(501, x86::Thiscall, cocos2d::CCSprite, setDisplayFrameWithAnimationName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(502, x86::Thiscall, cocos2d::CCSprite, setTextureCoords)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(503, x86::Thiscall, cocos2d::CCSprite, updateBlendFunc)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(504, x86::Thiscall, cocos2d::CCSprite, setReorderChildDirtyRecursively)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(505, x86::Thiscall, cocos2d::CCSprite, setDirtyRecursively)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(507, x86::Cdecl, cocos2d::CCSprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(508, x86::Cdecl, cocos2d::CCSprite, createWithSpriteFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(509, x86::Cdecl, cocos2d::CCSprite, createWithSpriteFrameName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(510, x86::Cdecl, cocos2d::CCSprite, createWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(508, x86::Cdecl, cocos2d::CCSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(509, x86::Cdecl, cocos2d::CCSprite, createWithSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(510, x86::Cdecl, cocos2d::CCSprite, createWithSpriteFrameName)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(511, x86::Cdecl, cocos2d::CCSprite, createWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(512, x86::Thiscall, cocos2d::CCSprite, setFlipX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(513, x86::Thiscall, cocos2d::CCSprite, setFlipY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(512, x86::Cdecl, cocos2d::CCSprite, createWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(513, x86::Thiscall, cocos2d::CCSprite, setFlipX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(514, x86::Thiscall, cocos2d::CCSprite, setFlipY)
 	}
 };
 
@@ -1550,10 +1556,10 @@ struct Modify<Derived, LevelSearchLayer> : ModifyBase<Modify<Derived, LevelSearc
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1739, x86::Optcall, LevelSearchLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1740, x86::Membercall, LevelSearchLayer, getSearchObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1741, x86::Membercall, LevelSearchLayer, onMoreOptions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1742, x86::Membercall, LevelSearchLayer, onSearch)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1747, x86::Optcall, LevelSearchLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1748, x86::Membercall, LevelSearchLayer, getSearchObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1749, x86::Membercall, LevelSearchLayer, onMoreOptions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1750, x86::Membercall, LevelSearchLayer, onSearch)
 	}
 };
 
@@ -1564,8 +1570,8 @@ struct Modify<Derived, cocos2d::CCStandardTouchHandler> : ModifyBase<Modify<Deri
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(524, x86::Cdecl, cocos2d::CCStandardTouchHandler, handlerWithDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(525, x86::Thiscall, cocos2d::CCStandardTouchHandler, initWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(525, x86::Cdecl, cocos2d::CCStandardTouchHandler, handlerWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(526, x86::Thiscall, cocos2d::CCStandardTouchHandler, initWithDelegate)
 	}
 };
 
@@ -1586,10 +1592,10 @@ struct Modify<Derived, MusicDownloadManager> : ModifyBase<Modify<Derived, MusicD
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1811, x86::Optcall, MusicDownloadManager, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1812, x86::Membercall, MusicDownloadManager, pathForSong)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1813, x86::Membercall, MusicDownloadManager, getDownloadedSongs)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1814, x86::Membercall, MusicDownloadManager, songStateChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1819, x86::Optcall, MusicDownloadManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1820, x86::Membercall, MusicDownloadManager, pathForSong)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1821, x86::Membercall, MusicDownloadManager, getDownloadedSongs)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1822, x86::Membercall, MusicDownloadManager, songStateChanged)
 	}
 };
 
@@ -1600,14 +1606,14 @@ struct Modify<Derived, cocos2d::CCString> : ModifyBase<Modify<Derived, cocos2d::
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(527, x86::Thiscall, cocos2d::CCString, isEqual)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(528, x86::Thiscall, cocos2d::CCString, acceptVisitor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(529, x86::Thiscall, cocos2d::CCString, copyWithZone)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(530, x86::Thiscall, cocos2d::CCString, boolValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(531, x86::Thiscall, cocos2d::CCString, doubleValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(532, x86::Thiscall, cocos2d::CCString, floatValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(533, x86::Thiscall, cocos2d::CCString, getCString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(534, x86::Thiscall, cocos2d::CCString, intValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(528, x86::Thiscall, cocos2d::CCString, isEqual)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(529, x86::Thiscall, cocos2d::CCString, acceptVisitor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(530, x86::Thiscall, cocos2d::CCString, copyWithZone)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(531, x86::Thiscall, cocos2d::CCString, boolValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(532, x86::Thiscall, cocos2d::CCString, doubleValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(533, x86::Thiscall, cocos2d::CCString, floatValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(534, x86::Thiscall, cocos2d::CCString, getCString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(535, x86::Thiscall, cocos2d::CCString, intValue)
 	}
 };
 
@@ -1618,8 +1624,8 @@ struct Modify<Derived, GJUserScore> : ModifyBase<Modify<Derived, GJUserScore>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1353, x86::Optcall, GJUserScore, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1354, x86::Optcall, GJUserScore, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1359, x86::Optcall, GJUserScore, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1360, x86::Optcall, GJUserScore, create)
 	}
 };
 
@@ -1630,8 +1636,8 @@ struct Modify<Derived, cocos2d::CCTargetedTouchHandler> : ModifyBase<Modify<Deri
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(535, x86::Cdecl, cocos2d::CCTargetedTouchHandler, handlerWithDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(536, x86::Thiscall, cocos2d::CCTargetedTouchHandler, initWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(536, x86::Cdecl, cocos2d::CCTargetedTouchHandler, handlerWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(537, x86::Thiscall, cocos2d::CCTargetedTouchHandler, initWithDelegate)
 	}
 };
 
@@ -1652,23 +1658,23 @@ struct Modify<Derived, cocos2d::CCTexture2D> : ModifyBase<Modify<Derived, cocos2
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(540, x86::Thiscall, cocos2d::CCTexture2D, getContentSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(541, x86::Thiscall, cocos2d::CCTexture2D, getMaxS)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(542, x86::Thiscall, cocos2d::CCTexture2D, getMaxT)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(543, x86::Thiscall, cocos2d::CCTexture2D, getName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(544, x86::Thiscall, cocos2d::CCTexture2D, getPixelFormat)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(545, x86::Thiscall, cocos2d::CCTexture2D, getPixelsHigh)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(546, x86::Thiscall, cocos2d::CCTexture2D, getPixelsWide)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(547, x86::Thiscall, cocos2d::CCTexture2D, getShaderProgram)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(548, x86::Thiscall, cocos2d::CCTexture2D, initPremultipliedATextureWithImage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(549, x86::Thiscall, cocos2d::CCTexture2D, initWithData)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(550, x86::Thiscall, cocos2d::CCTexture2D, setAliasTexParameters)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(551, x86::Thiscall, cocos2d::CCTexture2D, setAntiAliasTexParameters)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(552, x86::Thiscall, cocos2d::CCTexture2D, setMaxS)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(553, x86::Thiscall, cocos2d::CCTexture2D, setMaxT)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(554, x86::Thiscall, cocos2d::CCTexture2D, setShaderProgram)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(555, x86::Thiscall, cocos2d::CCTexture2D, initWithImage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(556, x86::Thiscall, cocos2d::CCTexture2D, setTexParameters)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(541, x86::Thiscall, cocos2d::CCTexture2D, getContentSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(542, x86::Thiscall, cocos2d::CCTexture2D, getMaxS)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(543, x86::Thiscall, cocos2d::CCTexture2D, getMaxT)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(544, x86::Thiscall, cocos2d::CCTexture2D, getName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(545, x86::Thiscall, cocos2d::CCTexture2D, getPixelFormat)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(546, x86::Thiscall, cocos2d::CCTexture2D, getPixelsHigh)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(547, x86::Thiscall, cocos2d::CCTexture2D, getPixelsWide)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(548, x86::Thiscall, cocos2d::CCTexture2D, getShaderProgram)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(549, x86::Thiscall, cocos2d::CCTexture2D, initPremultipliedATextureWithImage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(550, x86::Thiscall, cocos2d::CCTexture2D, initWithData)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(551, x86::Thiscall, cocos2d::CCTexture2D, setAliasTexParameters)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(552, x86::Thiscall, cocos2d::CCTexture2D, setAntiAliasTexParameters)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(553, x86::Thiscall, cocos2d::CCTexture2D, setMaxS)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(554, x86::Thiscall, cocos2d::CCTexture2D, setMaxT)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(555, x86::Thiscall, cocos2d::CCTexture2D, setShaderProgram)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(556, x86::Thiscall, cocos2d::CCTexture2D, initWithImage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(557, x86::Thiscall, cocos2d::CCTexture2D, setTexParameters)
 	}
 };
 
@@ -1689,7 +1695,7 @@ struct Modify<Derived, cocos2d::CCTextFieldTTF> : ModifyBase<Modify<Derived, coc
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(557, x86::Cdecl, cocos2d::CCTextFieldTTF, textFieldWithPlaceHolder)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(558, x86::Cdecl, cocos2d::CCTextFieldTTF, textFieldWithPlaceHolder)
 	}
 };
 
@@ -1710,9 +1716,9 @@ struct Modify<Derived, cocos2d::CCTextureCache> : ModifyBase<Modify<Derived, coc
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(558, x86::Thiscall, cocos2d::CCTextureCache, addImage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(559, x86::Thiscall, cocos2d::CCTextureCache, textureForKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(560, x86::Cdecl, cocos2d::CCTextureCache, sharedTextureCache)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(559, x86::Thiscall, cocos2d::CCTextureCache, addImage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(560, x86::Thiscall, cocos2d::CCTextureCache, textureForKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(561, x86::Cdecl, cocos2d::CCTextureCache, sharedTextureCache)
 	}
 };
 
@@ -1723,7 +1729,7 @@ struct Modify<Derived, cocos2d::CCTime> : ModifyBase<Modify<Derived, cocos2d::CC
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(561, x86::Cdecl, cocos2d::CCTime, gettimeofdayCocos2d)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(562, x86::Cdecl, cocos2d::CCTime, gettimeofdayCocos2d)
 	}
 };
 
@@ -1734,13 +1740,13 @@ struct Modify<Derived, PauseLayer> : ModifyBase<Modify<Derived, PauseLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1841, x86::Optcall, PauseLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1842, x86::Membercall, PauseLayer, onEdit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1843, x86::Membercall, PauseLayer, onQuit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1844, x86::Membercall, PauseLayer, createToggleButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1845, x86::Thiscall, PauseLayer, customSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1846, x86::Membercall, PauseLayer, onRestart)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1847, x86::Membercall, PauseLayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1849, x86::Optcall, PauseLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1850, x86::Membercall, PauseLayer, onEdit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1851, x86::Membercall, PauseLayer, onQuit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1852, x86::Membercall, PauseLayer, createToggleButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1853, x86::Thiscall, PauseLayer, customSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1854, x86::Membercall, PauseLayer, onRestart)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1855, x86::Membercall, PauseLayer, keyDown)
 	}
 };
 
@@ -1751,7 +1757,7 @@ struct Modify<Derived, cocos2d::CCTintTo> : ModifyBase<Modify<Derived, cocos2d::
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(562, x86::Cdecl, cocos2d::CCTintTo, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(563, x86::Cdecl, cocos2d::CCTintTo, create)
 	}
 };
 
@@ -1762,9 +1768,14 @@ struct Modify<Derived, GameSoundManager> : ModifyBase<Modify<Derived, GameSoundM
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1575, x86::Membercall, GameSoundManager, playEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1576, x86::Membercall, GameSoundManager, stopBackgroundMusic)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1578, x86::Optcall, GameSoundManager, sharedManager)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1578, x86::Membercall, GameSoundManager, disableMetering)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1579, x86::Membercall, GameSoundManager, enableMetering)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1581, x86::Membercall, GameSoundManager, playBackgroundMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1582, x86::Membercall, GameSoundManager, playEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1583, x86::Membercall, GameSoundManager, stopBackgroundMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1584, x86::Membercall, GameSoundManager, asynchronousSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1585, x86::Membercall, GameSoundManager, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1586, x86::Optcall, GameSoundManager, sharedManager)
 	}
 };
 
@@ -1775,10 +1786,10 @@ struct Modify<Derived, cocos2d::CCTouch> : ModifyBase<Modify<Derived, cocos2d::C
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(563, x86::Thiscall, cocos2d::CCTouch, getDelta)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(564, x86::Thiscall, cocos2d::CCTouch, getLocationInView)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(565, x86::Thiscall, cocos2d::CCTouch, getPreviousLocationInView)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(566, x86::Thiscall, cocos2d::CCTouch, getLocation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(564, x86::Thiscall, cocos2d::CCTouch, getDelta)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(565, x86::Thiscall, cocos2d::CCTouch, getLocationInView)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(566, x86::Thiscall, cocos2d::CCTouch, getPreviousLocationInView)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(567, x86::Thiscall, cocos2d::CCTouch, getLocation)
 	}
 };
 
@@ -1789,12 +1800,12 @@ struct Modify<Derived, cocos2d::CCTouchDispatcher> : ModifyBase<Modify<Derived, 
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(567, x86::Thiscall, cocos2d::CCTouchDispatcher, addTargetedDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(568, x86::Thiscall, cocos2d::CCTouchDispatcher, addStandardDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(569, x86::Thiscall, cocos2d::CCTouchDispatcher, removeDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(570, x86::Thiscall, cocos2d::CCTouchDispatcher, decrementForcePrio)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(571, x86::Thiscall, cocos2d::CCTouchDispatcher, incrementForcePrio)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(572, x86::Thiscall, cocos2d::CCTouchDispatcher, touches)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(568, x86::Thiscall, cocos2d::CCTouchDispatcher, addTargetedDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(569, x86::Thiscall, cocos2d::CCTouchDispatcher, addStandardDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(570, x86::Thiscall, cocos2d::CCTouchDispatcher, removeDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(571, x86::Thiscall, cocos2d::CCTouchDispatcher, decrementForcePrio)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(572, x86::Thiscall, cocos2d::CCTouchDispatcher, incrementForcePrio)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(573, x86::Thiscall, cocos2d::CCTouchDispatcher, touches)
 	}
 };
 
@@ -1805,8 +1816,8 @@ struct Modify<Derived, cocos2d::CCTouchHandler> : ModifyBase<Modify<Derived, coc
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(574, x86::Thiscall, cocos2d::CCTouchHandler, initWithDelegate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(575, x86::Thiscall, cocos2d::CCTouchHandler, getPriority)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(575, x86::Thiscall, cocos2d::CCTouchHandler, initWithDelegate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(576, x86::Thiscall, cocos2d::CCTouchHandler, getPriority)
 	}
 };
 
@@ -1817,7 +1828,7 @@ struct Modify<Derived, cocos2d::CCTransitionFade> : ModifyBase<Modify<Derived, c
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(577, x86::Cdecl, cocos2d::CCTransitionFade, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(578, x86::Cdecl, cocos2d::CCTransitionFade, create)
 	}
 };
 
@@ -1828,19 +1839,19 @@ struct Modify<Derived, GameLevelManager> : ModifyBase<Modify<Derived, GameLevelM
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1363, x86::Membercall, GameLevelManager, createAndGetScores)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1364, x86::Membercall, GameLevelManager, createNewLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1365, x86::Optcall, GameLevelManager, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1366, x86::Membercall, GameLevelManager, getCompletedLevels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1367, x86::Membercall, GameLevelManager, getGJUserInfo)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1368, x86::Membercall, GameLevelManager, getOnlineLevels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1370, x86::Membercall, GameLevelManager, getSavedLevels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1371, x86::Membercall, GameLevelManager, getStoredOnlineLevels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1375, x86::Membercall, GameLevelManager, getMainLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1376, x86::Membercall, GameLevelManager, responseToDict)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1377, x86::Membercall, GameLevelManager, storeUserNames)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1378, x86::Membercall, GameLevelManager, userNameForUserID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1379, x86::Membercall, GameLevelManager, updateUserScore)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1369, x86::Membercall, GameLevelManager, createAndGetScores)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1370, x86::Membercall, GameLevelManager, createNewLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1371, x86::Optcall, GameLevelManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1372, x86::Membercall, GameLevelManager, getCompletedLevels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1373, x86::Membercall, GameLevelManager, getGJUserInfo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1374, x86::Membercall, GameLevelManager, getOnlineLevels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1376, x86::Membercall, GameLevelManager, getSavedLevels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1377, x86::Membercall, GameLevelManager, getStoredOnlineLevels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1381, x86::Membercall, GameLevelManager, getMainLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1382, x86::Membercall, GameLevelManager, responseToDict)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1383, x86::Membercall, GameLevelManager, storeUserNames)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1384, x86::Membercall, GameLevelManager, userNameForUserID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1385, x86::Membercall, GameLevelManager, updateUserScore)
 	}
 };
 
@@ -1851,10 +1862,10 @@ struct Modify<Derived, cocos2d::extension::CCControlColourPicker> : ModifyBase<M
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(598, x86::Thiscall, cocos2d::extension::CCControlColourPicker, setColorValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(599, x86::Thiscall, cocos2d::extension::CCControlColourPicker, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(600, x86::Thiscall, cocos2d::extension::CCControlColourPicker, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(601, x86::Cdecl, cocos2d::extension::CCControlColourPicker, colourPicker)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(599, x86::Thiscall, cocos2d::extension::CCControlColourPicker, setColorValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(600, x86::Thiscall, cocos2d::extension::CCControlColourPicker, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(601, x86::Thiscall, cocos2d::extension::CCControlColourPicker, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(602, x86::Cdecl, cocos2d::extension::CCControlColourPicker, colourPicker)
 	}
 };
 
@@ -1865,8 +1876,8 @@ struct Modify<Derived, cocos2d::extension::CCControlUtils> : ModifyBase<Modify<D
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(602, x86::Cdecl, cocos2d::extension::CCControlUtils, HSVfromRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(603, x86::Cdecl, cocos2d::extension::CCControlUtils, RGBfromHSV)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(603, x86::Cdecl, cocos2d::extension::CCControlUtils, HSVfromRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(604, x86::Cdecl, cocos2d::extension::CCControlUtils, RGBfromHSV)
 	}
 };
 
@@ -1897,43 +1908,43 @@ struct Modify<Derived, cocos2d::extension::CCScale9Sprite> : ModifyBase<Modify<D
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(605, x86::Cdecl, cocos2d::extension::CCScale9Sprite, create)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(606, x86::Cdecl, cocos2d::extension::CCScale9Sprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(608, x86::Thiscall, cocos2d::extension::CCScale9Sprite, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(609, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setContentSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(610, x86::Thiscall, cocos2d::extension::CCScale9Sprite, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(611, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(612, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(613, x86::Thiscall, cocos2d::extension::CCScale9Sprite, updateDisplayedOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(614, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(615, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(616, x86::Thiscall, cocos2d::extension::CCScale9Sprite, updateDisplayedColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(617, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(618, x86::Thiscall, cocos2d::extension::CCScale9Sprite, isOpacityModifyRGB)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(619, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getPreferredSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(620, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setPreferredSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(621, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getCapInsets)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(622, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setCapInsets)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(623, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getInsetLeft)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(624, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setInsetLeft)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(625, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getInsetTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(626, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setInsetTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(627, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getInsetRight)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(628, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setInsetRight)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(629, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getInsetBottom)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(630, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setInsetBottom)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(631, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithBatchNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(607, x86::Cdecl, cocos2d::extension::CCScale9Sprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(609, x86::Thiscall, cocos2d::extension::CCScale9Sprite, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(610, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setContentSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(611, x86::Thiscall, cocos2d::extension::CCScale9Sprite, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(612, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(613, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(614, x86::Thiscall, cocos2d::extension::CCScale9Sprite, updateDisplayedOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(615, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(616, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(617, x86::Thiscall, cocos2d::extension::CCScale9Sprite, updateDisplayedColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(618, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(619, x86::Thiscall, cocos2d::extension::CCScale9Sprite, isOpacityModifyRGB)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(620, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getPreferredSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(621, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setPreferredSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(622, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getCapInsets)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(623, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setCapInsets)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(624, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getInsetLeft)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(625, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setInsetLeft)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(626, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getInsetTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(627, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setInsetTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(628, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getInsetRight)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(629, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setInsetRight)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(630, x86::Thiscall, cocos2d::extension::CCScale9Sprite, getInsetBottom)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(631, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setInsetBottom)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(632, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithBatchNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(633, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(633, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithBatchNode)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(634, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithFile)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(635, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithFile)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(636, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithFile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(637, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(637, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithFile)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(638, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithSpriteFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(639, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithSpriteFrameName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(639, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithSpriteFrame)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(640, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithSpriteFrameName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(641, x86::Thiscall, cocos2d::extension::CCScale9Sprite, updateWithBatchNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(642, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(641, x86::Thiscall, cocos2d::extension::CCScale9Sprite, initWithSpriteFrameName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(642, x86::Thiscall, cocos2d::extension::CCScale9Sprite, updateWithBatchNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(643, x86::Thiscall, cocos2d::extension::CCScale9Sprite, setSpriteFrame)
 	}
 };
 
@@ -1944,19 +1955,19 @@ struct Modify<Derived, cocos2d::extension::CCScrollView> : ModifyBase<Modify<Der
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(645, x86::Thiscall, cocos2d::extension::CCScrollView, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(646, x86::Thiscall, cocos2d::extension::CCScrollView, setContentSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(647, x86::Thiscall, cocos2d::extension::CCScrollView, getContentSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(648, x86::Thiscall, cocos2d::extension::CCScrollView, addChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(646, x86::Thiscall, cocos2d::extension::CCScrollView, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(647, x86::Thiscall, cocos2d::extension::CCScrollView, setContentSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(648, x86::Thiscall, cocos2d::extension::CCScrollView, getContentSize)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(649, x86::Thiscall, cocos2d::extension::CCScrollView, addChild)
 		GEODE_APPLY_MODIFY_FOR_FUNCTION(650, x86::Thiscall, cocos2d::extension::CCScrollView, addChild)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(651, x86::Thiscall, cocos2d::extension::CCScrollView, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(652, x86::Thiscall, cocos2d::extension::CCScrollView, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(653, x86::Thiscall, cocos2d::extension::CCScrollView, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(654, x86::Thiscall, cocos2d::extension::CCScrollView, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(655, x86::Thiscall, cocos2d::extension::CCScrollView, ccTouchCancelled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(656, x86::Thiscall, cocos2d::extension::CCScrollView, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(657, x86::Thiscall, cocos2d::extension::CCScrollView, setTouchEnabled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(651, x86::Thiscall, cocos2d::extension::CCScrollView, addChild)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(652, x86::Thiscall, cocos2d::extension::CCScrollView, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(653, x86::Thiscall, cocos2d::extension::CCScrollView, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(654, x86::Thiscall, cocos2d::extension::CCScrollView, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(655, x86::Thiscall, cocos2d::extension::CCScrollView, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(656, x86::Thiscall, cocos2d::extension::CCScrollView, ccTouchCancelled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(657, x86::Thiscall, cocos2d::extension::CCScrollView, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(658, x86::Thiscall, cocos2d::extension::CCScrollView, setTouchEnabled)
 	}
 };
 
@@ -1967,7 +1978,7 @@ struct Modify<Derived, MapPackCell> : ModifyBase<Modify<Derived, MapPackCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1769, x86::Membercall, MapPackCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1777, x86::Membercall, MapPackCell, updateBGColor)
 	}
 };
 
@@ -1988,7 +1999,7 @@ struct Modify<Derived, AchievementBar> : ModifyBase<Modify<Derived, AchievementB
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(660, x86::Optcall, AchievementBar, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(661, x86::Optcall, AchievementBar, create)
 	}
 };
 
@@ -2009,7 +2020,7 @@ struct Modify<Derived, AchievementManager> : ModifyBase<Modify<Derived, Achievem
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(663, x86::Optcall, AchievementManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(664, x86::Optcall, AchievementManager, sharedState)
 	}
 };
 
@@ -2030,9 +2041,9 @@ struct Modify<Derived, AchievementNotifier> : ModifyBase<Modify<Derived, Achieve
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(665, x86::Optcall, AchievementNotifier, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(666, x86::Membercall, AchievementNotifier, willSwitchToScene)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(667, x86::Membercall, AchievementNotifier, showNextAchievement)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(666, x86::Optcall, AchievementNotifier, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(667, x86::Membercall, AchievementNotifier, willSwitchToScene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(668, x86::Membercall, AchievementNotifier, showNextAchievement)
 	}
 };
 
@@ -2053,6 +2064,7 @@ struct Modify<Derived, AnimatedGameObject> : ModifyBase<Modify<Derived, Animated
 	static void apply() {
 		using namespace geode::core::meta;
 
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(672, x86::Membercall, AnimatedGameObject, updateChildSpriteColor)
 	}
 };
 
@@ -2063,8 +2075,8 @@ struct Modify<Derived, AnimatedShopKeeper> : ModifyBase<Modify<Derived, Animated
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(673, x86::Optcall, AnimatedShopKeeper, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(674, x86::Membercall, AnimatedShopKeeper, startAnimating)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(674, x86::Optcall, AnimatedShopKeeper, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(675, x86::Membercall, AnimatedShopKeeper, startAnimating)
 	}
 };
 
@@ -2075,17 +2087,17 @@ struct Modify<Derived, AppDelegate> : ModifyBase<Modify<Derived, AppDelegate>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(676, x86::Thiscall, AppDelegate, applicationDidFinishLaunching)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(677, x86::Thiscall, AppDelegate, applicationDidEnterBackground)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(678, x86::Thiscall, AppDelegate, applicationWillEnterForeground)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(679, x86::Thiscall, AppDelegate, applicationWillBecomeActive)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(680, x86::Thiscall, AppDelegate, applicationWillResignActive)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(681, x86::Thiscall, AppDelegate, trySaveGame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(682, x86::Thiscall, AppDelegate, willSwitchToScene)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(684, x86::Membercall, AppDelegate, musicTest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(685, x86::Membercall, AppDelegate, pauseGame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(686, x86::Membercall, AppDelegate, resumeSound)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(687, x86::Membercall, AppDelegate, setupGLView)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(677, x86::Thiscall, AppDelegate, applicationDidFinishLaunching)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(678, x86::Thiscall, AppDelegate, applicationDidEnterBackground)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(679, x86::Thiscall, AppDelegate, applicationWillEnterForeground)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(680, x86::Thiscall, AppDelegate, applicationWillBecomeActive)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(681, x86::Thiscall, AppDelegate, applicationWillResignActive)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(682, x86::Thiscall, AppDelegate, trySaveGame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(683, x86::Thiscall, AppDelegate, willSwitchToScene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(685, x86::Membercall, AppDelegate, musicTest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(686, x86::Membercall, AppDelegate, pauseGame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(687, x86::Membercall, AppDelegate, resumeSound)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(688, x86::Membercall, AppDelegate, setupGLView)
 	}
 };
 
@@ -2106,27 +2118,27 @@ struct Modify<Derived, MenuLayer> : ModifyBase<Modify<Derived, MenuLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1773, x86::Thiscall, MenuLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1774, x86::Thiscall, MenuLayer, keyBackClicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1775, x86::Thiscall, MenuLayer, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1777, x86::Thiscall, MenuLayer, FLAlert_Clicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1778, x86::Membercall, MenuLayer, onMoreGames)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1779, x86::Membercall, MenuLayer, onGarage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1780, x86::Membercall, MenuLayer, onQuit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1781, x86::Membercall, MenuLayer, onMyProfile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1782, x86::Membercall, MenuLayer, onPlay)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1783, x86::Membercall, MenuLayer, onCreator)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1784, x86::Membercall, MenuLayer, onRobTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1785, x86::Membercall, MenuLayer, onNewgrounds)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1786, x86::Membercall, MenuLayer, onDaily)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1787, x86::Membercall, MenuLayer, onOptions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1788, x86::Membercall, MenuLayer, onAchievements)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1789, x86::Membercall, MenuLayer, onStats)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1790, x86::Membercall, MenuLayer, onFacebook)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1791, x86::Membercall, MenuLayer, onTwitter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1792, x86::Membercall, MenuLayer, onYouTube)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1793, x86::Optcall, MenuLayer, scene)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1794, x86::Membercall, MenuLayer, node)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1781, x86::Thiscall, MenuLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1782, x86::Thiscall, MenuLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1783, x86::Thiscall, MenuLayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1785, x86::Thiscall, MenuLayer, FLAlert_Clicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1786, x86::Membercall, MenuLayer, onMoreGames)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1787, x86::Membercall, MenuLayer, onGarage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1788, x86::Membercall, MenuLayer, onQuit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1789, x86::Membercall, MenuLayer, onMyProfile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1790, x86::Membercall, MenuLayer, onPlay)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1791, x86::Membercall, MenuLayer, onCreator)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1792, x86::Membercall, MenuLayer, onRobTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1793, x86::Membercall, MenuLayer, onNewgrounds)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1794, x86::Membercall, MenuLayer, onDaily)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1795, x86::Membercall, MenuLayer, onOptions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1796, x86::Membercall, MenuLayer, onAchievements)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1797, x86::Membercall, MenuLayer, onStats)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1798, x86::Membercall, MenuLayer, onFacebook)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1799, x86::Membercall, MenuLayer, onTwitter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1800, x86::Membercall, MenuLayer, onYouTube)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1801, x86::Optcall, MenuLayer, scene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1802, x86::Membercall, MenuLayer, node)
 	}
 };
 
@@ -2137,14 +2149,14 @@ struct Modify<Derived, BoomListView> : ModifyBase<Modify<Derived, BoomListView>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(697, x86::Membercall, BoomListView, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(699, x86::Thiscall, BoomListView, setupList)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(701, x86::Thiscall, BoomListView, cellHeightForRowAtIndexPath)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(703, x86::Thiscall, BoomListView, numberOfRowsInSection)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(704, x86::Thiscall, BoomListView, numberOfSectionsInTableView)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(705, x86::Thiscall, BoomListView, cellForRowAtIndexPath)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(708, x86::Thiscall, BoomListView, getListCell)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(709, x86::Thiscall, BoomListView, loadCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(698, x86::Membercall, BoomListView, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(700, x86::Thiscall, BoomListView, setupList)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(702, x86::Thiscall, BoomListView, cellHeightForRowAtIndexPath)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(704, x86::Thiscall, BoomListView, numberOfRowsInSection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(705, x86::Thiscall, BoomListView, numberOfSectionsInTableView)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(706, x86::Thiscall, BoomListView, cellForRowAtIndexPath)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(709, x86::Thiscall, BoomListView, getListCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(710, x86::Thiscall, BoomListView, loadCell)
 	}
 };
 
@@ -2155,8 +2167,8 @@ struct Modify<Derived, BoomScrollLayer> : ModifyBase<Modify<Derived, BoomScrollL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(711, x86::Membercall, BoomScrollLayer, instantMoveToPage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(712, x86::Membercall, BoomScrollLayer, moveToPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(712, x86::Membercall, BoomScrollLayer, instantMoveToPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(713, x86::Membercall, BoomScrollLayer, moveToPage)
 	}
 };
 
@@ -2167,11 +2179,11 @@ struct Modify<Derived, ButtonSprite> : ModifyBase<Modify<Derived, ButtonSprite>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(713, x86::Optcall, ButtonSprite, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(716, x86::Membercall, ButtonSprite, updateBGImage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(718, x86::Membercall, ButtonSprite, setString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(719, x86::Membercall, ButtonSprite, updateSpriteBGSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(720, x86::Membercall, ButtonSprite, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(714, x86::Optcall, ButtonSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(717, x86::Membercall, ButtonSprite, updateBGImage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(719, x86::Membercall, ButtonSprite, setString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(720, x86::Membercall, ButtonSprite, updateSpriteBGSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(721, x86::Membercall, ButtonSprite, setColor)
 	}
 };
 
@@ -2192,8 +2204,8 @@ struct Modify<Derived, CCAnimatedSprite> : ModifyBase<Modify<Derived, CCAnimated
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(721, x86::Membercall, CCAnimatedSprite, runAnimation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(723, x86::Optcall, CCAnimatedSprite, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(722, x86::Membercall, CCAnimatedSprite, runAnimation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(724, x86::Optcall, CCAnimatedSprite, create)
 	}
 };
 
@@ -2204,8 +2216,8 @@ struct Modify<Derived, CCAnimateFrameCache> : ModifyBase<Modify<Derived, CCAnima
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(724, x86::Optcall, CCAnimateFrameCache, sharedSpriteFrameCache)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(725, x86::Membercall, CCAnimateFrameCache, addSpriteFramesWithFile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(725, x86::Optcall, CCAnimateFrameCache, sharedSpriteFrameCache)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(726, x86::Membercall, CCAnimateFrameCache, addSpriteFramesWithFile)
 	}
 };
 
@@ -2216,13 +2228,13 @@ struct Modify<Derived, CCCircleWave> : ModifyBase<Modify<Derived, CCCircleWave>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(739, x86::Optcall, CCCircleWave, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(741, x86::Membercall, CCCircleWave, followObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(742, x86::Membercall, CCCircleWave, updatePosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(743, x86::Membercall, CCCircleWave, setPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(744, x86::Membercall, CCCircleWave, removeMeAndCleanup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(745, x86::Membercall, CCCircleWave, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(746, x86::Membercall, CCCircleWave, updateTweenAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(740, x86::Optcall, CCCircleWave, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(742, x86::Membercall, CCCircleWave, followObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(743, x86::Membercall, CCCircleWave, updatePosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(744, x86::Membercall, CCCircleWave, setPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(745, x86::Membercall, CCCircleWave, removeMeAndCleanup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(746, x86::Membercall, CCCircleWave, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(747, x86::Membercall, CCCircleWave, updateTweenAction)
 	}
 };
 
@@ -2233,8 +2245,8 @@ struct Modify<Derived, CCContentLayer> : ModifyBase<Modify<Derived, CCContentLay
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(748, x86::Optcall, CCContentLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(749, x86::Thiscall, CCContentLayer, setPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(749, x86::Optcall, CCContentLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(750, x86::Thiscall, CCContentLayer, setPosition)
 	}
 };
 
@@ -2245,7 +2257,7 @@ struct Modify<Derived, CCIndexPath> : ModifyBase<Modify<Derived, CCIndexPath>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(750, x86::Optcall, CCIndexPath, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(751, x86::Optcall, CCIndexPath, create)
 	}
 };
 
@@ -2256,7 +2268,7 @@ struct Modify<Derived, CCLightFlash> : ModifyBase<Modify<Derived, CCLightFlash>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(752, x86::Membercall, CCLightFlash, playEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(753, x86::Membercall, CCLightFlash, playEffect)
 	}
 };
 
@@ -2267,11 +2279,11 @@ struct Modify<Derived, TextArea> : ModifyBase<Modify<Derived, TextArea>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2291, x86::Membercall, TextArea, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2294, x86::Membercall, TextArea, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2295, x86::Optcall, TextArea, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2296, x86::Membercall, TextArea, colorAllCharactersTo)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2297, x86::Membercall, TextArea, setString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2299, x86::Membercall, TextArea, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2302, x86::Membercall, TextArea, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2303, x86::Optcall, TextArea, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2304, x86::Membercall, TextArea, colorAllCharactersTo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2305, x86::Membercall, TextArea, setString)
 	}
 };
 
@@ -2302,9 +2314,9 @@ struct Modify<Derived, GameToolbox> : ModifyBase<Modify<Derived, GameToolbox>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1599, x86::Optcall, GameToolbox, createToggleButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1600, x86::Optcall, GameToolbox, transformColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1601, x86::Optcall, GameToolbox, alignItemsHorisontally)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1607, x86::Optcall, GameToolbox, createToggleButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1608, x86::Optcall, GameToolbox, transformColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1609, x86::Optcall, GameToolbox, alignItemsHorisontally)
 	}
 };
 
@@ -2315,9 +2327,9 @@ struct Modify<Derived, CCNodeContainer> : ModifyBase<Modify<Derived, CCNodeConta
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(783, x86::Optcall, CCNodeContainer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(784, x86::Thiscall, CCNodeContainer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(785, x86::Membercall, CCNodeContainer, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(784, x86::Optcall, CCNodeContainer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(785, x86::Thiscall, CCNodeContainer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(786, x86::Membercall, CCNodeContainer, visit)
 	}
 };
 
@@ -2328,18 +2340,18 @@ struct Modify<Derived, CCScrollLayerExt> : ModifyBase<Modify<Derived, CCScrollLa
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(789, x86::Thiscall, CCScrollLayerExt, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(790, x86::Thiscall, CCScrollLayerExt, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(791, x86::Thiscall, CCScrollLayerExt, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(792, x86::Thiscall, CCScrollLayerExt, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(793, x86::Thiscall, CCScrollLayerExt, ccTouchCancelled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(794, x86::Thiscall, CCScrollLayerExt, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(795, x86::Thiscall, CCScrollLayerExt, preVisitWithClippingRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(796, x86::Thiscall, CCScrollLayerExt, postVisit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(797, x86::Membercall, CCScrollLayerExt, moveToTop)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(798, x86::Membercall, CCScrollLayerExt, moveToTopWithOffset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(799, x86::Membercall, CCScrollLayerExt, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(800, x86::Membercall, CCScrollLayerExt, scrollLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(790, x86::Thiscall, CCScrollLayerExt, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(791, x86::Thiscall, CCScrollLayerExt, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(792, x86::Thiscall, CCScrollLayerExt, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(793, x86::Thiscall, CCScrollLayerExt, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(794, x86::Thiscall, CCScrollLayerExt, ccTouchCancelled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(795, x86::Thiscall, CCScrollLayerExt, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(796, x86::Thiscall, CCScrollLayerExt, preVisitWithClippingRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(797, x86::Thiscall, CCScrollLayerExt, postVisit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(798, x86::Membercall, CCScrollLayerExt, moveToTop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(799, x86::Membercall, CCScrollLayerExt, moveToTopWithOffset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(800, x86::Membercall, CCScrollLayerExt, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(801, x86::Membercall, CCScrollLayerExt, scrollLayer)
 	}
 };
 
@@ -2350,8 +2362,8 @@ struct Modify<Derived, SongInfoLayer> : ModifyBase<Modify<Derived, SongInfoLayer
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2268, x86::Optcall, SongInfoLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2269, x86::Optcall, SongInfoLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2276, x86::Optcall, SongInfoLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2277, x86::Optcall, SongInfoLayer, create)
 	}
 };
 
@@ -2372,7 +2384,7 @@ struct Modify<Derived, GJSpecialColorSelect> : ModifyBase<Modify<Derived, GJSpec
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1332, x86::Optcall, GJSpecialColorSelect, textForColorIdx)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1338, x86::Optcall, GJSpecialColorSelect, textForColorIdx)
 	}
 };
 
@@ -2383,16 +2395,16 @@ struct Modify<Derived, CCSpritePlus> : ModifyBase<Modify<Derived, CCSpritePlus>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(807, x86::Membercall, CCSpritePlus, initWithSpriteFrameName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(808, x86::Membercall, CCSpritePlus, setScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(809, x86::Membercall, CCSpritePlus, setScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(810, x86::Membercall, CCSpritePlus, setScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(811, x86::Membercall, CCSpritePlus, setPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(812, x86::Membercall, CCSpritePlus, setRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(813, x86::Membercall, CCSpritePlus, initWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(814, x86::Membercall, CCSpritePlus, setFlipX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(815, x86::Membercall, CCSpritePlus, setFlipY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(816, x86::Optcall, CCSpritePlus, createWithSpriteFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(808, x86::Membercall, CCSpritePlus, initWithSpriteFrameName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(809, x86::Membercall, CCSpritePlus, setScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(810, x86::Membercall, CCSpritePlus, setScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(811, x86::Membercall, CCSpritePlus, setScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(812, x86::Membercall, CCSpritePlus, setPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(813, x86::Membercall, CCSpritePlus, setRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(814, x86::Membercall, CCSpritePlus, initWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(815, x86::Membercall, CCSpritePlus, setFlipX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(816, x86::Membercall, CCSpritePlus, setFlipY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(817, x86::Optcall, CCSpritePlus, createWithSpriteFrame)
 	}
 };
 
@@ -2403,18 +2415,18 @@ struct Modify<Derived, CCTextInputNode> : ModifyBase<Modify<Derived, CCTextInput
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(824, x86::Membercall, CCTextInputNode, setString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(829, x86::Membercall, CCTextInputNode, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(830, x86::Membercall, CCTextInputNode, refreshLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(833, x86::Thiscall, CCTextInputNode, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(834, x86::Thiscall, CCTextInputNode, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(835, x86::Thiscall, CCTextInputNode, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(839, x86::Thiscall, CCTextInputNode, textChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(840, x86::Thiscall, CCTextInputNode, onClickTrackNode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(841, x86::Thiscall, CCTextInputNode, keyboardWillShow)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(842, x86::Thiscall, CCTextInputNode, keyboardWillHide)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(844, x86::Thiscall, CCTextInputNode, onTextFieldAttachWithIME)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(845, x86::Thiscall, CCTextInputNode, onTextFieldDetachWithIME)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(825, x86::Membercall, CCTextInputNode, setString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(830, x86::Membercall, CCTextInputNode, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(831, x86::Membercall, CCTextInputNode, refreshLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(834, x86::Thiscall, CCTextInputNode, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(835, x86::Thiscall, CCTextInputNode, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(836, x86::Thiscall, CCTextInputNode, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(840, x86::Thiscall, CCTextInputNode, textChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(841, x86::Thiscall, CCTextInputNode, onClickTrackNode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(842, x86::Thiscall, CCTextInputNode, keyboardWillShow)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(843, x86::Thiscall, CCTextInputNode, keyboardWillHide)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(845, x86::Thiscall, CCTextInputNode, onTextFieldAttachWithIME)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(846, x86::Thiscall, CCTextInputNode, onTextFieldDetachWithIME)
 	}
 };
 
@@ -2435,7 +2447,7 @@ struct Modify<Derived, ChallengesPage> : ModifyBase<Modify<Derived, ChallengesPa
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(846, x86::Optcall, ChallengesPage, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(847, x86::Optcall, ChallengesPage, create)
 	}
 };
 
@@ -2456,7 +2468,7 @@ struct Modify<Derived, CheckpointObject> : ModifyBase<Modify<Derived, Checkpoint
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(847, x86::Optcall, CheckpointObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(848, x86::Optcall, CheckpointObject, create)
 	}
 };
 
@@ -2507,10 +2519,10 @@ struct Modify<Derived, ColorSelectPopup> : ModifyBase<Modify<Derived, ColorSelec
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(861, x86::Thiscall, ColorSelectPopup, colorValueChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(862, x86::Membercall, ColorSelectPopup, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(863, x86::Membercall, ColorSelectPopup, updateColorValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(864, x86::Membercall, ColorSelectPopup, updateCopyColorTextInputLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(862, x86::Thiscall, ColorSelectPopup, colorValueChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(863, x86::Membercall, ColorSelectPopup, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(864, x86::Membercall, ColorSelectPopup, updateColorValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(865, x86::Membercall, ColorSelectPopup, updateCopyColorTextInputLabel)
 	}
 };
 
@@ -2571,7 +2583,7 @@ struct Modify<Derived, CreateGuidelinesLayer> : ModifyBase<Modify<Derived, Creat
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(870, x86::Membercall, CreateGuidelinesLayer, onStop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(871, x86::Membercall, CreateGuidelinesLayer, onStop)
 	}
 };
 
@@ -2602,9 +2614,9 @@ struct Modify<Derived, DialogLayer> : ModifyBase<Modify<Derived, DialogLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(903, x86::Optcall, DialogLayer, createDialogLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(904, x86::Membercall, DialogLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(905, x86::Membercall, DialogLayer, animateIn)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(904, x86::Optcall, DialogLayer, createDialogLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(905, x86::Membercall, DialogLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(906, x86::Membercall, DialogLayer, animateIn)
 	}
 };
 
@@ -2645,11 +2657,11 @@ struct Modify<Derived, CustomListView> : ModifyBase<Modify<Derived, CustomListVi
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(883, x86::Optcall, CustomListView, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(884, x86::Thiscall, CustomListView, getListCell)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(885, x86::Thiscall, CustomListView, loadCell)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(886, x86::Thiscall, CustomListView, setupList)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(887, x86::Membercall, CustomListView, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(884, x86::Optcall, CustomListView, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(885, x86::Thiscall, CustomListView, getListCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(886, x86::Thiscall, CustomListView, loadCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(887, x86::Thiscall, CustomListView, setupList)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(888, x86::Membercall, CustomListView, destructor)
 	}
 };
 
@@ -2660,7 +2672,7 @@ struct Modify<Derived, CustomSongWidget> : ModifyBase<Modify<Derived, CustomSong
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(894, x86::Membercall, CustomSongWidget, updateSongObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(895, x86::Membercall, CustomSongWidget, updateSongObject)
 	}
 };
 
@@ -2671,9 +2683,9 @@ struct Modify<Derived, CustomizeObjectLayer> : ModifyBase<Modify<Derived, Custom
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(895, x86::Membercall, CustomizeObjectLayer, onNextColorChannel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(896, x86::Membercall, CustomizeObjectLayer, onSelectColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(897, x86::Membercall, CustomizeObjectLayer, getActiveMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(896, x86::Membercall, CustomizeObjectLayer, onNextColorChannel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(897, x86::Membercall, CustomizeObjectLayer, onSelectColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(898, x86::Membercall, CustomizeObjectLayer, getActiveMode)
 	}
 };
 
@@ -2684,9 +2696,9 @@ struct Modify<Derived, DailyLevelPage> : ModifyBase<Modify<Derived, DailyLevelPa
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(898, x86::Optcall, DailyLevelPage, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(899, x86::Membercall, DailyLevelPage, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(900, x86::Membercall, DailyLevelPage, updateTimers)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(899, x86::Optcall, DailyLevelPage, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(900, x86::Membercall, DailyLevelPage, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(901, x86::Membercall, DailyLevelPage, updateTimers)
 	}
 };
 
@@ -2697,8 +2709,8 @@ struct Modify<Derived, DialogObject> : ModifyBase<Modify<Derived, DialogObject>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(917, x86::Optcall, DialogObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(918, x86::Membercall, DialogObject, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(918, x86::Optcall, DialogObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(919, x86::Membercall, DialogObject, init)
 	}
 };
 
@@ -2729,7 +2741,7 @@ struct Modify<Derived, EditButtonBar> : ModifyBase<Modify<Derived, EditButtonBar
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(924, x86::Membercall, EditButtonBar, loadFromItems)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(927, x86::Membercall, EditButtonBar, loadFromItems)
 	}
 };
 
@@ -2740,8 +2752,9 @@ struct Modify<Derived, EditLevelLayer> : ModifyBase<Modify<Derived, EditLevelLay
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(926, x86::Optcall, EditLevelLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(927, x86::Membercall, EditLevelLayer, onLevelInfo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(929, x86::Optcall, EditLevelLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(930, x86::Membercall, EditLevelLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(931, x86::Membercall, EditLevelLayer, onLevelInfo)
 	}
 };
 
@@ -2752,19 +2765,19 @@ struct Modify<Derived, EditorPauseLayer> : ModifyBase<Modify<Derived, EditorPaus
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(931, x86::Thiscall, EditorPauseLayer, keyBackClicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(934, x86::Thiscall, EditorPauseLayer, FLAlert_Clicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(935, x86::Membercall, EditorPauseLayer, saveLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(936, x86::Membercall, EditorPauseLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(937, x86::Membercall, EditorPauseLayer, onExitEditor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(938, x86::Membercall, EditorPauseLayer, playStep2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(939, x86::Membercall, EditorPauseLayer, onResume)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(940, x86::Membercall, EditorPauseLayer, onSaveAndPlay)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(941, x86::Membercall, EditorPauseLayer, onSaveAndExit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(942, x86::Membercall, EditorPauseLayer, onSave)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(943, x86::Membercall, EditorPauseLayer, onExitNoSave)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(944, x86::Membercall, EditorPauseLayer, uncheckAllPortals)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(945, x86::Membercall, EditorPauseLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(935, x86::Thiscall, EditorPauseLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(938, x86::Thiscall, EditorPauseLayer, FLAlert_Clicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(939, x86::Membercall, EditorPauseLayer, saveLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(940, x86::Membercall, EditorPauseLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(941, x86::Membercall, EditorPauseLayer, onExitEditor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(942, x86::Membercall, EditorPauseLayer, playStep2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(943, x86::Membercall, EditorPauseLayer, onResume)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(944, x86::Membercall, EditorPauseLayer, onSaveAndPlay)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(945, x86::Membercall, EditorPauseLayer, onSaveAndExit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(946, x86::Membercall, EditorPauseLayer, onSave)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(947, x86::Membercall, EditorPauseLayer, onExitNoSave)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(948, x86::Membercall, EditorPauseLayer, uncheckAllPortals)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(949, x86::Membercall, EditorPauseLayer, destructor)
 	}
 };
 
@@ -2785,79 +2798,81 @@ struct Modify<Derived, EditorUI> : ModifyBase<Modify<Derived, EditorUI>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(949, x86::Membercall, EditorUI, deselectAll)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(951, x86::Membercall, EditorUI, disableButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(953, x86::Membercall, EditorUI, editObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(954, x86::Membercall, EditorUI, enableButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(955, x86::Membercall, EditorUI, getCreateBtn)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(956, x86::Membercall, EditorUI, getGroupCenter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(957, x86::Membercall, EditorUI, getSelectedObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(962, x86::Thiscall, EditorUI, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(964, x86::Membercall, EditorUI, moveObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(965, x86::Membercall, EditorUI, onDuplicate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(967, x86::Membercall, EditorUI, pasteObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(970, x86::Membercall, EditorUI, redoLastAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(973, x86::Membercall, EditorUI, scaleObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(974, x86::Membercall, EditorUI, selectObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(976, x86::Membercall, EditorUI, undoLastAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(977, x86::Membercall, EditorUI, updateButtons)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(978, x86::Membercall, EditorUI, updateObjectInfoLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(979, x86::Membercall, EditorUI, updateSlider)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(980, x86::Membercall, EditorUI, updateZoom)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(981, x86::Membercall, EditorUI, selectObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(984, x86::Membercall, EditorUI, selectAll)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(985, x86::Membercall, EditorUI, selectAllWithDirection)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(986, x86::Membercall, EditorUI, getTouchPoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(987, x86::Membercall, EditorUI, onSelectBuildTab)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(988, x86::Membercall, EditorUI, onCreateButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(989, x86::Membercall, EditorUI, getSpriteButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(990, x86::Membercall, EditorUI, offsetForKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(991, x86::Membercall, EditorUI, updateDeleteMenu)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(992, x86::Membercall, EditorUI, updateCreateMenu)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(993, x86::Membercall, EditorUI, toggleMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(994, x86::Membercall, EditorUI, zoomIn)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(995, x86::Membercall, EditorUI, zoomOut)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(996, x86::Membercall, EditorUI, rotateObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(997, x86::Membercall, EditorUI, updateGridNodeSize)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(998, x86::Membercall, EditorUI, updateSpecialUIElements)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(999, x86::Membercall, EditorUI, constrainGameLayerPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1000, x86::Membercall, EditorUI, moveGameLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1001, x86::Membercall, EditorUI, showUI)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1002, x86::Membercall, EditorUI, editObject2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1003, x86::Membercall, EditorUI, editGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1004, x86::Membercall, EditorUI, moveObjectCall)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1005, x86::Membercall, EditorUI, transformObjectCall)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1006, x86::Membercall, EditorUI, onDeleteSelected)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1007, x86::Membercall, EditorUI, onCopy)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1008, x86::Membercall, EditorUI, onPaste)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1009, x86::Membercall, EditorUI, toggleEnableRotate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1010, x86::Membercall, EditorUI, toggleFreeMove)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1011, x86::Membercall, EditorUI, toggleSwipe)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1012, x86::Membercall, EditorUI, toggleSnap)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1013, x86::Membercall, EditorUI, onPlayback)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1014, x86::Membercall, EditorUI, onPlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1015, x86::Membercall, EditorUI, onStopPlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1016, x86::Membercall, EditorUI, onGroupUp)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1017, x86::Membercall, EditorUI, onGroupDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1018, x86::Membercall, EditorUI, selectBuildTab)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1019, x86::Membercall, EditorUI, onPause)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1020, x86::Membercall, EditorUI, onSettings)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1021, x86::Membercall, EditorUI, activateRotationControl)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1022, x86::Membercall, EditorUI, activateScaleControl)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1023, x86::Membercall, EditorUI, dynamicGroupUpdate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1024, x86::Membercall, EditorUI, createRockOutline)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1025, x86::Membercall, EditorUI, createRockEdges)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1026, x86::Membercall, EditorUI, createRockBase)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1027, x86::Membercall, EditorUI, onCopyState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1028, x86::Membercall, EditorUI, onPasteColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1029, x86::Membercall, EditorUI, onPasteState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1030, x86::Membercall, EditorUI, onGroupSticky)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1031, x86::Membercall, EditorUI, onUngroupSticky)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1032, x86::Membercall, EditorUI, onGoToLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1033, x86::Membercall, EditorUI, onGoToBaseLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1034, x86::Membercall, EditorUI, editColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1035, x86::Membercall, EditorUI, alignObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1037, x86::Thiscall, EditorUI, keyUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(953, x86::Membercall, EditorUI, deselectAll)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(955, x86::Membercall, EditorUI, disableButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(957, x86::Membercall, EditorUI, editObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(958, x86::Membercall, EditorUI, enableButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(959, x86::Membercall, EditorUI, getCreateBtn)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(960, x86::Membercall, EditorUI, getGroupCenter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(961, x86::Membercall, EditorUI, getSelectedObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(962, x86::Membercall, EditorUI, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(966, x86::Thiscall, EditorUI, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(968, x86::Membercall, EditorUI, moveObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(969, x86::Membercall, EditorUI, onDuplicate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(971, x86::Membercall, EditorUI, pasteObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(974, x86::Membercall, EditorUI, redoLastAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(977, x86::Membercall, EditorUI, scaleObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(978, x86::Membercall, EditorUI, selectObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(980, x86::Membercall, EditorUI, undoLastAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(981, x86::Membercall, EditorUI, updateButtons)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(982, x86::Membercall, EditorUI, updateObjectInfoLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(983, x86::Membercall, EditorUI, updateSlider)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(984, x86::Membercall, EditorUI, updateZoom)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(985, x86::Membercall, EditorUI, selectObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(988, x86::Membercall, EditorUI, selectAll)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(989, x86::Membercall, EditorUI, selectAllWithDirection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(990, x86::Membercall, EditorUI, getTouchPoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(991, x86::Membercall, EditorUI, onSelectBuildTab)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(992, x86::Membercall, EditorUI, onCreateButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(993, x86::Membercall, EditorUI, getSpriteButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(994, x86::Membercall, EditorUI, offsetForKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(995, x86::Membercall, EditorUI, updateDeleteMenu)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(996, x86::Membercall, EditorUI, updateCreateMenu)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(997, x86::Membercall, EditorUI, toggleMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(998, x86::Membercall, EditorUI, zoomIn)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(999, x86::Membercall, EditorUI, zoomOut)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1000, x86::Membercall, EditorUI, rotateObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1001, x86::Membercall, EditorUI, updateGridNodeSize)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1002, x86::Membercall, EditorUI, updateSpecialUIElements)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1003, x86::Membercall, EditorUI, constrainGameLayerPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1004, x86::Membercall, EditorUI, moveGameLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1005, x86::Membercall, EditorUI, showUI)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1006, x86::Membercall, EditorUI, editObject2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1007, x86::Membercall, EditorUI, editGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1008, x86::Membercall, EditorUI, moveObjectCall)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1009, x86::Membercall, EditorUI, transformObjectCall)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1010, x86::Membercall, EditorUI, onDeleteSelected)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1011, x86::Membercall, EditorUI, onCopy)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1012, x86::Membercall, EditorUI, onPaste)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1013, x86::Membercall, EditorUI, toggleEnableRotate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1014, x86::Membercall, EditorUI, toggleFreeMove)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1015, x86::Membercall, EditorUI, toggleSwipe)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1016, x86::Membercall, EditorUI, toggleSnap)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1017, x86::Membercall, EditorUI, onPlayback)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1018, x86::Membercall, EditorUI, onPlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1019, x86::Membercall, EditorUI, onStopPlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1020, x86::Membercall, EditorUI, onGroupUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1021, x86::Membercall, EditorUI, onGroupDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1022, x86::Membercall, EditorUI, selectBuildTab)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1023, x86::Membercall, EditorUI, onPause)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1024, x86::Membercall, EditorUI, onSettings)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1025, x86::Membercall, EditorUI, activateRotationControl)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1026, x86::Membercall, EditorUI, activateScaleControl)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1027, x86::Membercall, EditorUI, dynamicGroupUpdate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1028, x86::Membercall, EditorUI, createRockOutline)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1029, x86::Membercall, EditorUI, createRockEdges)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1030, x86::Membercall, EditorUI, createRockBase)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1031, x86::Membercall, EditorUI, onCopyState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1032, x86::Membercall, EditorUI, onPasteColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1033, x86::Membercall, EditorUI, onPasteState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1034, x86::Membercall, EditorUI, onGroupSticky)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1035, x86::Membercall, EditorUI, onUngroupSticky)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1036, x86::Membercall, EditorUI, onGoToLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1037, x86::Membercall, EditorUI, onGoToBaseLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1038, x86::Membercall, EditorUI, editColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1039, x86::Membercall, EditorUI, alignObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1040, x86::Thiscall, EditorUI, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1042, x86::Thiscall, EditorUI, keyUp)
 	}
 };
 
@@ -2868,13 +2883,13 @@ struct Modify<Derived, EffectGameObject> : ModifyBase<Modify<Derived, EffectGame
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1039, x86::Optcall, EffectGameObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1040, x86::Membercall, EffectGameObject, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1042, x86::Thiscall, EffectGameObject, triggerObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1043, x86::Membercall, EffectGameObject, getSaveString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1044, x86::Membercall, EffectGameObject, updateSpecialColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1045, x86::Membercall, EffectGameObject, spawnXPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1046, x86::Membercall, EffectGameObject, triggerActivated)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1044, x86::Optcall, EffectGameObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1045, x86::Membercall, EffectGameObject, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1047, x86::Thiscall, EffectGameObject, triggerObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1048, x86::Membercall, EffectGameObject, getSaveString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1049, x86::Membercall, EffectGameObject, updateSpecialColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1050, x86::Membercall, EffectGameObject, spawnXPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1051, x86::Membercall, EffectGameObject, triggerActivated)
 	}
 };
 
@@ -2885,7 +2900,7 @@ struct Modify<Derived, GJRotationControl> : ModifyBase<Modify<Derived, GJRotatio
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1311, x86::Membercall, GJRotationControl, updateSliderPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1317, x86::Membercall, GJRotationControl, updateSliderPosition)
 	}
 };
 
@@ -2916,7 +2931,7 @@ struct Modify<Derived, GManager> : ModifyBase<Modify<Derived, GManager>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1359, x86::Membercall, GManager, save)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1365, x86::Membercall, GManager, save)
 	}
 };
 
@@ -2937,20 +2952,20 @@ struct Modify<Derived, FLAlertLayer> : ModifyBase<Modify<Derived, FLAlertLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1051, x86::Thiscall, FLAlertLayer, onEnter)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1052, x86::Thiscall, FLAlertLayer, ccTouchBegan)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1053, x86::Thiscall, FLAlertLayer, ccTouchMoved)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1054, x86::Thiscall, FLAlertLayer, ccTouchEnded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1055, x86::Thiscall, FLAlertLayer, ccTouchCancelled)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1056, x86::Thiscall, FLAlertLayer, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1057, x86::Thiscall, FLAlertLayer, keyBackClicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1058, x86::Thiscall, FLAlertLayer, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1059, x86::Thiscall, FLAlertLayer, show)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1061, x86::Optcall, FLAlertLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1062, x86::Optcall, FLAlertLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1063, x86::Optcall, FLAlertLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1064, x86::Membercall, FLAlertLayer, onBtn1)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1065, x86::Membercall, FLAlertLayer, onBtn2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1056, x86::Thiscall, FLAlertLayer, onEnter)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1057, x86::Thiscall, FLAlertLayer, ccTouchBegan)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1058, x86::Thiscall, FLAlertLayer, ccTouchMoved)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1059, x86::Thiscall, FLAlertLayer, ccTouchEnded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1060, x86::Thiscall, FLAlertLayer, ccTouchCancelled)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1061, x86::Thiscall, FLAlertLayer, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1062, x86::Thiscall, FLAlertLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1063, x86::Thiscall, FLAlertLayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1064, x86::Thiscall, FLAlertLayer, show)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1066, x86::Optcall, FLAlertLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1067, x86::Optcall, FLAlertLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1068, x86::Optcall, FLAlertLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1069, x86::Membercall, FLAlertLayer, onBtn1)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1070, x86::Membercall, FLAlertLayer, onBtn2)
 	}
 };
 
@@ -2971,11 +2986,12 @@ struct Modify<Derived, FMODAudioEngine> : ModifyBase<Modify<Derived, FMODAudioEn
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1067, x86::Optcall, FMODAudioEngine, sharedEngine)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1068, x86::Membercall, FMODAudioEngine, preloadEffect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1069, x86::Membercall, FMODAudioEngine, isBackgroundMusicPlaying)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1070, x86::Membercall, FMODAudioEngine, isBackgroundMusicPlaying)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1071, x86::Membercall, FMODAudioEngine, playBackgroundMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1072, x86::Optcall, FMODAudioEngine, sharedEngine)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1073, x86::Membercall, FMODAudioEngine, preloadEffect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1074, x86::Membercall, FMODAudioEngine, isBackgroundMusicPlaying)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1075, x86::Membercall, FMODAudioEngine, isBackgroundMusicPlaying)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1076, x86::Membercall, FMODAudioEngine, playBackgroundMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1077, x86::Thiscall, FMODAudioEngine, update)
 	}
 };
 
@@ -2986,8 +3002,8 @@ struct Modify<Derived, LeaderboardsLayer> : ModifyBase<Modify<Derived, Leaderboa
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1635, x86::Optcall, LeaderboardsLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1636, x86::Membercall, LeaderboardsLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1643, x86::Optcall, LeaderboardsLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1644, x86::Membercall, LeaderboardsLayer, init)
 	}
 };
 
@@ -2998,7 +3014,7 @@ struct Modify<Derived, FMODSound> : ModifyBase<Modify<Derived, FMODSound>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1072, x86::Optcall, FMODSound, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1078, x86::Optcall, FMODSound, create)
 	}
 };
 
@@ -3009,9 +3025,9 @@ struct Modify<Derived, LevelCell> : ModifyBase<Modify<Derived, LevelCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1643, x86::Membercall, LevelCell, onViewProfile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1644, x86::Membercall, LevelCell, loadCustomLevelCell)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1645, x86::Membercall, LevelCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1651, x86::Membercall, LevelCell, onViewProfile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1652, x86::Membercall, LevelCell, loadCustomLevelCell)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1653, x86::Membercall, LevelCell, updateBGColor)
 	}
 };
 
@@ -3062,7 +3078,7 @@ struct Modify<Derived, GJAccountManager> : ModifyBase<Modify<Derived, GJAccountM
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1078, x86::Optcall, GJAccountManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1084, x86::Optcall, GJAccountManager, sharedState)
 	}
 };
 
@@ -3083,10 +3099,10 @@ struct Modify<Derived, LevelLeaderboard> : ModifyBase<Modify<Derived, LevelLeade
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1735, x86::Membercall, LevelLeaderboard, onChangeType)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1736, x86::Membercall, LevelLeaderboard, onGarage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1737, x86::Membercall, LevelLeaderboard, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1738, x86::Optcall, LevelLeaderboard, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1743, x86::Membercall, LevelLeaderboard, onChangeType)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1744, x86::Membercall, LevelLeaderboard, onGarage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1745, x86::Membercall, LevelLeaderboard, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1746, x86::Optcall, LevelLeaderboard, create)
 	}
 };
 
@@ -3097,11 +3113,20 @@ struct Modify<Derived, GJBaseGameLayer> : ModifyBase<Modify<Derived, GJBaseGameL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1089, x86::Thiscall, GJBaseGameLayer, toggleGroupTriggered)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1090, x86::Thiscall, GJBaseGameLayer, spawnGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1106, x86::Membercall, GJBaseGameLayer, getCapacityString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1127, x86::Membercall, GJBaseGameLayer, pushButton)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1130, x86::Membercall, GJBaseGameLayer, releaseButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1095, x86::Thiscall, GJBaseGameLayer, toggleGroupTriggered)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1096, x86::Thiscall, GJBaseGameLayer, spawnGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1112, x86::Membercall, GJBaseGameLayer, getCapacityString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1127, x86::Membercall, GJBaseGameLayer, processFollowActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1128, x86::Membercall, GJBaseGameLayer, processMoveActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1129, x86::Membercall, GJBaseGameLayer, processMoveActionsStep)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1131, x86::Membercall, GJBaseGameLayer, processPlayerFollowActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1132, x86::Membercall, GJBaseGameLayer, processRotationActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1133, x86::Membercall, GJBaseGameLayer, pushButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1136, x86::Membercall, GJBaseGameLayer, releaseButton)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1138, x86::Membercall, GJBaseGameLayer, removeObjectFromSection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1139, x86::Membercall, GJBaseGameLayer, reorderObjectSection)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1151, x86::Membercall, GJBaseGameLayer, updateCollisionBlocks)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1157, x86::Membercall, GJBaseGameLayer, updateQueuedLabels)
 	}
 };
 
@@ -3132,7 +3157,7 @@ struct Modify<Derived, GJComment> : ModifyBase<Modify<Derived, GJComment>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1155, x86::Optcall, GJComment, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1161, x86::Optcall, GJComment, create)
 	}
 };
 
@@ -3163,18 +3188,18 @@ struct Modify<Derived, GJDropDownLayer> : ModifyBase<Modify<Derived, GJDropDownL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1159, x86::Thiscall, GJDropDownLayer, enterLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1160, x86::Thiscall, GJDropDownLayer, exitLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1161, x86::Thiscall, GJDropDownLayer, showLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1162, x86::Thiscall, GJDropDownLayer, hideLayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1163, x86::Thiscall, GJDropDownLayer, layerVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1164, x86::Thiscall, GJDropDownLayer, layerHidden)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1166, x86::Thiscall, GJDropDownLayer, disableUI)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1167, x86::Thiscall, GJDropDownLayer, enableUI)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1173, x86::Thiscall, GJDropDownLayer, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1174, x86::Membercall, GJDropDownLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1175, x86::Thiscall, GJDropDownLayer, registerWithTouchDispatcher)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1176, x86::Thiscall, GJDropDownLayer, keyBackClicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1165, x86::Thiscall, GJDropDownLayer, enterLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1166, x86::Thiscall, GJDropDownLayer, exitLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1167, x86::Thiscall, GJDropDownLayer, showLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1168, x86::Thiscall, GJDropDownLayer, hideLayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1169, x86::Thiscall, GJDropDownLayer, layerVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1170, x86::Thiscall, GJDropDownLayer, layerHidden)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1172, x86::Thiscall, GJDropDownLayer, disableUI)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1173, x86::Thiscall, GJDropDownLayer, enableUI)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1179, x86::Thiscall, GJDropDownLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1180, x86::Membercall, GJDropDownLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1181, x86::Thiscall, GJDropDownLayer, registerWithTouchDispatcher)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1182, x86::Thiscall, GJDropDownLayer, keyBackClicked)
 	}
 };
 
@@ -3195,8 +3220,20 @@ struct Modify<Derived, GJEffectManager> : ModifyBase<Modify<Derived, GJEffectMan
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1201, x86::Membercall, GJEffectManager, getColorAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1257, x86::Membercall, GJEffectManager, updateOpacityEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1189, x86::Membercall, GJEffectManager, calculateBaseActiveColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1191, x86::Membercall, GJEffectManager, calculateLightBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1207, x86::Membercall, GJEffectManager, getColorAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1208, x86::Membercall, GJEffectManager, getColorSprite)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1226, x86::Membercall, GJEffectManager, postCollisionCheck)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1227, x86::Membercall, GJEffectManager, preCollisionCheck)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1228, x86::Membercall, GJEffectManager, prepareMoveActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1230, x86::Membercall, GJEffectManager, processCopyColorPulseActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1231, x86::Membercall, GJEffectManager, processInheritedColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1232, x86::Membercall, GJEffectManager, processPulseActions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1259, x86::Membercall, GJEffectManager, updateColorEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1263, x86::Membercall, GJEffectManager, updateOpacityEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1264, x86::Membercall, GJEffectManager, updatePulseEffects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1265, x86::Membercall, GJEffectManager, updateSpawnTriggers)
 	}
 };
 
@@ -3207,7 +3244,7 @@ struct Modify<Derived, GJLevelScoreCell> : ModifyBase<Modify<Derived, GJLevelSco
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1297, x86::Membercall, GJLevelScoreCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1303, x86::Membercall, GJLevelScoreCell, updateBGColor)
 	}
 };
 
@@ -3218,13 +3255,13 @@ struct Modify<Derived, GJGameLevel> : ModifyBase<Modify<Derived, GJGameLevel>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1268, x86::Optcall, GJGameLevel, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1269, x86::Membercall, GJGameLevel, getAudioFileName)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1270, x86::Membercall, GJGameLevel, getCoinKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1273, x86::Membercall, GJGameLevel, levelWasAltered)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1275, x86::Membercall, GJGameLevel, dataLoaded)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1276, x86::Membercall, GJGameLevel, getAverageDifficulty)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1277, x86::Membercall, GJGameLevel, getUnpackedLevelDescription)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1274, x86::Optcall, GJGameLevel, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1275, x86::Membercall, GJGameLevel, getAudioFileName)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1276, x86::Membercall, GJGameLevel, getCoinKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1279, x86::Membercall, GJGameLevel, levelWasAltered)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1281, x86::Membercall, GJGameLevel, dataLoaded)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1282, x86::Membercall, GJGameLevel, getAverageDifficulty)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1283, x86::Membercall, GJGameLevel, getUnpackedLevelDescription)
 	}
 };
 
@@ -3235,21 +3272,21 @@ struct Modify<Derived, GJGarageLayer> : ModifyBase<Modify<Derived, GJGarageLayer
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1278, x86::Membercall, GJGarageLayer, onPlayerColor1)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1279, x86::Membercall, GJGarageLayer, onPlayerColor2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1280, x86::Optcall, GJGarageLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1281, x86::Thiscall, GJGarageLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1282, x86::Membercall, GJGarageLayer, onSelectTab)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1283, x86::Membercall, GJGarageLayer, onPlayerIcon)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1284, x86::Membercall, GJGarageLayer, onShipIcon)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1285, x86::Membercall, GJGarageLayer, onBallIcon)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1286, x86::Membercall, GJGarageLayer, onBirdIcon)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1287, x86::Membercall, GJGarageLayer, onDartIcon)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1288, x86::Membercall, GJGarageLayer, onRobotIcon)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1289, x86::Membercall, GJGarageLayer, onSpiderIcon)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1290, x86::Membercall, GJGarageLayer, onShards)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1291, x86::Membercall, GJGarageLayer, onBack)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1292, x86::Membercall, GJGarageLayer, onShop)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1284, x86::Membercall, GJGarageLayer, onPlayerColor1)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1285, x86::Membercall, GJGarageLayer, onPlayerColor2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1286, x86::Optcall, GJGarageLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1287, x86::Thiscall, GJGarageLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1288, x86::Membercall, GJGarageLayer, onSelectTab)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1289, x86::Membercall, GJGarageLayer, onPlayerIcon)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1290, x86::Membercall, GJGarageLayer, onShipIcon)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1291, x86::Membercall, GJGarageLayer, onBallIcon)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1292, x86::Membercall, GJGarageLayer, onBirdIcon)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1293, x86::Membercall, GJGarageLayer, onDartIcon)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1294, x86::Membercall, GJGarageLayer, onRobotIcon)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1295, x86::Membercall, GJGarageLayer, onSpiderIcon)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1296, x86::Membercall, GJGarageLayer, onShards)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1297, x86::Membercall, GJGarageLayer, onBack)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1298, x86::Membercall, GJGarageLayer, onShop)
 	}
 };
 
@@ -3260,7 +3297,7 @@ struct Modify<Derived, GJGroundLayer> : ModifyBase<Modify<Derived, GJGroundLayer
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1294, x86::Membercall, GJGroundLayer, updateGroundWidth)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1300, x86::Membercall, GJGroundLayer, updateGroundWidth)
 	}
 };
 
@@ -3271,7 +3308,7 @@ struct Modify<Derived, GJItemIcon> : ModifyBase<Modify<Derived, GJItemIcon>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1296, x86::Optcall, GJItemIcon, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1302, x86::Optcall, GJItemIcon, create)
 	}
 };
 
@@ -3282,7 +3319,7 @@ struct Modify<Derived, GJListLayer> : ModifyBase<Modify<Derived, GJListLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1299, x86::Optcall, GJListLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1305, x86::Optcall, GJListLayer, create)
 	}
 };
 
@@ -3323,7 +3360,7 @@ struct Modify<Derived, GJRequestCell> : ModifyBase<Modify<Derived, GJRequestCell
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1301, x86::Membercall, GJRequestCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1307, x86::Membercall, GJRequestCell, updateBGColor)
 	}
 };
 
@@ -3354,11 +3391,11 @@ struct Modify<Derived, LevelBrowserLayer> : ModifyBase<Modify<Derived, LevelBrow
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1638, x86::Membercall, LevelBrowserLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1639, x86::Membercall, LevelBrowserLayer, loadPage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1640, x86::Membercall, LevelBrowserLayer, setupLevelBrowser)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1641, x86::Membercall, LevelBrowserLayer, updateLevelsLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1642, x86::Optcall, LevelBrowserLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1646, x86::Membercall, LevelBrowserLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1647, x86::Membercall, LevelBrowserLayer, loadPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1648, x86::Membercall, LevelBrowserLayer, setupLevelBrowser)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1649, x86::Membercall, LevelBrowserLayer, updateLevelsLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1650, x86::Optcall, LevelBrowserLayer, create)
 	}
 };
 
@@ -3409,8 +3446,8 @@ struct Modify<Derived, GJScaleControl> : ModifyBase<Modify<Derived, GJScaleContr
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1320, x86::Membercall, GJScaleControl, updateLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1321, x86::Membercall, GJScaleControl, loadValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1326, x86::Membercall, GJScaleControl, updateLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1327, x86::Membercall, GJScaleControl, loadValues)
 	}
 };
 
@@ -3431,10 +3468,10 @@ struct Modify<Derived, GJScoreCell> : ModifyBase<Modify<Derived, GJScoreCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1325, x86::Thiscall, GJScoreCell, FLAlert_Clicked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1326, x86::Membercall, GJScoreCell, loadFromScore)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1327, x86::Membercall, GJScoreCell, onViewProfile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1328, x86::Membercall, GJScoreCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1331, x86::Thiscall, GJScoreCell, FLAlert_Clicked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1332, x86::Membercall, GJScoreCell, loadFromScore)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1333, x86::Membercall, GJScoreCell, onViewProfile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1334, x86::Membercall, GJScoreCell, updateBGColor)
 	}
 };
 
@@ -3455,8 +3492,8 @@ struct Modify<Derived, GJSearchObject> : ModifyBase<Modify<Derived, GJSearchObje
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1330, x86::Optcall, GJSearchObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1331, x86::Optcall, GJSearchObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1336, x86::Optcall, GJSearchObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1337, x86::Optcall, GJSearchObject, create)
 	}
 };
 
@@ -3497,7 +3534,7 @@ struct Modify<Derived, GJUserCell> : ModifyBase<Modify<Derived, GJUserCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1338, x86::Membercall, GJUserCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1344, x86::Membercall, GJUserCell, updateBGColor)
 	}
 };
 
@@ -3518,21 +3555,22 @@ struct Modify<Derived, GameManager> : ModifyBase<Modify<Derived, GameManager>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1413, x86::Membercall, GameManager, colorForIdx)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1416, x86::Membercall, GameManager, fadeInMusic)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1419, x86::Membercall, GameManager, getGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1420, x86::Membercall, GameManager, getIntGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1421, x86::Membercall, GameManager, getUGV)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1424, x86::Membercall, GameManager, reloadAll)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1425, x86::Membercall, GameManager, reloadAllStep2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1428, x86::Membercall, GameManager, setGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1429, x86::Membercall, GameManager, setIntGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1431, x86::Optcall, GameManager, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1436, x86::Membercall, GameManager, resolutionForKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1438, x86::Membercall, GameManager, isColorUnlocked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1439, x86::Membercall, GameManager, isIconUnlocked)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1440, x86::Membercall, GameManager, toggleGameVariable)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1441, x86::Optcall, GameManager, returnToLastScene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1419, x86::Membercall, GameManager, colorForIdx)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1422, x86::Membercall, GameManager, fadeInMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1425, x86::Membercall, GameManager, getGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1426, x86::Membercall, GameManager, getIntGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1427, x86::Membercall, GameManager, getUGV)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1430, x86::Membercall, GameManager, reloadAll)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1431, x86::Membercall, GameManager, reloadAllStep2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1434, x86::Membercall, GameManager, setGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1435, x86::Membercall, GameManager, setIntGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1437, x86::Optcall, GameManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1442, x86::Membercall, GameManager, resolutionForKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1443, x86::Thiscall, GameManager, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1444, x86::Membercall, GameManager, isColorUnlocked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1445, x86::Membercall, GameManager, isIconUnlocked)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1446, x86::Membercall, GameManager, toggleGameVariable)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1447, x86::Optcall, GameManager, returnToLastScene)
 	}
 };
 
@@ -3543,56 +3581,58 @@ struct Modify<Derived, GameObject> : ModifyBase<Modify<Derived, GameObject>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1455, x86::Thiscall, GameObject, setScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1456, x86::Thiscall, GameObject, setScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1457, x86::Thiscall, GameObject, setScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1458, x86::Thiscall, GameObject, setPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1459, x86::Thiscall, GameObject, setVisible)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1460, x86::Thiscall, GameObject, setRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1461, x86::Thiscall, GameObject, setOpacity)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1462, x86::Thiscall, GameObject, initWithTexture)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1463, x86::Thiscall, GameObject, setChildColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1467, x86::Thiscall, GameObject, setupCustomSprites)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1468, x86::Thiscall, GameObject, addMainSpriteToParent)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1469, x86::Thiscall, GameObject, resetObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1471, x86::Thiscall, GameObject, activateObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1472, x86::Thiscall, GameObject, deactivateObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1473, x86::Thiscall, GameObject, getObjectRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1474, x86::Thiscall, GameObject, getObjectRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1475, x86::Thiscall, GameObject, getObjectRect2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1476, x86::Thiscall, GameObject, getObjectTextureRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1477, x86::Thiscall, GameObject, getRealPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1478, x86::Thiscall, GameObject, setStartPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1479, x86::Thiscall, GameObject, updateStartValues)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1481, x86::Thiscall, GameObject, getSaveString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1482, x86::Thiscall, GameObject, isFlipX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1483, x86::Thiscall, GameObject, isFlipY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1484, x86::Thiscall, GameObject, setRScaleX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1485, x86::Thiscall, GameObject, setRScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1486, x86::Thiscall, GameObject, setRScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1488, x86::Thiscall, GameObject, getRScaleY)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1489, x86::Thiscall, GameObject, calculateSpawnXPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1491, x86::Thiscall, GameObject, powerOnObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1492, x86::Thiscall, GameObject, powerOffObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1493, x86::Thiscall, GameObject, setObjectColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1494, x86::Thiscall, GameObject, setGlowColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1495, x86::Thiscall, GameObject, getOrientedBox)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1496, x86::Thiscall, GameObject, addToGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1497, x86::Thiscall, GameObject, removeFromGroup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1503, x86::Thiscall, GameObject, getType)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1504, x86::Thiscall, GameObject, setType)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1505, x86::Thiscall, GameObject, getStartPos)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1514, x86::Membercall, GameObject, commonSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1516, x86::Optcall, GameObject, createWithFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1517, x86::Optcall, GameObject, createWithKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1522, x86::Membercall, GameObject, getBoxOffset)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1542, x86::Optcall, GameObject, objectFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1548, x86::Membercall, GameObject, selectObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1558, x86::Membercall, GameObject, updateCustomScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1560, x86::Membercall, GameObject, updateOrientedBox)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1565, x86::Membercall, GameObject, deselectObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1566, x86::Membercall, GameObject, createRotateAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1567, x86::Membercall, GameObject, setMyAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1461, x86::Thiscall, GameObject, setScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1462, x86::Thiscall, GameObject, setScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1463, x86::Thiscall, GameObject, setScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1464, x86::Thiscall, GameObject, setPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1465, x86::Thiscall, GameObject, setVisible)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1466, x86::Thiscall, GameObject, setRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1467, x86::Thiscall, GameObject, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1468, x86::Thiscall, GameObject, initWithTexture)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1469, x86::Thiscall, GameObject, setChildColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1473, x86::Thiscall, GameObject, setupCustomSprites)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1474, x86::Thiscall, GameObject, addMainSpriteToParent)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1475, x86::Thiscall, GameObject, resetObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1477, x86::Thiscall, GameObject, activateObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1478, x86::Membercall, GameObject, activateObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1479, x86::Thiscall, GameObject, deactivateObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1480, x86::Thiscall, GameObject, getObjectRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1481, x86::Thiscall, GameObject, getObjectRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1482, x86::Thiscall, GameObject, getObjectRect2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1483, x86::Thiscall, GameObject, getObjectTextureRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1484, x86::Thiscall, GameObject, getRealPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1485, x86::Thiscall, GameObject, setStartPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1486, x86::Thiscall, GameObject, updateStartValues)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1488, x86::Thiscall, GameObject, getSaveString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1489, x86::Thiscall, GameObject, isFlipX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1490, x86::Thiscall, GameObject, isFlipY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1491, x86::Thiscall, GameObject, setRScaleX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1492, x86::Thiscall, GameObject, setRScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1493, x86::Thiscall, GameObject, setRScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1495, x86::Thiscall, GameObject, getRScaleY)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1496, x86::Thiscall, GameObject, calculateSpawnXPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1498, x86::Thiscall, GameObject, powerOnObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1499, x86::Thiscall, GameObject, powerOffObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1500, x86::Thiscall, GameObject, setObjectColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1501, x86::Thiscall, GameObject, setGlowColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1502, x86::Thiscall, GameObject, getOrientedBox)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1503, x86::Thiscall, GameObject, addToGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1504, x86::Thiscall, GameObject, removeFromGroup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1510, x86::Thiscall, GameObject, getType)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1511, x86::Thiscall, GameObject, setType)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1512, x86::Thiscall, GameObject, getStartPos)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1515, x86::Membercall, GameObject, addColorSpriteToParent)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1521, x86::Membercall, GameObject, commonSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1523, x86::Optcall, GameObject, createWithFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1524, x86::Optcall, GameObject, createWithKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1529, x86::Membercall, GameObject, getBoxOffset)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1549, x86::Optcall, GameObject, objectFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1555, x86::Membercall, GameObject, selectObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1565, x86::Membercall, GameObject, updateCustomScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1567, x86::Membercall, GameObject, updateOrientedBox)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1572, x86::Membercall, GameObject, deselectObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1573, x86::Membercall, GameObject, createRotateAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1574, x86::Membercall, GameObject, setMyAction)
 	}
 };
 
@@ -3613,12 +3653,12 @@ struct Modify<Derived, GameStatsManager> : ModifyBase<Modify<Derived, GameStatsM
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1582, x86::Membercall, GameStatsManager, getAwardedCurrencyForLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1583, x86::Membercall, GameStatsManager, getBaseCurrencyForLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1584, x86::Membercall, GameStatsManager, getCoinKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1585, x86::Membercall, GameStatsManager, getChallenge)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1591, x86::Membercall, GameStatsManager, incrementChallenge)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1594, x86::Optcall, GameStatsManager, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1590, x86::Membercall, GameStatsManager, getAwardedCurrencyForLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1591, x86::Membercall, GameStatsManager, getBaseCurrencyForLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1592, x86::Membercall, GameStatsManager, getCoinKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1593, x86::Membercall, GameStatsManager, getChallenge)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1599, x86::Membercall, GameStatsManager, incrementChallenge)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1602, x86::Optcall, GameStatsManager, sharedState)
 	}
 };
 
@@ -3629,7 +3669,7 @@ struct Modify<Derived, GauntletSelectLayer> : ModifyBase<Modify<Derived, Gauntle
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1606, x86::Optcall, GauntletSelectLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1614, x86::Optcall, GauntletSelectLayer, create)
 	}
 };
 
@@ -3670,10 +3710,10 @@ struct Modify<Derived, InfoAlertButton> : ModifyBase<Modify<Derived, InfoAlertBu
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1619, x86::Membercall, InfoAlertButton, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1620, x86::Membercall, InfoAlertButton, activate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1621, x86::Membercall, InfoAlertButton, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1622, x86::Optcall, InfoAlertButton, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1627, x86::Membercall, InfoAlertButton, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1628, x86::Membercall, InfoAlertButton, activate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1629, x86::Membercall, InfoAlertButton, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1630, x86::Optcall, InfoAlertButton, create)
 	}
 };
 
@@ -3684,10 +3724,10 @@ struct Modify<Derived, KeybindingsLayer> : ModifyBase<Modify<Derived, Keybinding
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1629, x86::Membercall, KeybindingsLayer, onClose)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1630, x86::Membercall, KeybindingsLayer, onPrevPage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1631, x86::Membercall, KeybindingsLayer, onNextPage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1632, x86::Membercall, KeybindingsLayer, goToPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1637, x86::Membercall, KeybindingsLayer, onClose)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1638, x86::Membercall, KeybindingsLayer, onPrevPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1639, x86::Membercall, KeybindingsLayer, onNextPage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1640, x86::Membercall, KeybindingsLayer, goToPage)
 	}
 };
 
@@ -3758,27 +3798,28 @@ struct Modify<Derived, LevelEditorLayer> : ModifyBase<Modify<Derived, LevelEdito
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1657, x86::Thiscall, LevelEditorLayer, update)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1667, x86::Optcall, LevelEditorLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1669, x86::Membercall, LevelEditorLayer, addObjectFromString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1670, x86::Membercall, LevelEditorLayer, addSpecial)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1674, x86::Membercall, LevelEditorLayer, checkCollisions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1677, x86::Membercall, LevelEditorLayer, createObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1680, x86::Membercall, LevelEditorLayer, getLastObjectX)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1681, x86::Membercall, LevelEditorLayer, getLevelString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1684, x86::Membercall, LevelEditorLayer, getNextFreeGroupID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1686, x86::Membercall, LevelEditorLayer, getObjectRect)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1689, x86::Membercall, LevelEditorLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1690, x86::Membercall, LevelEditorLayer, objectAtPosition)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1693, x86::Membercall, LevelEditorLayer, onPlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1694, x86::Membercall, LevelEditorLayer, onResumePlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1695, x86::Membercall, LevelEditorLayer, onPausePlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1696, x86::Membercall, LevelEditorLayer, onStopPlaytest)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1697, x86::Membercall, LevelEditorLayer, pasteAttributeState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1701, x86::Membercall, LevelEditorLayer, removeAllObjects)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1703, x86::Membercall, LevelEditorLayer, removeObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1722, x86::Membercall, LevelEditorLayer, updateEditorMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1726, x86::Membercall, LevelEditorLayer, updateOptions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1665, x86::Thiscall, LevelEditorLayer, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1666, x86::Thiscall, LevelEditorLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1675, x86::Optcall, LevelEditorLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1677, x86::Membercall, LevelEditorLayer, addObjectFromString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1678, x86::Membercall, LevelEditorLayer, addSpecial)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1682, x86::Membercall, LevelEditorLayer, checkCollisions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1685, x86::Membercall, LevelEditorLayer, createObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1688, x86::Membercall, LevelEditorLayer, getLastObjectX)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1689, x86::Membercall, LevelEditorLayer, getLevelString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1692, x86::Membercall, LevelEditorLayer, getNextFreeGroupID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1694, x86::Membercall, LevelEditorLayer, getObjectRect)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1697, x86::Membercall, LevelEditorLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1698, x86::Membercall, LevelEditorLayer, objectAtPosition)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1701, x86::Membercall, LevelEditorLayer, onPlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1702, x86::Membercall, LevelEditorLayer, onResumePlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1703, x86::Membercall, LevelEditorLayer, onPausePlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1704, x86::Membercall, LevelEditorLayer, onStopPlaytest)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1705, x86::Membercall, LevelEditorLayer, pasteAttributeState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1709, x86::Membercall, LevelEditorLayer, removeAllObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1711, x86::Membercall, LevelEditorLayer, removeObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1730, x86::Membercall, LevelEditorLayer, updateEditorMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1734, x86::Membercall, LevelEditorLayer, updateOptions)
 	}
 };
 
@@ -3789,12 +3830,12 @@ struct Modify<Derived, LevelInfoLayer> : ModifyBase<Modify<Derived, LevelInfoLay
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1729, x86::Optcall, LevelInfoLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1730, x86::Membercall, LevelInfoLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1731, x86::Membercall, LevelInfoLayer, onGarage)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1732, x86::Membercall, LevelInfoLayer, onViewProfile)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1733, x86::Membercall, LevelInfoLayer, onLevelInfo)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1734, x86::Membercall, LevelInfoLayer, setupProgressBars)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1737, x86::Optcall, LevelInfoLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1738, x86::Membercall, LevelInfoLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1739, x86::Membercall, LevelInfoLayer, onGarage)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1740, x86::Membercall, LevelInfoLayer, onViewProfile)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1741, x86::Membercall, LevelInfoLayer, onLevelInfo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1742, x86::Membercall, LevelInfoLayer, setupProgressBars)
 	}
 };
 
@@ -3825,7 +3866,7 @@ struct Modify<Derived, LevelSelectLayer> : ModifyBase<Modify<Derived, LevelSelec
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1743, x86::Optcall, LevelSelectLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1751, x86::Optcall, LevelSelectLayer, create)
 	}
 };
 
@@ -3846,7 +3887,7 @@ struct Modify<Derived, LevelSettingsLayer> : ModifyBase<Modify<Derived, LevelSet
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1746, x86::Optcall, LevelSettingsLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1754, x86::Optcall, LevelSettingsLayer, create)
 	}
 };
 
@@ -3917,11 +3958,11 @@ struct Modify<Derived, LoadingLayer> : ModifyBase<Modify<Derived, LoadingLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1762, x86::Optcall, LoadingLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1763, x86::Membercall, LoadingLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1764, x86::Membercall, LoadingLayer, getLoadingString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1765, x86::Membercall, LoadingLayer, loadAssets)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1766, x86::Membercall, LoadingLayer, loadingFinished)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1770, x86::Optcall, LoadingLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1771, x86::Membercall, LoadingLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1772, x86::Membercall, LoadingLayer, getLoadingString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1773, x86::Membercall, LoadingLayer, loadAssets)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1774, x86::Membercall, LoadingLayer, loadingFinished)
 	}
 };
 
@@ -3962,8 +4003,8 @@ struct Modify<Derived, MoreSearchLayer> : ModifyBase<Modify<Derived, MoreSearchL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1795, x86::Optcall, MoreSearchLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1796, x86::Membercall, MoreSearchLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1803, x86::Optcall, MoreSearchLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1804, x86::Membercall, MoreSearchLayer, init)
 	}
 };
 
@@ -4004,8 +4045,8 @@ struct Modify<Derived, ObjectManager> : ModifyBase<Modify<Derived, ObjectManager
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1821, x86::Optcall, ObjectManager, instance)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1822, x86::Membercall, ObjectManager, setup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1829, x86::Optcall, ObjectManager, instance)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1830, x86::Membercall, ObjectManager, setup)
 	}
 };
 
@@ -4016,9 +4057,10 @@ struct Modify<Derived, ObjectToolbox> : ModifyBase<Modify<Derived, ObjectToolbox
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1829, x86::Optcall, ObjectToolbox, sharedState)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1830, x86::Membercall, ObjectToolbox, gridNodeSizeForKey)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1831, x86::Membercall, ObjectToolbox, perspectiveBlockFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1836, x86::Thiscall, ObjectToolbox, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1837, x86::Optcall, ObjectToolbox, sharedState)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1838, x86::Membercall, ObjectToolbox, gridNodeSizeForKey)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1839, x86::Membercall, ObjectToolbox, perspectiveBlockFrame)
 	}
 };
 
@@ -4039,7 +4081,7 @@ struct Modify<Derived, OptionsLayer> : ModifyBase<Modify<Derived, OptionsLayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1840, x86::Optcall, OptionsLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1848, x86::Optcall, OptionsLayer, create)
 	}
 };
 
@@ -4050,33 +4092,35 @@ struct Modify<Derived, PlayLayer> : ModifyBase<Modify<Derived, PlayLayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1855, x86::Membercall, PlayLayer, addObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1866, x86::Membercall, PlayLayer, checkCollisions)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1872, x86::Optcall, PlayLayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1873, x86::Membercall, PlayLayer, createCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1878, x86::Membercall, PlayLayer, destroyPlayer)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1880, x86::Thiscall, PlayLayer, draw)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1906, x86::Membercall, PlayLayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1908, x86::Membercall, PlayLayer, levelComplete)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1915, x86::Membercall, PlayLayer, markCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1917, x86::Thiscall, PlayLayer, onEnterTransitionDidFinish)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1918, x86::Thiscall, PlayLayer, onExit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1919, x86::Membercall, PlayLayer, onQuit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1940, x86::Membercall, PlayLayer, removeLastCheckpoint)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1942, x86::Membercall, PlayLayer, resetLevel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1946, x86::Optcall, PlayLayer, scene)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1947, x86::Membercall, PlayLayer, setupLevelStart)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1949, x86::Membercall, PlayLayer, shakeCamera)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1964, x86::Membercall, PlayLayer, startMusic)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1975, x86::Membercall, PlayLayer, timeForXPos2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1981, x86::Membercall, PlayLayer, togglePracticeMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1987, x86::Thiscall, PlayLayer, update)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1988, x86::Membercall, PlayLayer, updateAttempts)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1996, x86::Membercall, PlayLayer, updateReplay)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1998, x86::Thiscall, PlayLayer, updateTweenAction)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(1999, x86::Membercall, PlayLayer, updateVisibility)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2001, x86::Thiscall, PlayLayer, visit)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2005, x86::Membercall, PlayLayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1863, x86::Membercall, PlayLayer, addObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1874, x86::Membercall, PlayLayer, checkCollisions)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1880, x86::Optcall, PlayLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1881, x86::Membercall, PlayLayer, createCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1886, x86::Membercall, PlayLayer, destroyPlayer)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1888, x86::Thiscall, PlayLayer, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1914, x86::Membercall, PlayLayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1916, x86::Membercall, PlayLayer, levelComplete)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1919, x86::Membercall, PlayLayer, loadDefaultColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1923, x86::Membercall, PlayLayer, markCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1925, x86::Thiscall, PlayLayer, onEnterTransitionDidFinish)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1926, x86::Thiscall, PlayLayer, onExit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1927, x86::Membercall, PlayLayer, onQuit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1948, x86::Membercall, PlayLayer, removeLastCheckpoint)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1950, x86::Membercall, PlayLayer, resetLevel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1954, x86::Optcall, PlayLayer, scene)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1955, x86::Membercall, PlayLayer, setupLevelStart)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1957, x86::Membercall, PlayLayer, shakeCamera)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1972, x86::Membercall, PlayLayer, startMusic)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1983, x86::Membercall, PlayLayer, timeForXPos2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1989, x86::Membercall, PlayLayer, togglePracticeMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1995, x86::Thiscall, PlayLayer, update)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1996, x86::Membercall, PlayLayer, updateAttempts)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(1997, x86::Membercall, PlayLayer, updateCamera)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2004, x86::Membercall, PlayLayer, updateReplay)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2006, x86::Thiscall, PlayLayer, updateTweenAction)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2007, x86::Membercall, PlayLayer, updateVisibility)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2009, x86::Thiscall, PlayLayer, visit)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2013, x86::Membercall, PlayLayer, destructor)
 	}
 };
 
@@ -4087,7 +4131,7 @@ struct Modify<Derived, PointNode> : ModifyBase<Modify<Derived, PointNode>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2160, x86::Optcall, PointNode, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2168, x86::Optcall, PointNode, create)
 	}
 };
 
@@ -4098,12 +4142,12 @@ struct Modify<Derived, ProfilePage> : ModifyBase<Modify<Derived, ProfilePage>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2161, x86::Optcall, ProfilePage, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2162, x86::Membercall, ProfilePage, getUserInfoFailed)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2163, x86::Membercall, ProfilePage, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2164, x86::Membercall, ProfilePage, onMyLevels)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2165, x86::Membercall, ProfilePage, onUpdate)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2166, x86::Membercall, ProfilePage, loadPageFromUserInfo)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2169, x86::Optcall, ProfilePage, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2170, x86::Membercall, ProfilePage, getUserInfoFailed)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2171, x86::Membercall, ProfilePage, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2172, x86::Membercall, ProfilePage, onMyLevels)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2173, x86::Membercall, ProfilePage, onUpdate)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2174, x86::Membercall, ProfilePage, loadPageFromUserInfo)
 	}
 };
 
@@ -4124,17 +4168,17 @@ struct Modify<Derived, RingObject> : ModifyBase<Modify<Derived, RingObject>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2171, x86::Membercall, RingObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2172, x86::Membercall, RingObject, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2173, x86::Membercall, RingObject, spawnCircle)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2174, x86::Thiscall, RingObject, setRotation)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2175, x86::Thiscall, RingObject, setScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2176, x86::Thiscall, RingObject, resetObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2177, x86::Thiscall, RingObject, customObjectSetup)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2178, x86::Thiscall, RingObject, getSaveString)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2179, x86::Thiscall, RingObject, powerOnObject)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2181, x86::Thiscall, RingObject, setRScale)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2182, x86::Thiscall, RingObject, triggerActivated)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2179, x86::Membercall, RingObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2180, x86::Membercall, RingObject, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2181, x86::Membercall, RingObject, spawnCircle)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2182, x86::Thiscall, RingObject, setRotation)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2183, x86::Thiscall, RingObject, setScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2184, x86::Thiscall, RingObject, resetObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2185, x86::Thiscall, RingObject, customObjectSetup)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2186, x86::Thiscall, RingObject, getSaveString)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2187, x86::Thiscall, RingObject, powerOnObject)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2189, x86::Thiscall, RingObject, setRScale)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2190, x86::Thiscall, RingObject, triggerActivated)
 	}
 };
 
@@ -4165,7 +4209,7 @@ struct Modify<Derived, SelectArtLayer> : ModifyBase<Modify<Derived, SelectArtLay
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2184, x86::Optcall, SelectArtLayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2192, x86::Optcall, SelectArtLayer, create)
 	}
 };
 
@@ -4176,10 +4220,10 @@ struct Modify<Derived, SetGroupIDLayer> : ModifyBase<Modify<Derived, SetGroupIDL
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2187, x86::Membercall, SetGroupIDLayer, updateGroupIDLabel)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2189, x86::Membercall, SetGroupIDLayer, updateEditorLayerID)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2190, x86::Membercall, SetGroupIDLayer, updateEditorLayerID2)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2191, x86::Membercall, SetGroupIDLayer, updateZOrder)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2195, x86::Membercall, SetGroupIDLayer, updateGroupIDLabel)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2197, x86::Membercall, SetGroupIDLayer, updateEditorLayerID)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2198, x86::Membercall, SetGroupIDLayer, updateEditorLayerID2)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2199, x86::Membercall, SetGroupIDLayer, updateZOrder)
 	}
 };
 
@@ -4260,11 +4304,11 @@ struct Modify<Derived, SetupPulsePopup> : ModifyBase<Modify<Derived, SetupPulseP
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2233, x86::Thiscall, SetupPulsePopup, colorValueChanged)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2234, x86::Membercall, SetupPulsePopup, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2235, x86::Membercall, SetupPulsePopup, updateColorValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2236, x86::Membercall, SetupPulsePopup, onSelectPulseMode)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2237, x86::Membercall, SetupPulsePopup, updatePulseMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2241, x86::Thiscall, SetupPulsePopup, colorValueChanged)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2242, x86::Membercall, SetupPulsePopup, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2243, x86::Membercall, SetupPulsePopup, updateColorValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2244, x86::Membercall, SetupPulsePopup, onSelectPulseMode)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2245, x86::Membercall, SetupPulsePopup, updatePulseMode)
 	}
 };
 
@@ -4295,13 +4339,13 @@ struct Modify<Derived, SimplePlayer> : ModifyBase<Modify<Derived, SimplePlayer>>
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2251, x86::Membercall, SimplePlayer, init)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2252, x86::Optcall, SimplePlayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2253, x86::Membercall, SimplePlayer, updatePlayerFrame)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2254, x86::Membercall, SimplePlayer, updateColors)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2255, x86::Membercall, SimplePlayer, setFrames)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2256, x86::Membercall, SimplePlayer, setColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2257, x86::Membercall, SimplePlayer, setOpacity)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2259, x86::Membercall, SimplePlayer, init)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2260, x86::Optcall, SimplePlayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2261, x86::Membercall, SimplePlayer, updatePlayerFrame)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2262, x86::Membercall, SimplePlayer, updateColors)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2263, x86::Membercall, SimplePlayer, setFrames)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2264, x86::Membercall, SimplePlayer, setColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2265, x86::Membercall, SimplePlayer, setOpacity)
 	}
 };
 
@@ -4312,9 +4356,9 @@ struct Modify<Derived, Slider> : ModifyBase<Modify<Derived, Slider>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2261, x86::Membercall, Slider, getValue)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2262, x86::Membercall, Slider, updateBar)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2263, x86::Optcall, Slider, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2269, x86::Membercall, Slider, getValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2270, x86::Membercall, Slider, updateBar)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2271, x86::Optcall, Slider, create)
 	}
 };
 
@@ -4325,7 +4369,7 @@ struct Modify<Derived, SliderThumb> : ModifyBase<Modify<Derived, SliderThumb>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2264, x86::Membercall, SliderThumb, setValue)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2272, x86::Membercall, SliderThumb, setValue)
 	}
 };
 
@@ -4366,8 +4410,8 @@ struct Modify<Derived, StatsCell> : ModifyBase<Modify<Derived, StatsCell>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2275, x86::Membercall, StatsCell, updateBGColor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2276, x86::Membercall, StatsCell, draw)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2283, x86::Membercall, StatsCell, updateBGColor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2284, x86::Membercall, StatsCell, draw)
 	}
 };
 
@@ -4378,7 +4422,7 @@ struct Modify<Derived, TextAlertPopup> : ModifyBase<Modify<Derived, TextAlertPop
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2290, x86::Optcall, TextAlertPopup, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2298, x86::Optcall, TextAlertPopup, create)
 	}
 };
 
@@ -4439,14 +4483,14 @@ struct Modify<Derived, UILayer> : ModifyBase<Modify<Derived, UILayer>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2313, x86::Optcall, UILayer, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2319, x86::Membercall, UILayer, onCheck)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2320, x86::Membercall, UILayer, onDeleteCheck)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2321, x86::Membercall, UILayer, onPause)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2322, x86::Thiscall, UILayer, keyDown)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2323, x86::Thiscall, UILayer, keyUp)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2324, x86::Membercall, UILayer, destructor)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2325, x86::Membercall, UILayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2321, x86::Optcall, UILayer, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2327, x86::Membercall, UILayer, onCheck)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2328, x86::Membercall, UILayer, onDeleteCheck)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2329, x86::Membercall, UILayer, onPause)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2330, x86::Thiscall, UILayer, keyDown)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2331, x86::Thiscall, UILayer, keyUp)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2332, x86::Membercall, UILayer, destructor)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2333, x86::Membercall, UILayer, destructor)
 	}
 };
 
@@ -4457,9 +4501,9 @@ struct Modify<Derived, UndoObject> : ModifyBase<Modify<Derived, UndoObject>> {
 	static void apply() {
 		using namespace geode::core::meta;
 
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2327, x86::Optcall, UndoObject, create)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2328, x86::Optcall, UndoObject, createWithArray)
-		GEODE_APPLY_MODIFY_FOR_FUNCTION(2329, x86::Optcall, UndoObject, createWithTransformObjects)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2335, x86::Optcall, UndoObject, create)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2336, x86::Optcall, UndoObject, createWithArray)
+		GEODE_APPLY_MODIFY_FOR_FUNCTION(2337, x86::Optcall, UndoObject, createWithTransformObjects)
 	}
 };
 

@@ -468,6 +468,11 @@ public:
 
     virtual void activateObject();
 
+    template <bool T=false>
+    void activateObject(PlayerObject* p0){
+        static_assert(T, "Implement GameObject::activateObject");
+    }
+
     virtual void deactivateObject(bool p0);
 
     virtual cocos2d::CCRect const& getObjectRect();
@@ -4051,8 +4056,18 @@ public:
 	 using CCPointArray200 = cocos2d::CCPoint(*)[200];
 
     template <bool T=false>
+    bool init(cocos2d::CCNode* grid, LevelEditorLayer* editor){
+        static_assert(T, "Implement DrawGridLayer::init");
+    }
+
+    template <bool T=false>
     void draw(){
         static_assert(T, "Implement DrawGridLayer::draw");
+    }
+
+    template <bool T=false>
+    void update(float p0){
+        static_assert(T, "Implement DrawGridLayer::update");
     }
 
         CCPointArray400 m_commonLines;
@@ -4108,6 +4123,11 @@ public:
     template <bool T=false>
     void playBackgroundMusic(gd::string path, bool fade, bool paused){
         static_assert(T, "Implement FMODAudioEngine::playBackgroundMusic");
+    }
+
+    template <bool T=false>
+    void update(float p0){
+        static_assert(T, "Implement FMODAudioEngine::update");
     }
 
         cocos2d::CCDictionary* m_dictionary;
@@ -4245,6 +4265,11 @@ public:
     static void scene(GJGameLevel* level);
 
     static EditLevelLayer* create(GJGameLevel* level);
+
+    template <bool T=false>
+    bool init(GJGameLevel* level){
+        static_assert(T, "Implement EditLevelLayer::init");
+    }
 
     template <bool T=false>
     void onLevelInfo(){
@@ -4789,7 +4814,7 @@ public:
 
     cocos2d::CCArray* getSelectedObjects();
 
-    void init(LevelEditorLayer* p0);
+    bool init(LevelEditorLayer* p0);
 
     virtual bool ccTouchBegan(cocos2d::CCTouch* p0, cocos2d::CCEvent* p1);
 
@@ -5027,6 +5052,11 @@ public:
     template <bool T=false>
     void alignObjects(cocos2d::CCArray* objs, bool alignY){
         static_assert(T, "Implement EditorUI::alignObjects");
+    }
+
+    template <bool T=false>
+    void draw(){
+        static_assert(T, "Implement EditorUI::draw");
     }
 
     virtual void keyUp(cocos2d::enumKeyCodes key);
@@ -6613,6 +6643,11 @@ public:
 
     void stopBackgroundMusic();
 
+    template <bool T=false>
+    void asynchronousSetup(){
+        static_assert(T, "Implement GameSoundManager::asynchronousSetup");
+    }
+
         ~GameSoundManager();
     static GameSoundManager* sharedManager();
 
@@ -7388,7 +7423,7 @@ public:
 
     cocos2d::CCSize* resolutionForKey(cocos2d::CCSize* p0, int p1);
 
-    void update(float p0);
+    virtual void update(float p0);
 
     bool isColorUnlocked(int _id, bool _type);
 

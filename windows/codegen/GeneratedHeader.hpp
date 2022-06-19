@@ -350,6 +350,8 @@ public:
 
     virtual void activateObject();
 
+    void activateObject(PlayerObject* p0);
+
     virtual void deactivateObject(bool p0);
 
     virtual cocos2d::CCRect const& getObjectRect();
@@ -452,10 +454,7 @@ public:
         static_assert(T, "Implement GameObject::addColorSprite");
     }
 
-    template <bool T=false>
-    void addColorSpriteToParent(bool p0){
-        static_assert(T, "Implement GameObject::addColorSpriteToParent");
-    }
+    void addColorSpriteToParent(bool p0);
 
     template <bool T=false>
     void addGlow(){
@@ -883,10 +882,7 @@ public:
 class GEODE_CODEGEN_DLL PlayerObject : public GameObject, public AnimatedSpriteDelegate {
 public:
 
-    template <bool T=false>
-    void update(float p0){
-        static_assert(T, "Implement PlayerObject::update");
-    }
+    virtual void update(float p0);
 
     template <bool T=false>
     void setScaleX(float p0){
@@ -1068,10 +1064,7 @@ public:
 
     void incrementJumps();
 
-    template <bool T=false>
-    bool init(int p0, int p1, cocos2d::CCLayer* p2){
-        static_assert(T, "Implement PlayerObject::init");
-    }
+    bool init(int p0, int p1, cocos2d::CCLayer* p2);
 
     template <bool T=false>
     void isBoostValid(float p0){
@@ -1382,10 +1375,7 @@ public:
         static_assert(T, "Implement PlayerObject::updateCheckpointMode");
     }
 
-    template <bool T=false>
-    void updateCheckpointTest(){
-        static_assert(T, "Implement PlayerObject::updateCheckpointTest");
-    }
+    void updateCheckpointTest();
 
     template <bool T=false>
     void updateCollide(bool p0, int p1){
@@ -1850,7 +1840,11 @@ public:
 	 using CCPointArray400 = cocos2d::CCPoint(*)[400];
 	 using CCPointArray200 = cocos2d::CCPoint(*)[200];
 
+    bool init(cocos2d::CCNode* grid, LevelEditorLayer* editor);
+
     void draw();
+
+    virtual void update(float p0);
 
         CCPointArray400 m_commonLines;
         CCPointArray200 m_yellowGuidelines;
@@ -2738,30 +2732,24 @@ public:
 class GEODE_CODEGEN_DLL GameSoundManager : public cocos2d::CCNode {
 public:
 
-    template <bool T=false>
-    void disableMetering(){
-        static_assert(T, "Implement GameSoundManager::disableMetering");
-    }
+    void disableMetering();
 
-    template <bool T=false>
-    void enableMetering(){
-        static_assert(T, "Implement GameSoundManager::enableMetering");
-    }
+    void enableMetering();
 
     template <bool T=false>
     void getMeteringValue(){
         static_assert(T, "Implement GameSoundManager::getMeteringValue");
     }
 
-    template <bool T=false>
-    void playBackgroundMusic(gd::string p0, bool p1, bool p2){
-        static_assert(T, "Implement GameSoundManager::playBackgroundMusic");
-    }
+    void playBackgroundMusic(gd::string p0, bool p1, bool p2);
 
     void playEffect(gd::string p0, float p1, float p2, float p3);
 
     void stopBackgroundMusic();
 
+    void asynchronousSetup();
+
+        ~GameSoundManager();
     static GameSoundManager* sharedManager();
 
         cocos2d::CCDictionary* m_dictionary1;
@@ -3007,10 +2995,7 @@ public:
         static_assert(T, "Implement AnimatedGameObject::playAnimation");
     }
 
-    template <bool T=false>
-    void updateChildSpriteColor(cocos2d::_ccColor3B p0){
-        static_assert(T, "Implement AnimatedGameObject::updateChildSpriteColor");
-    }
+    void updateChildSpriteColor(cocos2d::_ccColor3B p0);
 
 };
 
@@ -4258,6 +4243,8 @@ public:
 
     static EditLevelLayer* create(GJGameLevel* level);
 
+    bool init(GJGameLevel* level);
+
     void onLevelInfo();
 
         cocos2d::CCMenu* m_buttonMenu;
@@ -4380,10 +4367,7 @@ public:
 
     cocos2d::CCArray* getSelectedObjects();
 
-    template <bool T=false>
-    void init(LevelEditorLayer* p0){
-        static_assert(T, "Implement EditorUI::init");
-    }
+    bool init(LevelEditorLayer* p0);
 
     template <bool T=false>
     bool ccTouchBegan(cocos2d::CCTouch* p0, cocos2d::CCEvent* p1){
@@ -4575,6 +4559,8 @@ public:
 
     void alignObjects(cocos2d::CCArray* objs, bool alignY);
 
+    virtual void draw();
+
     virtual void keyUp(cocos2d::enumKeyCodes key);
 
         EditButtonBar* m_buttonBar;
@@ -4756,6 +4742,8 @@ public:
     bool isBackgroundMusicPlaying(gd::string path);
 
     void playBackgroundMusic(gd::string path, bool fade, bool paused);
+
+    virtual void update(float p0);
 
         cocos2d::CCDictionary* m_dictionary;
         std::string m_filePath;
@@ -5068,35 +5056,20 @@ public:
         static_assert(T, "Implement GJBaseGameLayer::processColorObject");
     }
 
-    template <bool T=false>
-    void processFollowActions(){
-        static_assert(T, "Implement GJBaseGameLayer::processFollowActions");
-    }
+    void processFollowActions();
 
-    template <bool T=false>
-    void processMoveActions(){
-        static_assert(T, "Implement GJBaseGameLayer::processMoveActions");
-    }
+    void processMoveActions();
 
-    template <bool T=false>
-    void processMoveActionsStep(float p0){
-        static_assert(T, "Implement GJBaseGameLayer::processMoveActionsStep");
-    }
+    void processMoveActionsStep(float p0);
 
     template <bool T=false>
     void processOpacityObject(EffectGameObject* p0, cocos2d::CCDictionary* p1, float p2, GJEffectManager* p3){
         static_assert(T, "Implement GJBaseGameLayer::processOpacityObject");
     }
 
-    template <bool T=false>
-    void processPlayerFollowActions(float p0){
-        static_assert(T, "Implement GJBaseGameLayer::processPlayerFollowActions");
-    }
+    void processPlayerFollowActions(float p0);
 
-    template <bool T=false>
-    void processRotationActions(){
-        static_assert(T, "Implement GJBaseGameLayer::processRotationActions");
-    }
+    void processRotationActions();
 
     void pushButton(int p0, bool p1);
 
@@ -5117,15 +5090,9 @@ public:
         static_assert(T, "Implement GJBaseGameLayer::removeFromGroups");
     }
 
-    template <bool T=false>
-    void removeObjectFromSection(GameObject* p0){
-        static_assert(T, "Implement GJBaseGameLayer::removeObjectFromSection");
-    }
+    void removeObjectFromSection(GameObject* p0);
 
-    template <bool T=false>
-    void reorderObjectSection(GameObject* p0){
-        static_assert(T, "Implement GJBaseGameLayer::reorderObjectSection");
-    }
+    void reorderObjectSection(GameObject* p0);
 
     template <bool T=false>
     void resetGroupCounters(bool p0){
@@ -5179,10 +5146,7 @@ public:
         static_assert(T, "Implement GJBaseGameLayer::triggerMoveCommand");
     }
 
-    template <bool T=false>
-    void updateCollisionBlocks(){
-        static_assert(T, "Implement GJBaseGameLayer::updateCollisionBlocks");
-    }
+    void updateCollisionBlocks();
 
     template <bool T=false>
     void updateCounters(int p0, int p1){
@@ -5209,10 +5173,7 @@ public:
         static_assert(T, "Implement GJBaseGameLayer::updateOBB2");
     }
 
-    template <bool T=false>
-    void updateQueuedLabels(){
-        static_assert(T, "Implement GJBaseGameLayer::updateQueuedLabels");
-    }
+    void updateQueuedLabels();
 
         OBB2D* m_boundingBox;
         GJEffectManager* m_effectManager;
@@ -5397,20 +5358,14 @@ public:
         static_assert(T, "Implement GJEffectManager::addGroupPulseEffect");
     }
 
-    template <bool T=false>
-    void calculateBaseActiveColors(){
-        static_assert(T, "Implement GJEffectManager::calculateBaseActiveColors");
-    }
+    void calculateBaseActiveColors();
 
     template <bool T=false>
     void calculateInheritedColor(int p0, ColorAction* p1){
         static_assert(T, "Implement GJEffectManager::calculateInheritedColor");
     }
 
-    template <bool T=false>
-    void calculateLightBGColor(cocos2d::_ccColor3B p0){
-        static_assert(T, "Implement GJEffectManager::calculateLightBGColor");
-    }
+    void calculateLightBGColor(cocos2d::_ccColor3B p0);
 
     template <bool T=false>
     void colorActionChanged(ColorAction* p0){
@@ -5489,10 +5444,7 @@ public:
 
     const cocos2d::_ccColor3B& getColorAction(int p0);
 
-    template <bool T=false>
-    const cocos2d::_ccColor3B& getColorSprite(int p0){
-        static_assert(T, "Implement GJEffectManager::getColorSprite");
-    }
+    const cocos2d::_ccColor3B& getColorSprite(int p0);
 
     template <bool T=false>
     void getCurrentStateString(){
@@ -5579,40 +5531,22 @@ public:
         static_assert(T, "Implement GJEffectManager::playerDied");
     }
 
-    template <bool T=false>
-    void postCollisionCheck(){
-        static_assert(T, "Implement GJEffectManager::postCollisionCheck");
-    }
+    void postCollisionCheck();
 
-    template <bool T=false>
-    void preCollisionCheck(){
-        static_assert(T, "Implement GJEffectManager::preCollisionCheck");
-    }
+    void preCollisionCheck();
 
-    template <bool T=false>
-    void prepareMoveActions(float p0, bool p1){
-        static_assert(T, "Implement GJEffectManager::prepareMoveActions");
-    }
+    void prepareMoveActions(float p0, bool p1);
 
     template <bool T=false>
     void processColors(){
         static_assert(T, "Implement GJEffectManager::processColors");
     }
 
-    template <bool T=false>
-    void processCopyColorPulseActions(){
-        static_assert(T, "Implement GJEffectManager::processCopyColorPulseActions");
-    }
+    void processCopyColorPulseActions();
 
-    template <bool T=false>
-    void processInheritedColors(){
-        static_assert(T, "Implement GJEffectManager::processInheritedColors");
-    }
+    void processInheritedColors();
 
-    template <bool T=false>
-    void processPulseActions(){
-        static_assert(T, "Implement GJEffectManager::processPulseActions");
-    }
+    void processPulseActions();
 
     template <bool T=false>
     void registerCollisionTrigger(int p0, int p1, int p2, bool p3, bool p4, int p5){
@@ -5744,10 +5678,7 @@ public:
         static_assert(T, "Implement GJEffectManager::updateColorAction");
     }
 
-    template <bool T=false>
-    void updateColorEffects(float p0){
-        static_assert(T, "Implement GJEffectManager::updateColorEffects");
-    }
+    void updateColorEffects(float p0);
 
     template <bool T=false>
     void updateColors(cocos2d::_ccColor3B p0, cocos2d::_ccColor3B p1){
@@ -5766,15 +5697,9 @@ public:
 
     void updateOpacityEffects(float p0);
 
-    template <bool T=false>
-    void updatePulseEffects(float p0){
-        static_assert(T, "Implement GJEffectManager::updatePulseEffects");
-    }
+    void updatePulseEffects(float p0);
 
-    template <bool T=false>
-    void updateSpawnTriggers(float p0){
-        static_assert(T, "Implement GJEffectManager::updateSpawnTriggers");
-    }
+    void updateSpawnTriggers(float p0);
 
     template <bool T=false>
     void wasFollowing(int p0, int p1){
@@ -6594,10 +6519,7 @@ public:
 
     cocos2d::CCSize* resolutionForKey(cocos2d::CCSize* p0, int p1);
 
-    template <bool T=false>
-    void update(float p0){
-        static_assert(T, "Implement GameManager::update");
-    }
+    virtual void update(float p0);
 
     bool isColorUnlocked(int _id, bool _type);
 
@@ -7023,10 +6945,7 @@ public:
 
     virtual void update(float p0);
 
-    template <bool T=false>
-    void draw(){
-        static_assert(T, "Implement LevelEditorLayer::draw");
-    }
+    virtual void draw();
 
     template <bool T=false>
     void updateColor(cocos2d::_ccColor3B p0, float p1, int p2, bool p3, float p4, cocos2d::_ccHSVValue p5, int p6, bool p7, int p8, EffectGameObject* p9){
@@ -7618,10 +7537,7 @@ public:
 
     void addObject(int id, const char* frame);
 
-    template <bool T=false>
-    bool init(){
-        static_assert(T, "Implement ObjectToolbox::init");
-    }
+    virtual bool init();
 
     static ObjectToolbox* sharedState();
 
@@ -7942,10 +7858,7 @@ public:
         static_assert(T, "Implement PlayLayer::lightningFlash");
     }
 
-    template <bool T=false>
-    void loadDefaultColors(){
-        static_assert(T, "Implement PlayLayer::loadDefaultColors");
-    }
+    void loadDefaultColors();
 
     template <bool T=false>
     void loadFromCheckpoint(CheckpointObject* p0){
@@ -8290,10 +8203,7 @@ public:
 
     void updateAttempts();
 
-    template <bool T=false>
-    void updateCamera(float p0){
-        static_assert(T, "Implement PlayLayer::updateCamera");
-    }
+    void updateCamera(float p0);
 
     template <bool T=false>
     void updateColor(cocos2d::_ccColor3B p0, float p1, int p2, bool p3, float p4, cocos2d::_ccHSVValue p5, int p6, bool p7, int p8, EffectGameObject* p9){
