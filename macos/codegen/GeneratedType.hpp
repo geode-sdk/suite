@@ -1,363 +1,345 @@
 
-using ret2321 = UILayer*;
-using func2321 = ret2321(*)();
-using pure2321 = ret2321();
-using meta2321 = ret2321();
-using member2321 = func2321;
-
-using ret2322 = bool;
-using func2322 = ret2322(*)(UILayer*);
-using pure2322 = ret2322();
-using meta2322 = ret2322(UILayer*);
-using member2322 = ret2322(UILayer::*)();
-
-using ret2323 = void;
-using func2323 = ret2323(*)(UILayer*);
-using pure2323 = ret2323();
-using meta2323 = ret2323(UILayer*);
-using member2323 = ret2323(UILayer::*)();
-
-using ret2324 = void;
-using func2324 = ret2324(*)(UILayer*);
+using ret2324 = UILayer*;
+using func2324 = ret2324(*)();
 using pure2324 = ret2324();
-using meta2324 = ret2324(UILayer*);
-using member2324 = ret2324(UILayer::*)();
+using meta2324 = ret2324();
+using member2324 = func2324;
 
-using ret2325 = void;
-using func2325 = ret2325(*)(UILayer*, cocos2d::CCNode*);
-using pure2325 = ret2325(cocos2d::CCNode*);
-using meta2325 = ret2325(UILayer*, cocos2d::CCNode*);
-using member2325 = ret2325(UILayer::*)(cocos2d::CCNode*);
+using ret2325 = bool;
+using func2325 = ret2325(*)(UILayer*);
+using pure2325 = ret2325();
+using meta2325 = ret2325(UILayer*);
+using member2325 = ret2325(UILayer::*)();
 
 using ret2326 = void;
-using func2326 = ret2326(*)(UILayer*, bool);
-using pure2326 = ret2326(bool);
-using meta2326 = ret2326(UILayer*, bool);
-using member2326 = ret2326(UILayer::*)(bool);
+using func2326 = ret2326(*)(UILayer*);
+using pure2326 = ret2326();
+using meta2326 = ret2326(UILayer*);
+using member2326 = ret2326(UILayer::*)();
 
 using ret2327 = void;
-using func2327 = ret2327(*)(UILayer*, cocos2d::CCObject*);
-using pure2327 = ret2327(cocos2d::CCObject*);
-using meta2327 = ret2327(UILayer*, cocos2d::CCObject*);
-using member2327 = ret2327(UILayer::*)(cocos2d::CCObject*);
+using func2327 = ret2327(*)(UILayer*);
+using pure2327 = ret2327();
+using meta2327 = ret2327(UILayer*);
+using member2327 = ret2327(UILayer::*)();
 
 using ret2328 = void;
-using func2328 = ret2328(*)(UILayer*, cocos2d::CCObject*);
-using pure2328 = ret2328(cocos2d::CCObject*);
-using meta2328 = ret2328(UILayer*, cocos2d::CCObject*);
-using member2328 = ret2328(UILayer::*)(cocos2d::CCObject*);
+using func2328 = ret2328(*)(UILayer*, cocos2d::CCNode*);
+using pure2328 = ret2328(cocos2d::CCNode*);
+using meta2328 = ret2328(UILayer*, cocos2d::CCNode*);
+using member2328 = ret2328(UILayer::*)(cocos2d::CCNode*);
 
 using ret2329 = void;
-using func2329 = ret2329(*)(UILayer*, cocos2d::CCObject*);
-using pure2329 = ret2329(cocos2d::CCObject*);
-using meta2329 = ret2329(UILayer*, cocos2d::CCObject*);
-using member2329 = ret2329(UILayer::*)(cocos2d::CCObject*);
+using func2329 = ret2329(*)(UILayer*, bool);
+using pure2329 = ret2329(bool);
+using meta2329 = ret2329(UILayer*, bool);
+using member2329 = ret2329(UILayer::*)(bool);
 
 using ret2330 = void;
-using func2330 = ret2330(*)(UILayer*, cocos2d::enumKeyCodes);
-using pure2330 = ret2330(cocos2d::enumKeyCodes);
-using meta2330 = ret2330(UILayer*, cocos2d::enumKeyCodes);
-using member2330 = ret2330(UILayer::*)(cocos2d::enumKeyCodes);
+using func2330 = ret2330(*)(UILayer*, cocos2d::CCObject*);
+using pure2330 = ret2330(cocos2d::CCObject*);
+using meta2330 = ret2330(UILayer*, cocos2d::CCObject*);
+using member2330 = ret2330(UILayer::*)(cocos2d::CCObject*);
 
 using ret2331 = void;
-using func2331 = ret2331(*)(UILayer*, cocos2d::enumKeyCodes);
-using pure2331 = ret2331(cocos2d::enumKeyCodes);
-using meta2331 = ret2331(UILayer*, cocos2d::enumKeyCodes);
-using member2331 = ret2331(UILayer::*)(cocos2d::enumKeyCodes);
+using func2331 = ret2331(*)(UILayer*, cocos2d::CCObject*);
+using pure2331 = ret2331(cocos2d::CCObject*);
+using meta2331 = ret2331(UILayer*, cocos2d::CCObject*);
+using member2331 = ret2331(UILayer::*)(cocos2d::CCObject*);
 
-using ret2284 = void;
-using func2284 = ret2284(*)(StatsCell*);
-using pure2284 = ret2284();
-using meta2284 = ret2284(StatsCell*);
-using member2284 = ret2284(StatsCell::*)();
+using ret2332 = void;
+using func2332 = ret2332(*)(UILayer*, cocos2d::CCObject*);
+using pure2332 = ret2332(cocos2d::CCObject*);
+using meta2332 = ret2332(UILayer*, cocos2d::CCObject*);
+using member2332 = ret2332(UILayer::*)(cocos2d::CCObject*);
 
-using ret2282 = StartPosObject*;
-using func2282 = ret2282(*)();
-using pure2282 = ret2282();
-using meta2282 = ret2282();
-using member2282 = func2282;
+using ret2333 = void;
+using func2333 = ret2333(*)(UILayer*, cocos2d::enumKeyCodes);
+using pure2333 = ret2333(cocos2d::enumKeyCodes);
+using meta2333 = ret2333(UILayer*, cocos2d::enumKeyCodes);
+using member2333 = ret2333(UILayer::*)(cocos2d::enumKeyCodes);
 
-using ret2299 = void;
-using func2299 = ret2299(*)(TextArea*);
-using pure2299 = ret2299();
-using meta2299 = ret2299(TextArea*);
-using member2299 = func2299;
+using ret2334 = void;
+using func2334 = ret2334(*)(UILayer*, cocos2d::enumKeyCodes);
+using pure2334 = ret2334(cocos2d::enumKeyCodes);
+using meta2334 = ret2334(UILayer*, cocos2d::enumKeyCodes);
+using member2334 = ret2334(UILayer::*)(cocos2d::enumKeyCodes);
 
-using ret2300 = void;
-using func2300 = ret2300(*)(TextArea*);
-using pure2300 = ret2300();
-using meta2300 = ret2300(TextArea*);
-using member2300 = ret2300(TextArea::*)();
+using ret2287 = void;
+using func2287 = ret2287(*)(StatsCell*);
+using pure2287 = ret2287();
+using meta2287 = ret2287(StatsCell*);
+using member2287 = ret2287(StatsCell::*)();
 
-using ret2301 = void;
-using func2301 = ret2301(*)(TextArea*, unsigned char);
-using pure2301 = ret2301(unsigned char);
-using meta2301 = ret2301(TextArea*, unsigned char);
-using member2301 = ret2301(TextArea::*)(unsigned char);
+using ret2285 = StartPosObject*;
+using func2285 = ret2285(*)();
+using pure2285 = ret2285();
+using meta2285 = ret2285();
+using member2285 = func2285;
 
-using ret2302 = bool;
-using func2302 = ret2302(*)(TextArea*, gd::string, char const*, float, float, cocos2d::CCPoint, float, bool);
-using pure2302 = ret2302(gd::string, char const*, float, float, cocos2d::CCPoint, float, bool);
-using meta2302 = ret2302(TextArea*, gd::string, char const*, float, float, cocos2d::CCPoint, float, bool);
-using member2302 = ret2302(TextArea::*)(gd::string, char const*, float, float, cocos2d::CCPoint, float, bool);
+using ret2302 = void;
+using func2302 = ret2302(*)(TextArea*);
+using pure2302 = ret2302();
+using meta2302 = ret2302(TextArea*);
+using member2302 = func2302;
 
-using ret2303 = TextArea*;
-using func2303 = ret2303(*)(gd::string, char const*, float, float, cocos2d::CCPoint const&, float, bool);
-using pure2303 = ret2303(gd::string, char const*, float, float, cocos2d::CCPoint const&, float, bool);
-using meta2303 = ret2303(gd::string, char const*, float, float, cocos2d::CCPoint const&, float, bool);
-using member2303 = func2303;
+using ret2303 = void;
+using func2303 = ret2303(*)(TextArea*);
+using pure2303 = ret2303();
+using meta2303 = ret2303(TextArea*);
+using member2303 = ret2303(TextArea::*)();
 
-using ret2305 = void;
-using func2305 = ret2305(*)(TextArea*, gd::string);
-using pure2305 = ret2305(gd::string);
-using meta2305 = ret2305(TextArea*, gd::string);
-using member2305 = ret2305(TextArea::*)(gd::string);
+using ret2304 = void;
+using func2304 = ret2304(*)(TextArea*, unsigned char);
+using pure2304 = ret2304(unsigned char);
+using meta2304 = ret2304(TextArea*, unsigned char);
+using member2304 = ret2304(TextArea::*)(unsigned char);
 
-using ret2272 = void;
-using func2272 = ret2272(*)(SliderThumb*, float);
-using pure2272 = ret2272(float);
-using meta2272 = ret2272(SliderThumb*, float);
-using member2272 = ret2272(SliderThumb::*)(float);
+using ret2305 = bool;
+using func2305 = ret2305(*)(TextArea*, gd::string, char const*, float, float, cocos2d::CCPoint, float, bool);
+using pure2305 = ret2305(gd::string, char const*, float, float, cocos2d::CCPoint, float, bool);
+using meta2305 = ret2305(TextArea*, gd::string, char const*, float, float, cocos2d::CCPoint, float, bool);
+using member2305 = ret2305(TextArea::*)(gd::string, char const*, float, float, cocos2d::CCPoint, float, bool);
 
-using ret2259 = bool;
-using func2259 = ret2259(*)(SimplePlayer*, int);
-using pure2259 = ret2259(int);
-using meta2259 = ret2259(SimplePlayer*, int);
-using member2259 = ret2259(SimplePlayer::*)(int);
+using ret2306 = TextArea*;
+using func2306 = ret2306(*)(gd::string, char const*, float, float, cocos2d::CCPoint const&, float, bool);
+using pure2306 = ret2306(gd::string, char const*, float, float, cocos2d::CCPoint const&, float, bool);
+using meta2306 = ret2306(gd::string, char const*, float, float, cocos2d::CCPoint const&, float, bool);
+using member2306 = func2306;
 
-using ret2260 = SimplePlayer*;
-using func2260 = ret2260(*)(int);
-using pure2260 = ret2260(int);
-using meta2260 = ret2260(int);
-using member2260 = func2260;
+using ret2308 = void;
+using func2308 = ret2308(*)(TextArea*, gd::string);
+using pure2308 = ret2308(gd::string);
+using meta2308 = ret2308(TextArea*, gd::string);
+using member2308 = ret2308(TextArea::*)(gd::string);
 
-using ret2261 = void;
-using func2261 = ret2261(*)(SimplePlayer*, int, IconType);
-using pure2261 = ret2261(int, IconType);
-using meta2261 = ret2261(SimplePlayer*, int, IconType);
-using member2261 = ret2261(SimplePlayer::*)(int, IconType);
+using ret2275 = void;
+using func2275 = ret2275(*)(SliderThumb*, float);
+using pure2275 = ret2275(float);
+using meta2275 = ret2275(SliderThumb*, float);
+using member2275 = ret2275(SliderThumb::*)(float);
 
-using ret2262 = void;
-using func2262 = ret2262(*)(SimplePlayer*);
-using pure2262 = ret2262();
-using meta2262 = ret2262(SimplePlayer*);
-using member2262 = ret2262(SimplePlayer::*)();
+using ret2262 = bool;
+using func2262 = ret2262(*)(SimplePlayer*, int);
+using pure2262 = ret2262(int);
+using meta2262 = ret2262(SimplePlayer*, int);
+using member2262 = ret2262(SimplePlayer::*)(int);
+
+using ret2263 = SimplePlayer*;
+using func2263 = ret2263(*)(int);
+using pure2263 = ret2263(int);
+using meta2263 = ret2263(int);
+using member2263 = func2263;
 
 using ret2264 = void;
-using func2264 = ret2264(*)(SimplePlayer*, const cocos2d::ccColor3B&);
-using pure2264 = ret2264(const cocos2d::ccColor3B&);
-using meta2264 = ret2264(SimplePlayer*, const cocos2d::ccColor3B&);
-using member2264 = ret2264(SimplePlayer::*)(const cocos2d::ccColor3B&);
+using func2264 = ret2264(*)(SimplePlayer*, int, IconType);
+using pure2264 = ret2264(int, IconType);
+using meta2264 = ret2264(SimplePlayer*, int, IconType);
+using member2264 = ret2264(SimplePlayer::*)(int, IconType);
 
-using ret2281 = SpawnTriggerAction*;
-using func2281 = ret2281(*)(gd::string);
-using pure2281 = ret2281(gd::string);
-using meta2281 = ret2281(gd::string);
-using member2281 = func2281;
+using ret2265 = void;
+using func2265 = ret2265(*)(SimplePlayer*);
+using pure2265 = ret2265();
+using meta2265 = ret2265(SimplePlayer*);
+using member2265 = ret2265(SimplePlayer::*)();
 
-using ret2247 = SetupSpawnPopup*;
-using func2247 = ret2247(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2247 = ret2247(EffectGameObject*, cocos2d::CCArray*);
-using meta2247 = ret2247(EffectGameObject*, cocos2d::CCArray*);
-using member2247 = func2247;
+using ret2267 = void;
+using func2267 = ret2267(*)(SimplePlayer*, const cocos2d::ccColor3B&);
+using pure2267 = ret2267(const cocos2d::ccColor3B&);
+using meta2267 = ret2267(SimplePlayer*, const cocos2d::ccColor3B&);
+using member2267 = ret2267(SimplePlayer::*)(const cocos2d::ccColor3B&);
 
-using ret2248 = void;
-using func2248 = ret2248(*)(SetupSpawnPopup*, gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCArray*);
-using pure2248 = ret2248(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCArray*);
-using meta2248 = ret2248(SetupSpawnPopup*, gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCArray*);
-using member2248 = ret2248(SetupSpawnPopup::*)(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCArray*);
+using ret2284 = SpawnTriggerAction*;
+using func2284 = ret2284(*)(gd::string);
+using pure2284 = ret2284(gd::string);
+using meta2284 = ret2284(gd::string);
+using member2284 = func2284;
 
-using ret2249 = void;
-using func2249 = ret2249(*)(SetupSpawnPopup*, cocos2d::CCObject*);
-using pure2249 = ret2249(cocos2d::CCObject*);
-using meta2249 = ret2249(SetupSpawnPopup*, cocos2d::CCObject*);
-using member2249 = ret2249(SetupSpawnPopup::*)(cocos2d::CCObject*);
-
-using ret2250 = void;
-using func2250 = ret2250(*)(SetupSpawnPopup*, CCTextInputNode*);
-using pure2250 = ret2250(CCTextInputNode*);
-using meta2250 = ret2250(SetupSpawnPopup*, CCTextInputNode*);
-using member2250 = ret2250(SetupSpawnPopup::*)(CCTextInputNode*);
+using ret2250 = SetupSpawnPopup*;
+using func2250 = ret2250(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2250 = ret2250(EffectGameObject*, cocos2d::CCArray*);
+using meta2250 = ret2250(EffectGameObject*, cocos2d::CCArray*);
+using member2250 = func2250;
 
 using ret2251 = void;
-using func2251 = ret2251(*)(SetupSpawnPopup*);
-using pure2251 = ret2251();
-using meta2251 = ret2251(SetupSpawnPopup*);
-using member2251 = ret2251(SetupSpawnPopup::*)();
+using func2251 = ret2251(*)(SetupSpawnPopup*, gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCArray*);
+using pure2251 = ret2251(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCArray*);
+using meta2251 = ret2251(SetupSpawnPopup*, gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCArray*);
+using member2251 = ret2251(SetupSpawnPopup::*)(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCArray*);
 
-using ret2246 = SetupShakePopup*;
-using func2246 = ret2246(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2246 = ret2246(EffectGameObject*, cocos2d::CCArray*);
-using meta2246 = ret2246(EffectGameObject*, cocos2d::CCArray*);
-using member2246 = func2246;
+using ret2252 = void;
+using func2252 = ret2252(*)(SetupSpawnPopup*, cocos2d::CCObject*);
+using pure2252 = ret2252(cocos2d::CCObject*);
+using meta2252 = ret2252(SetupSpawnPopup*, cocos2d::CCObject*);
+using member2252 = ret2252(SetupSpawnPopup::*)(cocos2d::CCObject*);
 
-using ret2227 = SetupObjectTogglePopup*;
-using func2227 = ret2227(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2227 = ret2227(EffectGameObject*, cocos2d::CCArray*);
-using meta2227 = ret2227(EffectGameObject*, cocos2d::CCArray*);
-using member2227 = func2227;
+using ret2253 = void;
+using func2253 = ret2253(*)(SetupSpawnPopup*, CCTextInputNode*);
+using pure2253 = ret2253(CCTextInputNode*);
+using meta2253 = ret2253(SetupSpawnPopup*, CCTextInputNode*);
+using member2253 = ret2253(SetupSpawnPopup::*)(CCTextInputNode*);
 
-using ret2228 = bool;
-using func2228 = ret2228(*)(SetupObjectTogglePopup*, EffectGameObject*, cocos2d::CCArray*);
-using pure2228 = ret2228(EffectGameObject*, cocos2d::CCArray*);
-using meta2228 = ret2228(SetupObjectTogglePopup*, EffectGameObject*, cocos2d::CCArray*);
-using member2228 = ret2228(SetupObjectTogglePopup::*)(EffectGameObject*, cocos2d::CCArray*);
+using ret2254 = void;
+using func2254 = ret2254(*)(SetupSpawnPopup*);
+using pure2254 = ret2254();
+using meta2254 = ret2254(SetupSpawnPopup*);
+using member2254 = ret2254(SetupSpawnPopup::*)();
 
-using ret2229 = void;
-using func2229 = ret2229(*)(SetupObjectTogglePopup*, cocos2d::CCObject*);
-using pure2229 = ret2229(cocos2d::CCObject*);
-using meta2229 = ret2229(SetupObjectTogglePopup*, cocos2d::CCObject*);
-using member2229 = ret2229(SetupObjectTogglePopup::*)(cocos2d::CCObject*);
+using ret2249 = SetupShakePopup*;
+using func2249 = ret2249(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2249 = ret2249(EffectGameObject*, cocos2d::CCArray*);
+using meta2249 = ret2249(EffectGameObject*, cocos2d::CCArray*);
+using member2249 = func2249;
 
-using ret2230 = void;
-using func2230 = ret2230(*)(SetupObjectTogglePopup*, CCTextInputNode*);
-using pure2230 = ret2230(CCTextInputNode*);
-using meta2230 = ret2230(SetupObjectTogglePopup*, CCTextInputNode*);
-using member2230 = ret2230(SetupObjectTogglePopup::*)(CCTextInputNode*);
+using ret2230 = SetupObjectTogglePopup*;
+using func2230 = ret2230(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2230 = ret2230(EffectGameObject*, cocos2d::CCArray*);
+using meta2230 = ret2230(EffectGameObject*, cocos2d::CCArray*);
+using member2230 = func2230;
 
-using ret2231 = void;
-using func2231 = ret2231(*)(SetupObjectTogglePopup*);
-using pure2231 = ret2231();
-using meta2231 = ret2231(SetupObjectTogglePopup*);
-using member2231 = ret2231(SetupObjectTogglePopup::*)();
+using ret2231 = bool;
+using func2231 = ret2231(*)(SetupObjectTogglePopup*, EffectGameObject*, cocos2d::CCArray*);
+using pure2231 = ret2231(EffectGameObject*, cocos2d::CCArray*);
+using meta2231 = ret2231(SetupObjectTogglePopup*, EffectGameObject*, cocos2d::CCArray*);
+using member2231 = ret2231(SetupObjectTogglePopup::*)(EffectGameObject*, cocos2d::CCArray*);
 
-using ret2215 = SetupCountTriggerPopup*;
-using func2215 = ret2215(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2215 = ret2215(EffectGameObject*, cocos2d::CCArray*);
-using meta2215 = ret2215(EffectGameObject*, cocos2d::CCArray*);
-using member2215 = func2215;
+using ret2232 = void;
+using func2232 = ret2232(*)(SetupObjectTogglePopup*, cocos2d::CCObject*);
+using pure2232 = ret2232(cocos2d::CCObject*);
+using meta2232 = ret2232(SetupObjectTogglePopup*, cocos2d::CCObject*);
+using member2232 = ret2232(SetupObjectTogglePopup::*)(cocos2d::CCObject*);
 
-using ret2216 = void;
-using func2216 = ret2216(*)(SetupCountTriggerPopup*, cocos2d::CCObject*);
-using pure2216 = ret2216(cocos2d::CCObject*);
-using meta2216 = ret2216(SetupCountTriggerPopup*, cocos2d::CCObject*);
-using member2216 = ret2216(SetupCountTriggerPopup::*)(cocos2d::CCObject*);
+using ret2233 = void;
+using func2233 = ret2233(*)(SetupObjectTogglePopup*, CCTextInputNode*);
+using pure2233 = ret2233(CCTextInputNode*);
+using meta2233 = ret2233(SetupObjectTogglePopup*, CCTextInputNode*);
+using member2233 = ret2233(SetupObjectTogglePopup::*)(CCTextInputNode*);
 
-using ret2217 = void;
-using func2217 = ret2217(*)(SetupCountTriggerPopup*, CCTextInputNode*);
-using pure2217 = ret2217(CCTextInputNode*);
-using meta2217 = ret2217(SetupCountTriggerPopup*, CCTextInputNode*);
-using member2217 = ret2217(SetupCountTriggerPopup::*)(CCTextInputNode*);
+using ret2234 = void;
+using func2234 = ret2234(*)(SetupObjectTogglePopup*);
+using pure2234 = ret2234();
+using meta2234 = ret2234(SetupObjectTogglePopup*);
+using member2234 = ret2234(SetupObjectTogglePopup::*)();
 
-using ret2218 = void;
-using func2218 = ret2218(*)(SetupCountTriggerPopup*);
-using pure2218 = ret2218();
-using meta2218 = ret2218(SetupCountTriggerPopup*);
-using member2218 = ret2218(SetupCountTriggerPopup::*)();
+using ret2218 = SetupCountTriggerPopup*;
+using func2218 = ret2218(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2218 = ret2218(EffectGameObject*, cocos2d::CCArray*);
+using meta2218 = ret2218(EffectGameObject*, cocos2d::CCArray*);
+using member2218 = func2218;
 
-using ret2207 = SetupAnimationPopup*;
-using func2207 = ret2207(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2207 = ret2207(EffectGameObject*, cocos2d::CCArray*);
-using meta2207 = ret2207(EffectGameObject*, cocos2d::CCArray*);
-using member2207 = func2207;
+using ret2219 = void;
+using func2219 = ret2219(*)(SetupCountTriggerPopup*, cocos2d::CCObject*);
+using pure2219 = ret2219(cocos2d::CCObject*);
+using meta2219 = ret2219(SetupCountTriggerPopup*, cocos2d::CCObject*);
+using member2219 = ret2219(SetupCountTriggerPopup::*)(cocos2d::CCObject*);
+
+using ret2220 = void;
+using func2220 = ret2220(*)(SetupCountTriggerPopup*, CCTextInputNode*);
+using pure2220 = ret2220(CCTextInputNode*);
+using meta2220 = ret2220(SetupCountTriggerPopup*, CCTextInputNode*);
+using member2220 = ret2220(SetupCountTriggerPopup::*)(CCTextInputNode*);
+
+using ret2221 = void;
+using func2221 = ret2221(*)(SetupCountTriggerPopup*);
+using pure2221 = ret2221();
+using meta2221 = ret2221(SetupCountTriggerPopup*);
+using member2221 = ret2221(SetupCountTriggerPopup::*)();
+
+using ret2210 = SetupAnimationPopup*;
+using func2210 = ret2210(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2210 = ret2210(EffectGameObject*, cocos2d::CCArray*);
+using meta2210 = ret2210(EffectGameObject*, cocos2d::CCArray*);
+using member2210 = func2210;
+
+using ret2211 = void;
+using func2211 = ret2211(*)(SetupAnimationPopup*, cocos2d::CCObject*);
+using pure2211 = ret2211(cocos2d::CCObject*);
+using meta2211 = ret2211(SetupAnimationPopup*, cocos2d::CCObject*);
+using member2211 = ret2211(SetupAnimationPopup::*)(cocos2d::CCObject*);
+
+using ret2212 = void;
+using func2212 = ret2212(*)(SetupAnimationPopup*, CCTextInputNode*);
+using pure2212 = ret2212(CCTextInputNode*);
+using meta2212 = ret2212(SetupAnimationPopup*, CCTextInputNode*);
+using member2212 = ret2212(SetupAnimationPopup::*)(CCTextInputNode*);
+
+using ret2213 = void;
+using func2213 = ret2213(*)(SetupAnimationPopup*);
+using pure2213 = ret2213();
+using meta2213 = ret2213(SetupAnimationPopup*);
+using member2213 = ret2213(SetupAnimationPopup::*)();
+
+using ret2206 = SetTargetIDLayer*;
+using func2206 = ret2206(*)(EffectGameObject*, cocos2d::CCArray*, gd::string);
+using pure2206 = ret2206(EffectGameObject*, cocos2d::CCArray*, gd::string);
+using meta2206 = ret2206(EffectGameObject*, cocos2d::CCArray*, gd::string);
+using member2206 = func2206;
+
+using ret2207 = void;
+using func2207 = ret2207(*)(SetTargetIDLayer*, cocos2d::CCObject*);
+using pure2207 = ret2207(cocos2d::CCObject*);
+using meta2207 = ret2207(SetTargetIDLayer*, cocos2d::CCObject*);
+using member2207 = ret2207(SetTargetIDLayer::*)(cocos2d::CCObject*);
 
 using ret2208 = void;
-using func2208 = ret2208(*)(SetupAnimationPopup*, cocos2d::CCObject*);
-using pure2208 = ret2208(cocos2d::CCObject*);
-using meta2208 = ret2208(SetupAnimationPopup*, cocos2d::CCObject*);
-using member2208 = ret2208(SetupAnimationPopup::*)(cocos2d::CCObject*);
+using func2208 = ret2208(*)(SetTargetIDLayer*, CCTextInputNode*);
+using pure2208 = ret2208(CCTextInputNode*);
+using meta2208 = ret2208(SetTargetIDLayer*, CCTextInputNode*);
+using member2208 = ret2208(SetTargetIDLayer::*)(CCTextInputNode*);
 
 using ret2209 = void;
-using func2209 = ret2209(*)(SetupAnimationPopup*, CCTextInputNode*);
-using pure2209 = ret2209(CCTextInputNode*);
-using meta2209 = ret2209(SetupAnimationPopup*, CCTextInputNode*);
-using member2209 = ret2209(SetupAnimationPopup::*)(CCTextInputNode*);
+using func2209 = ret2209(*)(SetTargetIDLayer*);
+using pure2209 = ret2209();
+using meta2209 = ret2209(SetTargetIDLayer*);
+using member2209 = ret2209(SetTargetIDLayer::*)();
 
-using ret2210 = void;
-using func2210 = ret2210(*)(SetupAnimationPopup*);
-using pure2210 = ret2210();
-using meta2210 = ret2210(SetupAnimationPopup*);
-using member2210 = ret2210(SetupAnimationPopup::*)();
+using ret2194 = ScrollingLayer*;
+using func2194 = ret2194(*)(cocos2d::CCSize, cocos2d::CCPoint, float);
+using pure2194 = ret2194(cocos2d::CCSize, cocos2d::CCPoint, float);
+using meta2194 = ret2194(cocos2d::CCSize, cocos2d::CCPoint, float);
+using member2194 = func2194;
 
-using ret2203 = SetTargetIDLayer*;
-using func2203 = ret2203(*)(EffectGameObject*, cocos2d::CCArray*, gd::string);
-using pure2203 = ret2203(EffectGameObject*, cocos2d::CCArray*, gd::string);
-using meta2203 = ret2203(EffectGameObject*, cocos2d::CCArray*, gd::string);
-using member2203 = func2203;
+using ret2181 = RetryLevelLayer*;
+using func2181 = ret2181(*)();
+using pure2181 = ret2181();
+using meta2181 = ret2181();
+using member2181 = func2181;
 
-using ret2204 = void;
-using func2204 = ret2204(*)(SetTargetIDLayer*, cocos2d::CCObject*);
-using pure2204 = ret2204(cocos2d::CCObject*);
-using meta2204 = ret2204(SetTargetIDLayer*, cocos2d::CCObject*);
-using member2204 = ret2204(SetTargetIDLayer::*)(cocos2d::CCObject*);
-
-using ret2205 = void;
-using func2205 = ret2205(*)(SetTargetIDLayer*, CCTextInputNode*);
-using pure2205 = ret2205(CCTextInputNode*);
-using meta2205 = ret2205(SetTargetIDLayer*, CCTextInputNode*);
-using member2205 = ret2205(SetTargetIDLayer::*)(CCTextInputNode*);
-
-using ret2206 = void;
-using func2206 = ret2206(*)(SetTargetIDLayer*);
-using pure2206 = ret2206();
-using meta2206 = ret2206(SetTargetIDLayer*);
-using member2206 = ret2206(SetTargetIDLayer::*)();
-
-using ret2191 = ScrollingLayer*;
-using func2191 = ret2191(*)(cocos2d::CCSize, cocos2d::CCPoint, float);
-using pure2191 = ret2191(cocos2d::CCSize, cocos2d::CCPoint, float);
-using meta2191 = ret2191(cocos2d::CCSize, cocos2d::CCPoint, float);
-using member2191 = func2191;
-
-using ret2178 = RetryLevelLayer*;
-using func2178 = ret2178(*)();
-using pure2178 = ret2178();
-using meta2178 = ret2178();
-using member2178 = func2178;
-
-using ret2236 = SetupPickupTriggerPopup*;
-using func2236 = ret2236(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2236 = ret2236(EffectGameObject*, cocos2d::CCArray*);
-using meta2236 = ret2236(EffectGameObject*, cocos2d::CCArray*);
-using member2236 = func2236;
-
-using ret2237 = void;
-using func2237 = ret2237(*)(SetupPickupTriggerPopup*, cocos2d::CCObject*);
-using pure2237 = ret2237(cocos2d::CCObject*);
-using meta2237 = ret2237(SetupPickupTriggerPopup*, cocos2d::CCObject*);
-using member2237 = ret2237(SetupPickupTriggerPopup::*)(cocos2d::CCObject*);
-
-using ret2238 = void;
-using func2238 = ret2238(*)(SetupPickupTriggerPopup*, cocos2d::CCObject*);
-using pure2238 = ret2238(cocos2d::CCObject*);
-using meta2238 = ret2238(SetupPickupTriggerPopup*, cocos2d::CCObject*);
-using member2238 = ret2238(SetupPickupTriggerPopup::*)(cocos2d::CCObject*);
-
-using ret2239 = void;
-using func2239 = ret2239(*)(SetupPickupTriggerPopup*, CCTextInputNode*);
-using pure2239 = ret2239(CCTextInputNode*);
-using meta2239 = ret2239(SetupPickupTriggerPopup*, CCTextInputNode*);
-using member2239 = ret2239(SetupPickupTriggerPopup::*)(CCTextInputNode*);
+using ret2239 = SetupPickupTriggerPopup*;
+using func2239 = ret2239(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2239 = ret2239(EffectGameObject*, cocos2d::CCArray*);
+using meta2239 = ret2239(EffectGameObject*, cocos2d::CCArray*);
+using member2239 = func2239;
 
 using ret2240 = void;
-using func2240 = ret2240(*)(SetupPickupTriggerPopup*);
-using pure2240 = ret2240();
-using meta2240 = ret2240(SetupPickupTriggerPopup*);
-using member2240 = ret2240(SetupPickupTriggerPopup::*)();
+using func2240 = ret2240(*)(SetupPickupTriggerPopup*, cocos2d::CCObject*);
+using pure2240 = ret2240(cocos2d::CCObject*);
+using meta2240 = ret2240(SetupPickupTriggerPopup*, cocos2d::CCObject*);
+using member2240 = ret2240(SetupPickupTriggerPopup::*)(cocos2d::CCObject*);
 
-using ret2017 = void;
-using func2017 = ret2017(*)(PlayerObject*);
-using pure2017 = ret2017();
-using meta2017 = ret2017(PlayerObject*);
-using member2017 = func2017;
+using ret2241 = void;
+using func2241 = ret2241(*)(SetupPickupTriggerPopup*, cocos2d::CCObject*);
+using pure2241 = ret2241(cocos2d::CCObject*);
+using meta2241 = ret2241(SetupPickupTriggerPopup*, cocos2d::CCObject*);
+using member2241 = ret2241(SetupPickupTriggerPopup::*)(cocos2d::CCObject*);
 
-using ret2018 = void;
-using func2018 = ret2018(*)(PlayerObject*, float);
-using pure2018 = ret2018(float);
-using meta2018 = ret2018(PlayerObject*, float);
-using member2018 = ret2018(PlayerObject::*)(float);
+using ret2242 = void;
+using func2242 = ret2242(*)(SetupPickupTriggerPopup*, CCTextInputNode*);
+using pure2242 = ret2242(CCTextInputNode*);
+using meta2242 = ret2242(SetupPickupTriggerPopup*, CCTextInputNode*);
+using member2242 = ret2242(SetupPickupTriggerPopup::*)(CCTextInputNode*);
 
-using ret2019 = void;
-using func2019 = ret2019(*)(PlayerObject*, float);
-using pure2019 = ret2019(float);
-using meta2019 = ret2019(PlayerObject*, float);
-using member2019 = ret2019(PlayerObject::*)(float);
+using ret2243 = void;
+using func2243 = ret2243(*)(SetupPickupTriggerPopup*);
+using pure2243 = ret2243();
+using meta2243 = ret2243(SetupPickupTriggerPopup*);
+using member2243 = ret2243(SetupPickupTriggerPopup::*)();
 
 using ret2020 = void;
-using func2020 = ret2020(*)(PlayerObject*, float);
-using pure2020 = ret2020(float);
-using meta2020 = ret2020(PlayerObject*, float);
-using member2020 = ret2020(PlayerObject::*)(float);
+using func2020 = ret2020(*)(PlayerObject*);
+using pure2020 = ret2020();
+using meta2020 = ret2020(PlayerObject*);
+using member2020 = func2020;
 
 using ret2021 = void;
 using func2021 = ret2021(*)(PlayerObject*, float);
@@ -366,16 +348,16 @@ using meta2021 = ret2021(PlayerObject*, float);
 using member2021 = ret2021(PlayerObject::*)(float);
 
 using ret2022 = void;
-using func2022 = ret2022(*)(PlayerObject*, cocos2d::CCPoint const&);
-using pure2022 = ret2022(cocos2d::CCPoint const&);
-using meta2022 = ret2022(PlayerObject*, cocos2d::CCPoint const&);
-using member2022 = ret2022(PlayerObject::*)(cocos2d::CCPoint const&);
+using func2022 = ret2022(*)(PlayerObject*, float);
+using pure2022 = ret2022(float);
+using meta2022 = ret2022(PlayerObject*, float);
+using member2022 = ret2022(PlayerObject::*)(float);
 
 using ret2023 = void;
-using func2023 = ret2023(*)(PlayerObject*, bool);
-using pure2023 = ret2023(bool);
-using meta2023 = ret2023(PlayerObject*, bool);
-using member2023 = ret2023(PlayerObject::*)(bool);
+using func2023 = ret2023(*)(PlayerObject*, float);
+using pure2023 = ret2023(float);
+using meta2023 = ret2023(PlayerObject*, float);
+using member2023 = ret2023(PlayerObject::*)(float);
 
 using ret2024 = void;
 using func2024 = ret2024(*)(PlayerObject*, float);
@@ -384,54 +366,54 @@ using meta2024 = ret2024(PlayerObject*, float);
 using member2024 = ret2024(PlayerObject::*)(float);
 
 using ret2025 = void;
-using func2025 = ret2025(*)(PlayerObject*, unsigned char);
-using pure2025 = ret2025(unsigned char);
-using meta2025 = ret2025(PlayerObject*, unsigned char);
-using member2025 = ret2025(PlayerObject::*)(unsigned char);
+using func2025 = ret2025(*)(PlayerObject*, cocos2d::CCPoint const&);
+using pure2025 = ret2025(cocos2d::CCPoint const&);
+using meta2025 = ret2025(PlayerObject*, cocos2d::CCPoint const&);
+using member2025 = ret2025(PlayerObject::*)(cocos2d::CCPoint const&);
 
 using ret2026 = void;
-using func2026 = ret2026(*)(PlayerObject*, cocos2d::_ccColor3B const&);
-using pure2026 = ret2026(cocos2d::_ccColor3B const&);
-using meta2026 = ret2026(PlayerObject*, cocos2d::_ccColor3B const&);
-using member2026 = ret2026(PlayerObject::*)(cocos2d::_ccColor3B const&);
+using func2026 = ret2026(*)(PlayerObject*, bool);
+using pure2026 = ret2026(bool);
+using meta2026 = ret2026(PlayerObject*, bool);
+using member2026 = ret2026(PlayerObject::*)(bool);
 
 using ret2027 = void;
-using func2027 = ret2027(*)(PlayerObject*, bool);
-using pure2027 = ret2027(bool);
-using meta2027 = ret2027(PlayerObject*, bool);
-using member2027 = ret2027(PlayerObject::*)(bool);
+using func2027 = ret2027(*)(PlayerObject*, float);
+using pure2027 = ret2027(float);
+using meta2027 = ret2027(PlayerObject*, float);
+using member2027 = ret2027(PlayerObject::*)(float);
 
 using ret2028 = void;
-using func2028 = ret2028(*)(PlayerObject*, bool);
-using pure2028 = ret2028(bool);
-using meta2028 = ret2028(PlayerObject*, bool);
-using member2028 = ret2028(PlayerObject::*)(bool);
+using func2028 = ret2028(*)(PlayerObject*, unsigned char);
+using pure2028 = ret2028(unsigned char);
+using meta2028 = ret2028(PlayerObject*, unsigned char);
+using member2028 = ret2028(PlayerObject::*)(unsigned char);
 
 using ret2029 = void;
-using func2029 = ret2029(*)(PlayerObject*);
-using pure2029 = ret2029();
-using meta2029 = ret2029(PlayerObject*);
-using member2029 = ret2029(PlayerObject::*)();
+using func2029 = ret2029(*)(PlayerObject*, cocos2d::_ccColor3B const&);
+using pure2029 = ret2029(cocos2d::_ccColor3B const&);
+using meta2029 = ret2029(PlayerObject*, cocos2d::_ccColor3B const&);
+using member2029 = ret2029(PlayerObject::*)(cocos2d::_ccColor3B const&);
 
-using ret2030 = cocos2d::CCPoint;
-using func2030 = ret2030(*)(PlayerObject*);
-using pure2030 = ret2030();
-using meta2030 = ret2030(PlayerObject*);
-using member2030 = ret2030(PlayerObject::*)();
+using ret2030 = void;
+using func2030 = ret2030(*)(PlayerObject*, bool);
+using pure2030 = ret2030(bool);
+using meta2030 = ret2030(PlayerObject*, bool);
+using member2030 = ret2030(PlayerObject::*)(bool);
 
 using ret2031 = void;
-using func2031 = ret2031(*)(PlayerObject*);
-using pure2031 = ret2031();
-using meta2031 = ret2031(PlayerObject*);
-using member2031 = ret2031(PlayerObject::*)();
+using func2031 = ret2031(*)(PlayerObject*, bool);
+using pure2031 = ret2031(bool);
+using meta2031 = ret2031(PlayerObject*, bool);
+using member2031 = ret2031(PlayerObject::*)(bool);
 
 using ret2032 = void;
-using func2032 = ret2032(*)(PlayerObject*, char const*);
-using pure2032 = ret2032(char const*);
-using meta2032 = ret2032(PlayerObject*, char const*);
-using member2032 = ret2032(PlayerObject::*)(char const*);
+using func2032 = ret2032(*)(PlayerObject*);
+using pure2032 = ret2032();
+using meta2032 = ret2032(PlayerObject*);
+using member2032 = ret2032(PlayerObject::*)();
 
-using ret2033 = void;
+using ret2033 = cocos2d::CCPoint;
 using func2033 = ret2033(*)(PlayerObject*);
 using pure2033 = ret2033();
 using meta2033 = ret2033(PlayerObject*);
@@ -444,124 +426,124 @@ using meta2034 = ret2034(PlayerObject*);
 using member2034 = ret2034(PlayerObject::*)();
 
 using ret2035 = void;
-using func2035 = ret2035(*)(PlayerObject*, GameObject*);
-using pure2035 = ret2035(GameObject*);
-using meta2035 = ret2035(PlayerObject*, GameObject*);
-using member2035 = ret2035(PlayerObject::*)(GameObject*);
+using func2035 = ret2035(*)(PlayerObject*, char const*);
+using pure2035 = ret2035(char const*);
+using meta2035 = ret2035(PlayerObject*, char const*);
+using member2035 = ret2035(PlayerObject::*)(char const*);
 
 using ret2036 = void;
-using func2036 = ret2036(*)(PlayerObject*, float);
-using pure2036 = ret2036(float);
-using meta2036 = ret2036(PlayerObject*, float);
-using member2036 = ret2036(PlayerObject::*)(float);
+using func2036 = ret2036(*)(PlayerObject*);
+using pure2036 = ret2036();
+using meta2036 = ret2036(PlayerObject*);
+using member2036 = ret2036(PlayerObject::*)();
 
 using ret2037 = void;
-using func2037 = ret2037(*)(PlayerObject*, float, int);
-using pure2037 = ret2037(float, int);
-using meta2037 = ret2037(PlayerObject*, float, int);
-using member2037 = ret2037(PlayerObject::*)(float, int);
+using func2037 = ret2037(*)(PlayerObject*);
+using pure2037 = ret2037();
+using meta2037 = ret2037(PlayerObject*);
+using member2037 = ret2037(PlayerObject::*)();
 
 using ret2038 = void;
-using func2038 = ret2038(*)(PlayerObject*, PlayerButton);
-using pure2038 = ret2038(PlayerButton);
-using meta2038 = ret2038(PlayerObject*, PlayerButton);
-using member2038 = ret2038(PlayerObject::*)(PlayerButton);
+using func2038 = ret2038(*)(PlayerObject*, GameObject*);
+using pure2038 = ret2038(GameObject*);
+using meta2038 = ret2038(PlayerObject*, GameObject*);
+using member2038 = ret2038(PlayerObject::*)(GameObject*);
 
 using ret2039 = void;
-using func2039 = ret2039(*)(PlayerObject*, GameObject*);
-using pure2039 = ret2039(GameObject*);
-using meta2039 = ret2039(PlayerObject*, GameObject*);
-using member2039 = ret2039(PlayerObject::*)(GameObject*);
+using func2039 = ret2039(*)(PlayerObject*, float);
+using pure2039 = ret2039(float);
+using meta2039 = ret2039(PlayerObject*, float);
+using member2039 = ret2039(PlayerObject::*)(float);
 
-using ret2040 = bool;
-using func2040 = ret2040(*)(PlayerObject*, float, GameObject*);
-using pure2040 = ret2040(float, GameObject*);
-using meta2040 = ret2040(PlayerObject*, float, GameObject*);
-using member2040 = ret2040(PlayerObject::*)(float, GameObject*);
+using ret2040 = void;
+using func2040 = ret2040(*)(PlayerObject*, float, int);
+using pure2040 = ret2040(float, int);
+using meta2040 = ret2040(PlayerObject*, float, int);
+using member2040 = ret2040(PlayerObject::*)(float, int);
 
-using ret2041 = bool;
-using func2041 = ret2041(*)(PlayerObject*, float, GameObject*, cocos2d::CCRect);
-using pure2041 = ret2041(float, GameObject*, cocos2d::CCRect);
-using meta2041 = ret2041(PlayerObject*, float, GameObject*, cocos2d::CCRect);
-using member2041 = ret2041(PlayerObject::*)(float, GameObject*, cocos2d::CCRect);
+using ret2041 = void;
+using func2041 = ret2041(*)(PlayerObject*, PlayerButton);
+using pure2041 = ret2041(PlayerButton);
+using meta2041 = ret2041(PlayerObject*, PlayerButton);
+using member2041 = ret2041(PlayerObject::*)(PlayerButton);
 
-using ret2042 = bool;
-using func2042 = ret2042(*)(PlayerObject*, float, GameObject*, bool);
-using pure2042 = ret2042(float, GameObject*, bool);
-using meta2042 = ret2042(PlayerObject*, float, GameObject*, bool);
-using member2042 = ret2042(PlayerObject::*)(float, GameObject*, bool);
+using ret2042 = void;
+using func2042 = ret2042(*)(PlayerObject*, GameObject*);
+using pure2042 = ret2042(GameObject*);
+using meta2042 = ret2042(PlayerObject*, GameObject*);
+using member2042 = ret2042(PlayerObject::*)(GameObject*);
 
-using ret2043 = void;
-using func2043 = ret2043(*)(PlayerObject*, float);
-using pure2043 = ret2043(float);
-using meta2043 = ret2043(PlayerObject*, float);
-using member2043 = ret2043(PlayerObject::*)(float);
+using ret2043 = bool;
+using func2043 = ret2043(*)(PlayerObject*, float, GameObject*);
+using pure2043 = ret2043(float, GameObject*);
+using meta2043 = ret2043(PlayerObject*, float, GameObject*);
+using member2043 = ret2043(PlayerObject::*)(float, GameObject*);
 
-using ret2044 = void;
-using func2044 = ret2044(*)(PlayerObject*, PlayerObject*);
-using pure2044 = ret2044(PlayerObject*);
-using meta2044 = ret2044(PlayerObject*, PlayerObject*);
-using member2044 = ret2044(PlayerObject::*)(PlayerObject*);
+using ret2044 = bool;
+using func2044 = ret2044(*)(PlayerObject*, float, GameObject*, cocos2d::CCRect);
+using pure2044 = ret2044(float, GameObject*, cocos2d::CCRect);
+using meta2044 = ret2044(PlayerObject*, float, GameObject*, cocos2d::CCRect);
+using member2044 = ret2044(PlayerObject::*)(float, GameObject*, cocos2d::CCRect);
 
-using ret2045 = PlayerObject*;
-using func2045 = ret2045(*)(int, int, cocos2d::CCLayer*);
-using pure2045 = ret2045(int, int, cocos2d::CCLayer*);
-using meta2045 = ret2045(int, int, cocos2d::CCLayer*);
-using member2045 = func2045;
+using ret2045 = bool;
+using func2045 = ret2045(*)(PlayerObject*, float, GameObject*, bool);
+using pure2045 = ret2045(float, GameObject*, bool);
+using meta2045 = ret2045(PlayerObject*, float, GameObject*, bool);
+using member2045 = ret2045(PlayerObject::*)(float, GameObject*, bool);
 
 using ret2046 = void;
-using func2046 = ret2046(*)(PlayerObject*);
-using pure2046 = ret2046();
-using meta2046 = ret2046(PlayerObject*);
-using member2046 = ret2046(PlayerObject::*)();
+using func2046 = ret2046(*)(PlayerObject*, float);
+using pure2046 = ret2046(float);
+using meta2046 = ret2046(PlayerObject*, float);
+using member2046 = ret2046(PlayerObject::*)(float);
 
 using ret2047 = void;
-using func2047 = ret2047(*)(PlayerObject*, bool);
-using pure2047 = ret2047(bool);
-using meta2047 = ret2047(PlayerObject*, bool);
-using member2047 = ret2047(PlayerObject::*)(bool);
+using func2047 = ret2047(*)(PlayerObject*, PlayerObject*);
+using pure2047 = ret2047(PlayerObject*);
+using meta2047 = ret2047(PlayerObject*, PlayerObject*);
+using member2047 = ret2047(PlayerObject::*)(PlayerObject*);
 
-using ret2048 = void;
-using func2048 = ret2048(*)(PlayerObject*, float);
-using pure2048 = ret2048(float);
-using meta2048 = ret2048(PlayerObject*, float);
-using member2048 = ret2048(PlayerObject::*)(float);
+using ret2048 = PlayerObject*;
+using func2048 = ret2048(*)(int, int, cocos2d::CCLayer*);
+using pure2048 = ret2048(int, int, cocos2d::CCLayer*);
+using meta2048 = ret2048(int, int, cocos2d::CCLayer*);
+using member2048 = func2048;
 
 using ret2049 = void;
-using func2049 = ret2049(*)(PlayerObject*, float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
-using pure2049 = ret2049(float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
-using meta2049 = ret2049(PlayerObject*, float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
-using member2049 = ret2049(PlayerObject::*)(float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
+using func2049 = ret2049(*)(PlayerObject*);
+using pure2049 = ret2049();
+using meta2049 = ret2049(PlayerObject*);
+using member2049 = ret2049(PlayerObject::*)();
 
 using ret2050 = void;
-using func2050 = ret2050(*)(PlayerObject*, bool, bool);
-using pure2050 = ret2050(bool, bool);
-using meta2050 = ret2050(PlayerObject*, bool, bool);
-using member2050 = ret2050(PlayerObject::*)(bool, bool);
+using func2050 = ret2050(*)(PlayerObject*, bool);
+using pure2050 = ret2050(bool);
+using meta2050 = ret2050(PlayerObject*, bool);
+using member2050 = ret2050(PlayerObject::*)(bool);
 
 using ret2051 = void;
-using func2051 = ret2051(*)(PlayerObject*);
-using pure2051 = ret2051();
-using meta2051 = ret2051(PlayerObject*);
-using member2051 = ret2051(PlayerObject::*)();
+using func2051 = ret2051(*)(PlayerObject*, float);
+using pure2051 = ret2051(float);
+using meta2051 = ret2051(PlayerObject*, float);
+using member2051 = ret2051(PlayerObject::*)(float);
 
 using ret2052 = void;
-using func2052 = ret2052(*)(PlayerObject*);
-using pure2052 = ret2052();
-using meta2052 = ret2052(PlayerObject*);
-using member2052 = ret2052(PlayerObject::*)();
+using func2052 = ret2052(*)(PlayerObject*, float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
+using pure2052 = ret2052(float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
+using meta2052 = ret2052(PlayerObject*, float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
+using member2052 = ret2052(PlayerObject::*)(float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
 
 using ret2053 = void;
-using func2053 = ret2053(*)(PlayerObject*);
-using pure2053 = ret2053();
-using meta2053 = ret2053(PlayerObject*);
-using member2053 = ret2053(PlayerObject::*)();
+using func2053 = ret2053(*)(PlayerObject*, bool, bool);
+using pure2053 = ret2053(bool, bool);
+using meta2053 = ret2053(PlayerObject*, bool, bool);
+using member2053 = ret2053(PlayerObject::*)(bool, bool);
 
 using ret2054 = void;
-using func2054 = ret2054(*)(PlayerObject*, float);
-using pure2054 = ret2054(float);
-using meta2054 = ret2054(PlayerObject*, float);
-using member2054 = ret2054(PlayerObject::*)(float);
+using func2054 = ret2054(*)(PlayerObject*);
+using pure2054 = ret2054();
+using meta2054 = ret2054(PlayerObject*);
+using member2054 = ret2054(PlayerObject::*)();
 
 using ret2055 = void;
 using func2055 = ret2055(*)(PlayerObject*);
@@ -576,10 +558,10 @@ using meta2056 = ret2056(PlayerObject*);
 using member2056 = ret2056(PlayerObject::*)();
 
 using ret2057 = void;
-using func2057 = ret2057(*)(PlayerObject*);
-using pure2057 = ret2057();
-using meta2057 = ret2057(PlayerObject*);
-using member2057 = ret2057(PlayerObject::*)();
+using func2057 = ret2057(*)(PlayerObject*, float);
+using pure2057 = ret2057(float);
+using meta2057 = ret2057(PlayerObject*, float);
+using member2057 = ret2057(PlayerObject::*)(float);
 
 using ret2058 = void;
 using func2058 = ret2058(*)(PlayerObject*);
@@ -588,10 +570,10 @@ using meta2058 = ret2058(PlayerObject*);
 using member2058 = ret2058(PlayerObject::*)();
 
 using ret2059 = void;
-using func2059 = ret2059(*)(PlayerObject*, bool);
-using pure2059 = ret2059(bool);
-using meta2059 = ret2059(PlayerObject*, bool);
-using member2059 = ret2059(PlayerObject::*)(bool);
+using func2059 = ret2059(*)(PlayerObject*);
+using pure2059 = ret2059();
+using meta2059 = ret2059(PlayerObject*);
+using member2059 = ret2059(PlayerObject::*)();
 
 using ret2060 = void;
 using func2060 = ret2060(*)(PlayerObject*);
@@ -599,17 +581,17 @@ using pure2060 = ret2060();
 using meta2060 = ret2060(PlayerObject*);
 using member2060 = ret2060(PlayerObject::*)();
 
-using ret2061 = bool;
-using func2061 = ret2061(*)(PlayerObject*, int, int, cocos2d::CCLayer*);
-using pure2061 = ret2061(int, int, cocos2d::CCLayer*);
-using meta2061 = ret2061(PlayerObject*, int, int, cocos2d::CCLayer*);
-using member2061 = ret2061(PlayerObject::*)(int, int, cocos2d::CCLayer*);
+using ret2061 = void;
+using func2061 = ret2061(*)(PlayerObject*);
+using pure2061 = ret2061();
+using meta2061 = ret2061(PlayerObject*);
+using member2061 = ret2061(PlayerObject::*)();
 
 using ret2062 = void;
-using func2062 = ret2062(*)(PlayerObject*, float);
-using pure2062 = ret2062(float);
-using meta2062 = ret2062(PlayerObject*, float);
-using member2062 = ret2062(PlayerObject::*)(float);
+using func2062 = ret2062(*)(PlayerObject*, bool);
+using pure2062 = ret2062(bool);
+using meta2062 = ret2062(PlayerObject*, bool);
+using member2062 = ret2062(PlayerObject::*)(bool);
 
 using ret2063 = void;
 using func2063 = ret2063(*)(PlayerObject*);
@@ -617,11 +599,11 @@ using pure2063 = ret2063();
 using meta2063 = ret2063(PlayerObject*);
 using member2063 = ret2063(PlayerObject::*)();
 
-using ret2064 = void;
-using func2064 = ret2064(*)(PlayerObject*, float);
-using pure2064 = ret2064(float);
-using meta2064 = ret2064(PlayerObject*, float);
-using member2064 = ret2064(PlayerObject::*)(float);
+using ret2064 = bool;
+using func2064 = ret2064(*)(PlayerObject*, int, int, cocos2d::CCLayer*);
+using pure2064 = ret2064(int, int, cocos2d::CCLayer*);
+using meta2064 = ret2064(PlayerObject*, int, int, cocos2d::CCLayer*);
+using member2064 = ret2064(PlayerObject::*)(int, int, cocos2d::CCLayer*);
 
 using ret2065 = void;
 using func2065 = ret2065(*)(PlayerObject*, float);
@@ -630,34 +612,34 @@ using meta2065 = ret2065(PlayerObject*, float);
 using member2065 = ret2065(PlayerObject::*)(float);
 
 using ret2066 = void;
-using func2066 = ret2066(*)(PlayerObject*, float);
-using pure2066 = ret2066(float);
-using meta2066 = ret2066(PlayerObject*, float);
-using member2066 = ret2066(PlayerObject::*)(float);
+using func2066 = ret2066(*)(PlayerObject*);
+using pure2066 = ret2066();
+using meta2066 = ret2066(PlayerObject*);
+using member2066 = ret2066(PlayerObject::*)();
 
 using ret2067 = void;
-using func2067 = ret2067(*)(PlayerObject*);
-using pure2067 = ret2067();
-using meta2067 = ret2067(PlayerObject*);
-using member2067 = ret2067(PlayerObject::*)();
+using func2067 = ret2067(*)(PlayerObject*, float);
+using pure2067 = ret2067(float);
+using meta2067 = ret2067(PlayerObject*, float);
+using member2067 = ret2067(PlayerObject::*)(float);
 
 using ret2068 = void;
-using func2068 = ret2068(*)(PlayerObject*);
-using pure2068 = ret2068();
-using meta2068 = ret2068(PlayerObject*);
-using member2068 = ret2068(PlayerObject::*)();
+using func2068 = ret2068(*)(PlayerObject*, float);
+using pure2068 = ret2068(float);
+using meta2068 = ret2068(PlayerObject*, float);
+using member2068 = ret2068(PlayerObject::*)(float);
 
 using ret2069 = void;
-using func2069 = ret2069(*)(PlayerObject*);
-using pure2069 = ret2069();
-using meta2069 = ret2069(PlayerObject*);
-using member2069 = ret2069(PlayerObject::*)();
+using func2069 = ret2069(*)(PlayerObject*, float);
+using pure2069 = ret2069(float);
+using meta2069 = ret2069(PlayerObject*, float);
+using member2069 = ret2069(PlayerObject::*)(float);
 
 using ret2070 = void;
-using func2070 = ret2070(*)(PlayerObject*, PlayerCheckpoint*);
-using pure2070 = ret2070(PlayerCheckpoint*);
-using meta2070 = ret2070(PlayerObject*, PlayerCheckpoint*);
-using member2070 = ret2070(PlayerObject::*)(PlayerCheckpoint*);
+using func2070 = ret2070(*)(PlayerObject*);
+using pure2070 = ret2070();
+using meta2070 = ret2070(PlayerObject*);
+using member2070 = ret2070(PlayerObject::*)();
 
 using ret2071 = void;
 using func2071 = ret2071(*)(PlayerObject*);
@@ -672,10 +654,10 @@ using meta2072 = ret2072(PlayerObject*);
 using member2072 = ret2072(PlayerObject::*)();
 
 using ret2073 = void;
-using func2073 = ret2073(*)(PlayerObject*);
-using pure2073 = ret2073();
-using meta2073 = ret2073(PlayerObject*);
-using member2073 = ret2073(PlayerObject::*)();
+using func2073 = ret2073(*)(PlayerObject*, PlayerCheckpoint*);
+using pure2073 = ret2073(PlayerCheckpoint*);
+using meta2073 = ret2073(PlayerObject*, PlayerCheckpoint*);
+using member2073 = ret2073(PlayerObject::*)(PlayerCheckpoint*);
 
 using ret2074 = void;
 using func2074 = ret2074(*)(PlayerObject*);
@@ -702,12 +684,12 @@ using meta2077 = ret2077(PlayerObject*);
 using member2077 = ret2077(PlayerObject::*)();
 
 using ret2078 = void;
-using func2078 = ret2078(*)(PlayerObject*, bool);
-using pure2078 = ret2078(bool);
-using meta2078 = ret2078(PlayerObject*, bool);
-using member2078 = ret2078(PlayerObject::*)(bool);
+using func2078 = ret2078(*)(PlayerObject*);
+using pure2078 = ret2078();
+using meta2078 = ret2078(PlayerObject*);
+using member2078 = ret2078(PlayerObject::*)();
 
-using ret2079 = bool;
+using ret2079 = void;
 using func2079 = ret2079(*)(PlayerObject*);
 using pure2079 = ret2079();
 using meta2079 = ret2079(PlayerObject*);
@@ -720,16 +702,16 @@ using meta2080 = ret2080(PlayerObject*);
 using member2080 = ret2080(PlayerObject::*)();
 
 using ret2081 = void;
-using func2081 = ret2081(*)(PlayerObject*);
-using pure2081 = ret2081();
-using meta2081 = ret2081(PlayerObject*);
-using member2081 = ret2081(PlayerObject::*)();
+using func2081 = ret2081(*)(PlayerObject*, bool);
+using pure2081 = ret2081(bool);
+using meta2081 = ret2081(PlayerObject*, bool);
+using member2081 = ret2081(PlayerObject::*)(bool);
 
-using ret2082 = void;
-using func2082 = ret2082(*)(PlayerObject*, float);
-using pure2082 = ret2082(float);
-using meta2082 = ret2082(PlayerObject*, float);
-using member2082 = ret2082(PlayerObject::*)(float);
+using ret2082 = bool;
+using func2082 = ret2082(*)(PlayerObject*);
+using pure2082 = ret2082();
+using meta2082 = ret2082(PlayerObject*);
+using member2082 = ret2082(PlayerObject::*)();
 
 using ret2083 = void;
 using func2083 = ret2083(*)(PlayerObject*);
@@ -738,10 +720,10 @@ using meta2083 = ret2083(PlayerObject*);
 using member2083 = ret2083(PlayerObject::*)();
 
 using ret2084 = void;
-using func2084 = ret2084(*)(PlayerObject*, float, GameObject*);
-using pure2084 = ret2084(float, GameObject*);
-using meta2084 = ret2084(PlayerObject*, float, GameObject*);
-using member2084 = ret2084(PlayerObject::*)(float, GameObject*);
+using func2084 = ret2084(*)(PlayerObject*);
+using pure2084 = ret2084();
+using meta2084 = ret2084(PlayerObject*);
+using member2084 = ret2084(PlayerObject::*)();
 
 using ret2085 = void;
 using func2085 = ret2085(*)(PlayerObject*, float);
@@ -750,16 +732,16 @@ using meta2085 = ret2085(PlayerObject*, float);
 using member2085 = ret2085(PlayerObject::*)(float);
 
 using ret2086 = void;
-using func2086 = ret2086(*)(PlayerObject*, int);
-using pure2086 = ret2086(int);
-using meta2086 = ret2086(PlayerObject*, int);
-using member2086 = ret2086(PlayerObject::*)(int);
+using func2086 = ret2086(*)(PlayerObject*);
+using pure2086 = ret2086();
+using meta2086 = ret2086(PlayerObject*);
+using member2086 = ret2086(PlayerObject::*)();
 
 using ret2087 = void;
-using func2087 = ret2087(*)(PlayerObject*);
-using pure2087 = ret2087();
-using meta2087 = ret2087(PlayerObject*);
-using member2087 = ret2087(PlayerObject::*)();
+using func2087 = ret2087(*)(PlayerObject*, float, GameObject*);
+using pure2087 = ret2087(float, GameObject*);
+using meta2087 = ret2087(PlayerObject*, float, GameObject*);
+using member2087 = ret2087(PlayerObject::*)(float, GameObject*);
 
 using ret2088 = void;
 using func2088 = ret2088(*)(PlayerObject*, float);
@@ -780,16 +762,16 @@ using meta2090 = ret2090(PlayerObject*);
 using member2090 = ret2090(PlayerObject::*)();
 
 using ret2091 = void;
-using func2091 = ret2091(*)(PlayerObject*);
-using pure2091 = ret2091();
-using meta2091 = ret2091(PlayerObject*);
-using member2091 = ret2091(PlayerObject::*)();
+using func2091 = ret2091(*)(PlayerObject*, float);
+using pure2091 = ret2091(float);
+using meta2091 = ret2091(PlayerObject*, float);
+using member2091 = ret2091(PlayerObject::*)(float);
 
 using ret2092 = void;
-using func2092 = ret2092(*)(PlayerObject*);
-using pure2092 = ret2092();
-using meta2092 = ret2092(PlayerObject*);
-using member2092 = ret2092(PlayerObject::*)();
+using func2092 = ret2092(*)(PlayerObject*, int);
+using pure2092 = ret2092(int);
+using meta2092 = ret2092(PlayerObject*, int);
+using member2092 = ret2092(PlayerObject::*)(int);
 
 using ret2093 = void;
 using func2093 = ret2093(*)(PlayerObject*);
@@ -816,16 +798,16 @@ using meta2096 = ret2096(PlayerObject*);
 using member2096 = ret2096(PlayerObject::*)();
 
 using ret2097 = void;
-using func2097 = ret2097(*)(PlayerObject*, GameObject*);
-using pure2097 = ret2097(GameObject*);
-using meta2097 = ret2097(PlayerObject*, GameObject*);
-using member2097 = ret2097(PlayerObject::*)(GameObject*);
+using func2097 = ret2097(*)(PlayerObject*);
+using pure2097 = ret2097();
+using meta2097 = ret2097(PlayerObject*);
+using member2097 = ret2097(PlayerObject::*)();
 
 using ret2098 = void;
-using func2098 = ret2098(*)(PlayerObject*, float);
-using pure2098 = ret2098(float);
-using meta2098 = ret2098(PlayerObject*, float);
-using member2098 = ret2098(PlayerObject::*)(float);
+using func2098 = ret2098(*)(PlayerObject*);
+using pure2098 = ret2098();
+using meta2098 = ret2098(PlayerObject*);
+using member2098 = ret2098(PlayerObject::*)();
 
 using ret2099 = void;
 using func2099 = ret2099(*)(PlayerObject*);
@@ -834,46 +816,46 @@ using meta2099 = ret2099(PlayerObject*);
 using member2099 = ret2099(PlayerObject::*)();
 
 using ret2100 = void;
-using func2100 = ret2100(*)(PlayerObject*);
-using pure2100 = ret2100();
-using meta2100 = ret2100(PlayerObject*);
-using member2100 = ret2100(PlayerObject::*)();
+using func2100 = ret2100(*)(PlayerObject*, GameObject*);
+using pure2100 = ret2100(GameObject*);
+using meta2100 = ret2100(PlayerObject*, GameObject*);
+using member2100 = ret2100(PlayerObject::*)(GameObject*);
 
 using ret2101 = void;
-using func2101 = ret2101(*)(PlayerObject*, bool);
-using pure2101 = ret2101(bool);
-using meta2101 = ret2101(PlayerObject*, bool);
-using member2101 = ret2101(PlayerObject::*)(bool);
+using func2101 = ret2101(*)(PlayerObject*, float);
+using pure2101 = ret2101(float);
+using meta2101 = ret2101(PlayerObject*, float);
+using member2101 = ret2101(PlayerObject::*)(float);
 
 using ret2102 = void;
-using func2102 = ret2102(*)(PlayerObject*, PlayerCheckpoint*);
-using pure2102 = ret2102(PlayerCheckpoint*);
-using meta2102 = ret2102(PlayerObject*, PlayerCheckpoint*);
-using member2102 = ret2102(PlayerObject::*)(PlayerCheckpoint*);
+using func2102 = ret2102(*)(PlayerObject*);
+using pure2102 = ret2102();
+using meta2102 = ret2102(PlayerObject*);
+using member2102 = ret2102(PlayerObject::*)();
 
 using ret2103 = void;
-using func2103 = ret2103(*)(PlayerObject*, cocos2d::_ccColor3B const&);
-using pure2103 = ret2103(cocos2d::_ccColor3B const&);
-using meta2103 = ret2103(PlayerObject*, cocos2d::_ccColor3B const&);
-using member2103 = ret2103(PlayerObject::*)(cocos2d::_ccColor3B const&);
+using func2103 = ret2103(*)(PlayerObject*);
+using pure2103 = ret2103();
+using meta2103 = ret2103(PlayerObject*);
+using member2103 = ret2103(PlayerObject::*)();
 
 using ret2104 = void;
-using func2104 = ret2104(*)(PlayerObject*);
-using pure2104 = ret2104();
-using meta2104 = ret2104(PlayerObject*);
-using member2104 = ret2104(PlayerObject::*)();
+using func2104 = ret2104(*)(PlayerObject*, bool);
+using pure2104 = ret2104(bool);
+using meta2104 = ret2104(PlayerObject*, bool);
+using member2104 = ret2104(PlayerObject::*)(bool);
 
 using ret2105 = void;
-using func2105 = ret2105(*)(PlayerObject*);
-using pure2105 = ret2105();
-using meta2105 = ret2105(PlayerObject*);
-using member2105 = ret2105(PlayerObject::*)();
+using func2105 = ret2105(*)(PlayerObject*, PlayerCheckpoint*);
+using pure2105 = ret2105(PlayerCheckpoint*);
+using meta2105 = ret2105(PlayerObject*, PlayerCheckpoint*);
+using member2105 = ret2105(PlayerObject::*)(PlayerCheckpoint*);
 
 using ret2106 = void;
-using func2106 = ret2106(*)(PlayerObject*);
-using pure2106 = ret2106();
-using meta2106 = ret2106(PlayerObject*);
-using member2106 = ret2106(PlayerObject::*)();
+using func2106 = ret2106(*)(PlayerObject*, cocos2d::_ccColor3B const&);
+using pure2106 = ret2106(cocos2d::_ccColor3B const&);
+using meta2106 = ret2106(PlayerObject*, cocos2d::_ccColor3B const&);
+using member2106 = ret2106(PlayerObject::*)(cocos2d::_ccColor3B const&);
 
 using ret2107 = void;
 using func2107 = ret2107(*)(PlayerObject*);
@@ -882,16 +864,16 @@ using meta2107 = ret2107(PlayerObject*);
 using member2107 = ret2107(PlayerObject::*)();
 
 using ret2108 = void;
-using func2108 = ret2108(*)(PlayerObject*, PlayerObject*);
-using pure2108 = ret2108(PlayerObject*);
-using meta2108 = ret2108(PlayerObject*, PlayerObject*);
-using member2108 = ret2108(PlayerObject::*)(PlayerObject*);
+using func2108 = ret2108(*)(PlayerObject*);
+using pure2108 = ret2108();
+using meta2108 = ret2108(PlayerObject*);
+using member2108 = ret2108(PlayerObject::*)();
 
 using ret2109 = void;
-using func2109 = ret2109(*)(PlayerObject*, cocos2d::_ccColor3B, float);
-using pure2109 = ret2109(cocos2d::_ccColor3B, float);
-using meta2109 = ret2109(PlayerObject*, cocos2d::_ccColor3B, float);
-using member2109 = ret2109(PlayerObject::*)(cocos2d::_ccColor3B, float);
+using func2109 = ret2109(*)(PlayerObject*);
+using pure2109 = ret2109();
+using meta2109 = ret2109(PlayerObject*);
+using member2109 = ret2109(PlayerObject::*)();
 
 using ret2110 = void;
 using func2110 = ret2110(*)(PlayerObject*);
@@ -900,16 +882,16 @@ using meta2110 = ret2110(PlayerObject*);
 using member2110 = ret2110(PlayerObject::*)();
 
 using ret2111 = void;
-using func2111 = ret2111(*)(PlayerObject*);
-using pure2111 = ret2111();
-using meta2111 = ret2111(PlayerObject*);
-using member2111 = ret2111(PlayerObject::*)();
+using func2111 = ret2111(*)(PlayerObject*, PlayerObject*);
+using pure2111 = ret2111(PlayerObject*);
+using meta2111 = ret2111(PlayerObject*, PlayerObject*);
+using member2111 = ret2111(PlayerObject::*)(PlayerObject*);
 
 using ret2112 = void;
-using func2112 = ret2112(*)(PlayerObject*);
-using pure2112 = ret2112();
-using meta2112 = ret2112(PlayerObject*);
-using member2112 = ret2112(PlayerObject::*)();
+using func2112 = ret2112(*)(PlayerObject*, cocos2d::_ccColor3B, float);
+using pure2112 = ret2112(cocos2d::_ccColor3B, float);
+using meta2112 = ret2112(PlayerObject*, cocos2d::_ccColor3B, float);
+using member2112 = ret2112(PlayerObject::*)(cocos2d::_ccColor3B, float);
 
 using ret2113 = void;
 using func2113 = ret2113(*)(PlayerObject*);
@@ -918,16 +900,16 @@ using meta2113 = ret2113(PlayerObject*);
 using member2113 = ret2113(PlayerObject::*)();
 
 using ret2114 = void;
-using func2114 = ret2114(*)(PlayerObject*, bool);
-using pure2114 = ret2114(bool);
-using meta2114 = ret2114(PlayerObject*, bool);
-using member2114 = ret2114(PlayerObject::*)(bool);
+using func2114 = ret2114(*)(PlayerObject*);
+using pure2114 = ret2114();
+using meta2114 = ret2114(PlayerObject*);
+using member2114 = ret2114(PlayerObject::*)();
 
 using ret2115 = void;
-using func2115 = ret2115(*)(PlayerObject*, GameObject*);
-using pure2115 = ret2115(GameObject*);
-using meta2115 = ret2115(PlayerObject*, GameObject*);
-using member2115 = ret2115(PlayerObject::*)(GameObject*);
+using func2115 = ret2115(*)(PlayerObject*);
+using pure2115 = ret2115();
+using meta2115 = ret2115(PlayerObject*);
+using member2115 = ret2115(PlayerObject::*)();
 
 using ret2116 = void;
 using func2116 = ret2116(*)(PlayerObject*);
@@ -936,58 +918,58 @@ using meta2116 = ret2116(PlayerObject*);
 using member2116 = ret2116(PlayerObject::*)();
 
 using ret2117 = void;
-using func2117 = ret2117(*)(PlayerObject*);
-using pure2117 = ret2117();
-using meta2117 = ret2117(PlayerObject*);
-using member2117 = ret2117(PlayerObject::*)();
+using func2117 = ret2117(*)(PlayerObject*, bool);
+using pure2117 = ret2117(bool);
+using meta2117 = ret2117(PlayerObject*, bool);
+using member2117 = ret2117(PlayerObject::*)(bool);
 
 using ret2118 = void;
-using func2118 = ret2118(*)(PlayerObject*, bool);
-using pure2118 = ret2118(bool);
-using meta2118 = ret2118(PlayerObject*, bool);
-using member2118 = ret2118(PlayerObject::*)(bool);
+using func2118 = ret2118(*)(PlayerObject*, GameObject*);
+using pure2118 = ret2118(GameObject*);
+using meta2118 = ret2118(PlayerObject*, GameObject*);
+using member2118 = ret2118(PlayerObject::*)(GameObject*);
 
 using ret2119 = void;
-using func2119 = ret2119(*)(PlayerObject*, bool, int);
-using pure2119 = ret2119(bool, int);
-using meta2119 = ret2119(PlayerObject*, bool, int);
-using member2119 = ret2119(PlayerObject::*)(bool, int);
+using func2119 = ret2119(*)(PlayerObject*);
+using pure2119 = ret2119();
+using meta2119 = ret2119(PlayerObject*);
+using member2119 = ret2119(PlayerObject::*)();
 
 using ret2120 = void;
-using func2120 = ret2120(*)(PlayerObject*, GameObjectType);
-using pure2120 = ret2120(GameObjectType);
-using meta2120 = ret2120(PlayerObject*, GameObjectType);
-using member2120 = ret2120(PlayerObject::*)(GameObjectType);
+using func2120 = ret2120(*)(PlayerObject*);
+using pure2120 = ret2120();
+using meta2120 = ret2120(PlayerObject*);
+using member2120 = ret2120(PlayerObject::*)();
 
 using ret2121 = void;
-using func2121 = ret2121(*)(PlayerObject*, float, GameObject*);
-using pure2121 = ret2121(float, GameObject*);
-using meta2121 = ret2121(PlayerObject*, float, GameObject*);
-using member2121 = ret2121(PlayerObject::*)(float, GameObject*);
+using func2121 = ret2121(*)(PlayerObject*, bool);
+using pure2121 = ret2121(bool);
+using meta2121 = ret2121(PlayerObject*, bool);
+using member2121 = ret2121(PlayerObject::*)(bool);
 
 using ret2122 = void;
-using func2122 = ret2122(*)(PlayerObject*, bool);
-using pure2122 = ret2122(bool);
-using meta2122 = ret2122(PlayerObject*, bool);
-using member2122 = ret2122(PlayerObject::*)(bool);
+using func2122 = ret2122(*)(PlayerObject*, bool, int);
+using pure2122 = ret2122(bool, int);
+using meta2122 = ret2122(PlayerObject*, bool, int);
+using member2122 = ret2122(PlayerObject::*)(bool, int);
 
 using ret2123 = void;
-using func2123 = ret2123(*)(PlayerObject*, bool);
-using pure2123 = ret2123(bool);
-using meta2123 = ret2123(PlayerObject*, bool);
-using member2123 = ret2123(PlayerObject::*)(bool);
+using func2123 = ret2123(*)(PlayerObject*, GameObjectType);
+using pure2123 = ret2123(GameObjectType);
+using meta2123 = ret2123(PlayerObject*, GameObjectType);
+using member2123 = ret2123(PlayerObject::*)(GameObjectType);
 
 using ret2124 = void;
-using func2124 = ret2124(*)(PlayerObject*, bool);
-using pure2124 = ret2124(bool);
-using meta2124 = ret2124(PlayerObject*, bool);
-using member2124 = ret2124(PlayerObject::*)(bool);
+using func2124 = ret2124(*)(PlayerObject*, float, GameObject*);
+using pure2124 = ret2124(float, GameObject*);
+using meta2124 = ret2124(PlayerObject*, float, GameObject*);
+using member2124 = ret2124(PlayerObject::*)(float, GameObject*);
 
 using ret2125 = void;
-using func2125 = ret2125(*)(PlayerObject*, GhostType);
-using pure2125 = ret2125(GhostType);
-using meta2125 = ret2125(PlayerObject*, GhostType);
-using member2125 = ret2125(PlayerObject::*)(GhostType);
+using func2125 = ret2125(*)(PlayerObject*, bool);
+using pure2125 = ret2125(bool);
+using meta2125 = ret2125(PlayerObject*, bool);
+using member2125 = ret2125(PlayerObject::*)(bool);
 
 using ret2126 = void;
 using func2126 = ret2126(*)(PlayerObject*, bool);
@@ -1002,10 +984,10 @@ using meta2127 = ret2127(PlayerObject*, bool);
 using member2127 = ret2127(PlayerObject::*)(bool);
 
 using ret2128 = void;
-using func2128 = ret2128(*)(PlayerObject*, bool);
-using pure2128 = ret2128(bool);
-using meta2128 = ret2128(PlayerObject*, bool);
-using member2128 = ret2128(PlayerObject::*)(bool);
+using func2128 = ret2128(*)(PlayerObject*, GhostType);
+using pure2128 = ret2128(GhostType);
+using meta2128 = ret2128(PlayerObject*, GhostType);
+using member2128 = ret2128(PlayerObject::*)(GhostType);
 
 using ret2129 = void;
 using func2129 = ret2129(*)(PlayerObject*, bool);
@@ -1020,16 +1002,16 @@ using meta2130 = ret2130(PlayerObject*, bool);
 using member2130 = ret2130(PlayerObject::*)(bool);
 
 using ret2131 = void;
-using func2131 = ret2131(*)(PlayerObject*, GameObject*);
-using pure2131 = ret2131(GameObject*);
-using meta2131 = ret2131(PlayerObject*, GameObject*);
-using member2131 = ret2131(PlayerObject::*)(GameObject*);
+using func2131 = ret2131(*)(PlayerObject*, bool);
+using pure2131 = ret2131(bool);
+using meta2131 = ret2131(PlayerObject*, bool);
+using member2131 = ret2131(PlayerObject::*)(bool);
 
 using ret2132 = void;
-using func2132 = ret2132(*)(PlayerObject*);
-using pure2132 = ret2132();
-using meta2132 = ret2132(PlayerObject*);
-using member2132 = ret2132(PlayerObject::*)();
+using func2132 = ret2132(*)(PlayerObject*, bool);
+using pure2132 = ret2132(bool);
+using meta2132 = ret2132(PlayerObject*, bool);
+using member2132 = ret2132(PlayerObject::*)(bool);
 
 using ret2133 = void;
 using func2133 = ret2133(*)(PlayerObject*, bool);
@@ -1038,52 +1020,52 @@ using meta2133 = ret2133(PlayerObject*, bool);
 using member2133 = ret2133(PlayerObject::*)(bool);
 
 using ret2134 = void;
-using func2134 = ret2134(*)(PlayerObject*);
-using pure2134 = ret2134();
-using meta2134 = ret2134(PlayerObject*);
-using member2134 = ret2134(PlayerObject::*)();
+using func2134 = ret2134(*)(PlayerObject*, GameObject*);
+using pure2134 = ret2134(GameObject*);
+using meta2134 = ret2134(PlayerObject*, GameObject*);
+using member2134 = ret2134(PlayerObject::*)(GameObject*);
 
 using ret2135 = void;
-using func2135 = ret2135(*)(PlayerObject*, bool, int);
-using pure2135 = ret2135(bool, int);
-using meta2135 = ret2135(PlayerObject*, bool, int);
-using member2135 = ret2135(PlayerObject::*)(bool, int);
+using func2135 = ret2135(*)(PlayerObject*);
+using pure2135 = ret2135();
+using meta2135 = ret2135(PlayerObject*);
+using member2135 = ret2135(PlayerObject::*)();
 
 using ret2136 = void;
-using func2136 = ret2136(*)(PlayerObject*, float, int);
-using pure2136 = ret2136(float, int);
-using meta2136 = ret2136(PlayerObject*, float, int);
-using member2136 = ret2136(PlayerObject::*)(float, int);
+using func2136 = ret2136(*)(PlayerObject*, bool);
+using pure2136 = ret2136(bool);
+using meta2136 = ret2136(PlayerObject*, bool);
+using member2136 = ret2136(PlayerObject::*)(bool);
 
 using ret2137 = void;
-using func2137 = ret2137(*)(PlayerObject*, float, int);
-using pure2137 = ret2137(float, int);
-using meta2137 = ret2137(PlayerObject*, float, int);
-using member2137 = ret2137(PlayerObject::*)(float, int);
+using func2137 = ret2137(*)(PlayerObject*);
+using pure2137 = ret2137();
+using meta2137 = ret2137(PlayerObject*);
+using member2137 = ret2137(PlayerObject::*)();
 
 using ret2138 = void;
-using func2138 = ret2138(*)(PlayerObject*);
-using pure2138 = ret2138();
-using meta2138 = ret2138(PlayerObject*);
-using member2138 = ret2138(PlayerObject::*)();
+using func2138 = ret2138(*)(PlayerObject*, bool, int);
+using pure2138 = ret2138(bool, int);
+using meta2138 = ret2138(PlayerObject*, bool, int);
+using member2138 = ret2138(PlayerObject::*)(bool, int);
 
 using ret2139 = void;
-using func2139 = ret2139(*)(PlayerObject*);
-using pure2139 = ret2139();
-using meta2139 = ret2139(PlayerObject*);
-using member2139 = ret2139(PlayerObject::*)();
+using func2139 = ret2139(*)(PlayerObject*, float, int);
+using pure2139 = ret2139(float, int);
+using meta2139 = ret2139(PlayerObject*, float, int);
+using member2139 = ret2139(PlayerObject::*)(float, int);
 
 using ret2140 = void;
-using func2140 = ret2140(*)(PlayerObject*);
-using pure2140 = ret2140();
-using meta2140 = ret2140(PlayerObject*);
-using member2140 = ret2140(PlayerObject::*)();
+using func2140 = ret2140(*)(PlayerObject*, float, int);
+using pure2140 = ret2140(float, int);
+using meta2140 = ret2140(PlayerObject*, float, int);
+using member2140 = ret2140(PlayerObject::*)(float, int);
 
 using ret2141 = void;
-using func2141 = ret2141(*)(PlayerObject*, float);
-using pure2141 = ret2141(float);
-using meta2141 = ret2141(PlayerObject*, float);
-using member2141 = ret2141(PlayerObject::*)(float);
+using func2141 = ret2141(*)(PlayerObject*);
+using pure2141 = ret2141();
+using meta2141 = ret2141(PlayerObject*);
+using member2141 = ret2141(PlayerObject::*)();
 
 using ret2142 = void;
 using func2142 = ret2142(*)(PlayerObject*);
@@ -1092,28 +1074,28 @@ using meta2142 = ret2142(PlayerObject*);
 using member2142 = ret2142(PlayerObject::*)();
 
 using ret2143 = void;
-using func2143 = ret2143(*)(PlayerObject*, int);
-using pure2143 = ret2143(int);
-using meta2143 = ret2143(PlayerObject*, int);
-using member2143 = ret2143(PlayerObject::*)(int);
+using func2143 = ret2143(*)(PlayerObject*);
+using pure2143 = ret2143();
+using meta2143 = ret2143(PlayerObject*);
+using member2143 = ret2143(PlayerObject::*)();
 
 using ret2144 = void;
-using func2144 = ret2144(*)(PlayerObject*, int);
-using pure2144 = ret2144(int);
-using meta2144 = ret2144(PlayerObject*, int);
-using member2144 = ret2144(PlayerObject::*)(int);
+using func2144 = ret2144(*)(PlayerObject*, float);
+using pure2144 = ret2144(float);
+using meta2144 = ret2144(PlayerObject*, float);
+using member2144 = ret2144(PlayerObject::*)(float);
 
 using ret2145 = void;
-using func2145 = ret2145(*)(PlayerObject*, int);
-using pure2145 = ret2145(int);
-using meta2145 = ret2145(PlayerObject*, int);
-using member2145 = ret2145(PlayerObject::*)(int);
+using func2145 = ret2145(*)(PlayerObject*);
+using pure2145 = ret2145();
+using meta2145 = ret2145(PlayerObject*);
+using member2145 = ret2145(PlayerObject::*)();
 
 using ret2146 = void;
-using func2146 = ret2146(*)(PlayerObject*);
-using pure2146 = ret2146();
-using meta2146 = ret2146(PlayerObject*);
-using member2146 = ret2146(PlayerObject::*)();
+using func2146 = ret2146(*)(PlayerObject*, int);
+using pure2146 = ret2146(int);
+using meta2146 = ret2146(PlayerObject*, int);
+using member2146 = ret2146(PlayerObject::*)(int);
 
 using ret2147 = void;
 using func2147 = ret2147(*)(PlayerObject*, int);
@@ -1146,46 +1128,46 @@ using meta2151 = ret2151(PlayerObject*, int);
 using member2151 = ret2151(PlayerObject::*)(int);
 
 using ret2152 = void;
-using func2152 = ret2152(*)(PlayerObject*, gd::string);
-using pure2152 = ret2152(gd::string);
-using meta2152 = ret2152(PlayerObject*, gd::string);
-using member2152 = ret2152(PlayerObject::*)(gd::string);
+using func2152 = ret2152(*)(PlayerObject*);
+using pure2152 = ret2152();
+using meta2152 = ret2152(PlayerObject*);
+using member2152 = ret2152(PlayerObject::*)();
 
 using ret2153 = void;
-using func2153 = ret2153(*)(PlayerObject*);
-using pure2153 = ret2153();
-using meta2153 = ret2153(PlayerObject*);
-using member2153 = ret2153(PlayerObject::*)();
+using func2153 = ret2153(*)(PlayerObject*, int);
+using pure2153 = ret2153(int);
+using meta2153 = ret2153(PlayerObject*, int);
+using member2153 = ret2153(PlayerObject::*)(int);
 
 using ret2154 = void;
-using func2154 = ret2154(*)(PlayerObject*, float);
-using pure2154 = ret2154(float);
-using meta2154 = ret2154(PlayerObject*, float);
-using member2154 = ret2154(PlayerObject::*)(float);
+using func2154 = ret2154(*)(PlayerObject*, int);
+using pure2154 = ret2154(int);
+using meta2154 = ret2154(PlayerObject*, int);
+using member2154 = ret2154(PlayerObject::*)(int);
 
 using ret2155 = void;
-using func2155 = ret2155(*)(PlayerObject*, float, float);
-using pure2155 = ret2155(float, float);
-using meta2155 = ret2155(PlayerObject*, float, float);
-using member2155 = ret2155(PlayerObject::*)(float, float);
+using func2155 = ret2155(*)(PlayerObject*, gd::string);
+using pure2155 = ret2155(gd::string);
+using meta2155 = ret2155(PlayerObject*, gd::string);
+using member2155 = ret2155(PlayerObject::*)(gd::string);
 
 using ret2156 = void;
-using func2156 = ret2156(*)(PlayerObject*, float);
-using pure2156 = ret2156(float);
-using meta2156 = ret2156(PlayerObject*, float);
-using member2156 = ret2156(PlayerObject::*)(float);
+using func2156 = ret2156(*)(PlayerObject*);
+using pure2156 = ret2156();
+using meta2156 = ret2156(PlayerObject*);
+using member2156 = ret2156(PlayerObject::*)();
 
 using ret2157 = void;
-using func2157 = ret2157(*)(PlayerObject*, gd::string);
-using pure2157 = ret2157(gd::string);
-using meta2157 = ret2157(PlayerObject*, gd::string);
-using member2157 = ret2157(PlayerObject::*)(gd::string);
+using func2157 = ret2157(*)(PlayerObject*, float);
+using pure2157 = ret2157(float);
+using meta2157 = ret2157(PlayerObject*, float);
+using member2157 = ret2157(PlayerObject::*)(float);
 
 using ret2158 = void;
-using func2158 = ret2158(*)(PlayerObject*, float);
-using pure2158 = ret2158(float);
-using meta2158 = ret2158(PlayerObject*, float);
-using member2158 = ret2158(PlayerObject::*)(float);
+using func2158 = ret2158(*)(PlayerObject*, float, float);
+using pure2158 = ret2158(float, float);
+using meta2158 = ret2158(PlayerObject*, float, float);
+using member2158 = ret2158(PlayerObject::*)(float, float);
 
 using ret2159 = void;
 using func2159 = ret2159(*)(PlayerObject*, float);
@@ -1194,16 +1176,16 @@ using meta2159 = ret2159(PlayerObject*, float);
 using member2159 = ret2159(PlayerObject::*)(float);
 
 using ret2160 = void;
-using func2160 = ret2160(*)(PlayerObject*, float);
-using pure2160 = ret2160(float);
-using meta2160 = ret2160(PlayerObject*, float);
-using member2160 = ret2160(PlayerObject::*)(float);
+using func2160 = ret2160(*)(PlayerObject*, gd::string);
+using pure2160 = ret2160(gd::string);
+using meta2160 = ret2160(PlayerObject*, gd::string);
+using member2160 = ret2160(PlayerObject::*)(gd::string);
 
 using ret2161 = void;
-using func2161 = ret2161(*)(PlayerObject*);
-using pure2161 = ret2161();
-using meta2161 = ret2161(PlayerObject*);
-using member2161 = ret2161(PlayerObject::*)();
+using func2161 = ret2161(*)(PlayerObject*, float);
+using pure2161 = ret2161(float);
+using meta2161 = ret2161(PlayerObject*, float);
+using member2161 = ret2161(PlayerObject::*)(float);
 
 using ret2162 = void;
 using func2162 = ret2162(*)(PlayerObject*, float);
@@ -1212,10 +1194,10 @@ using meta2162 = ret2162(PlayerObject*, float);
 using member2162 = ret2162(PlayerObject::*)(float);
 
 using ret2163 = void;
-using func2163 = ret2163(*)(PlayerObject*);
-using pure2163 = ret2163();
-using meta2163 = ret2163(PlayerObject*);
-using member2163 = ret2163(PlayerObject::*)();
+using func2163 = ret2163(*)(PlayerObject*, float);
+using pure2163 = ret2163(float);
+using meta2163 = ret2163(PlayerObject*, float);
+using member2163 = ret2163(PlayerObject::*)(float);
 
 using ret2164 = void;
 using func2164 = ret2164(*)(PlayerObject*);
@@ -1224,184 +1206,184 @@ using meta2164 = ret2164(PlayerObject*);
 using member2164 = ret2164(PlayerObject::*)();
 
 using ret2165 = void;
-using func2165 = ret2165(*)(PlayerObject*);
-using pure2165 = ret2165();
-using meta2165 = ret2165(PlayerObject*);
-using member2165 = ret2165(PlayerObject::*)();
+using func2165 = ret2165(*)(PlayerObject*, float);
+using pure2165 = ret2165(float);
+using meta2165 = ret2165(PlayerObject*, float);
+using member2165 = ret2165(PlayerObject::*)(float);
 
-using ret2014 = void;
-using func2014 = ret2014(*)(PlayerCheckpoint*);
-using pure2014 = ret2014();
-using meta2014 = ret2014(PlayerCheckpoint*);
-using member2014 = func2014;
+using ret2166 = void;
+using func2166 = ret2166(*)(PlayerObject*);
+using pure2166 = ret2166();
+using meta2166 = ret2166(PlayerObject*);
+using member2166 = ret2166(PlayerObject::*)();
 
-using ret2015 = bool;
-using func2015 = ret2015(*)(PlayerCheckpoint*);
-using pure2015 = ret2015();
-using meta2015 = ret2015(PlayerCheckpoint*);
-using member2015 = ret2015(PlayerCheckpoint::*)();
+using ret2167 = void;
+using func2167 = ret2167(*)(PlayerObject*);
+using pure2167 = ret2167();
+using meta2167 = ret2167(PlayerObject*);
+using member2167 = ret2167(PlayerObject::*)();
 
-using ret2016 = PlayerCheckpoint*;
-using func2016 = ret2016(*)();
-using pure2016 = ret2016();
-using meta2016 = ret2016();
-using member2016 = func2016;
+using ret2168 = void;
+using func2168 = ret2168(*)(PlayerObject*);
+using pure2168 = ret2168();
+using meta2168 = ret2168(PlayerObject*);
+using member2168 = ret2168(PlayerObject::*)();
 
-using ret1862 = void;
-using func1862 = ret1862(*)(PlayLayer*, CCCircleWave*);
-using pure1862 = ret1862(CCCircleWave*);
-using meta1862 = ret1862(PlayLayer*, CCCircleWave*);
-using member1862 = ret1862(PlayLayer::*)(CCCircleWave*);
+using ret2017 = void;
+using func2017 = ret2017(*)(PlayerCheckpoint*);
+using pure2017 = ret2017();
+using meta2017 = ret2017(PlayerCheckpoint*);
+using member2017 = func2017;
 
-using ret1863 = void;
-using func1863 = ret1863(*)(PlayLayer*, GameObject*);
-using pure1863 = ret1863(GameObject*);
-using meta1863 = ret1863(PlayLayer*, GameObject*);
-using member1863 = ret1863(PlayLayer::*)(GameObject*);
+using ret2018 = bool;
+using func2018 = ret2018(*)(PlayerCheckpoint*);
+using pure2018 = ret2018();
+using meta2018 = ret2018(PlayerCheckpoint*);
+using member2018 = ret2018(PlayerCheckpoint::*)();
 
-using ret1864 = void;
-using func1864 = ret1864(*)(PlayLayer*, GameObject*);
-using pure1864 = ret1864(GameObject*);
-using meta1864 = ret1864(PlayLayer*, GameObject*);
-using member1864 = ret1864(PlayLayer::*)(GameObject*);
+using ret2019 = PlayerCheckpoint*;
+using func2019 = ret2019(*)();
+using pure2019 = ret2019();
+using meta2019 = ret2019();
+using member2019 = func2019;
 
 using ret1865 = void;
-using func1865 = ret1865(*)(PlayLayer*, GameObject*);
-using pure1865 = ret1865(GameObject*);
-using meta1865 = ret1865(PlayLayer*, GameObject*);
-using member1865 = ret1865(PlayLayer::*)(GameObject*);
+using func1865 = ret1865(*)(PlayLayer*, CCCircleWave*);
+using pure1865 = ret1865(CCCircleWave*);
+using meta1865 = ret1865(PlayLayer*, CCCircleWave*);
+using member1865 = ret1865(PlayLayer::*)(CCCircleWave*);
 
 using ret1866 = void;
-using func1866 = ret1866(*)(PlayLayer*, GameObject*, float, bool);
-using pure1866 = ret1866(GameObject*, float, bool);
-using meta1866 = ret1866(PlayLayer*, GameObject*, float, bool);
-using member1866 = ret1866(PlayLayer::*)(GameObject*, float, bool);
+using func1866 = ret1866(*)(PlayLayer*, GameObject*);
+using pure1866 = ret1866(GameObject*);
+using meta1866 = ret1866(PlayLayer*, GameObject*);
+using member1866 = ret1866(PlayLayer::*)(GameObject*);
 
 using ret1867 = void;
-using func1867 = ret1867(*)(PlayLayer*, bool);
-using pure1867 = ret1867(bool);
-using meta1867 = ret1867(PlayLayer*, bool);
-using member1867 = ret1867(PlayLayer::*)(bool);
+using func1867 = ret1867(*)(PlayLayer*, GameObject*);
+using pure1867 = ret1867(GameObject*);
+using meta1867 = ret1867(PlayLayer*, GameObject*);
+using member1867 = ret1867(PlayLayer::*)(GameObject*);
 
 using ret1868 = void;
-using func1868 = ret1868(*)(PlayLayer*, bool);
-using pure1868 = ret1868(bool);
-using meta1868 = ret1868(PlayLayer*, bool);
-using member1868 = ret1868(PlayLayer::*)(bool);
+using func1868 = ret1868(*)(PlayLayer*, GameObject*);
+using pure1868 = ret1868(GameObject*);
+using meta1868 = ret1868(PlayLayer*, GameObject*);
+using member1868 = ret1868(PlayLayer::*)(GameObject*);
 
 using ret1869 = void;
-using func1869 = ret1869(*)(PlayLayer*);
-using pure1869 = ret1869();
-using meta1869 = ret1869(PlayLayer*);
-using member1869 = ret1869(PlayLayer::*)();
+using func1869 = ret1869(*)(PlayLayer*, GameObject*, float, bool);
+using pure1869 = ret1869(GameObject*, float, bool);
+using meta1869 = ret1869(PlayLayer*, GameObject*, float, bool);
+using member1869 = ret1869(PlayLayer::*)(GameObject*, float, bool);
 
 using ret1870 = void;
-using func1870 = ret1870(*)(PlayLayer*, GameObject*);
-using pure1870 = ret1870(GameObject*);
-using meta1870 = ret1870(PlayLayer*, GameObject*);
-using member1870 = ret1870(PlayLayer::*)(GameObject*);
+using func1870 = ret1870(*)(PlayLayer*, bool);
+using pure1870 = ret1870(bool);
+using meta1870 = ret1870(PlayLayer*, bool);
+using member1870 = ret1870(PlayLayer::*)(bool);
 
 using ret1871 = void;
-using func1871 = ret1871(*)(PlayLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using pure1871 = ret1871(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using meta1871 = ret1871(PlayLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using member1871 = ret1871(PlayLayer::*)(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using func1871 = ret1871(*)(PlayLayer*, bool);
+using pure1871 = ret1871(bool);
+using meta1871 = ret1871(PlayLayer*, bool);
+using member1871 = ret1871(PlayLayer::*)(bool);
 
 using ret1872 = void;
-using func1872 = ret1872(*)(PlayLayer*, float, float, float);
-using pure1872 = ret1872(float, float, float);
-using meta1872 = ret1872(PlayLayer*, float, float, float);
-using member1872 = ret1872(PlayLayer::*)(float, float, float);
+using func1872 = ret1872(*)(PlayLayer*);
+using pure1872 = ret1872();
+using meta1872 = ret1872(PlayLayer*);
+using member1872 = ret1872(PlayLayer::*)();
 
 using ret1873 = void;
-using func1873 = ret1873(*)(PlayLayer*, float, float, float);
-using pure1873 = ret1873(float, float, float);
-using meta1873 = ret1873(PlayLayer*, float, float, float);
-using member1873 = ret1873(PlayLayer::*)(float, float, float);
+using func1873 = ret1873(*)(PlayLayer*, GameObject*);
+using pure1873 = ret1873(GameObject*);
+using meta1873 = ret1873(PlayLayer*, GameObject*);
+using member1873 = ret1873(PlayLayer::*)(GameObject*);
 
 using ret1874 = void;
-using func1874 = ret1874(*)(PlayLayer*, PlayerObject*, float);
-using pure1874 = ret1874(PlayerObject*, float);
-using meta1874 = ret1874(PlayLayer*, PlayerObject*, float);
-using member1874 = ret1874(PlayLayer::*)(PlayerObject*, float);
+using func1874 = ret1874(*)(PlayLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using pure1874 = ret1874(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using meta1874 = ret1874(PlayLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using member1874 = ret1874(PlayLayer::*)(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
 
 using ret1875 = void;
-using func1875 = ret1875(*)(PlayLayer*, CCCircleWave*);
-using pure1875 = ret1875(CCCircleWave*);
-using meta1875 = ret1875(PlayLayer*, CCCircleWave*);
-using member1875 = ret1875(PlayLayer::*)(CCCircleWave*);
+using func1875 = ret1875(*)(PlayLayer*, float, float, float);
+using pure1875 = ret1875(float, float, float);
+using meta1875 = ret1875(PlayLayer*, float, float, float);
+using member1875 = ret1875(PlayLayer::*)(float, float, float);
 
 using ret1876 = void;
-using func1876 = ret1876(*)(PlayLayer*, gd::string);
-using pure1876 = ret1876(gd::string);
-using meta1876 = ret1876(PlayLayer*, gd::string);
-using member1876 = ret1876(PlayLayer::*)(gd::string);
+using func1876 = ret1876(*)(PlayLayer*, float, float, float);
+using pure1876 = ret1876(float, float, float);
+using meta1876 = ret1876(PlayLayer*, float, float, float);
+using member1876 = ret1876(PlayLayer::*)(float, float, float);
 
 using ret1877 = void;
-using func1877 = ret1877(*)(PlayLayer*);
-using pure1877 = ret1877();
-using meta1877 = ret1877(PlayLayer*);
-using member1877 = ret1877(PlayLayer::*)();
+using func1877 = ret1877(*)(PlayLayer*, PlayerObject*, float);
+using pure1877 = ret1877(PlayerObject*, float);
+using meta1877 = ret1877(PlayLayer*, PlayerObject*, float);
+using member1877 = ret1877(PlayLayer::*)(PlayerObject*, float);
 
 using ret1878 = void;
-using func1878 = ret1878(*)(PlayLayer*, int, cocos2d::_ccColor3B);
-using pure1878 = ret1878(int, cocos2d::_ccColor3B);
-using meta1878 = ret1878(PlayLayer*, int, cocos2d::_ccColor3B);
-using member1878 = ret1878(PlayLayer::*)(int, cocos2d::_ccColor3B);
+using func1878 = ret1878(*)(PlayLayer*, CCCircleWave*);
+using pure1878 = ret1878(CCCircleWave*);
+using meta1878 = ret1878(PlayLayer*, CCCircleWave*);
+using member1878 = ret1878(PlayLayer::*)(CCCircleWave*);
 
 using ret1879 = void;
-using func1879 = ret1879(*)(PlayLayer*);
-using pure1879 = ret1879();
-using meta1879 = ret1879(PlayLayer*);
-using member1879 = ret1879(PlayLayer::*)();
+using func1879 = ret1879(*)(PlayLayer*, gd::string);
+using pure1879 = ret1879(gd::string);
+using meta1879 = ret1879(PlayLayer*, gd::string);
+using member1879 = ret1879(PlayLayer::*)(gd::string);
 
-using ret1880 = PlayLayer*;
-using func1880 = ret1880(*)(GJGameLevel*);
-using pure1880 = ret1880(GJGameLevel*);
-using meta1880 = ret1880(GJGameLevel*);
-using member1880 = func1880;
+using ret1880 = void;
+using func1880 = ret1880(*)(PlayLayer*);
+using pure1880 = ret1880();
+using meta1880 = ret1880(PlayLayer*);
+using member1880 = ret1880(PlayLayer::*)();
 
-using ret1881 = CheckpointObject*;
-using func1881 = ret1881(*)(PlayLayer*);
-using pure1881 = ret1881();
-using meta1881 = ret1881(PlayLayer*);
-using member1881 = ret1881(PlayLayer::*)();
+using ret1881 = void;
+using func1881 = ret1881(*)(PlayLayer*, int, cocos2d::_ccColor3B);
+using pure1881 = ret1881(int, cocos2d::_ccColor3B);
+using meta1881 = ret1881(PlayLayer*, int, cocos2d::_ccColor3B);
+using member1881 = ret1881(PlayLayer::*)(int, cocos2d::_ccColor3B);
 
 using ret1882 = void;
-using func1882 = ret1882(*)(PlayLayer*, gd::string);
-using pure1882 = ret1882(gd::string);
-using meta1882 = ret1882(PlayLayer*, gd::string);
-using member1882 = ret1882(PlayLayer::*)(gd::string);
+using func1882 = ret1882(*)(PlayLayer*);
+using pure1882 = ret1882();
+using meta1882 = ret1882(PlayLayer*);
+using member1882 = ret1882(PlayLayer::*)();
 
-using ret1883 = void;
-using func1883 = ret1883(*)(PlayLayer*, int, char const*, int, cocos2d::tCCPositionType);
-using pure1883 = ret1883(int, char const*, int, cocos2d::tCCPositionType);
-using meta1883 = ret1883(PlayLayer*, int, char const*, int, cocos2d::tCCPositionType);
-using member1883 = ret1883(PlayLayer::*)(int, char const*, int, cocos2d::tCCPositionType);
+using ret1883 = PlayLayer*;
+using func1883 = ret1883(*)(GJGameLevel*);
+using pure1883 = ret1883(GJGameLevel*);
+using meta1883 = ret1883(GJGameLevel*);
+using member1883 = func1883;
 
-using ret1884 = void;
-using func1884 = ret1884(*)(PlayLayer*, CurrencyRewardLayer*);
-using pure1884 = ret1884(CurrencyRewardLayer*);
-using meta1884 = ret1884(PlayLayer*, CurrencyRewardLayer*);
-using member1884 = ret1884(PlayLayer::*)(CurrencyRewardLayer*);
+using ret1884 = CheckpointObject*;
+using func1884 = ret1884(*)(PlayLayer*);
+using pure1884 = ret1884();
+using meta1884 = ret1884(PlayLayer*);
+using member1884 = ret1884(PlayLayer::*)();
 
 using ret1885 = void;
-using func1885 = ret1885(*)(PlayLayer*);
-using pure1885 = ret1885();
-using meta1885 = ret1885(PlayLayer*);
-using member1885 = ret1885(PlayLayer::*)();
+using func1885 = ret1885(*)(PlayLayer*, gd::string);
+using pure1885 = ret1885(gd::string);
+using meta1885 = ret1885(PlayLayer*, gd::string);
+using member1885 = ret1885(PlayLayer::*)(gd::string);
 
 using ret1886 = void;
-using func1886 = ret1886(*)(PlayLayer*, PlayerObject*, GameObject*);
-using pure1886 = ret1886(PlayerObject*, GameObject*);
-using meta1886 = ret1886(PlayLayer*, PlayerObject*, GameObject*);
-using member1886 = ret1886(PlayLayer::*)(PlayerObject*, GameObject*);
+using func1886 = ret1886(*)(PlayLayer*, int, char const*, int, cocos2d::tCCPositionType);
+using pure1886 = ret1886(int, char const*, int, cocos2d::tCCPositionType);
+using meta1886 = ret1886(PlayLayer*, int, char const*, int, cocos2d::tCCPositionType);
+using member1886 = ret1886(PlayLayer::*)(int, char const*, int, cocos2d::tCCPositionType);
 
 using ret1887 = void;
-using func1887 = ret1887(*)(PlayLayer*, DialogLayer*);
-using pure1887 = ret1887(DialogLayer*);
-using meta1887 = ret1887(PlayLayer*, DialogLayer*);
-using member1887 = ret1887(PlayLayer::*)(DialogLayer*);
+using func1887 = ret1887(*)(PlayLayer*, CurrencyRewardLayer*);
+using pure1887 = ret1887(CurrencyRewardLayer*);
+using meta1887 = ret1887(PlayLayer*, CurrencyRewardLayer*);
+using member1887 = ret1887(PlayLayer::*)(CurrencyRewardLayer*);
 
 using ret1888 = void;
 using func1888 = ret1888(*)(PlayLayer*);
@@ -1410,34 +1392,34 @@ using meta1888 = ret1888(PlayLayer*);
 using member1888 = ret1888(PlayLayer::*)();
 
 using ret1889 = void;
-using func1889 = ret1889(*)(PlayLayer*, GameObject*, bool);
-using pure1889 = ret1889(GameObject*, bool);
-using meta1889 = ret1889(PlayLayer*, GameObject*, bool);
-using member1889 = ret1889(PlayLayer::*)(GameObject*, bool);
+using func1889 = ret1889(*)(PlayLayer*, PlayerObject*, GameObject*);
+using pure1889 = ret1889(PlayerObject*, GameObject*);
+using meta1889 = ret1889(PlayLayer*, PlayerObject*, GameObject*);
+using member1889 = ret1889(PlayLayer::*)(PlayerObject*, GameObject*);
 
 using ret1890 = void;
-using func1890 = ret1890(*)(PlayLayer*);
-using pure1890 = ret1890();
-using meta1890 = ret1890(PlayLayer*);
-using member1890 = ret1890(PlayLayer::*)();
+using func1890 = ret1890(*)(PlayLayer*, DialogLayer*);
+using pure1890 = ret1890(DialogLayer*);
+using meta1890 = ret1890(PlayLayer*, DialogLayer*);
+using member1890 = ret1890(PlayLayer::*)(DialogLayer*);
 
 using ret1891 = void;
-using func1891 = ret1891(*)(PlayLayer*, PlayerObject*);
-using pure1891 = ret1891(PlayerObject*);
-using meta1891 = ret1891(PlayLayer*, PlayerObject*);
-using member1891 = ret1891(PlayLayer::*)(PlayerObject*);
+using func1891 = ret1891(*)(PlayLayer*);
+using pure1891 = ret1891();
+using meta1891 = ret1891(PlayLayer*);
+using member1891 = ret1891(PlayLayer::*)();
 
 using ret1892 = void;
-using func1892 = ret1892(*)(PlayLayer*, PlayerObject*);
-using pure1892 = ret1892(PlayerObject*);
-using meta1892 = ret1892(PlayLayer*, PlayerObject*);
-using member1892 = ret1892(PlayLayer::*)(PlayerObject*);
+using func1892 = ret1892(*)(PlayLayer*, GameObject*, bool);
+using pure1892 = ret1892(GameObject*, bool);
+using meta1892 = ret1892(PlayLayer*, GameObject*, bool);
+using member1892 = ret1892(PlayLayer::*)(GameObject*, bool);
 
 using ret1893 = void;
-using func1893 = ret1893(*)(PlayLayer*, PlayerObject*);
-using pure1893 = ret1893(PlayerObject*);
-using meta1893 = ret1893(PlayLayer*, PlayerObject*);
-using member1893 = ret1893(PlayLayer::*)(PlayerObject*);
+using func1893 = ret1893(*)(PlayLayer*);
+using pure1893 = ret1893();
+using meta1893 = ret1893(PlayLayer*);
+using member1893 = ret1893(PlayLayer::*)();
 
 using ret1894 = void;
 using func1894 = ret1894(*)(PlayLayer*, PlayerObject*);
@@ -1458,22 +1440,22 @@ using meta1896 = ret1896(PlayLayer*, PlayerObject*);
 using member1896 = ret1896(PlayLayer::*)(PlayerObject*);
 
 using ret1897 = void;
-using func1897 = ret1897(*)(PlayLayer*);
-using pure1897 = ret1897();
-using meta1897 = ret1897(PlayLayer*);
-using member1897 = ret1897(PlayLayer::*)();
+using func1897 = ret1897(*)(PlayLayer*, PlayerObject*);
+using pure1897 = ret1897(PlayerObject*);
+using meta1897 = ret1897(PlayLayer*, PlayerObject*);
+using member1897 = ret1897(PlayLayer::*)(PlayerObject*);
 
 using ret1898 = void;
-using func1898 = ret1898(*)(PlayLayer*, PlayerObject*, bool, bool);
-using pure1898 = ret1898(PlayerObject*, bool, bool);
-using meta1898 = ret1898(PlayLayer*, PlayerObject*, bool, bool);
-using member1898 = ret1898(PlayLayer::*)(PlayerObject*, bool, bool);
+using func1898 = ret1898(*)(PlayLayer*, PlayerObject*);
+using pure1898 = ret1898(PlayerObject*);
+using meta1898 = ret1898(PlayLayer*, PlayerObject*);
+using member1898 = ret1898(PlayLayer::*)(PlayerObject*);
 
 using ret1899 = void;
-using func1899 = ret1899(*)(PlayLayer*);
-using pure1899 = ret1899();
-using meta1899 = ret1899(PlayLayer*);
-using member1899 = ret1899(PlayLayer::*)();
+using func1899 = ret1899(*)(PlayLayer*, PlayerObject*);
+using pure1899 = ret1899(PlayerObject*);
+using meta1899 = ret1899(PlayLayer*, PlayerObject*);
+using member1899 = ret1899(PlayLayer::*)(PlayerObject*);
 
 using ret1900 = void;
 using func1900 = ret1900(*)(PlayLayer*);
@@ -1482,10 +1464,10 @@ using meta1900 = ret1900(PlayLayer*);
 using member1900 = ret1900(PlayLayer::*)();
 
 using ret1901 = void;
-using func1901 = ret1901(*)(PlayLayer*);
-using pure1901 = ret1901();
-using meta1901 = ret1901(PlayLayer*);
-using member1901 = ret1901(PlayLayer::*)();
+using func1901 = ret1901(*)(PlayLayer*, PlayerObject*, bool, bool);
+using pure1901 = ret1901(PlayerObject*, bool, bool);
+using meta1901 = ret1901(PlayLayer*, PlayerObject*, bool, bool);
+using member1901 = ret1901(PlayLayer::*)(PlayerObject*, bool, bool);
 
 using ret1902 = void;
 using func1902 = ret1902(*)(PlayLayer*);
@@ -1506,52 +1488,52 @@ using meta1904 = ret1904(PlayLayer*);
 using member1904 = ret1904(PlayLayer::*)();
 
 using ret1905 = void;
-using func1905 = ret1905(*)(PlayLayer*, PlayerObject*);
-using pure1905 = ret1905(PlayerObject*);
-using meta1905 = ret1905(PlayLayer*, PlayerObject*);
-using member1905 = ret1905(PlayLayer::*)(PlayerObject*);
+using func1905 = ret1905(*)(PlayLayer*);
+using pure1905 = ret1905();
+using meta1905 = ret1905(PlayLayer*);
+using member1905 = ret1905(PlayLayer::*)();
 
 using ret1906 = void;
-using func1906 = ret1906(*)(PlayLayer*, int, char const*, int, cocos2d::tCCPositionType);
-using pure1906 = ret1906(int, char const*, int, cocos2d::tCCPositionType);
-using meta1906 = ret1906(PlayLayer*, int, char const*, int, cocos2d::tCCPositionType);
-using member1906 = ret1906(PlayLayer::*)(int, char const*, int, cocos2d::tCCPositionType);
+using func1906 = ret1906(*)(PlayLayer*);
+using pure1906 = ret1906();
+using meta1906 = ret1906(PlayLayer*);
+using member1906 = ret1906(PlayLayer::*)();
 
 using ret1907 = void;
-using func1907 = ret1907(*)(PlayLayer*, gd::string);
-using pure1907 = ret1907(gd::string);
-using meta1907 = ret1907(PlayLayer*, gd::string);
-using member1907 = ret1907(PlayLayer::*)(gd::string);
+using func1907 = ret1907(*)(PlayLayer*);
+using pure1907 = ret1907();
+using meta1907 = ret1907(PlayLayer*);
+using member1907 = ret1907(PlayLayer::*)();
 
 using ret1908 = void;
-using func1908 = ret1908(*)(PlayLayer*, cocos2d::CCPoint, float, float, float);
-using pure1908 = ret1908(cocos2d::CCPoint, float, float, float);
-using meta1908 = ret1908(PlayLayer*, cocos2d::CCPoint, float, float, float);
-using member1908 = ret1908(PlayLayer::*)(cocos2d::CCPoint, float, float, float);
+using func1908 = ret1908(*)(PlayLayer*, PlayerObject*);
+using pure1908 = ret1908(PlayerObject*);
+using meta1908 = ret1908(PlayLayer*, PlayerObject*);
+using member1908 = ret1908(PlayLayer::*)(PlayerObject*);
 
 using ret1909 = void;
-using func1909 = ret1909(*)(PlayLayer*);
-using pure1909 = ret1909();
-using meta1909 = ret1909(PlayLayer*);
-using member1909 = ret1909(PlayLayer::*)();
+using func1909 = ret1909(*)(PlayLayer*, int, char const*, int, cocos2d::tCCPositionType);
+using pure1909 = ret1909(int, char const*, int, cocos2d::tCCPositionType);
+using meta1909 = ret1909(PlayLayer*, int, char const*, int, cocos2d::tCCPositionType);
+using member1909 = ret1909(PlayLayer::*)(int, char const*, int, cocos2d::tCCPositionType);
 
 using ret1910 = void;
-using func1910 = ret1910(*)(PlayLayer*);
-using pure1910 = ret1910();
-using meta1910 = ret1910(PlayLayer*);
-using member1910 = ret1910(PlayLayer::*)();
+using func1910 = ret1910(*)(PlayLayer*, gd::string);
+using pure1910 = ret1910(gd::string);
+using meta1910 = ret1910(PlayLayer*, gd::string);
+using member1910 = ret1910(PlayLayer::*)(gd::string);
 
 using ret1911 = void;
-using func1911 = ret1911(*)(PlayLayer*, int);
-using pure1911 = ret1911(int);
-using meta1911 = ret1911(PlayLayer*, int);
-using member1911 = ret1911(PlayLayer::*)(int);
+using func1911 = ret1911(*)(PlayLayer*, cocos2d::CCPoint, float, float, float);
+using pure1911 = ret1911(cocos2d::CCPoint, float, float, float);
+using meta1911 = ret1911(PlayLayer*, cocos2d::CCPoint, float, float, float);
+using member1911 = ret1911(PlayLayer::*)(cocos2d::CCPoint, float, float, float);
 
 using ret1912 = void;
-using func1912 = ret1912(*)(PlayLayer*, GameObject*);
-using pure1912 = ret1912(GameObject*);
-using meta1912 = ret1912(PlayLayer*, GameObject*);
-using member1912 = ret1912(PlayLayer::*)(GameObject*);
+using func1912 = ret1912(*)(PlayLayer*);
+using pure1912 = ret1912();
+using meta1912 = ret1912(PlayLayer*);
+using member1912 = ret1912(PlayLayer::*)();
 
 using ret1913 = void;
 using func1913 = ret1913(*)(PlayLayer*);
@@ -1559,17 +1541,17 @@ using pure1913 = ret1913();
 using meta1913 = ret1913(PlayLayer*);
 using member1913 = ret1913(PlayLayer::*)();
 
-using ret1914 = bool;
-using func1914 = ret1914(*)(PlayLayer*, GJGameLevel*);
-using pure1914 = ret1914(GJGameLevel*);
-using meta1914 = ret1914(PlayLayer*, GJGameLevel*);
-using member1914 = ret1914(PlayLayer::*)(GJGameLevel*);
+using ret1914 = void;
+using func1914 = ret1914(*)(PlayLayer*, int);
+using pure1914 = ret1914(int);
+using meta1914 = ret1914(PlayLayer*, int);
+using member1914 = ret1914(PlayLayer::*)(int);
 
 using ret1915 = void;
-using func1915 = ret1915(*)(PlayLayer*);
-using pure1915 = ret1915();
-using meta1915 = ret1915(PlayLayer*);
-using member1915 = ret1915(PlayLayer::*)();
+using func1915 = ret1915(*)(PlayLayer*, GameObject*);
+using pure1915 = ret1915(GameObject*);
+using meta1915 = ret1915(PlayLayer*, GameObject*);
+using member1915 = ret1915(PlayLayer::*)(GameObject*);
 
 using ret1916 = void;
 using func1916 = ret1916(*)(PlayLayer*);
@@ -1577,17 +1559,17 @@ using pure1916 = ret1916();
 using meta1916 = ret1916(PlayLayer*);
 using member1916 = ret1916(PlayLayer::*)();
 
-using ret1917 = void;
-using func1917 = ret1917(*)(PlayLayer*, cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, int, bool, float);
-using pure1917 = ret1917(cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, int, bool, float);
-using meta1917 = ret1917(PlayLayer*, cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, int, bool, float);
-using member1917 = ret1917(PlayLayer::*)(cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, int, bool, float);
+using ret1917 = bool;
+using func1917 = ret1917(*)(PlayLayer*, GJGameLevel*);
+using pure1917 = ret1917(GJGameLevel*);
+using meta1917 = ret1917(PlayLayer*, GJGameLevel*);
+using member1917 = ret1917(PlayLayer::*)(GJGameLevel*);
 
 using ret1918 = void;
-using func1918 = ret1918(*)(PlayLayer*, cocos2d::CCPoint, cocos2d::_ccColor3B);
-using pure1918 = ret1918(cocos2d::CCPoint, cocos2d::_ccColor3B);
-using meta1918 = ret1918(PlayLayer*, cocos2d::CCPoint, cocos2d::_ccColor3B);
-using member1918 = ret1918(PlayLayer::*)(cocos2d::CCPoint, cocos2d::_ccColor3B);
+using func1918 = ret1918(*)(PlayLayer*);
+using pure1918 = ret1918();
+using meta1918 = ret1918(PlayLayer*);
+using member1918 = ret1918(PlayLayer::*)();
 
 using ret1919 = void;
 using func1919 = ret1919(*)(PlayLayer*);
@@ -1596,40 +1578,40 @@ using meta1919 = ret1919(PlayLayer*);
 using member1919 = ret1919(PlayLayer::*)();
 
 using ret1920 = void;
-using func1920 = ret1920(*)(PlayLayer*, CheckpointObject*);
-using pure1920 = ret1920(CheckpointObject*);
-using meta1920 = ret1920(PlayLayer*, CheckpointObject*);
-using member1920 = ret1920(PlayLayer::*)(CheckpointObject*);
+using func1920 = ret1920(*)(PlayLayer*, cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, int, bool, float);
+using pure1920 = ret1920(cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, int, bool, float);
+using meta1920 = ret1920(PlayLayer*, cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, int, bool, float);
+using member1920 = ret1920(PlayLayer::*)(cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, int, bool, float);
 
 using ret1921 = void;
-using func1921 = ret1921(*)(PlayLayer*);
-using pure1921 = ret1921();
-using meta1921 = ret1921(PlayLayer*);
-using member1921 = ret1921(PlayLayer::*)();
+using func1921 = ret1921(*)(PlayLayer*, cocos2d::CCPoint, cocos2d::_ccColor3B);
+using pure1921 = ret1921(cocos2d::CCPoint, cocos2d::_ccColor3B);
+using meta1921 = ret1921(PlayLayer*, cocos2d::CCPoint, cocos2d::_ccColor3B);
+using member1921 = ret1921(PlayLayer::*)(cocos2d::CCPoint, cocos2d::_ccColor3B);
 
 using ret1922 = void;
-using func1922 = ret1922(*)(PlayLayer*, gd::string);
-using pure1922 = ret1922(gd::string);
-using meta1922 = ret1922(PlayLayer*, gd::string);
-using member1922 = ret1922(PlayLayer::*)(gd::string);
+using func1922 = ret1922(*)(PlayLayer*);
+using pure1922 = ret1922();
+using meta1922 = ret1922(PlayLayer*);
+using member1922 = ret1922(PlayLayer::*)();
 
 using ret1923 = void;
-using func1923 = ret1923(*)(PlayLayer*);
-using pure1923 = ret1923();
-using meta1923 = ret1923(PlayLayer*);
-using member1923 = ret1923(PlayLayer::*)();
+using func1923 = ret1923(*)(PlayLayer*, CheckpointObject*);
+using pure1923 = ret1923(CheckpointObject*);
+using meta1923 = ret1923(PlayLayer*, CheckpointObject*);
+using member1923 = ret1923(PlayLayer::*)(CheckpointObject*);
 
 using ret1924 = void;
-using func1924 = ret1924(*)(PlayLayer*, cocos2d::CCPoint);
-using pure1924 = ret1924(cocos2d::CCPoint);
-using meta1924 = ret1924(PlayLayer*, cocos2d::CCPoint);
-using member1924 = ret1924(PlayLayer::*)(cocos2d::CCPoint);
+using func1924 = ret1924(*)(PlayLayer*);
+using pure1924 = ret1924();
+using meta1924 = ret1924(PlayLayer*);
+using member1924 = ret1924(PlayLayer::*)();
 
 using ret1925 = void;
-using func1925 = ret1925(*)(PlayLayer*);
-using pure1925 = ret1925();
-using meta1925 = ret1925(PlayLayer*);
-using member1925 = ret1925(PlayLayer::*)();
+using func1925 = ret1925(*)(PlayLayer*, gd::string);
+using pure1925 = ret1925(gd::string);
+using meta1925 = ret1925(PlayLayer*, gd::string);
+using member1925 = ret1925(PlayLayer::*)(gd::string);
 
 using ret1926 = void;
 using func1926 = ret1926(*)(PlayLayer*);
@@ -1638,10 +1620,10 @@ using meta1926 = ret1926(PlayLayer*);
 using member1926 = ret1926(PlayLayer::*)();
 
 using ret1927 = void;
-using func1927 = ret1927(*)(PlayLayer*);
-using pure1927 = ret1927();
-using meta1927 = ret1927(PlayLayer*);
-using member1927 = ret1927(PlayLayer::*)();
+using func1927 = ret1927(*)(PlayLayer*, cocos2d::CCPoint);
+using pure1927 = ret1927(cocos2d::CCPoint);
+using meta1927 = ret1927(PlayLayer*, cocos2d::CCPoint);
+using member1927 = ret1927(PlayLayer::*)(cocos2d::CCPoint);
 
 using ret1928 = void;
 using func1928 = ret1928(*)(PlayLayer*);
@@ -1662,100 +1644,100 @@ using meta1930 = ret1930(PlayLayer*);
 using member1930 = ret1930(PlayLayer::*)();
 
 using ret1931 = void;
-using func1931 = ret1931(*)(PlayLayer*, bool);
-using pure1931 = ret1931(bool);
-using meta1931 = ret1931(PlayLayer*, bool);
-using member1931 = ret1931(PlayLayer::*)(bool);
+using func1931 = ret1931(*)(PlayLayer*);
+using pure1931 = ret1931();
+using meta1931 = ret1931(PlayLayer*);
+using member1931 = ret1931(PlayLayer::*)();
 
 using ret1932 = void;
-using func1932 = ret1932(*)(PlayLayer*, GameObject*);
-using pure1932 = ret1932(GameObject*);
-using meta1932 = ret1932(PlayLayer*, GameObject*);
-using member1932 = ret1932(PlayLayer::*)(GameObject*);
+using func1932 = ret1932(*)(PlayLayer*);
+using pure1932 = ret1932();
+using meta1932 = ret1932(PlayLayer*);
+using member1932 = ret1932(PlayLayer::*)();
 
 using ret1933 = void;
-using func1933 = ret1933(*)(PlayLayer*, int, int);
-using pure1933 = ret1933(int, int);
-using meta1933 = ret1933(PlayLayer*, int, int);
-using member1933 = ret1933(PlayLayer::*)(int, int);
+using func1933 = ret1933(*)(PlayLayer*);
+using pure1933 = ret1933();
+using meta1933 = ret1933(PlayLayer*);
+using member1933 = ret1933(PlayLayer::*)();
 
 using ret1934 = void;
-using func1934 = ret1934(*)(PlayLayer*, cocos2d::CCPoint);
-using pure1934 = ret1934(cocos2d::CCPoint);
-using meta1934 = ret1934(PlayLayer*, cocos2d::CCPoint);
-using member1934 = ret1934(PlayLayer::*)(cocos2d::CCPoint);
+using func1934 = ret1934(*)(PlayLayer*, bool);
+using pure1934 = ret1934(bool);
+using meta1934 = ret1934(PlayLayer*, bool);
+using member1934 = ret1934(PlayLayer::*)(bool);
 
 using ret1935 = void;
-using func1935 = ret1935(*)(PlayLayer*, PlayerObject*);
-using pure1935 = ret1935(PlayerObject*);
-using meta1935 = ret1935(PlayLayer*, PlayerObject*);
-using member1935 = ret1935(PlayLayer::*)(PlayerObject*);
+using func1935 = ret1935(*)(PlayLayer*, GameObject*);
+using pure1935 = ret1935(GameObject*);
+using meta1935 = ret1935(PlayLayer*, GameObject*);
+using member1935 = ret1935(PlayLayer::*)(GameObject*);
 
 using ret1936 = void;
-using func1936 = ret1936(*)(PlayLayer*, float, int, float);
-using pure1936 = ret1936(float, int, float);
-using meta1936 = ret1936(PlayLayer*, float, int, float);
-using member1936 = ret1936(PlayLayer::*)(float, int, float);
+using func1936 = ret1936(*)(PlayLayer*, int, int);
+using pure1936 = ret1936(int, int);
+using meta1936 = ret1936(PlayLayer*, int, int);
+using member1936 = ret1936(PlayLayer::*)(int, int);
 
 using ret1937 = void;
-using func1937 = ret1937(*)(PlayLayer*, bool);
-using pure1937 = ret1937(bool);
-using meta1937 = ret1937(PlayLayer*, bool);
-using member1937 = ret1937(PlayLayer::*)(bool);
+using func1937 = ret1937(*)(PlayLayer*, cocos2d::CCPoint);
+using pure1937 = ret1937(cocos2d::CCPoint);
+using meta1937 = ret1937(PlayLayer*, cocos2d::CCPoint);
+using member1937 = ret1937(PlayLayer::*)(cocos2d::CCPoint);
 
 using ret1938 = void;
-using func1938 = ret1938(*)(PlayLayer*, float);
-using pure1938 = ret1938(float);
-using meta1938 = ret1938(PlayLayer*, float);
-using member1938 = ret1938(PlayLayer::*)(float);
+using func1938 = ret1938(*)(PlayLayer*, PlayerObject*);
+using pure1938 = ret1938(PlayerObject*);
+using meta1938 = ret1938(PlayLayer*, PlayerObject*);
+using member1938 = ret1938(PlayLayer::*)(PlayerObject*);
 
 using ret1939 = void;
-using func1939 = ret1939(*)(PlayLayer*, PlayerObject*, GameObject*);
-using pure1939 = ret1939(PlayerObject*, GameObject*);
-using meta1939 = ret1939(PlayLayer*, PlayerObject*, GameObject*);
-using member1939 = ret1939(PlayLayer::*)(PlayerObject*, GameObject*);
+using func1939 = ret1939(*)(PlayLayer*, float, int, float);
+using pure1939 = ret1939(float, int, float);
+using meta1939 = ret1939(PlayLayer*, float, int, float);
+using member1939 = ret1939(PlayLayer::*)(float, int, float);
 
 using ret1940 = void;
-using func1940 = ret1940(*)(PlayLayer*);
-using pure1940 = ret1940();
-using meta1940 = ret1940(PlayLayer*);
-using member1940 = ret1940(PlayLayer::*)();
+using func1940 = ret1940(*)(PlayLayer*, bool);
+using pure1940 = ret1940(bool);
+using meta1940 = ret1940(PlayLayer*, bool);
+using member1940 = ret1940(PlayLayer::*)(bool);
 
 using ret1941 = void;
-using func1941 = ret1941(*)(PlayLayer*);
-using pure1941 = ret1941();
-using meta1941 = ret1941(PlayLayer*);
-using member1941 = ret1941(PlayLayer::*)();
+using func1941 = ret1941(*)(PlayLayer*, float);
+using pure1941 = ret1941(float);
+using meta1941 = ret1941(PlayLayer*, float);
+using member1941 = ret1941(PlayLayer::*)(float);
 
 using ret1942 = void;
-using func1942 = ret1942(*)(PlayLayer*);
-using pure1942 = ret1942();
-using meta1942 = ret1942(PlayLayer*);
-using member1942 = ret1942(PlayLayer::*)();
+using func1942 = ret1942(*)(PlayLayer*, PlayerObject*, GameObject*);
+using pure1942 = ret1942(PlayerObject*, GameObject*);
+using meta1942 = ret1942(PlayLayer*, PlayerObject*, GameObject*);
+using member1942 = ret1942(PlayLayer::*)(PlayerObject*, GameObject*);
 
 using ret1943 = void;
-using func1943 = ret1943(*)(PlayLayer*, bool, PlayerObject*);
-using pure1943 = ret1943(bool, PlayerObject*);
-using meta1943 = ret1943(PlayLayer*, bool, PlayerObject*);
-using member1943 = ret1943(PlayLayer::*)(bool, PlayerObject*);
+using func1943 = ret1943(*)(PlayLayer*);
+using pure1943 = ret1943();
+using meta1943 = ret1943(PlayLayer*);
+using member1943 = ret1943(PlayLayer::*)();
 
 using ret1944 = void;
-using func1944 = ret1944(*)(PlayLayer*, GameObject*);
-using pure1944 = ret1944(GameObject*);
-using meta1944 = ret1944(PlayLayer*, GameObject*);
-using member1944 = ret1944(PlayLayer::*)(GameObject*);
+using func1944 = ret1944(*)(PlayLayer*);
+using pure1944 = ret1944();
+using meta1944 = ret1944(PlayLayer*);
+using member1944 = ret1944(PlayLayer::*)();
 
 using ret1945 = void;
-using func1945 = ret1945(*)(PlayLayer*, GameObject*);
-using pure1945 = ret1945(GameObject*);
-using meta1945 = ret1945(PlayLayer*, GameObject*);
-using member1945 = ret1945(PlayLayer::*)(GameObject*);
+using func1945 = ret1945(*)(PlayLayer*);
+using pure1945 = ret1945();
+using meta1945 = ret1945(PlayLayer*);
+using member1945 = ret1945(PlayLayer::*)();
 
 using ret1946 = void;
-using func1946 = ret1946(*)(PlayLayer*);
-using pure1946 = ret1946();
-using meta1946 = ret1946(PlayLayer*);
-using member1946 = ret1946(PlayLayer::*)();
+using func1946 = ret1946(*)(PlayLayer*, bool, PlayerObject*);
+using pure1946 = ret1946(bool, PlayerObject*);
+using meta1946 = ret1946(PlayLayer*, bool, PlayerObject*);
+using member1946 = ret1946(PlayLayer::*)(bool, PlayerObject*);
 
 using ret1947 = void;
 using func1947 = ret1947(*)(PlayLayer*, GameObject*);
@@ -1764,10 +1746,10 @@ using meta1947 = ret1947(PlayLayer*, GameObject*);
 using member1947 = ret1947(PlayLayer::*)(GameObject*);
 
 using ret1948 = void;
-using func1948 = ret1948(*)(PlayLayer*);
-using pure1948 = ret1948();
-using meta1948 = ret1948(PlayLayer*);
-using member1948 = ret1948(PlayLayer::*)();
+using func1948 = ret1948(*)(PlayLayer*, GameObject*);
+using pure1948 = ret1948(GameObject*);
+using meta1948 = ret1948(PlayLayer*, GameObject*);
+using member1948 = ret1948(PlayLayer::*)(GameObject*);
 
 using ret1949 = void;
 using func1949 = ret1949(*)(PlayLayer*);
@@ -1776,10 +1758,10 @@ using meta1949 = ret1949(PlayLayer*);
 using member1949 = ret1949(PlayLayer::*)();
 
 using ret1950 = void;
-using func1950 = ret1950(*)(PlayLayer*);
-using pure1950 = ret1950();
-using meta1950 = ret1950(PlayLayer*);
-using member1950 = ret1950(PlayLayer::*)();
+using func1950 = ret1950(*)(PlayLayer*, GameObject*);
+using pure1950 = ret1950(GameObject*);
+using meta1950 = ret1950(PlayLayer*, GameObject*);
+using member1950 = ret1950(PlayLayer::*)(GameObject*);
 
 using ret1951 = void;
 using func1951 = ret1951(*)(PlayLayer*);
@@ -1794,58 +1776,58 @@ using meta1952 = ret1952(PlayLayer*);
 using member1952 = ret1952(PlayLayer::*)();
 
 using ret1953 = void;
-using func1953 = ret1953(*)(PlayLayer*, bool, PlayerObject*);
-using pure1953 = ret1953(bool, PlayerObject*);
-using meta1953 = ret1953(PlayLayer*, bool, PlayerObject*);
-using member1953 = ret1953(PlayLayer::*)(bool, PlayerObject*);
+using func1953 = ret1953(*)(PlayLayer*);
+using pure1953 = ret1953();
+using meta1953 = ret1953(PlayLayer*);
+using member1953 = ret1953(PlayLayer::*)();
 
-using ret1954 = cocos2d::CCScene*;
-using func1954 = ret1954(*)(GJGameLevel*);
-using pure1954 = ret1954(GJGameLevel*);
-using meta1954 = ret1954(GJGameLevel*);
-using member1954 = func1954;
+using ret1954 = void;
+using func1954 = ret1954(*)(PlayLayer*);
+using pure1954 = ret1954();
+using meta1954 = ret1954(PlayLayer*);
+using member1954 = ret1954(PlayLayer::*)();
 
 using ret1955 = void;
-using func1955 = ret1955(*)(PlayLayer*, LevelSettingsObject*);
-using pure1955 = ret1955(LevelSettingsObject*);
-using meta1955 = ret1955(PlayLayer*, LevelSettingsObject*);
-using member1955 = ret1955(PlayLayer::*)(LevelSettingsObject*);
+using func1955 = ret1955(*)(PlayLayer*);
+using pure1955 = ret1955();
+using meta1955 = ret1955(PlayLayer*);
+using member1955 = ret1955(PlayLayer::*)();
 
 using ret1956 = void;
-using func1956 = ret1956(*)(PlayLayer*, gd::string);
-using pure1956 = ret1956(gd::string);
-using meta1956 = ret1956(PlayLayer*, gd::string);
-using member1956 = ret1956(PlayLayer::*)(gd::string);
+using func1956 = ret1956(*)(PlayLayer*, bool, PlayerObject*);
+using pure1956 = ret1956(bool, PlayerObject*);
+using meta1956 = ret1956(PlayLayer*, bool, PlayerObject*);
+using member1956 = ret1956(PlayLayer::*)(bool, PlayerObject*);
 
-using ret1957 = void;
-using func1957 = ret1957(*)(PlayLayer*, float, float, float);
-using pure1957 = ret1957(float, float, float);
-using meta1957 = ret1957(PlayLayer*, float, float, float);
-using member1957 = ret1957(PlayLayer::*)(float, float, float);
+using ret1957 = cocos2d::CCScene*;
+using func1957 = ret1957(*)(GJGameLevel*);
+using pure1957 = ret1957(GJGameLevel*);
+using meta1957 = ret1957(GJGameLevel*);
+using member1957 = func1957;
 
 using ret1958 = void;
-using func1958 = ret1958(*)(PlayLayer*, int);
-using pure1958 = ret1958(int);
-using meta1958 = ret1958(PlayLayer*, int);
-using member1958 = ret1958(PlayLayer::*)(int);
+using func1958 = ret1958(*)(PlayLayer*, LevelSettingsObject*);
+using pure1958 = ret1958(LevelSettingsObject*);
+using meta1958 = ret1958(PlayLayer*, LevelSettingsObject*);
+using member1958 = ret1958(PlayLayer::*)(LevelSettingsObject*);
 
 using ret1959 = void;
-using func1959 = ret1959(*)(PlayLayer*);
-using pure1959 = ret1959();
-using meta1959 = ret1959(PlayLayer*);
-using member1959 = ret1959(PlayLayer::*)();
+using func1959 = ret1959(*)(PlayLayer*, gd::string);
+using pure1959 = ret1959(gd::string);
+using meta1959 = ret1959(PlayLayer*, gd::string);
+using member1959 = ret1959(PlayLayer::*)(gd::string);
 
 using ret1960 = void;
-using func1960 = ret1960(*)(PlayLayer*);
-using pure1960 = ret1960();
-using meta1960 = ret1960(PlayLayer*);
-using member1960 = ret1960(PlayLayer::*)();
+using func1960 = ret1960(*)(PlayLayer*, float, float, float);
+using pure1960 = ret1960(float, float, float);
+using meta1960 = ret1960(PlayLayer*, float, float, float);
+using member1960 = ret1960(PlayLayer::*)(float, float, float);
 
 using ret1961 = void;
-using func1961 = ret1961(*)(PlayLayer*);
-using pure1961 = ret1961();
-using meta1961 = ret1961(PlayLayer*);
-using member1961 = ret1961(PlayLayer::*)();
+using func1961 = ret1961(*)(PlayLayer*, int);
+using pure1961 = ret1961(int);
+using meta1961 = ret1961(PlayLayer*, int);
+using member1961 = ret1961(PlayLayer::*)(int);
 
 using ret1962 = void;
 using func1962 = ret1962(*)(PlayLayer*);
@@ -1854,10 +1836,10 @@ using meta1962 = ret1962(PlayLayer*);
 using member1962 = ret1962(PlayLayer::*)();
 
 using ret1963 = void;
-using func1963 = ret1963(*)(PlayLayer*, bool, int, int, bool, bool, bool);
-using pure1963 = ret1963(bool, int, int, bool, bool, bool);
-using meta1963 = ret1963(PlayLayer*, bool, int, int, bool, bool, bool);
-using member1963 = ret1963(PlayLayer::*)(bool, int, int, bool, bool, bool);
+using func1963 = ret1963(*)(PlayLayer*);
+using pure1963 = ret1963();
+using meta1963 = ret1963(PlayLayer*);
+using member1963 = ret1963(PlayLayer::*)();
 
 using ret1964 = void;
 using func1964 = ret1964(*)(PlayLayer*);
@@ -1872,10 +1854,10 @@ using meta1965 = ret1965(PlayLayer*);
 using member1965 = ret1965(PlayLayer::*)();
 
 using ret1966 = void;
-using func1966 = ret1966(*)(PlayLayer*);
-using pure1966 = ret1966();
-using meta1966 = ret1966(PlayLayer*);
-using member1966 = ret1966(PlayLayer::*)();
+using func1966 = ret1966(*)(PlayLayer*, bool, int, int, bool, bool, bool);
+using pure1966 = ret1966(bool, int, int, bool, bool, bool);
+using meta1966 = ret1966(PlayLayer*, bool, int, int, bool, bool, bool);
+using member1966 = ret1966(PlayLayer::*)(bool, int, int, bool, bool, bool);
 
 using ret1967 = void;
 using func1967 = ret1967(*)(PlayLayer*);
@@ -1890,10 +1872,10 @@ using meta1968 = ret1968(PlayLayer*);
 using member1968 = ret1968(PlayLayer::*)();
 
 using ret1969 = void;
-using func1969 = ret1969(*)(PlayLayer*, char const*, int, cocos2d::tCCPositionType, cocos2d::CCPoint);
-using pure1969 = ret1969(char const*, int, cocos2d::tCCPositionType, cocos2d::CCPoint);
-using meta1969 = ret1969(PlayLayer*, char const*, int, cocos2d::tCCPositionType, cocos2d::CCPoint);
-using member1969 = ret1969(PlayLayer::*)(char const*, int, cocos2d::tCCPositionType, cocos2d::CCPoint);
+using func1969 = ret1969(*)(PlayLayer*);
+using pure1969 = ret1969();
+using meta1969 = ret1969(PlayLayer*);
+using member1969 = ret1969(PlayLayer::*)();
 
 using ret1970 = void;
 using func1970 = ret1970(*)(PlayLayer*);
@@ -1908,10 +1890,10 @@ using meta1971 = ret1971(PlayLayer*);
 using member1971 = ret1971(PlayLayer::*)();
 
 using ret1972 = void;
-using func1972 = ret1972(*)(PlayLayer*);
-using pure1972 = ret1972();
-using meta1972 = ret1972(PlayLayer*);
-using member1972 = ret1972(PlayLayer::*)();
+using func1972 = ret1972(*)(PlayLayer*, char const*, int, cocos2d::tCCPositionType, cocos2d::CCPoint);
+using pure1972 = ret1972(char const*, int, cocos2d::tCCPositionType, cocos2d::CCPoint);
+using meta1972 = ret1972(PlayLayer*, char const*, int, cocos2d::tCCPositionType, cocos2d::CCPoint);
+using member1972 = ret1972(PlayLayer::*)(char const*, int, cocos2d::tCCPositionType, cocos2d::CCPoint);
 
 using ret1973 = void;
 using func1973 = ret1973(*)(PlayLayer*);
@@ -1938,160 +1920,160 @@ using meta1976 = ret1976(PlayLayer*);
 using member1976 = ret1976(PlayLayer::*)();
 
 using ret1977 = void;
-using func1977 = ret1977(*)(PlayLayer*, CheckpointObject*);
-using pure1977 = ret1977(CheckpointObject*);
-using meta1977 = ret1977(PlayLayer*, CheckpointObject*);
-using member1977 = ret1977(PlayLayer::*)(CheckpointObject*);
+using func1977 = ret1977(*)(PlayLayer*);
+using pure1977 = ret1977();
+using meta1977 = ret1977(PlayLayer*);
+using member1977 = ret1977(PlayLayer::*)();
 
 using ret1978 = void;
-using func1978 = ret1978(*)(PlayLayer*, PlayerObject*, GameObject*, bool, int);
-using pure1978 = ret1978(PlayerObject*, GameObject*, bool, int);
-using meta1978 = ret1978(PlayLayer*, PlayerObject*, GameObject*, bool, int);
-using member1978 = ret1978(PlayLayer::*)(PlayerObject*, GameObject*, bool, int);
+using func1978 = ret1978(*)(PlayLayer*);
+using pure1978 = ret1978();
+using meta1978 = ret1978(PlayLayer*);
+using member1978 = ret1978(PlayLayer::*)();
 
 using ret1979 = void;
-using func1979 = ret1979(*)(PlayLayer*, PlayerObject*, GameObject*, bool);
-using pure1979 = ret1979(PlayerObject*, GameObject*, bool);
-using meta1979 = ret1979(PlayLayer*, PlayerObject*, GameObject*, bool);
-using member1979 = ret1979(PlayLayer::*)(PlayerObject*, GameObject*, bool);
+using func1979 = ret1979(*)(PlayLayer*);
+using pure1979 = ret1979();
+using meta1979 = ret1979(PlayLayer*);
+using member1979 = ret1979(PlayLayer::*)();
 
 using ret1980 = void;
-using func1980 = ret1980(*)(PlayLayer*, PlayerObject*, GameObject*, bool);
-using pure1980 = ret1980(PlayerObject*, GameObject*, bool);
-using meta1980 = ret1980(PlayLayer*, PlayerObject*, GameObject*, bool);
-using member1980 = ret1980(PlayLayer::*)(PlayerObject*, GameObject*, bool);
+using func1980 = ret1980(*)(PlayLayer*, CheckpointObject*);
+using pure1980 = ret1980(CheckpointObject*);
+using meta1980 = ret1980(PlayLayer*, CheckpointObject*);
+using member1980 = ret1980(PlayLayer::*)(CheckpointObject*);
 
 using ret1981 = void;
-using func1981 = ret1981(*)(PlayLayer*, PlayerObject*, GameObject*, bool);
-using pure1981 = ret1981(PlayerObject*, GameObject*, bool);
-using meta1981 = ret1981(PlayLayer*, PlayerObject*, GameObject*, bool);
-using member1981 = ret1981(PlayLayer::*)(PlayerObject*, GameObject*, bool);
+using func1981 = ret1981(*)(PlayLayer*, PlayerObject*, GameObject*, bool, int);
+using pure1981 = ret1981(PlayerObject*, GameObject*, bool, int);
+using meta1981 = ret1981(PlayLayer*, PlayerObject*, GameObject*, bool, int);
+using member1981 = ret1981(PlayLayer::*)(PlayerObject*, GameObject*, bool, int);
 
 using ret1982 = void;
-using func1982 = ret1982(*)(PlayLayer*, float);
-using pure1982 = ret1982(float);
-using meta1982 = ret1982(PlayLayer*, float);
-using member1982 = ret1982(PlayLayer::*)(float);
+using func1982 = ret1982(*)(PlayLayer*, PlayerObject*, GameObject*, bool);
+using pure1982 = ret1982(PlayerObject*, GameObject*, bool);
+using meta1982 = ret1982(PlayLayer*, PlayerObject*, GameObject*, bool);
+using member1982 = ret1982(PlayLayer::*)(PlayerObject*, GameObject*, bool);
 
 using ret1983 = void;
-using func1983 = ret1983(*)(PlayLayer*, float, bool);
-using pure1983 = ret1983(float, bool);
-using meta1983 = ret1983(PlayLayer*, float, bool);
-using member1983 = ret1983(PlayLayer::*)(float, bool);
+using func1983 = ret1983(*)(PlayLayer*, PlayerObject*, GameObject*, bool);
+using pure1983 = ret1983(PlayerObject*, GameObject*, bool);
+using meta1983 = ret1983(PlayLayer*, PlayerObject*, GameObject*, bool);
+using member1983 = ret1983(PlayLayer::*)(PlayerObject*, GameObject*, bool);
 
 using ret1984 = void;
-using func1984 = ret1984(*)(PlayLayer*, bool);
-using pure1984 = ret1984(bool);
-using meta1984 = ret1984(PlayLayer*, bool);
-using member1984 = ret1984(PlayLayer::*)(bool);
+using func1984 = ret1984(*)(PlayLayer*, PlayerObject*, GameObject*, bool);
+using pure1984 = ret1984(PlayerObject*, GameObject*, bool);
+using meta1984 = ret1984(PlayLayer*, PlayerObject*, GameObject*, bool);
+using member1984 = ret1984(PlayLayer::*)(PlayerObject*, GameObject*, bool);
 
 using ret1985 = void;
-using func1985 = ret1985(*)(PlayLayer*, GameObject*, bool, PlayerObject*, bool);
-using pure1985 = ret1985(GameObject*, bool, PlayerObject*, bool);
-using meta1985 = ret1985(PlayLayer*, GameObject*, bool, PlayerObject*, bool);
-using member1985 = ret1985(PlayLayer::*)(GameObject*, bool, PlayerObject*, bool);
+using func1985 = ret1985(*)(PlayLayer*, float);
+using pure1985 = ret1985(float);
+using meta1985 = ret1985(PlayLayer*, float);
+using member1985 = ret1985(PlayLayer::*)(float);
 
 using ret1986 = void;
-using func1986 = ret1986(*)(PlayLayer*, bool, bool);
-using pure1986 = ret1986(bool, bool);
-using meta1986 = ret1986(PlayLayer*, bool, bool);
-using member1986 = ret1986(PlayLayer::*)(bool, bool);
+using func1986 = ret1986(*)(PlayLayer*, float, bool);
+using pure1986 = ret1986(float, bool);
+using meta1986 = ret1986(PlayLayer*, float, bool);
+using member1986 = ret1986(PlayLayer::*)(float, bool);
 
 using ret1987 = void;
-using func1987 = ret1987(*)(PlayLayer*, int);
-using pure1987 = ret1987(int);
-using meta1987 = ret1987(PlayLayer*, int);
-using member1987 = ret1987(PlayLayer::*)(int);
+using func1987 = ret1987(*)(PlayLayer*, bool);
+using pure1987 = ret1987(bool);
+using meta1987 = ret1987(PlayLayer*, bool);
+using member1987 = ret1987(PlayLayer::*)(bool);
 
 using ret1988 = void;
-using func1988 = ret1988(*)(PlayLayer*, bool);
-using pure1988 = ret1988(bool);
-using meta1988 = ret1988(PlayLayer*, bool);
-using member1988 = ret1988(PlayLayer::*)(bool);
+using func1988 = ret1988(*)(PlayLayer*, GameObject*, bool, PlayerObject*, bool);
+using pure1988 = ret1988(GameObject*, bool, PlayerObject*, bool);
+using meta1988 = ret1988(PlayLayer*, GameObject*, bool, PlayerObject*, bool);
+using member1988 = ret1988(PlayLayer::*)(GameObject*, bool, PlayerObject*, bool);
 
 using ret1989 = void;
-using func1989 = ret1989(*)(PlayLayer*, bool);
-using pure1989 = ret1989(bool);
-using meta1989 = ret1989(PlayLayer*, bool);
-using member1989 = ret1989(PlayLayer::*)(bool);
+using func1989 = ret1989(*)(PlayLayer*, bool, bool);
+using pure1989 = ret1989(bool, bool);
+using meta1989 = ret1989(PlayLayer*, bool, bool);
+using member1989 = ret1989(PlayLayer::*)(bool, bool);
 
 using ret1990 = void;
-using func1990 = ret1990(*)(PlayLayer*);
-using pure1990 = ret1990();
-using meta1990 = ret1990(PlayLayer*);
-using member1990 = ret1990(PlayLayer::*)();
+using func1990 = ret1990(*)(PlayLayer*, int);
+using pure1990 = ret1990(int);
+using meta1990 = ret1990(PlayLayer*, int);
+using member1990 = ret1990(PlayLayer::*)(int);
 
 using ret1991 = void;
-using func1991 = ret1991(*)(PlayLayer*);
-using pure1991 = ret1991();
-using meta1991 = ret1991(PlayLayer*);
-using member1991 = ret1991(PlayLayer::*)();
+using func1991 = ret1991(*)(PlayLayer*, bool);
+using pure1991 = ret1991(bool);
+using meta1991 = ret1991(PlayLayer*, bool);
+using member1991 = ret1991(PlayLayer::*)(bool);
 
 using ret1992 = void;
-using func1992 = ret1992(*)(PlayLayer*, char const*, cocos2d::CCParticleSystemQuad*);
-using pure1992 = ret1992(char const*, cocos2d::CCParticleSystemQuad*);
-using meta1992 = ret1992(PlayLayer*, char const*, cocos2d::CCParticleSystemQuad*);
-using member1992 = ret1992(PlayLayer::*)(char const*, cocos2d::CCParticleSystemQuad*);
+using func1992 = ret1992(*)(PlayLayer*, bool);
+using pure1992 = ret1992(bool);
+using meta1992 = ret1992(PlayLayer*, bool);
+using member1992 = ret1992(PlayLayer::*)(bool);
 
 using ret1993 = void;
-using func1993 = ret1993(*)(PlayLayer*, GameObject*);
-using pure1993 = ret1993(GameObject*);
-using meta1993 = ret1993(PlayLayer*, GameObject*);
-using member1993 = ret1993(PlayLayer::*)(GameObject*);
+using func1993 = ret1993(*)(PlayLayer*);
+using pure1993 = ret1993();
+using meta1993 = ret1993(PlayLayer*);
+using member1993 = ret1993(PlayLayer::*)();
 
 using ret1994 = void;
-using func1994 = ret1994(*)(PlayLayer*, GameObject*);
-using pure1994 = ret1994(GameObject*);
-using meta1994 = ret1994(PlayLayer*, GameObject*);
-using member1994 = ret1994(PlayLayer::*)(GameObject*);
+using func1994 = ret1994(*)(PlayLayer*);
+using pure1994 = ret1994();
+using meta1994 = ret1994(PlayLayer*);
+using member1994 = ret1994(PlayLayer::*)();
 
 using ret1995 = void;
-using func1995 = ret1995(*)(PlayLayer*, float);
-using pure1995 = ret1995(float);
-using meta1995 = ret1995(PlayLayer*, float);
-using member1995 = ret1995(PlayLayer::*)(float);
+using func1995 = ret1995(*)(PlayLayer*, char const*, cocos2d::CCParticleSystemQuad*);
+using pure1995 = ret1995(char const*, cocos2d::CCParticleSystemQuad*);
+using meta1995 = ret1995(PlayLayer*, char const*, cocos2d::CCParticleSystemQuad*);
+using member1995 = ret1995(PlayLayer::*)(char const*, cocos2d::CCParticleSystemQuad*);
 
 using ret1996 = void;
-using func1996 = ret1996(*)(PlayLayer*);
-using pure1996 = ret1996();
-using meta1996 = ret1996(PlayLayer*);
-using member1996 = ret1996(PlayLayer::*)();
+using func1996 = ret1996(*)(PlayLayer*, GameObject*);
+using pure1996 = ret1996(GameObject*);
+using meta1996 = ret1996(PlayLayer*, GameObject*);
+using member1996 = ret1996(PlayLayer::*)(GameObject*);
 
 using ret1997 = void;
-using func1997 = ret1997(*)(PlayLayer*, float);
-using pure1997 = ret1997(float);
-using meta1997 = ret1997(PlayLayer*, float);
-using member1997 = ret1997(PlayLayer::*)(float);
+using func1997 = ret1997(*)(PlayLayer*, GameObject*);
+using pure1997 = ret1997(GameObject*);
+using meta1997 = ret1997(PlayLayer*, GameObject*);
+using member1997 = ret1997(PlayLayer::*)(GameObject*);
 
 using ret1998 = void;
-using func1998 = ret1998(*)(PlayLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using pure1998 = ret1998(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using meta1998 = ret1998(PlayLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using member1998 = ret1998(PlayLayer::*)(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using func1998 = ret1998(*)(PlayLayer*, float);
+using pure1998 = ret1998(float);
+using meta1998 = ret1998(PlayLayer*, float);
+using member1998 = ret1998(PlayLayer::*)(float);
 
 using ret1999 = void;
-using func1999 = ret1999(*)(PlayLayer*, PlayerObject*, int, bool);
-using pure1999 = ret1999(PlayerObject*, int, bool);
-using meta1999 = ret1999(PlayLayer*, PlayerObject*, int, bool);
-using member1999 = ret1999(PlayLayer::*)(PlayerObject*, int, bool);
+using func1999 = ret1999(*)(PlayLayer*);
+using pure1999 = ret1999();
+using meta1999 = ret1999(PlayLayer*);
+using member1999 = ret1999(PlayLayer::*)();
 
 using ret2000 = void;
-using func2000 = ret2000(*)(PlayLayer*);
-using pure2000 = ret2000();
-using meta2000 = ret2000(PlayLayer*);
-using member2000 = ret2000(PlayLayer::*)();
+using func2000 = ret2000(*)(PlayLayer*, float);
+using pure2000 = ret2000(float);
+using meta2000 = ret2000(PlayLayer*, float);
+using member2000 = ret2000(PlayLayer::*)(float);
 
 using ret2001 = void;
-using func2001 = ret2001(*)(PlayLayer*);
-using pure2001 = ret2001();
-using meta2001 = ret2001(PlayLayer*);
-using member2001 = ret2001(PlayLayer::*)();
+using func2001 = ret2001(*)(PlayLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using pure2001 = ret2001(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using meta2001 = ret2001(PlayLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using member2001 = ret2001(PlayLayer::*)(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
 
 using ret2002 = void;
-using func2002 = ret2002(*)(PlayLayer*);
-using pure2002 = ret2002();
-using meta2002 = ret2002(PlayLayer*);
-using member2002 = ret2002(PlayLayer::*)();
+using func2002 = ret2002(*)(PlayLayer*, PlayerObject*, int, bool);
+using pure2002 = ret2002(PlayerObject*, int, bool);
+using meta2002 = ret2002(PlayLayer*, PlayerObject*, int, bool);
+using member2002 = ret2002(PlayLayer::*)(PlayerObject*, int, bool);
 
 using ret2003 = void;
 using func2003 = ret2003(*)(PlayLayer*);
@@ -2100,40 +2082,40 @@ using meta2003 = ret2003(PlayLayer*);
 using member2003 = ret2003(PlayLayer::*)();
 
 using ret2004 = void;
-using func2004 = ret2004(*)(PlayLayer*, float);
-using pure2004 = ret2004(float);
-using meta2004 = ret2004(PlayLayer*, float);
-using member2004 = ret2004(PlayLayer::*)(float);
+using func2004 = ret2004(*)(PlayLayer*);
+using pure2004 = ret2004();
+using meta2004 = ret2004(PlayLayer*);
+using member2004 = ret2004(PlayLayer::*)();
 
 using ret2005 = void;
-using func2005 = ret2005(*)(PlayLayer*, float, bool);
-using pure2005 = ret2005(float, bool);
-using meta2005 = ret2005(PlayLayer*, float, bool);
-using member2005 = ret2005(PlayLayer::*)(float, bool);
+using func2005 = ret2005(*)(PlayLayer*);
+using pure2005 = ret2005();
+using meta2005 = ret2005(PlayLayer*);
+using member2005 = ret2005(PlayLayer::*)();
 
 using ret2006 = void;
-using func2006 = ret2006(*)(PlayLayer*, float, char const*);
-using pure2006 = ret2006(float, char const*);
-using meta2006 = ret2006(PlayLayer*, float, char const*);
-using member2006 = ret2006(PlayLayer::*)(float, char const*);
+using func2006 = ret2006(*)(PlayLayer*);
+using pure2006 = ret2006();
+using meta2006 = ret2006(PlayLayer*);
+using member2006 = ret2006(PlayLayer::*)();
 
 using ret2007 = void;
-using func2007 = ret2007(*)(PlayLayer*);
-using pure2007 = ret2007();
-using meta2007 = ret2007(PlayLayer*);
-using member2007 = ret2007(PlayLayer::*)();
+using func2007 = ret2007(*)(PlayLayer*, float);
+using pure2007 = ret2007(float);
+using meta2007 = ret2007(PlayLayer*, float);
+using member2007 = ret2007(PlayLayer::*)(float);
 
 using ret2008 = void;
-using func2008 = ret2008(*)(PlayLayer*);
-using pure2008 = ret2008();
-using meta2008 = ret2008(PlayLayer*);
-using member2008 = ret2008(PlayLayer::*)();
+using func2008 = ret2008(*)(PlayLayer*, float, bool);
+using pure2008 = ret2008(float, bool);
+using meta2008 = ret2008(PlayLayer*, float, bool);
+using member2008 = ret2008(PlayLayer::*)(float, bool);
 
 using ret2009 = void;
-using func2009 = ret2009(*)(PlayLayer*);
-using pure2009 = ret2009();
-using meta2009 = ret2009(PlayLayer*);
-using member2009 = ret2009(PlayLayer::*)();
+using func2009 = ret2009(*)(PlayLayer*, float, char const*);
+using pure2009 = ret2009(float, char const*);
+using meta2009 = ret2009(PlayLayer*, float, char const*);
+using member2009 = ret2009(PlayLayer::*)(float, char const*);
 
 using ret2010 = void;
 using func2010 = ret2010(*)(PlayLayer*);
@@ -2142,196 +2124,202 @@ using meta2010 = ret2010(PlayLayer*);
 using member2010 = ret2010(PlayLayer::*)();
 
 using ret2011 = void;
-using func2011 = ret2011(*)(PlayLayer*, int, PlayerObject*);
-using pure2011 = ret2011(int, PlayerObject*);
-using meta2011 = ret2011(PlayLayer*, int, PlayerObject*);
-using member2011 = ret2011(PlayLayer::*)(int, PlayerObject*);
+using func2011 = ret2011(*)(PlayLayer*);
+using pure2011 = ret2011();
+using meta2011 = ret2011(PlayLayer*);
+using member2011 = ret2011(PlayLayer::*)();
 
 using ret2012 = void;
-using func2012 = ret2012(*)(PlayLayer*, float);
-using pure2012 = ret2012(float);
-using meta2012 = ret2012(PlayLayer*, float);
-using member2012 = ret2012(PlayLayer::*)(float);
+using func2012 = ret2012(*)(PlayLayer*);
+using pure2012 = ret2012();
+using meta2012 = ret2012(PlayLayer*);
+using member2012 = ret2012(PlayLayer::*)();
 
 using ret2013 = void;
 using func2013 = ret2013(*)(PlayLayer*);
 using pure2013 = ret2013();
 using meta2013 = ret2013(PlayLayer*);
-using member2013 = func2013;
+using member2013 = ret2013(PlayLayer::*)();
 
-using ret1858 = void;
-using func1858 = ret1858(*)();
-using pure1858 = ret1858();
-using meta1858 = ret1858();
-using member1858 = func1858;
+using ret2014 = void;
+using func2014 = ret2014(*)(PlayLayer*, int, PlayerObject*);
+using pure2014 = ret2014(int, PlayerObject*);
+using meta2014 = ret2014(PlayLayer*, int, PlayerObject*);
+using member2014 = ret2014(PlayLayer::*)(int, PlayerObject*);
 
-using ret1859 = void;
-using func1859 = ret1859(*)();
-using pure1859 = ret1859();
-using meta1859 = ret1859();
-using member1859 = func1859;
+using ret2015 = void;
+using func2015 = ret2015(*)(PlayLayer*, float);
+using pure2015 = ret2015(float);
+using meta2015 = ret2015(PlayLayer*, float);
+using member2015 = ret2015(PlayLayer::*)(float);
 
-using ret1860 = bool;
-using func1860 = ret1860(*)();
-using pure1860 = ret1860();
-using meta1860 = ret1860();
-using member1860 = func1860;
+using ret2016 = void;
+using func2016 = ret2016(*)(PlayLayer*);
+using pure2016 = ret2016();
+using meta2016 = ret2016(PlayLayer*);
+using member2016 = func2016;
 
-using ret1848 = OptionsLayer*;
-using func1848 = ret1848(*)();
-using pure1848 = ret1848();
-using meta1848 = ret1848();
-using member1848 = func1848;
+using ret1861 = void;
+using func1861 = ret1861(*)();
+using pure1861 = ret1861();
+using meta1861 = ret1861();
+using member1861 = func1861;
 
-using ret1840 = OpacityEffectAction*;
-using func1840 = ret1840(*)(float, float, float, int);
-using pure1840 = ret1840(float, float, float, int);
-using meta1840 = ret1840(float, float, float, int);
+using ret1862 = void;
+using func1862 = ret1862(*)();
+using pure1862 = ret1862();
+using meta1862 = ret1862();
+using member1862 = func1862;
+
+using ret1863 = bool;
+using func1863 = ret1863(*)();
+using pure1863 = ret1863();
+using meta1863 = ret1863();
+using member1863 = func1863;
+
+using ret1851 = OptionsLayer*;
+using func1851 = ret1851(*)();
+using pure1851 = ret1851();
+using meta1851 = ret1851();
+using member1851 = func1851;
+
+using ret1843 = OpacityEffectAction*;
+using func1843 = ret1843(*)(float, float, float, int);
+using pure1843 = ret1843(float, float, float, int);
+using meta1843 = ret1843(float, float, float, int);
+using member1843 = func1843;
+
+using ret1844 = OpacityEffectAction*;
+using func1844 = ret1844(*)(gd::string);
+using pure1844 = ret1844(gd::string);
+using meta1844 = ret1844(gd::string);
+using member1844 = func1844;
+
+using ret1845 = bool;
+using func1845 = ret1845(*)(OpacityEffectAction*, float, float, float, int);
+using pure1845 = ret1845(float, float, float, int);
+using meta1845 = ret1845(OpacityEffectAction*, float, float, float, int);
+using member1845 = ret1845(OpacityEffectAction::*)(float, float, float, int);
+
+using ret1846 = void;
+using func1846 = ret1846(*)(OpacityEffectAction*, float);
+using pure1846 = ret1846(float);
+using meta1846 = ret1846(OpacityEffectAction*, float);
+using member1846 = ret1846(OpacityEffectAction::*)(float);
+
+using ret1839 = bool;
+using func1839 = ret1839(*)(ObjectToolbox*);
+using pure1839 = ret1839();
+using meta1839 = ret1839(ObjectToolbox*);
+using member1839 = ret1839(ObjectToolbox::*)();
+
+using ret1840 = ObjectToolbox*;
+using func1840 = ret1840(*)();
+using pure1840 = ret1840();
+using meta1840 = ret1840();
 using member1840 = func1840;
 
-using ret1841 = OpacityEffectAction*;
-using func1841 = ret1841(*)(gd::string);
-using pure1841 = ret1841(gd::string);
-using meta1841 = ret1841(gd::string);
-using member1841 = func1841;
-
-using ret1842 = bool;
-using func1842 = ret1842(*)(OpacityEffectAction*, float, float, float, int);
-using pure1842 = ret1842(float, float, float, int);
-using meta1842 = ret1842(OpacityEffectAction*, float, float, float, int);
-using member1842 = ret1842(OpacityEffectAction::*)(float, float, float, int);
-
-using ret1843 = void;
-using func1843 = ret1843(*)(OpacityEffectAction*, float);
-using pure1843 = ret1843(float);
-using meta1843 = ret1843(OpacityEffectAction*, float);
-using member1843 = ret1843(OpacityEffectAction::*)(float);
-
-using ret1836 = bool;
-using func1836 = ret1836(*)(ObjectToolbox*);
-using pure1836 = ret1836();
-using meta1836 = ret1836(ObjectToolbox*);
-using member1836 = ret1836(ObjectToolbox::*)();
-
-using ret1837 = ObjectToolbox*;
-using func1837 = ret1837(*)();
-using pure1837 = ret1837();
-using meta1837 = ret1837();
-using member1837 = func1837;
-
-using ret1824 = void;
-using func1824 = ret1824(*)(OBB2D*, cocos2d::CCPoint, float, float, float);
-using pure1824 = ret1824(cocos2d::CCPoint, float, float, float);
-using meta1824 = ret1824(OBB2D*, cocos2d::CCPoint, float, float, float);
-using member1824 = ret1824(OBB2D::*)(cocos2d::CCPoint, float, float, float);
-
-using ret1825 = OBB2D*;
-using func1825 = ret1825(*)(cocos2d::CCPoint, float, float, float);
-using pure1825 = ret1825(cocos2d::CCPoint, float, float, float);
-using meta1825 = ret1825(cocos2d::CCPoint, float, float, float);
-using member1825 = func1825;
-
-using ret1826 = cocos2d::CCRect;
-using func1826 = ret1826(*)(OBB2D*);
-using pure1826 = ret1826();
-using meta1826 = ret1826(OBB2D*);
-using member1826 = ret1826(OBB2D::*)();
-
 using ret1827 = void;
-using func1827 = ret1827(*)(OBB2D*, OBB2D*);
-using pure1827 = ret1827(OBB2D*);
-using meta1827 = ret1827(OBB2D*, OBB2D*);
-using member1827 = ret1827(OBB2D::*)(OBB2D*);
+using func1827 = ret1827(*)(OBB2D*, cocos2d::CCPoint, float, float, float);
+using pure1827 = ret1827(cocos2d::CCPoint, float, float, float);
+using meta1827 = ret1827(OBB2D*, cocos2d::CCPoint, float, float, float);
+using member1827 = ret1827(OBB2D::*)(cocos2d::CCPoint, float, float, float);
 
-using ret1828 = void;
-using func1828 = ret1828(*)(OBB2D*, OBB2D*);
-using pure1828 = ret1828(OBB2D*);
-using meta1828 = ret1828(OBB2D*, OBB2D*);
-using member1828 = ret1828(OBB2D::*)(OBB2D*);
+using ret1828 = OBB2D*;
+using func1828 = ret1828(*)(cocos2d::CCPoint, float, float, float);
+using pure1828 = ret1828(cocos2d::CCPoint, float, float, float);
+using meta1828 = ret1828(cocos2d::CCPoint, float, float, float);
+using member1828 = func1828;
 
-using ret1818 = void;
-using func1818 = ret1818(*)(MusicDownloadManager*, int);
-using pure1818 = ret1818(int);
-using meta1818 = ret1818(MusicDownloadManager*, int);
-using member1818 = ret1818(MusicDownloadManager::*)(int);
+using ret1829 = cocos2d::CCRect;
+using func1829 = ret1829(*)(OBB2D*);
+using pure1829 = ret1829();
+using meta1829 = ret1829(OBB2D*);
+using member1829 = ret1829(OBB2D::*)();
 
-using ret1819 = MusicDownloadManager*;
-using func1819 = ret1819(*)();
-using pure1819 = ret1819();
-using meta1819 = ret1819();
-using member1819 = func1819;
+using ret1830 = void;
+using func1830 = ret1830(*)(OBB2D*, OBB2D*);
+using pure1830 = ret1830(OBB2D*);
+using meta1830 = ret1830(OBB2D*, OBB2D*);
+using member1830 = ret1830(OBB2D::*)(OBB2D*);
 
-using ret1820 = gd::string;
-using func1820 = ret1820(*)(MusicDownloadManager*, int);
-using pure1820 = ret1820(int);
-using meta1820 = ret1820(MusicDownloadManager*, int);
-using member1820 = ret1820(MusicDownloadManager::*)(int);
+using ret1831 = void;
+using func1831 = ret1831(*)(OBB2D*, OBB2D*);
+using pure1831 = ret1831(OBB2D*);
+using meta1831 = ret1831(OBB2D*, OBB2D*);
+using member1831 = ret1831(OBB2D::*)(OBB2D*);
 
-using ret1810 = MoreVideoOptionsLayer*;
-using func1810 = ret1810(*)();
-using pure1810 = ret1810();
-using meta1810 = ret1810();
-using member1810 = func1810;
+using ret1821 = void;
+using func1821 = ret1821(*)(MusicDownloadManager*, int);
+using pure1821 = ret1821(int);
+using meta1821 = ret1821(MusicDownloadManager*, int);
+using member1821 = ret1821(MusicDownloadManager::*)(int);
 
-using ret1811 = bool;
-using func1811 = ret1811(*)(MoreVideoOptionsLayer*);
-using pure1811 = ret1811();
-using meta1811 = ret1811(MoreVideoOptionsLayer*);
-using member1811 = ret1811(MoreVideoOptionsLayer::*)();
+using ret1822 = MusicDownloadManager*;
+using func1822 = ret1822(*)();
+using pure1822 = ret1822();
+using meta1822 = ret1822();
+using member1822 = func1822;
 
-using ret1812 = void;
-using func1812 = ret1812(*)(MoreVideoOptionsLayer*, cocos2d::CCObject*);
-using pure1812 = ret1812(cocos2d::CCObject*);
-using meta1812 = ret1812(MoreVideoOptionsLayer*, cocos2d::CCObject*);
-using member1812 = ret1812(MoreVideoOptionsLayer::*)(cocos2d::CCObject*);
+using ret1823 = gd::string;
+using func1823 = ret1823(*)(MusicDownloadManager*, int);
+using pure1823 = ret1823(int);
+using meta1823 = ret1823(MusicDownloadManager*, int);
+using member1823 = ret1823(MusicDownloadManager::*)(int);
 
-using ret1780 = void;
-using func1780 = ret1780(*)(MenuLayer*);
-using pure1780 = ret1780();
-using meta1780 = ret1780(MenuLayer*);
-using member1780 = func1780;
+using ret1813 = MoreVideoOptionsLayer*;
+using func1813 = ret1813(*)();
+using pure1813 = ret1813();
+using meta1813 = ret1813();
+using member1813 = func1813;
 
-using ret1781 = bool;
-using func1781 = ret1781(*)(MenuLayer*);
-using pure1781 = ret1781();
-using meta1781 = ret1781(MenuLayer*);
-using member1781 = ret1781(MenuLayer::*)();
+using ret1814 = bool;
+using func1814 = ret1814(*)(MoreVideoOptionsLayer*);
+using pure1814 = ret1814();
+using meta1814 = ret1814(MoreVideoOptionsLayer*);
+using member1814 = ret1814(MoreVideoOptionsLayer::*)();
 
-using ret1782 = void;
-using func1782 = ret1782(*)(MenuLayer*);
-using pure1782 = ret1782();
-using meta1782 = ret1782(MenuLayer*);
-using member1782 = ret1782(MenuLayer::*)();
+using ret1815 = void;
+using func1815 = ret1815(*)(MoreVideoOptionsLayer*, cocos2d::CCObject*);
+using pure1815 = ret1815(cocos2d::CCObject*);
+using meta1815 = ret1815(MoreVideoOptionsLayer*, cocos2d::CCObject*);
+using member1815 = ret1815(MoreVideoOptionsLayer::*)(cocos2d::CCObject*);
 
 using ret1783 = void;
-using func1783 = ret1783(*)(MenuLayer*, cocos2d::enumKeyCodes);
-using pure1783 = ret1783(cocos2d::enumKeyCodes);
-using meta1783 = ret1783(MenuLayer*, cocos2d::enumKeyCodes);
-using member1783 = ret1783(MenuLayer::*)(cocos2d::enumKeyCodes);
+using func1783 = ret1783(*)(MenuLayer*);
+using pure1783 = ret1783();
+using meta1783 = ret1783(MenuLayer*);
+using member1783 = func1783;
 
-using ret1784 = void;
+using ret1784 = bool;
 using func1784 = ret1784(*)(MenuLayer*);
 using pure1784 = ret1784();
 using meta1784 = ret1784(MenuLayer*);
 using member1784 = ret1784(MenuLayer::*)();
 
 using ret1785 = void;
-using func1785 = ret1785(*)(MenuLayer*, FLAlertLayer*, bool);
-using pure1785 = ret1785(FLAlertLayer*, bool);
-using meta1785 = ret1785(MenuLayer*, FLAlertLayer*, bool);
-using member1785 = ret1785(MenuLayer::*)(FLAlertLayer*, bool);
+using func1785 = ret1785(*)(MenuLayer*);
+using pure1785 = ret1785();
+using meta1785 = ret1785(MenuLayer*);
+using member1785 = ret1785(MenuLayer::*)();
 
 using ret1786 = void;
-using func1786 = ret1786(*)(MenuLayer*, cocos2d::CCObject*);
-using pure1786 = ret1786(cocos2d::CCObject*);
-using meta1786 = ret1786(MenuLayer*, cocos2d::CCObject*);
-using member1786 = ret1786(MenuLayer::*)(cocos2d::CCObject*);
+using func1786 = ret1786(*)(MenuLayer*, cocos2d::enumKeyCodes);
+using pure1786 = ret1786(cocos2d::enumKeyCodes);
+using meta1786 = ret1786(MenuLayer*, cocos2d::enumKeyCodes);
+using member1786 = ret1786(MenuLayer::*)(cocos2d::enumKeyCodes);
+
+using ret1787 = void;
+using func1787 = ret1787(*)(MenuLayer*);
+using pure1787 = ret1787();
+using meta1787 = ret1787(MenuLayer*);
+using member1787 = ret1787(MenuLayer::*)();
 
 using ret1788 = void;
-using func1788 = ret1788(*)(MenuLayer*, cocos2d::CCObject*);
-using pure1788 = ret1788(cocos2d::CCObject*);
-using meta1788 = ret1788(MenuLayer*, cocos2d::CCObject*);
-using member1788 = ret1788(MenuLayer::*)(cocos2d::CCObject*);
+using func1788 = ret1788(*)(MenuLayer*, FLAlertLayer*, bool);
+using pure1788 = ret1788(FLAlertLayer*, bool);
+using meta1788 = ret1788(MenuLayer*, FLAlertLayer*, bool);
+using member1788 = ret1788(MenuLayer::*)(FLAlertLayer*, bool);
 
 using ret1789 = void;
 using func1789 = ret1789(*)(MenuLayer*, cocos2d::CCObject*);
@@ -2339,89 +2327,89 @@ using pure1789 = ret1789(cocos2d::CCObject*);
 using meta1789 = ret1789(MenuLayer*, cocos2d::CCObject*);
 using member1789 = ret1789(MenuLayer::*)(cocos2d::CCObject*);
 
-using ret1801 = cocos2d::CCScene*;
-using func1801 = ret1801(*)(bool);
-using pure1801 = ret1801(bool);
-using meta1801 = ret1801(bool);
-using member1801 = func1801;
+using ret1791 = void;
+using func1791 = ret1791(*)(MenuLayer*, cocos2d::CCObject*);
+using pure1791 = ret1791(cocos2d::CCObject*);
+using meta1791 = ret1791(MenuLayer*, cocos2d::CCObject*);
+using member1791 = ret1791(MenuLayer::*)(cocos2d::CCObject*);
 
-using ret1778 = void;
-using func1778 = ret1778(*)(MenuGameLayer*);
-using pure1778 = ret1778();
-using meta1778 = ret1778(MenuGameLayer*);
-using member1778 = ret1778(MenuGameLayer::*)();
+using ret1792 = void;
+using func1792 = ret1792(*)(MenuLayer*, cocos2d::CCObject*);
+using pure1792 = ret1792(cocos2d::CCObject*);
+using meta1792 = ret1792(MenuLayer*, cocos2d::CCObject*);
+using member1792 = ret1792(MenuLayer::*)(cocos2d::CCObject*);
 
-using ret1779 = void;
-using func1779 = ret1779(*)(MenuGameLayer*, float);
-using pure1779 = ret1779(float);
-using meta1779 = ret1779(MenuGameLayer*, float);
-using member1779 = ret1779(MenuGameLayer::*)(float);
+using ret1804 = cocos2d::CCScene*;
+using func1804 = ret1804(*)(bool);
+using pure1804 = ret1804(bool);
+using meta1804 = ret1804(bool);
+using member1804 = func1804;
 
-using ret1766 = LoadingCircle*;
-using func1766 = ret1766(*)();
-using pure1766 = ret1766();
-using meta1766 = ret1766();
-using member1766 = func1766;
+using ret1781 = void;
+using func1781 = ret1781(*)(MenuGameLayer*);
+using pure1781 = ret1781();
+using meta1781 = ret1781(MenuGameLayer*);
+using member1781 = ret1781(MenuGameLayer::*)();
 
-using ret1767 = void;
-using func1767 = ret1767(*)(LoadingCircle*);
-using pure1767 = ret1767();
-using meta1767 = ret1767(LoadingCircle*);
-using member1767 = ret1767(LoadingCircle::*)();
+using ret1782 = void;
+using func1782 = ret1782(*)(MenuGameLayer*, float);
+using pure1782 = ret1782(float);
+using meta1782 = ret1782(MenuGameLayer*, float);
+using member1782 = ret1782(MenuGameLayer::*)(float);
 
-using ret1768 = void;
-using func1768 = ret1768(*)(LoadingCircle*);
-using pure1768 = ret1768();
-using meta1768 = ret1768(LoadingCircle*);
-using member1768 = ret1768(LoadingCircle::*)();
+using ret1769 = LoadingCircle*;
+using func1769 = ret1769(*)();
+using pure1769 = ret1769();
+using meta1769 = ret1769();
+using member1769 = func1769;
 
-using ret2219 = SetupInstantCountPopup*;
-using func2219 = ret2219(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2219 = ret2219(EffectGameObject*, cocos2d::CCArray*);
-using meta2219 = ret2219(EffectGameObject*, cocos2d::CCArray*);
-using member2219 = func2219;
+using ret1770 = void;
+using func1770 = ret1770(*)(LoadingCircle*);
+using pure1770 = ret1770();
+using meta1770 = ret1770(LoadingCircle*);
+using member1770 = ret1770(LoadingCircle::*)();
 
-using ret2220 = void;
-using func2220 = ret2220(*)(SetupInstantCountPopup*, cocos2d::CCObject*);
-using pure2220 = ret2220(cocos2d::CCObject*);
-using meta2220 = ret2220(SetupInstantCountPopup*, cocos2d::CCObject*);
-using member2220 = ret2220(SetupInstantCountPopup::*)(cocos2d::CCObject*);
+using ret1771 = void;
+using func1771 = ret1771(*)(LoadingCircle*);
+using pure1771 = ret1771();
+using meta1771 = ret1771(LoadingCircle*);
+using member1771 = ret1771(LoadingCircle::*)();
 
-using ret2221 = void;
-using func2221 = ret2221(*)(SetupInstantCountPopup*, CCTextInputNode*);
-using pure2221 = ret2221(CCTextInputNode*);
-using meta2221 = ret2221(SetupInstantCountPopup*, CCTextInputNode*);
-using member2221 = ret2221(SetupInstantCountPopup::*)(CCTextInputNode*);
+using ret2222 = SetupInstantCountPopup*;
+using func2222 = ret2222(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2222 = ret2222(EffectGameObject*, cocos2d::CCArray*);
+using meta2222 = ret2222(EffectGameObject*, cocos2d::CCArray*);
+using member2222 = func2222;
 
-using ret2222 = void;
-using func2222 = ret2222(*)(SetupInstantCountPopup*);
-using pure2222 = ret2222();
-using meta2222 = ret2222(SetupInstantCountPopup*);
-using member2222 = ret2222(SetupInstantCountPopup::*)();
+using ret2223 = void;
+using func2223 = ret2223(*)(SetupInstantCountPopup*, cocos2d::CCObject*);
+using pure2223 = ret2223(cocos2d::CCObject*);
+using meta2223 = ret2223(SetupInstantCountPopup*, cocos2d::CCObject*);
+using member2223 = ret2223(SetupInstantCountPopup::*)(cocos2d::CCObject*);
 
-using ret1737 = LevelInfoLayer*;
-using func1737 = ret1737(*)(GJGameLevel*);
-using pure1737 = ret1737(GJGameLevel*);
-using meta1737 = ret1737(GJGameLevel*);
-using member1737 = func1737;
+using ret2224 = void;
+using func2224 = ret2224(*)(SetupInstantCountPopup*, CCTextInputNode*);
+using pure2224 = ret2224(CCTextInputNode*);
+using meta2224 = ret2224(SetupInstantCountPopup*, CCTextInputNode*);
+using member2224 = ret2224(SetupInstantCountPopup::*)(CCTextInputNode*);
 
-using ret1459 = void;
-using func1459 = ret1459(*)(GameObject*);
-using pure1459 = ret1459();
-using meta1459 = ret1459(GameObject*);
-using member1459 = func1459;
+using ret2225 = void;
+using func2225 = ret2225(*)(SetupInstantCountPopup*);
+using pure2225 = ret2225();
+using meta2225 = ret2225(SetupInstantCountPopup*);
+using member2225 = ret2225(SetupInstantCountPopup::*)();
 
-using ret1460 = void;
-using func1460 = ret1460(*)(GameObject*, float);
-using pure1460 = ret1460(float);
-using meta1460 = ret1460(GameObject*, float);
-using member1460 = ret1460(GameObject::*)(float);
+using ret1740 = LevelInfoLayer*;
+using func1740 = ret1740(*)(GJGameLevel*);
+using pure1740 = ret1740(GJGameLevel*);
+using meta1740 = ret1740(GJGameLevel*);
+using member1740 = func1740;
 
 using ret1461 = void;
-using func1461 = ret1461(*)(GameObject*, float);
-using pure1461 = ret1461(float);
-using meta1461 = ret1461(GameObject*, float);
-using member1461 = ret1461(GameObject::*)(float);
+using func1461 = ret1461(*)(GameObject*);
+using pure1461 = ret1461();
+using meta1461 = ret1461(GameObject*);
+using member1461 = func1461;
 
 using ret1462 = void;
 using func1462 = ret1462(*)(GameObject*, float);
@@ -2436,70 +2424,70 @@ using meta1463 = ret1463(GameObject*, float);
 using member1463 = ret1463(GameObject::*)(float);
 
 using ret1464 = void;
-using func1464 = ret1464(*)(GameObject*, const cocos2d::CCPoint&);
-using pure1464 = ret1464(const cocos2d::CCPoint&);
-using meta1464 = ret1464(GameObject*, const cocos2d::CCPoint&);
-using member1464 = ret1464(GameObject::*)(const cocos2d::CCPoint&);
+using func1464 = ret1464(*)(GameObject*, float);
+using pure1464 = ret1464(float);
+using meta1464 = ret1464(GameObject*, float);
+using member1464 = ret1464(GameObject::*)(float);
 
 using ret1465 = void;
-using func1465 = ret1465(*)(GameObject*, bool);
-using pure1465 = ret1465(bool);
-using meta1465 = ret1465(GameObject*, bool);
-using member1465 = ret1465(GameObject::*)(bool);
+using func1465 = ret1465(*)(GameObject*, float);
+using pure1465 = ret1465(float);
+using meta1465 = ret1465(GameObject*, float);
+using member1465 = ret1465(GameObject::*)(float);
 
 using ret1466 = void;
-using func1466 = ret1466(*)(GameObject*, float);
-using pure1466 = ret1466(float);
-using meta1466 = ret1466(GameObject*, float);
-using member1466 = ret1466(GameObject::*)(float);
+using func1466 = ret1466(*)(GameObject*, const cocos2d::CCPoint&);
+using pure1466 = ret1466(const cocos2d::CCPoint&);
+using meta1466 = ret1466(GameObject*, const cocos2d::CCPoint&);
+using member1466 = ret1466(GameObject::*)(const cocos2d::CCPoint&);
 
 using ret1467 = void;
-using func1467 = ret1467(*)(GameObject*, GLubyte);
-using pure1467 = ret1467(GLubyte);
-using meta1467 = ret1467(GameObject*, GLubyte);
-using member1467 = ret1467(GameObject::*)(GLubyte);
+using func1467 = ret1467(*)(GameObject*, bool);
+using pure1467 = ret1467(bool);
+using meta1467 = ret1467(GameObject*, bool);
+using member1467 = ret1467(GameObject::*)(bool);
 
-using ret1468 = bool;
-using func1468 = ret1468(*)(GameObject*, cocos2d::CCTexture2D*);
-using pure1468 = ret1468(cocos2d::CCTexture2D*);
-using meta1468 = ret1468(GameObject*, cocos2d::CCTexture2D*);
-using member1468 = ret1468(GameObject::*)(cocos2d::CCTexture2D*);
+using ret1468 = void;
+using func1468 = ret1468(*)(GameObject*, float);
+using pure1468 = ret1468(float);
+using meta1468 = ret1468(GameObject*, float);
+using member1468 = ret1468(GameObject::*)(float);
 
 using ret1469 = void;
-using func1469 = ret1469(*)(GameObject*, const cocos2d::ccColor3B&);
-using pure1469 = ret1469(const cocos2d::ccColor3B&);
-using meta1469 = ret1469(GameObject*, const cocos2d::ccColor3B&);
-using member1469 = ret1469(GameObject::*)(const cocos2d::ccColor3B&);
+using func1469 = ret1469(*)(GameObject*, GLubyte);
+using pure1469 = ret1469(GLubyte);
+using meta1469 = ret1469(GameObject*, GLubyte);
+using member1469 = ret1469(GameObject::*)(GLubyte);
 
-using ret1470 = void;
-using func1470 = ret1470(*)(GameObject*, bool);
-using pure1470 = ret1470(bool);
-using meta1470 = ret1470(GameObject*, bool);
-using member1470 = ret1470(GameObject::*)(bool);
+using ret1470 = bool;
+using func1470 = ret1470(*)(GameObject*, cocos2d::CCTexture2D*);
+using pure1470 = ret1470(cocos2d::CCTexture2D*);
+using meta1470 = ret1470(GameObject*, cocos2d::CCTexture2D*);
+using member1470 = ret1470(GameObject::*)(cocos2d::CCTexture2D*);
 
 using ret1471 = void;
-using func1471 = ret1471(*)(GameObject*, bool);
-using pure1471 = ret1471(bool);
-using meta1471 = ret1471(GameObject*, bool);
-using member1471 = ret1471(GameObject::*)(bool);
+using func1471 = ret1471(*)(GameObject*, const cocos2d::ccColor3B&);
+using pure1471 = ret1471(const cocos2d::ccColor3B&);
+using meta1471 = ret1471(GameObject*, const cocos2d::ccColor3B&);
+using member1471 = ret1471(GameObject::*)(const cocos2d::ccColor3B&);
 
 using ret1472 = void;
-using func1472 = ret1472(*)(GameObject*);
-using pure1472 = ret1472();
-using meta1472 = ret1472(GameObject*);
-using member1472 = ret1472(GameObject::*)();
+using func1472 = ret1472(*)(GameObject*, bool);
+using pure1472 = ret1472(bool);
+using meta1472 = ret1472(GameObject*, bool);
+using member1472 = ret1472(GameObject::*)(bool);
 
 using ret1473 = void;
-using func1473 = ret1473(*)(GameObject*);
-using pure1473 = ret1473();
-using meta1473 = ret1473(GameObject*);
-using member1473 = ret1473(GameObject::*)();
+using func1473 = ret1473(*)(GameObject*, bool);
+using pure1473 = ret1473(bool);
+using meta1473 = ret1473(GameObject*, bool);
+using member1473 = ret1473(GameObject::*)(bool);
 
 using ret1474 = void;
-using func1474 = ret1474(*)(GameObject*, bool);
-using pure1474 = ret1474(bool);
-using meta1474 = ret1474(GameObject*, bool);
-using member1474 = ret1474(GameObject::*)(bool);
+using func1474 = ret1474(*)(GameObject*);
+using pure1474 = ret1474();
+using meta1474 = ret1474(GameObject*);
+using member1474 = ret1474(GameObject::*)();
 
 using ret1475 = void;
 using func1475 = ret1475(*)(GameObject*);
@@ -2508,10 +2496,10 @@ using meta1475 = ret1475(GameObject*);
 using member1475 = ret1475(GameObject::*)();
 
 using ret1476 = void;
-using func1476 = ret1476(*)(GameObject*, GJBaseGameLayer*);
-using pure1476 = ret1476(GJBaseGameLayer*);
-using meta1476 = ret1476(GameObject*, GJBaseGameLayer*);
-using member1476 = ret1476(GameObject::*)(GJBaseGameLayer*);
+using func1476 = ret1476(*)(GameObject*, bool);
+using pure1476 = ret1476(bool);
+using meta1476 = ret1476(GameObject*, bool);
+using member1476 = ret1476(GameObject::*)(bool);
 
 using ret1477 = void;
 using func1477 = ret1477(*)(GameObject*);
@@ -2519,89 +2507,89 @@ using pure1477 = ret1477();
 using meta1477 = ret1477(GameObject*);
 using member1477 = ret1477(GameObject::*)();
 
+using ret1478 = void;
+using func1478 = ret1478(*)(GameObject*, GJBaseGameLayer*);
+using pure1478 = ret1478(GJBaseGameLayer*);
+using meta1478 = ret1478(GameObject*, GJBaseGameLayer*);
+using member1478 = ret1478(GameObject::*)(GJBaseGameLayer*);
+
 using ret1479 = void;
-using func1479 = ret1479(*)(GameObject*, bool);
-using pure1479 = ret1479(bool);
-using meta1479 = ret1479(GameObject*, bool);
-using member1479 = ret1479(GameObject::*)(bool);
+using func1479 = ret1479(*)(GameObject*);
+using pure1479 = ret1479();
+using meta1479 = ret1479(GameObject*);
+using member1479 = ret1479(GameObject::*)();
 
-using ret1480 = cocos2d::CCRect const&;
-using func1480 = ret1480(*)(GameObject*);
-using pure1480 = ret1480();
-using meta1480 = ret1480(GameObject*);
-using member1480 = ret1480(GameObject::*)();
+using ret1481 = void;
+using func1481 = ret1481(*)(GameObject*, bool);
+using pure1481 = ret1481(bool);
+using meta1481 = ret1481(GameObject*, bool);
+using member1481 = ret1481(GameObject::*)(bool);
 
-using ret1481 = cocos2d::CCRect;
-using func1481 = ret1481(*)(GameObject*, float, float);
-using pure1481 = ret1481(float, float);
-using meta1481 = ret1481(GameObject*, float, float);
-using member1481 = ret1481(GameObject::*)(float, float);
+using ret1482 = cocos2d::CCRect const&;
+using func1482 = ret1482(*)(GameObject*);
+using pure1482 = ret1482();
+using meta1482 = ret1482(GameObject*);
+using member1482 = ret1482(GameObject::*)();
 
-using ret1482 = cocos2d::CCRect;
-using func1482 = ret1482(*)(GameObject*, float, float);
-using pure1482 = ret1482(float, float);
-using meta1482 = ret1482(GameObject*, float, float);
-using member1482 = ret1482(GameObject::*)(float, float);
+using ret1483 = cocos2d::CCRect;
+using func1483 = ret1483(*)(GameObject*, float, float);
+using pure1483 = ret1483(float, float);
+using meta1483 = ret1483(GameObject*, float, float);
+using member1483 = ret1483(GameObject::*)(float, float);
 
-using ret1483 = cocos2d::CCRect const&;
-using func1483 = ret1483(*)(GameObject*);
-using pure1483 = ret1483();
-using meta1483 = ret1483(GameObject*);
-using member1483 = ret1483(GameObject::*)();
+using ret1484 = cocos2d::CCRect;
+using func1484 = ret1484(*)(GameObject*, float, float);
+using pure1484 = ret1484(float, float);
+using meta1484 = ret1484(GameObject*, float, float);
+using member1484 = ret1484(GameObject::*)(float, float);
 
-using ret1484 = cocos2d::CCPoint;
-using func1484 = ret1484(*)(GameObject*);
-using pure1484 = ret1484();
-using meta1484 = ret1484(GameObject*);
-using member1484 = ret1484(GameObject::*)();
+using ret1485 = cocos2d::CCRect const&;
+using func1485 = ret1485(*)(GameObject*);
+using pure1485 = ret1485();
+using meta1485 = ret1485(GameObject*);
+using member1485 = ret1485(GameObject::*)();
 
-using ret1485 = void;
-using func1485 = ret1485(*)(GameObject*, cocos2d::CCPoint);
-using pure1485 = ret1485(cocos2d::CCPoint);
-using meta1485 = ret1485(GameObject*, cocos2d::CCPoint);
-using member1485 = ret1485(GameObject::*)(cocos2d::CCPoint);
-
-using ret1486 = void;
+using ret1486 = cocos2d::CCPoint;
 using func1486 = ret1486(*)(GameObject*);
 using pure1486 = ret1486();
 using meta1486 = ret1486(GameObject*);
 using member1486 = ret1486(GameObject::*)();
 
 using ret1487 = void;
-using func1487 = ret1487(*)(GameObject*);
-using pure1487 = ret1487();
-using meta1487 = ret1487(GameObject*);
-using member1487 = ret1487(GameObject::*)();
+using func1487 = ret1487(*)(GameObject*, cocos2d::CCPoint);
+using pure1487 = ret1487(cocos2d::CCPoint);
+using meta1487 = ret1487(GameObject*, cocos2d::CCPoint);
+using member1487 = ret1487(GameObject::*)(cocos2d::CCPoint);
 
-using ret1488 = gd::string;
+using ret1488 = void;
 using func1488 = ret1488(*)(GameObject*);
 using pure1488 = ret1488();
 using meta1488 = ret1488(GameObject*);
 using member1488 = ret1488(GameObject::*)();
 
-using ret1489 = bool;
+using ret1489 = void;
 using func1489 = ret1489(*)(GameObject*);
 using pure1489 = ret1489();
 using meta1489 = ret1489(GameObject*);
 using member1489 = ret1489(GameObject::*)();
 
-using ret1490 = bool;
+using ret1490 = gd::string;
 using func1490 = ret1490(*)(GameObject*);
 using pure1490 = ret1490();
 using meta1490 = ret1490(GameObject*);
 using member1490 = ret1490(GameObject::*)();
 
-using ret1491 = void;
-using func1491 = ret1491(*)(GameObject*, float);
-using pure1491 = ret1491(float);
-using meta1491 = ret1491(GameObject*, float);
-using member1491 = ret1491(GameObject::*)(float);
+using ret1491 = bool;
+using func1491 = ret1491(*)(GameObject*);
+using pure1491 = ret1491();
+using meta1491 = ret1491(GameObject*);
+using member1491 = ret1491(GameObject::*)();
 
-using ret1492 = void;
-using func1492 = ret1492(*)(GameObject*, float);
-using pure1492 = ret1492(float);
-using meta1492 = ret1492(GameObject*, float);
-using member1492 = ret1492(GameObject::*)(float);
+using ret1492 = bool;
+using func1492 = ret1492(*)(GameObject*);
+using pure1492 = ret1492();
+using meta1492 = ret1492(GameObject*);
+using member1492 = ret1492(GameObject::*)();
 
 using ret1493 = void;
 using func1493 = ret1493(*)(GameObject*, float);
@@ -2610,16 +2598,16 @@ using meta1493 = ret1493(GameObject*, float);
 using member1493 = ret1493(GameObject::*)(float);
 
 using ret1494 = void;
-using func1494 = ret1494(*)(GameObject*);
-using pure1494 = ret1494();
-using meta1494 = ret1494(GameObject*);
-using member1494 = ret1494(GameObject::*)();
+using func1494 = ret1494(*)(GameObject*, float);
+using pure1494 = ret1494(float);
+using meta1494 = ret1494(GameObject*, float);
+using member1494 = ret1494(GameObject::*)(float);
 
 using ret1495 = void;
-using func1495 = ret1495(*)(GameObject*);
-using pure1495 = ret1495();
-using meta1495 = ret1495(GameObject*);
-using member1495 = ret1495(GameObject::*)();
+using func1495 = ret1495(*)(GameObject*, float);
+using pure1495 = ret1495(float);
+using meta1495 = ret1495(GameObject*, float);
+using member1495 = ret1495(GameObject::*)(float);
 
 using ret1496 = void;
 using func1496 = ret1496(*)(GameObject*);
@@ -2628,10 +2616,10 @@ using meta1496 = ret1496(GameObject*);
 using member1496 = ret1496(GameObject::*)();
 
 using ret1497 = void;
-using func1497 = ret1497(*)(GameObject*, float);
-using pure1497 = ret1497(float);
-using meta1497 = ret1497(GameObject*, float);
-using member1497 = ret1497(GameObject::*)(float);
+using func1497 = ret1497(*)(GameObject*);
+using pure1497 = ret1497();
+using meta1497 = ret1497(GameObject*);
+using member1497 = ret1497(GameObject::*)();
 
 using ret1498 = void;
 using func1498 = ret1498(*)(GameObject*);
@@ -2640,58 +2628,58 @@ using meta1498 = ret1498(GameObject*);
 using member1498 = ret1498(GameObject::*)();
 
 using ret1499 = void;
-using func1499 = ret1499(*)(GameObject*);
-using pure1499 = ret1499();
-using meta1499 = ret1499(GameObject*);
-using member1499 = ret1499(GameObject::*)();
+using func1499 = ret1499(*)(GameObject*, float);
+using pure1499 = ret1499(float);
+using meta1499 = ret1499(GameObject*, float);
+using member1499 = ret1499(GameObject::*)(float);
 
 using ret1500 = void;
-using func1500 = ret1500(*)(GameObject*, const cocos2d::ccColor3B&);
-using pure1500 = ret1500(const cocos2d::ccColor3B&);
-using meta1500 = ret1500(GameObject*, const cocos2d::ccColor3B&);
-using member1500 = ret1500(GameObject::*)(const cocos2d::ccColor3B&);
+using func1500 = ret1500(*)(GameObject*);
+using pure1500 = ret1500();
+using meta1500 = ret1500(GameObject*);
+using member1500 = ret1500(GameObject::*)();
 
 using ret1501 = void;
-using func1501 = ret1501(*)(GameObject*, cocos2d::_ccColor3B const&);
-using pure1501 = ret1501(cocos2d::_ccColor3B const&);
-using meta1501 = ret1501(GameObject*, cocos2d::_ccColor3B const&);
-using member1501 = ret1501(GameObject::*)(cocos2d::_ccColor3B const&);
+using func1501 = ret1501(*)(GameObject*);
+using pure1501 = ret1501();
+using meta1501 = ret1501(GameObject*);
+using member1501 = ret1501(GameObject::*)();
 
 using ret1502 = void;
-using func1502 = ret1502(*)(GameObject*);
-using pure1502 = ret1502();
-using meta1502 = ret1502(GameObject*);
-using member1502 = ret1502(GameObject::*)();
+using func1502 = ret1502(*)(GameObject*, const cocos2d::ccColor3B&);
+using pure1502 = ret1502(const cocos2d::ccColor3B&);
+using meta1502 = ret1502(GameObject*, const cocos2d::ccColor3B&);
+using member1502 = ret1502(GameObject::*)(const cocos2d::ccColor3B&);
 
 using ret1503 = void;
-using func1503 = ret1503(*)(GameObject*, int);
-using pure1503 = ret1503(int);
-using meta1503 = ret1503(GameObject*, int);
-using member1503 = ret1503(GameObject::*)(int);
+using func1503 = ret1503(*)(GameObject*, cocos2d::_ccColor3B const&);
+using pure1503 = ret1503(cocos2d::_ccColor3B const&);
+using meta1503 = ret1503(GameObject*, cocos2d::_ccColor3B const&);
+using member1503 = ret1503(GameObject::*)(cocos2d::_ccColor3B const&);
 
 using ret1504 = void;
-using func1504 = ret1504(*)(GameObject*, int);
-using pure1504 = ret1504(int);
-using meta1504 = ret1504(GameObject*, int);
-using member1504 = ret1504(GameObject::*)(int);
+using func1504 = ret1504(*)(GameObject*);
+using pure1504 = ret1504();
+using meta1504 = ret1504(GameObject*);
+using member1504 = ret1504(GameObject::*)();
 
 using ret1505 = void;
-using func1505 = ret1505(*)(GameObject*);
-using pure1505 = ret1505();
-using meta1505 = ret1505(GameObject*);
-using member1505 = ret1505(GameObject::*)();
+using func1505 = ret1505(*)(GameObject*, int);
+using pure1505 = ret1505(int);
+using meta1505 = ret1505(GameObject*, int);
+using member1505 = ret1505(GameObject::*)(int);
 
 using ret1506 = void;
-using func1506 = ret1506(*)(const GameObject*);
-using pure1506 = ret1506();
-using meta1506 = ret1506(const GameObject*);
-using member1506 = ret1506(GameObject::*)() const;
+using func1506 = ret1506(*)(GameObject*, int);
+using pure1506 = ret1506(int);
+using meta1506 = ret1506(GameObject*, int);
+using member1506 = ret1506(GameObject::*)(int);
 
 using ret1507 = void;
-using func1507 = ret1507(*)(GameObject*, bool);
-using pure1507 = ret1507(bool);
-using meta1507 = ret1507(GameObject*, bool);
-using member1507 = ret1507(GameObject::*)(bool);
+using func1507 = ret1507(*)(GameObject*);
+using pure1507 = ret1507();
+using meta1507 = ret1507(GameObject*);
+using member1507 = ret1507(GameObject::*)();
 
 using ret1508 = void;
 using func1508 = ret1508(*)(const GameObject*);
@@ -2705,41 +2693,41 @@ using pure1509 = ret1509(bool);
 using meta1509 = ret1509(GameObject*, bool);
 using member1509 = ret1509(GameObject::*)(bool);
 
-using ret1510 = GameObjectType;
+using ret1510 = void;
 using func1510 = ret1510(*)(const GameObject*);
 using pure1510 = ret1510();
 using meta1510 = ret1510(const GameObject*);
 using member1510 = ret1510(GameObject::*)() const;
 
 using ret1511 = void;
-using func1511 = ret1511(*)(GameObject*, GameObjectType);
-using pure1511 = ret1511(GameObjectType);
-using meta1511 = ret1511(GameObject*, GameObjectType);
-using member1511 = ret1511(GameObject::*)(GameObjectType);
+using func1511 = ret1511(*)(GameObject*, bool);
+using pure1511 = ret1511(bool);
+using meta1511 = ret1511(GameObject*, bool);
+using member1511 = ret1511(GameObject::*)(bool);
 
-using ret1512 = cocos2d::CCPoint const&;
+using ret1512 = GameObjectType;
 using func1512 = ret1512(*)(const GameObject*);
 using pure1512 = ret1512();
 using meta1512 = ret1512(const GameObject*);
 using member1512 = ret1512(GameObject::*)() const;
 
 using ret1513 = void;
-using func1513 = ret1513(*)(GameObject*, GameObject*);
-using pure1513 = ret1513(GameObject*);
-using meta1513 = ret1513(GameObject*, GameObject*);
-using member1513 = ret1513(GameObject::*)(GameObject*);
+using func1513 = ret1513(*)(GameObject*, GameObjectType);
+using pure1513 = ret1513(GameObjectType);
+using meta1513 = ret1513(GameObject*, GameObjectType);
+using member1513 = ret1513(GameObject::*)(GameObjectType);
 
-using ret1514 = void;
-using func1514 = ret1514(*)(GameObject*);
+using ret1514 = cocos2d::CCPoint const&;
+using func1514 = ret1514(*)(const GameObject*);
 using pure1514 = ret1514();
-using meta1514 = ret1514(GameObject*);
-using member1514 = ret1514(GameObject::*)();
+using meta1514 = ret1514(const GameObject*);
+using member1514 = ret1514(GameObject::*)() const;
 
 using ret1515 = void;
-using func1515 = ret1515(*)(GameObject*, bool);
-using pure1515 = ret1515(bool);
-using meta1515 = ret1515(GameObject*, bool);
-using member1515 = ret1515(GameObject::*)(bool);
+using func1515 = ret1515(*)(GameObject*, GameObject*);
+using pure1515 = ret1515(GameObject*);
+using meta1515 = ret1515(GameObject*, GameObject*);
+using member1515 = ret1515(GameObject::*)(GameObject*);
 
 using ret1516 = void;
 using func1516 = ret1516(*)(GameObject*);
@@ -2748,10 +2736,10 @@ using meta1516 = ret1516(GameObject*);
 using member1516 = ret1516(GameObject::*)();
 
 using ret1517 = void;
-using func1517 = ret1517(*)(GameObject*, float, float);
-using pure1517 = ret1517(float, float);
-using meta1517 = ret1517(GameObject*, float, float);
-using member1517 = ret1517(GameObject::*)(float, float);
+using func1517 = ret1517(*)(GameObject*, bool);
+using pure1517 = ret1517(bool);
+using meta1517 = ret1517(GameObject*, bool);
+using member1517 = ret1517(GameObject::*)(bool);
 
 using ret1518 = void;
 using func1518 = ret1518(*)(GameObject*);
@@ -2760,16 +2748,16 @@ using meta1518 = ret1518(GameObject*);
 using member1518 = ret1518(GameObject::*)();
 
 using ret1519 = void;
-using func1519 = ret1519(*)(GameObject*);
-using pure1519 = ret1519();
-using meta1519 = ret1519(GameObject*);
-using member1519 = ret1519(GameObject::*)();
+using func1519 = ret1519(*)(GameObject*, float, float);
+using pure1519 = ret1519(float, float);
+using meta1519 = ret1519(GameObject*, float, float);
+using member1519 = ret1519(GameObject::*)(float, float);
 
 using ret1520 = void;
-using func1520 = ret1520(*)(GameObject*, int, bool);
-using pure1520 = ret1520(int, bool);
-using meta1520 = ret1520(GameObject*, int, bool);
-using member1520 = ret1520(GameObject::*)(int, bool);
+using func1520 = ret1520(*)(GameObject*);
+using pure1520 = ret1520();
+using meta1520 = ret1520(GameObject*);
+using member1520 = ret1520(GameObject::*)();
 
 using ret1521 = void;
 using func1521 = ret1521(*)(GameObject*);
@@ -2778,66 +2766,66 @@ using meta1521 = ret1521(GameObject*);
 using member1521 = ret1521(GameObject::*)();
 
 using ret1522 = void;
-using func1522 = ret1522(*)(GameObject*, GameObject*);
-using pure1522 = ret1522(GameObject*);
-using meta1522 = ret1522(GameObject*, GameObject*);
-using member1522 = ret1522(GameObject::*)(GameObject*);
+using func1522 = ret1522(*)(GameObject*, int, bool);
+using pure1522 = ret1522(int, bool);
+using meta1522 = ret1522(GameObject*, int, bool);
+using member1522 = ret1522(GameObject::*)(int, bool);
 
-using ret1523 = GameObject*;
-using func1523 = ret1523(*)(const char*);
-using pure1523 = ret1523(const char*);
-using meta1523 = ret1523(const char*);
-using member1523 = func1523;
+using ret1523 = void;
+using func1523 = ret1523(*)(GameObject*);
+using pure1523 = ret1523();
+using meta1523 = ret1523(GameObject*);
+using member1523 = ret1523(GameObject::*)();
 
-using ret1524 = GameObject*;
-using func1524 = ret1524(*)(int);
-using pure1524 = ret1524(int);
-using meta1524 = ret1524(int);
-using member1524 = func1524;
+using ret1524 = void;
+using func1524 = ret1524(*)(GameObject*, GameObject*);
+using pure1524 = ret1524(GameObject*);
+using meta1524 = ret1524(GameObject*, GameObject*);
+using member1524 = ret1524(GameObject::*)(GameObject*);
 
-using ret1525 = void;
-using func1525 = ret1525(*)(GameObject*);
-using pure1525 = ret1525();
-using meta1525 = ret1525(GameObject*);
-using member1525 = ret1525(GameObject::*)();
+using ret1525 = GameObject*;
+using func1525 = ret1525(*)(const char*);
+using pure1525 = ret1525(const char*);
+using meta1525 = ret1525(const char*);
+using member1525 = func1525;
 
-using ret1526 = void;
-using func1526 = ret1526(*)(GameObject*);
-using pure1526 = ret1526();
-using meta1526 = ret1526(GameObject*);
-using member1526 = ret1526(GameObject::*)();
+using ret1526 = GameObject*;
+using func1526 = ret1526(*)(int);
+using pure1526 = ret1526(int);
+using meta1526 = ret1526(int);
+using member1526 = func1526;
 
 using ret1527 = void;
-using func1527 = ret1527(*)(GameObject*, int, bool);
-using pure1527 = ret1527(int, bool);
-using meta1527 = ret1527(GameObject*, int, bool);
-using member1527 = ret1527(GameObject::*)(int, bool);
+using func1527 = ret1527(*)(GameObject*);
+using pure1527 = ret1527();
+using meta1527 = ret1527(GameObject*);
+using member1527 = ret1527(GameObject::*)();
 
 using ret1528 = void;
-using func1528 = ret1528(*)(GameObject*, int);
-using pure1528 = ret1528(int);
-using meta1528 = ret1528(GameObject*, int);
-using member1528 = ret1528(GameObject::*)(int);
+using func1528 = ret1528(*)(GameObject*);
+using pure1528 = ret1528();
+using meta1528 = ret1528(GameObject*);
+using member1528 = ret1528(GameObject::*)();
 
-using ret1529 = cocos2d::CCPoint;
-using func1529 = ret1529(*)(GameObject*);
-using pure1529 = ret1529();
-using meta1529 = ret1529(GameObject*);
-using member1529 = ret1529(GameObject::*)();
+using ret1529 = void;
+using func1529 = ret1529(*)(GameObject*, int, bool);
+using pure1529 = ret1529(int, bool);
+using meta1529 = ret1529(GameObject*, int, bool);
+using member1529 = ret1529(GameObject::*)(int, bool);
 
-using ret1530 = const cocos2d::_ccColor3B&;
-using func1530 = ret1530(*)(GameObject*);
-using pure1530 = ret1530();
-using meta1530 = ret1530(GameObject*);
-using member1530 = ret1530(GameObject::*)();
+using ret1530 = void;
+using func1530 = ret1530(*)(GameObject*, int);
+using pure1530 = ret1530(int);
+using meta1530 = ret1530(GameObject*, int);
+using member1530 = ret1530(GameObject::*)(int);
 
-using ret1531 = void;
+using ret1531 = cocos2d::CCPoint;
 using func1531 = ret1531(*)(GameObject*);
 using pure1531 = ret1531();
 using meta1531 = ret1531(GameObject*);
 using member1531 = ret1531(GameObject::*)();
 
-using ret1532 = void;
+using ret1532 = const cocos2d::_ccColor3B&;
 using func1532 = ret1532(*)(GameObject*);
 using pure1532 = ret1532();
 using meta1532 = ret1532(GameObject*);
@@ -2855,17 +2843,17 @@ using pure1534 = ret1534();
 using meta1534 = ret1534(GameObject*);
 using member1534 = ret1534(GameObject::*)();
 
+using ret1535 = void;
+using func1535 = ret1535(*)(GameObject*);
+using pure1535 = ret1535();
+using meta1535 = ret1535(GameObject*);
+using member1535 = ret1535(GameObject::*)();
+
 using ret1536 = void;
 using func1536 = ret1536(*)(GameObject*);
 using pure1536 = ret1536();
 using meta1536 = ret1536(GameObject*);
 using member1536 = ret1536(GameObject::*)();
-
-using ret1537 = void;
-using func1537 = ret1537(*)(GameObject*);
-using pure1537 = ret1537();
-using meta1537 = ret1537(GameObject*);
-using member1537 = ret1537(GameObject::*)();
 
 using ret1538 = void;
 using func1538 = ret1538(*)(GameObject*);
@@ -2886,10 +2874,10 @@ using meta1540 = ret1540(GameObject*);
 using member1540 = ret1540(GameObject::*)();
 
 using ret1541 = void;
-using func1541 = ret1541(*)(GameObject*, GameObject*);
-using pure1541 = ret1541(GameObject*);
-using meta1541 = ret1541(GameObject*, GameObject*);
-using member1541 = ret1541(GameObject::*)(GameObject*);
+using func1541 = ret1541(*)(GameObject*);
+using pure1541 = ret1541();
+using meta1541 = ret1541(GameObject*);
+using member1541 = ret1541(GameObject::*)();
 
 using ret1542 = void;
 using func1542 = ret1542(*)(GameObject*);
@@ -2898,10 +2886,10 @@ using meta1542 = ret1542(GameObject*);
 using member1542 = ret1542(GameObject::*)();
 
 using ret1543 = void;
-using func1543 = ret1543(*)(GameObject*);
-using pure1543 = ret1543();
-using meta1543 = ret1543(GameObject*);
-using member1543 = ret1543(GameObject::*)();
+using func1543 = ret1543(*)(GameObject*, GameObject*);
+using pure1543 = ret1543(GameObject*);
+using meta1543 = ret1543(GameObject*, GameObject*);
+using member1543 = ret1543(GameObject::*)(GameObject*);
 
 using ret1544 = void;
 using func1544 = ret1544(*)(GameObject*);
@@ -2933,11 +2921,11 @@ using pure1548 = ret1548();
 using meta1548 = ret1548(GameObject*);
 using member1548 = ret1548(GameObject::*)();
 
-using ret1549 = GameObject*;
-using func1549 = ret1549(*)(gd::string, bool);
-using pure1549 = ret1549(gd::string, bool);
-using meta1549 = ret1549(gd::string, bool);
-using member1549 = func1549;
+using ret1549 = void;
+using func1549 = ret1549(*)(GameObject*);
+using pure1549 = ret1549();
+using meta1549 = ret1549(GameObject*);
+using member1549 = ret1549(GameObject::*)();
 
 using ret1550 = void;
 using func1550 = ret1550(*)(GameObject*);
@@ -2945,11 +2933,11 @@ using pure1550 = ret1550();
 using meta1550 = ret1550(GameObject*);
 using member1550 = ret1550(GameObject::*)();
 
-using ret1551 = void;
-using func1551 = ret1551(*)(GameObject*);
-using pure1551 = ret1551();
-using meta1551 = ret1551(GameObject*);
-using member1551 = ret1551(GameObject::*)();
+using ret1551 = GameObject*;
+using func1551 = ret1551(*)(gd::string, bool);
+using pure1551 = ret1551(gd::string, bool);
+using meta1551 = ret1551(gd::string, bool);
+using member1551 = func1551;
 
 using ret1552 = void;
 using func1552 = ret1552(*)(GameObject*);
@@ -2970,58 +2958,58 @@ using meta1554 = ret1554(GameObject*);
 using member1554 = ret1554(GameObject::*)();
 
 using ret1555 = void;
-using func1555 = ret1555(*)(GameObject*, const cocos2d::ccColor3B&);
-using pure1555 = ret1555(const cocos2d::ccColor3B&);
-using meta1555 = ret1555(GameObject*, const cocos2d::ccColor3B&);
-using member1555 = ret1555(GameObject::*)(const cocos2d::ccColor3B&);
+using func1555 = ret1555(*)(GameObject*);
+using pure1555 = ret1555();
+using meta1555 = ret1555(GameObject*);
+using member1555 = ret1555(GameObject::*)();
 
 using ret1556 = void;
-using func1556 = ret1556(*)(GameObject*, int);
-using pure1556 = ret1556(int);
-using meta1556 = ret1556(GameObject*, int);
-using member1556 = ret1556(GameObject::*)(int);
+using func1556 = ret1556(*)(GameObject*);
+using pure1556 = ret1556();
+using meta1556 = ret1556(GameObject*);
+using member1556 = ret1556(GameObject::*)();
 
 using ret1557 = void;
-using func1557 = ret1557(*)(GameObject*, bool const&);
-using pure1557 = ret1557(bool const&);
-using meta1557 = ret1557(GameObject*, bool const&);
-using member1557 = ret1557(GameObject::*)(bool const&);
+using func1557 = ret1557(*)(GameObject*, const cocos2d::ccColor3B&);
+using pure1557 = ret1557(const cocos2d::ccColor3B&);
+using meta1557 = ret1557(GameObject*, const cocos2d::ccColor3B&);
+using member1557 = ret1557(GameObject::*)(const cocos2d::ccColor3B&);
 
 using ret1558 = void;
-using func1558 = ret1558(*)(GameObject*, unsigned char);
-using pure1558 = ret1558(unsigned char);
-using meta1558 = ret1558(GameObject*, unsigned char);
-using member1558 = ret1558(GameObject::*)(unsigned char);
+using func1558 = ret1558(*)(GameObject*, int);
+using pure1558 = ret1558(int);
+using meta1558 = ret1558(GameObject*, int);
+using member1558 = ret1558(GameObject::*)(int);
 
 using ret1559 = void;
-using func1559 = ret1559(*)(GameObject*, cocos2d::CCPoint const&);
-using pure1559 = ret1559(cocos2d::CCPoint const&);
-using meta1559 = ret1559(GameObject*, cocos2d::CCPoint const&);
-using member1559 = ret1559(GameObject::*)(cocos2d::CCPoint const&);
+using func1559 = ret1559(*)(GameObject*, bool const&);
+using pure1559 = ret1559(bool const&);
+using meta1559 = ret1559(GameObject*, bool const&);
+using member1559 = ret1559(GameObject::*)(bool const&);
 
 using ret1560 = void;
-using func1560 = ret1560(*)(GameObject*, int);
-using pure1560 = ret1560(int);
-using meta1560 = ret1560(GameObject*, int);
-using member1560 = ret1560(GameObject::*)(int);
+using func1560 = ret1560(*)(GameObject*, unsigned char);
+using pure1560 = ret1560(unsigned char);
+using meta1560 = ret1560(GameObject*, unsigned char);
+using member1560 = ret1560(GameObject::*)(unsigned char);
 
 using ret1561 = void;
-using func1561 = ret1561(*)(GameObject*, int const&);
-using pure1561 = ret1561(int const&);
-using meta1561 = ret1561(GameObject*, int const&);
-using member1561 = ret1561(GameObject::*)(int const&);
+using func1561 = ret1561(*)(GameObject*, cocos2d::CCPoint const&);
+using pure1561 = ret1561(cocos2d::CCPoint const&);
+using meta1561 = ret1561(GameObject*, cocos2d::CCPoint const&);
+using member1561 = ret1561(GameObject::*)(cocos2d::CCPoint const&);
 
 using ret1562 = void;
-using func1562 = ret1562(*)(GameObject*);
-using pure1562 = ret1562();
-using meta1562 = ret1562(GameObject*);
-using member1562 = ret1562(GameObject::*)();
+using func1562 = ret1562(*)(GameObject*, int);
+using pure1562 = ret1562(int);
+using meta1562 = ret1562(GameObject*, int);
+using member1562 = ret1562(GameObject::*)(int);
 
 using ret1563 = void;
-using func1563 = ret1563(*)(GameObject*);
-using pure1563 = ret1563();
-using meta1563 = ret1563(GameObject*);
-using member1563 = ret1563(GameObject::*)();
+using func1563 = ret1563(*)(GameObject*, int const&);
+using pure1563 = ret1563(int const&);
+using meta1563 = ret1563(GameObject*, int const&);
+using member1563 = ret1563(GameObject::*)(int const&);
 
 using ret1564 = void;
 using func1564 = ret1564(*)(GameObject*);
@@ -3030,10 +3018,10 @@ using meta1564 = ret1564(GameObject*);
 using member1564 = ret1564(GameObject::*)();
 
 using ret1565 = void;
-using func1565 = ret1565(*)(GameObject*, float);
-using pure1565 = ret1565(float);
-using meta1565 = ret1565(GameObject*, float);
-using member1565 = ret1565(GameObject::*)(float);
+using func1565 = ret1565(*)(GameObject*);
+using pure1565 = ret1565();
+using meta1565 = ret1565(GameObject*);
+using member1565 = ret1565(GameObject::*)();
 
 using ret1566 = void;
 using func1566 = ret1566(*)(GameObject*);
@@ -3042,10 +3030,10 @@ using meta1566 = ret1566(GameObject*);
 using member1566 = ret1566(GameObject::*)();
 
 using ret1567 = void;
-using func1567 = ret1567(*)(GameObject*);
-using pure1567 = ret1567();
-using meta1567 = ret1567(GameObject*);
-using member1567 = ret1567(GameObject::*)();
+using func1567 = ret1567(*)(GameObject*, float);
+using pure1567 = ret1567(float);
+using meta1567 = ret1567(GameObject*, float);
+using member1567 = ret1567(GameObject::*)(float);
 
 using ret1568 = void;
 using func1568 = ret1568(*)(GameObject*);
@@ -3066,28 +3054,40 @@ using meta1570 = ret1570(GameObject*);
 using member1570 = ret1570(GameObject::*)();
 
 using ret1571 = void;
-using func1571 = ret1571(*)(GameObject*, float);
-using pure1571 = ret1571(float);
-using meta1571 = ret1571(GameObject*, float);
-using member1571 = ret1571(GameObject::*)(float);
+using func1571 = ret1571(*)(GameObject*);
+using pure1571 = ret1571();
+using meta1571 = ret1571(GameObject*);
+using member1571 = ret1571(GameObject::*)();
 
-using ret1365 = void;
-using func1365 = ret1365(*)(GManager*);
-using pure1365 = ret1365();
-using meta1365 = ret1365(GManager*);
-using member1365 = ret1365(GManager::*)();
+using ret1572 = void;
+using func1572 = ret1572(*)(GameObject*);
+using pure1572 = ret1572();
+using meta1572 = ret1572(GameObject*);
+using member1572 = ret1572(GameObject::*)();
 
-using ret1366 = void;
-using func1366 = ret1366(*)(GManager*, DS_Dictionary*, gd::string);
-using pure1366 = ret1366(DS_Dictionary*, gd::string);
-using meta1366 = ret1366(GManager*, DS_Dictionary*, gd::string);
-using member1366 = ret1366(GManager::*)(DS_Dictionary*, gd::string);
+using ret1573 = void;
+using func1573 = ret1573(*)(GameObject*, float);
+using pure1573 = ret1573(float);
+using meta1573 = ret1573(GameObject*, float);
+using member1573 = ret1573(GameObject::*)(float);
 
 using ret1367 = void;
-using func1367 = ret1367(*)(GManager*, gd::string);
-using pure1367 = ret1367(gd::string);
-using meta1367 = ret1367(GManager*, gd::string);
-using member1367 = ret1367(GManager::*)(gd::string);
+using func1367 = ret1367(*)(GManager*);
+using pure1367 = ret1367();
+using meta1367 = ret1367(GManager*);
+using member1367 = ret1367(GManager::*)();
+
+using ret1368 = void;
+using func1368 = ret1368(*)(GManager*, DS_Dictionary*, gd::string);
+using pure1368 = ret1368(DS_Dictionary*, gd::string);
+using meta1368 = ret1368(GManager*, DS_Dictionary*, gd::string);
+using member1368 = ret1368(GManager::*)(DS_Dictionary*, gd::string);
+
+using ret1369 = void;
+using func1369 = ret1369(*)(GManager*, gd::string);
+using pure1369 = ret1369(gd::string);
+using meta1369 = ret1369(GManager*, gd::string);
+using member1369 = ret1369(GManager::*)(gd::string);
 
 using ret103 = void;
 using func103 = ret103(*)(cocos2d::CCEGLView*);
@@ -3161,143 +3161,143 @@ using pure280 = ret280();
 using meta280 = ret280(cocos2d::CCMouseHandler*);
 using member280 = func280;
 
-using ret1284 = void;
-using func1284 = ret1284(*)(GJGarageLayer*, cocos2d::CCObject*);
-using pure1284 = ret1284(cocos2d::CCObject*);
-using meta1284 = ret1284(GJGarageLayer*, cocos2d::CCObject*);
-using member1284 = ret1284(GJGarageLayer::*)(cocos2d::CCObject*);
+using ret1286 = void;
+using func1286 = ret1286(*)(GJGarageLayer*, cocos2d::CCObject*);
+using pure1286 = ret1286(cocos2d::CCObject*);
+using meta1286 = ret1286(GJGarageLayer*, cocos2d::CCObject*);
+using member1286 = ret1286(GJGarageLayer::*)(cocos2d::CCObject*);
 
-using ret1285 = void;
-using func1285 = ret1285(*)(GJGarageLayer*, cocos2d::CCObject*);
-using pure1285 = ret1285(cocos2d::CCObject*);
-using meta1285 = ret1285(GJGarageLayer*, cocos2d::CCObject*);
-using member1285 = ret1285(GJGarageLayer::*)(cocos2d::CCObject*);
+using ret1287 = void;
+using func1287 = ret1287(*)(GJGarageLayer*, cocos2d::CCObject*);
+using pure1287 = ret1287(cocos2d::CCObject*);
+using meta1287 = ret1287(GJGarageLayer*, cocos2d::CCObject*);
+using member1287 = ret1287(GJGarageLayer::*)(cocos2d::CCObject*);
 
-using ret1287 = bool;
-using func1287 = ret1287(*)(GJGarageLayer*);
-using pure1287 = ret1287();
-using meta1287 = ret1287(GJGarageLayer*);
-using member1287 = ret1287(GJGarageLayer::*)();
+using ret1289 = bool;
+using func1289 = ret1289(*)(GJGarageLayer*);
+using pure1289 = ret1289();
+using meta1289 = ret1289(GJGarageLayer*);
+using member1289 = ret1289(GJGarageLayer::*)();
 
-using ret1299 = void;
-using func1299 = ret1299(*)(GJGarageLayer*);
-using pure1299 = ret1299();
-using meta1299 = ret1299(GJGarageLayer*);
-using member1299 = ret1299(GJGarageLayer::*)();
+using ret1301 = void;
+using func1301 = ret1301(*)(GJGarageLayer*);
+using pure1301 = ret1301();
+using meta1301 = ret1301(GJGarageLayer*);
+using member1301 = ret1301(GJGarageLayer::*)();
 
-using ret1270 = void;
-using func1270 = ret1270(*)(GJGameLevel*);
-using pure1270 = ret1270();
-using meta1270 = ret1270(GJGameLevel*);
-using member1270 = func1270;
-
-using ret1271 = void;
-using func1271 = ret1271(*)(GJGameLevel*, DS_Dictionary*);
-using pure1271 = ret1271(DS_Dictionary*);
-using meta1271 = ret1271(GJGameLevel*, DS_Dictionary*);
-using member1271 = ret1271(GJGameLevel::*)(DS_Dictionary*);
-
-using ret1272 = bool;
+using ret1272 = void;
 using func1272 = ret1272(*)(GJGameLevel*);
 using pure1272 = ret1272();
 using meta1272 = ret1272(GJGameLevel*);
-using member1272 = ret1272(GJGameLevel::*)();
+using member1272 = func1272;
 
-using ret1273 = bool;
-using func1273 = ret1273(*)(GJGameLevel*);
-using pure1273 = ret1273();
-using meta1273 = ret1273(GJGameLevel*);
-using member1273 = ret1273(GJGameLevel::*)();
+using ret1273 = void;
+using func1273 = ret1273(*)(GJGameLevel*, DS_Dictionary*);
+using pure1273 = ret1273(DS_Dictionary*);
+using meta1273 = ret1273(GJGameLevel*, DS_Dictionary*);
+using member1273 = ret1273(GJGameLevel::*)(DS_Dictionary*);
 
-using ret1274 = GJGameLevel*;
-using func1274 = ret1274(*)();
+using ret1274 = bool;
+using func1274 = ret1274(*)(GJGameLevel*);
 using pure1274 = ret1274();
-using meta1274 = ret1274();
-using member1274 = func1274;
+using meta1274 = ret1274(GJGameLevel*);
+using member1274 = ret1274(GJGameLevel::*)();
 
-using ret1275 = gd::string;
+using ret1275 = bool;
 using func1275 = ret1275(*)(GJGameLevel*);
 using pure1275 = ret1275();
 using meta1275 = ret1275(GJGameLevel*);
 using member1275 = ret1275(GJGameLevel::*)();
 
-using ret1276 = const char*;
-using func1276 = ret1276(*)(GJGameLevel*, int);
-using pure1276 = ret1276(int);
-using meta1276 = ret1276(GJGameLevel*, int);
-using member1276 = ret1276(GJGameLevel::*)(int);
+using ret1276 = GJGameLevel*;
+using func1276 = ret1276(*)();
+using pure1276 = ret1276();
+using meta1276 = ret1276();
+using member1276 = func1276;
 
-using ret1277 = void;
-using func1277 = ret1277(*)(GJGameLevel*, int);
-using pure1277 = ret1277(int);
-using meta1277 = ret1277(GJGameLevel*, int);
-using member1277 = ret1277(GJGameLevel::*)(int);
+using ret1277 = gd::string;
+using func1277 = ret1277(*)(GJGameLevel*);
+using pure1277 = ret1277();
+using meta1277 = ret1277(GJGameLevel*);
+using member1277 = ret1277(GJGameLevel::*)();
 
-using ret1278 = void;
-using func1278 = ret1278(*)(GJGameLevel*);
-using pure1278 = ret1278();
-using meta1278 = ret1278(GJGameLevel*);
-using member1278 = ret1278(GJGameLevel::*)();
+using ret1278 = const char*;
+using func1278 = ret1278(*)(GJGameLevel*, int);
+using pure1278 = ret1278(int);
+using meta1278 = ret1278(GJGameLevel*, int);
+using member1278 = ret1278(GJGameLevel::*)(int);
 
 using ret1279 = void;
-using func1279 = ret1279(*)(GJGameLevel*);
-using pure1279 = ret1279();
-using meta1279 = ret1279(GJGameLevel*);
-using member1279 = ret1279(GJGameLevel::*)();
+using func1279 = ret1279(*)(GJGameLevel*, int);
+using pure1279 = ret1279(int);
+using meta1279 = ret1279(GJGameLevel*, int);
+using member1279 = ret1279(GJGameLevel::*)(int);
 
 using ret1280 = void;
-using func1280 = ret1280(*)(GJGameLevel*, int, bool, int, int, bool);
-using pure1280 = ret1280(int, bool, int, int, bool);
-using meta1280 = ret1280(GJGameLevel*, int, bool, int, int, bool);
-using member1280 = ret1280(GJGameLevel::*)(int, bool, int, int, bool);
+using func1280 = ret1280(*)(GJGameLevel*);
+using pure1280 = ret1280();
+using meta1280 = ret1280(GJGameLevel*);
+using member1280 = ret1280(GJGameLevel::*)();
 
 using ret1281 = void;
-using func1281 = ret1281(*)(GJGameLevel*, DS_Dictionary*);
-using pure1281 = ret1281(DS_Dictionary*);
-using meta1281 = ret1281(GJGameLevel*, DS_Dictionary*);
-using member1281 = ret1281(GJGameLevel::*)(DS_Dictionary*);
+using func1281 = ret1281(*)(GJGameLevel*);
+using pure1281 = ret1281();
+using meta1281 = ret1281(GJGameLevel*);
+using member1281 = ret1281(GJGameLevel::*)();
 
-using ret2285 = TableView*;
-using func2285 = ret2285(*)(TableViewDelegate*, TableViewDataSource*, cocos2d::CCRect);
-using pure2285 = ret2285(TableViewDelegate*, TableViewDataSource*, cocos2d::CCRect);
-using meta2285 = ret2285(TableViewDelegate*, TableViewDataSource*, cocos2d::CCRect);
-using member2285 = func2285;
+using ret1282 = void;
+using func1282 = ret1282(*)(GJGameLevel*, int, bool, int, int, bool);
+using pure1282 = ret1282(int, bool, int, int, bool);
+using meta1282 = ret1282(GJGameLevel*, int, bool, int, int, bool);
+using member1282 = ret1282(GJGameLevel::*)(int, bool, int, int, bool);
 
-using ret2286 = void;
-using func2286 = ret2286(*)(TableView*);
-using pure2286 = ret2286();
-using meta2286 = ret2286(TableView*);
-using member2286 = ret2286(TableView::*)();
+using ret1283 = void;
+using func1283 = ret1283(*)(GJGameLevel*, DS_Dictionary*);
+using pure1283 = ret1283(DS_Dictionary*);
+using meta1283 = ret1283(GJGameLevel*, DS_Dictionary*);
+using member1283 = ret1283(GJGameLevel::*)(DS_Dictionary*);
 
-using ret2313 = TopArtistsLayer*;
-using func2313 = ret2313(*)();
-using pure2313 = ret2313();
-using meta2313 = ret2313();
-using member2313 = func2313;
+using ret2288 = TableView*;
+using func2288 = ret2288(*)(TableViewDelegate*, TableViewDataSource*, cocos2d::CCRect);
+using pure2288 = ret2288(TableViewDelegate*, TableViewDataSource*, cocos2d::CCRect);
+using meta2288 = ret2288(TableViewDelegate*, TableViewDataSource*, cocos2d::CCRect);
+using member2288 = func2288;
 
-using ret2314 = void;
-using func2314 = ret2314(*)(TopArtistsLayer*, cocos2d::CCArray*);
-using pure2314 = ret2314(cocos2d::CCArray*);
-using meta2314 = ret2314(TopArtistsLayer*, cocos2d::CCArray*);
-using member2314 = ret2314(TopArtistsLayer::*)(cocos2d::CCArray*);
+using ret2289 = void;
+using func2289 = ret2289(*)(TableView*);
+using pure2289 = ret2289();
+using meta2289 = ret2289(TableView*);
+using member2289 = ret2289(TableView::*)();
 
-using ret2315 = bool;
-using func2315 = ret2315(*)(TopArtistsLayer*);
-using pure2315 = ret2315();
-using meta2315 = ret2315(TopArtistsLayer*);
-using member2315 = ret2315(TopArtistsLayer::*)();
-
-using ret2316 = void;
-using func2316 = ret2316(*)(TopArtistsLayer*, int);
-using pure2316 = ret2316(int);
-using meta2316 = ret2316(TopArtistsLayer*, int);
-using member2316 = ret2316(TopArtistsLayer::*)(int);
+using ret2316 = TopArtistsLayer*;
+using func2316 = ret2316(*)();
+using pure2316 = ret2316();
+using meta2316 = ret2316();
+using member2316 = func2316;
 
 using ret2317 = void;
-using func2317 = ret2317(*)(TopArtistsLayer*, gd::string, char const*);
-using pure2317 = ret2317(gd::string, char const*);
-using meta2317 = ret2317(TopArtistsLayer*, gd::string, char const*);
-using member2317 = ret2317(TopArtistsLayer::*)(gd::string, char const*);
+using func2317 = ret2317(*)(TopArtistsLayer*, cocos2d::CCArray*);
+using pure2317 = ret2317(cocos2d::CCArray*);
+using meta2317 = ret2317(TopArtistsLayer*, cocos2d::CCArray*);
+using member2317 = ret2317(TopArtistsLayer::*)(cocos2d::CCArray*);
+
+using ret2318 = bool;
+using func2318 = ret2318(*)(TopArtistsLayer*);
+using pure2318 = ret2318();
+using meta2318 = ret2318(TopArtistsLayer*);
+using member2318 = ret2318(TopArtistsLayer::*)();
+
+using ret2319 = void;
+using func2319 = ret2319(*)(TopArtistsLayer*, int);
+using pure2319 = ret2319(int);
+using meta2319 = ret2319(TopArtistsLayer*, int);
+using member2319 = ret2319(TopArtistsLayer::*)(int);
+
+using ret2320 = void;
+using func2320 = ret2320(*)(TopArtistsLayer*, gd::string, char const*);
+using pure2320 = ret2320(gd::string, char const*);
+using meta2320 = ret2320(TopArtistsLayer*, gd::string, char const*);
+using member2320 = ret2320(TopArtistsLayer::*)(gd::string, char const*);
 
 using ret578 = cocos2d::CCTransitionFade*;
 using func578 = ret578(*)(float, cocos2d::CCScene*);
@@ -3305,41 +3305,35 @@ using pure578 = ret578(float, cocos2d::CCScene*);
 using meta578 = ret578(float, cocos2d::CCScene*);
 using member578 = func578;
 
-using ret1165 = void;
-using func1165 = ret1165(*)(GJDropDownLayer*);
-using pure1165 = ret1165();
-using meta1165 = ret1165(GJDropDownLayer*);
-using member1165 = ret1165(GJDropDownLayer::*)();
-
-using ret1166 = void;
-using func1166 = ret1166(*)(GJDropDownLayer*, cocos2d::CCObject*);
-using pure1166 = ret1166(cocos2d::CCObject*);
-using meta1166 = ret1166(GJDropDownLayer*, cocos2d::CCObject*);
-using member1166 = ret1166(GJDropDownLayer::*)(cocos2d::CCObject*);
-
 using ret1167 = void;
-using func1167 = ret1167(*)(GJDropDownLayer*, bool);
-using pure1167 = ret1167(bool);
-using meta1167 = ret1167(GJDropDownLayer*, bool);
-using member1167 = ret1167(GJDropDownLayer::*)(bool);
+using func1167 = ret1167(*)(GJDropDownLayer*);
+using pure1167 = ret1167();
+using meta1167 = ret1167(GJDropDownLayer*);
+using member1167 = ret1167(GJDropDownLayer::*)();
 
 using ret1168 = void;
-using func1168 = ret1168(*)(GJDropDownLayer*, bool);
-using pure1168 = ret1168(bool);
-using meta1168 = ret1168(GJDropDownLayer*, bool);
-using member1168 = ret1168(GJDropDownLayer::*)(bool);
+using func1168 = ret1168(*)(GJDropDownLayer*, cocos2d::CCObject*);
+using pure1168 = ret1168(cocos2d::CCObject*);
+using meta1168 = ret1168(GJDropDownLayer*, cocos2d::CCObject*);
+using member1168 = ret1168(GJDropDownLayer::*)(cocos2d::CCObject*);
 
 using ret1169 = void;
-using func1169 = ret1169(*)(GJDropDownLayer*);
-using pure1169 = ret1169();
-using meta1169 = ret1169(GJDropDownLayer*);
-using member1169 = ret1169(GJDropDownLayer::*)();
+using func1169 = ret1169(*)(GJDropDownLayer*, bool);
+using pure1169 = ret1169(bool);
+using meta1169 = ret1169(GJDropDownLayer*, bool);
+using member1169 = ret1169(GJDropDownLayer::*)(bool);
 
 using ret1170 = void;
-using func1170 = ret1170(*)(GJDropDownLayer*);
-using pure1170 = ret1170();
-using meta1170 = ret1170(GJDropDownLayer*);
-using member1170 = ret1170(GJDropDownLayer::*)();
+using func1170 = ret1170(*)(GJDropDownLayer*, bool);
+using pure1170 = ret1170(bool);
+using meta1170 = ret1170(GJDropDownLayer*, bool);
+using member1170 = ret1170(GJDropDownLayer::*)(bool);
+
+using ret1171 = void;
+using func1171 = ret1171(*)(GJDropDownLayer*);
+using pure1171 = ret1171();
+using meta1171 = ret1171(GJDropDownLayer*);
+using member1171 = ret1171(GJDropDownLayer::*)();
 
 using ret1172 = void;
 using func1172 = ret1172(*)(GJDropDownLayer*);
@@ -3347,23 +3341,17 @@ using pure1172 = ret1172();
 using meta1172 = ret1172(GJDropDownLayer*);
 using member1172 = ret1172(GJDropDownLayer::*)();
 
-using ret1173 = void;
-using func1173 = ret1173(*)(GJDropDownLayer*);
-using pure1173 = ret1173();
-using meta1173 = ret1173(GJDropDownLayer*);
-using member1173 = ret1173(GJDropDownLayer::*)();
+using ret1174 = void;
+using func1174 = ret1174(*)(GJDropDownLayer*);
+using pure1174 = ret1174();
+using meta1174 = ret1174(GJDropDownLayer*);
+using member1174 = ret1174(GJDropDownLayer::*)();
 
-using ret1179 = void;
-using func1179 = ret1179(*)(GJDropDownLayer*);
-using pure1179 = ret1179();
-using meta1179 = ret1179(GJDropDownLayer*);
-using member1179 = ret1179(GJDropDownLayer::*)();
-
-using ret1180 = bool;
-using func1180 = ret1180(*)(GJDropDownLayer*, const char*, float);
-using pure1180 = ret1180(const char*, float);
-using meta1180 = ret1180(GJDropDownLayer*, const char*, float);
-using member1180 = ret1180(GJDropDownLayer::*)(const char*, float);
+using ret1175 = void;
+using func1175 = ret1175(*)(GJDropDownLayer*);
+using pure1175 = ret1175();
+using meta1175 = ret1175(GJDropDownLayer*);
+using member1175 = ret1175(GJDropDownLayer::*)();
 
 using ret1181 = void;
 using func1181 = ret1181(*)(GJDropDownLayer*);
@@ -3371,149 +3359,149 @@ using pure1181 = ret1181();
 using meta1181 = ret1181(GJDropDownLayer*);
 using member1181 = ret1181(GJDropDownLayer::*)();
 
-using ret1182 = void;
-using func1182 = ret1182(*)(GJDropDownLayer*);
-using pure1182 = ret1182();
-using meta1182 = ret1182(GJDropDownLayer*);
-using member1182 = ret1182(GJDropDownLayer::*)();
+using ret1182 = bool;
+using func1182 = ret1182(*)(GJDropDownLayer*, const char*, float);
+using pure1182 = ret1182(const char*, float);
+using meta1182 = ret1182(GJDropDownLayer*, const char*, float);
+using member1182 = ret1182(GJDropDownLayer::*)(const char*, float);
 
-using ret1053 = EndPortalObject*;
-using func1053 = ret1053(*)();
-using pure1053 = ret1053();
-using meta1053 = ret1053();
-using member1053 = func1053;
+using ret1183 = void;
+using func1183 = ret1183(*)(GJDropDownLayer*);
+using pure1183 = ret1183();
+using meta1183 = ret1183(GJDropDownLayer*);
+using member1183 = ret1183(GJDropDownLayer::*)();
 
-using ret1054 = void;
-using func1054 = ret1054(*)(EndPortalObject*, cocos2d::_ccColor3B);
-using pure1054 = ret1054(cocos2d::_ccColor3B);
-using meta1054 = ret1054(EndPortalObject*, cocos2d::_ccColor3B);
-using member1054 = ret1054(EndPortalObject::*)(cocos2d::_ccColor3B);
+using ret1184 = void;
+using func1184 = ret1184(*)(GJDropDownLayer*);
+using pure1184 = ret1184();
+using meta1184 = ret1184(GJDropDownLayer*);
+using member1184 = ret1184(GJDropDownLayer::*)();
 
-using ret1090 = void;
-using func1090 = ret1090(*)(GJBaseGameLayer*, int, int);
-using pure1090 = ret1090(int, int);
-using meta1090 = ret1090(GJBaseGameLayer*, int, int);
-using member1090 = ret1090(GJBaseGameLayer::*)(int, int);
+using ret1055 = EndPortalObject*;
+using func1055 = ret1055(*)();
+using pure1055 = ret1055();
+using meta1055 = ret1055();
+using member1055 = func1055;
 
-using ret1091 = void;
-using func1091 = ret1091(*)(GJBaseGameLayer*, cocos2d::CCPoint, int, float, int, float, bool, bool, int);
-using pure1091 = ret1091(cocos2d::CCPoint, int, float, int, float, bool, bool, int);
-using meta1091 = ret1091(GJBaseGameLayer*, cocos2d::CCPoint, int, float, int, float, bool, bool, int);
-using member1091 = ret1091(GJBaseGameLayer::*)(cocos2d::CCPoint, int, float, int, float, bool, bool, int);
+using ret1056 = void;
+using func1056 = ret1056(*)(EndPortalObject*, cocos2d::_ccColor3B);
+using pure1056 = ret1056(cocos2d::_ccColor3B);
+using meta1056 = ret1056(EndPortalObject*, cocos2d::_ccColor3B);
+using member1056 = ret1056(EndPortalObject::*)(cocos2d::_ccColor3B);
 
 using ret1092 = void;
-using func1092 = ret1092(*)(GJBaseGameLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using pure1092 = ret1092(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using meta1092 = ret1092(GJBaseGameLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using member1092 = ret1092(GJBaseGameLayer::*)(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using func1092 = ret1092(*)(GJBaseGameLayer*, int, int);
+using pure1092 = ret1092(int, int);
+using meta1092 = ret1092(GJBaseGameLayer*, int, int);
+using member1092 = ret1092(GJBaseGameLayer::*)(int, int);
 
 using ret1093 = void;
-using func1093 = ret1093(*)(GJBaseGameLayer*, PlayerObject*, bool, bool);
-using pure1093 = ret1093(PlayerObject*, bool, bool);
-using meta1093 = ret1093(GJBaseGameLayer*, PlayerObject*, bool, bool);
-using member1093 = ret1093(GJBaseGameLayer::*)(PlayerObject*, bool, bool);
+using func1093 = ret1093(*)(GJBaseGameLayer*, cocos2d::CCPoint, int, float, int, float, bool, bool, int);
+using pure1093 = ret1093(cocos2d::CCPoint, int, float, int, float, bool, bool, int);
+using meta1093 = ret1093(GJBaseGameLayer*, cocos2d::CCPoint, int, float, int, float, bool, bool, int);
+using member1093 = ret1093(GJBaseGameLayer::*)(cocos2d::CCPoint, int, float, int, float, bool, bool, int);
 
 using ret1094 = void;
-using func1094 = ret1094(*)(GJBaseGameLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using pure1094 = ret1094(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using meta1094 = ret1094(GJBaseGameLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using member1094 = ret1094(GJBaseGameLayer::*)(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using func1094 = ret1094(*)(GJBaseGameLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using pure1094 = ret1094(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using meta1094 = ret1094(GJBaseGameLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using member1094 = ret1094(GJBaseGameLayer::*)(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
 
 using ret1095 = void;
-using func1095 = ret1095(*)(GJBaseGameLayer*, int, bool);
-using pure1095 = ret1095(int, bool);
-using meta1095 = ret1095(GJBaseGameLayer*, int, bool);
-using member1095 = ret1095(GJBaseGameLayer::*)(int, bool);
+using func1095 = ret1095(*)(GJBaseGameLayer*, PlayerObject*, bool, bool);
+using pure1095 = ret1095(PlayerObject*, bool, bool);
+using meta1095 = ret1095(GJBaseGameLayer*, PlayerObject*, bool, bool);
+using member1095 = ret1095(GJBaseGameLayer::*)(PlayerObject*, bool, bool);
 
 using ret1096 = void;
-using func1096 = ret1096(*)(GJBaseGameLayer*, int);
-using pure1096 = ret1096(int);
-using meta1096 = ret1096(GJBaseGameLayer*, int);
-using member1096 = ret1096(GJBaseGameLayer::*)(int);
+using func1096 = ret1096(*)(GJBaseGameLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using pure1096 = ret1096(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using meta1096 = ret1096(GJBaseGameLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using member1096 = ret1096(GJBaseGameLayer::*)(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
 
 using ret1097 = void;
-using func1097 = ret1097(*)(GJBaseGameLayer*, GameObject*);
-using pure1097 = ret1097(GameObject*);
-using meta1097 = ret1097(GJBaseGameLayer*, GameObject*);
-using member1097 = ret1097(GJBaseGameLayer::*)(GameObject*);
+using func1097 = ret1097(*)(GJBaseGameLayer*, int, bool);
+using pure1097 = ret1097(int, bool);
+using meta1097 = ret1097(GJBaseGameLayer*, int, bool);
+using member1097 = ret1097(GJBaseGameLayer::*)(int, bool);
 
 using ret1098 = void;
-using func1098 = ret1098(*)(GJBaseGameLayer*, GameObject*, int, bool);
-using pure1098 = ret1098(GameObject*, int, bool);
-using meta1098 = ret1098(GJBaseGameLayer*, GameObject*, int, bool);
-using member1098 = ret1098(GJBaseGameLayer::*)(GameObject*, int, bool);
+using func1098 = ret1098(*)(GJBaseGameLayer*, int);
+using pure1098 = ret1098(int);
+using meta1098 = ret1098(GJBaseGameLayer*, int);
+using member1098 = ret1098(GJBaseGameLayer::*)(int);
 
 using ret1099 = void;
-using func1099 = ret1099(*)(GJBaseGameLayer*, GameObject*, int);
-using pure1099 = ret1099(GameObject*, int);
-using meta1099 = ret1099(GJBaseGameLayer*, GameObject*, int);
-using member1099 = ret1099(GJBaseGameLayer::*)(GameObject*, int);
+using func1099 = ret1099(*)(GJBaseGameLayer*, GameObject*);
+using pure1099 = ret1099(GameObject*);
+using meta1099 = ret1099(GJBaseGameLayer*, GameObject*);
+using member1099 = ret1099(GJBaseGameLayer::*)(GameObject*);
 
-using ret1100 = bool;
-using func1100 = ret1100(*)(GJBaseGameLayer*);
-using pure1100 = ret1100();
-using meta1100 = ret1100(GJBaseGameLayer*);
-using member1100 = ret1100(GJBaseGameLayer::*)();
+using ret1100 = void;
+using func1100 = ret1100(*)(GJBaseGameLayer*, GameObject*, int, bool);
+using pure1100 = ret1100(GameObject*, int, bool);
+using meta1100 = ret1100(GJBaseGameLayer*, GameObject*, int, bool);
+using member1100 = ret1100(GJBaseGameLayer::*)(GameObject*, int, bool);
 
 using ret1101 = void;
-using func1101 = ret1101(*)(GJBaseGameLayer*, LabelGameObject*, int);
-using pure1101 = ret1101(LabelGameObject*, int);
-using meta1101 = ret1101(GJBaseGameLayer*, LabelGameObject*, int);
-using member1101 = ret1101(GJBaseGameLayer::*)(LabelGameObject*, int);
+using func1101 = ret1101(*)(GJBaseGameLayer*, GameObject*, int);
+using pure1101 = ret1101(GameObject*, int);
+using meta1101 = ret1101(GJBaseGameLayer*, GameObject*, int);
+using member1101 = ret1101(GJBaseGameLayer::*)(GameObject*, int);
 
-using ret1102 = void;
-using func1102 = ret1102(*)(GJBaseGameLayer*, GameObject*, bool);
-using pure1102 = ret1102(GameObject*, bool);
-using meta1102 = ret1102(GJBaseGameLayer*, GameObject*, bool);
-using member1102 = ret1102(GJBaseGameLayer::*)(GameObject*, bool);
+using ret1102 = bool;
+using func1102 = ret1102(*)(GJBaseGameLayer*);
+using pure1102 = ret1102();
+using meta1102 = ret1102(GJBaseGameLayer*);
+using member1102 = ret1102(GJBaseGameLayer::*)();
 
 using ret1103 = void;
-using func1103 = ret1103(*)(GJBaseGameLayer*, int);
-using pure1103 = ret1103(int);
-using meta1103 = ret1103(GJBaseGameLayer*, int);
-using member1103 = ret1103(GJBaseGameLayer::*)(int);
+using func1103 = ret1103(*)(GJBaseGameLayer*, LabelGameObject*, int);
+using pure1103 = ret1103(LabelGameObject*, int);
+using meta1103 = ret1103(GJBaseGameLayer*, LabelGameObject*, int);
+using member1103 = ret1103(GJBaseGameLayer::*)(LabelGameObject*, int);
 
 using ret1104 = void;
-using func1104 = ret1104(*)(GJBaseGameLayer*, PlayerObject*, GameObject*);
-using pure1104 = ret1104(PlayerObject*, GameObject*);
-using meta1104 = ret1104(GJBaseGameLayer*, PlayerObject*, GameObject*);
-using member1104 = ret1104(GJBaseGameLayer::*)(PlayerObject*, GameObject*);
+using func1104 = ret1104(*)(GJBaseGameLayer*, GameObject*, bool);
+using pure1104 = ret1104(GameObject*, bool);
+using meta1104 = ret1104(GJBaseGameLayer*, GameObject*, bool);
+using member1104 = ret1104(GJBaseGameLayer::*)(GameObject*, bool);
 
 using ret1105 = void;
-using func1105 = ret1105(*)(GJBaseGameLayer*, EffectGameObject*, EffectGameObject*, float, GJEffectManager*);
-using pure1105 = ret1105(EffectGameObject*, EffectGameObject*, float, GJEffectManager*);
-using meta1105 = ret1105(GJBaseGameLayer*, EffectGameObject*, EffectGameObject*, float, GJEffectManager*);
-using member1105 = ret1105(GJBaseGameLayer::*)(EffectGameObject*, EffectGameObject*, float, GJEffectManager*);
+using func1105 = ret1105(*)(GJBaseGameLayer*, int);
+using pure1105 = ret1105(int);
+using meta1105 = ret1105(GJBaseGameLayer*, int);
+using member1105 = ret1105(GJBaseGameLayer::*)(int);
 
 using ret1106 = void;
-using func1106 = ret1106(*)(GJBaseGameLayer*);
-using pure1106 = ret1106();
-using meta1106 = ret1106(GJBaseGameLayer*);
-using member1106 = ret1106(GJBaseGameLayer::*)();
+using func1106 = ret1106(*)(GJBaseGameLayer*, PlayerObject*, GameObject*);
+using pure1106 = ret1106(PlayerObject*, GameObject*);
+using meta1106 = ret1106(GJBaseGameLayer*, PlayerObject*, GameObject*);
+using member1106 = ret1106(GJBaseGameLayer::*)(PlayerObject*, GameObject*);
 
 using ret1107 = void;
-using func1107 = ret1107(*)(GJBaseGameLayer*, int, int);
-using pure1107 = ret1107(int, int);
-using meta1107 = ret1107(GJBaseGameLayer*, int, int);
-using member1107 = ret1107(GJBaseGameLayer::*)(int, int);
+using func1107 = ret1107(*)(GJBaseGameLayer*, EffectGameObject*, EffectGameObject*, float, GJEffectManager*);
+using pure1107 = ret1107(EffectGameObject*, EffectGameObject*, float, GJEffectManager*);
+using meta1107 = ret1107(GJBaseGameLayer*, EffectGameObject*, EffectGameObject*, float, GJEffectManager*);
+using member1107 = ret1107(GJBaseGameLayer::*)(EffectGameObject*, EffectGameObject*, float, GJEffectManager*);
 
 using ret1108 = void;
-using func1108 = ret1108(*)(GJBaseGameLayer*, EffectGameObject*);
-using pure1108 = ret1108(EffectGameObject*);
-using meta1108 = ret1108(GJBaseGameLayer*, EffectGameObject*);
-using member1108 = ret1108(GJBaseGameLayer::*)(EffectGameObject*);
+using func1108 = ret1108(*)(GJBaseGameLayer*);
+using pure1108 = ret1108();
+using meta1108 = ret1108(GJBaseGameLayer*);
+using member1108 = ret1108(GJBaseGameLayer::*)();
 
 using ret1109 = void;
-using func1109 = ret1109(*)(GJBaseGameLayer*);
-using pure1109 = ret1109();
-using meta1109 = ret1109(GJBaseGameLayer*);
-using member1109 = ret1109(GJBaseGameLayer::*)();
+using func1109 = ret1109(*)(GJBaseGameLayer*, int, int);
+using pure1109 = ret1109(int, int);
+using meta1109 = ret1109(GJBaseGameLayer*, int, int);
+using member1109 = ret1109(GJBaseGameLayer::*)(int, int);
 
-using ret1110 = cocos2d::CCArray*;
-using func1110 = ret1110(*)(GJBaseGameLayer*, cocos2d::CCRect);
-using pure1110 = ret1110(cocos2d::CCRect);
-using meta1110 = ret1110(GJBaseGameLayer*, cocos2d::CCRect);
-using member1110 = ret1110(GJBaseGameLayer::*)(cocos2d::CCRect);
+using ret1110 = void;
+using func1110 = ret1110(*)(GJBaseGameLayer*, EffectGameObject*);
+using pure1110 = ret1110(EffectGameObject*);
+using meta1110 = ret1110(GJBaseGameLayer*, EffectGameObject*);
+using member1110 = ret1110(GJBaseGameLayer::*)(EffectGameObject*);
 
 using ret1111 = void;
 using func1111 = ret1111(*)(GJBaseGameLayer*);
@@ -3521,29 +3509,29 @@ using pure1111 = ret1111();
 using meta1111 = ret1111(GJBaseGameLayer*);
 using member1111 = ret1111(GJBaseGameLayer::*)();
 
-using ret1112 = void;
-using func1112 = ret1112(*)(GJBaseGameLayer*);
-using pure1112 = ret1112();
-using meta1112 = ret1112(GJBaseGameLayer*);
-using member1112 = ret1112(GJBaseGameLayer::*)();
+using ret1112 = cocos2d::CCArray*;
+using func1112 = ret1112(*)(GJBaseGameLayer*, cocos2d::CCRect);
+using pure1112 = ret1112(cocos2d::CCRect);
+using meta1112 = ret1112(GJBaseGameLayer*, cocos2d::CCRect);
+using member1112 = ret1112(GJBaseGameLayer::*)(cocos2d::CCRect);
 
 using ret1113 = void;
-using func1113 = ret1113(*)(GJBaseGameLayer*, int);
-using pure1113 = ret1113(int);
-using meta1113 = ret1113(GJBaseGameLayer*, int);
-using member1113 = ret1113(GJBaseGameLayer::*)(int);
+using func1113 = ret1113(*)(GJBaseGameLayer*);
+using pure1113 = ret1113();
+using meta1113 = ret1113(GJBaseGameLayer*);
+using member1113 = ret1113(GJBaseGameLayer::*)();
 
 using ret1114 = void;
-using func1114 = ret1114(*)(GJBaseGameLayer*, int);
-using pure1114 = ret1114(int);
-using meta1114 = ret1114(GJBaseGameLayer*, int);
-using member1114 = ret1114(GJBaseGameLayer::*)(int);
+using func1114 = ret1114(*)(GJBaseGameLayer*);
+using pure1114 = ret1114();
+using meta1114 = ret1114(GJBaseGameLayer*);
+using member1114 = ret1114(GJBaseGameLayer::*)();
 
 using ret1115 = void;
-using func1115 = ret1115(*)(GJBaseGameLayer*, int, int);
-using pure1115 = ret1115(int, int);
-using meta1115 = ret1115(GJBaseGameLayer*, int, int);
-using member1115 = ret1115(GJBaseGameLayer::*)(int, int);
+using func1115 = ret1115(*)(GJBaseGameLayer*, int);
+using pure1115 = ret1115(int);
+using meta1115 = ret1115(GJBaseGameLayer*, int);
+using member1115 = ret1115(GJBaseGameLayer::*)(int);
 
 using ret1116 = void;
 using func1116 = ret1116(*)(GJBaseGameLayer*, int);
@@ -3552,88 +3540,88 @@ using meta1116 = ret1116(GJBaseGameLayer*, int);
 using member1116 = ret1116(GJBaseGameLayer::*)(int);
 
 using ret1117 = void;
-using func1117 = ret1117(*)(GJBaseGameLayer*, int);
-using pure1117 = ret1117(int);
-using meta1117 = ret1117(GJBaseGameLayer*, int);
-using member1117 = ret1117(GJBaseGameLayer::*)(int);
+using func1117 = ret1117(*)(GJBaseGameLayer*, int, int);
+using pure1117 = ret1117(int, int);
+using meta1117 = ret1117(GJBaseGameLayer*, int, int);
+using member1117 = ret1117(GJBaseGameLayer::*)(int, int);
 
 using ret1118 = void;
-using func1118 = ret1118(*)(GJBaseGameLayer*, GameObject*);
-using pure1118 = ret1118(GameObject*);
-using meta1118 = ret1118(GJBaseGameLayer*, GameObject*);
-using member1118 = ret1118(GJBaseGameLayer::*)(GameObject*);
+using func1118 = ret1118(*)(GJBaseGameLayer*, int);
+using pure1118 = ret1118(int);
+using meta1118 = ret1118(GJBaseGameLayer*, int);
+using member1118 = ret1118(GJBaseGameLayer::*)(int);
 
 using ret1119 = void;
-using func1119 = ret1119(*)(GJBaseGameLayer*, GameObject*, cocos2d::CCArray*);
-using pure1119 = ret1119(GameObject*, cocos2d::CCArray*);
-using meta1119 = ret1119(GJBaseGameLayer*, GameObject*, cocos2d::CCArray*);
-using member1119 = ret1119(GJBaseGameLayer::*)(GameObject*, cocos2d::CCArray*);
+using func1119 = ret1119(*)(GJBaseGameLayer*, int);
+using pure1119 = ret1119(int);
+using meta1119 = ret1119(GJBaseGameLayer*, int);
+using member1119 = ret1119(GJBaseGameLayer::*)(int);
 
 using ret1120 = void;
-using func1120 = ret1120(*)(GJBaseGameLayer*, float);
-using pure1120 = ret1120(float);
-using meta1120 = ret1120(GJBaseGameLayer*, float);
-using member1120 = ret1120(GJBaseGameLayer::*)(float);
+using func1120 = ret1120(*)(GJBaseGameLayer*, GameObject*);
+using pure1120 = ret1120(GameObject*);
+using meta1120 = ret1120(GJBaseGameLayer*, GameObject*);
+using member1120 = ret1120(GJBaseGameLayer::*)(GameObject*);
 
 using ret1121 = void;
-using func1121 = ret1121(*)(GJBaseGameLayer*, GameObject*, GameObject*);
-using pure1121 = ret1121(GameObject*, GameObject*);
-using meta1121 = ret1121(GJBaseGameLayer*, GameObject*, GameObject*);
-using member1121 = ret1121(GJBaseGameLayer::*)(GameObject*, GameObject*);
+using func1121 = ret1121(*)(GJBaseGameLayer*, GameObject*, cocos2d::CCArray*);
+using pure1121 = ret1121(GameObject*, cocos2d::CCArray*);
+using meta1121 = ret1121(GJBaseGameLayer*, GameObject*, cocos2d::CCArray*);
+using member1121 = ret1121(GJBaseGameLayer::*)(GameObject*, cocos2d::CCArray*);
 
 using ret1122 = void;
-using func1122 = ret1122(*)(GJBaseGameLayer*, EffectGameObject*);
-using pure1122 = ret1122(EffectGameObject*);
-using meta1122 = ret1122(GJBaseGameLayer*, EffectGameObject*);
-using member1122 = ret1122(GJBaseGameLayer::*)(EffectGameObject*);
+using func1122 = ret1122(*)(GJBaseGameLayer*, float);
+using pure1122 = ret1122(float);
+using meta1122 = ret1122(GJBaseGameLayer*, float);
+using member1122 = ret1122(GJBaseGameLayer::*)(float);
 
 using ret1123 = void;
-using func1123 = ret1123(*)(GJBaseGameLayer*);
-using pure1123 = ret1123();
-using meta1123 = ret1123(GJBaseGameLayer*);
-using member1123 = ret1123(GJBaseGameLayer::*)();
+using func1123 = ret1123(*)(GJBaseGameLayer*, GameObject*, GameObject*);
+using pure1123 = ret1123(GameObject*, GameObject*);
+using meta1123 = ret1123(GJBaseGameLayer*, GameObject*, GameObject*);
+using member1123 = ret1123(GJBaseGameLayer::*)(GameObject*, GameObject*);
 
-using ret1124 = cocos2d::CCNode*;
-using func1124 = ret1124(*)(GJBaseGameLayer*, int, bool, int);
-using pure1124 = ret1124(int, bool, int);
-using meta1124 = ret1124(GJBaseGameLayer*, int, bool, int);
-using member1124 = ret1124(GJBaseGameLayer::*)(int, bool, int);
+using ret1124 = void;
+using func1124 = ret1124(*)(GJBaseGameLayer*, EffectGameObject*);
+using pure1124 = ret1124(EffectGameObject*);
+using meta1124 = ret1124(GJBaseGameLayer*, EffectGameObject*);
+using member1124 = ret1124(GJBaseGameLayer::*)(EffectGameObject*);
 
 using ret1125 = void;
-using func1125 = ret1125(*)(GJBaseGameLayer*, PlayerObject*, GameObject*);
-using pure1125 = ret1125(PlayerObject*, GameObject*);
-using meta1125 = ret1125(GJBaseGameLayer*, PlayerObject*, GameObject*);
-using member1125 = ret1125(GJBaseGameLayer::*)(PlayerObject*, GameObject*);
+using func1125 = ret1125(*)(GJBaseGameLayer*);
+using pure1125 = ret1125();
+using meta1125 = ret1125(GJBaseGameLayer*);
+using member1125 = ret1125(GJBaseGameLayer::*)();
 
-using ret1126 = void;
-using func1126 = ret1126(*)(GJBaseGameLayer*, EffectGameObject*, int, cocos2d::CCDictionary*, float, GJEffectManager*);
-using pure1126 = ret1126(EffectGameObject*, int, cocos2d::CCDictionary*, float, GJEffectManager*);
-using meta1126 = ret1126(GJBaseGameLayer*, EffectGameObject*, int, cocos2d::CCDictionary*, float, GJEffectManager*);
-using member1126 = ret1126(GJBaseGameLayer::*)(EffectGameObject*, int, cocos2d::CCDictionary*, float, GJEffectManager*);
+using ret1126 = cocos2d::CCNode*;
+using func1126 = ret1126(*)(GJBaseGameLayer*, int, bool, int);
+using pure1126 = ret1126(int, bool, int);
+using meta1126 = ret1126(GJBaseGameLayer*, int, bool, int);
+using member1126 = ret1126(GJBaseGameLayer::*)(int, bool, int);
 
 using ret1127 = void;
-using func1127 = ret1127(*)(GJBaseGameLayer*);
-using pure1127 = ret1127();
-using meta1127 = ret1127(GJBaseGameLayer*);
-using member1127 = ret1127(GJBaseGameLayer::*)();
+using func1127 = ret1127(*)(GJBaseGameLayer*, PlayerObject*, GameObject*);
+using pure1127 = ret1127(PlayerObject*, GameObject*);
+using meta1127 = ret1127(GJBaseGameLayer*, PlayerObject*, GameObject*);
+using member1127 = ret1127(GJBaseGameLayer::*)(PlayerObject*, GameObject*);
 
 using ret1128 = void;
-using func1128 = ret1128(*)(GJBaseGameLayer*);
-using pure1128 = ret1128();
-using meta1128 = ret1128(GJBaseGameLayer*);
-using member1128 = ret1128(GJBaseGameLayer::*)();
+using func1128 = ret1128(*)(GJBaseGameLayer*, EffectGameObject*, int, cocos2d::CCDictionary*, float, GJEffectManager*);
+using pure1128 = ret1128(EffectGameObject*, int, cocos2d::CCDictionary*, float, GJEffectManager*);
+using meta1128 = ret1128(GJBaseGameLayer*, EffectGameObject*, int, cocos2d::CCDictionary*, float, GJEffectManager*);
+using member1128 = ret1128(GJBaseGameLayer::*)(EffectGameObject*, int, cocos2d::CCDictionary*, float, GJEffectManager*);
 
 using ret1129 = void;
-using func1129 = ret1129(*)(GJBaseGameLayer*, float);
-using pure1129 = ret1129(float);
-using meta1129 = ret1129(GJBaseGameLayer*, float);
-using member1129 = ret1129(GJBaseGameLayer::*)(float);
+using func1129 = ret1129(*)(GJBaseGameLayer*);
+using pure1129 = ret1129();
+using meta1129 = ret1129(GJBaseGameLayer*);
+using member1129 = ret1129(GJBaseGameLayer::*)();
 
 using ret1130 = void;
-using func1130 = ret1130(*)(GJBaseGameLayer*, EffectGameObject*, cocos2d::CCDictionary*, float, GJEffectManager*);
-using pure1130 = ret1130(EffectGameObject*, cocos2d::CCDictionary*, float, GJEffectManager*);
-using meta1130 = ret1130(GJBaseGameLayer*, EffectGameObject*, cocos2d::CCDictionary*, float, GJEffectManager*);
-using member1130 = ret1130(GJBaseGameLayer::*)(EffectGameObject*, cocos2d::CCDictionary*, float, GJEffectManager*);
+using func1130 = ret1130(*)(GJBaseGameLayer*);
+using pure1130 = ret1130();
+using meta1130 = ret1130(GJBaseGameLayer*);
+using member1130 = ret1130(GJBaseGameLayer::*)();
 
 using ret1131 = void;
 using func1131 = ret1131(*)(GJBaseGameLayer*, float);
@@ -3642,46 +3630,46 @@ using meta1131 = ret1131(GJBaseGameLayer*, float);
 using member1131 = ret1131(GJBaseGameLayer::*)(float);
 
 using ret1132 = void;
-using func1132 = ret1132(*)(GJBaseGameLayer*);
-using pure1132 = ret1132();
-using meta1132 = ret1132(GJBaseGameLayer*);
-using member1132 = ret1132(GJBaseGameLayer::*)();
+using func1132 = ret1132(*)(GJBaseGameLayer*, EffectGameObject*, cocos2d::CCDictionary*, float, GJEffectManager*);
+using pure1132 = ret1132(EffectGameObject*, cocos2d::CCDictionary*, float, GJEffectManager*);
+using meta1132 = ret1132(GJBaseGameLayer*, EffectGameObject*, cocos2d::CCDictionary*, float, GJEffectManager*);
+using member1132 = ret1132(GJBaseGameLayer::*)(EffectGameObject*, cocos2d::CCDictionary*, float, GJEffectManager*);
 
 using ret1133 = void;
-using func1133 = ret1133(*)(GJBaseGameLayer*, int, bool);
-using pure1133 = ret1133(int, bool);
-using meta1133 = ret1133(GJBaseGameLayer*, int, bool);
-using member1133 = ret1133(GJBaseGameLayer::*)(int, bool);
+using func1133 = ret1133(*)(GJBaseGameLayer*, float);
+using pure1133 = ret1133(float);
+using meta1133 = ret1133(GJBaseGameLayer*, float);
+using member1133 = ret1133(GJBaseGameLayer::*)(float);
 
 using ret1134 = void;
-using func1134 = ret1134(*)(GJBaseGameLayer*, cocos2d::CCRect, cocos2d::CCPoint, float);
-using pure1134 = ret1134(cocos2d::CCRect, cocos2d::CCPoint, float);
-using meta1134 = ret1134(GJBaseGameLayer*, cocos2d::CCRect, cocos2d::CCPoint, float);
-using member1134 = ret1134(GJBaseGameLayer::*)(cocos2d::CCRect, cocos2d::CCPoint, float);
+using func1134 = ret1134(*)(GJBaseGameLayer*);
+using pure1134 = ret1134();
+using meta1134 = ret1134(GJBaseGameLayer*);
+using member1134 = ret1134(GJBaseGameLayer::*)();
 
 using ret1135 = void;
-using func1135 = ret1135(*)(GJBaseGameLayer*);
-using pure1135 = ret1135();
-using meta1135 = ret1135(GJBaseGameLayer*);
-using member1135 = ret1135(GJBaseGameLayer::*)();
+using func1135 = ret1135(*)(GJBaseGameLayer*, int, bool);
+using pure1135 = ret1135(int, bool);
+using meta1135 = ret1135(GJBaseGameLayer*, int, bool);
+using member1135 = ret1135(GJBaseGameLayer::*)(int, bool);
 
 using ret1136 = void;
-using func1136 = ret1136(*)(GJBaseGameLayer*, int, bool);
-using pure1136 = ret1136(int, bool);
-using meta1136 = ret1136(GJBaseGameLayer*, int, bool);
-using member1136 = ret1136(GJBaseGameLayer::*)(int, bool);
+using func1136 = ret1136(*)(GJBaseGameLayer*, cocos2d::CCRect, cocos2d::CCPoint, float);
+using pure1136 = ret1136(cocos2d::CCRect, cocos2d::CCPoint, float);
+using meta1136 = ret1136(GJBaseGameLayer*, cocos2d::CCRect, cocos2d::CCPoint, float);
+using member1136 = ret1136(GJBaseGameLayer::*)(cocos2d::CCRect, cocos2d::CCPoint, float);
 
 using ret1137 = void;
-using func1137 = ret1137(*)(GJBaseGameLayer*, GameObject*);
-using pure1137 = ret1137(GameObject*);
-using meta1137 = ret1137(GJBaseGameLayer*, GameObject*);
-using member1137 = ret1137(GJBaseGameLayer::*)(GameObject*);
+using func1137 = ret1137(*)(GJBaseGameLayer*);
+using pure1137 = ret1137();
+using meta1137 = ret1137(GJBaseGameLayer*);
+using member1137 = ret1137(GJBaseGameLayer::*)();
 
 using ret1138 = void;
-using func1138 = ret1138(*)(GJBaseGameLayer*, GameObject*);
-using pure1138 = ret1138(GameObject*);
-using meta1138 = ret1138(GJBaseGameLayer*, GameObject*);
-using member1138 = ret1138(GJBaseGameLayer::*)(GameObject*);
+using func1138 = ret1138(*)(GJBaseGameLayer*, int, bool);
+using pure1138 = ret1138(int, bool);
+using meta1138 = ret1138(GJBaseGameLayer*, int, bool);
+using member1138 = ret1138(GJBaseGameLayer::*)(int, bool);
 
 using ret1139 = void;
 using func1139 = ret1139(*)(GJBaseGameLayer*, GameObject*);
@@ -3690,16 +3678,22 @@ using meta1139 = ret1139(GJBaseGameLayer*, GameObject*);
 using member1139 = ret1139(GJBaseGameLayer::*)(GameObject*);
 
 using ret1140 = void;
-using func1140 = ret1140(*)(GJBaseGameLayer*, bool);
-using pure1140 = ret1140(bool);
-using meta1140 = ret1140(GJBaseGameLayer*, bool);
-using member1140 = ret1140(GJBaseGameLayer::*)(bool);
+using func1140 = ret1140(*)(GJBaseGameLayer*, GameObject*);
+using pure1140 = ret1140(GameObject*);
+using meta1140 = ret1140(GJBaseGameLayer*, GameObject*);
+using member1140 = ret1140(GJBaseGameLayer::*)(GameObject*);
 
 using ret1141 = void;
-using func1141 = ret1141(*)(GJBaseGameLayer*);
-using pure1141 = ret1141();
-using meta1141 = ret1141(GJBaseGameLayer*);
-using member1141 = ret1141(GJBaseGameLayer::*)();
+using func1141 = ret1141(*)(GJBaseGameLayer*, GameObject*);
+using pure1141 = ret1141(GameObject*);
+using meta1141 = ret1141(GJBaseGameLayer*, GameObject*);
+using member1141 = ret1141(GJBaseGameLayer::*)(GameObject*);
+
+using ret1142 = void;
+using func1142 = ret1142(*)(GJBaseGameLayer*, bool);
+using pure1142 = ret1142(bool);
+using meta1142 = ret1142(GJBaseGameLayer*, bool);
+using member1142 = ret1142(GJBaseGameLayer::*)(bool);
 
 using ret1143 = void;
 using func1143 = ret1143(*)(GJBaseGameLayer*);
@@ -3707,113 +3701,119 @@ using pure1143 = ret1143();
 using meta1143 = ret1143(GJBaseGameLayer*);
 using member1143 = ret1143(GJBaseGameLayer::*)();
 
-using ret1144 = void;
-using func1144 = ret1144(*)(GJBaseGameLayer*);
-using pure1144 = ret1144();
-using meta1144 = ret1144(GJBaseGameLayer*);
-using member1144 = ret1144(GJBaseGameLayer::*)();
-
 using ret1145 = void;
-using func1145 = ret1145(*)(GJBaseGameLayer*, int, float, int);
-using pure1145 = ret1145(int, float, int);
-using meta1145 = ret1145(GJBaseGameLayer*, int, float, int);
-using member1145 = ret1145(GJBaseGameLayer::*)(int, float, int);
+using func1145 = ret1145(*)(GJBaseGameLayer*);
+using pure1145 = ret1145();
+using meta1145 = ret1145(GJBaseGameLayer*);
+using member1145 = ret1145(GJBaseGameLayer::*)();
 
-using ret1146 = cocos2d::CCArray*;
-using func1146 = ret1146(*)(GJBaseGameLayer*, cocos2d::CCRect);
-using pure1146 = ret1146(cocos2d::CCRect);
-using meta1146 = ret1146(GJBaseGameLayer*, cocos2d::CCRect);
-using member1146 = ret1146(GJBaseGameLayer::*)(cocos2d::CCRect);
+using ret1146 = void;
+using func1146 = ret1146(*)(GJBaseGameLayer*);
+using pure1146 = ret1146();
+using meta1146 = ret1146(GJBaseGameLayer*);
+using member1146 = ret1146(GJBaseGameLayer::*)();
 
 using ret1147 = void;
-using func1147 = ret1147(*)(GJBaseGameLayer*, int, int, int, bool, int);
-using pure1147 = ret1147(int, int, int, bool, int);
-using meta1147 = ret1147(GJBaseGameLayer*, int, int, int, bool, int);
-using member1147 = ret1147(GJBaseGameLayer::*)(int, int, int, bool, int);
+using func1147 = ret1147(*)(GJBaseGameLayer*, int, float, int);
+using pure1147 = ret1147(int, float, int);
+using meta1147 = ret1147(GJBaseGameLayer*, int, float, int);
+using member1147 = ret1147(GJBaseGameLayer::*)(int, float, int);
 
-using ret1148 = void;
-using func1148 = ret1148(*)(GJBaseGameLayer*, int, bool);
-using pure1148 = ret1148(int, bool);
-using meta1148 = ret1148(GJBaseGameLayer*, int, bool);
-using member1148 = ret1148(GJBaseGameLayer::*)(int, bool);
+using ret1148 = cocos2d::CCArray*;
+using func1148 = ret1148(*)(GJBaseGameLayer*, cocos2d::CCRect);
+using pure1148 = ret1148(cocos2d::CCRect);
+using meta1148 = ret1148(GJBaseGameLayer*, cocos2d::CCRect);
+using member1148 = ret1148(GJBaseGameLayer::*)(cocos2d::CCRect);
 
 using ret1149 = void;
-using func1149 = ret1149(*)(GJBaseGameLayer*, bool);
-using pure1149 = ret1149(bool);
-using meta1149 = ret1149(GJBaseGameLayer*, bool);
-using member1149 = ret1149(GJBaseGameLayer::*)(bool);
+using func1149 = ret1149(*)(GJBaseGameLayer*, int, int, int, bool, int);
+using pure1149 = ret1149(int, int, int, bool, int);
+using meta1149 = ret1149(GJBaseGameLayer*, int, int, int, bool, int);
+using member1149 = ret1149(GJBaseGameLayer::*)(int, int, int, bool, int);
 
 using ret1150 = void;
-using func1150 = ret1150(*)(GJBaseGameLayer*, EffectGameObject*);
-using pure1150 = ret1150(EffectGameObject*);
-using meta1150 = ret1150(GJBaseGameLayer*, EffectGameObject*);
-using member1150 = ret1150(GJBaseGameLayer::*)(EffectGameObject*);
+using func1150 = ret1150(*)(GJBaseGameLayer*, int, bool);
+using pure1150 = ret1150(int, bool);
+using meta1150 = ret1150(GJBaseGameLayer*, int, bool);
+using member1150 = ret1150(GJBaseGameLayer::*)(int, bool);
 
 using ret1151 = void;
-using func1151 = ret1151(*)(GJBaseGameLayer*);
-using pure1151 = ret1151();
-using meta1151 = ret1151(GJBaseGameLayer*);
-using member1151 = ret1151(GJBaseGameLayer::*)();
+using func1151 = ret1151(*)(GJBaseGameLayer*, bool);
+using pure1151 = ret1151(bool);
+using meta1151 = ret1151(GJBaseGameLayer*, bool);
+using member1151 = ret1151(GJBaseGameLayer::*)(bool);
 
 using ret1152 = void;
-using func1152 = ret1152(*)(GJBaseGameLayer*, int, int);
-using pure1152 = ret1152(int, int);
-using meta1152 = ret1152(GJBaseGameLayer*, int, int);
-using member1152 = ret1152(GJBaseGameLayer::*)(int, int);
+using func1152 = ret1152(*)(GJBaseGameLayer*, EffectGameObject*);
+using pure1152 = ret1152(EffectGameObject*);
+using meta1152 = ret1152(GJBaseGameLayer*, EffectGameObject*);
+using member1152 = ret1152(GJBaseGameLayer::*)(EffectGameObject*);
 
 using ret1153 = void;
-using func1153 = ret1153(*)(GJBaseGameLayer*, cocos2d::CCArray*);
-using pure1153 = ret1153(cocos2d::CCArray*);
-using meta1153 = ret1153(GJBaseGameLayer*, cocos2d::CCArray*);
-using member1153 = ret1153(GJBaseGameLayer::*)(cocos2d::CCArray*);
+using func1153 = ret1153(*)(GJBaseGameLayer*);
+using pure1153 = ret1153();
+using meta1153 = ret1153(GJBaseGameLayer*);
+using member1153 = ret1153(GJBaseGameLayer::*)();
 
 using ret1154 = void;
-using func1154 = ret1154(*)(GJBaseGameLayer*, gd::string);
-using pure1154 = ret1154(gd::string);
-using meta1154 = ret1154(GJBaseGameLayer*, gd::string);
-using member1154 = ret1154(GJBaseGameLayer::*)(gd::string);
+using func1154 = ret1154(*)(GJBaseGameLayer*, int, int);
+using pure1154 = ret1154(int, int);
+using meta1154 = ret1154(GJBaseGameLayer*, int, int);
+using member1154 = ret1154(GJBaseGameLayer::*)(int, int);
 
 using ret1155 = void;
-using func1155 = ret1155(*)(GJBaseGameLayer*, int, int, int, int);
-using pure1155 = ret1155(int, int, int, int);
-using meta1155 = ret1155(GJBaseGameLayer*, int, int, int, int);
-using member1155 = ret1155(GJBaseGameLayer::*)(int, int, int, int);
+using func1155 = ret1155(*)(GJBaseGameLayer*, cocos2d::CCArray*);
+using pure1155 = ret1155(cocos2d::CCArray*);
+using meta1155 = ret1155(GJBaseGameLayer*, cocos2d::CCArray*);
+using member1155 = ret1155(GJBaseGameLayer::*)(cocos2d::CCArray*);
 
 using ret1156 = void;
-using func1156 = ret1156(*)(GJBaseGameLayer*, cocos2d::CCRect);
-using pure1156 = ret1156(cocos2d::CCRect);
-using meta1156 = ret1156(GJBaseGameLayer*, cocos2d::CCRect);
-using member1156 = ret1156(GJBaseGameLayer::*)(cocos2d::CCRect);
+using func1156 = ret1156(*)(GJBaseGameLayer*, gd::string);
+using pure1156 = ret1156(gd::string);
+using meta1156 = ret1156(GJBaseGameLayer*, gd::string);
+using member1156 = ret1156(GJBaseGameLayer::*)(gd::string);
 
 using ret1157 = void;
-using func1157 = ret1157(*)(GJBaseGameLayer*);
-using pure1157 = ret1157();
-using meta1157 = ret1157(GJBaseGameLayer*);
-using member1157 = ret1157(GJBaseGameLayer::*)();
+using func1157 = ret1157(*)(GJBaseGameLayer*, int, int, int, int);
+using pure1157 = ret1157(int, int, int, int);
+using meta1157 = ret1157(GJBaseGameLayer*, int, int, int, int);
+using member1157 = ret1157(GJBaseGameLayer::*)(int, int, int, int);
 
 using ret1158 = void;
-using func1158 = ret1158(*)(GJBaseGameLayer*);
-using pure1158 = ret1158();
-using meta1158 = ret1158(GJBaseGameLayer*);
-using member1158 = func1158;
+using func1158 = ret1158(*)(GJBaseGameLayer*, cocos2d::CCRect);
+using pure1158 = ret1158(cocos2d::CCRect);
+using meta1158 = ret1158(GJBaseGameLayer*, cocos2d::CCRect);
+using member1158 = ret1158(GJBaseGameLayer::*)(cocos2d::CCRect);
 
-using ret1072 = FMODAudioEngine*;
-using func1072 = ret1072(*)();
-using pure1072 = ret1072();
-using meta1072 = ret1072();
-using member1072 = func1072;
+using ret1159 = void;
+using func1159 = ret1159(*)(GJBaseGameLayer*);
+using pure1159 = ret1159();
+using meta1159 = ret1159(GJBaseGameLayer*);
+using member1159 = ret1159(GJBaseGameLayer::*)();
 
-using ret2175 = PulseEffectAction*;
-using func2175 = ret2175(*)(gd::string);
-using pure2175 = ret2175(gd::string);
-using meta2175 = ret2175(gd::string);
-using member2175 = func2175;
+using ret1160 = void;
+using func1160 = ret1160(*)(GJBaseGameLayer*);
+using pure1160 = ret1160();
+using meta1160 = ret1160(GJBaseGameLayer*);
+using member1160 = func1160;
 
-using ret2176 = gd::string;
-using func2176 = ret2176(*)(PulseEffectAction*);
-using pure2176 = ret2176();
-using meta2176 = ret2176(PulseEffectAction*);
-using member2176 = ret2176(PulseEffectAction::*)();
+using ret1074 = FMODAudioEngine*;
+using func1074 = ret1074(*)();
+using pure1074 = ret1074();
+using meta1074 = ret1074();
+using member1074 = func1074;
+
+using ret2178 = PulseEffectAction*;
+using func2178 = ret2178(*)(gd::string);
+using pure2178 = ret2178(gd::string);
+using meta2178 = ret2178(gd::string);
+using member2178 = func2178;
+
+using ret2179 = gd::string;
+using func2179 = ret2179(*)(PulseEffectAction*);
+using pure2179 = ret2179();
+using meta2179 = ret2179(PulseEffectAction*);
+using member2179 = ret2179(PulseEffectAction::*)();
 
 using ret934 = void;
 using func934 = ret934(*)(EditorPauseLayer*);
@@ -3875,77 +3875,77 @@ using pure927 = ret927(cocos2d::CCArray*, int, int, bool);
 using meta927 = ret927(EditButtonBar*, cocos2d::CCArray*, int, int, bool);
 using member927 = ret927(EditButtonBar::*)(cocos2d::CCArray*, int, int, bool);
 
-using ret2312 = ToggleTriggerAction*;
-using func2312 = ret2312(*)(gd::string);
-using pure2312 = ret2312(gd::string);
-using meta2312 = ret2312(gd::string);
-using member2312 = func2312;
+using ret2315 = ToggleTriggerAction*;
+using func2315 = ret2315(*)(gd::string);
+using pure2315 = ret2315(gd::string);
+using meta2315 = ret2315(gd::string);
+using member2315 = func2315;
 
-using ret1770 = LoadingLayer*;
-using func1770 = ret1770(*)(bool);
-using pure1770 = ret1770(bool);
-using meta1770 = ret1770(bool);
-using member1770 = func1770;
+using ret1773 = LoadingLayer*;
+using func1773 = ret1773(*)(bool);
+using pure1773 = ret1773(bool);
+using meta1773 = ret1773(bool);
+using member1773 = func1773;
 
-using ret1771 = bool;
-using func1771 = ret1771(*)(LoadingLayer*, bool);
-using pure1771 = ret1771(bool);
-using meta1771 = ret1771(LoadingLayer*, bool);
-using member1771 = ret1771(LoadingLayer::*)(bool);
+using ret1774 = bool;
+using func1774 = ret1774(*)(LoadingLayer*, bool);
+using pure1774 = ret1774(bool);
+using meta1774 = ret1774(LoadingLayer*, bool);
+using member1774 = ret1774(LoadingLayer::*)(bool);
 
-using ret1773 = void;
-using func1773 = ret1773(*)(LoadingLayer*);
-using pure1773 = ret1773();
-using meta1773 = ret1773(LoadingLayer*);
-using member1773 = ret1773(LoadingLayer::*)();
+using ret1776 = void;
+using func1776 = ret1776(*)(LoadingLayer*);
+using pure1776 = ret1776();
+using meta1776 = ret1776(LoadingLayer*);
+using member1776 = ret1776(LoadingLayer::*)();
 
-using ret2200 = SetIDLayer*;
-using func2200 = ret2200(*)(GameObject*);
-using pure2200 = ret2200(GameObject*);
-using meta2200 = ret2200(GameObject*);
-using member2200 = func2200;
+using ret2203 = SetIDLayer*;
+using func2203 = ret2203(*)(GameObject*);
+using pure2203 = ret2203(GameObject*);
+using meta2203 = ret2203(GameObject*);
+using member2203 = func2203;
 
-using ret1370 = GJGameLevel*;
-using func1370 = ret1370(*)(GameLevelManager*);
-using pure1370 = ret1370();
-using meta1370 = ret1370(GameLevelManager*);
-using member1370 = ret1370(GameLevelManager::*)();
+using ret1372 = GJGameLevel*;
+using func1372 = ret1372(*)(GameLevelManager*);
+using pure1372 = ret1372();
+using meta1372 = ret1372(GameLevelManager*);
+using member1372 = ret1372(GameLevelManager::*)();
 
-using ret1371 = GameLevelManager*;
-using func1371 = ret1371(*)();
-using pure1371 = ret1371();
-using meta1371 = ret1371();
-using member1371 = func1371;
+using ret1373 = GameLevelManager*;
+using func1373 = ret1373(*)();
+using pure1373 = ret1373();
+using meta1373 = ret1373();
+using member1373 = func1373;
 
-using ret1375 = void;
-using func1375 = ret1375(*)(GameLevelManager*, char const*);
-using pure1375 = ret1375(char const*);
-using meta1375 = ret1375(GameLevelManager*, char const*);
-using member1375 = ret1375(GameLevelManager::*)(char const*);
-
-using ret1377 = cocos2d::CCArray*;
+using ret1377 = void;
 using func1377 = ret1377(*)(GameLevelManager*, char const*);
 using pure1377 = ret1377(char const*);
 using meta1377 = ret1377(GameLevelManager*, char const*);
 using member1377 = ret1377(GameLevelManager::*)(char const*);
 
-using ret1378 = void;
-using func1378 = ret1378(*)(GameLevelManager*, int, int);
-using pure1378 = ret1378(int, int);
-using meta1378 = ret1378(GameLevelManager*, int, int);
-using member1378 = ret1378(GameLevelManager::*)(int, int);
-
-using ret1379 = void;
-using func1379 = ret1379(*)(GameLevelManager*, int);
-using pure1379 = ret1379(int);
-using meta1379 = ret1379(GameLevelManager*, int);
-using member1379 = ret1379(GameLevelManager::*)(int);
+using ret1379 = cocos2d::CCArray*;
+using func1379 = ret1379(*)(GameLevelManager*, char const*);
+using pure1379 = ret1379(char const*);
+using meta1379 = ret1379(GameLevelManager*, char const*);
+using member1379 = ret1379(GameLevelManager::*)(char const*);
 
 using ret1380 = void;
-using func1380 = ret1380(*)(GameLevelManager*, char const*);
-using pure1380 = ret1380(char const*);
-using meta1380 = ret1380(GameLevelManager*, char const*);
-using member1380 = ret1380(GameLevelManager::*)(char const*);
+using func1380 = ret1380(*)(GameLevelManager*, int, int);
+using pure1380 = ret1380(int, int);
+using meta1380 = ret1380(GameLevelManager*, int, int);
+using member1380 = ret1380(GameLevelManager::*)(int, int);
+
+using ret1381 = void;
+using func1381 = ret1381(*)(GameLevelManager*, int);
+using pure1381 = ret1381(int);
+using meta1381 = ret1381(GameLevelManager*, int);
+using member1381 = ret1381(GameLevelManager::*)(int);
+
+using ret1382 = void;
+using func1382 = ret1382(*)(GameLevelManager*, char const*);
+using pure1382 = ret1382(char const*);
+using meta1382 = ret1382(GameLevelManager*, char const*);
+using member1382 = ret1382(GameLevelManager::*)(char const*);
 
 using ret890 = bool;
 using func890 = ret890(*)(CustomSongLayer*, LevelSettingsObject*);
@@ -3989,23 +3989,23 @@ using pure877 = ret877(cocos2d::CCObject*);
 using meta877 = ret877(CreatorLayer*, cocos2d::CCObject*);
 using member877 = ret877(CreatorLayer::*)(cocos2d::CCObject*);
 
-using ret1575 = void;
-using func1575 = ret1575(*)(GameObjectCopy*);
-using pure1575 = ret1575();
-using meta1575 = ret1575(GameObjectCopy*);
-using member1575 = func1575;
-
-using ret1576 = GameObjectCopy*;
-using func1576 = ret1576(*)(GameObject*);
-using pure1576 = ret1576(GameObject*);
-using meta1576 = ret1576(GameObject*);
-using member1576 = func1576;
-
 using ret1577 = void;
 using func1577 = ret1577(*)(GameObjectCopy*);
 using pure1577 = ret1577();
 using meta1577 = ret1577(GameObjectCopy*);
-using member1577 = ret1577(GameObjectCopy::*)();
+using member1577 = func1577;
+
+using ret1578 = GameObjectCopy*;
+using func1578 = ret1578(*)(GameObject*);
+using pure1578 = ret1578(GameObject*);
+using meta1578 = ret1578(GameObject*);
+using member1578 = func1578;
+
+using ret1579 = void;
+using func1579 = ret1579(*)(GameObjectCopy*);
+using pure1579 = ret1579();
+using meta1579 = ret1579(GameObjectCopy*);
+using member1579 = ret1579(GameObjectCopy::*)();
 
 using ret528 = decltype(std::declval<cocos2d::CCString>().isEqual(std::declval<cocos2d::CCObject const*>()));
 using func528 = ret528(*)(cocos2d::CCString*, cocos2d::CCObject const*);
@@ -4061,23 +4061,23 @@ using pure866 = ret866(GJComment*);
 using meta866 = ret866(CommentCell*, GJComment*);
 using member866 = ret866(CommentCell::*)(GJComment*);
 
-using ret1806 = bool;
-using func1806 = ret1806(*)(MoreOptionsLayer*);
-using pure1806 = ret1806();
-using meta1806 = ret1806(MoreOptionsLayer*);
-using member1806 = ret1806(MoreOptionsLayer::*)();
+using ret1809 = bool;
+using func1809 = ret1809(*)(MoreOptionsLayer*);
+using pure1809 = ret1809();
+using meta1809 = ret1809(MoreOptionsLayer*);
+using member1809 = ret1809(MoreOptionsLayer::*)();
 
-using ret1807 = void;
-using func1807 = ret1807(*)(MoreOptionsLayer*, const char*, const char*, const char*);
-using pure1807 = ret1807(const char*, const char*, const char*);
-using meta1807 = ret1807(MoreOptionsLayer*, const char*, const char*, const char*);
-using member1807 = ret1807(MoreOptionsLayer::*)(const char*, const char*, const char*);
+using ret1810 = void;
+using func1810 = ret1810(*)(MoreOptionsLayer*, const char*, const char*, const char*);
+using pure1810 = ret1810(const char*, const char*, const char*);
+using meta1810 = ret1810(MoreOptionsLayer*, const char*, const char*, const char*);
+using member1810 = ret1810(MoreOptionsLayer::*)(const char*, const char*, const char*);
 
-using ret1809 = void;
-using func1809 = ret1809(*)(MoreOptionsLayer*, cocos2d::CCObject*);
-using pure1809 = ret1809(cocos2d::CCObject*);
-using meta1809 = ret1809(MoreOptionsLayer*, cocos2d::CCObject*);
-using member1809 = ret1809(MoreOptionsLayer::*)(cocos2d::CCObject*);
+using ret1812 = void;
+using func1812 = ret1812(*)(MoreOptionsLayer*, cocos2d::CCObject*);
+using pure1812 = ret1812(cocos2d::CCObject*);
+using meta1812 = ret1812(MoreOptionsLayer*, cocos2d::CCObject*);
+using member1812 = ret1812(MoreOptionsLayer::*)(cocos2d::CCObject*);
 
 using ret659 = decltype(cocos2d::ccGLBlendFunc(std::declval<GLenum>(), std::declval<GLenum>()));
 using func659 = ret659(*)(GLenum, GLenum);
@@ -4151,18 +4151,6 @@ using pure852 = ret852(gd::string);
 using meta852 = ret852(gd::string);
 using member852 = func852;
 
-using ret951 = void;
-using func951 = ret951(*)(EditorUI*);
-using pure951 = ret951();
-using meta951 = ret951(EditorUI*);
-using member951 = ret951(EditorUI::*)();
-
-using ret952 = void;
-using func952 = ret952(*)(EditorUI*, LevelEditorLayer*);
-using pure952 = ret952(LevelEditorLayer*);
-using meta952 = ret952(EditorUI*, LevelEditorLayer*);
-using member952 = ret952(EditorUI::*)(LevelEditorLayer*);
-
 using ret953 = void;
 using func953 = ret953(*)(EditorUI*);
 using pure953 = ret953();
@@ -4170,166 +4158,166 @@ using meta953 = ret953(EditorUI*);
 using member953 = ret953(EditorUI::*)();
 
 using ret954 = void;
-using func954 = ret954(*)(EditorUI*, cocos2d::CCObject*);
-using pure954 = ret954(cocos2d::CCObject*);
-using meta954 = ret954(EditorUI*, cocos2d::CCObject*);
-using member954 = ret954(EditorUI::*)(cocos2d::CCObject*);
+using func954 = ret954(*)(EditorUI*, LevelEditorLayer*);
+using pure954 = ret954(LevelEditorLayer*);
+using meta954 = ret954(EditorUI*, LevelEditorLayer*);
+using member954 = ret954(EditorUI::*)(LevelEditorLayer*);
 
 using ret955 = void;
-using func955 = ret955(*)(EditorUI*, CreateMenuItem*);
-using pure955 = ret955(CreateMenuItem*);
-using meta955 = ret955(EditorUI*, CreateMenuItem*);
-using member955 = ret955(EditorUI::*)(CreateMenuItem*);
+using func955 = ret955(*)(EditorUI*);
+using pure955 = ret955();
+using meta955 = ret955(EditorUI*);
+using member955 = ret955(EditorUI::*)();
 
 using ret956 = void;
-using func956 = ret956(*)(EditorUI*);
-using pure956 = ret956();
-using meta956 = ret956(EditorUI*);
-using member956 = ret956(EditorUI::*)();
+using func956 = ret956(*)(EditorUI*, cocos2d::CCObject*);
+using pure956 = ret956(cocos2d::CCObject*);
+using meta956 = ret956(EditorUI*, cocos2d::CCObject*);
+using member956 = ret956(EditorUI::*)(cocos2d::CCObject*);
 
 using ret957 = void;
-using func957 = ret957(*)(EditorUI*, cocos2d::CCObject*);
-using pure957 = ret957(cocos2d::CCObject*);
-using meta957 = ret957(EditorUI*, cocos2d::CCObject*);
-using member957 = ret957(EditorUI::*)(cocos2d::CCObject*);
+using func957 = ret957(*)(EditorUI*, CreateMenuItem*);
+using pure957 = ret957(CreateMenuItem*);
+using meta957 = ret957(EditorUI*, CreateMenuItem*);
+using member957 = ret957(EditorUI::*)(CreateMenuItem*);
 
 using ret958 = void;
-using func958 = ret958(*)(EditorUI*, CreateMenuItem*);
-using pure958 = ret958(CreateMenuItem*);
-using meta958 = ret958(EditorUI*, CreateMenuItem*);
-using member958 = ret958(EditorUI::*)(CreateMenuItem*);
+using func958 = ret958(*)(EditorUI*);
+using pure958 = ret958();
+using meta958 = ret958(EditorUI*);
+using member958 = ret958(EditorUI::*)();
 
-using ret959 = CCMenuItemSpriteExtra*;
-using func959 = ret959(*)(EditorUI*, int, int);
-using pure959 = ret959(int, int);
-using meta959 = ret959(EditorUI*, int, int);
-using member959 = ret959(EditorUI::*)(int, int);
+using ret959 = void;
+using func959 = ret959(*)(EditorUI*, cocos2d::CCObject*);
+using pure959 = ret959(cocos2d::CCObject*);
+using meta959 = ret959(EditorUI*, cocos2d::CCObject*);
+using member959 = ret959(EditorUI::*)(cocos2d::CCObject*);
 
-using ret960 = cocos2d::CCPoint;
-using func960 = ret960(*)(EditorUI*, cocos2d::CCArray*, bool);
-using pure960 = ret960(cocos2d::CCArray*, bool);
-using meta960 = ret960(EditorUI*, cocos2d::CCArray*, bool);
-using member960 = ret960(EditorUI::*)(cocos2d::CCArray*, bool);
+using ret960 = void;
+using func960 = ret960(*)(EditorUI*, CreateMenuItem*);
+using pure960 = ret960(CreateMenuItem*);
+using meta960 = ret960(EditorUI*, CreateMenuItem*);
+using member960 = ret960(EditorUI::*)(CreateMenuItem*);
 
-using ret961 = cocos2d::CCArray*;
-using func961 = ret961(*)(EditorUI*);
-using pure961 = ret961();
-using meta961 = ret961(EditorUI*);
-using member961 = ret961(EditorUI::*)();
+using ret961 = CCMenuItemSpriteExtra*;
+using func961 = ret961(*)(EditorUI*, int, int);
+using pure961 = ret961(int, int);
+using meta961 = ret961(EditorUI*, int, int);
+using member961 = ret961(EditorUI::*)(int, int);
 
-using ret962 = bool;
-using func962 = ret962(*)(EditorUI*, LevelEditorLayer*);
-using pure962 = ret962(LevelEditorLayer*);
-using meta962 = ret962(EditorUI*, LevelEditorLayer*);
-using member962 = ret962(EditorUI::*)(LevelEditorLayer*);
+using ret962 = cocos2d::CCPoint;
+using func962 = ret962(*)(EditorUI*, cocos2d::CCArray*, bool);
+using pure962 = ret962(cocos2d::CCArray*, bool);
+using meta962 = ret962(EditorUI*, cocos2d::CCArray*, bool);
+using member962 = ret962(EditorUI::*)(cocos2d::CCArray*, bool);
 
-using ret963 = bool;
-using func963 = ret963(*)(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using pure963 = ret963(cocos2d::CCTouch*, cocos2d::CCEvent*);
-using meta963 = ret963(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using member963 = ret963(EditorUI::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using ret963 = cocos2d::CCArray*;
+using func963 = ret963(*)(EditorUI*);
+using pure963 = ret963();
+using meta963 = ret963(EditorUI*);
+using member963 = ret963(EditorUI::*)();
 
-using ret964 = void;
-using func964 = ret964(*)(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using pure964 = ret964(cocos2d::CCTouch*, cocos2d::CCEvent*);
-using meta964 = ret964(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using member964 = ret964(EditorUI::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using ret964 = bool;
+using func964 = ret964(*)(EditorUI*, LevelEditorLayer*);
+using pure964 = ret964(LevelEditorLayer*);
+using meta964 = ret964(EditorUI*, LevelEditorLayer*);
+using member964 = ret964(EditorUI::*)(LevelEditorLayer*);
 
-using ret965 = void;
+using ret965 = bool;
 using func965 = ret965(*)(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
 using pure965 = ret965(cocos2d::CCTouch*, cocos2d::CCEvent*);
 using meta965 = ret965(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
 using member965 = ret965(EditorUI::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
 using ret966 = void;
-using func966 = ret966(*)(EditorUI*, cocos2d::enumKeyCodes);
-using pure966 = ret966(cocos2d::enumKeyCodes);
-using meta966 = ret966(EditorUI*, cocos2d::enumKeyCodes);
-using member966 = ret966(EditorUI::*)(cocos2d::enumKeyCodes);
+using func966 = ret966(*)(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using pure966 = ret966(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using meta966 = ret966(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using member966 = ret966(EditorUI::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
-using ret967 = CreateMenuItem*;
-using func967 = ret967(*)(EditorUI*, gd::string, int);
-using pure967 = ret967(gd::string, int);
-using meta967 = ret967(EditorUI*, gd::string, int);
-using member967 = ret967(EditorUI::*)(gd::string, int);
+using ret967 = void;
+using func967 = ret967(*)(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using pure967 = ret967(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using meta967 = ret967(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using member967 = ret967(EditorUI::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
 using ret968 = void;
-using func968 = ret968(*)(EditorUI*, GameObject*, cocos2d::CCPoint);
-using pure968 = ret968(GameObject*, cocos2d::CCPoint);
-using meta968 = ret968(EditorUI*, GameObject*, cocos2d::CCPoint);
-using member968 = ret968(EditorUI::*)(GameObject*, cocos2d::CCPoint);
+using func968 = ret968(*)(EditorUI*, cocos2d::enumKeyCodes);
+using pure968 = ret968(cocos2d::enumKeyCodes);
+using meta968 = ret968(EditorUI*, cocos2d::enumKeyCodes);
+using member968 = ret968(EditorUI::*)(cocos2d::enumKeyCodes);
 
-using ret969 = void;
-using func969 = ret969(*)(EditorUI*, cocos2d::CCObject*);
-using pure969 = ret969(cocos2d::CCObject*);
-using meta969 = ret969(EditorUI*, cocos2d::CCObject*);
-using member969 = ret969(EditorUI::*)(cocos2d::CCObject*);
+using ret969 = CreateMenuItem*;
+using func969 = ret969(*)(EditorUI*, gd::string, int);
+using pure969 = ret969(gd::string, int);
+using meta969 = ret969(EditorUI*, gd::string, int);
+using member969 = ret969(EditorUI::*)(gd::string, int);
 
 using ret970 = void;
-using func970 = ret970(*)(EditorUI*, int);
-using pure970 = ret970(int);
-using meta970 = ret970(EditorUI*, int);
-using member970 = ret970(EditorUI::*)(int);
+using func970 = ret970(*)(EditorUI*, GameObject*, cocos2d::CCPoint);
+using pure970 = ret970(GameObject*, cocos2d::CCPoint);
+using meta970 = ret970(EditorUI*, GameObject*, cocos2d::CCPoint);
+using member970 = ret970(EditorUI::*)(GameObject*, cocos2d::CCPoint);
 
-using ret971 = cocos2d::CCArray*;
-using func971 = ret971(*)(EditorUI*, gd::string);
-using pure971 = ret971(gd::string);
-using meta971 = ret971(EditorUI*, gd::string);
-using member971 = ret971(EditorUI::*)(gd::string);
+using ret971 = void;
+using func971 = ret971(*)(EditorUI*, cocos2d::CCObject*);
+using pure971 = ret971(cocos2d::CCObject*);
+using meta971 = ret971(EditorUI*, cocos2d::CCObject*);
+using member971 = ret971(EditorUI::*)(cocos2d::CCObject*);
 
 using ret972 = void;
-using func972 = ret972(*)(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using pure972 = ret972(cocos2d::CCTouch*, cocos2d::CCEvent*);
-using meta972 = ret972(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using member972 = ret972(EditorUI::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using func972 = ret972(*)(EditorUI*, int);
+using pure972 = ret972(int);
+using meta972 = ret972(EditorUI*, int);
+using member972 = ret972(EditorUI::*)(int);
 
-using ret973 = void;
-using func973 = ret973(*)(EditorUI*);
-using pure973 = ret973();
-using meta973 = ret973(EditorUI*);
-using member973 = ret973(EditorUI::*)();
+using ret973 = cocos2d::CCArray*;
+using func973 = ret973(*)(EditorUI*, gd::string);
+using pure973 = ret973(gd::string);
+using meta973 = ret973(EditorUI*, gd::string);
+using member973 = ret973(EditorUI::*)(gd::string);
 
 using ret974 = void;
-using func974 = ret974(*)(EditorUI*, cocos2d::CCObject*);
-using pure974 = ret974(cocos2d::CCObject*);
-using meta974 = ret974(EditorUI*, cocos2d::CCObject*);
-using member974 = ret974(EditorUI::*)(cocos2d::CCObject*);
+using func974 = ret974(*)(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using pure974 = ret974(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using meta974 = ret974(EditorUI*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using member974 = ret974(EditorUI::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
 using ret975 = void;
-using func975 = ret975(*)(EditorUI*, GameObject*, int, int);
-using pure975 = ret975(GameObject*, int, int);
-using meta975 = ret975(EditorUI*, GameObject*, int, int);
-using member975 = ret975(EditorUI::*)(GameObject*, int, int);
+using func975 = ret975(*)(EditorUI*);
+using pure975 = ret975();
+using meta975 = ret975(EditorUI*);
+using member975 = ret975(EditorUI::*)();
 
 using ret976 = void;
-using func976 = ret976(*)(EditorUI*, float);
-using pure976 = ret976(float);
-using meta976 = ret976(EditorUI*, float);
-using member976 = ret976(EditorUI::*)(float);
+using func976 = ret976(*)(EditorUI*, cocos2d::CCObject*);
+using pure976 = ret976(cocos2d::CCObject*);
+using meta976 = ret976(EditorUI*, cocos2d::CCObject*);
+using member976 = ret976(EditorUI::*)(cocos2d::CCObject*);
 
 using ret977 = void;
-using func977 = ret977(*)(EditorUI*, cocos2d::CCArray*, float, cocos2d::CCPoint);
-using pure977 = ret977(cocos2d::CCArray*, float, cocos2d::CCPoint);
-using meta977 = ret977(EditorUI*, cocos2d::CCArray*, float, cocos2d::CCPoint);
-using member977 = ret977(EditorUI::*)(cocos2d::CCArray*, float, cocos2d::CCPoint);
+using func977 = ret977(*)(EditorUI*, GameObject*, int, int);
+using pure977 = ret977(GameObject*, int, int);
+using meta977 = ret977(EditorUI*, GameObject*, int, int);
+using member977 = ret977(EditorUI::*)(GameObject*, int, int);
 
 using ret978 = void;
-using func978 = ret978(*)(EditorUI*, cocos2d::CCArray*, bool);
-using pure978 = ret978(cocos2d::CCArray*, bool);
-using meta978 = ret978(EditorUI*, cocos2d::CCArray*, bool);
-using member978 = ret978(EditorUI::*)(cocos2d::CCArray*, bool);
+using func978 = ret978(*)(EditorUI*, float);
+using pure978 = ret978(float);
+using meta978 = ret978(EditorUI*, float);
+using member978 = ret978(EditorUI::*)(float);
 
 using ret979 = void;
-using func979 = ret979(*)(EditorUI*);
-using pure979 = ret979();
-using meta979 = ret979(EditorUI*);
-using member979 = ret979(EditorUI::*)();
+using func979 = ret979(*)(EditorUI*, cocos2d::CCArray*, float, cocos2d::CCPoint);
+using pure979 = ret979(cocos2d::CCArray*, float, cocos2d::CCPoint);
+using meta979 = ret979(EditorUI*, cocos2d::CCArray*, float, cocos2d::CCPoint);
+using member979 = ret979(EditorUI::*)(cocos2d::CCArray*, float, cocos2d::CCPoint);
 
 using ret980 = void;
-using func980 = ret980(*)(EditorUI*, cocos2d::CCObject*);
-using pure980 = ret980(cocos2d::CCObject*);
-using meta980 = ret980(EditorUI*, cocos2d::CCObject*);
-using member980 = ret980(EditorUI::*)(cocos2d::CCObject*);
+using func980 = ret980(*)(EditorUI*, cocos2d::CCArray*, bool);
+using pure980 = ret980(cocos2d::CCArray*, bool);
+using meta980 = ret980(EditorUI*, cocos2d::CCArray*, bool);
+using member980 = ret980(EditorUI::*)(cocos2d::CCArray*, bool);
 
 using ret981 = void;
 using func981 = ret981(*)(EditorUI*);
@@ -4338,10 +4326,10 @@ using meta981 = ret981(EditorUI*);
 using member981 = ret981(EditorUI::*)();
 
 using ret982 = void;
-using func982 = ret982(*)(EditorUI*);
-using pure982 = ret982();
-using meta982 = ret982(EditorUI*);
-using member982 = ret982(EditorUI::*)();
+using func982 = ret982(*)(EditorUI*, cocos2d::CCObject*);
+using pure982 = ret982(cocos2d::CCObject*);
+using meta982 = ret982(EditorUI*, cocos2d::CCObject*);
+using member982 = ret982(EditorUI::*)(cocos2d::CCObject*);
 
 using ret983 = void;
 using func983 = ret983(*)(EditorUI*);
@@ -4350,22 +4338,22 @@ using meta983 = ret983(EditorUI*);
 using member983 = ret983(EditorUI::*)();
 
 using ret984 = void;
-using func984 = ret984(*)(EditorUI*, float);
-using pure984 = ret984(float);
-using meta984 = ret984(EditorUI*, float);
-using member984 = ret984(EditorUI::*)(float);
+using func984 = ret984(*)(EditorUI*);
+using pure984 = ret984();
+using meta984 = ret984(EditorUI*);
+using member984 = ret984(EditorUI::*)();
 
 using ret985 = void;
-using func985 = ret985(*)(EditorUI*, GameObject*, bool);
-using pure985 = ret985(GameObject*, bool);
-using meta985 = ret985(EditorUI*, GameObject*, bool);
-using member985 = ret985(EditorUI::*)(GameObject*, bool);
+using func985 = ret985(*)(EditorUI*);
+using pure985 = ret985();
+using meta985 = ret985(EditorUI*);
+using member985 = ret985(EditorUI::*)();
 
 using ret986 = void;
-using func986 = ret986(*)(EditorUI*, GameObject*);
-using pure986 = ret986(GameObject*);
-using meta986 = ret986(EditorUI*, GameObject*);
-using member986 = ret986(EditorUI::*)(GameObject*);
+using func986 = ret986(*)(EditorUI*, float);
+using pure986 = ret986(float);
+using meta986 = ret986(EditorUI*, float);
+using member986 = ret986(EditorUI::*)(float);
 
 using ret987 = void;
 using func987 = ret987(*)(EditorUI*, GameObject*, bool);
@@ -4373,23 +4361,23 @@ using pure987 = ret987(GameObject*, bool);
 using meta987 = ret987(EditorUI*, GameObject*, bool);
 using member987 = ret987(EditorUI::*)(GameObject*, bool);
 
-using ret996 = void;
-using func996 = ret996(*)(EditorUI*, bool);
-using pure996 = ret996(bool);
-using meta996 = ret996(EditorUI*, bool);
-using member996 = ret996(EditorUI::*)(bool);
+using ret988 = void;
+using func988 = ret988(*)(EditorUI*, GameObject*);
+using pure988 = ret988(GameObject*);
+using meta988 = ret988(EditorUI*, GameObject*);
+using member988 = ret988(EditorUI::*)(GameObject*);
 
-using ret997 = void;
-using func997 = ret997(*)(EditorUI*, cocos2d::CCObject*);
-using pure997 = ret997(cocos2d::CCObject*);
-using meta997 = ret997(EditorUI*, cocos2d::CCObject*);
-using member997 = ret997(EditorUI::*)(cocos2d::CCObject*);
+using ret989 = void;
+using func989 = ret989(*)(EditorUI*, GameObject*, bool);
+using pure989 = ret989(GameObject*, bool);
+using meta989 = ret989(EditorUI*, GameObject*, bool);
+using member989 = ret989(EditorUI::*)(GameObject*, bool);
 
 using ret998 = void;
-using func998 = ret998(*)(EditorUI*, cocos2d::CCObject*);
-using pure998 = ret998(cocos2d::CCObject*);
-using meta998 = ret998(EditorUI*, cocos2d::CCObject*);
-using member998 = ret998(EditorUI::*)(cocos2d::CCObject*);
+using func998 = ret998(*)(EditorUI*, bool);
+using pure998 = ret998(bool);
+using meta998 = ret998(EditorUI*, bool);
+using member998 = ret998(EditorUI::*)(bool);
 
 using ret999 = void;
 using func999 = ret999(*)(EditorUI*, cocos2d::CCObject*);
@@ -4397,53 +4385,53 @@ using pure999 = ret999(cocos2d::CCObject*);
 using meta999 = ret999(EditorUI*, cocos2d::CCObject*);
 using member999 = ret999(EditorUI::*)(cocos2d::CCObject*);
 
+using ret1000 = void;
+using func1000 = ret1000(*)(EditorUI*, cocos2d::CCObject*);
+using pure1000 = ret1000(cocos2d::CCObject*);
+using meta1000 = ret1000(EditorUI*, cocos2d::CCObject*);
+using member1000 = ret1000(EditorUI::*)(cocos2d::CCObject*);
+
 using ret1001 = void;
-using func1001 = ret1001(*)(EditorUI*);
-using pure1001 = ret1001();
-using meta1001 = ret1001(EditorUI*);
-using member1001 = ret1001(EditorUI::*)();
+using func1001 = ret1001(*)(EditorUI*, cocos2d::CCObject*);
+using pure1001 = ret1001(cocos2d::CCObject*);
+using meta1001 = ret1001(EditorUI*, cocos2d::CCObject*);
+using member1001 = ret1001(EditorUI::*)(cocos2d::CCObject*);
 
 using ret1003 = void;
-using func1003 = ret1003(*)(EditorUI*, float, float);
-using pure1003 = ret1003(float, float);
-using meta1003 = ret1003(EditorUI*, float, float);
-using member1003 = ret1003(EditorUI::*)(float, float);
-
-using ret1004 = void;
-using func1004 = ret1004(*)(EditorUI*, cocos2d::CCPoint const&);
-using pure1004 = ret1004(cocos2d::CCPoint const&);
-using meta1004 = ret1004(EditorUI*, cocos2d::CCPoint const&);
-using member1004 = ret1004(EditorUI::*)(cocos2d::CCPoint const&);
+using func1003 = ret1003(*)(EditorUI*);
+using pure1003 = ret1003();
+using meta1003 = ret1003(EditorUI*);
+using member1003 = ret1003(EditorUI::*)();
 
 using ret1005 = void;
-using func1005 = ret1005(*)(EditorUI*, bool);
-using pure1005 = ret1005(bool);
-using meta1005 = ret1005(EditorUI*, bool);
-using member1005 = ret1005(EditorUI::*)(bool);
+using func1005 = ret1005(*)(EditorUI*, float, float);
+using pure1005 = ret1005(float, float);
+using meta1005 = ret1005(EditorUI*, float, float);
+using member1005 = ret1005(EditorUI::*)(float, float);
 
-using ret1008 = void;
-using func1008 = ret1008(*)(EditorUI*, EditCommand);
-using pure1008 = ret1008(EditCommand);
-using meta1008 = ret1008(EditorUI*, EditCommand);
-using member1008 = ret1008(EditorUI::*)(EditCommand);
+using ret1006 = void;
+using func1006 = ret1006(*)(EditorUI*, cocos2d::CCPoint const&);
+using pure1006 = ret1006(cocos2d::CCPoint const&);
+using meta1006 = ret1006(EditorUI*, cocos2d::CCPoint const&);
+using member1006 = ret1006(EditorUI::*)(cocos2d::CCPoint const&);
 
-using ret1009 = void;
-using func1009 = ret1009(*)(EditorUI*, EditCommand);
-using pure1009 = ret1009(EditCommand);
-using meta1009 = ret1009(EditorUI*, EditCommand);
-using member1009 = ret1009(EditorUI::*)(EditCommand);
+using ret1007 = void;
+using func1007 = ret1007(*)(EditorUI*, bool);
+using pure1007 = ret1007(bool);
+using meta1007 = ret1007(EditorUI*, bool);
+using member1007 = ret1007(EditorUI::*)(bool);
 
 using ret1010 = void;
-using func1010 = ret1010(*)(EditorUI*, cocos2d::CCObject*);
-using pure1010 = ret1010(cocos2d::CCObject*);
-using meta1010 = ret1010(EditorUI*, cocos2d::CCObject*);
-using member1010 = ret1010(EditorUI::*)(cocos2d::CCObject*);
+using func1010 = ret1010(*)(EditorUI*, EditCommand);
+using pure1010 = ret1010(EditCommand);
+using meta1010 = ret1010(EditorUI*, EditCommand);
+using member1010 = ret1010(EditorUI::*)(EditCommand);
 
 using ret1011 = void;
-using func1011 = ret1011(*)(EditorUI*, cocos2d::CCObject*);
-using pure1011 = ret1011(cocos2d::CCObject*);
-using meta1011 = ret1011(EditorUI*, cocos2d::CCObject*);
-using member1011 = ret1011(EditorUI::*)(cocos2d::CCObject*);
+using func1011 = ret1011(*)(EditorUI*, EditCommand);
+using pure1011 = ret1011(EditCommand);
+using meta1011 = ret1011(EditorUI*, EditCommand);
+using member1011 = ret1011(EditorUI::*)(EditCommand);
 
 using ret1012 = void;
 using func1012 = ret1012(*)(EditorUI*, cocos2d::CCObject*);
@@ -4506,10 +4494,10 @@ using meta1021 = ret1021(EditorUI*, cocos2d::CCObject*);
 using member1021 = ret1021(EditorUI::*)(cocos2d::CCObject*);
 
 using ret1022 = void;
-using func1022 = ret1022(*)(EditorUI*, int);
-using pure1022 = ret1022(int);
-using meta1022 = ret1022(EditorUI*, int);
-using member1022 = ret1022(EditorUI::*)(int);
+using func1022 = ret1022(*)(EditorUI*, cocos2d::CCObject*);
+using pure1022 = ret1022(cocos2d::CCObject*);
+using meta1022 = ret1022(EditorUI*, cocos2d::CCObject*);
+using member1022 = ret1022(EditorUI::*)(cocos2d::CCObject*);
 
 using ret1023 = void;
 using func1023 = ret1023(*)(EditorUI*, cocos2d::CCObject*);
@@ -4517,11 +4505,23 @@ using pure1023 = ret1023(cocos2d::CCObject*);
 using meta1023 = ret1023(EditorUI*, cocos2d::CCObject*);
 using member1023 = ret1023(EditorUI::*)(cocos2d::CCObject*);
 
-using ret1042 = void;
-using func1042 = ret1042(*)(EditorUI*, cocos2d::enumKeyCodes);
-using pure1042 = ret1042(cocos2d::enumKeyCodes);
-using meta1042 = ret1042(EditorUI*, cocos2d::enumKeyCodes);
-using member1042 = ret1042(EditorUI::*)(cocos2d::enumKeyCodes);
+using ret1024 = void;
+using func1024 = ret1024(*)(EditorUI*, int);
+using pure1024 = ret1024(int);
+using meta1024 = ret1024(EditorUI*, int);
+using member1024 = ret1024(EditorUI::*)(int);
+
+using ret1025 = void;
+using func1025 = ret1025(*)(EditorUI*, cocos2d::CCObject*);
+using pure1025 = ret1025(cocos2d::CCObject*);
+using meta1025 = ret1025(EditorUI*, cocos2d::CCObject*);
+using member1025 = ret1025(EditorUI::*)(cocos2d::CCObject*);
+
+using ret1044 = void;
+using func1044 = ret1044(*)(EditorUI*, cocos2d::enumKeyCodes);
+using pure1044 = ret1044(cocos2d::enumKeyCodes);
+using meta1044 = ret1044(EditorUI*, cocos2d::enumKeyCodes);
+using member1044 = ret1044(EditorUI::*)(cocos2d::enumKeyCodes);
 
 using ret850 = CollisionBlockPopup*;
 using func850 = ret850(*)(EffectGameObject*, cocos2d::CCArray*);
@@ -4553,11 +4553,11 @@ using pure872 = ret872(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, c
 using meta872 = ret872(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, cocos2d::SEL_MenuHandler);
 using member872 = func872;
 
-using ret1776 = LocalLevelManager*;
-using func1776 = ret1776(*)();
-using pure1776 = ret1776();
-using meta1776 = ret1776();
-using member1776 = func1776;
+using ret1779 = LocalLevelManager*;
+using func1779 = ret1779(*)();
+using pure1779 = ret1779();
+using meta1779 = ret1779();
+using member1779 = func1779;
 
 using ret790 = void;
 using func790 = ret790(*)(CCScrollLayerExt*);
@@ -4727,35 +4727,23 @@ using pure121 = ret121(float);
 using meta121 = ret121(float);
 using member121 = func121;
 
-using ret1587 = void;
-using func1587 = ret1587(*)(GameStatsManager*, GJGameLevel*);
-using pure1587 = ret1587(GJGameLevel*);
-using meta1587 = ret1587(GameStatsManager*, GJGameLevel*);
-using member1587 = ret1587(GameStatsManager::*)(GJGameLevel*);
-
-using ret1588 = void;
-using func1588 = ret1588(*)(GameStatsManager*, GJGameLevel*);
-using pure1588 = ret1588(GJGameLevel*);
-using meta1588 = ret1588(GameStatsManager*, GJGameLevel*);
-using member1588 = ret1588(GameStatsManager::*)(GJGameLevel*);
-
 using ret1589 = void;
-using func1589 = ret1589(*)(GameStatsManager*);
-using pure1589 = ret1589();
-using meta1589 = ret1589(GameStatsManager*);
-using member1589 = ret1589(GameStatsManager::*)();
+using func1589 = ret1589(*)(GameStatsManager*, GJGameLevel*);
+using pure1589 = ret1589(GJGameLevel*);
+using meta1589 = ret1589(GameStatsManager*, GJGameLevel*);
+using member1589 = ret1589(GameStatsManager::*)(GJGameLevel*);
 
-using ret1594 = void;
-using func1594 = ret1594(*)(GameStatsManager*, char const*);
-using pure1594 = ret1594(char const*);
-using meta1594 = ret1594(GameStatsManager*, char const*);
-using member1594 = ret1594(GameStatsManager::*)(char const*);
+using ret1590 = void;
+using func1590 = ret1590(*)(GameStatsManager*, GJGameLevel*);
+using pure1590 = ret1590(GJGameLevel*);
+using meta1590 = ret1590(GameStatsManager*, GJGameLevel*);
+using member1590 = ret1590(GameStatsManager::*)(GJGameLevel*);
 
-using ret1595 = void;
-using func1595 = ret1595(*)(GameStatsManager*, char const*);
-using pure1595 = ret1595(char const*);
-using meta1595 = ret1595(GameStatsManager*, char const*);
-using member1595 = ret1595(GameStatsManager::*)(char const*);
+using ret1591 = void;
+using func1591 = ret1591(*)(GameStatsManager*);
+using pure1591 = ret1591();
+using meta1591 = ret1591(GameStatsManager*);
+using member1591 = ret1591(GameStatsManager::*)();
 
 using ret1596 = void;
 using func1596 = ret1596(*)(GameStatsManager*, char const*);
@@ -4775,41 +4763,53 @@ using pure1598 = ret1598(char const*);
 using meta1598 = ret1598(GameStatsManager*, char const*);
 using member1598 = ret1598(GameStatsManager::*)(char const*);
 
+using ret1599 = void;
+using func1599 = ret1599(*)(GameStatsManager*, char const*);
+using pure1599 = ret1599(char const*);
+using meta1599 = ret1599(GameStatsManager*, char const*);
+using member1599 = ret1599(GameStatsManager::*)(char const*);
+
 using ret1600 = void;
 using func1600 = ret1600(*)(GameStatsManager*, char const*);
 using pure1600 = ret1600(char const*);
 using meta1600 = ret1600(GameStatsManager*, char const*);
 using member1600 = ret1600(GameStatsManager::*)(char const*);
 
-using ret1601 = void;
-using func1601 = ret1601(*)(GameStatsManager*, char const*, int);
-using pure1601 = ret1601(char const*, int);
-using meta1601 = ret1601(GameStatsManager*, char const*, int);
-using member1601 = ret1601(GameStatsManager::*)(char const*, int);
-
-using ret1602 = GameStatsManager*;
-using func1602 = ret1602(*)();
-using pure1602 = ret1602();
-using meta1602 = ret1602();
-using member1602 = func1602;
+using ret1602 = void;
+using func1602 = ret1602(*)(GameStatsManager*, char const*);
+using pure1602 = ret1602(char const*);
+using meta1602 = ret1602(GameStatsManager*, char const*);
+using member1602 = ret1602(GameStatsManager::*)(char const*);
 
 using ret1603 = void;
-using func1603 = ret1603(*)(GameStatsManager*, char const*);
-using pure1603 = ret1603(char const*);
-using meta1603 = ret1603(GameStatsManager*, char const*);
-using member1603 = ret1603(GameStatsManager::*)(char const*);
+using func1603 = ret1603(*)(GameStatsManager*, char const*, int);
+using pure1603 = ret1603(char const*, int);
+using meta1603 = ret1603(GameStatsManager*, char const*, int);
+using member1603 = ret1603(GameStatsManager::*)(char const*, int);
 
-using ret1604 = void;
-using func1604 = ret1604(*)(GameStatsManager*, char const*);
-using pure1604 = ret1604(char const*);
-using meta1604 = ret1604(GameStatsManager*, char const*);
-using member1604 = ret1604(GameStatsManager::*)(char const*);
+using ret1604 = GameStatsManager*;
+using func1604 = ret1604(*)();
+using pure1604 = ret1604();
+using meta1604 = ret1604();
+using member1604 = func1604;
 
 using ret1605 = void;
 using func1605 = ret1605(*)(GameStatsManager*, char const*);
 using pure1605 = ret1605(char const*);
 using meta1605 = ret1605(GameStatsManager*, char const*);
 using member1605 = ret1605(GameStatsManager::*)(char const*);
+
+using ret1606 = void;
+using func1606 = ret1606(*)(GameStatsManager*, char const*);
+using pure1606 = ret1606(char const*);
+using meta1606 = ret1606(GameStatsManager*, char const*);
+using member1606 = ret1606(GameStatsManager::*)(char const*);
+
+using ret1607 = void;
+using func1607 = ret1607(*)(GameStatsManager*, char const*);
+using pure1607 = ret1607(char const*);
+using meta1607 = ret1607(GameStatsManager*, char const*);
+using member1607 = ret1607(GameStatsManager::*)(char const*);
 
 using ret739 = CCCircleWave*;
 using func739 = ret739(*)(float, float, float, bool);
@@ -4841,11 +4841,11 @@ using pure743 = ret743(float);
 using meta743 = ret743(CCCircleWave*, float);
 using member743 = ret743(CCCircleWave::*)(float);
 
-using ret1650 = LevelBrowserLayer*;
-using func1650 = ret1650(*)(GJSearchObject*);
-using pure1650 = ret1650(GJSearchObject*);
-using meta1650 = ret1650(GJSearchObject*);
-using member1650 = func1650;
+using ret1652 = LevelBrowserLayer*;
+using func1652 = ret1652(*)(GJSearchObject*);
+using pure1652 = ret1652(GJSearchObject*);
+using meta1652 = ret1652(GJSearchObject*);
+using member1652 = func1652;
 
 using ret727 = void;
 using func727 = ret727(*)(CCBlockLayer*);
@@ -5255,29 +5255,29 @@ using pure577 = ret577();
 using meta577 = ret577(cocos2d::CCTouchHandler*);
 using member577 = func577;
 
-using ret2223 = SetupInteractObjectPopup*;
-using func2223 = ret2223(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2223 = ret2223(EffectGameObject*, cocos2d::CCArray*);
-using meta2223 = ret2223(EffectGameObject*, cocos2d::CCArray*);
-using member2223 = func2223;
+using ret2226 = SetupInteractObjectPopup*;
+using func2226 = ret2226(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2226 = ret2226(EffectGameObject*, cocos2d::CCArray*);
+using meta2226 = ret2226(EffectGameObject*, cocos2d::CCArray*);
+using member2226 = func2226;
 
-using ret2224 = void;
-using func2224 = ret2224(*)(SetupInteractObjectPopup*, cocos2d::CCObject*);
-using pure2224 = ret2224(cocos2d::CCObject*);
-using meta2224 = ret2224(SetupInteractObjectPopup*, cocos2d::CCObject*);
-using member2224 = ret2224(SetupInteractObjectPopup::*)(cocos2d::CCObject*);
+using ret2227 = void;
+using func2227 = ret2227(*)(SetupInteractObjectPopup*, cocos2d::CCObject*);
+using pure2227 = ret2227(cocos2d::CCObject*);
+using meta2227 = ret2227(SetupInteractObjectPopup*, cocos2d::CCObject*);
+using member2227 = ret2227(SetupInteractObjectPopup::*)(cocos2d::CCObject*);
 
-using ret2225 = void;
-using func2225 = ret2225(*)(SetupInteractObjectPopup*, CCTextInputNode*);
-using pure2225 = ret2225(CCTextInputNode*);
-using meta2225 = ret2225(SetupInteractObjectPopup*, CCTextInputNode*);
-using member2225 = ret2225(SetupInteractObjectPopup::*)(CCTextInputNode*);
+using ret2228 = void;
+using func2228 = ret2228(*)(SetupInteractObjectPopup*, CCTextInputNode*);
+using pure2228 = ret2228(CCTextInputNode*);
+using meta2228 = ret2228(SetupInteractObjectPopup*, CCTextInputNode*);
+using member2228 = ret2228(SetupInteractObjectPopup::*)(CCTextInputNode*);
 
-using ret2226 = void;
-using func2226 = ret2226(*)(SetupInteractObjectPopup*);
-using pure2226 = ret2226();
-using meta2226 = ret2226(SetupInteractObjectPopup*);
-using member2226 = ret2226(SetupInteractObjectPopup::*)();
+using ret2229 = void;
+using func2229 = ret2229(*)(SetupInteractObjectPopup*);
+using pure2229 = ret2229();
+using meta2229 = ret2229(SetupInteractObjectPopup*);
+using member2229 = ret2229(SetupInteractObjectPopup::*)();
 
 using ret451 = void;
 using func451 = ret451(*)(cocos2d::CCSprite*);
@@ -5699,23 +5699,23 @@ using pure573 = ret573(cocos2d::CCSet*, cocos2d::CCEvent*, unsigned int);
 using meta573 = ret573(cocos2d::CCTouchDispatcher*, cocos2d::CCSet*, cocos2d::CCEvent*, unsigned int);
 using member573 = ret573(cocos2d::CCTouchDispatcher::*)(cocos2d::CCSet*, cocos2d::CCEvent*, unsigned int);
 
-using ret2334 = void;
-using func2334 = ret2334(*)(UndoObject*);
-using pure2334 = ret2334();
-using meta2334 = ret2334(UndoObject*);
-using member2334 = func2334;
+using ret2337 = void;
+using func2337 = ret2337(*)(UndoObject*);
+using pure2337 = ret2337();
+using meta2337 = ret2337(UndoObject*);
+using member2337 = func2337;
 
-using ret2335 = UndoObject*;
-using func2335 = ret2335(*)(GameObject*, UndoCommand);
-using pure2335 = ret2335(GameObject*, UndoCommand);
-using meta2335 = ret2335(GameObject*, UndoCommand);
-using member2335 = func2335;
+using ret2338 = UndoObject*;
+using func2338 = ret2338(*)(GameObject*, UndoCommand);
+using pure2338 = ret2338(GameObject*, UndoCommand);
+using meta2338 = ret2338(GameObject*, UndoCommand);
+using member2338 = func2338;
 
-using ret2336 = UndoObject*;
-using func2336 = ret2336(*)(cocos2d::CCArray*, UndoCommand);
-using pure2336 = ret2336(cocos2d::CCArray*, UndoCommand);
-using meta2336 = ret2336(cocos2d::CCArray*, UndoCommand);
-using member2336 = func2336;
+using ret2339 = UndoObject*;
+using func2339 = ret2339(*)(cocos2d::CCArray*, UndoCommand);
+using pure2339 = ret2339(cocos2d::CCArray*, UndoCommand);
+using meta2339 = ret2339(cocos2d::CCArray*, UndoCommand);
+using member2339 = func2339;
 
 using ret272 = decltype(std::declval<cocos2d::CCMotionStreak>().reset());
 using func272 = ret272(*)(cocos2d::CCMotionStreak*);
@@ -5747,11 +5747,11 @@ using pure563 = ret563(float, unsigned char, unsigned char, unsigned char);
 using meta563 = ret563(float, unsigned char, unsigned char, unsigned char);
 using member563 = func563;
 
-using ret1052 = EndLevelLayer*;
-using func1052 = ret1052(*)();
-using pure1052 = ret1052();
-using meta1052 = ret1052();
-using member1052 = func1052;
+using ret1054 = EndLevelLayer*;
+using func1054 = ret1054(*)();
+using pure1054 = ret1054();
+using meta1054 = ret1054();
+using member1054 = func1054;
 
 using ret671 = void;
 using func671 = ret671(*)(AnimatedGameObject*, int);
@@ -6011,41 +6011,41 @@ using pure521 = ret521();
 using meta521 = ret521(cocos2d::CCSpriteFrame*);
 using member521 = ret521(cocos2d::CCSpriteFrame::*)();
 
-using ret1755 = void;
-using func1755 = ret1755(*)(LevelSettingsObject*);
-using pure1755 = ret1755();
-using meta1755 = ret1755(LevelSettingsObject*);
-using member1755 = func1755;
-
-using ret1756 = bool;
-using func1756 = ret1756(*)(LevelSettingsObject*);
-using pure1756 = ret1756();
-using meta1756 = ret1756(LevelSettingsObject*);
-using member1756 = ret1756(LevelSettingsObject::*)();
-
-using ret1757 = LevelSettingsObject*;
-using func1757 = ret1757(*)();
-using pure1757 = ret1757();
-using meta1757 = ret1757();
-using member1757 = func1757;
-
 using ret1758 = void;
-using func1758 = ret1758(*)(LevelSettingsObject*, cocos2d::CCDictionary*);
-using pure1758 = ret1758(cocos2d::CCDictionary*);
-using meta1758 = ret1758(LevelSettingsObject*, cocos2d::CCDictionary*);
-using member1758 = ret1758(LevelSettingsObject::*)(cocos2d::CCDictionary*);
+using func1758 = ret1758(*)(LevelSettingsObject*);
+using pure1758 = ret1758();
+using meta1758 = ret1758(LevelSettingsObject*);
+using member1758 = func1758;
 
-using ret1759 = LevelSettingsObject*;
-using func1759 = ret1759(*)(gd::string);
-using pure1759 = ret1759(gd::string);
-using meta1759 = ret1759(gd::string);
-using member1759 = func1759;
+using ret1759 = bool;
+using func1759 = ret1759(*)(LevelSettingsObject*);
+using pure1759 = ret1759();
+using meta1759 = ret1759(LevelSettingsObject*);
+using member1759 = ret1759(LevelSettingsObject::*)();
 
-using ret1760 = void;
-using func1760 = ret1760(*)(LevelSettingsObject*, cocos2d::CCDictionary*);
-using pure1760 = ret1760(cocos2d::CCDictionary*);
-using meta1760 = ret1760(LevelSettingsObject*, cocos2d::CCDictionary*);
-using member1760 = ret1760(LevelSettingsObject::*)(cocos2d::CCDictionary*);
+using ret1760 = LevelSettingsObject*;
+using func1760 = ret1760(*)();
+using pure1760 = ret1760();
+using meta1760 = ret1760();
+using member1760 = func1760;
+
+using ret1761 = void;
+using func1761 = ret1761(*)(LevelSettingsObject*, cocos2d::CCDictionary*);
+using pure1761 = ret1761(cocos2d::CCDictionary*);
+using meta1761 = ret1761(LevelSettingsObject*, cocos2d::CCDictionary*);
+using member1761 = ret1761(LevelSettingsObject::*)(cocos2d::CCDictionary*);
+
+using ret1762 = LevelSettingsObject*;
+using func1762 = ret1762(*)(gd::string);
+using pure1762 = ret1762(gd::string);
+using meta1762 = ret1762(gd::string);
+using member1762 = func1762;
+
+using ret1763 = void;
+using func1763 = ret1763(*)(LevelSettingsObject*, cocos2d::CCDictionary*);
+using pure1763 = ret1763(cocos2d::CCDictionary*);
+using meta1763 = ret1763(LevelSettingsObject*, cocos2d::CCDictionary*);
+using member1763 = ret1763(LevelSettingsObject::*)(cocos2d::CCDictionary*);
 
 using ret539 = void;
 using func539 = ret539(*)(cocos2d::CCTexture2D*);
@@ -6179,73 +6179,61 @@ using pure538 = ret538();
 using meta538 = ret538(cocos2d::CCTargetedTouchHandler*);
 using member538 = func538;
 
-using ret1308 = void;
-using func1308 = ret1308(*)(GJRobotSprite*);
-using pure1308 = ret1308();
-using meta1308 = ret1308(GJRobotSprite*);
-using member1308 = func1308;
-
-using ret1309 = bool;
-using func1309 = ret1309(*)(GJRobotSprite*);
-using pure1309 = ret1309();
-using meta1309 = ret1309(GJRobotSprite*);
-using member1309 = ret1309(GJRobotSprite::*)();
-
 using ret1310 = void;
-using func1310 = ret1310(*)(GJRobotSprite*, unsigned char);
-using pure1310 = ret1310(unsigned char);
-using meta1310 = ret1310(GJRobotSprite*, unsigned char);
-using member1310 = ret1310(GJRobotSprite::*)(unsigned char);
+using func1310 = ret1310(*)(GJRobotSprite*);
+using pure1310 = ret1310();
+using meta1310 = ret1310(GJRobotSprite*);
+using member1310 = func1310;
 
-using ret1311 = void;
+using ret1311 = bool;
 using func1311 = ret1311(*)(GJRobotSprite*);
 using pure1311 = ret1311();
 using meta1311 = ret1311(GJRobotSprite*);
 using member1311 = ret1311(GJRobotSprite::*)();
 
-using ret1312 = GJRobotSprite*;
-using func1312 = ret1312(*)();
-using pure1312 = ret1312();
-using meta1312 = ret1312();
-using member1312 = func1312;
+using ret1312 = void;
+using func1312 = ret1312(*)(GJRobotSprite*, unsigned char);
+using pure1312 = ret1312(unsigned char);
+using meta1312 = ret1312(GJRobotSprite*, unsigned char);
+using member1312 = ret1312(GJRobotSprite::*)(unsigned char);
 
 using ret1313 = void;
-using func1313 = ret1313(*)(GJRobotSprite*, cocos2d::_ccColor3B);
-using pure1313 = ret1313(cocos2d::_ccColor3B);
-using meta1313 = ret1313(GJRobotSprite*, cocos2d::_ccColor3B);
-using member1313 = ret1313(GJRobotSprite::*)(cocos2d::_ccColor3B);
+using func1313 = ret1313(*)(GJRobotSprite*);
+using pure1313 = ret1313();
+using meta1313 = ret1313(GJRobotSprite*);
+using member1313 = ret1313(GJRobotSprite::*)();
 
-using ret1314 = void;
-using func1314 = ret1314(*)(GJRobotSprite*, int);
-using pure1314 = ret1314(int);
-using meta1314 = ret1314(GJRobotSprite*, int);
-using member1314 = ret1314(GJRobotSprite::*)(int);
+using ret1314 = GJRobotSprite*;
+using func1314 = ret1314(*)();
+using pure1314 = ret1314();
+using meta1314 = ret1314();
+using member1314 = func1314;
 
 using ret1315 = void;
-using func1315 = ret1315(*)(GJRobotSprite*);
-using pure1315 = ret1315();
-using meta1315 = ret1315(GJRobotSprite*);
-using member1315 = ret1315(GJRobotSprite::*)();
+using func1315 = ret1315(*)(GJRobotSprite*, cocos2d::_ccColor3B);
+using pure1315 = ret1315(cocos2d::_ccColor3B);
+using meta1315 = ret1315(GJRobotSprite*, cocos2d::_ccColor3B);
+using member1315 = ret1315(GJRobotSprite::*)(cocos2d::_ccColor3B);
 
-using ret1056 = void;
-using func1056 = ret1056(*)(FLAlertLayer*);
-using pure1056 = ret1056();
-using meta1056 = ret1056(FLAlertLayer*);
-using member1056 = ret1056(FLAlertLayer::*)();
+using ret1316 = void;
+using func1316 = ret1316(*)(GJRobotSprite*, int);
+using pure1316 = ret1316(int);
+using meta1316 = ret1316(GJRobotSprite*, int);
+using member1316 = ret1316(GJRobotSprite::*)(int);
 
-using ret1057 = bool;
-using func1057 = ret1057(*)(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using pure1057 = ret1057(cocos2d::CCTouch*, cocos2d::CCEvent*);
-using meta1057 = ret1057(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using member1057 = ret1057(FLAlertLayer::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using ret1317 = void;
+using func1317 = ret1317(*)(GJRobotSprite*);
+using pure1317 = ret1317();
+using meta1317 = ret1317(GJRobotSprite*);
+using member1317 = ret1317(GJRobotSprite::*)();
 
 using ret1058 = void;
-using func1058 = ret1058(*)(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using pure1058 = ret1058(cocos2d::CCTouch*, cocos2d::CCEvent*);
-using meta1058 = ret1058(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using member1058 = ret1058(FLAlertLayer::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using func1058 = ret1058(*)(FLAlertLayer*);
+using pure1058 = ret1058();
+using meta1058 = ret1058(FLAlertLayer*);
+using member1058 = ret1058(FLAlertLayer::*)();
 
-using ret1059 = void;
+using ret1059 = bool;
 using func1059 = ret1059(*)(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
 using pure1059 = ret1059(cocos2d::CCTouch*, cocos2d::CCEvent*);
 using meta1059 = ret1059(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
@@ -6258,22 +6246,22 @@ using meta1060 = ret1060(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
 using member1060 = ret1060(FLAlertLayer::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
 using ret1061 = void;
-using func1061 = ret1061(*)(FLAlertLayer*);
-using pure1061 = ret1061();
-using meta1061 = ret1061(FLAlertLayer*);
-using member1061 = ret1061(FLAlertLayer::*)();
+using func1061 = ret1061(*)(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using pure1061 = ret1061(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using meta1061 = ret1061(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using member1061 = ret1061(FLAlertLayer::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
 using ret1062 = void;
-using func1062 = ret1062(*)(FLAlertLayer*);
-using pure1062 = ret1062();
-using meta1062 = ret1062(FLAlertLayer*);
-using member1062 = ret1062(FLAlertLayer::*)();
+using func1062 = ret1062(*)(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using pure1062 = ret1062(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using meta1062 = ret1062(FLAlertLayer*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using member1062 = ret1062(FLAlertLayer::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
 using ret1063 = void;
-using func1063 = ret1063(*)(FLAlertLayer*, cocos2d::enumKeyCodes);
-using pure1063 = ret1063(cocos2d::enumKeyCodes);
-using meta1063 = ret1063(FLAlertLayer*, cocos2d::enumKeyCodes);
-using member1063 = ret1063(FLAlertLayer::*)(cocos2d::enumKeyCodes);
+using func1063 = ret1063(*)(FLAlertLayer*);
+using pure1063 = ret1063();
+using meta1063 = ret1063(FLAlertLayer*);
+using member1063 = ret1063(FLAlertLayer::*)();
 
 using ret1064 = void;
 using func1064 = ret1064(*)(FLAlertLayer*);
@@ -6281,47 +6269,59 @@ using pure1064 = ret1064();
 using meta1064 = ret1064(FLAlertLayer*);
 using member1064 = ret1064(FLAlertLayer::*)();
 
-using ret1065 = bool;
-using func1065 = ret1065(*)(FLAlertLayer*, FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
-using pure1065 = ret1065(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
-using meta1065 = ret1065(FLAlertLayer*, FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
-using member1065 = ret1065(FLAlertLayer::*)(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
+using ret1065 = void;
+using func1065 = ret1065(*)(FLAlertLayer*, cocos2d::enumKeyCodes);
+using pure1065 = ret1065(cocos2d::enumKeyCodes);
+using meta1065 = ret1065(FLAlertLayer*, cocos2d::enumKeyCodes);
+using member1065 = ret1065(FLAlertLayer::*)(cocos2d::enumKeyCodes);
 
-using ret1066 = FLAlertLayer*;
-using func1066 = ret1066(*)(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*);
-using pure1066 = ret1066(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*);
-using meta1066 = ret1066(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*);
-using member1066 = func1066;
+using ret1066 = void;
+using func1066 = ret1066(*)(FLAlertLayer*);
+using pure1066 = ret1066();
+using meta1066 = ret1066(FLAlertLayer*);
+using member1066 = ret1066(FLAlertLayer::*)();
 
-using ret1067 = FLAlertLayer*;
-using func1067 = ret1067(*)(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float);
-using pure1067 = ret1067(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float);
-using meta1067 = ret1067(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float);
-using member1067 = func1067;
+using ret1067 = bool;
+using func1067 = ret1067(*)(FLAlertLayer*, FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
+using pure1067 = ret1067(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
+using meta1067 = ret1067(FLAlertLayer*, FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
+using member1067 = ret1067(FLAlertLayer::*)(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
 
 using ret1068 = FLAlertLayer*;
-using func1068 = ret1068(*)(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
-using pure1068 = ret1068(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
-using meta1068 = ret1068(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
+using func1068 = ret1068(*)(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*);
+using pure1068 = ret1068(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*);
+using meta1068 = ret1068(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*);
 using member1068 = func1068;
 
-using ret1069 = void;
-using func1069 = ret1069(*)(FLAlertLayer*, cocos2d::CCObject*);
-using pure1069 = ret1069(cocos2d::CCObject*);
-using meta1069 = ret1069(FLAlertLayer*, cocos2d::CCObject*);
-using member1069 = ret1069(FLAlertLayer::*)(cocos2d::CCObject*);
+using ret1069 = FLAlertLayer*;
+using func1069 = ret1069(*)(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float);
+using pure1069 = ret1069(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float);
+using meta1069 = ret1069(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float);
+using member1069 = func1069;
 
-using ret1070 = void;
-using func1070 = ret1070(*)(FLAlertLayer*, cocos2d::CCObject*);
-using pure1070 = ret1070(cocos2d::CCObject*);
-using meta1070 = ret1070(FLAlertLayer*, cocos2d::CCObject*);
-using member1070 = ret1070(FLAlertLayer::*)(cocos2d::CCObject*);
+using ret1070 = FLAlertLayer*;
+using func1070 = ret1070(*)(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
+using pure1070 = ret1070(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
+using meta1070 = ret1070(FLAlertLayerProtocol*, char const*, gd::string, char const*, char const*, float, bool, float);
+using member1070 = func1070;
 
-using ret1607 = CCMenuItemToggler*;
-using func1607 = ret1607(*)(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCNode*, float, float, float, cocos2d::CCPoint, const char*, bool, int, cocos2d::CCArray*);
-using pure1607 = ret1607(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCNode*, float, float, float, cocos2d::CCPoint, const char*, bool, int, cocos2d::CCArray*);
-using meta1607 = ret1607(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCNode*, float, float, float, cocos2d::CCPoint, const char*, bool, int, cocos2d::CCArray*);
-using member1607 = func1607;
+using ret1071 = void;
+using func1071 = ret1071(*)(FLAlertLayer*, cocos2d::CCObject*);
+using pure1071 = ret1071(cocos2d::CCObject*);
+using meta1071 = ret1071(FLAlertLayer*, cocos2d::CCObject*);
+using member1071 = ret1071(FLAlertLayer::*)(cocos2d::CCObject*);
+
+using ret1072 = void;
+using func1072 = ret1072(*)(FLAlertLayer*, cocos2d::CCObject*);
+using pure1072 = ret1072(cocos2d::CCObject*);
+using meta1072 = ret1072(FLAlertLayer*, cocos2d::CCObject*);
+using member1072 = ret1072(FLAlertLayer::*)(cocos2d::CCObject*);
+
+using ret1609 = CCMenuItemToggler*;
+using func1609 = ret1609(*)(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCNode*, float, float, float, cocos2d::CCPoint, const char*, bool, int, cocos2d::CCArray*);
+using pure1609 = ret1609(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCNode*, float, float, float, cocos2d::CCPoint, const char*, bool, int, cocos2d::CCArray*);
+using meta1609 = ret1609(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCNode*, float, float, float, cocos2d::CCPoint, const char*, bool, int, cocos2d::CCArray*);
+using member1609 = func1609;
 
 using ret515 = cocos2d::CCSpriteBatchNode*;
 using func515 = ret515(*)(char const*, unsigned int);
@@ -6383,11 +6383,11 @@ using pure438 = ret438(float, float, float);
 using meta438 = ret438(float, float, float);
 using member438 = func438;
 
-using ret1343 = void;
-using func1343 = ret1343(*)(GJSpriteColor*);
-using pure1343 = ret1343();
-using meta1343 = ret1343(GJSpriteColor*);
-using member1343 = ret1343(GJSpriteColor::*)();
+using ret1345 = void;
+using func1345 = ret1345(*)(GJSpriteColor*);
+using pure1345 = ret1345();
+using meta1345 = ret1345(GJSpriteColor*);
+using member1345 = ret1345(GJSpriteColor::*)();
 
 using ret436 = cocos2d::CCRotateTo*;
 using func436 = ret436(*)(float, float);
@@ -6425,29 +6425,29 @@ using pure426 = ret426();
 using meta426 = ret426(cocos2d::CCParticleSystem*);
 using member426 = ret426(cocos2d::CCParticleSystem::*)();
 
-using ret2211 = SetupCollisionTriggerPopup*;
-using func2211 = ret2211(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2211 = ret2211(EffectGameObject*, cocos2d::CCArray*);
-using meta2211 = ret2211(EffectGameObject*, cocos2d::CCArray*);
-using member2211 = func2211;
+using ret2214 = SetupCollisionTriggerPopup*;
+using func2214 = ret2214(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2214 = ret2214(EffectGameObject*, cocos2d::CCArray*);
+using meta2214 = ret2214(EffectGameObject*, cocos2d::CCArray*);
+using member2214 = func2214;
 
-using ret2212 = void;
-using func2212 = ret2212(*)(SetupCollisionTriggerPopup*, cocos2d::CCObject*);
-using pure2212 = ret2212(cocos2d::CCObject*);
-using meta2212 = ret2212(SetupCollisionTriggerPopup*, cocos2d::CCObject*);
-using member2212 = ret2212(SetupCollisionTriggerPopup::*)(cocos2d::CCObject*);
+using ret2215 = void;
+using func2215 = ret2215(*)(SetupCollisionTriggerPopup*, cocos2d::CCObject*);
+using pure2215 = ret2215(cocos2d::CCObject*);
+using meta2215 = ret2215(SetupCollisionTriggerPopup*, cocos2d::CCObject*);
+using member2215 = ret2215(SetupCollisionTriggerPopup::*)(cocos2d::CCObject*);
 
-using ret2213 = void;
-using func2213 = ret2213(*)(SetupCollisionTriggerPopup*, CCTextInputNode*);
-using pure2213 = ret2213(CCTextInputNode*);
-using meta2213 = ret2213(SetupCollisionTriggerPopup*, CCTextInputNode*);
-using member2213 = ret2213(SetupCollisionTriggerPopup::*)(CCTextInputNode*);
+using ret2216 = void;
+using func2216 = ret2216(*)(SetupCollisionTriggerPopup*, CCTextInputNode*);
+using pure2216 = ret2216(CCTextInputNode*);
+using meta2216 = ret2216(SetupCollisionTriggerPopup*, CCTextInputNode*);
+using member2216 = ret2216(SetupCollisionTriggerPopup::*)(CCTextInputNode*);
 
-using ret2214 = void;
-using func2214 = ret2214(*)(SetupCollisionTriggerPopup*);
-using pure2214 = ret2214();
-using meta2214 = ret2214(SetupCollisionTriggerPopup*);
-using member2214 = ret2214(SetupCollisionTriggerPopup::*)();
+using ret2217 = void;
+using func2217 = ret2217(*)(SetupCollisionTriggerPopup*);
+using pure2217 = ret2217();
+using meta2217 = ret2217(SetupCollisionTriggerPopup*);
+using member2217 = ret2217(SetupCollisionTriggerPopup::*)();
 
 using ret282 = cocos2d::CCMoveTo*;
 using func282 = ret282(*)(float, cocos2d::CCPoint const&);
@@ -6677,11 +6677,11 @@ using pure187 = ret187();
 using meta187 = ret187(cocos2d::CCLayer*);
 using member187 = func187;
 
-using ret1338 = const char*;
-using func1338 = ret1338(*)(int);
-using pure1338 = ret1338(int);
-using meta1338 = ret1338(int);
-using member1338 = func1338;
+using ret1340 = const char*;
+using func1340 = ret1340(*)(int);
+using pure1340 = ret1340(int);
+using meta1340 = ret1340(int);
+using member1340 = func1340;
 
 using ret558 = decltype(cocos2d::CCTextFieldTTF::textFieldWithPlaceHolder(std::declval<char const*>(), std::declval<char const*>(), std::declval<float>()));
 using func558 = ret558(*)(char const*, char const*, float);
@@ -6779,29 +6779,29 @@ using pure271 = ret271(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, c
 using meta271 = ret271(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, cocos2d::SEL_MenuHandler);
 using member271 = func271;
 
-using ret2252 = SetupTouchTogglePopup*;
-using func2252 = ret2252(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2252 = ret2252(EffectGameObject*, cocos2d::CCArray*);
-using meta2252 = ret2252(EffectGameObject*, cocos2d::CCArray*);
-using member2252 = func2252;
+using ret2255 = SetupTouchTogglePopup*;
+using func2255 = ret2255(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2255 = ret2255(EffectGameObject*, cocos2d::CCArray*);
+using meta2255 = ret2255(EffectGameObject*, cocos2d::CCArray*);
+using member2255 = func2255;
 
-using ret2253 = void;
-using func2253 = ret2253(*)(SetupTouchTogglePopup*, cocos2d::CCObject*);
-using pure2253 = ret2253(cocos2d::CCObject*);
-using meta2253 = ret2253(SetupTouchTogglePopup*, cocos2d::CCObject*);
-using member2253 = ret2253(SetupTouchTogglePopup::*)(cocos2d::CCObject*);
+using ret2256 = void;
+using func2256 = ret2256(*)(SetupTouchTogglePopup*, cocos2d::CCObject*);
+using pure2256 = ret2256(cocos2d::CCObject*);
+using meta2256 = ret2256(SetupTouchTogglePopup*, cocos2d::CCObject*);
+using member2256 = ret2256(SetupTouchTogglePopup::*)(cocos2d::CCObject*);
 
-using ret2254 = void;
-using func2254 = ret2254(*)(SetupTouchTogglePopup*, CCTextInputNode*);
-using pure2254 = ret2254(CCTextInputNode*);
-using meta2254 = ret2254(SetupTouchTogglePopup*, CCTextInputNode*);
-using member2254 = ret2254(SetupTouchTogglePopup::*)(CCTextInputNode*);
+using ret2257 = void;
+using func2257 = ret2257(*)(SetupTouchTogglePopup*, CCTextInputNode*);
+using pure2257 = ret2257(CCTextInputNode*);
+using meta2257 = ret2257(SetupTouchTogglePopup*, CCTextInputNode*);
+using member2257 = ret2257(SetupTouchTogglePopup::*)(CCTextInputNode*);
 
-using ret2255 = void;
-using func2255 = ret2255(*)(SetupTouchTogglePopup*);
-using pure2255 = ret2255();
-using meta2255 = ret2255(SetupTouchTogglePopup*);
-using member2255 = ret2255(SetupTouchTogglePopup::*)();
+using ret2258 = void;
+using func2258 = ret2258(*)(SetupTouchTogglePopup*);
+using pure2258 = ret2258();
+using meta2258 = ret2258(SetupTouchTogglePopup*);
+using member2258 = ret2258(SetupTouchTogglePopup::*)();
 
 using ret123 = cocos2d::CCFileUtils*;
 using func123 = ret123(*)();
@@ -7595,65 +7595,53 @@ using pure445 = ret445(float);
 using meta445 = ret445(cocos2d::CCScheduler*, float);
 using member445 = ret445(cocos2d::CCScheduler::*)(float);
 
-using ret1615 = void;
-using func1615 = ret1615(*)(HardStreak*);
-using pure1615 = ret1615();
-using meta1615 = ret1615(HardStreak*);
-using member1615 = func1615;
-
-using ret1616 = bool;
-using func1616 = ret1616(*)(HardStreak*);
-using pure1616 = ret1616();
-using meta1616 = ret1616(HardStreak*);
-using member1616 = ret1616(HardStreak::*)();
-
 using ret1617 = void;
-using func1617 = ret1617(*)(HardStreak*, cocos2d::CCPoint);
-using pure1617 = ret1617(cocos2d::CCPoint);
-using meta1617 = ret1617(HardStreak*, cocos2d::CCPoint);
-using member1617 = ret1617(HardStreak::*)(cocos2d::CCPoint);
+using func1617 = ret1617(*)(HardStreak*);
+using pure1617 = ret1617();
+using meta1617 = ret1617(HardStreak*);
+using member1617 = func1617;
 
-using ret1618 = void;
-using func1618 = ret1618(*)(HardStreak*, float);
-using pure1618 = ret1618(float);
-using meta1618 = ret1618(HardStreak*, float);
-using member1618 = ret1618(HardStreak::*)(float);
+using ret1618 = bool;
+using func1618 = ret1618(*)(HardStreak*);
+using pure1618 = ret1618();
+using meta1618 = ret1618(HardStreak*);
+using member1618 = ret1618(HardStreak::*)();
 
-using ret1619 = HardStreak*;
-using func1619 = ret1619(*)();
-using pure1619 = ret1619();
-using meta1619 = ret1619();
-using member1619 = func1619;
+using ret1619 = void;
+using func1619 = ret1619(*)(HardStreak*, cocos2d::CCPoint);
+using pure1619 = ret1619(cocos2d::CCPoint);
+using meta1619 = ret1619(HardStreak*, cocos2d::CCPoint);
+using member1619 = ret1619(HardStreak::*)(cocos2d::CCPoint);
 
 using ret1620 = void;
-using func1620 = ret1620(*)(HardStreak*);
-using pure1620 = ret1620();
-using meta1620 = ret1620(HardStreak*);
-using member1620 = ret1620(HardStreak::*)();
+using func1620 = ret1620(*)(HardStreak*, float);
+using pure1620 = ret1620(float);
+using meta1620 = ret1620(HardStreak*, float);
+using member1620 = ret1620(HardStreak::*)(float);
 
-using ret1621 = double;
-using func1621 = ret1621(*)(HardStreak*, double);
-using pure1621 = ret1621(double);
-using meta1621 = ret1621(HardStreak*, double);
-using member1621 = ret1621(HardStreak::*)(double);
+using ret1621 = HardStreak*;
+using func1621 = ret1621(*)();
+using pure1621 = ret1621();
+using meta1621 = ret1621();
+using member1621 = func1621;
 
-using ret1622 = cocos2d::CCPoint;
-using func1622 = ret1622(*)(HardStreak*, cocos2d::CCPoint, cocos2d::CCPoint, float);
-using pure1622 = ret1622(cocos2d::CCPoint, cocos2d::CCPoint, float);
-using meta1622 = ret1622(HardStreak*, cocos2d::CCPoint, cocos2d::CCPoint, float);
-using member1622 = ret1622(HardStreak::*)(cocos2d::CCPoint, cocos2d::CCPoint, float);
+using ret1622 = void;
+using func1622 = ret1622(*)(HardStreak*);
+using pure1622 = ret1622();
+using meta1622 = ret1622(HardStreak*);
+using member1622 = ret1622(HardStreak::*)();
 
-using ret1623 = void;
-using func1623 = ret1623(*)(HardStreak*);
-using pure1623 = ret1623();
-using meta1623 = ret1623(HardStreak*);
-using member1623 = ret1623(HardStreak::*)();
+using ret1623 = double;
+using func1623 = ret1623(*)(HardStreak*, double);
+using pure1623 = ret1623(double);
+using meta1623 = ret1623(HardStreak*, double);
+using member1623 = ret1623(HardStreak::*)(double);
 
-using ret1624 = void;
-using func1624 = ret1624(*)(HardStreak*);
-using pure1624 = ret1624();
-using meta1624 = ret1624(HardStreak*);
-using member1624 = ret1624(HardStreak::*)();
+using ret1624 = cocos2d::CCPoint;
+using func1624 = ret1624(*)(HardStreak*, cocos2d::CCPoint, cocos2d::CCPoint, float);
+using pure1624 = ret1624(cocos2d::CCPoint, cocos2d::CCPoint, float);
+using meta1624 = ret1624(HardStreak*, cocos2d::CCPoint, cocos2d::CCPoint, float);
+using member1624 = ret1624(HardStreak::*)(cocos2d::CCPoint, cocos2d::CCPoint, float);
 
 using ret1625 = void;
 using func1625 = ret1625(*)(HardStreak*);
@@ -7662,10 +7650,22 @@ using meta1625 = ret1625(HardStreak*);
 using member1625 = ret1625(HardStreak::*)();
 
 using ret1626 = void;
-using func1626 = ret1626(*)(HardStreak*, float);
-using pure1626 = ret1626(float);
-using meta1626 = ret1626(HardStreak*, float);
-using member1626 = ret1626(HardStreak::*)(float);
+using func1626 = ret1626(*)(HardStreak*);
+using pure1626 = ret1626();
+using meta1626 = ret1626(HardStreak*);
+using member1626 = ret1626(HardStreak::*)();
+
+using ret1627 = void;
+using func1627 = ret1627(*)(HardStreak*);
+using pure1627 = ret1627();
+using meta1627 = ret1627(HardStreak*);
+using member1627 = ret1627(HardStreak::*)();
+
+using ret1628 = void;
+using func1628 = ret1628(*)(HardStreak*, float);
+using pure1628 = ret1628(float);
+using meta1628 = ret1628(HardStreak*, float);
+using member1628 = ret1628(HardStreak::*)(float);
 
 using ret3 = cocos2d::CCAnimate*;
 using func3 = ret3(*)(cocos2d::CCAnimation*);
@@ -7805,47 +7805,47 @@ using pure236 = ret236(cocos2d::CCTouch*);
 using meta236 = ret236(cocos2d::CCMenu*, cocos2d::CCTouch*);
 using member236 = ret236(cocos2d::CCMenu::*)(cocos2d::CCTouch*);
 
-using ret2193 = void;
-using func2193 = ret2193(*)(SetGroupIDLayer*, cocos2d::CCObject*);
-using pure2193 = ret2193(cocos2d::CCObject*);
-using meta2193 = ret2193(SetGroupIDLayer*, cocos2d::CCObject*);
-using member2193 = ret2193(SetGroupIDLayer::*)(cocos2d::CCObject*);
-
-using ret2194 = void;
-using func2194 = ret2194(*)(SetGroupIDLayer*, CCTextInputNode*);
-using pure2194 = ret2194(CCTextInputNode*);
-using meta2194 = ret2194(SetGroupIDLayer*, CCTextInputNode*);
-using member2194 = ret2194(SetGroupIDLayer::*)(CCTextInputNode*);
-
-using ret2195 = void;
-using func2195 = ret2195(*)(SetGroupIDLayer*);
-using pure2195 = ret2195();
-using meta2195 = ret2195(SetGroupIDLayer*);
-using member2195 = ret2195(SetGroupIDLayer::*)();
-
 using ret2196 = void;
-using func2196 = ret2196(*)(SetGroupIDLayer*);
-using pure2196 = ret2196();
-using meta2196 = ret2196(SetGroupIDLayer*);
-using member2196 = func2196;
+using func2196 = ret2196(*)(SetGroupIDLayer*, cocos2d::CCObject*);
+using pure2196 = ret2196(cocos2d::CCObject*);
+using meta2196 = ret2196(SetGroupIDLayer*, cocos2d::CCObject*);
+using member2196 = ret2196(SetGroupIDLayer::*)(cocos2d::CCObject*);
 
-using ret1044 = EffectGameObject*;
-using func1044 = ret1044(*)(const char*);
-using pure1044 = ret1044(const char*);
-using meta1044 = ret1044(const char*);
-using member1044 = func1044;
+using ret2197 = void;
+using func2197 = ret2197(*)(SetGroupIDLayer*, CCTextInputNode*);
+using pure2197 = ret2197(CCTextInputNode*);
+using meta2197 = ret2197(SetGroupIDLayer*, CCTextInputNode*);
+using member2197 = ret2197(SetGroupIDLayer::*)(CCTextInputNode*);
 
-using ret1046 = void;
-using func1046 = ret1046(*)(EffectGameObject*);
-using pure1046 = ret1046();
-using meta1046 = ret1046(EffectGameObject*);
-using member1046 = ret1046(EffectGameObject::*)();
+using ret2198 = void;
+using func2198 = ret2198(*)(SetGroupIDLayer*);
+using pure2198 = ret2198();
+using meta2198 = ret2198(SetGroupIDLayer*);
+using member2198 = ret2198(SetGroupIDLayer::*)();
 
-using ret1047 = void;
-using func1047 = ret1047(*)(EffectGameObject*, GJBaseGameLayer*);
-using pure1047 = ret1047(GJBaseGameLayer*);
-using meta1047 = ret1047(EffectGameObject*, GJBaseGameLayer*);
-using member1047 = ret1047(EffectGameObject::*)(GJBaseGameLayer*);
+using ret2199 = void;
+using func2199 = ret2199(*)(SetGroupIDLayer*);
+using pure2199 = ret2199();
+using meta2199 = ret2199(SetGroupIDLayer*);
+using member2199 = func2199;
+
+using ret1046 = EffectGameObject*;
+using func1046 = ret1046(*)(const char*);
+using pure1046 = ret1046(const char*);
+using meta1046 = ret1046(const char*);
+using member1046 = func1046;
+
+using ret1048 = void;
+using func1048 = ret1048(*)(EffectGameObject*);
+using pure1048 = ret1048();
+using meta1048 = ret1048(EffectGameObject*);
+using member1048 = ret1048(EffectGameObject::*)();
+
+using ret1049 = void;
+using func1049 = ret1049(*)(EffectGameObject*, GJBaseGameLayer*);
+using pure1049 = ret1049(GJBaseGameLayer*);
+using meta1049 = ret1049(EffectGameObject*, GJBaseGameLayer*);
+using member1049 = ret1049(EffectGameObject::*)(GJBaseGameLayer*);
 
 using ret101 = cocos2d::CCEaseInOut*;
 using func101 = ret101(*)(cocos2d::CCActionInterval*, float);
@@ -8111,17 +8111,17 @@ using pure200 = ret200();
 using meta200 = ret200(cocos2d::CCLayerColor*);
 using member200 = func200;
 
-using ret1162 = void;
-using func1162 = ret1162(*)(GJCommentListLayer*);
-using pure1162 = ret1162();
-using meta1162 = ret1162(GJCommentListLayer*);
-using member1162 = func1162;
+using ret1164 = void;
+using func1164 = ret1164(*)(GJCommentListLayer*);
+using pure1164 = ret1164();
+using meta1164 = ret1164(GJCommentListLayer*);
+using member1164 = func1164;
 
-using ret1163 = GJCommentListLayer*;
-using func1163 = ret1163(*)(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, bool);
-using pure1163 = ret1163(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, bool);
-using meta1163 = ret1163(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, bool);
-using member1163 = func1163;
+using ret1165 = GJCommentListLayer*;
+using func1165 = ret1165(*)(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, bool);
+using pure1165 = ret1165(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, bool);
+using meta1165 = ret1165(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, bool);
+using member1165 = func1165;
 
 using ret398 = void;
 using func398 = ret398(*)(cocos2d::CCNodeRGBA*);
@@ -8237,11 +8237,11 @@ using pure870 = ret870(gd::string);
 using meta870 = ret870(gd::string);
 using member870 = func870;
 
-using ret1613 = bool;
-using func1613 = ret1613(*)(GaragePage*, IconType, GJGarageLayer*, cocos2d::SEL_MenuHandler);
-using pure1613 = ret1613(IconType, GJGarageLayer*, cocos2d::SEL_MenuHandler);
-using meta1613 = ret1613(GaragePage*, IconType, GJGarageLayer*, cocos2d::SEL_MenuHandler);
-using member1613 = ret1613(GaragePage::*)(IconType, GJGarageLayer*, cocos2d::SEL_MenuHandler);
+using ret1615 = bool;
+using func1615 = ret1615(*)(GaragePage*, IconType, GJGarageLayer*, cocos2d::SEL_MenuHandler);
+using pure1615 = ret1615(IconType, GJGarageLayer*, cocos2d::SEL_MenuHandler);
+using meta1615 = ret1615(GaragePage*, IconType, GJGarageLayer*, cocos2d::SEL_MenuHandler);
+using member1615 = ret1615(GaragePage::*)(IconType, GJGarageLayer*, cocos2d::SEL_MenuHandler);
 
 using ret522 = decltype(std::declval<cocos2d::CCSpriteFrameCache>().addSpriteFramesWithFile(std::declval<char const*>()));
 using func522 = ret522(*)(cocos2d::CCSpriteFrameCache*, char const*);
@@ -8261,161 +8261,149 @@ using pure524 = ret524(char const*);
 using meta524 = ret524(cocos2d::CCSpriteFrameCache*, char const*);
 using member524 = ret524(cocos2d::CCSpriteFrameCache::*)(char const*);
 
-using ret1664 = void;
-using func1664 = ret1664(*)(LevelEditorLayer*);
-using pure1664 = ret1664();
-using meta1664 = ret1664(LevelEditorLayer*);
-using member1664 = func1664;
-
-using ret1665 = void;
-using func1665 = ret1665(*)(LevelEditorLayer*, float);
-using pure1665 = ret1665(float);
-using meta1665 = ret1665(LevelEditorLayer*, float);
-using member1665 = ret1665(LevelEditorLayer::*)(float);
-
 using ret1666 = void;
 using func1666 = ret1666(*)(LevelEditorLayer*);
 using pure1666 = ret1666();
 using meta1666 = ret1666(LevelEditorLayer*);
-using member1666 = ret1666(LevelEditorLayer::*)();
+using member1666 = func1666;
 
 using ret1667 = void;
-using func1667 = ret1667(*)(LevelEditorLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using pure1667 = ret1667(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using meta1667 = ret1667(LevelEditorLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
-using member1667 = ret1667(LevelEditorLayer::*)(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using func1667 = ret1667(*)(LevelEditorLayer*, float);
+using pure1667 = ret1667(float);
+using meta1667 = ret1667(LevelEditorLayer*, float);
+using member1667 = ret1667(LevelEditorLayer::*)(float);
 
 using ret1668 = void;
-using func1668 = ret1668(*)(LevelEditorLayer*, PlayerObject*, bool, bool);
-using pure1668 = ret1668(PlayerObject*, bool, bool);
-using meta1668 = ret1668(LevelEditorLayer*, PlayerObject*, bool, bool);
-using member1668 = ret1668(LevelEditorLayer::*)(PlayerObject*, bool, bool);
+using func1668 = ret1668(*)(LevelEditorLayer*);
+using pure1668 = ret1668();
+using meta1668 = ret1668(LevelEditorLayer*);
+using member1668 = ret1668(LevelEditorLayer::*)();
 
 using ret1669 = void;
-using func1669 = ret1669(*)(LevelEditorLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using pure1669 = ret1669(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using meta1669 = ret1669(LevelEditorLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
-using member1669 = ret1669(LevelEditorLayer::*)(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using func1669 = ret1669(*)(LevelEditorLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using pure1669 = ret1669(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using meta1669 = ret1669(LevelEditorLayer*, cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
+using member1669 = ret1669(LevelEditorLayer::*)(cocos2d::_ccColor3B, float, int, bool, float, cocos2d::_ccHSVValue, int, bool, int, EffectGameObject*);
 
 using ret1670 = void;
-using func1670 = ret1670(*)(LevelEditorLayer*, GameObject*, int, bool);
-using pure1670 = ret1670(GameObject*, int, bool);
-using meta1670 = ret1670(LevelEditorLayer*, GameObject*, int, bool);
-using member1670 = ret1670(LevelEditorLayer::*)(GameObject*, int, bool);
+using func1670 = ret1670(*)(LevelEditorLayer*, PlayerObject*, bool, bool);
+using pure1670 = ret1670(PlayerObject*, bool, bool);
+using meta1670 = ret1670(LevelEditorLayer*, PlayerObject*, bool, bool);
+using member1670 = ret1670(LevelEditorLayer::*)(PlayerObject*, bool, bool);
 
 using ret1671 = void;
-using func1671 = ret1671(*)(LevelEditorLayer*, GameObject*, int);
-using pure1671 = ret1671(GameObject*, int);
-using meta1671 = ret1671(LevelEditorLayer*, GameObject*, int);
-using member1671 = ret1671(LevelEditorLayer::*)(GameObject*, int);
+using func1671 = ret1671(*)(LevelEditorLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using pure1671 = ret1671(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using meta1671 = ret1671(LevelEditorLayer*, EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
+using member1671 = ret1671(LevelEditorLayer::*)(EffectGameObject*, EffectGameObject*, int, float, ColorActionSprite*, GJEffectManager*);
 
 using ret1672 = void;
-using func1672 = ret1672(*)(LevelEditorLayer*, float);
-using pure1672 = ret1672(float);
-using meta1672 = ret1672(LevelEditorLayer*, float);
-using member1672 = ret1672(LevelEditorLayer::*)(float);
+using func1672 = ret1672(*)(LevelEditorLayer*, GameObject*, int, bool);
+using pure1672 = ret1672(GameObject*, int, bool);
+using meta1672 = ret1672(LevelEditorLayer*, GameObject*, int, bool);
+using member1672 = ret1672(LevelEditorLayer::*)(GameObject*, int, bool);
 
 using ret1673 = void;
-using func1673 = ret1673(*)(LevelEditorLayer*, float);
-using pure1673 = ret1673(float);
-using meta1673 = ret1673(LevelEditorLayer*, float);
-using member1673 = ret1673(LevelEditorLayer::*)(float);
+using func1673 = ret1673(*)(LevelEditorLayer*, GameObject*, int);
+using pure1673 = ret1673(GameObject*, int);
+using meta1673 = ret1673(LevelEditorLayer*, GameObject*, int);
+using member1673 = ret1673(LevelEditorLayer::*)(GameObject*, int);
 
 using ret1674 = void;
-using func1674 = ret1674(*)(LevelEditorLayer*);
-using pure1674 = ret1674();
-using meta1674 = ret1674(LevelEditorLayer*);
-using member1674 = ret1674(LevelEditorLayer::*)();
+using func1674 = ret1674(*)(LevelEditorLayer*, float);
+using pure1674 = ret1674(float);
+using meta1674 = ret1674(LevelEditorLayer*, float);
+using member1674 = ret1674(LevelEditorLayer::*)(float);
 
-using ret1675 = LevelEditorLayer*;
-using func1675 = ret1675(*)(GJGameLevel*);
-using pure1675 = ret1675(GJGameLevel*);
-using meta1675 = ret1675(GJGameLevel*);
-using member1675 = func1675;
+using ret1675 = void;
+using func1675 = ret1675(*)(LevelEditorLayer*, float);
+using pure1675 = ret1675(float);
+using meta1675 = ret1675(LevelEditorLayer*, float);
+using member1675 = ret1675(LevelEditorLayer::*)(float);
 
 using ret1676 = void;
-using func1676 = ret1676(*)(LevelEditorLayer*, EffectGameObject*, float, float, float);
-using pure1676 = ret1676(EffectGameObject*, float, float, float);
-using meta1676 = ret1676(LevelEditorLayer*, EffectGameObject*, float, float, float);
-using member1676 = ret1676(LevelEditorLayer::*)(EffectGameObject*, float, float, float);
+using func1676 = ret1676(*)(LevelEditorLayer*);
+using pure1676 = ret1676();
+using meta1676 = ret1676(LevelEditorLayer*);
+using member1676 = ret1676(LevelEditorLayer::*)();
 
-using ret1677 = GameObject*;
-using func1677 = ret1677(*)(LevelEditorLayer*, gd::string);
-using pure1677 = ret1677(gd::string);
-using meta1677 = ret1677(LevelEditorLayer*, gd::string);
-using member1677 = ret1677(LevelEditorLayer::*)(gd::string);
+using ret1677 = LevelEditorLayer*;
+using func1677 = ret1677(*)(GJGameLevel*);
+using pure1677 = ret1677(GJGameLevel*);
+using meta1677 = ret1677(GJGameLevel*);
+using member1677 = func1677;
 
 using ret1678 = void;
-using func1678 = ret1678(*)(LevelEditorLayer*, GameObject*);
-using pure1678 = ret1678(GameObject*);
-using meta1678 = ret1678(LevelEditorLayer*, GameObject*);
-using member1678 = ret1678(LevelEditorLayer::*)(GameObject*);
+using func1678 = ret1678(*)(LevelEditorLayer*, EffectGameObject*, float, float, float);
+using pure1678 = ret1678(EffectGameObject*, float, float, float);
+using meta1678 = ret1678(LevelEditorLayer*, EffectGameObject*, float, float, float);
+using member1678 = ret1678(LevelEditorLayer::*)(EffectGameObject*, float, float, float);
 
-using ret1679 = void;
-using func1679 = ret1679(*)(LevelEditorLayer*, UndoObject*);
-using pure1679 = ret1679(UndoObject*);
-using meta1679 = ret1679(LevelEditorLayer*, UndoObject*);
-using member1679 = ret1679(LevelEditorLayer::*)(UndoObject*);
+using ret1679 = GameObject*;
+using func1679 = ret1679(*)(LevelEditorLayer*, gd::string);
+using pure1679 = ret1679(gd::string);
+using meta1679 = ret1679(LevelEditorLayer*, gd::string);
+using member1679 = ret1679(LevelEditorLayer::*)(gd::string);
 
 using ret1680 = void;
-using func1680 = ret1680(*)(LevelEditorLayer*, UndoObject*, bool);
-using pure1680 = ret1680(UndoObject*, bool);
-using meta1680 = ret1680(LevelEditorLayer*, UndoObject*, bool);
-using member1680 = ret1680(LevelEditorLayer::*)(UndoObject*, bool);
+using func1680 = ret1680(*)(LevelEditorLayer*, GameObject*);
+using pure1680 = ret1680(GameObject*);
+using meta1680 = ret1680(LevelEditorLayer*, GameObject*);
+using member1680 = ret1680(LevelEditorLayer::*)(GameObject*);
 
 using ret1681 = void;
-using func1681 = ret1681(*)(LevelEditorLayer*, GameObject*, float, bool);
-using pure1681 = ret1681(GameObject*, float, bool);
-using meta1681 = ret1681(LevelEditorLayer*, GameObject*, float, bool);
-using member1681 = ret1681(LevelEditorLayer::*)(GameObject*, float, bool);
+using func1681 = ret1681(*)(LevelEditorLayer*, UndoObject*);
+using pure1681 = ret1681(UndoObject*);
+using meta1681 = ret1681(LevelEditorLayer*, UndoObject*);
+using member1681 = ret1681(LevelEditorLayer::*)(UndoObject*);
 
-using ret1682 = bool;
-using func1682 = ret1682(*)(LevelEditorLayer*, PlayerObject*, float);
-using pure1682 = ret1682(PlayerObject*, float);
-using meta1682 = ret1682(LevelEditorLayer*, PlayerObject*, float);
-using member1682 = ret1682(LevelEditorLayer::*)(PlayerObject*, float);
+using ret1682 = void;
+using func1682 = ret1682(*)(LevelEditorLayer*, UndoObject*, bool);
+using pure1682 = ret1682(UndoObject*, bool);
+using meta1682 = ret1682(LevelEditorLayer*, UndoObject*, bool);
+using member1682 = ret1682(LevelEditorLayer::*)(UndoObject*, bool);
 
 using ret1683 = void;
-using func1683 = ret1683(*)(LevelEditorLayer*);
-using pure1683 = ret1683();
-using meta1683 = ret1683(LevelEditorLayer*);
-using member1683 = ret1683(LevelEditorLayer::*)();
+using func1683 = ret1683(*)(LevelEditorLayer*, GameObject*, float, bool);
+using pure1683 = ret1683(GameObject*, float, bool);
+using meta1683 = ret1683(LevelEditorLayer*, GameObject*, float, bool);
+using member1683 = ret1683(LevelEditorLayer::*)(GameObject*, float, bool);
 
-using ret1684 = void;
-using func1684 = ret1684(*)(LevelEditorLayer*);
-using pure1684 = ret1684();
-using meta1684 = ret1684(LevelEditorLayer*);
-using member1684 = ret1684(LevelEditorLayer::*)();
+using ret1684 = bool;
+using func1684 = ret1684(*)(LevelEditorLayer*, PlayerObject*, float);
+using pure1684 = ret1684(PlayerObject*, float);
+using meta1684 = ret1684(LevelEditorLayer*, PlayerObject*, float);
+using member1684 = ret1684(LevelEditorLayer::*)(PlayerObject*, float);
 
-using ret1685 = GameObject*;
-using func1685 = ret1685(*)(LevelEditorLayer*, int, cocos2d::CCPoint, bool);
-using pure1685 = ret1685(int, cocos2d::CCPoint, bool);
-using meta1685 = ret1685(LevelEditorLayer*, int, cocos2d::CCPoint, bool);
-using member1685 = ret1685(LevelEditorLayer::*)(int, cocos2d::CCPoint, bool);
+using ret1685 = void;
+using func1685 = ret1685(*)(LevelEditorLayer*);
+using pure1685 = ret1685();
+using meta1685 = ret1685(LevelEditorLayer*);
+using member1685 = ret1685(LevelEditorLayer::*)();
 
 using ret1686 = void;
-using func1686 = ret1686(*)(LevelEditorLayer*, gd::string);
-using pure1686 = ret1686(gd::string);
-using meta1686 = ret1686(LevelEditorLayer*, gd::string);
-using member1686 = ret1686(LevelEditorLayer::*)(gd::string);
+using func1686 = ret1686(*)(LevelEditorLayer*);
+using pure1686 = ret1686();
+using meta1686 = ret1686(LevelEditorLayer*);
+using member1686 = ret1686(LevelEditorLayer::*)();
 
-using ret1687 = cocos2d::CCArray*;
-using func1687 = ret1687(*)(LevelEditorLayer*, gd::string, bool);
-using pure1687 = ret1687(gd::string, bool);
-using meta1687 = ret1687(LevelEditorLayer*, gd::string, bool);
-using member1687 = ret1687(LevelEditorLayer::*)(gd::string, bool);
+using ret1687 = GameObject*;
+using func1687 = ret1687(*)(LevelEditorLayer*, int, cocos2d::CCPoint, bool);
+using pure1687 = ret1687(int, cocos2d::CCPoint, bool);
+using meta1687 = ret1687(LevelEditorLayer*, int, cocos2d::CCPoint, bool);
+using member1687 = ret1687(LevelEditorLayer::*)(int, cocos2d::CCPoint, bool);
 
 using ret1688 = void;
-using func1688 = ret1688(*)(LevelEditorLayer*);
-using pure1688 = ret1688();
-using meta1688 = ret1688(LevelEditorLayer*);
-using member1688 = ret1688(LevelEditorLayer::*)();
+using func1688 = ret1688(*)(LevelEditorLayer*, gd::string);
+using pure1688 = ret1688(gd::string);
+using meta1688 = ret1688(LevelEditorLayer*, gd::string);
+using member1688 = ret1688(LevelEditorLayer::*)(gd::string);
 
-using ret1689 = void;
-using func1689 = ret1689(*)(LevelEditorLayer*);
-using pure1689 = ret1689();
-using meta1689 = ret1689(LevelEditorLayer*);
-using member1689 = ret1689(LevelEditorLayer::*)();
+using ret1689 = cocos2d::CCArray*;
+using func1689 = ret1689(*)(LevelEditorLayer*, gd::string, bool);
+using pure1689 = ret1689(gd::string, bool);
+using meta1689 = ret1689(LevelEditorLayer*, gd::string, bool);
+using member1689 = ret1689(LevelEditorLayer::*)(gd::string, bool);
 
 using ret1690 = void;
 using func1690 = ret1690(*)(LevelEditorLayer*);
@@ -8424,16 +8412,16 @@ using meta1690 = ret1690(LevelEditorLayer*);
 using member1690 = ret1690(LevelEditorLayer::*)();
 
 using ret1691 = void;
-using func1691 = ret1691(*)(LevelEditorLayer*, cocos2d::CCArray*);
-using pure1691 = ret1691(cocos2d::CCArray*);
-using meta1691 = ret1691(LevelEditorLayer*, cocos2d::CCArray*);
-using member1691 = ret1691(LevelEditorLayer::*)(cocos2d::CCArray*);
+using func1691 = ret1691(*)(LevelEditorLayer*);
+using pure1691 = ret1691();
+using meta1691 = ret1691(LevelEditorLayer*);
+using member1691 = ret1691(LevelEditorLayer::*)();
 
-using ret1692 = int;
-using func1692 = ret1692(*)(LevelEditorLayer*, cocos2d::CCArray*);
-using pure1692 = ret1692(cocos2d::CCArray*);
-using meta1692 = ret1692(LevelEditorLayer*, cocos2d::CCArray*);
-using member1692 = ret1692(LevelEditorLayer::*)(cocos2d::CCArray*);
+using ret1692 = void;
+using func1692 = ret1692(*)(LevelEditorLayer*);
+using pure1692 = ret1692();
+using meta1692 = ret1692(LevelEditorLayer*);
+using member1692 = ret1692(LevelEditorLayer::*)();
 
 using ret1693 = void;
 using func1693 = ret1693(*)(LevelEditorLayer*, cocos2d::CCArray*);
@@ -8441,71 +8429,77 @@ using pure1693 = ret1693(cocos2d::CCArray*);
 using meta1693 = ret1693(LevelEditorLayer*, cocos2d::CCArray*);
 using member1693 = ret1693(LevelEditorLayer::*)(cocos2d::CCArray*);
 
-using ret1694 = void;
-using func1694 = ret1694(*)(LevelEditorLayer*, GameObject*, bool);
-using pure1694 = ret1694(GameObject*, bool);
-using meta1694 = ret1694(LevelEditorLayer*, GameObject*, bool);
-using member1694 = ret1694(LevelEditorLayer::*)(GameObject*, bool);
+using ret1694 = int;
+using func1694 = ret1694(*)(LevelEditorLayer*, cocos2d::CCArray*);
+using pure1694 = ret1694(cocos2d::CCArray*);
+using meta1694 = ret1694(LevelEditorLayer*, cocos2d::CCArray*);
+using member1694 = ret1694(LevelEditorLayer::*)(cocos2d::CCArray*);
 
 using ret1695 = void;
-using func1695 = ret1695(*)(LevelEditorLayer*, GameObject*);
-using pure1695 = ret1695(GameObject*);
-using meta1695 = ret1695(LevelEditorLayer*, GameObject*);
-using member1695 = ret1695(LevelEditorLayer::*)(GameObject*);
+using func1695 = ret1695(*)(LevelEditorLayer*, cocos2d::CCArray*);
+using pure1695 = ret1695(cocos2d::CCArray*);
+using meta1695 = ret1695(LevelEditorLayer*, cocos2d::CCArray*);
+using member1695 = ret1695(LevelEditorLayer::*)(cocos2d::CCArray*);
 
 using ret1696 = void;
-using func1696 = ret1696(*)(LevelEditorLayer*, bool, cocos2d::CCArray*);
-using pure1696 = ret1696(bool, cocos2d::CCArray*);
-using meta1696 = ret1696(LevelEditorLayer*, bool, cocos2d::CCArray*);
-using member1696 = ret1696(LevelEditorLayer::*)(bool, cocos2d::CCArray*);
+using func1696 = ret1696(*)(LevelEditorLayer*, GameObject*, bool);
+using pure1696 = ret1696(GameObject*, bool);
+using meta1696 = ret1696(LevelEditorLayer*, GameObject*, bool);
+using member1696 = ret1696(LevelEditorLayer::*)(GameObject*, bool);
 
-using ret1697 = bool;
-using func1697 = ret1697(*)(LevelEditorLayer*, GJGameLevel*);
-using pure1697 = ret1697(GJGameLevel*);
-using meta1697 = ret1697(LevelEditorLayer*, GJGameLevel*);
-using member1697 = ret1697(LevelEditorLayer::*)(GJGameLevel*);
+using ret1697 = void;
+using func1697 = ret1697(*)(LevelEditorLayer*, GameObject*);
+using pure1697 = ret1697(GameObject*);
+using meta1697 = ret1697(LevelEditorLayer*, GameObject*);
+using member1697 = ret1697(LevelEditorLayer::*)(GameObject*);
 
-using ret1698 = void;
-using func1698 = ret1698(*)(LevelEditorLayer*, cocos2d::CCPoint);
-using pure1698 = ret1698(cocos2d::CCPoint);
-using meta1698 = ret1698(LevelEditorLayer*, cocos2d::CCPoint);
-using member1698 = ret1698(LevelEditorLayer::*)(cocos2d::CCPoint);
+using ret1698 = bool;
+using func1698 = ret1698(*)(LevelEditorLayer*, bool);
+using pure1698 = ret1698(bool);
+using meta1698 = ret1698(LevelEditorLayer*, bool);
+using member1698 = ret1698(LevelEditorLayer::*)(bool);
 
 using ret1699 = void;
-using func1699 = ret1699(*)(LevelEditorLayer*, GameObject*);
-using pure1699 = ret1699(GameObject*);
-using meta1699 = ret1699(LevelEditorLayer*, GameObject*);
-using member1699 = ret1699(LevelEditorLayer::*)(GameObject*);
+using func1699 = ret1699(*)(LevelEditorLayer*, bool, cocos2d::CCArray*);
+using pure1699 = ret1699(bool, cocos2d::CCArray*);
+using meta1699 = ret1699(LevelEditorLayer*, bool, cocos2d::CCArray*);
+using member1699 = ret1699(LevelEditorLayer::*)(bool, cocos2d::CCArray*);
 
-using ret1700 = void;
-using func1700 = ret1700(*)(LevelEditorLayer*, cocos2d::CCRect, bool);
-using pure1700 = ret1700(cocos2d::CCRect, bool);
-using meta1700 = ret1700(LevelEditorLayer*, cocos2d::CCRect, bool);
-using member1700 = ret1700(LevelEditorLayer::*)(cocos2d::CCRect, bool);
+using ret1700 = bool;
+using func1700 = ret1700(*)(LevelEditorLayer*, GJGameLevel*);
+using pure1700 = ret1700(GJGameLevel*);
+using meta1700 = ret1700(LevelEditorLayer*, GJGameLevel*);
+using member1700 = ret1700(LevelEditorLayer::*)(GJGameLevel*);
 
 using ret1701 = void;
-using func1701 = ret1701(*)(LevelEditorLayer*);
-using pure1701 = ret1701();
-using meta1701 = ret1701(LevelEditorLayer*);
-using member1701 = ret1701(LevelEditorLayer::*)();
+using func1701 = ret1701(*)(LevelEditorLayer*, cocos2d::CCPoint);
+using pure1701 = ret1701(cocos2d::CCPoint);
+using meta1701 = ret1701(LevelEditorLayer*, cocos2d::CCPoint);
+using member1701 = ret1701(LevelEditorLayer::*)(cocos2d::CCPoint);
 
 using ret1702 = void;
-using func1702 = ret1702(*)(LevelEditorLayer*);
-using pure1702 = ret1702();
-using meta1702 = ret1702(LevelEditorLayer*);
-using member1702 = ret1702(LevelEditorLayer::*)();
+using func1702 = ret1702(*)(LevelEditorLayer*, GameObject*);
+using pure1702 = ret1702(GameObject*);
+using meta1702 = ret1702(LevelEditorLayer*, GameObject*);
+using member1702 = ret1702(LevelEditorLayer::*)(GameObject*);
 
 using ret1703 = void;
-using func1703 = ret1703(*)(LevelEditorLayer*);
-using pure1703 = ret1703();
-using meta1703 = ret1703(LevelEditorLayer*);
-using member1703 = ret1703(LevelEditorLayer::*)();
+using func1703 = ret1703(*)(LevelEditorLayer*, cocos2d::CCRect, bool);
+using pure1703 = ret1703(cocos2d::CCRect, bool);
+using meta1703 = ret1703(LevelEditorLayer*, cocos2d::CCRect, bool);
+using member1703 = ret1703(LevelEditorLayer::*)(cocos2d::CCRect, bool);
 
 using ret1704 = void;
 using func1704 = ret1704(*)(LevelEditorLayer*);
 using pure1704 = ret1704();
 using meta1704 = ret1704(LevelEditorLayer*);
 using member1704 = ret1704(LevelEditorLayer::*)();
+
+using ret1705 = void;
+using func1705 = ret1705(*)(LevelEditorLayer*);
+using pure1705 = ret1705();
+using meta1705 = ret1705(LevelEditorLayer*);
+using member1705 = ret1705(LevelEditorLayer::*)();
 
 using ret1706 = void;
 using func1706 = ret1706(*)(LevelEditorLayer*);
@@ -8519,12 +8513,6 @@ using pure1707 = ret1707();
 using meta1707 = ret1707(LevelEditorLayer*);
 using member1707 = ret1707(LevelEditorLayer::*)();
 
-using ret1708 = void;
-using func1708 = ret1708(*)(LevelEditorLayer*);
-using pure1708 = ret1708();
-using meta1708 = ret1708(LevelEditorLayer*);
-using member1708 = ret1708(LevelEditorLayer::*)();
-
 using ret1709 = void;
 using func1709 = ret1709(*)(LevelEditorLayer*);
 using pure1709 = ret1709();
@@ -8532,40 +8520,40 @@ using meta1709 = ret1709(LevelEditorLayer*);
 using member1709 = ret1709(LevelEditorLayer::*)();
 
 using ret1710 = void;
-using func1710 = ret1710(*)(LevelEditorLayer*, int);
-using pure1710 = ret1710(int);
-using meta1710 = ret1710(LevelEditorLayer*, int);
-using member1710 = ret1710(LevelEditorLayer::*)(int);
+using func1710 = ret1710(*)(LevelEditorLayer*);
+using pure1710 = ret1710();
+using meta1710 = ret1710(LevelEditorLayer*);
+using member1710 = ret1710(LevelEditorLayer::*)();
 
 using ret1711 = void;
-using func1711 = ret1711(*)(LevelEditorLayer*, GameObject*, bool);
-using pure1711 = ret1711(GameObject*, bool);
-using meta1711 = ret1711(LevelEditorLayer*, GameObject*, bool);
-using member1711 = ret1711(LevelEditorLayer::*)(GameObject*, bool);
+using func1711 = ret1711(*)(LevelEditorLayer*);
+using pure1711 = ret1711();
+using meta1711 = ret1711(LevelEditorLayer*);
+using member1711 = ret1711(LevelEditorLayer::*)();
 
 using ret1712 = void;
-using func1712 = ret1712(*)(LevelEditorLayer*, GameObject*);
-using pure1712 = ret1712(GameObject*);
-using meta1712 = ret1712(LevelEditorLayer*, GameObject*);
-using member1712 = ret1712(LevelEditorLayer::*)(GameObject*);
+using func1712 = ret1712(*)(LevelEditorLayer*);
+using pure1712 = ret1712();
+using meta1712 = ret1712(LevelEditorLayer*);
+using member1712 = ret1712(LevelEditorLayer::*)();
 
 using ret1713 = void;
-using func1713 = ret1713(*)(LevelEditorLayer*);
-using pure1713 = ret1713();
-using meta1713 = ret1713(LevelEditorLayer*);
-using member1713 = ret1713(LevelEditorLayer::*)();
+using func1713 = ret1713(*)(LevelEditorLayer*, int);
+using pure1713 = ret1713(int);
+using meta1713 = ret1713(LevelEditorLayer*, int);
+using member1713 = ret1713(LevelEditorLayer::*)(int);
 
 using ret1714 = void;
-using func1714 = ret1714(*)(LevelEditorLayer*);
-using pure1714 = ret1714();
-using meta1714 = ret1714(LevelEditorLayer*);
-using member1714 = ret1714(LevelEditorLayer::*)();
+using func1714 = ret1714(*)(LevelEditorLayer*, GameObject*, bool);
+using pure1714 = ret1714(GameObject*, bool);
+using meta1714 = ret1714(LevelEditorLayer*, GameObject*, bool);
+using member1714 = ret1714(LevelEditorLayer::*)(GameObject*, bool);
 
 using ret1715 = void;
-using func1715 = ret1715(*)(LevelEditorLayer*);
-using pure1715 = ret1715();
-using meta1715 = ret1715(LevelEditorLayer*);
-using member1715 = ret1715(LevelEditorLayer::*)();
+using func1715 = ret1715(*)(LevelEditorLayer*, GameObject*);
+using pure1715 = ret1715(GameObject*);
+using meta1715 = ret1715(LevelEditorLayer*, GameObject*);
+using member1715 = ret1715(LevelEditorLayer::*)(GameObject*);
 
 using ret1716 = void;
 using func1716 = ret1716(*)(LevelEditorLayer*);
@@ -8580,76 +8568,76 @@ using meta1717 = ret1717(LevelEditorLayer*);
 using member1717 = ret1717(LevelEditorLayer::*)();
 
 using ret1718 = void;
-using func1718 = ret1718(*)(LevelEditorLayer*, GameObject*);
-using pure1718 = ret1718(GameObject*);
-using meta1718 = ret1718(LevelEditorLayer*, GameObject*);
-using member1718 = ret1718(LevelEditorLayer::*)(GameObject*);
+using func1718 = ret1718(*)(LevelEditorLayer*);
+using pure1718 = ret1718();
+using meta1718 = ret1718(LevelEditorLayer*);
+using member1718 = ret1718(LevelEditorLayer::*)();
 
 using ret1719 = void;
-using func1719 = ret1719(*)(LevelEditorLayer*, EffectGameObject*, int, float, float, bool);
-using pure1719 = ret1719(EffectGameObject*, int, float, float, bool);
-using meta1719 = ret1719(LevelEditorLayer*, EffectGameObject*, int, float, float, bool);
-using member1719 = ret1719(LevelEditorLayer::*)(EffectGameObject*, int, float, float, bool);
+using func1719 = ret1719(*)(LevelEditorLayer*);
+using pure1719 = ret1719();
+using meta1719 = ret1719(LevelEditorLayer*);
+using member1719 = ret1719(LevelEditorLayer::*)();
 
 using ret1720 = void;
-using func1720 = ret1720(*)(LevelEditorLayer*, LevelSettingsObject*);
-using pure1720 = ret1720(LevelSettingsObject*);
-using meta1720 = ret1720(LevelEditorLayer*, LevelSettingsObject*);
-using member1720 = ret1720(LevelEditorLayer::*)(LevelSettingsObject*);
+using func1720 = ret1720(*)(LevelEditorLayer*);
+using pure1720 = ret1720();
+using meta1720 = ret1720(LevelEditorLayer*);
+using member1720 = ret1720(LevelEditorLayer::*)();
 
 using ret1721 = void;
-using func1721 = ret1721(*)(LevelEditorLayer*);
-using pure1721 = ret1721();
-using meta1721 = ret1721(LevelEditorLayer*);
-using member1721 = ret1721(LevelEditorLayer::*)();
+using func1721 = ret1721(*)(LevelEditorLayer*, GameObject*);
+using pure1721 = ret1721(GameObject*);
+using meta1721 = ret1721(LevelEditorLayer*, GameObject*);
+using member1721 = ret1721(LevelEditorLayer::*)(GameObject*);
 
 using ret1722 = void;
-using func1722 = ret1722(*)(LevelEditorLayer*, int, float);
-using pure1722 = ret1722(int, float);
-using meta1722 = ret1722(LevelEditorLayer*, int, float);
-using member1722 = ret1722(LevelEditorLayer::*)(int, float);
+using func1722 = ret1722(*)(LevelEditorLayer*, EffectGameObject*, int, float, float, bool);
+using pure1722 = ret1722(EffectGameObject*, int, float, float, bool);
+using meta1722 = ret1722(LevelEditorLayer*, EffectGameObject*, int, float, float, bool);
+using member1722 = ret1722(LevelEditorLayer::*)(EffectGameObject*, int, float, float, bool);
 
 using ret1723 = void;
-using func1723 = ret1723(*)(LevelEditorLayer*, GameObject*, bool, PlayerObject*, bool);
-using pure1723 = ret1723(GameObject*, bool, PlayerObject*, bool);
-using meta1723 = ret1723(LevelEditorLayer*, GameObject*, bool, PlayerObject*, bool);
-using member1723 = ret1723(LevelEditorLayer::*)(GameObject*, bool, PlayerObject*, bool);
+using func1723 = ret1723(*)(LevelEditorLayer*, LevelSettingsObject*);
+using pure1723 = ret1723(LevelSettingsObject*);
+using meta1723 = ret1723(LevelEditorLayer*, LevelSettingsObject*);
+using member1723 = ret1723(LevelEditorLayer::*)(LevelSettingsObject*);
 
 using ret1724 = void;
-using func1724 = ret1724(*)(LevelEditorLayer*, int, bool);
-using pure1724 = ret1724(int, bool);
-using meta1724 = ret1724(LevelEditorLayer*, int, bool);
-using member1724 = ret1724(LevelEditorLayer::*)(int, bool);
+using func1724 = ret1724(*)(LevelEditorLayer*);
+using pure1724 = ret1724();
+using meta1724 = ret1724(LevelEditorLayer*);
+using member1724 = ret1724(LevelEditorLayer::*)();
 
 using ret1725 = void;
-using func1725 = ret1725(*)(LevelEditorLayer*, GJEffectManager*, GJEffectManager*);
-using pure1725 = ret1725(GJEffectManager*, GJEffectManager*);
-using meta1725 = ret1725(LevelEditorLayer*, GJEffectManager*, GJEffectManager*);
-using member1725 = ret1725(LevelEditorLayer::*)(GJEffectManager*, GJEffectManager*);
+using func1725 = ret1725(*)(LevelEditorLayer*, int, float);
+using pure1725 = ret1725(int, float);
+using meta1725 = ret1725(LevelEditorLayer*, int, float);
+using member1725 = ret1725(LevelEditorLayer::*)(int, float);
 
 using ret1726 = void;
-using func1726 = ret1726(*)(LevelEditorLayer*);
-using pure1726 = ret1726();
-using meta1726 = ret1726(LevelEditorLayer*);
-using member1726 = ret1726(LevelEditorLayer::*)();
+using func1726 = ret1726(*)(LevelEditorLayer*, GameObject*, bool, PlayerObject*, bool);
+using pure1726 = ret1726(GameObject*, bool, PlayerObject*, bool);
+using meta1726 = ret1726(LevelEditorLayer*, GameObject*, bool, PlayerObject*, bool);
+using member1726 = ret1726(LevelEditorLayer::*)(GameObject*, bool, PlayerObject*, bool);
 
 using ret1727 = void;
-using func1727 = ret1727(*)(LevelEditorLayer*);
-using pure1727 = ret1727();
-using meta1727 = ret1727(LevelEditorLayer*);
-using member1727 = ret1727(LevelEditorLayer::*)();
+using func1727 = ret1727(*)(LevelEditorLayer*, int, bool);
+using pure1727 = ret1727(int, bool);
+using meta1727 = ret1727(LevelEditorLayer*, int, bool);
+using member1727 = ret1727(LevelEditorLayer::*)(int, bool);
 
 using ret1728 = void;
-using func1728 = ret1728(*)(LevelEditorLayer*);
-using pure1728 = ret1728();
-using meta1728 = ret1728(LevelEditorLayer*);
-using member1728 = ret1728(LevelEditorLayer::*)();
+using func1728 = ret1728(*)(LevelEditorLayer*, GJEffectManager*, GJEffectManager*);
+using pure1728 = ret1728(GJEffectManager*, GJEffectManager*);
+using meta1728 = ret1728(LevelEditorLayer*, GJEffectManager*, GJEffectManager*);
+using member1728 = ret1728(LevelEditorLayer::*)(GJEffectManager*, GJEffectManager*);
 
 using ret1729 = void;
-using func1729 = ret1729(*)(LevelEditorLayer*, PlayerObject*, int, bool);
-using pure1729 = ret1729(PlayerObject*, int, bool);
-using meta1729 = ret1729(LevelEditorLayer*, PlayerObject*, int, bool);
-using member1729 = ret1729(LevelEditorLayer::*)(PlayerObject*, int, bool);
+using func1729 = ret1729(*)(LevelEditorLayer*);
+using pure1729 = ret1729();
+using meta1729 = ret1729(LevelEditorLayer*);
+using member1729 = ret1729(LevelEditorLayer::*)();
 
 using ret1730 = void;
 using func1730 = ret1730(*)(LevelEditorLayer*);
@@ -8664,10 +8652,10 @@ using meta1731 = ret1731(LevelEditorLayer*);
 using member1731 = ret1731(LevelEditorLayer::*)();
 
 using ret1732 = void;
-using func1732 = ret1732(*)(LevelEditorLayer*, float);
-using pure1732 = ret1732(float);
-using meta1732 = ret1732(LevelEditorLayer*, float);
-using member1732 = ret1732(LevelEditorLayer::*)(float);
+using func1732 = ret1732(*)(LevelEditorLayer*, PlayerObject*, int, bool);
+using pure1732 = ret1732(PlayerObject*, int, bool);
+using meta1732 = ret1732(LevelEditorLayer*, PlayerObject*, int, bool);
+using member1732 = ret1732(LevelEditorLayer::*)(PlayerObject*, int, bool);
 
 using ret1733 = void;
 using func1733 = ret1733(*)(LevelEditorLayer*);
@@ -8682,16 +8670,34 @@ using meta1734 = ret1734(LevelEditorLayer*);
 using member1734 = ret1734(LevelEditorLayer::*)();
 
 using ret1735 = void;
-using func1735 = ret1735(*)(LevelEditorLayer*);
-using pure1735 = ret1735();
-using meta1735 = ret1735(LevelEditorLayer*);
-using member1735 = ret1735(LevelEditorLayer::*)();
+using func1735 = ret1735(*)(LevelEditorLayer*, float);
+using pure1735 = ret1735(float);
+using meta1735 = ret1735(LevelEditorLayer*, float);
+using member1735 = ret1735(LevelEditorLayer::*)(float);
 
 using ret1736 = void;
-using func1736 = ret1736(*)(LevelEditorLayer*, float);
-using pure1736 = ret1736(float);
-using meta1736 = ret1736(LevelEditorLayer*, float);
-using member1736 = ret1736(LevelEditorLayer::*)(float);
+using func1736 = ret1736(*)(LevelEditorLayer*);
+using pure1736 = ret1736();
+using meta1736 = ret1736(LevelEditorLayer*);
+using member1736 = ret1736(LevelEditorLayer::*)();
+
+using ret1737 = void;
+using func1737 = ret1737(*)(LevelEditorLayer*);
+using pure1737 = ret1737();
+using meta1737 = ret1737(LevelEditorLayer*);
+using member1737 = ret1737(LevelEditorLayer::*)();
+
+using ret1738 = void;
+using func1738 = ret1738(*)(LevelEditorLayer*);
+using pure1738 = ret1738();
+using meta1738 = ret1738(LevelEditorLayer*);
+using member1738 = ret1738(LevelEditorLayer::*)();
+
+using ret1739 = void;
+using func1739 = ret1739(*)(LevelEditorLayer*, float);
+using pure1739 = ret1739(float);
+using meta1739 = ret1739(LevelEditorLayer*, float);
+using member1739 = ret1739(LevelEditorLayer::*)(float);
 
 using ret127 = decltype(cocos2d::CCIMEDispatcher::sharedDispatcher());
 using func127 = ret127(*)();
@@ -8711,23 +8717,23 @@ using pure129 = ret129(cocos2d::CCIMEDelegate*);
 using meta129 = ret129(cocos2d::CCIMEDispatcher*, cocos2d::CCIMEDelegate*);
 using member129 = ret129(cocos2d::CCIMEDispatcher::*)(cocos2d::CCIMEDelegate*);
 
-using ret2269 = float;
-using func2269 = ret2269(*)(Slider*);
-using pure2269 = ret2269();
-using meta2269 = ret2269(Slider*);
-using member2269 = ret2269(Slider::*)();
+using ret2272 = float;
+using func2272 = ret2272(*)(Slider*);
+using pure2272 = ret2272();
+using meta2272 = ret2272(Slider*);
+using member2272 = ret2272(Slider::*)();
 
-using ret2270 = void;
-using func2270 = ret2270(*)(Slider*);
-using pure2270 = ret2270();
-using meta2270 = ret2270(Slider*);
-using member2270 = ret2270(Slider::*)();
+using ret2273 = void;
+using func2273 = ret2273(*)(Slider*);
+using pure2273 = ret2273();
+using meta2273 = ret2273(Slider*);
+using member2273 = ret2273(Slider::*)();
 
-using ret2271 = Slider*;
-using func2271 = ret2271(*)(cocos2d::CCNode*, cocos2d::SEL_MenuHandler, const char*, const char*, const char*, const char*, float);
-using pure2271 = ret2271(cocos2d::CCNode*, cocos2d::SEL_MenuHandler, const char*, const char*, const char*, const char*, float);
-using meta2271 = ret2271(cocos2d::CCNode*, cocos2d::SEL_MenuHandler, const char*, const char*, const char*, const char*, float);
-using member2271 = func2271;
+using ret2274 = Slider*;
+using func2274 = ret2274(*)(cocos2d::CCNode*, cocos2d::SEL_MenuHandler, const char*, const char*, const char*, const char*, float);
+using pure2274 = ret2274(cocos2d::CCNode*, cocos2d::SEL_MenuHandler, const char*, const char*, const char*, const char*, float);
+using meta2274 = ret2274(cocos2d::CCNode*, cocos2d::SEL_MenuHandler, const char*, const char*, const char*, const char*, float);
+using member2274 = func2274;
 
 using ret100 = cocos2d::CCEaseIn*;
 using func100 = ret100(*)(cocos2d::CCActionInterval*, float);
@@ -8735,11 +8741,11 @@ using pure100 = ret100(cocos2d::CCActionInterval*, float);
 using meta100 = ret100(cocos2d::CCActionInterval*, float);
 using member100 = func100;
 
-using ret2202 = SetItemIDLayer*;
-using func2202 = ret2202(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2202 = ret2202(EffectGameObject*, cocos2d::CCArray*);
-using meta2202 = ret2202(EffectGameObject*, cocos2d::CCArray*);
-using member2202 = func2202;
+using ret2205 = SetItemIDLayer*;
+using func2205 = ret2205(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2205 = ret2205(EffectGameObject*, cocos2d::CCArray*);
+using meta2205 = ret2205(EffectGameObject*, cocos2d::CCArray*);
+using member2205 = func2205;
 
 using ret99 = cocos2d::CCEaseElasticOut*;
 using func99 = ret99(*)(cocos2d::CCActionInterval*, float);
@@ -8939,23 +8945,11 @@ using pure88 = ret88(float, cocos2d::PopTransition);
 using meta88 = ret88(cocos2d::CCDirector*, float, cocos2d::PopTransition);
 using member88 = ret88(cocos2d::CCDirector::*)(float, cocos2d::PopTransition);
 
-using ret2169 = ProfilePage*;
-using func2169 = ret2169(*)(int, bool);
-using pure2169 = ret2169(int, bool);
-using meta2169 = ret2169(int, bool);
-using member2169 = func2169;
-
-using ret1578 = void;
-using func1578 = ret1578(*)(GameSoundManager*);
-using pure1578 = ret1578();
-using meta1578 = ret1578(GameSoundManager*);
-using member1578 = ret1578(GameSoundManager::*)();
-
-using ret1579 = void;
-using func1579 = ret1579(*)(GameSoundManager*);
-using pure1579 = ret1579();
-using meta1579 = ret1579(GameSoundManager*);
-using member1579 = ret1579(GameSoundManager::*)();
+using ret2172 = ProfilePage*;
+using func2172 = ret2172(*)(int, bool);
+using pure2172 = ret2172(int, bool);
+using meta2172 = ret2172(int, bool);
+using member2172 = func2172;
 
 using ret1580 = void;
 using func1580 = ret1580(*)(GameSoundManager*);
@@ -8964,34 +8958,46 @@ using meta1580 = ret1580(GameSoundManager*);
 using member1580 = ret1580(GameSoundManager::*)();
 
 using ret1581 = void;
-using func1581 = ret1581(*)(GameSoundManager*, gd::string, bool, bool);
-using pure1581 = ret1581(gd::string, bool, bool);
-using meta1581 = ret1581(GameSoundManager*, gd::string, bool, bool);
-using member1581 = ret1581(GameSoundManager::*)(gd::string, bool, bool);
+using func1581 = ret1581(*)(GameSoundManager*);
+using pure1581 = ret1581();
+using meta1581 = ret1581(GameSoundManager*);
+using member1581 = ret1581(GameSoundManager::*)();
 
 using ret1582 = void;
-using func1582 = ret1582(*)(GameSoundManager*, gd::string, float, float, float);
-using pure1582 = ret1582(gd::string, float, float, float);
-using meta1582 = ret1582(GameSoundManager*, gd::string, float, float, float);
-using member1582 = ret1582(GameSoundManager::*)(gd::string, float, float, float);
+using func1582 = ret1582(*)(GameSoundManager*);
+using pure1582 = ret1582();
+using meta1582 = ret1582(GameSoundManager*);
+using member1582 = ret1582(GameSoundManager::*)();
 
 using ret1583 = void;
-using func1583 = ret1583(*)(GameSoundManager*);
-using pure1583 = ret1583();
-using meta1583 = ret1583(GameSoundManager*);
-using member1583 = ret1583(GameSoundManager::*)();
+using func1583 = ret1583(*)(GameSoundManager*, gd::string, bool, bool);
+using pure1583 = ret1583(gd::string, bool, bool);
+using meta1583 = ret1583(GameSoundManager*, gd::string, bool, bool);
+using member1583 = ret1583(GameSoundManager::*)(gd::string, bool, bool);
+
+using ret1584 = void;
+using func1584 = ret1584(*)(GameSoundManager*, gd::string, float, float, float);
+using pure1584 = ret1584(gd::string, float, float, float);
+using meta1584 = ret1584(GameSoundManager*, gd::string, float, float, float);
+using member1584 = ret1584(GameSoundManager::*)(gd::string, float, float, float);
 
 using ret1585 = void;
 using func1585 = ret1585(*)(GameSoundManager*);
 using pure1585 = ret1585();
 using meta1585 = ret1585(GameSoundManager*);
-using member1585 = func1585;
+using member1585 = ret1585(GameSoundManager::*)();
 
-using ret1586 = GameSoundManager*;
-using func1586 = ret1586(*)();
-using pure1586 = ret1586();
-using meta1586 = ret1586();
-using member1586 = func1586;
+using ret1587 = void;
+using func1587 = ret1587(*)(GameSoundManager*);
+using pure1587 = ret1587();
+using meta1587 = ret1587(GameSoundManager*);
+using member1587 = func1587;
+
+using ret1588 = GameSoundManager*;
+using func1588 = ret1588(*)();
+using pure1588 = ret1588();
+using meta1588 = ret1588();
+using member1588 = func1588;
 
 using ret125 = decltype(std::declval<cocos2d::CCIMEDelegate>().attachWithIME());
 using func125 = ret125(*)(cocos2d::CCIMEDelegate*);
@@ -9173,11 +9179,11 @@ using pure753 = ret753(cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, floa
 using meta753 = ret753(CCLightFlash*, cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, float, float, float, float, float, float, float, float, float, float, float, float, int, bool, bool, float);
 using member753 = ret753(CCLightFlash::*)(cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, float, float, float, float, float, float, float, float, float, float, float, float, int, bool, bool, float);
 
-using ret2318 = TouchToggleAction*;
-using func2318 = ret2318(*)(gd::string);
-using pure2318 = ret2318(gd::string);
-using meta2318 = ret2318(gd::string);
-using member2318 = func2318;
+using ret2321 = TouchToggleAction*;
+using func2321 = ret2321(*)(gd::string);
+using pure2321 = ret2321(gd::string);
+using meta2321 = ret2321(gd::string);
+using member2321 = func2321;
 
 using ret46 = decltype(std::declval<cocos2d::CCDictionary>().allKeys());
 using func46 = ret46(*)(cocos2d::CCDictionary*);
@@ -9263,11 +9269,11 @@ using pure696 = ret696();
 using meta696 = ret696(AudioEffectsLayer*);
 using member696 = ret696(AudioEffectsLayer::*)();
 
-using ret1302 = GJItemIcon*;
-using func1302 = ret1302(*)(UnlockType, int, cocos2d::ccColor3B, cocos2d::ccColor3B, bool, bool, bool, cocos2d::ccColor3B);
-using pure1302 = ret1302(UnlockType, int, cocos2d::ccColor3B, cocos2d::ccColor3B, bool, bool, bool, cocos2d::ccColor3B);
-using meta1302 = ret1302(UnlockType, int, cocos2d::ccColor3B, cocos2d::ccColor3B, bool, bool, bool, cocos2d::ccColor3B);
-using member1302 = func1302;
+using ret1304 = GJItemIcon*;
+using func1304 = ret1304(*)(UnlockType, int, cocos2d::ccColor3B, cocos2d::ccColor3B, bool, bool, bool, cocos2d::ccColor3B);
+using pure1304 = ret1304(UnlockType, int, cocos2d::ccColor3B, cocos2d::ccColor3B, bool, bool, bool, cocos2d::ccColor3B);
+using meta1304 = ret1304(UnlockType, int, cocos2d::ccColor3B, cocos2d::ccColor3B, bool, bool, bool, cocos2d::ccColor3B);
+using member1304 = func1304;
 
 using ret428 = decltype(std::declval<cocos2d::CCPoolManager>().pop());
 using func428 = ret428(*)(cocos2d::CCPoolManager*);
@@ -9281,35 +9287,35 @@ using pure429 = ret429();
 using meta429 = ret429();
 using member429 = func429;
 
-using ret1849 = PauseLayer*;
-using func1849 = ret1849(*)(bool);
-using pure1849 = ret1849(bool);
-using meta1849 = ret1849(bool);
-using member1849 = func1849;
-
-using ret1850 = void;
-using func1850 = ret1850(*)(PauseLayer*, cocos2d::CCObject*);
-using pure1850 = ret1850(cocos2d::CCObject*);
-using meta1850 = ret1850(PauseLayer*, cocos2d::CCObject*);
-using member1850 = ret1850(PauseLayer::*)(cocos2d::CCObject*);
-
-using ret1852 = void;
-using func1852 = ret1852(*)(PauseLayer*, gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint);
-using pure1852 = ret1852(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint);
-using meta1852 = ret1852(PauseLayer*, gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint);
-using member1852 = ret1852(PauseLayer::*)(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint);
+using ret1852 = PauseLayer*;
+using func1852 = ret1852(*)(bool);
+using pure1852 = ret1852(bool);
+using meta1852 = ret1852(bool);
+using member1852 = func1852;
 
 using ret1853 = void;
-using func1853 = ret1853(*)(PauseLayer*);
-using pure1853 = ret1853();
-using meta1853 = ret1853(PauseLayer*);
-using member1853 = ret1853(PauseLayer::*)();
+using func1853 = ret1853(*)(PauseLayer*, cocos2d::CCObject*);
+using pure1853 = ret1853(cocos2d::CCObject*);
+using meta1853 = ret1853(PauseLayer*, cocos2d::CCObject*);
+using member1853 = ret1853(PauseLayer::*)(cocos2d::CCObject*);
 
 using ret1855 = void;
-using func1855 = ret1855(*)(PauseLayer*, cocos2d::enumKeyCodes);
-using pure1855 = ret1855(cocos2d::enumKeyCodes);
-using meta1855 = ret1855(PauseLayer*, cocos2d::enumKeyCodes);
-using member1855 = ret1855(PauseLayer::*)(cocos2d::enumKeyCodes);
+using func1855 = ret1855(*)(PauseLayer*, gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint);
+using pure1855 = ret1855(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint);
+using meta1855 = ret1855(PauseLayer*, gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint);
+using member1855 = ret1855(PauseLayer::*)(gd::string, cocos2d::SEL_MenuHandler, bool, cocos2d::CCMenu*, cocos2d::CCPoint);
+
+using ret1856 = void;
+using func1856 = ret1856(*)(PauseLayer*);
+using pure1856 = ret1856();
+using meta1856 = ret1856(PauseLayer*);
+using member1856 = ret1856(PauseLayer::*)();
+
+using ret1858 = void;
+using func1858 = ret1858(*)(PauseLayer*, cocos2d::enumKeyCodes);
+using pure1858 = ret1858(cocos2d::enumKeyCodes);
+using meta1858 = ret1858(PauseLayer*, cocos2d::enumKeyCodes);
+using member1858 = ret1858(PauseLayer::*)(cocos2d::enumKeyCodes);
 
 using ret237 = void;
 using func237 = ret237(*)(cocos2d::CCMenuItem*);
@@ -9377,55 +9383,43 @@ using pure247 = ret247();
 using meta247 = ret247(cocos2d::CCMenuItem*);
 using member247 = ret247(cocos2d::CCMenuItem::*)();
 
-using ret1304 = void;
-using func1304 = ret1304(*)(GJListLayer*);
-using pure1304 = ret1304();
-using meta1304 = ret1304(GJListLayer*);
-using member1304 = func1304;
+using ret1306 = void;
+using func1306 = ret1306(*)(GJListLayer*);
+using pure1306 = ret1306();
+using meta1306 = ret1306(GJListLayer*);
+using member1306 = func1306;
 
-using ret1305 = GJListLayer*;
-using func1305 = ret1305(*)(cocos2d::CCObject*, const char*, cocos2d::ccColor4B, float, float);
-using pure1305 = ret1305(cocos2d::CCObject*, const char*, cocos2d::ccColor4B, float, float);
-using meta1305 = ret1305(cocos2d::CCObject*, const char*, cocos2d::ccColor4B, float, float);
-using member1305 = func1305;
+using ret1307 = GJListLayer*;
+using func1307 = ret1307(*)(cocos2d::CCObject*, const char*, cocos2d::ccColor4B, float, float);
+using pure1307 = ret1307(cocos2d::CCObject*, const char*, cocos2d::ccColor4B, float, float);
+using meta1307 = ret1307(cocos2d::CCObject*, const char*, cocos2d::ccColor4B, float, float);
+using member1307 = func1307;
 
-using ret1340 = void;
-using func1340 = ret1340(*)(GJSpiderSprite*);
-using pure1340 = ret1340();
-using meta1340 = ret1340(GJSpiderSprite*);
-using member1340 = func1340;
-
-using ret1341 = bool;
-using func1341 = ret1341(*)(GJSpiderSprite*);
-using pure1341 = ret1341();
-using meta1341 = ret1341(GJSpiderSprite*);
-using member1341 = ret1341(GJSpiderSprite::*)();
-
-using ret1342 = GJSpiderSprite*;
-using func1342 = ret1342(*)();
+using ret1342 = void;
+using func1342 = ret1342(*)(GJSpiderSprite*);
 using pure1342 = ret1342();
-using meta1342 = ret1342();
+using meta1342 = ret1342(GJSpiderSprite*);
 using member1342 = func1342;
 
-using ret1321 = bool;
-using func1321 = ret1321(*)(GJScaleControl*);
-using pure1321 = ret1321();
-using meta1321 = ret1321(GJScaleControl*);
-using member1321 = ret1321(GJScaleControl::*)();
+using ret1343 = bool;
+using func1343 = ret1343(*)(GJSpiderSprite*);
+using pure1343 = ret1343();
+using meta1343 = ret1343(GJSpiderSprite*);
+using member1343 = ret1343(GJSpiderSprite::*)();
 
-using ret1322 = bool;
-using func1322 = ret1322(*)(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using pure1322 = ret1322(cocos2d::CCTouch*, cocos2d::CCEvent*);
-using meta1322 = ret1322(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using member1322 = ret1322(GJScaleControl::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using ret1344 = GJSpiderSprite*;
+using func1344 = ret1344(*)();
+using pure1344 = ret1344();
+using meta1344 = ret1344();
+using member1344 = func1344;
 
-using ret1323 = void;
-using func1323 = ret1323(*)(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using pure1323 = ret1323(cocos2d::CCTouch*, cocos2d::CCEvent*);
-using meta1323 = ret1323(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
-using member1323 = ret1323(GJScaleControl::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using ret1323 = bool;
+using func1323 = ret1323(*)(GJScaleControl*);
+using pure1323 = ret1323();
+using meta1323 = ret1323(GJScaleControl*);
+using member1323 = ret1323(GJScaleControl::*)();
 
-using ret1324 = void;
+using ret1324 = bool;
 using func1324 = ret1324(*)(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
 using pure1324 = ret1324(cocos2d::CCTouch*, cocos2d::CCEvent*);
 using meta1324 = ret1324(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
@@ -9437,89 +9431,89 @@ using pure1325 = ret1325(cocos2d::CCTouch*, cocos2d::CCEvent*);
 using meta1325 = ret1325(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
 using member1325 = ret1325(GJScaleControl::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
-using ret1184 = bool;
-using func1184 = ret1184(*)(GJEffectManager*);
-using pure1184 = ret1184();
-using meta1184 = ret1184(GJEffectManager*);
-using member1184 = ret1184(GJEffectManager::*)();
+using ret1326 = void;
+using func1326 = ret1326(*)(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using pure1326 = ret1326(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using meta1326 = ret1326(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using member1326 = ret1326(GJScaleControl::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
-using ret1185 = void;
-using func1185 = ret1185(*)(GJEffectManager*, int);
-using pure1185 = ret1185(int);
-using meta1185 = ret1185(GJEffectManager*, int);
-using member1185 = ret1185(GJEffectManager::*)(int);
+using ret1327 = void;
+using func1327 = ret1327(*)(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using pure1327 = ret1327(cocos2d::CCTouch*, cocos2d::CCEvent*);
+using meta1327 = ret1327(GJScaleControl*, cocos2d::CCTouch*, cocos2d::CCEvent*);
+using member1327 = ret1327(GJScaleControl::*)(cocos2d::CCTouch*, cocos2d::CCEvent*);
 
-using ret1186 = void;
-using func1186 = ret1186(*)(GJEffectManager*, int);
-using pure1186 = ret1186(int);
-using meta1186 = ret1186(GJEffectManager*, int);
-using member1186 = ret1186(GJEffectManager::*)(int);
+using ret1186 = bool;
+using func1186 = ret1186(*)(GJEffectManager*);
+using pure1186 = ret1186();
+using meta1186 = ret1186(GJEffectManager*);
+using member1186 = ret1186(GJEffectManager::*)();
 
 using ret1187 = void;
-using func1187 = ret1187(*)(GJEffectManager*, cocos2d::CCArray*);
-using pure1187 = ret1187(cocos2d::CCArray*);
-using meta1187 = ret1187(GJEffectManager*, cocos2d::CCArray*);
-using member1187 = ret1187(GJEffectManager::*)(cocos2d::CCArray*);
+using func1187 = ret1187(*)(GJEffectManager*, int);
+using pure1187 = ret1187(int);
+using meta1187 = ret1187(GJEffectManager*, int);
+using member1187 = ret1187(GJEffectManager::*)(int);
 
 using ret1188 = void;
-using func1188 = ret1188(*)(GJEffectManager*, PulseEffectAction*);
-using pure1188 = ret1188(PulseEffectAction*);
-using meta1188 = ret1188(GJEffectManager*, PulseEffectAction*);
-using member1188 = ret1188(GJEffectManager::*)(PulseEffectAction*);
+using func1188 = ret1188(*)(GJEffectManager*, int);
+using pure1188 = ret1188(int);
+using meta1188 = ret1188(GJEffectManager*, int);
+using member1188 = ret1188(GJEffectManager::*)(int);
 
 using ret1189 = void;
-using func1189 = ret1189(*)(GJEffectManager*);
-using pure1189 = ret1189();
-using meta1189 = ret1189(GJEffectManager*);
-using member1189 = ret1189(GJEffectManager::*)();
+using func1189 = ret1189(*)(GJEffectManager*, cocos2d::CCArray*);
+using pure1189 = ret1189(cocos2d::CCArray*);
+using meta1189 = ret1189(GJEffectManager*, cocos2d::CCArray*);
+using member1189 = ret1189(GJEffectManager::*)(cocos2d::CCArray*);
 
 using ret1190 = void;
-using func1190 = ret1190(*)(GJEffectManager*, int, ColorAction*);
-using pure1190 = ret1190(int, ColorAction*);
-using meta1190 = ret1190(GJEffectManager*, int, ColorAction*);
-using member1190 = ret1190(GJEffectManager::*)(int, ColorAction*);
+using func1190 = ret1190(*)(GJEffectManager*, PulseEffectAction*);
+using pure1190 = ret1190(PulseEffectAction*);
+using meta1190 = ret1190(GJEffectManager*, PulseEffectAction*);
+using member1190 = ret1190(GJEffectManager::*)(PulseEffectAction*);
 
 using ret1191 = void;
-using func1191 = ret1191(*)(GJEffectManager*, cocos2d::_ccColor3B);
-using pure1191 = ret1191(cocos2d::_ccColor3B);
-using meta1191 = ret1191(GJEffectManager*, cocos2d::_ccColor3B);
-using member1191 = ret1191(GJEffectManager::*)(cocos2d::_ccColor3B);
+using func1191 = ret1191(*)(GJEffectManager*);
+using pure1191 = ret1191();
+using meta1191 = ret1191(GJEffectManager*);
+using member1191 = ret1191(GJEffectManager::*)();
 
 using ret1192 = void;
-using func1192 = ret1192(*)(GJEffectManager*, ColorAction*);
-using pure1192 = ret1192(ColorAction*);
-using meta1192 = ret1192(GJEffectManager*, ColorAction*);
-using member1192 = ret1192(GJEffectManager::*)(ColorAction*);
+using func1192 = ret1192(*)(GJEffectManager*, int, ColorAction*);
+using pure1192 = ret1192(int, ColorAction*);
+using meta1192 = ret1192(GJEffectManager*, int, ColorAction*);
+using member1192 = ret1192(GJEffectManager::*)(int, ColorAction*);
 
 using ret1193 = void;
-using func1193 = ret1193(*)(GJEffectManager*, int);
-using pure1193 = ret1193(int);
-using meta1193 = ret1193(GJEffectManager*, int);
-using member1193 = ret1193(GJEffectManager::*)(int);
+using func1193 = ret1193(*)(GJEffectManager*, cocos2d::_ccColor3B);
+using pure1193 = ret1193(cocos2d::_ccColor3B);
+using meta1193 = ret1193(GJEffectManager*, cocos2d::_ccColor3B);
+using member1193 = ret1193(GJEffectManager::*)(cocos2d::_ccColor3B);
 
 using ret1194 = void;
-using func1194 = ret1194(*)(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
-using pure1194 = ret1194(cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
-using meta1194 = ret1194(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
-using member1194 = ret1194(GJEffectManager::*)(cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
+using func1194 = ret1194(*)(GJEffectManager*, ColorAction*);
+using pure1194 = ret1194(ColorAction*);
+using meta1194 = ret1194(GJEffectManager*, ColorAction*);
+using member1194 = ret1194(GJEffectManager::*)(ColorAction*);
 
-using ret1195 = cocos2d::_ccColor3B;
-using func1195 = ret1195(*)(GJEffectManager*, int, cocos2d::_ccColor3B const&, bool);
-using pure1195 = ret1195(int, cocos2d::_ccColor3B const&, bool);
-using meta1195 = ret1195(GJEffectManager*, int, cocos2d::_ccColor3B const&, bool);
-using member1195 = ret1195(GJEffectManager::*)(int, cocos2d::_ccColor3B const&, bool);
+using ret1195 = void;
+using func1195 = ret1195(*)(GJEffectManager*, int);
+using pure1195 = ret1195(int);
+using meta1195 = ret1195(GJEffectManager*, int);
+using member1195 = ret1195(GJEffectManager::*)(int);
 
 using ret1196 = void;
-using func1196 = ret1196(*)(GJEffectManager*, int);
-using pure1196 = ret1196(int);
-using meta1196 = ret1196(GJEffectManager*, int);
-using member1196 = ret1196(GJEffectManager::*)(int);
+using func1196 = ret1196(*)(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
+using pure1196 = ret1196(cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
+using meta1196 = ret1196(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
+using member1196 = ret1196(GJEffectManager::*)(cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
 
-using ret1197 = void;
-using func1197 = ret1197(*)(GJEffectManager*, cocos2d::_ccColor3B const&, PulseEffectAction*);
-using pure1197 = ret1197(cocos2d::_ccColor3B const&, PulseEffectAction*);
-using meta1197 = ret1197(GJEffectManager*, cocos2d::_ccColor3B const&, PulseEffectAction*);
-using member1197 = ret1197(GJEffectManager::*)(cocos2d::_ccColor3B const&, PulseEffectAction*);
+using ret1197 = cocos2d::_ccColor3B;
+using func1197 = ret1197(*)(GJEffectManager*, int, cocos2d::_ccColor3B const&, bool);
+using pure1197 = ret1197(int, cocos2d::_ccColor3B const&, bool);
+using meta1197 = ret1197(GJEffectManager*, int, cocos2d::_ccColor3B const&, bool);
+using member1197 = ret1197(GJEffectManager::*)(int, cocos2d::_ccColor3B const&, bool);
 
 using ret1198 = void;
 using func1198 = ret1198(*)(GJEffectManager*, int);
@@ -9528,172 +9522,172 @@ using meta1198 = ret1198(GJEffectManager*, int);
 using member1198 = ret1198(GJEffectManager::*)(int);
 
 using ret1199 = void;
-using func1199 = ret1199(*)(GJEffectManager*, int);
-using pure1199 = ret1199(int);
-using meta1199 = ret1199(GJEffectManager*, int);
-using member1199 = ret1199(GJEffectManager::*)(int);
+using func1199 = ret1199(*)(GJEffectManager*, cocos2d::_ccColor3B const&, PulseEffectAction*);
+using pure1199 = ret1199(cocos2d::_ccColor3B const&, PulseEffectAction*);
+using meta1199 = ret1199(GJEffectManager*, cocos2d::_ccColor3B const&, PulseEffectAction*);
+using member1199 = ret1199(GJEffectManager::*)(cocos2d::_ccColor3B const&, PulseEffectAction*);
 
-using ret1200 = GJEffectManager*;
-using func1200 = ret1200(*)();
-using pure1200 = ret1200();
-using meta1200 = ret1200();
-using member1200 = func1200;
+using ret1200 = void;
+using func1200 = ret1200(*)(GJEffectManager*, int);
+using pure1200 = ret1200(int);
+using meta1200 = ret1200(GJEffectManager*, int);
+using member1200 = ret1200(GJEffectManager::*)(int);
 
 using ret1201 = void;
-using func1201 = ret1201(*)(GJEffectManager*, float, float, float, int, int, bool, int);
-using pure1201 = ret1201(float, float, float, int, int, bool, int);
-using meta1201 = ret1201(GJEffectManager*, float, float, float, int, int, bool, int);
-using member1201 = ret1201(GJEffectManager::*)(float, float, float, int, int, bool, int);
+using func1201 = ret1201(*)(GJEffectManager*, int);
+using pure1201 = ret1201(int);
+using meta1201 = ret1201(GJEffectManager*, int);
+using member1201 = ret1201(GJEffectManager::*)(int);
 
-using ret1202 = void;
-using func1202 = ret1202(*)(GJEffectManager*, cocos2d::CCPoint, int, float, int, float, bool, bool, int);
-using pure1202 = ret1202(cocos2d::CCPoint, int, float, int, float, bool, bool, int);
-using meta1202 = ret1202(GJEffectManager*, cocos2d::CCPoint, int, float, int, float, bool, bool, int);
-using member1202 = ret1202(GJEffectManager::*)(cocos2d::CCPoint, int, float, int, float, bool, bool, int);
+using ret1202 = GJEffectManager*;
+using func1202 = ret1202(*)();
+using pure1202 = ret1202();
+using meta1202 = ret1202();
+using member1202 = func1202;
 
 using ret1203 = void;
-using func1203 = ret1203(*)(GJEffectManager*, float, float, int, float, float, int, int);
-using pure1203 = ret1203(float, float, int, float, float, int, int);
-using meta1203 = ret1203(GJEffectManager*, float, float, int, float, float, int, int);
-using member1203 = ret1203(GJEffectManager::*)(float, float, int, float, float, int, int);
+using func1203 = ret1203(*)(GJEffectManager*, float, float, float, int, int, bool, int);
+using pure1203 = ret1203(float, float, float, int, int, bool, int);
+using meta1203 = ret1203(GJEffectManager*, float, float, float, int, int, bool, int);
+using member1203 = ret1203(GJEffectManager::*)(float, float, float, int, int, bool, int);
 
 using ret1204 = void;
-using func1204 = ret1204(*)(GJEffectManager*, int, float, int, int, int, float, bool, int);
-using pure1204 = ret1204(int, float, int, int, int, float, bool, int);
-using meta1204 = ret1204(GJEffectManager*, int, float, int, int, int, float, bool, int);
-using member1204 = ret1204(GJEffectManager::*)(int, float, int, int, int, float, bool, int);
+using func1204 = ret1204(*)(GJEffectManager*, cocos2d::CCPoint, int, float, int, float, bool, bool, int);
+using pure1204 = ret1204(cocos2d::CCPoint, int, float, int, float, bool, bool, int);
+using meta1204 = ret1204(GJEffectManager*, cocos2d::CCPoint, int, float, int, float, bool, bool, int);
+using member1204 = ret1204(GJEffectManager::*)(cocos2d::CCPoint, int, float, int, float, bool, bool, int);
 
 using ret1205 = void;
-using func1205 = ret1205(*)(GJEffectManager*);
-using pure1205 = ret1205();
-using meta1205 = ret1205(GJEffectManager*);
-using member1205 = ret1205(GJEffectManager::*)();
+using func1205 = ret1205(*)(GJEffectManager*, float, float, int, float, float, int, int);
+using pure1205 = ret1205(float, float, int, float, float, int, int);
+using meta1205 = ret1205(GJEffectManager*, float, float, int, float, float, int, int);
+using member1205 = ret1205(GJEffectManager::*)(float, float, int, float, float, int, int);
 
 using ret1206 = void;
-using func1206 = ret1206(*)(GJEffectManager*);
-using pure1206 = ret1206();
-using meta1206 = ret1206(GJEffectManager*);
-using member1206 = ret1206(GJEffectManager::*)();
+using func1206 = ret1206(*)(GJEffectManager*, int, float, int, int, int, float, bool, int);
+using pure1206 = ret1206(int, float, int, int, int, float, bool, int);
+using meta1206 = ret1206(GJEffectManager*, int, float, int, int, int, float, bool, int);
+using member1206 = ret1206(GJEffectManager::*)(int, float, int, int, int, float, bool, int);
 
-using ret1207 = const cocos2d::_ccColor3B&;
-using func1207 = ret1207(*)(GJEffectManager*, int);
-using pure1207 = ret1207(int);
-using meta1207 = ret1207(GJEffectManager*, int);
-using member1207 = ret1207(GJEffectManager::*)(int);
+using ret1207 = void;
+using func1207 = ret1207(*)(GJEffectManager*);
+using pure1207 = ret1207();
+using meta1207 = ret1207(GJEffectManager*);
+using member1207 = ret1207(GJEffectManager::*)();
 
-using ret1208 = const cocos2d::_ccColor3B&;
-using func1208 = ret1208(*)(GJEffectManager*, int);
-using pure1208 = ret1208(int);
-using meta1208 = ret1208(GJEffectManager*, int);
-using member1208 = ret1208(GJEffectManager::*)(int);
+using ret1208 = void;
+using func1208 = ret1208(*)(GJEffectManager*);
+using pure1208 = ret1208();
+using meta1208 = ret1208(GJEffectManager*);
+using member1208 = ret1208(GJEffectManager::*)();
 
-using ret1209 = void;
-using func1209 = ret1209(*)(GJEffectManager*);
-using pure1209 = ret1209();
-using meta1209 = ret1209(GJEffectManager*);
-using member1209 = ret1209(GJEffectManager::*)();
+using ret1209 = ColorAction*;
+using func1209 = ret1209(*)(GJEffectManager*, int);
+using pure1209 = ret1209(int);
+using meta1209 = ret1209(GJEffectManager*, int);
+using member1209 = ret1209(GJEffectManager::*)(int);
 
-using ret1210 = void;
-using func1210 = ret1210(*)(GJEffectManager*);
-using pure1210 = ret1210();
-using meta1210 = ret1210(GJEffectManager*);
-using member1210 = ret1210(GJEffectManager::*)();
+using ret1210 = const cocos2d::_ccColor3B&;
+using func1210 = ret1210(*)(GJEffectManager*, int);
+using pure1210 = ret1210(int);
+using meta1210 = ret1210(GJEffectManager*, int);
+using member1210 = ret1210(GJEffectManager::*)(int);
 
 using ret1211 = void;
-using func1211 = ret1211(*)(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
-using pure1211 = ret1211(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
-using meta1211 = ret1211(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
-using member1211 = ret1211(GJEffectManager::*)(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
+using func1211 = ret1211(*)(GJEffectManager*);
+using pure1211 = ret1211();
+using meta1211 = ret1211(GJEffectManager*);
+using member1211 = ret1211(GJEffectManager::*)();
 
-using ret1212 = uint8_t;
-using func1212 = ret1212(*)(GJEffectManager*, int);
-using pure1212 = ret1212(int);
-using meta1212 = ret1212(GJEffectManager*, int);
-using member1212 = ret1212(GJEffectManager::*)(int);
+using ret1212 = void;
+using func1212 = ret1212(*)(GJEffectManager*);
+using pure1212 = ret1212();
+using meta1212 = ret1212(GJEffectManager*);
+using member1212 = ret1212(GJEffectManager::*)();
 
-using ret1213 = gd::string;
-using func1213 = ret1213(*)(GJEffectManager*);
-using pure1213 = ret1213();
-using meta1213 = ret1213(GJEffectManager*);
-using member1213 = ret1213(GJEffectManager::*)();
+using ret1213 = void;
+using func1213 = ret1213(*)(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
+using pure1213 = ret1213(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
+using meta1213 = ret1213(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
+using member1213 = ret1213(GJEffectManager::*)(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
 
-using ret1214 = void;
-using func1214 = ret1214(*)(GJEffectManager*, bool, int, int);
-using pure1214 = ret1214(bool, int, int);
-using meta1214 = ret1214(GJEffectManager*, bool, int, int);
-using member1214 = ret1214(GJEffectManager::*)(bool, int, int);
+using ret1214 = uint8_t;
+using func1214 = ret1214(*)(GJEffectManager*, int);
+using pure1214 = ret1214(int);
+using meta1214 = ret1214(GJEffectManager*, int);
+using member1214 = ret1214(GJEffectManager::*)(int);
 
-using ret1215 = void;
+using ret1215 = gd::string;
 using func1215 = ret1215(*)(GJEffectManager*);
 using pure1215 = ret1215();
 using meta1215 = ret1215(GJEffectManager*);
 using member1215 = ret1215(GJEffectManager::*)();
 
 using ret1216 = void;
-using func1216 = ret1216(*)(GJEffectManager*, int);
-using pure1216 = ret1216(int);
-using meta1216 = ret1216(GJEffectManager*, int);
-using member1216 = ret1216(GJEffectManager::*)(int);
+using func1216 = ret1216(*)(GJEffectManager*, bool, int, int);
+using pure1216 = ret1216(bool, int, int);
+using meta1216 = ret1216(GJEffectManager*, bool, int, int);
+using member1216 = ret1216(GJEffectManager::*)(bool, int, int);
 
 using ret1217 = void;
-using func1217 = ret1217(*)(GJEffectManager*, int);
-using pure1217 = ret1217(int);
-using meta1217 = ret1217(GJEffectManager*, int);
-using member1217 = ret1217(GJEffectManager::*)(int);
+using func1217 = ret1217(*)(GJEffectManager*);
+using pure1217 = ret1217();
+using meta1217 = ret1217(GJEffectManager*);
+using member1217 = ret1217(GJEffectManager::*)();
 
-using ret1218 = bool;
+using ret1218 = void;
 using func1218 = ret1218(*)(GJEffectManager*, int);
 using pure1218 = ret1218(int);
 using meta1218 = ret1218(GJEffectManager*, int);
 using member1218 = ret1218(GJEffectManager::*)(int);
 
 using ret1219 = void;
-using func1219 = ret1219(*)(GJEffectManager*, int, cocos2d::_ccColor3B const&, bool);
-using pure1219 = ret1219(int, cocos2d::_ccColor3B const&, bool);
-using meta1219 = ret1219(GJEffectManager*, int, cocos2d::_ccColor3B const&, bool);
-using member1219 = ret1219(GJEffectManager::*)(int, cocos2d::_ccColor3B const&, bool);
+using func1219 = ret1219(*)(GJEffectManager*, int);
+using pure1219 = ret1219(int);
+using meta1219 = ret1219(GJEffectManager*, int);
+using member1219 = ret1219(GJEffectManager::*)(int);
 
-using ret1220 = void;
-using func1220 = ret1220(*)(GJEffectManager*, gd::string);
-using pure1220 = ret1220(gd::string);
-using meta1220 = ret1220(GJEffectManager*, gd::string);
-using member1220 = ret1220(GJEffectManager::*)(gd::string);
+using ret1220 = bool;
+using func1220 = ret1220(*)(GJEffectManager*, int);
+using pure1220 = ret1220(int);
+using meta1220 = ret1220(GJEffectManager*, int);
+using member1220 = ret1220(GJEffectManager::*)(int);
 
 using ret1221 = void;
-using func1221 = ret1221(*)(GJEffectManager*, int, int);
-using pure1221 = ret1221(int, int);
-using meta1221 = ret1221(GJEffectManager*, int, int);
-using member1221 = ret1221(GJEffectManager::*)(int, int);
+using func1221 = ret1221(*)(GJEffectManager*, int, cocos2d::_ccColor3B const&, bool);
+using pure1221 = ret1221(int, cocos2d::_ccColor3B const&, bool);
+using meta1221 = ret1221(GJEffectManager*, int, cocos2d::_ccColor3B const&, bool);
+using member1221 = ret1221(GJEffectManager::*)(int, cocos2d::_ccColor3B const&, bool);
 
 using ret1222 = void;
-using func1222 = ret1222(*)(GJEffectManager*, int);
-using pure1222 = ret1222(int);
-using meta1222 = ret1222(GJEffectManager*, int);
-using member1222 = ret1222(GJEffectManager::*)(int);
+using func1222 = ret1222(*)(GJEffectManager*, gd::string);
+using pure1222 = ret1222(gd::string);
+using meta1222 = ret1222(GJEffectManager*, gd::string);
+using member1222 = ret1222(GJEffectManager::*)(gd::string);
 
-using ret1223 = float;
-using func1223 = ret1223(*)(GJEffectManager*, int);
-using pure1223 = ret1223(int);
-using meta1223 = ret1223(GJEffectManager*, int);
-using member1223 = ret1223(GJEffectManager::*)(int);
+using ret1223 = void;
+using func1223 = ret1223(*)(GJEffectManager*, int, int);
+using pure1223 = ret1223(int, int);
+using meta1223 = ret1223(GJEffectManager*, int, int);
+using member1223 = ret1223(GJEffectManager::*)(int, int);
 
 using ret1224 = void;
-using func1224 = ret1224(*)(GJEffectManager*, bool, bool);
-using pure1224 = ret1224(bool, bool);
-using meta1224 = ret1224(GJEffectManager*, bool, bool);
-using member1224 = ret1224(GJEffectManager::*)(bool, bool);
+using func1224 = ret1224(*)(GJEffectManager*, int);
+using pure1224 = ret1224(int);
+using meta1224 = ret1224(GJEffectManager*, int);
+using member1224 = ret1224(GJEffectManager::*)(int);
 
-using ret1225 = void;
-using func1225 = ret1225(*)(GJEffectManager*);
-using pure1225 = ret1225();
-using meta1225 = ret1225(GJEffectManager*);
-using member1225 = ret1225(GJEffectManager::*)();
+using ret1225 = float;
+using func1225 = ret1225(*)(GJEffectManager*, int);
+using pure1225 = ret1225(int);
+using meta1225 = ret1225(GJEffectManager*, int);
+using member1225 = ret1225(GJEffectManager::*)(int);
 
 using ret1226 = void;
-using func1226 = ret1226(*)(GJEffectManager*);
-using pure1226 = ret1226();
-using meta1226 = ret1226(GJEffectManager*);
-using member1226 = ret1226(GJEffectManager::*)();
+using func1226 = ret1226(*)(GJEffectManager*, bool, bool);
+using pure1226 = ret1226(bool, bool);
+using meta1226 = ret1226(GJEffectManager*, bool, bool);
+using member1226 = ret1226(GJEffectManager::*)(bool, bool);
 
 using ret1227 = void;
 using func1227 = ret1227(*)(GJEffectManager*);
@@ -9702,10 +9696,10 @@ using meta1227 = ret1227(GJEffectManager*);
 using member1227 = ret1227(GJEffectManager::*)();
 
 using ret1228 = void;
-using func1228 = ret1228(*)(GJEffectManager*, float, bool);
-using pure1228 = ret1228(float, bool);
-using meta1228 = ret1228(GJEffectManager*, float, bool);
-using member1228 = ret1228(GJEffectManager::*)(float, bool);
+using func1228 = ret1228(*)(GJEffectManager*);
+using pure1228 = ret1228();
+using meta1228 = ret1228(GJEffectManager*);
+using member1228 = ret1228(GJEffectManager::*)();
 
 using ret1229 = void;
 using func1229 = ret1229(*)(GJEffectManager*);
@@ -9714,10 +9708,10 @@ using meta1229 = ret1229(GJEffectManager*);
 using member1229 = ret1229(GJEffectManager::*)();
 
 using ret1230 = void;
-using func1230 = ret1230(*)(GJEffectManager*);
-using pure1230 = ret1230();
-using meta1230 = ret1230(GJEffectManager*);
-using member1230 = ret1230(GJEffectManager::*)();
+using func1230 = ret1230(*)(GJEffectManager*, float, bool);
+using pure1230 = ret1230(float, bool);
+using meta1230 = ret1230(GJEffectManager*, float, bool);
+using member1230 = ret1230(GJEffectManager::*)(float, bool);
 
 using ret1231 = void;
 using func1231 = ret1231(*)(GJEffectManager*);
@@ -9732,10 +9726,10 @@ using meta1232 = ret1232(GJEffectManager*);
 using member1232 = ret1232(GJEffectManager::*)();
 
 using ret1233 = void;
-using func1233 = ret1233(*)(GJEffectManager*, int, int, int, bool, bool, int);
-using pure1233 = ret1233(int, int, int, bool, bool, int);
-using meta1233 = ret1233(GJEffectManager*, int, int, int, bool, bool, int);
-using member1233 = ret1233(GJEffectManager::*)(int, int, int, bool, bool, int);
+using func1233 = ret1233(*)(GJEffectManager*);
+using pure1233 = ret1233();
+using meta1233 = ret1233(GJEffectManager*);
+using member1233 = ret1233(GJEffectManager::*)();
 
 using ret1234 = void;
 using func1234 = ret1234(*)(GJEffectManager*);
@@ -9744,10 +9738,10 @@ using meta1234 = ret1234(GJEffectManager*);
 using member1234 = ret1234(GJEffectManager::*)();
 
 using ret1235 = void;
-using func1235 = ret1235(*)(GJEffectManager*, int);
-using pure1235 = ret1235(int);
-using meta1235 = ret1235(GJEffectManager*, int);
-using member1235 = ret1235(GJEffectManager::*)(int);
+using func1235 = ret1235(*)(GJEffectManager*, int, int, int, bool, bool, int);
+using pure1235 = ret1235(int, int, int, bool, bool, int);
+using meta1235 = ret1235(GJEffectManager*, int, int, int, bool, bool, int);
+using member1235 = ret1235(GJEffectManager::*)(int, int, int, bool, bool, int);
 
 using ret1236 = void;
 using func1236 = ret1236(*)(GJEffectManager*);
@@ -9756,10 +9750,10 @@ using meta1236 = ret1236(GJEffectManager*);
 using member1236 = ret1236(GJEffectManager::*)();
 
 using ret1237 = void;
-using func1237 = ret1237(*)(GJEffectManager*);
-using pure1237 = ret1237();
-using meta1237 = ret1237(GJEffectManager*);
-using member1237 = ret1237(GJEffectManager::*)();
+using func1237 = ret1237(*)(GJEffectManager*, int);
+using pure1237 = ret1237(int);
+using meta1237 = ret1237(GJEffectManager*, int);
+using member1237 = ret1237(GJEffectManager::*)(int);
 
 using ret1238 = void;
 using func1238 = ret1238(*)(GJEffectManager*);
@@ -9786,118 +9780,118 @@ using meta1241 = ret1241(GJEffectManager*);
 using member1241 = ret1241(GJEffectManager::*)();
 
 using ret1242 = void;
-using func1242 = ret1242(*)(GJEffectManager*, int, int, bool, int, bool, int);
-using pure1242 = ret1242(int, int, bool, int, bool, int);
-using meta1242 = ret1242(GJEffectManager*, int, int, bool, int, bool, int);
-using member1242 = ret1242(GJEffectManager::*)(int, int, bool, int, bool, int);
+using func1242 = ret1242(*)(GJEffectManager*);
+using pure1242 = ret1242();
+using meta1242 = ret1242(GJEffectManager*);
+using member1242 = ret1242(GJEffectManager::*)();
 
 using ret1243 = void;
-using func1243 = ret1243(*)(GJEffectManager*, int, bool, int);
-using pure1243 = ret1243(int, bool, int);
-using meta1243 = ret1243(GJEffectManager*, int, bool, int);
-using member1243 = ret1243(GJEffectManager::*)(int, bool, int);
+using func1243 = ret1243(*)(GJEffectManager*);
+using pure1243 = ret1243();
+using meta1243 = ret1243(GJEffectManager*);
+using member1243 = ret1243(GJEffectManager::*)();
 
-using ret1244 = OpacityEffectAction*;
-using func1244 = ret1244(*)(GJEffectManager*, int, float, float, int);
-using pure1244 = ret1244(int, float, float, int);
-using meta1244 = ret1244(GJEffectManager*, int, float, float, int);
-using member1244 = ret1244(GJEffectManager::*)(int, float, float, int);
+using ret1244 = void;
+using func1244 = ret1244(*)(GJEffectManager*, int, int, bool, int, bool, int);
+using pure1244 = ret1244(int, int, bool, int, bool, int);
+using meta1244 = ret1244(GJEffectManager*, int, int, bool, int, bool, int);
+using member1244 = ret1244(GJEffectManager::*)(int, int, bool, int, bool, int);
 
 using ret1245 = void;
-using func1245 = ret1245(*)(GJEffectManager*, int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, int);
-using pure1245 = ret1245(int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, int);
-using meta1245 = ret1245(GJEffectManager*, int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, int);
-using member1245 = ret1245(GJEffectManager::*)(int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, int);
+using func1245 = ret1245(*)(GJEffectManager*, int, bool, int);
+using pure1245 = ret1245(int, bool, int);
+using meta1245 = ret1245(GJEffectManager*, int, bool, int);
+using member1245 = ret1245(GJEffectManager::*)(int, bool, int);
 
-using ret1246 = void;
-using func1246 = ret1246(*)(GJEffectManager*, int, bool, TouchTriggerType, bool, int);
-using pure1246 = ret1246(int, bool, TouchTriggerType, bool, int);
-using meta1246 = ret1246(GJEffectManager*, int, bool, TouchTriggerType, bool, int);
-using member1246 = ret1246(GJEffectManager::*)(int, bool, TouchTriggerType, bool, int);
+using ret1246 = OpacityEffectAction*;
+using func1246 = ret1246(*)(GJEffectManager*, int, float, float, int);
+using pure1246 = ret1246(int, float, float, int);
+using meta1246 = ret1246(GJEffectManager*, int, float, float, int);
+using member1246 = ret1246(GJEffectManager::*)(int, float, float, int);
 
 using ret1247 = void;
-using func1247 = ret1247(*)(GJEffectManager*, ColorAction*, int);
-using pure1247 = ret1247(ColorAction*, int);
-using meta1247 = ret1247(GJEffectManager*, ColorAction*, int);
-using member1247 = ret1247(GJEffectManager::*)(ColorAction*, int);
+using func1247 = ret1247(*)(GJEffectManager*, int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, int);
+using pure1247 = ret1247(int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, int);
+using meta1247 = ret1247(GJEffectManager*, int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, int);
+using member1247 = ret1247(GJEffectManager::*)(int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, int);
 
 using ret1248 = void;
-using func1248 = ret1248(*)(GJEffectManager*, int, int, bool);
-using pure1248 = ret1248(int, int, bool);
-using meta1248 = ret1248(GJEffectManager*, int, int, bool);
-using member1248 = ret1248(GJEffectManager::*)(int, int, bool);
+using func1248 = ret1248(*)(GJEffectManager*, int, bool, TouchTriggerType, bool, int);
+using pure1248 = ret1248(int, bool, TouchTriggerType, bool, int);
+using meta1248 = ret1248(GJEffectManager*, int, bool, TouchTriggerType, bool, int);
+using member1248 = ret1248(GJEffectManager::*)(int, bool, TouchTriggerType, bool, int);
 
 using ret1249 = void;
-using func1249 = ret1249(*)(GJEffectManager*, gd::string);
-using pure1249 = ret1249(gd::string);
-using meta1249 = ret1249(GJEffectManager*, gd::string);
-using member1249 = ret1249(GJEffectManager::*)(gd::string);
+using func1249 = ret1249(*)(GJEffectManager*, ColorAction*, int);
+using pure1249 = ret1249(ColorAction*, int);
+using meta1249 = ret1249(GJEffectManager*, ColorAction*, int);
+using member1249 = ret1249(GJEffectManager::*)(ColorAction*, int);
 
-using ret1250 = bool;
-using func1250 = ret1250(*)(GJEffectManager*, int);
-using pure1250 = ret1250(int);
-using meta1250 = ret1250(GJEffectManager*, int);
-using member1250 = ret1250(GJEffectManager::*)(int);
+using ret1250 = void;
+using func1250 = ret1250(*)(GJEffectManager*, int, int, bool);
+using pure1250 = ret1250(int, int, bool);
+using meta1250 = ret1250(GJEffectManager*, int, int, bool);
+using member1250 = ret1250(GJEffectManager::*)(int, int, bool);
 
 using ret1251 = void;
-using func1251 = ret1251(*)(GJEffectManager*, int, float, int);
-using pure1251 = ret1251(int, float, int);
-using meta1251 = ret1251(GJEffectManager*, int, float, int);
-using member1251 = ret1251(GJEffectManager::*)(int, float, int);
+using func1251 = ret1251(*)(GJEffectManager*, gd::string);
+using pure1251 = ret1251(gd::string);
+using meta1251 = ret1251(GJEffectManager*, gd::string);
+using member1251 = ret1251(GJEffectManager::*)(gd::string);
 
-using ret1252 = void;
-using func1252 = ret1252(*)(GJEffectManager*, EffectGameObject*);
-using pure1252 = ret1252(EffectGameObject*);
-using meta1252 = ret1252(GJEffectManager*, EffectGameObject*);
-using member1252 = ret1252(GJEffectManager::*)(EffectGameObject*);
+using ret1252 = bool;
+using func1252 = ret1252(*)(GJEffectManager*, int);
+using pure1252 = ret1252(int);
+using meta1252 = ret1252(GJEffectManager*, int);
+using member1252 = ret1252(GJEffectManager::*)(int);
 
 using ret1253 = void;
-using func1253 = ret1253(*)(GJEffectManager*, int);
-using pure1253 = ret1253(int);
-using meta1253 = ret1253(GJEffectManager*, int);
-using member1253 = ret1253(GJEffectManager::*)(int);
+using func1253 = ret1253(*)(GJEffectManager*, int, float, int);
+using pure1253 = ret1253(int, float, int);
+using meta1253 = ret1253(GJEffectManager*, int, float, int);
+using member1253 = ret1253(GJEffectManager::*)(int, float, int);
 
 using ret1254 = void;
-using func1254 = ret1254(*)(GJEffectManager*, int);
-using pure1254 = ret1254(int);
-using meta1254 = ret1254(GJEffectManager*, int);
-using member1254 = ret1254(GJEffectManager::*)(int);
+using func1254 = ret1254(*)(GJEffectManager*, EffectGameObject*);
+using pure1254 = ret1254(EffectGameObject*);
+using meta1254 = ret1254(GJEffectManager*, EffectGameObject*);
+using member1254 = ret1254(GJEffectManager::*)(EffectGameObject*);
 
 using ret1255 = void;
-using func1255 = ret1255(*)(GJEffectManager*, int, bool);
-using pure1255 = ret1255(int, bool);
-using meta1255 = ret1255(GJEffectManager*, int, bool);
-using member1255 = ret1255(GJEffectManager::*)(int, bool);
+using func1255 = ret1255(*)(GJEffectManager*, int);
+using pure1255 = ret1255(int);
+using meta1255 = ret1255(GJEffectManager*, int);
+using member1255 = ret1255(GJEffectManager::*)(int);
 
 using ret1256 = void;
-using func1256 = ret1256(*)(GJEffectManager*, InheritanceNode*);
-using pure1256 = ret1256(InheritanceNode*);
-using meta1256 = ret1256(GJEffectManager*, InheritanceNode*);
-using member1256 = ret1256(GJEffectManager::*)(InheritanceNode*);
+using func1256 = ret1256(*)(GJEffectManager*, int);
+using pure1256 = ret1256(int);
+using meta1256 = ret1256(GJEffectManager*, int);
+using member1256 = ret1256(GJEffectManager::*)(int);
 
 using ret1257 = void;
-using func1257 = ret1257(*)(GJEffectManager*);
-using pure1257 = ret1257();
-using meta1257 = ret1257(GJEffectManager*);
-using member1257 = ret1257(GJEffectManager::*)();
+using func1257 = ret1257(*)(GJEffectManager*, int, bool);
+using pure1257 = ret1257(int, bool);
+using meta1257 = ret1257(GJEffectManager*, int, bool);
+using member1257 = ret1257(GJEffectManager::*)(int, bool);
 
 using ret1258 = void;
-using func1258 = ret1258(*)(GJEffectManager*, ColorAction*);
-using pure1258 = ret1258(ColorAction*);
-using meta1258 = ret1258(GJEffectManager*, ColorAction*);
-using member1258 = ret1258(GJEffectManager::*)(ColorAction*);
+using func1258 = ret1258(*)(GJEffectManager*, InheritanceNode*);
+using pure1258 = ret1258(InheritanceNode*);
+using meta1258 = ret1258(GJEffectManager*, InheritanceNode*);
+using member1258 = ret1258(GJEffectManager::*)(InheritanceNode*);
 
 using ret1259 = void;
-using func1259 = ret1259(*)(GJEffectManager*, float);
-using pure1259 = ret1259(float);
-using meta1259 = ret1259(GJEffectManager*, float);
-using member1259 = ret1259(GJEffectManager::*)(float);
+using func1259 = ret1259(*)(GJEffectManager*);
+using pure1259 = ret1259();
+using meta1259 = ret1259(GJEffectManager*);
+using member1259 = ret1259(GJEffectManager::*)();
 
 using ret1260 = void;
-using func1260 = ret1260(*)(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
-using pure1260 = ret1260(cocos2d::_ccColor3B, cocos2d::_ccColor3B);
-using meta1260 = ret1260(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
-using member1260 = ret1260(GJEffectManager::*)(cocos2d::_ccColor3B, cocos2d::_ccColor3B);
+using func1260 = ret1260(*)(GJEffectManager*, ColorAction*);
+using pure1260 = ret1260(ColorAction*);
+using meta1260 = ret1260(GJEffectManager*, ColorAction*);
+using member1260 = ret1260(GJEffectManager::*)(ColorAction*);
 
 using ret1261 = void;
 using func1261 = ret1261(*)(GJEffectManager*, float);
@@ -9906,10 +9900,10 @@ using meta1261 = ret1261(GJEffectManager*, float);
 using member1261 = ret1261(GJEffectManager::*)(float);
 
 using ret1262 = void;
-using func1262 = ret1262(*)(GJEffectManager*, OpacityEffectAction*);
-using pure1262 = ret1262(OpacityEffectAction*);
-using meta1262 = ret1262(GJEffectManager*, OpacityEffectAction*);
-using member1262 = ret1262(GJEffectManager::*)(OpacityEffectAction*);
+using func1262 = ret1262(*)(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
+using pure1262 = ret1262(cocos2d::_ccColor3B, cocos2d::_ccColor3B);
+using meta1262 = ret1262(GJEffectManager*, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
+using member1262 = ret1262(GJEffectManager::*)(cocos2d::_ccColor3B, cocos2d::_ccColor3B);
 
 using ret1263 = void;
 using func1263 = ret1263(*)(GJEffectManager*, float);
@@ -9918,10 +9912,10 @@ using meta1263 = ret1263(GJEffectManager*, float);
 using member1263 = ret1263(GJEffectManager::*)(float);
 
 using ret1264 = void;
-using func1264 = ret1264(*)(GJEffectManager*, float);
-using pure1264 = ret1264(float);
-using meta1264 = ret1264(GJEffectManager*, float);
-using member1264 = ret1264(GJEffectManager::*)(float);
+using func1264 = ret1264(*)(GJEffectManager*, OpacityEffectAction*);
+using pure1264 = ret1264(OpacityEffectAction*);
+using meta1264 = ret1264(GJEffectManager*, OpacityEffectAction*);
+using member1264 = ret1264(GJEffectManager::*)(OpacityEffectAction*);
 
 using ret1265 = void;
 using func1265 = ret1265(*)(GJEffectManager*, float);
@@ -9930,22 +9924,34 @@ using meta1265 = ret1265(GJEffectManager*, float);
 using member1265 = ret1265(GJEffectManager::*)(float);
 
 using ret1266 = void;
-using func1266 = ret1266(*)(GJEffectManager*, int, int);
-using pure1266 = ret1266(int, int);
-using meta1266 = ret1266(GJEffectManager*, int, int);
-using member1266 = ret1266(GJEffectManager::*)(int, int);
+using func1266 = ret1266(*)(GJEffectManager*, float);
+using pure1266 = ret1266(float);
+using meta1266 = ret1266(GJEffectManager*, float);
+using member1266 = ret1266(GJEffectManager::*)(float);
 
 using ret1267 = void;
-using func1267 = ret1267(*)(GJEffectManager*, InheritanceNode*, int);
-using pure1267 = ret1267(InheritanceNode*, int);
-using meta1267 = ret1267(GJEffectManager*, InheritanceNode*, int);
-using member1267 = ret1267(GJEffectManager::*)(InheritanceNode*, int);
+using func1267 = ret1267(*)(GJEffectManager*, float);
+using pure1267 = ret1267(float);
+using meta1267 = ret1267(GJEffectManager*, float);
+using member1267 = ret1267(GJEffectManager::*)(float);
 
 using ret1268 = void;
-using func1268 = ret1268(*)(GJEffectManager*);
-using pure1268 = ret1268();
-using meta1268 = ret1268(GJEffectManager*);
-using member1268 = func1268;
+using func1268 = ret1268(*)(GJEffectManager*, int, int);
+using pure1268 = ret1268(int, int);
+using meta1268 = ret1268(GJEffectManager*, int, int);
+using member1268 = ret1268(GJEffectManager::*)(int, int);
+
+using ret1269 = void;
+using func1269 = ret1269(*)(GJEffectManager*, InheritanceNode*, int);
+using pure1269 = ret1269(InheritanceNode*, int);
+using meta1269 = ret1269(GJEffectManager*, InheritanceNode*, int);
+using member1269 = ret1269(GJEffectManager::*)(InheritanceNode*, int);
+
+using ret1270 = void;
+using func1270 = ret1270(*)(GJEffectManager*);
+using pure1270 = ret1270();
+using meta1270 = ret1270(GJEffectManager*);
+using member1270 = func1270;
 
 using ret559 = decltype(std::declval<cocos2d::CCTextureCache>().addImage(std::declval<char const*>(), std::declval<bool>()));
 using func559 = ret559(*)(cocos2d::CCTextureCache*, char const*, bool);
@@ -10025,29 +10031,29 @@ using pure98 = ret98();
 using meta98 = ret98(cocos2d::CCDrawNode*);
 using member98 = func98;
 
-using ret2232 = SetupOpacityPopup*;
-using func2232 = ret2232(*)(EffectGameObject*, cocos2d::CCArray*);
-using pure2232 = ret2232(EffectGameObject*, cocos2d::CCArray*);
-using meta2232 = ret2232(EffectGameObject*, cocos2d::CCArray*);
-using member2232 = func2232;
+using ret2235 = SetupOpacityPopup*;
+using func2235 = ret2235(*)(EffectGameObject*, cocos2d::CCArray*);
+using pure2235 = ret2235(EffectGameObject*, cocos2d::CCArray*);
+using meta2235 = ret2235(EffectGameObject*, cocos2d::CCArray*);
+using member2235 = func2235;
 
-using ret2233 = void;
-using func2233 = ret2233(*)(SetupOpacityPopup*, cocos2d::CCObject*);
-using pure2233 = ret2233(cocos2d::CCObject*);
-using meta2233 = ret2233(SetupOpacityPopup*, cocos2d::CCObject*);
-using member2233 = ret2233(SetupOpacityPopup::*)(cocos2d::CCObject*);
+using ret2236 = void;
+using func2236 = ret2236(*)(SetupOpacityPopup*, cocos2d::CCObject*);
+using pure2236 = ret2236(cocos2d::CCObject*);
+using meta2236 = ret2236(SetupOpacityPopup*, cocos2d::CCObject*);
+using member2236 = ret2236(SetupOpacityPopup::*)(cocos2d::CCObject*);
 
-using ret2234 = void;
-using func2234 = ret2234(*)(SetupOpacityPopup*, CCTextInputNode*);
-using pure2234 = ret2234(CCTextInputNode*);
-using meta2234 = ret2234(SetupOpacityPopup*, CCTextInputNode*);
-using member2234 = ret2234(SetupOpacityPopup::*)(CCTextInputNode*);
+using ret2237 = void;
+using func2237 = ret2237(*)(SetupOpacityPopup*, CCTextInputNode*);
+using pure2237 = ret2237(CCTextInputNode*);
+using meta2237 = ret2237(SetupOpacityPopup*, CCTextInputNode*);
+using member2237 = ret2237(SetupOpacityPopup::*)(CCTextInputNode*);
 
-using ret2235 = void;
-using func2235 = ret2235(*)(SetupOpacityPopup*);
-using pure2235 = ret2235();
-using meta2235 = ret2235(SetupOpacityPopup*);
-using member2235 = ret2235(SetupOpacityPopup::*)();
+using ret2238 = void;
+using func2238 = ret2238(*)(SetupOpacityPopup*);
+using pure2238 = ret2238();
+using meta2238 = ret2238(SetupOpacityPopup*);
+using member2238 = ret2238(SetupOpacityPopup::*)();
 
 using ret130 = void;
 using func130 = ret130(*)(cocos2d::CCImage*);
@@ -10337,17 +10343,17 @@ using pure124 = ret124();
 using meta124 = ret124();
 using member124 = func124;
 
-using ret1159 = void;
-using func1159 = ret1159(*)(GJComment*);
-using pure1159 = ret1159();
-using meta1159 = ret1159(GJComment*);
-using member1159 = func1159;
+using ret1161 = void;
+using func1161 = ret1161(*)(GJComment*);
+using pure1161 = ret1161();
+using meta1161 = ret1161(GJComment*);
+using member1161 = func1161;
 
-using ret1160 = bool;
-using func1160 = ret1160(*)(GJComment*);
-using pure1160 = ret1160();
-using meta1160 = ret1160(GJComment*);
-using member1160 = ret1160(GJComment::*)();
+using ret1162 = bool;
+using func1162 = ret1162(*)(GJComment*);
+using pure1162 = ret1162();
+using meta1162 = ret1162(GJComment*);
+using member1162 = ret1162(GJComment::*)();
 
 using ret248 = decltype(std::declval<cocos2d::CCMenuItemImage>().init());
 using func248 = ret248(*)(cocos2d::CCMenuItemImage*);
@@ -10355,13 +10361,13 @@ using pure248 = ret248();
 using meta248 = ret248(cocos2d::CCMenuItemImage*);
 using member248 = ret248(cocos2d::CCMenuItemImage::*)();
 
-using ret133 = decltype(std::declval<cocos2d::CCKeyboardDispatcher>().dispatchKeyboardMSG(std::declval<cocos2d::enumKeyCodes>(), std::declval<bool>()));
+using ret133 = bool;
 using func133 = ret133(*)(cocos2d::CCKeyboardDispatcher*, cocos2d::enumKeyCodes, bool);
 using pure133 = ret133(cocos2d::enumKeyCodes, bool);
 using meta133 = ret133(cocos2d::CCKeyboardDispatcher*, cocos2d::enumKeyCodes, bool);
 using member133 = ret133(cocos2d::CCKeyboardDispatcher::*)(cocos2d::enumKeyCodes, bool);
 
-using ret134 = decltype(std::declval<cocos2d::CCKeyboardDispatcher>().keyToString(std::declval<cocos2d::enumKeyCodes>()));
+using ret134 = const char*;
 using func134 = ret134(*)(cocos2d::CCKeyboardDispatcher*, cocos2d::enumKeyCodes);
 using pure134 = ret134(cocos2d::enumKeyCodes);
 using meta134 = ret134(cocos2d::CCKeyboardDispatcher*, cocos2d::enumKeyCodes);
@@ -10541,59 +10547,47 @@ using pure786 = ret786();
 using meta786 = ret786(CCNodeContainer*);
 using member786 = ret786(CCNodeContainer::*)();
 
-using ret1418 = void;
-using func1418 = ret1418(*)(GameManager*);
-using pure1418 = ret1418();
-using meta1418 = ret1418(GameManager*);
-using member1418 = ret1418(GameManager::*)();
-
-using ret1419 = cocos2d::_ccColor3B;
-using func1419 = ret1419(*)(GameManager*, int);
-using pure1419 = ret1419(int);
-using meta1419 = ret1419(GameManager*, int);
-using member1419 = ret1419(GameManager::*)(int);
-
 using ret1420 = void;
 using func1420 = ret1420(*)(GameManager*);
 using pure1420 = ret1420();
 using meta1420 = ret1420(GameManager*);
 using member1420 = ret1420(GameManager::*)();
 
-using ret1421 = void;
-using func1421 = ret1421(*)(GameManager*);
-using pure1421 = ret1421();
-using meta1421 = ret1421(GameManager*);
-using member1421 = ret1421(GameManager::*)();
+using ret1421 = cocos2d::_ccColor3B;
+using func1421 = ret1421(*)(GameManager*, int);
+using pure1421 = ret1421(int);
+using meta1421 = ret1421(GameManager*, int);
+using member1421 = ret1421(GameManager::*)(int);
 
 using ret1422 = void;
-using func1422 = ret1422(*)(GameManager*, const char*);
-using pure1422 = ret1422(const char*);
-using meta1422 = ret1422(GameManager*, const char*);
-using member1422 = ret1422(GameManager::*)(const char*);
+using func1422 = ret1422(*)(GameManager*);
+using pure1422 = ret1422();
+using meta1422 = ret1422(GameManager*);
+using member1422 = ret1422(GameManager::*)();
 
 using ret1423 = void;
-using func1423 = ret1423(*)(GameManager*, int);
-using pure1423 = ret1423(int);
-using meta1423 = ret1423(GameManager*, int);
-using member1423 = ret1423(GameManager::*)(int);
+using func1423 = ret1423(*)(GameManager*);
+using pure1423 = ret1423();
+using meta1423 = ret1423(GameManager*);
+using member1423 = ret1423(GameManager::*)();
 
 using ret1424 = void;
-using func1424 = ret1424(*)(GameManager*, int);
-using pure1424 = ret1424(int);
-using meta1424 = ret1424(GameManager*, int);
-using member1424 = ret1424(GameManager::*)(int);
+using func1424 = ret1424(*)(GameManager*, const char*);
+using pure1424 = ret1424(const char*);
+using meta1424 = ret1424(GameManager*, const char*);
+using member1424 = ret1424(GameManager::*)(const char*);
 
-using ret1425 = bool;
-using func1425 = ret1425(*)(GameManager*, const char*);
-using pure1425 = ret1425(const char*);
-using meta1425 = ret1425(GameManager*, const char*);
-using member1425 = ret1425(GameManager::*)(const char*);
+using ret1425 = void;
+using func1425 = ret1425(*)(GameManager*, int);
+using pure1425 = ret1425(int);
+using meta1425 = ret1425(GameManager*, int);
+using member1425 = ret1425(GameManager::*)(int);
 
-using ret1426 = int;
-using func1426 = ret1426(*)(GameManager*, const char*);
-using pure1426 = ret1426(const char*);
-using meta1426 = ret1426(GameManager*, const char*);
-using member1426 = ret1426(GameManager::*)(const char*);
+using ret1426 = void;
+using func1426 = ret1426(*)(GameManager*, int);
+using pure1426 = ret1426(int);
+using meta1426 = ret1426(GameManager*, int);
+using member1426 = ret1426(GameManager::*)(int);
 
 using ret1427 = bool;
 using func1427 = ret1427(*)(GameManager*, const char*);
@@ -10601,113 +10595,125 @@ using pure1427 = ret1427(const char*);
 using meta1427 = ret1427(GameManager*, const char*);
 using member1427 = ret1427(GameManager::*)(const char*);
 
-using ret1428 = void;
-using func1428 = ret1428(*)(GameManager*, int);
-using pure1428 = ret1428(int);
-using meta1428 = ret1428(GameManager*, int);
-using member1428 = ret1428(GameManager::*)(int);
+using ret1428 = int;
+using func1428 = ret1428(*)(GameManager*, const char*);
+using pure1428 = ret1428(const char*);
+using meta1428 = ret1428(GameManager*, const char*);
+using member1428 = ret1428(GameManager::*)(const char*);
 
-using ret1429 = void;
-using func1429 = ret1429(*)(GameManager*, int);
-using pure1429 = ret1429(int);
-using meta1429 = ret1429(GameManager*, int);
-using member1429 = ret1429(GameManager::*)(int);
+using ret1429 = bool;
+using func1429 = ret1429(*)(GameManager*, const char*);
+using pure1429 = ret1429(const char*);
+using meta1429 = ret1429(GameManager*, const char*);
+using member1429 = ret1429(GameManager::*)(const char*);
 
 using ret1430 = void;
-using func1430 = ret1430(*)(GameManager*, bool, bool, bool);
-using pure1430 = ret1430(bool, bool, bool);
-using meta1430 = ret1430(GameManager*, bool, bool, bool);
-using member1430 = ret1430(GameManager::*)(bool, bool, bool);
+using func1430 = ret1430(*)(GameManager*, int);
+using pure1430 = ret1430(int);
+using meta1430 = ret1430(GameManager*, int);
+using member1430 = ret1430(GameManager::*)(int);
 
 using ret1431 = void;
-using func1431 = ret1431(*)(GameManager*);
-using pure1431 = ret1431();
-using meta1431 = ret1431(GameManager*);
-using member1431 = ret1431(GameManager::*)();
+using func1431 = ret1431(*)(GameManager*, int);
+using pure1431 = ret1431(int);
+using meta1431 = ret1431(GameManager*, int);
+using member1431 = ret1431(GameManager::*)(int);
 
 using ret1432 = void;
-using func1432 = ret1432(*)(GameManager*);
-using pure1432 = ret1432();
-using meta1432 = ret1432(GameManager*);
-using member1432 = ret1432(GameManager::*)();
+using func1432 = ret1432(*)(GameManager*, bool, bool, bool);
+using pure1432 = ret1432(bool, bool, bool);
+using meta1432 = ret1432(GameManager*, bool, bool, bool);
+using member1432 = ret1432(GameManager::*)(bool, bool, bool);
 
 using ret1433 = void;
-using func1433 = ret1433(*)(GameManager*, int, int, bool);
-using pure1433 = ret1433(int, int, bool);
-using meta1433 = ret1433(GameManager*, int, int, bool);
-using member1433 = ret1433(GameManager::*)(int, int, bool);
+using func1433 = ret1433(*)(GameManager*);
+using pure1433 = ret1433();
+using meta1433 = ret1433(GameManager*);
+using member1433 = ret1433(GameManager::*)();
 
 using ret1434 = void;
-using func1434 = ret1434(*)(GameManager*, const char*, bool);
-using pure1434 = ret1434(const char*, bool);
-using meta1434 = ret1434(GameManager*, const char*, bool);
-using member1434 = ret1434(GameManager::*)(const char*, bool);
+using func1434 = ret1434(*)(GameManager*);
+using pure1434 = ret1434();
+using meta1434 = ret1434(GameManager*);
+using member1434 = ret1434(GameManager::*)();
 
 using ret1435 = void;
-using func1435 = ret1435(*)(GameManager*, const char*, int);
-using pure1435 = ret1435(const char*, int);
-using meta1435 = ret1435(GameManager*, const char*, int);
-using member1435 = ret1435(GameManager::*)(const char*, int);
+using func1435 = ret1435(*)(GameManager*, int, int, bool);
+using pure1435 = ret1435(int, int, bool);
+using meta1435 = ret1435(GameManager*, int, int, bool);
+using member1435 = ret1435(GameManager::*)(int, int, bool);
 
 using ret1436 = void;
-using func1436 = ret1436(*)(GameManager*, char const*, bool);
-using pure1436 = ret1436(char const*, bool);
-using meta1436 = ret1436(GameManager*, char const*, bool);
-using member1436 = ret1436(GameManager::*)(char const*, bool);
+using func1436 = ret1436(*)(GameManager*, const char*, bool);
+using pure1436 = ret1436(const char*, bool);
+using meta1436 = ret1436(GameManager*, const char*, bool);
+using member1436 = ret1436(GameManager::*)(const char*, bool);
 
-using ret1437 = GameManager*;
-using func1437 = ret1437(*)();
-using pure1437 = ret1437();
-using meta1437 = ret1437();
-using member1437 = func1437;
+using ret1437 = void;
+using func1437 = ret1437(*)(GameManager*, const char*, int);
+using pure1437 = ret1437(const char*, int);
+using meta1437 = ret1437(GameManager*, const char*, int);
+using member1437 = ret1437(GameManager::*)(const char*, int);
 
 using ret1438 = void;
-using func1438 = ret1438(*)(GameManager*);
-using pure1438 = ret1438();
-using meta1438 = ret1438(GameManager*);
-using member1438 = func1438;
+using func1438 = ret1438(*)(GameManager*, char const*, bool);
+using pure1438 = ret1438(char const*, bool);
+using meta1438 = ret1438(GameManager*, char const*, bool);
+using member1438 = ret1438(GameManager::*)(char const*, bool);
 
-using ret1439 = void;
-using func1439 = ret1439(*)(GameManager*, int);
-using pure1439 = ret1439(int);
-using meta1439 = ret1439(GameManager*, int);
-using member1439 = ret1439(GameManager::*)(int);
+using ret1439 = GameManager*;
+using func1439 = ret1439(*)();
+using pure1439 = ret1439();
+using meta1439 = ret1439();
+using member1439 = func1439;
 
-using ret1440 = bool;
+using ret1440 = void;
 using func1440 = ret1440(*)(GameManager*);
 using pure1440 = ret1440();
 using meta1440 = ret1440(GameManager*);
-using member1440 = ret1440(GameManager::*)();
+using member1440 = func1440;
 
 using ret1441 = void;
-using func1441 = ret1441(*)(GameManager*, char const*, int, bool);
-using pure1441 = ret1441(char const*, int, bool);
-using meta1441 = ret1441(GameManager*, char const*, int, bool);
-using member1441 = ret1441(GameManager::*)(char const*, int, bool);
+using func1441 = ret1441(*)(GameManager*, int);
+using pure1441 = ret1441(int);
+using meta1441 = ret1441(GameManager*, int);
+using member1441 = ret1441(GameManager::*)(int);
 
-using ret1442 = cocos2d::CCSize*;
-using func1442 = ret1442(*)(GameManager*, cocos2d::CCSize*, int);
-using pure1442 = ret1442(cocos2d::CCSize*, int);
-using meta1442 = ret1442(GameManager*, cocos2d::CCSize*, int);
-using member1442 = ret1442(GameManager::*)(cocos2d::CCSize*, int);
+using ret1442 = bool;
+using func1442 = ret1442(*)(GameManager*);
+using pure1442 = ret1442();
+using meta1442 = ret1442(GameManager*);
+using member1442 = ret1442(GameManager::*)();
 
 using ret1443 = void;
-using func1443 = ret1443(*)(GameManager*, float);
-using pure1443 = ret1443(float);
-using meta1443 = ret1443(GameManager*, float);
-using member1443 = ret1443(GameManager::*)(float);
+using func1443 = ret1443(*)(GameManager*, char const*, int, bool);
+using pure1443 = ret1443(char const*, int, bool);
+using meta1443 = ret1443(GameManager*, char const*, int, bool);
+using member1443 = ret1443(GameManager::*)(char const*, int, bool);
 
-using ret1444 = bool;
-using func1444 = ret1444(*)(GameManager*, int, bool);
-using pure1444 = ret1444(int, bool);
-using meta1444 = ret1444(GameManager*, int, bool);
-using member1444 = ret1444(GameManager::*)(int, bool);
+using ret1444 = cocos2d::CCSize*;
+using func1444 = ret1444(*)(GameManager*, cocos2d::CCSize*, int);
+using pure1444 = ret1444(cocos2d::CCSize*, int);
+using meta1444 = ret1444(GameManager*, cocos2d::CCSize*, int);
+using member1444 = ret1444(GameManager::*)(cocos2d::CCSize*, int);
 
-using ret1445 = bool;
-using func1445 = ret1445(*)(GameManager*, int, IconType);
-using pure1445 = ret1445(int, IconType);
-using meta1445 = ret1445(GameManager*, int, IconType);
-using member1445 = ret1445(GameManager::*)(int, IconType);
+using ret1445 = void;
+using func1445 = ret1445(*)(GameManager*, float);
+using pure1445 = ret1445(float);
+using meta1445 = ret1445(GameManager*, float);
+using member1445 = ret1445(GameManager::*)(float);
+
+using ret1446 = bool;
+using func1446 = ret1446(*)(GameManager*, int, bool);
+using pure1446 = ret1446(int, bool);
+using meta1446 = ret1446(GameManager*, int, bool);
+using member1446 = ret1446(GameManager::*)(int, bool);
+
+using ret1447 = bool;
+using func1447 = ret1447(*)(GameManager*, int, IconType);
+using pure1447 = ret1447(int, IconType);
+using meta1447 = ret1447(GameManager*, int, IconType);
+using member1447 = ret1447(GameManager::*)(int, IconType);
 
 using ret32 = cocos2d::CCClippingNode*;
 using func32 = ret32(*)();
@@ -10811,23 +10817,23 @@ using pure887 = ret887();
 using meta887 = ret887(CustomListView*);
 using member887 = ret887(CustomListView::*)();
 
-using ret2278 = void;
-using func2278 = ret2278(*)(SongInfoObject*);
-using pure2278 = ret2278();
-using meta2278 = ret2278(SongInfoObject*);
-using member2278 = func2278;
+using ret2281 = void;
+using func2281 = ret2281(*)(SongInfoObject*);
+using pure2281 = ret2281();
+using meta2281 = ret2281(SongInfoObject*);
+using member2281 = func2281;
 
-using ret2279 = void;
-using func2279 = ret2279(*)(SongInfoObject*, DS_Dictionary*);
-using pure2279 = ret2279(DS_Dictionary*);
-using meta2279 = ret2279(SongInfoObject*, DS_Dictionary*);
-using member2279 = ret2279(SongInfoObject::*)(DS_Dictionary*);
+using ret2282 = void;
+using func2282 = ret2282(*)(SongInfoObject*, DS_Dictionary*);
+using pure2282 = ret2282(DS_Dictionary*);
+using meta2282 = ret2282(SongInfoObject*, DS_Dictionary*);
+using member2282 = ret2282(SongInfoObject::*)(DS_Dictionary*);
 
-using ret2280 = bool;
-using func2280 = ret2280(*)(SongInfoObject*);
-using pure2280 = ret2280();
-using meta2280 = ret2280(SongInfoObject*);
-using member2280 = ret2280(SongInfoObject::*)();
+using ret2283 = bool;
+using func2283 = ret2283(*)(SongInfoObject*);
+using pure2283 = ret2283();
+using meta2283 = ret2283(SongInfoObject*);
+using member2283 = ret2283(SongInfoObject::*)();
 
 using ret676 = void;
 using func676 = ret676(*)(AppDelegate*);
@@ -10889,17 +10895,17 @@ using pure45 = ret45(float);
 using meta45 = ret45(float);
 using member45 = func45;
 
-using ret1641 = bool;
-using func1641 = ret1641(*)(LabelGameObject*);
-using pure1641 = ret1641();
-using meta1641 = ret1641(LabelGameObject*);
-using member1641 = ret1641(LabelGameObject::*)();
+using ret1643 = bool;
+using func1643 = ret1643(*)(LabelGameObject*);
+using pure1643 = ret1643();
+using meta1643 = ret1643(LabelGameObject*);
+using member1643 = ret1643(LabelGameObject::*)();
 
-using ret1642 = void;
-using func1642 = ret1642(*)(LabelGameObject*, cocos2d::_ccColor3B const&);
-using pure1642 = ret1642(cocos2d::_ccColor3B const&);
-using meta1642 = ret1642(LabelGameObject*, cocos2d::_ccColor3B const&);
-using member1642 = ret1642(LabelGameObject::*)(cocos2d::_ccColor3B const&);
+using ret1644 = void;
+using func1644 = ret1644(*)(LabelGameObject*, cocos2d::_ccColor3B const&);
+using pure1644 = ret1644(cocos2d::_ccColor3B const&);
+using meta1644 = ret1644(LabelGameObject*, cocos2d::_ccColor3B const&);
+using member1644 = ret1644(LabelGameObject::*)(cocos2d::_ccColor3B const&);
 
 using ret30 = decltype(cocos2d::CCCallFunc::create(std::declval<cocos2d::CCObject*>(), std::declval<cocos2d::SEL_CallFunc>()));
 using func30 = ret30(*)(cocos2d::CCObject*, cocos2d::SEL_CallFunc);

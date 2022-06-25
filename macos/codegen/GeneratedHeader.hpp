@@ -407,7 +407,6 @@ public:
 
 class GEODE_CODEGEN_DLL GameObject : public CCSpritePlus {
 public:
-	 using GroupArrayType = short*; 
 
     cocos2d::CCPoint getStartPosition();
 
@@ -812,11 +811,11 @@ public:
         bool m_unknownLayerRelated;
         float m_multiScaleMultiplier;
         bool m_isGroupParent;
-        GroupArrayType m_groups;
+        std::array<short, 10>* m_groups;
         short m_groupCount;
-        GroupArrayType m_pulseGroups;
+        std::array<short, 10>* m_pulseGroups;
         short m_pulseGroupCount;
-        GroupArrayType m_alphaGroups;
+        std::array<short, 10>* m_alphaGroups;
         short m_alphaGroupCount;
         int m_editorLayer;
         int m_editorLayer2;
@@ -1791,7 +1790,7 @@ public:
         float m_groundHeight;
         float m_unk69C;
         GEODE_UNIMPLEMENTED_PAD
-        float m_unk6A4[200];
+        std::array<float, 200> m_unk6A4;
         GEODE_UNIMPLEMENTED_PAD
 };
 
@@ -4052,8 +4051,6 @@ public:
 
 class GEODE_CODEGEN_DLL DrawGridLayer : public cocos2d::CCLayer {
 public:
-	 using CCPointArray400 = cocos2d::CCPoint(*)[400];
-	 using CCPointArray200 = cocos2d::CCPoint(*)[200];
 
     template <bool T=false>
     bool init(cocos2d::CCNode* grid, LevelEditorLayer* editor){
@@ -4070,9 +4067,9 @@ public:
         static_assert(T, "Implement DrawGridLayer::update");
     }
 
-        CCPointArray400 m_commonLines;
-        CCPointArray200 m_yellowGuidelines;
-        CCPointArray200 m_greenGuidelines;
+        std::array<cocos2d::CCPoint, 400>* m_commonLines;
+        std::array<cocos2d::CCPoint, 200>* m_yellowGuidelines;
+        std::array<cocos2d::CCPoint, 200>* m_greenGuidelines;
         float m_songOffset1;
         float m_songOffset2;
         float m_lastMusicXPosition;
@@ -4250,6 +4247,16 @@ public:
     template <bool T=false>
     void uncheckAllPortals(cocos2d::CCObject* pSender){
         static_assert(T, "Implement EditorPauseLayer::uncheckAllPortals");
+    }
+
+    template <bool T=false>
+    void onResetUnusedColors(cocos2d::CCObject* pSender){
+        static_assert(T, "Implement EditorPauseLayer::onResetUnusedColors");
+    }
+
+    template <bool T=false>
+    void doResetUnused(){
+        static_assert(T, "Implement EditorPauseLayer::doResetUnused");
     }
 
         bool m_saved;
@@ -6435,6 +6442,8 @@ public:
 
     void getRelativeOffset(GameObject* p0);
 
+    bool hasAction(bool p0);
+
     void handleAction(bool p0, cocos2d::CCArray* p1);
 
     bool init(GJGameLevel* p0);
@@ -6540,9 +6549,9 @@ public:
         int m_coinCountRand1;
         int m_coinCountRand2;
         int m_coinCount;
-        GEODE_PAD(0x50);
+        GEODE_PAD(0x40);
         int m_currentLayer;
-        GEODE_PAD(0x50);
+        GEODE_PAD(0x38);
         EditorUI* m_editorUI;
         GEODE_PAD(0x8);
         cocos2d::CCArray* m_undoObjects;
@@ -6909,7 +6918,7 @@ public:
 
     void getAllColorSprites();
 
-    const cocos2d::_ccColor3B& getColorAction(int p0);
+    ColorAction* getColorAction(int p0);
 
     const cocos2d::_ccColor3B& getColorSprite(int p0);
 
@@ -7052,10 +7061,10 @@ public:
         cocos2d::CCDictionary* m_collisionActionsForGroup2;
         gd::vector<ColorAction*> m_colorActionsForGroup;
         gd::vector<ColorActionSprite*> m_colorSpritesForGroup;
-        bool m_pulseExistsForGroup[1100];
+        std::array<bool, 1100> m_pulseExistsForGroup;
         bool m_f063c;
-        bool m_opactiyExistsForGroup[1100];
-        int m_itemValues[1100];
+        std::array<bool, 1100> m_opactiyExistsForGroup;
+        std::array<int, 1100> m_itemValues;
         int m_unusued;
         int* m_unused2;
         cocos2d::CCArray* m_f1bc8;
